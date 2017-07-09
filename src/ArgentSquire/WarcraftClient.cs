@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -76,6 +77,71 @@ namespace ArgentSquire
         {
             string host = GetHost(region);
             return await Get<Achievement>($"{host}/wow/achievement/{id}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get the specified boss.
+        /// </summary>
+        /// <remarks>
+        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        /// </remarks>
+        /// <param name="id">The boss ID.</param>
+        /// <returns>
+        /// The specified boss.
+        /// </returns>
+        public async Task<Boss> GetBossAsync(int id)
+        {
+            return await GetBossAsync(id, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified boss.
+        /// </summary>
+        /// <remarks>
+        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        /// </remarks>
+        /// <param name="id">The boss ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified boss.
+        /// </returns>
+        public async Task<Boss> GetBossAsync(int id, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Boss>($"{host}/wow/boss/{id}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get a list of all supported bosses.
+        /// </summary>
+        /// <remarks>
+        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        /// </remarks>
+        /// <returns>
+        /// A list of all supported bosses.
+        /// </returns>
+        public async Task<List<Boss>> GetBossesAsync()
+        {
+            return await GetBossesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported bosses.
+        /// </summary>
+        /// <remarks>
+        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        /// </remarks>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported bosses.
+        /// </returns>
+        public async Task<List<Boss>> GetBossesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            BossList bossList = await Get<BossList>($"{host}/wow/boss/?locale={locale}&apikey={_apiKey}");
+            return bossList.Bosses;
         }
 
         /// <summary>
