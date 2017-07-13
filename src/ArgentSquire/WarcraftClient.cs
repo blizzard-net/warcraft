@@ -145,6 +145,35 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified character.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="characterName">The character name.</param>
+        /// <returns>
+        /// The specified character.
+        /// </returns>
+        public async Task<Character> GetCharacterAsync(string realm, string characterName)
+        {
+            return await GetCharacterAsync(realm, characterName, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified character.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="characterName">The character name.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified character.
+        /// </returns>
+        public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Character>($"{host}/wow/character/{realm}/{characterName}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
