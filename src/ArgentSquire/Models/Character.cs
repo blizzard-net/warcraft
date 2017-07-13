@@ -1,6 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+﻿using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
@@ -31,19 +29,19 @@ namespace ArgentSquire
         /// Gets or sets the character class.
         /// </summary>
         [JsonProperty("class")]
-        public int Class { get; set; }
+        public CharacterClass Class { get; set; }
 
         /// <summary>
         /// Gets or sets the faction.
         /// </summary>
         [JsonProperty("faction")]
-        public int Faction { get; set; }
+        public Faction Faction { get; set; }
 
         /// <summary>
         /// Gets or sets the gender.
         /// </summary>
         [JsonProperty("gender")]
-        public int Gender { get; set; }
+        public Gender Gender { get; set; }
 
         /// <summary>
         /// Gets or sets the last modified date.
@@ -67,7 +65,7 @@ namespace ArgentSquire
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]
-        public int Race { get; set; }
+        public Race Race { get; set; }
 
         /// <summary>
         /// Gets or sets the realm.
