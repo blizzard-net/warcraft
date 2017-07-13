@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
@@ -47,7 +48,8 @@ namespace ArgentSquire
         /// Gets or sets the last modified date.
         /// </summary>
         [JsonProperty("lastModified")]
-        public long LastModified { get; set; }
+        [JsonConverter(typeof(JsonEpochConverter))]
+        public DateTime LastModified { get; set; }
 
         /// <summary>
         /// Gets or sets the level.
