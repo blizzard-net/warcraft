@@ -9,6 +9,12 @@ namespace ArgentSquire
     public class Character
     {
         /// <summary>
+        /// Gets or sets the achievements.
+        /// </summary>
+        [JsonProperty("achievements")]
+        public CharacterAchievements Achievements { get; set; }
+
+        /// <summary>
         /// Gets or sets the achievement points.
         /// </summary>
         [JsonProperty("achievementPoints")]
@@ -48,7 +54,6 @@ namespace ArgentSquire
         /// Gets or sets the last modified date.
         /// </summary>
         [JsonProperty("lastModified")]
-        [JsonConverter(typeof(JsonEpochConverter))]
         public DateTime LastModified { get; set; }
 
         /// <summary>

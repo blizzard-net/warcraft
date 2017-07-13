@@ -149,12 +149,13 @@ namespace ArgentSquire
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="characterName">The character name.</param>
+        /// <param name="fields">The character fields to include.</param>
         /// <returns>
         /// The specified character.
         /// </returns>
-        public async Task<Character> GetCharacterAsync(string realm, string characterName)
+        public async Task<Character> GetCharacterAsync(string realm, string characterName, CharacterFields fields = CharacterFields.None)
         {
-            return await GetCharacterAsync(realm, characterName, _region, _locale);
+            return await GetCharacterAsync(realm, characterName, _region, _locale, fields);
         }
 
         /// <summary>
@@ -164,13 +165,15 @@ namespace ArgentSquire
         /// <param name="characterName">The character name.</param>
         /// <param name="region">The region.</param>
         /// <param name="locale">The locale.</param>
+        /// <param name="fields">The character fields to include.</param>
         /// <returns>
         /// The specified character.
         /// </returns>
-        public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale)
+        public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None)
         {
             string host = GetHost(region);
-            return await Get<Character>($"{host}/wow/character/{realm}/{characterName}?locale={locale}&apikey={_apiKey}");
+            string queryStringFields = CharacterFieldBuilder.BuildQueryString(fields);
+            return await Get<Character>($"{host}/wow/character/{realm}/{characterName}?&locale={locale}{queryStringFields}&apikey={_apiKey}");
         }
 
         /// <summary>
@@ -197,6 +200,7 @@ namespace ArgentSquire
             string json = await response.Content.ReadAsStringAsync();
             T item = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
             {
+                ContractResolver = new ArgentSquireContractResolver(),
                 MissingMemberHandling = MissingMemberHandling.Error
             });
 
