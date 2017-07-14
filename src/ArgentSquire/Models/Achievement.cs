@@ -60,7 +60,7 @@ namespace ArgentSquire
         /// Gets the reward items.
         /// </summary>
         [JsonProperty(PropertyName = "rewardItems")]
-        public List<RewardItem> RewardItems { get; private set; }
+        public List<CharacterItem> RewardItems { get; private set; }
 
         /// <summary>
         /// Gets the achievement title.

@@ -76,6 +76,12 @@ namespace ArgentSquire
         public IList<HunterPet> HunterPets { get; set; }
 
         /// <summary>
+        /// Gets or sets the character items.
+        /// </summary>
+        [JsonProperty("items")]
+        public CharacterItems Items { get; set; }
+
+        /// <summary>
         /// Gets or sets the last modified date.
         /// </summary>
         [JsonProperty("lastModified")]
