@@ -94,6 +94,12 @@ namespace ArgentSquire
         public int Level { get; set; }
 
         /// <summary>
+        /// Gets or sets information about the character's mounts.
+        /// </summary>
+        [JsonProperty("mounts")]
+        public CharacterMounts Mounts { get; set; }
+
+        /// <summary>
         /// Gets or sets the name.
         /// </summary>
         [JsonProperty("name")]
