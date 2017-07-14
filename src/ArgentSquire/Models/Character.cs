@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace ArgentSquire
@@ -49,6 +50,12 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("faction")]
         public Faction Faction { get; set; }
+
+        /// <summary>
+        /// Gets or sets the activity feed.
+        /// </summary>
+        [JsonProperty("feed")]
+        public IList<Feed> Feed { get; set; }
 
         /// <summary>
         /// Gets or sets the gender.
