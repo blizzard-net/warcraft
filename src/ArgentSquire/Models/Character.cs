@@ -70,6 +70,12 @@ namespace ArgentSquire
         public Guild Guild { get; set; }
 
         /// <summary>
+        /// Gets or sets the hunter pets.
+        /// </summary>
+        [JsonProperty("hunterPets")]
+        public IList<HunterPet> HunterPets { get; set; }
+
+        /// <summary>
         /// Gets or sets the last modified date.
         /// </summary>
         [JsonProperty("lastModified")]
