@@ -64,6 +64,12 @@ namespace ArgentSquire
         public Gender Gender { get; set; }
 
         /// <summary>
+        /// Gets or sets the character's guild.
+        /// </summary>
+        [JsonProperty("guild")]
+        public Guild Guild { get; set; }
+
+        /// <summary>
         /// Gets or sets the last modified date.
         /// </summary>
         [JsonProperty("lastModified")]
