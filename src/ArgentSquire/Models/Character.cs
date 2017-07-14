@@ -21,6 +21,12 @@ namespace ArgentSquire
         public int AchievementPoints { get; set; }
 
         /// <summary>
+        /// Gets or sets the character's appearance.
+        /// </summary>
+        [JsonProperty("appearance")]
+        public CharacterAppearance Appearance { get; set; }
+
+        /// <summary>
         /// Gets or sets the battlegroup.
         /// </summary>
         [JsonProperty("battlegroup")]
