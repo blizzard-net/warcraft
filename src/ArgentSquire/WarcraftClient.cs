@@ -179,28 +179,28 @@ namespace ArgentSquire
         /// <summary>
         /// Get the specified item.
         /// </summary>
-        /// <param name="id">The item ID.</param>
+        /// <param name="itemId">The item ID.</param>
         /// <returns>
         /// The specified item.
         /// </returns>
-        public async Task<Item> GetItemAsync(int id)
+        public async Task<Item> GetItemAsync(int itemId)
         {
-            return await GetItemAsync(id, _region, _locale);
+            return await GetItemAsync(itemId, _region, _locale);
         }
 
         /// <summary>
         /// Get the specified item.
         /// </summary>
-        /// <param name="id">The item ID.</param>
+        /// <param name="itemId">The item ID.</param>
         /// <param name="region">The region.</param>
         /// <param name="locale">The locale.</param>
         /// <returns>
         /// The specified item.
         /// </returns>
-        public async Task<Item> GetItemAsync(int id, Region region, string locale)
+        public async Task<Item> GetItemAsync(int itemId, Region region, string locale)
         {
             string host = GetHost(region);
-            return await Get<Item>($"{host}/wow/item/{id}?locale={locale}&apikey={_apiKey}");
+            return await Get<Item>($"{host}/wow/item/{itemId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
