@@ -257,6 +257,33 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified quest.
+        /// </summary>
+        /// <param name="questId">The quest ID.</param>
+        /// <returns>
+        /// The specified quest.
+        /// </returns>
+        public async Task<Quest> GetQuestAsync(int questId)
+        {
+            return await GetQuestAsync(questId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified quest.
+        /// </summary>
+        /// <param name="questId">The quest ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified quest.
+        /// </returns>
+        public async Task<Quest> GetQuestAsync(int questId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Quest>($"{host}/wow/quest/{questId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
