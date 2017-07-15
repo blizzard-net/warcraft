@@ -112,6 +112,12 @@ namespace ArgentSquire
         public CharacterPets Pets { get; set; }
 
         /// <summary>
+        /// Gets or sets the pet slots.
+        /// </summary>
+        [JsonProperty("petSlots")]
+        public IList<PetSlot> PetSlots { get; set; }
+
+        /// <summary>
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]
