@@ -145,6 +145,38 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified character.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="characterName">The character name.</param>
+        /// <param name="fields">The character fields to include.</param>
+        /// <returns>
+        /// The specified character.
+        /// </returns>
+        public async Task<Character> GetCharacterAsync(string realm, string characterName, CharacterFields fields = CharacterFields.None)
+        {
+            return await GetCharacterAsync(realm, characterName, _region, _locale, fields);
+        }
+
+        /// <summary>
+        /// Get the specified character.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="characterName">The character name.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <param name="fields">The character fields to include.</param>
+        /// <returns>
+        /// The specified character.
+        /// </returns>
+        public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None)
+        {
+            string host = GetHost(region);
+            string queryStringFields = CharacterFieldBuilder.BuildQueryString(fields);
+            return await Get<Character>($"{host}/wow/character/{realm}/{characterName}?&locale={locale}{queryStringFields}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
@@ -168,6 +200,7 @@ namespace ArgentSquire
             string json = await response.Content.ReadAsStringAsync();
             T item = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
             {
+                ContractResolver = new ArgentSquireContractResolver(),
                 MissingMemberHandling = MissingMemberHandling.Error
             });
 
