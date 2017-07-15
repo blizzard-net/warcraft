@@ -106,6 +106,12 @@ namespace ArgentSquire
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets information about the character's pets.
+        /// </summary>
+        [JsonProperty("pets")]
+        public CharacterPets Pets { get; set; }
+
+        /// <summary>
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]
