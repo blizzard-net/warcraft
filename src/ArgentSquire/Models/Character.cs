@@ -136,6 +136,12 @@ namespace ArgentSquire
         public Pvp Pvp { get; set; }
 
         /// <summary>
+        /// Gets or sets the IDs of quests that the character has completed.
+        /// </summary>
+        [JsonProperty("quests")]
+        public IList<int> Quests { get; set; }
+
+        /// <summary>
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]
