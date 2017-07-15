@@ -184,6 +184,12 @@ namespace ArgentSquire
         public string Thumbnail { get; set; }
 
         /// <summary>
+        /// Gets or sets the character's titles.
+        /// </summary>
+        [JsonProperty("titles")]
+        public IList<Title> Titles { get; set; }
+
+        /// <summary>
         /// Gets or sets the total honorable kills.
         /// </summary>
         [JsonProperty("totalHonorableKills")]
