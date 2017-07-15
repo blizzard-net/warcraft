@@ -231,6 +231,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported mounts.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported mounts.
+        /// </returns>
+        public async Task<IList<Mount>> GetMountsAsync()
+        {
+            return await GetMountsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported mounts.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported mounts.
+        /// </returns>
+        public async Task<IList<Mount>> GetMountsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            MountList mountList = await Get<MountList>($"{host}/wow/mount/?locale={locale}&apikey={_apiKey}");
+            return mountList.Mounts;
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
