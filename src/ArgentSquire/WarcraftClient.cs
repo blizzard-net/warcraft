@@ -310,6 +310,33 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified recipe.
+        /// </summary>
+        /// <param name="recipeId">The recipe ID.</param>
+        /// <returns>
+        /// The specified recipe.
+        /// </returns>
+        public async Task<Recipe> GetRecipeAsync(int recipeId)
+        {
+            return await GetRecipeAsync(recipeId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified recipe.
+        /// </summary>
+        /// <param name="recipeId">The recipe ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified recipe.
+        /// </returns>
+        public async Task<Recipe> GetRecipeAsync(int recipeId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Recipe>($"{host}/wow/recipe/{recipeId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Get the specified spell.
         /// </summary>
         /// <param name="spellId">The spell ID.</param>
