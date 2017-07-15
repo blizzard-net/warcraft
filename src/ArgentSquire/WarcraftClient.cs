@@ -177,6 +177,60 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified item.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <returns>
+        /// The specified item.
+        /// </returns>
+        public async Task<Item> GetItemAsync(int itemId)
+        {
+            return await GetItemAsync(itemId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified item.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified item.
+        /// </returns>
+        public async Task<Item> GetItemAsync(int itemId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Item>($"{host}/wow/item/{itemId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get the specified item set.
+        /// </summary>
+        /// <param name="itemSetId">The item set ID.</param>
+        /// <returns>
+        /// The specified item set.
+        /// </returns>
+        public async Task<ItemSet> GetItemSetAsync(int itemSetId)
+        {
+            return await GetItemSetAsync(itemSetId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified item set.
+        /// </summary>
+        /// <param name="itemSetId">The item set ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified item set.
+        /// </returns>
+        public async Task<ItemSet> GetItemSetAsync(int itemSetId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<ItemSet>($"{host}/wow/item/set/{itemSetId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
