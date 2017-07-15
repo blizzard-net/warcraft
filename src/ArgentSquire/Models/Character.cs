@@ -166,6 +166,12 @@ namespace ArgentSquire
         public StatisticCategory Statistics { get; set; }
 
         /// <summary>
+        /// Gets or sets the character stats.
+        /// </summary>
+        [JsonProperty("stats")]
+        public Stats Stats { get; set; }
+
+        /// <summary>
         /// Gets or sets the thumbnail.
         /// </summary>
         [JsonProperty("thumbnail")]
