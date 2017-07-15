@@ -177,6 +177,33 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified item.
+        /// </summary>
+        /// <param name="id">The item ID.</param>
+        /// <returns>
+        /// The specified item.
+        /// </returns>
+        public async Task<Item> GetItemAsync(int id)
+        {
+            return await GetItemAsync(id, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified item.
+        /// </summary>
+        /// <param name="id">The item ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified item.
+        /// </returns>
+        public async Task<Item> GetItemAsync(int id, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Item>($"{host}/wow/item/{id}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">

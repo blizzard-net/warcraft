@@ -21,6 +21,12 @@ namespace ArgentSquire
         public string Description { get; set; }
 
         /// <summary>
+        /// Gets or sets the disenchanting skill rank required to disenchant the item.
+        /// </summary>
+        [JsonProperty("disenchantingSkillRank")]
+        public int DisenchantingSkillRank { get; set; }
+
+        /// <summary>
         /// Gets or sets the name.
         /// </summary>
         [JsonProperty("name")]
@@ -79,6 +85,12 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("containerSlots")]
         public int ContainerSlots { get; set; }
+
+        /// <summary>
+        /// Gets or sets the weapon info.
+        /// </summary>
+        [JsonProperty("weaponInfo")]
+        public WeaponInfo WeaponInfo { get; set; }
 
         /// <summary>
         /// Gets or sets the inventory type.
