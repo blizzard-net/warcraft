@@ -284,6 +284,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the statuses for all realms.
+        /// </summary>
+        /// <returns>
+        /// The statuses for all realms.
+        /// </returns>
+        public async Task<IList<Realm>> GetRealmStatusAsync()
+        {
+            return await GetRealmStatusAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get the statuses for all realms.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The statuses for all realms.
+        /// </returns>
+        public async Task<IList<Realm>> GetRealmStatusAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            RealmList realmList = await Get<RealmList>($"{host}/wow/realm/status?locale={locale}&apikey={_apiKey}");
+            return realmList.Realms;
+        }
+
+        /// <summary>
         /// Get the specified spell.
         /// </summary>
         /// <param name="spellId">The spell ID.</param>
