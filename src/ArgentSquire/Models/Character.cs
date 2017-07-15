@@ -28,6 +28,12 @@ namespace ArgentSquire
         public CharacterAppearance Appearance { get; set; }
 
         /// <summary>
+        /// Gets or sets the character audit.
+        /// </summary>
+        [JsonProperty("audit")]
+        public Audit Audit { get; set; }
+
+        /// <summary>
         /// Gets or sets the battlegroup.
         /// </summary>
         [JsonProperty("battlegroup")]
