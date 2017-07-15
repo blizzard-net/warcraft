@@ -160,6 +160,12 @@ namespace ArgentSquire
         public IList<Reputation> Reputation { get; set; }
 
         /// <summary>
+        /// Gets or sets the character statistics.
+        /// </summary>
+        [JsonProperty("statistics")]
+        public StatisticCategory Statistics { get; set; }
+
+        /// <summary>
         /// Gets or sets the thumbnail.
         /// </summary>
         [JsonProperty("thumbnail")]
