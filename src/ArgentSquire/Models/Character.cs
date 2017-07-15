@@ -118,6 +118,12 @@ namespace ArgentSquire
         public IList<PetSlot> PetSlots { get; set; }
 
         /// <summary>
+        /// Gets or sets information about the character's professions.
+        /// </summary>
+        [JsonProperty("professions")]
+        public CharacterProfessions Professions { get; set; }
+
+        /// <summary>
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]
