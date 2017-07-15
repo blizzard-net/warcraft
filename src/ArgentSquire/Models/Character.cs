@@ -154,6 +154,12 @@ namespace ArgentSquire
         public string Realm { get; set; }
 
         /// <summary>
+        /// Gets or sets the reputations.
+        /// </summary>
+        [JsonProperty("reputation")]
+        public IList<Reputation> Reputation { get; set; }
+
+        /// <summary>
         /// Gets or sets the thumbnail.
         /// </summary>
         [JsonProperty("thumbnail")]
