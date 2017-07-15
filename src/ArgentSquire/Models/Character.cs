@@ -124,6 +124,12 @@ namespace ArgentSquire
         public CharacterProfessions Professions { get; set; }
 
         /// <summary>
+        /// Gets or sets character raid progression information.
+        /// </summary>
+        [JsonProperty("progression")]
+        public Progression Progression { get; set; }
+
+        /// <summary>
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]
