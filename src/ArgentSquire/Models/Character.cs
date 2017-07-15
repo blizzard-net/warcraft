@@ -172,6 +172,12 @@ namespace ArgentSquire
         public Stats Stats { get; set; }
 
         /// <summary>
+        /// Gets or sets the talents for each spec.
+        /// </summary>
+        [JsonProperty("talents")]
+        public IList<SpecTalents> Talents { get; set; }
+
+        /// <summary>
         /// Gets or sets the thumbnail.
         /// </summary>
         [JsonProperty("thumbnail")]
