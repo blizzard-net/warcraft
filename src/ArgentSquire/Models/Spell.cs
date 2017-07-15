@@ -48,5 +48,11 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("range")]
         public string Range { get; set; }
+
+        /// <summary>
+        /// Gets or sets the power cost.
+        /// </summary>
+        [JsonProperty("powerCost")]
+        public string PowerCost { get; set; }
     }
 }

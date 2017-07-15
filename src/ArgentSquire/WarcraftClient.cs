@@ -284,6 +284,33 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified spell.
+        /// </summary>
+        /// <param name="spellId">The spell ID.</param>
+        /// <returns>
+        /// The specified spell.
+        /// </returns>
+        public async Task<Spell> GetSpellAsync(int spellId)
+        {
+            return await GetSpellAsync(spellId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified spell.
+        /// </summary>
+        /// <param name="spellId">The spell ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified spell.
+        /// </returns>
+        public async Task<Spell> GetSpellAsync(int spellId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<Spell>($"{host}/wow/spell/{spellId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
