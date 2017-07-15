@@ -130,6 +130,12 @@ namespace ArgentSquire
         public Progression Progression { get; set; }
 
         /// <summary>
+        /// Gets or sets PvP information for a character.
+        /// </summary>
+        [JsonProperty("pvp")]
+        public Pvp Pvp { get; set; }
+
+        /// <summary>
         /// Gets or sets the race.
         /// </summary>
         [JsonProperty("race")]

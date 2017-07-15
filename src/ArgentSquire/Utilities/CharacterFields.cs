@@ -82,9 +82,9 @@ namespace ArgentSquire
         Progression = 1024,
 
         /// <summary>
-        /// PVP.
+        /// PvP.
         /// </summary>
-        [Display(Name = "PVP")]
+        [Display(Name = "PvP")]
         Pvp = 2048,
 
         /// <summary>
