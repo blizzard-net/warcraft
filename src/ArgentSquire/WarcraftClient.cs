@@ -382,6 +382,33 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the PvP leaderboard for the specified bracket.
+        /// </summary>
+        /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
+        /// <returns>
+        /// The PvP leaderboard for the specified bracket.
+        /// </returns>
+        public async Task<PvpLeaderboard> GetPvpLeaderboardAsync(string bracket)
+        {
+            return await GetPvpLeaderboardAsync(bracket, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the PvP leaderboard for the specified bracket.
+        /// </summary>
+        /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The PvP leaderboard for the specified bracket.
+        /// </returns>
+        public async Task<PvpLeaderboard> GetPvpLeaderboardAsync(string bracket, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<PvpLeaderboard>($"{host}/wow/leaderboard/{bracket}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Get the specified quest.
         /// </summary>
         /// <param name="questId">The quest ID.</param>
