@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
@@ -7,6 +8,12 @@ namespace ArgentSquire
     /// </summary>
     public class Guild
     {
+        /// <summary>
+        /// Gets or sets the last modified timestamp.
+        /// </summary>
+        [JsonProperty("lastModified")]
+        public DateTime LastModified { get; set; }
+
         /// <summary>
         /// Gets or sets the guild name.
         /// </summary>
@@ -24,6 +31,18 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("battlegroup")]
         public string Battlegroup { get; set; }
+
+        /// <summary>
+        /// Gets or sets the guild level.
+        /// </summary>
+        [JsonProperty("level")]
+        public int Level { get; set; }
+
+        /// <summary>
+        /// Gets or sets the side.
+        /// </summary>
+        [JsonProperty("side")]
+        public Faction Side { get; set; }
 
         /// <summary>
         /// Gets or sets the number of members in the guild.
