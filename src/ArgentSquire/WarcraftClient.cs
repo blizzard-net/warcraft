@@ -80,6 +80,45 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified auction.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <returns>
+        /// The specified auction.
+        /// </returns>
+        public async Task<AuctionFiles> GetAuctionAsync(string realm)
+        {
+            return await GetAuctionAsync(realm, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified auction.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified auction.
+        /// </returns>
+        public async Task<AuctionFiles> GetAuctionAsync(string realm, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<AuctionFiles>($"{host}/wow/auction/data/{realm}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get the auction house snapshot from the specified file.
+        /// </summary>
+        /// <param name="url">The URL for the auction house file.</param>
+        /// <returns>
+        /// The auction house snapshot from the specified file.
+        /// </returns>
+        public async Task<AuctionHouseSnapshot> GetAuctionHouseSnapshotAsync(string url)
+        {
+            return await Get<AuctionHouseSnapshot>(url);
+        }
+
+        /// <summary>
         /// Get the specified boss.
         /// </summary>
         /// <remarks>
