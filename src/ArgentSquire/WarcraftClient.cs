@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -143,6 +142,60 @@ namespace ArgentSquire
             string host = GetHost(region);
             BossList bossList = await Get<BossList>($"{host}/wow/boss/?locale={locale}&apikey={_apiKey}");
             return bossList.Bosses;
+        }
+
+        /// <summary>
+        /// Get the challenge mode data for the entire region.
+        /// </summary>
+        /// <returns>
+        /// The challenge mode data for the entire region.
+        /// </returns>
+        public async Task<IList<Challenge>> GetChallengesAsync()
+        {
+            return await GetChallengesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get the challenge mode data for the entire region.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The challenge mode data for the entire region.
+        /// </returns>
+        public async Task<IList<Challenge>> GetChallengesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            ChallengeList challengeList = await Get<ChallengeList>($"{host}/wow/challenge/region?locale={locale}&apikey={_apiKey}");
+            return challengeList.Challenges;
+        }
+
+        /// <summary>
+        /// Get the challenge mode data for the specified realm.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <returns>
+        /// The challenge mode data for the specified realm.
+        /// </returns>
+        public async Task<IList<Challenge>> GetChallengesAsync(string realm)
+        {
+            return await GetChallengesAsync(realm, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the challenge mode data for the specified realm.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The challenge mode data for the specified realm.
+        /// </returns>
+        public async Task<IList<Challenge>> GetChallengesAsync(string realm, Region region, string locale)
+        {
+            string host = GetHost(region);
+            ChallengeList challengeList = await Get<ChallengeList>($"{host}/wow/challenge/{realm}?locale={locale}&apikey={_apiKey}");
+            return challengeList.Challenges;
         }
 
         /// <summary>
