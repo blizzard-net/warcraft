@@ -107,6 +107,18 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the auction house snapshot from the specified file.
+        /// </summary>
+        /// <param name="url">The URL for the auction house file.</param>
+        /// <returns>
+        /// The auction house snapshot from the specified file.
+        /// </returns>
+        public async Task<AuctionHouseSnapshot> GetAuctionHouseSnapshotAsync(string url)
+        {
+            return await Get<AuctionHouseSnapshot>(url);
+        }
+
+        /// <summary>
         /// Get the specified boss.
         /// </summary>
         /// <remarks>
