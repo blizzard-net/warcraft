@@ -3,9 +3,9 @@
 namespace ArgentSquire
 {
     /// <summary>
-    /// A pet.
+    /// A character's pet.
     /// </summary>
-    public class Pet
+    public class ChararcterPet
     {
         /// <summary>
         /// Gets or sets the pet name.

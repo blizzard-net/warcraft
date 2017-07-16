@@ -24,6 +24,6 @@ namespace ArgentSquire
         /// Gets or sets the pets this character has collected.
         /// </summary>
         [JsonProperty("collected")]
-        public IList<Pet> Collected { get; set; }
+        public IList<ChararcterPet> Collected { get; set; }
     }
 }
