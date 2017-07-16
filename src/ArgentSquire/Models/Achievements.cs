@@ -5,9 +5,9 @@ using Newtonsoft.Json;
 namespace ArgentSquire
 {
     /// <summary>
-    /// Character achievements.
+    /// Achievements.
     /// </summary>
-    public class CharacterAchievements
+    public class Achievements
     {
         /// <summary>
         /// Gets or sets the IDs of the achievements completed by this character.

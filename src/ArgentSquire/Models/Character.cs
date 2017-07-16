@@ -13,7 +13,7 @@ namespace ArgentSquire
         /// Gets or sets the achievements.
         /// </summary>
         [JsonProperty("achievements")]
-        public CharacterAchievements Achievements { get; set; }
+        public Achievements Achievements { get; set; }
 
         /// <summary>
         /// Gets or sets the achievement points.

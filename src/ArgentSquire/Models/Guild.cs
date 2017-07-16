@@ -58,6 +58,12 @@ namespace ArgentSquire
         public int AchievementPoints { get; set; }
 
         /// <summary>
+        /// Gets or sets the achievements.
+        /// </summary>
+        [JsonProperty("achievements")]
+        public Achievements Achievements { get; set; }
+
+        /// <summary>
         /// Gets or sets the guild emblem.
         /// </summary>
         [JsonProperty("emblem")]
