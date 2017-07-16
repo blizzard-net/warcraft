@@ -73,7 +73,7 @@ namespace ArgentSquire
         /// Gets or sets the character's guild.
         /// </summary>
         [JsonProperty("guild")]
-        public Guild Guild { get; set; }
+        public CharacterGuild Guild { get; set; }
 
         /// <summary>
         /// Gets or sets the hunter pets.
