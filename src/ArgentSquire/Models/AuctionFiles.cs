@@ -4,14 +4,14 @@ using Newtonsoft.Json;
 namespace ArgentSquire
 {
     /// <summary>
-    /// An auction.
+    /// An auction files listing.
     /// </summary>
-    public class Auction
+    public class AuctionFiles
     {
         /// <summary>
-        /// Gets or sets the auction files.
+        /// Gets or sets the auction file summaries.
         /// </summary>
         [JsonProperty("files")]
-        public IList<AuctionFile> Files { get; set; }
+        public IList<AuctionFileSummary> Files { get; set; }
     }
 }

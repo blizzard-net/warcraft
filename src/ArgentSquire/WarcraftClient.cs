@@ -86,7 +86,7 @@ namespace ArgentSquire
         /// <returns>
         /// The specified auction.
         /// </returns>
-        public async Task<Auction> GetAuctionAsync(string realm)
+        public async Task<AuctionFiles> GetAuctionAsync(string realm)
         {
             return await GetAuctionAsync(realm, _region, _locale);
         }
@@ -100,10 +100,10 @@ namespace ArgentSquire
         /// <returns>
         /// The specified auction.
         /// </returns>
-        public async Task<Auction> GetAuctionAsync(string realm, Region region, string locale)
+        public async Task<AuctionFiles> GetAuctionAsync(string realm, Region region, string locale)
         {
             string host = GetHost(region);
-            return await Get<Auction>($"{host}/wow/auction/data/{realm}?locale={locale}&apikey={_apiKey}");
+            return await Get<AuctionFiles>($"{host}/wow/auction/data/{realm}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>

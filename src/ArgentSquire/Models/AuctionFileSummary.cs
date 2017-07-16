@@ -6,7 +6,7 @@ namespace ArgentSquire
     /// <summary>
     /// An auction file.
     /// </summary>
-    public class AuctionFile
+    public class AuctionFileSummary
     {
         /// <summary>
         /// Gets or sets the URL for the JSON-formatted auction data file.
