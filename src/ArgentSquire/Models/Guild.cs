@@ -68,5 +68,11 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("emblem")]
         public Emblem Emblem { get; set; }
+
+        /// <summary>
+        /// Gets or sets the news feed for the guild.
+        /// </summary>
+        [JsonProperty("news")]
+        public IList<News> News { get; set; }
     }
 }
