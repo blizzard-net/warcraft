@@ -49,7 +49,7 @@ namespace ArgentSquire
         /// Gets or sets the members of the guild.
         /// </summary>
         [JsonProperty("members")]
-        public IList<Member> Members { get; set; }
+        public IList<GuildMember> Members { get; set; }
 
         /// <summary>
         /// Gets or sets the number of achievement points for the guild.
@@ -74,5 +74,11 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("news")]
         public IList<News> News { get; set; }
+
+        /// <summary>
+        /// Gets or sets the challenge mode dungeon information.
+        /// </summary>
+        [JsonProperty("challenge")]
+        public IList<Challenge> Challenge { get; set; }
     }
 }

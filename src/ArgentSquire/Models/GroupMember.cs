@@ -3,20 +3,20 @@
 namespace ArgentSquire
 {
     /// <summary>
-    /// A guild member.
+    /// A member of a challenge mode group.
     /// </summary>
-    public class Member
+    public class GroupMember
     {
         /// <summary>
         /// Gets or sets the character.
         /// </summary>
         [JsonProperty("character")]
-        public GuildCharacter Character { get; set; }
+        public GroupCharacter Character { get; set; }
 
         /// <summary>
-        /// Gets or sets the character's rank in the guild.
+        /// Gets or sets the character spec for the challenge mode run.
         /// </summary>
-        [JsonProperty("rank")]
-        public int Rank { get; set; }
+        [JsonProperty("spec")]
+        public Spec Spec { get; set; }
     }
 }
