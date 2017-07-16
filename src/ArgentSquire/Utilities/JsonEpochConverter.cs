@@ -31,7 +31,13 @@ namespace ArgentSquire
                 return null;
             }
 
-            return SEpochStart.AddMilliseconds((long)reader.Value);
+            long milliseconds;
+            if (long.TryParse(reader.Value.ToString(), out milliseconds))
+            {
+                return SEpochStart.AddMilliseconds(milliseconds);
+            }
+
+            return DateTime.Parse(reader.Value.ToString());
         }
 
         /// <summary>

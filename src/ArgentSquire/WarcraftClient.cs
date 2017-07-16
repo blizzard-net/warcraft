@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -174,6 +175,38 @@ namespace ArgentSquire
             string host = GetHost(region);
             string queryStringFields = CharacterFieldBuilder.BuildQueryString(fields);
             return await Get<Character>($"{host}/wow/character/{realm}/{characterName}?&locale={locale}{queryStringFields}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get the specified guild.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="guildName">The guild name.</param>
+        /// <param name="fields">The guild fields to include.</param>
+        /// <returns>
+        /// The specified guild.
+        /// </returns>
+        public async Task<Guild> GetGuildAsync(string realm, string guildName, GuildFields fields = GuildFields.None)
+        {
+            return await GetGuildAsync(realm, guildName, _region, _locale, fields);
+        }
+
+        /// <summary>
+        /// Get the specified guild.
+        /// </summary>
+        /// <param name="realm">The realm.</param>
+        /// <param name="guildName">The guild name.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <param name="fields">The guild fields to include.</param>
+        /// <returns>
+        /// The specified guild.
+        /// </returns>
+        public async Task<Guild> GetGuildAsync(string realm, string guildName, Region region, string locale, GuildFields fields = GuildFields.None)
+        {
+            string host = GetHost(region);
+            string queryStringFields = GuildFieldBuilder.BuildQueryString(fields);
+            return await Get<Guild>($"{host}/wow/guild/{realm}/{Uri.EscapeUriString(guildName)}?locale={locale}{queryStringFields}&apikey={_apiKey}");
         }
 
         /// <summary>

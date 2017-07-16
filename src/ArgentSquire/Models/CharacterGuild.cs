@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace ArgentSquire
@@ -7,7 +6,7 @@ namespace ArgentSquire
     /// <summary>
     /// A guild.
     /// </summary>
-    public class Guild
+    public class CharacterGuild
     {
         /// <summary>
         /// Gets or sets the last modified timestamp.
@@ -46,10 +45,10 @@ namespace ArgentSquire
         public Faction Side { get; set; }
 
         /// <summary>
-        /// Gets or sets the members of the guild.
+        /// Gets or sets the number of members in the guild.
         /// </summary>
         [JsonProperty("members")]
-        public IList<GuildMember> Members { get; set; }
+        public int Members { get; set; }
 
         /// <summary>
         /// Gets or sets the number of achievement points for the guild.
@@ -58,27 +57,9 @@ namespace ArgentSquire
         public int AchievementPoints { get; set; }
 
         /// <summary>
-        /// Gets or sets the achievements.
-        /// </summary>
-        [JsonProperty("achievements")]
-        public Achievements Achievements { get; set; }
-
-        /// <summary>
         /// Gets or sets the guild emblem.
         /// </summary>
         [JsonProperty("emblem")]
         public Emblem Emblem { get; set; }
-
-        /// <summary>
-        /// Gets or sets the news feed for the guild.
-        /// </summary>
-        [JsonProperty("news")]
-        public IList<News> News { get; set; }
-
-        /// <summary>
-        /// Gets or sets the challenge mode dungeon information.
-        /// </summary>
-        [JsonProperty("challenge")]
-        public IList<Challenge> Challenge { get; set; }
     }
 }

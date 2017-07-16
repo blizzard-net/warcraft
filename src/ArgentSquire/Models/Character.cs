@@ -13,7 +13,7 @@ namespace ArgentSquire
         /// Gets or sets the achievements.
         /// </summary>
         [JsonProperty("achievements")]
-        public CharacterAchievements Achievements { get; set; }
+        public Achievements Achievements { get; set; }
 
         /// <summary>
         /// Gets or sets the achievement points.
@@ -73,7 +73,7 @@ namespace ArgentSquire
         /// Gets or sets the character's guild.
         /// </summary>
         [JsonProperty("guild")]
-        public Guild Guild { get; set; }
+        public CharacterGuild Guild { get; set; }
 
         /// <summary>
         /// Gets or sets the hunter pets.
