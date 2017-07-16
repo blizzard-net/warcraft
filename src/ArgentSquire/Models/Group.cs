@@ -28,6 +28,12 @@ namespace ArgentSquire
         public DateTime Date { get; set; }
 
         /// <summary>
+        /// Gets or sets the medal.
+        /// </summary>
+        [JsonProperty("medal")]
+        public string Medal { get; set; }
+
+        /// <summary>
         /// Gets or sets the faction.
         /// </summary>
         [JsonProperty("faction")]
