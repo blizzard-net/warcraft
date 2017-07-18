@@ -30,7 +30,7 @@ namespace ArgentSquire
         /// Gets or sets the item quality.
         /// </summary>
         [JsonProperty("quality")]
-        public int Quality { get; set; }
+        public ItemQuality Quality { get; set; }
 
         /// <summary>
         /// Gets or sets the item level.

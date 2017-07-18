@@ -138,7 +138,7 @@ namespace ArgentSquire
         /// Gets or sets the quality.
         /// </summary>
         [JsonProperty("quality")]
-        public int Quality { get; set; }
+        public ItemQuality Quality { get; set; }
 
         /// <summary>
         /// Gets or sets the sell price.

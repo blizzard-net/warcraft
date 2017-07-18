@@ -32,10 +32,10 @@ namespace ArgentSquire
         public int ItemId { get; set; }
 
         /// <summary>
-        /// Gets or sets the quality ID.
+        /// Gets or sets the quality.
         /// </summary>
         [JsonProperty("qualityId")]
-        public int QualityId { get; set; }
+        public ItemQuality Quality { get; set; }
 
         /// <summary>
         /// Gets or sets the icon.
