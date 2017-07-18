@@ -382,6 +382,119 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported pets.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported pets.
+        /// </returns>
+        public async Task<IList<Pet>> GetPetsAsync()
+        {
+            return await GetPetsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported pets.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported pets.
+        /// </returns>
+        public async Task<IList<Pet>> GetPetsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            PetList petList = await Get<PetList>($"{host}/wow/pet/?locale={locale}&apikey={_apiKey}");
+            return petList.Pets;
+        }
+
+        /// <summary>
+        /// Get the specified pet ability.
+        /// </summary>
+        /// <param name="abilityId">The pet ability ID.</param>
+        /// <returns>
+        /// The specified pet ability.
+        /// </returns>
+        public async Task<PetAbility> GetPetAbilityAsync(int abilityId)
+        {
+            return await GetPetAbilityAsync(abilityId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified pet ability.
+        /// </summary>
+        /// <param name="abilityId">The pet ability ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified pet ability.
+        /// </returns>
+        public async Task<PetAbility> GetPetAbilityAsync(int abilityId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<PetAbility>($"{host}/wow/pet/ability/{abilityId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get the specified pet species.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <returns>
+        /// The specified pet species.
+        /// </returns>
+        public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId)
+        {
+            return await GetPetSpeciesAsync(speciesId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified pet species.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified pet species.
+        /// </returns>
+        public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<PetSpecies>($"{host}/wow/pet/species/{speciesId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get the pet stats for the specified pet species, level, breed, and quality.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="level">The pet level.</param>
+        /// <param name="breedId">The breed ID.</param>
+        /// <param name="qualityId">The quality ID.</param>
+        /// <returns>
+        /// The pet stats for the specified pet species, level, breed, and quality.
+        /// </returns>
+        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, int qualityId)
+        {
+            return await GetPetStatsAsync(speciesId, level, breedId, qualityId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the pet stats for the specified pet species, level, breed, and quality.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="level">The pet level.</param>
+        /// <param name="breedId">The breed ID.</param>
+        /// <param name="qualityId">The quality ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The pet stats for the specified pet species, level, breed, and quality.
+        /// </returns>
+        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, int qualityId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<PetStats>($"{host}/wow/pet/stats/{speciesId}?level={level}&breedId={breedId}&qualityId={qualityId}&locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Get the PvP leaderboard for the specified bracket.
         /// </summary>
         /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>

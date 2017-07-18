@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
@@ -8,16 +9,10 @@ namespace ArgentSquire
     public class Pet
     {
         /// <summary>
-        /// Gets or sets the pet name.
+        /// Gets or sets a value indicating whether the pet is a battle pet.
         /// </summary>
-        [JsonProperty("name")]
-        public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets the spell ID.
-        /// </summary>
-        [JsonProperty("spellId")]
-        public int SpellId { get; set; }
+        [JsonProperty("canBattle")]
+        public bool CanBattle { get; set; }
 
         /// <summary>
         /// Gets or sets the creature ID.
@@ -26,16 +21,16 @@ namespace ArgentSquire
         public int CreatureId { get; set; }
 
         /// <summary>
-        /// Gets or sets the item ID.
+        /// Gets or sets the name.
         /// </summary>
-        [JsonProperty("itemId")]
-        public int ItemId { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the quality ID.
+        /// Gets or sets the family.
         /// </summary>
-        [JsonProperty("qualityId")]
-        public int QualityId { get; set; }
+        [JsonProperty("family")]
+        public string Family { get; set; }
 
         /// <summary>
         /// Gets or sets the icon.
@@ -44,51 +39,33 @@ namespace ArgentSquire
         public string Icon { get; set; }
 
         /// <summary>
+        /// Gets or sets the quality ID.
+        /// </summary>
+        [JsonProperty("qualityId")]
+        public int QualityId { get; set; }
+
+        /// <summary>
         /// Gets or sets the stats.
         /// </summary>
         [JsonProperty("stats")]
         public PetStats Stats { get; set; }
 
         /// <summary>
-        /// Gets or sets the battle pet GUID.
+        /// Gets or sets the pet families that this pet is strong against.
         /// </summary>
-        [JsonProperty("battlePetGuid")]
-        public string BattlePetGuid { get; set; }
+        [JsonProperty("strongAgainst")]
+        public IList<string> StrongAgainst { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether this pet is a favorite.
+        /// Gets or sets the type ID.
         /// </summary>
-        [JsonProperty("isFavorite")]
-        public bool IsFavorite { get; set; }
+        [JsonProperty("typeId")]
+        public int TypeId { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the first ability slot is selected.
+        /// Gets or sets the pet families that this pet is weak against.
         /// </summary>
-        [JsonProperty("isFirstAbilitySlotSelected")]
-        public bool IsFirstAbilitySlotSelected { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the second ability slot is selected.
-        /// </summary>
-        [JsonProperty("isSecondAbilitySlotSelected")]
-        public bool IsSecondAbilitySlotSelected { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the third ability slot is selected.
-        /// </summary>
-        [JsonProperty("isThirdAbilitySlotSelected")]
-        public bool IsThirdAbilitySlotSelected { get; set; }
-
-        /// <summary>
-        /// Gets or sets the creature name.
-        /// </summary>
-        [JsonProperty("creatureName")]
-        public string CreatureName { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether the pet can battle.
-        /// </summary>
-        [JsonProperty("canBattle")]
-        public bool CanBattle { get; set; }
+        [JsonProperty("weakAgainst")]
+        public IList<string> WeakAgainst { get; set; }
     }
 }
