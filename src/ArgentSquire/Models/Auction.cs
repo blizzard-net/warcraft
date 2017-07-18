@@ -105,9 +105,9 @@ namespace ArgentSquire
         public int? PetLevel { get; set; }
 
         /// <summary>
-        /// Gets or sets the pet quality ID.
+        /// Gets or sets the battle pet quality.
         /// </summary>
         [JsonProperty("petQualityId")]
-        public int? PetQualityId { get; set; }
+        public BattlePetQuality? PetQuality { get; set; }
     }
 }
