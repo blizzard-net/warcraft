@@ -467,13 +467,13 @@ namespace ArgentSquire
         /// <param name="speciesId">The pet species ID.</param>
         /// <param name="level">The pet level.</param>
         /// <param name="breedId">The breed ID.</param>
-        /// <param name="qualityId">The quality ID.</param>
+        /// <param name="quality">The quality.</param>
         /// <returns>
         /// The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
-        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, int qualityId)
+        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality)
         {
-            return await GetPetStatsAsync(speciesId, level, breedId, qualityId, _region, _locale);
+            return await GetPetStatsAsync(speciesId, level, breedId, quality, _region, _locale);
         }
 
         /// <summary>
@@ -482,16 +482,16 @@ namespace ArgentSquire
         /// <param name="speciesId">The pet species ID.</param>
         /// <param name="level">The pet level.</param>
         /// <param name="breedId">The breed ID.</param>
-        /// <param name="qualityId">The quality ID.</param>
+        /// <param name="quality">The quality.</param>
         /// <param name="region">The region.</param>
         /// <param name="locale">The locale.</param>
         /// <returns>
         /// The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
-        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, int qualityId, Region region, string locale)
+        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, string locale)
         {
             string host = GetHost(region);
-            return await Get<PetStats>($"{host}/wow/pet/stats/{speciesId}?level={level}&breedId={breedId}&qualityId={qualityId}&locale={locale}&apikey={_apiKey}");
+            return await Get<PetStats>($"{host}/wow/pet/stats/{speciesId}?level={level}&breedId={breedId}&qualityId={quality:D}&locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
