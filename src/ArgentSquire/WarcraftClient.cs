@@ -435,6 +435,33 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get the specified pet species.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <returns>
+        /// The specified pet species.
+        /// </returns>
+        public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId)
+        {
+            return await GetPetSpeciesAsync(speciesId, _region, _locale);
+        }
+
+        /// <summary>
+        /// Get the specified pet species.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// The specified pet species.
+        /// </returns>
+        public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId, Region region, string locale)
+        {
+            string host = GetHost(region);
+            return await Get<PetSpecies>($"{host}/wow/pet/species/{speciesId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
         /// Get the PvP leaderboard for the specified bracket.
         /// </summary>
         /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
