@@ -119,6 +119,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported battlegroups.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported battlegroups.
+        /// </returns>
+        public async Task<IList<Battlegroup>> GetBattlegroupsAsync()
+        {
+            return await GetBattlegroupsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported battlegroups.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported battlegroups.
+        /// </returns>
+        public async Task<IList<Battlegroup>> GetBattlegroupsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            BattlegroupList battlegroupList = await Get<BattlegroupList>($"{host}/wow/data/battlegroups/?locale={locale}&apikey={_apiKey}");
+            return battlegroupList.Battlegroups;
+        }
+
+        /// <summary>
         /// Get the specified boss.
         /// </summary>
         /// <remarks>
