@@ -656,6 +656,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported zones.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported zones.
+        /// </returns>
+        public async Task<IList<Zone>> GetZonesAsync()
+        {
+            return await GetZonesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported zones.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported zones.
+        /// </returns>
+        public async Task<IList<Zone>> GetZonesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            ZoneList zoneList = await Get<ZoneList>($"{host}/wow/zone/?locale={locale}&apikey={_apiKey}");
+            return zoneList.Zones;
+        }
+
+        /// <summary>
         /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">

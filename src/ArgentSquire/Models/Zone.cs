@@ -45,6 +45,12 @@ namespace ArgentSquire
         public int ExpansionId { get; set; }
 
         /// <summary>
+        /// Gets or sets the patch.
+        /// </summary>
+        [JsonProperty("patch")]
+        public string Patch { get; set; }
+
+        /// <summary>
         /// Gets or sets the number of players.
         /// </summary>
         [JsonProperty("numPlayers")]
