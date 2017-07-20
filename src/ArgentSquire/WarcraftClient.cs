@@ -296,6 +296,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported character races.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported character races.
+        /// </returns>
+        public async Task<IList<CharacterRace>> GetCharacterRacesAsync()
+        {
+            return await GetCharacterRacesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported character races.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported character races.
+        /// </returns>
+        public async Task<IList<CharacterRace>> GetCharacterRacesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            CharacterRaceList characterRaceList = await Get<CharacterRaceList>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}");
+            return characterRaceList.Races;
+        }
+
+        /// <summary>
         /// Get the specified guild.
         /// </summary>
         /// <param name="realm">The realm.</param>
