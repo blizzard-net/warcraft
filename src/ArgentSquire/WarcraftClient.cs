@@ -296,6 +296,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported character classes.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported character classes.
+        /// </returns>
+        public async Task<IList<CharacterClassData>> GetCharacterClassesAsync()
+        {
+            return await GetCharacterClassesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported character classes.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported character classes.
+        /// </returns>
+        public async Task<IList<CharacterClassData>> GetCharacterClassesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            CharacterClassList characterClassList = await Get<CharacterClassList>($"{host}/wow/data/character/classes?locale={locale}&apikey={_apiKey}");
+            return characterClassList.Classes;
+        }
+
+        /// <summary>
         /// Get a list of all supported character races.
         /// </summary>
         /// <returns>
