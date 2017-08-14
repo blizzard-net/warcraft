@@ -296,6 +296,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </summary>
+        /// <returns>
+        /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync()
+        {
+            return await GetCharacterAchievementsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            AchievementCategoryList achievementList = await Get<AchievementCategoryList>($"{host}/wow/data/character/achievements?locale={locale}&apikey={_apiKey}");
+            return achievementList.AchievementCategories;
+        }
+
+        /// <summary>
         /// Get a list of all supported character classes.
         /// </summary>
         /// <returns>
