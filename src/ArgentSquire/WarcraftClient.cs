@@ -406,6 +406,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all guild rewards.
+        /// </summary>
+        /// <returns>
+        /// A list of all guild rewards.
+        /// </returns>
+        public async Task<IList<Reward>> GetGuildRewardsAsync()
+        {
+            return await GetGuildRewardsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all guild rewards.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all guild rewards.
+        /// </returns>
+        public async Task<IList<Reward>> GetGuildRewardsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            GuildRewardsList guildRewardsList = await Get<GuildRewardsList>($"{host}/wow/data/guild/rewards?locale={locale}&apikey={_apiKey}");
+            return guildRewardsList.Rewards;
+        }
+
+        /// <summary>
         /// Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>
