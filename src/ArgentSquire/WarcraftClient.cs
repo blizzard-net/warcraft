@@ -406,6 +406,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all guild achievements.
+        /// </summary>
+        /// <returns>
+        /// A list of all guild achievements.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync()
+        {
+            return await GetGuildAchievementsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all guild achievements.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all guild achievements.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            GuildAchievementsList guildAchievementsList = await Get<GuildAchievementsList>($"{host}/wow/data/guild/achievements?locale={locale}&apikey={_apiKey}");
+            return guildAchievementsList.Achievements;
+        }
+
+        /// <summary>
         /// Get a list of all guild perks.
         /// </summary>
         /// <returns>
