@@ -511,6 +511,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all item classes.
+        /// </summary>
+        /// <returns>
+        /// A list of all item classes.
+        /// </returns>
+        public async Task<IList<ItemClass>> GetItemClassesAsync()
+        {
+            return await GetItemClassesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all item classes.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all item classes.
+        /// </returns>
+        public async Task<IList<ItemClass>> GetItemClassesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            ItemClassesList itemClassesList = await Get<ItemClassesList>($"{host}/wow/data/item/classes?locale={locale}&apikey={_apiKey}");
+            return itemClassesList.Classes;
+        }
+
+        /// <summary>
         /// Get the specified item set.
         /// </summary>
         /// <param name="itemSetId">The item set ID.</param>
