@@ -863,6 +863,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a dictionary of talents, indexed by character class.
+        /// </summary>
+        /// <returns>
+        /// A dictionary of talents, indexed by character class.
+        /// </returns>
+        public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync()
+        {
+            return await GetTalentsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a dictionary of talents, indexed by character class.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A dictionary of talents, indexed by character class.
+        /// </returns>
+        public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            IDictionary<CharacterClass, TalentSet> talents = await Get<IDictionary<CharacterClass, TalentSet>>($"{host}/wow/data/talents?locale={locale}&apikey={_apiKey}");
+            return talents;
+        }
+
+        /// <summary>
         /// Get the specified zone.
         /// </summary>
         /// <param name="zoneId">The zone ID.</param>
