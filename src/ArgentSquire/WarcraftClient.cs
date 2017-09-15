@@ -119,6 +119,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all supported battlegroups.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported battlegroups.
+        /// </returns>
+        public async Task<IList<Battlegroup>> GetBattlegroupsAsync()
+        {
+            return await GetBattlegroupsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported battlegroups.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported battlegroups.
+        /// </returns>
+        public async Task<IList<Battlegroup>> GetBattlegroupsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            BattlegroupList battlegroupList = await Get<BattlegroupList>($"{host}/wow/data/battlegroups/?locale={locale}&apikey={_apiKey}");
+            return battlegroupList.Battlegroups;
+        }
+
+        /// <summary>
         /// Get the specified boss.
         /// </summary>
         /// <remarks>
@@ -270,6 +296,84 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </summary>
+        /// <returns>
+        /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync()
+        {
+            return await GetCharacterAchievementsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            AchievementCategoryList achievementList = await Get<AchievementCategoryList>($"{host}/wow/data/character/achievements?locale={locale}&apikey={_apiKey}");
+            return achievementList.AchievementCategories;
+        }
+
+        /// <summary>
+        /// Get a list of all supported character classes.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported character classes.
+        /// </returns>
+        public async Task<IList<CharacterClassData>> GetCharacterClassesAsync()
+        {
+            return await GetCharacterClassesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported character classes.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported character classes.
+        /// </returns>
+        public async Task<IList<CharacterClassData>> GetCharacterClassesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            CharacterClassList characterClassList = await Get<CharacterClassList>($"{host}/wow/data/character/classes?locale={locale}&apikey={_apiKey}");
+            return characterClassList.Classes;
+        }
+
+        /// <summary>
+        /// Get a list of all supported character races.
+        /// </summary>
+        /// <returns>
+        /// A list of all supported character races.
+        /// </returns>
+        public async Task<IList<CharacterRace>> GetCharacterRacesAsync()
+        {
+            return await GetCharacterRacesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all supported character races.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all supported character races.
+        /// </returns>
+        public async Task<IList<CharacterRace>> GetCharacterRacesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            CharacterRaceList characterRaceList = await Get<CharacterRaceList>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}");
+            return characterRaceList.Races;
+        }
+
+        /// <summary>
         /// Get the specified guild.
         /// </summary>
         /// <param name="realm">The realm.</param>
@@ -302,6 +406,84 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all guild achievements.
+        /// </summary>
+        /// <returns>
+        /// A list of all guild achievements.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync()
+        {
+            return await GetGuildAchievementsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all guild achievements.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all guild achievements.
+        /// </returns>
+        public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            GuildAchievementsList guildAchievementsList = await Get<GuildAchievementsList>($"{host}/wow/data/guild/achievements?locale={locale}&apikey={_apiKey}");
+            return guildAchievementsList.Achievements;
+        }
+
+        /// <summary>
+        /// Get a list of all guild perks.
+        /// </summary>
+        /// <returns>
+        /// A list of all guild perks.
+        /// </returns>
+        public async Task<IList<Perk>> GetGuildPerksAsync()
+        {
+            return await GetGuildPerksAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all guild perks.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all guild perks.
+        /// </returns>
+        public async Task<IList<Perk>> GetGuildPerksAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            GuildPerksList guildPerksList = await Get<GuildPerksList>($"{host}/wow/data/guild/perks?locale={locale}&apikey={_apiKey}");
+            return guildPerksList.Perks;
+        }
+
+        /// <summary>
+        /// Get a list of all guild rewards.
+        /// </summary>
+        /// <returns>
+        /// A list of all guild rewards.
+        /// </returns>
+        public async Task<IList<Reward>> GetGuildRewardsAsync()
+        {
+            return await GetGuildRewardsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all guild rewards.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all guild rewards.
+        /// </returns>
+        public async Task<IList<Reward>> GetGuildRewardsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            GuildRewardsList guildRewardsList = await Get<GuildRewardsList>($"{host}/wow/data/guild/rewards?locale={locale}&apikey={_apiKey}");
+            return guildRewardsList.Rewards;
+        }
+
+        /// <summary>
         /// Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>
@@ -326,6 +508,32 @@ namespace ArgentSquire
         {
             string host = GetHost(region);
             return await Get<Item>($"{host}/wow/item/{itemId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get a list of all item classes.
+        /// </summary>
+        /// <returns>
+        /// A list of all item classes.
+        /// </returns>
+        public async Task<IList<ItemClass>> GetItemClassesAsync()
+        {
+            return await GetItemClassesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all item classes.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all item classes.
+        /// </returns>
+        public async Task<IList<ItemClass>> GetItemClassesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            ItemClassesList itemClassesList = await Get<ItemClassesList>($"{host}/wow/data/item/classes?locale={locale}&apikey={_apiKey}");
+            return itemClassesList.Classes;
         }
 
         /// <summary>
@@ -495,6 +703,32 @@ namespace ArgentSquire
         }
 
         /// <summary>
+        /// Get a list of all pet types.
+        /// </summary>
+        /// <returns>
+        /// A list of all pet types.
+        /// </returns>
+        public async Task<IList<PetType>> GetPetTypesAsync()
+        {
+            return await GetPetTypesAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a list of all pet types.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A list of all pet types.
+        /// </returns>
+        public async Task<IList<PetType>> GetPetTypesAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            PetTypeList petTypeList = await Get<PetTypeList>($"{host}/wow/data/pet/types?locale={locale}&apikey={_apiKey}");
+            return petTypeList.PetTypes;
+        }
+
+        /// <summary>
         /// Get the PvP leaderboard for the specified bracket.
         /// </summary>
         /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
@@ -626,6 +860,32 @@ namespace ArgentSquire
         {
             string host = GetHost(region);
             return await Get<Spell>($"{host}/wow/spell/{spellId}?locale={locale}&apikey={_apiKey}");
+        }
+
+        /// <summary>
+        /// Get a dictionary of talents, indexed by character class.
+        /// </summary>
+        /// <returns>
+        /// A dictionary of talents, indexed by character class.
+        /// </returns>
+        public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync()
+        {
+            return await GetTalentsAsync(_region, _locale);
+        }
+
+        /// <summary>
+        /// Get a dictionary of talents, indexed by character class.
+        /// </summary>
+        /// <param name="region">The region.</param>
+        /// <param name="locale">The locale.</param>
+        /// <returns>
+        /// A dictionary of talents, indexed by character class.
+        /// </returns>
+        public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync(Region region, string locale)
+        {
+            string host = GetHost(region);
+            IDictionary<CharacterClass, TalentSet> talents = await Get<IDictionary<CharacterClass, TalentSet>>($"{host}/wow/data/talents?locale={locale}&apikey={_apiKey}");
+            return talents;
         }
 
         /// <summary>

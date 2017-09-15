@@ -20,6 +20,12 @@ namespace ArgentSquire
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets the subtext.
+        /// </summary>
+        [JsonProperty("subtext")]
+        public string Subtext { get; set; }
+
+        /// <summary>
         /// Gets or sets the icon.
         /// </summary>
         [JsonProperty("icon")]
