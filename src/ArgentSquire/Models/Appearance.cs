@@ -24,5 +24,11 @@ namespace ArgentSquire
         /// </summary>
         [JsonProperty("itemAppearanceModId")]
         public int ItemAppearanceModId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the transmog item appearance ID.
+        /// </summary>
+        [JsonProperty("transmogItemAppearanceModId")]
+        public int TransmogItemAppearanceModId { get; set; }
     }
 }
