@@ -966,7 +966,11 @@ namespace ArgentSquire
             T item = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
             {
                 ContractResolver = new ArgentSquireContractResolver(),
+#if DEBUG
                 MissingMemberHandling = MissingMemberHandling.Error
+#else
+                MissingMemberHandling = MissingMemberHandling.Ignore
+#endif
             });
 
             return item;
