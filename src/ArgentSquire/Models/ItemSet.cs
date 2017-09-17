@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
+    /// <summary>
+    /// An item set.
+    /// </summary>
     public class ItemSet
     {
         /// <summary>
