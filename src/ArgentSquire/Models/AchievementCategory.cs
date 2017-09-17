@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
+    /// <summary>
+    /// An achievement category.
+    /// </summary>
     public class AchievementCategory
     {
         /// <summary>

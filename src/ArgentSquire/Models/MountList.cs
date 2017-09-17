@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace ArgentSquire
 {
+    /// <summary>
+    /// A list of mounts.
+    /// </summary>
     public class MountList
     {
         /// <summary>
