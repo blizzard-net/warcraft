@@ -288,4 +288,4 @@ __pycache__/
 *.xsd.cs
 
 # appSettings.json with API key for unit tests
-/src/ArgentSquire.Tests/appSettings.json
+/src/ArgentPonyWarcraftClient.Tests/appSettings.json
