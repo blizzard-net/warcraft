@@ -10,10 +10,10 @@
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <Copyright>Copyright 2017 (c) Dan Jagnow. All rights reserved.</Copyright>
     <PackageTags>Warcraft World-of-Warcraft WoW Blizzard</PackageTags>
-    <ProjectUrl>https://github.com/danjagnow/ArgentPonyWarcraftClientWarcraftClient</ProjectUrl>
-    <RepositoryUrl>https://github.com/danjagnow/ArgentPonyWarcraftClientWarcraftClient</RepositoryUrl>
+    <ProjectUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</ProjectUrl>
+    <RepositoryUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <LicenseUrl>https://github.com/danjagnow/ArgentPonyWarcraftClientWarcraftClient/blob/master/LICENSE</LicenseUrl>
+    <LicenseUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient/blob/master/LICENSE</LicenseUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
