@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <PackageId>ArgentPonyWarcraftClient</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Dan Jagnow</Authors>
+    <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Community Web APIs</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Dan Jagnow. All rights reserved.</Copyright>
+    <PackageTags>Warcraft World-of-Warcraft WoW Blizzard</PackageTags>
+    <ProjectUrl>https://github.com/danjagnow/ArgentPonyWarcraftClientWarcraftClient</ProjectUrl>
+    <RepositoryUrl>https://github.com/danjagnow/ArgentPonyWarcraftClientWarcraftClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <LicenseUrl>https://github.com/danjagnow/ArgentPonyWarcraftClientWarcraftClient/blob/master/LICENSE</LicenseUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.1\ArgentPonyWarcraftClient.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.1\ArgentPonyWarcraftClient.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.0" />
+  </ItemGroup>
+
+</Project>
