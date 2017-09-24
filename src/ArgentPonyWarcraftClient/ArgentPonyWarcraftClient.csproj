@@ -7,13 +7,17 @@
     <Authors>Dan Jagnow</Authors>
     <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Community Web APIs</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
-    <Copyright>Copyright 2017 (c) Dan Jagnow. All rights reserved.</Copyright>
+    <Copyright>Copyright © Dan Jagnow 2017</Copyright>
+    <Summary>The Argent Pony .NET client for the Blizzard World of Warcraft Community Web APIs</Summary>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Title>Argent Pony Warcraft Client</Title>
     <PackageTags>Warcraft World-of-Warcraft WoW Blizzard</PackageTags>
-    <ProjectUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</ProjectUrl>
+    <PackageProjectUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</PackageProjectUrl>
     <RepositoryUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <LicenseUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient/blob/master/LICENSE</LicenseUrl>
+    <PackageLicenseUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient/blob/master/LICENSE</PackageLicenseUrl>
+    <RootNamespace>ArgentPonyWarcraftClient</RootNamespace>
+    <AssemblyName>ArgentPonyWarcraftClient</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
