@@ -16,6 +16,7 @@
     <RepositoryUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient/blob/master/ArgentPony.png</PackageIconUrl>
     <RootNamespace>ArgentPonyWarcraftClient</RootNamespace>
     <AssemblyName>ArgentPonyWarcraftClient</AssemblyName>
   </PropertyGroup>
