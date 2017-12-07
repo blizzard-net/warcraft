@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Utilities;
 using Newtonsoft.Json;
 
 namespace ArgentPonyWarcraftClient
@@ -12,6 +13,8 @@ namespace ArgentPonyWarcraftClient
     /// </summary>
     public class WarcraftClient
     {
+        private readonly HttpClient _client;
+
         /// <summary>
         /// The API key.
         /// </summary>
@@ -47,6 +50,7 @@ namespace ArgentPonyWarcraftClient
         /// <param name="locale">The locale.</param>
         public WarcraftClient(string apiKey, Region region, string locale)
         {
+            _client = GlobalHttpClient.Instance;
             _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
             _region = region;
             _locale = locale;
@@ -956,9 +960,8 @@ namespace ArgentPonyWarcraftClient
         private async Task<T> Get<T>(string requestUri)
         {
             // Retrieve the response.  Throw an error if we had a problem.
-            var client = new HttpClient();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            HttpResponseMessage response = await client.GetAsync(requestUri);
+            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            HttpResponseMessage response = await _client.GetAsync(requestUri);
             response.EnsureSuccessStatusCode();
 
             // Deserialize an object of type T from the JSON string.
