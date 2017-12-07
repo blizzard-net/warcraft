@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Utilities;
 using Newtonsoft.Json;
 
 namespace ArgentPonyWarcraftClient
@@ -50,7 +49,7 @@ namespace ArgentPonyWarcraftClient
         /// <param name="locale">The locale.</param>
         public WarcraftClient(string apiKey, Region region, string locale)
         {
-            _client = GlobalHttpClient.Instance;
+            _client = InternalHttpClient.Instance;
             _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
             _region = region;
             _locale = locale;
