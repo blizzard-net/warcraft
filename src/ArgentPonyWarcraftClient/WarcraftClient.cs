@@ -13,20 +13,8 @@ namespace ArgentPonyWarcraftClient
     public class WarcraftClient
     {
         private readonly HttpClient _client;
-
-        /// <summary>
-        /// The API key.
-        /// </summary>
         private readonly string _apiKey;
-
-        /// <summary>
-        /// The region.
-        /// </summary>
         private readonly Region _region;
-
-        /// <summary>
-        /// The locale.
-        /// </summary>
         private readonly string _locale;
 
         /// <summary>
@@ -44,9 +32,12 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Initializes a new instance of the <see cref="WarcraftClient"/> class.
         /// </summary>
-        /// <param name="apiKey">The API key.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="apiKey">Blizzard Mashery API key. To create an API key visit https://dev.battle.net/member/register </param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">
+        ///     Specifies the language that the result will be in. Visit
+        ///     https://dev.battle.net/docs/read/community_apis to see a list of available locales.
+        /// </param>
         public WarcraftClient(string apiKey, Region region, string locale)
         {
             _client = InternalHttpClient.Instance;
@@ -71,8 +62,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified achievement.
         /// </summary>
         /// <param name="id">The achievement ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified achievement.
         /// </returns>
@@ -98,8 +89,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified auction.
         /// </summary>
         /// <param name="realm">The realm.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified auction.
         /// </returns>
@@ -135,8 +126,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all supported battlegroups.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported battlegroups.
         /// </returns>
@@ -169,8 +160,8 @@ namespace ArgentPonyWarcraftClient
         /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
         /// </remarks>
         /// <param name="id">The boss ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified boss.
         /// </returns>
@@ -200,8 +191,8 @@ namespace ArgentPonyWarcraftClient
         /// <remarks>
         /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
         /// </remarks>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported bosses.
         /// </returns>
@@ -226,8 +217,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get the challenge mode data for the entire region.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The challenge mode data for the entire region.
         /// </returns>
@@ -254,8 +245,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The challenge mode data for the specified realm.
         /// </returns>
@@ -285,8 +276,8 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="characterName">The character name.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <param name="fields">The character fields to include.</param>
         /// <returns>
         /// The specified character.
@@ -312,8 +303,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
@@ -338,8 +329,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all supported character classes.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported character classes.
         /// </returns>
@@ -364,8 +355,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all supported character races.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported character races.
         /// </returns>
@@ -395,8 +386,8 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="guildName">The guild name.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <param name="fields">The guild fields to include.</param>
         /// <returns>
         /// The specified guild.
@@ -422,8 +413,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all guild achievements.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all guild achievements.
         /// </returns>
@@ -448,8 +439,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all guild perks.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all guild perks.
         /// </returns>
@@ -474,8 +465,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all guild rewards.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all guild rewards.
         /// </returns>
@@ -502,8 +493,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified item.
         /// </returns>
@@ -527,8 +518,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all item classes.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all item classes.
         /// </returns>
@@ -555,8 +546,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified item set.
         /// </summary>
         /// <param name="itemSetId">The item set ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified item set.
         /// </returns>
@@ -580,8 +571,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all supported mounts.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported mounts.
         /// </returns>
@@ -606,8 +597,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all supported pets.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported pets.
         /// </returns>
@@ -634,8 +625,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified pet ability.
         /// </summary>
         /// <param name="abilityId">The pet ability ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified pet ability.
         /// </returns>
@@ -661,8 +652,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified pet species.
         /// </summary>
         /// <param name="speciesId">The pet species ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified pet species.
         /// </returns>
@@ -694,8 +685,8 @@ namespace ArgentPonyWarcraftClient
         /// <param name="level">The pet level.</param>
         /// <param name="breedId">The breed ID.</param>
         /// <param name="quality">The quality.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
@@ -719,8 +710,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all pet types.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all pet types.
         /// </returns>
@@ -747,8 +738,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the PvP leaderboard for the specified bracket.
         /// </summary>
         /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The PvP leaderboard for the specified bracket.
         /// </returns>
@@ -774,8 +765,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified quest.
         /// </summary>
         /// <param name="questId">The quest ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified quest.
         /// </returns>
@@ -799,8 +790,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get the statuses for all realms.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The statuses for all realms.
         /// </returns>
@@ -827,8 +818,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified recipe.
         /// </summary>
         /// <param name="recipeId">The recipe ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified recipe.
         /// </returns>
@@ -854,8 +845,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified spell.
         /// </summary>
         /// <param name="spellId">The spell ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified spell.
         /// </returns>
@@ -879,8 +870,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a dictionary of talents, indexed by character class.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A dictionary of talents, indexed by character class.
         /// </returns>
@@ -907,8 +898,8 @@ namespace ArgentPonyWarcraftClient
         /// Get the specified zone.
         /// </summary>
         /// <param name="zoneId">The zone ID.</param>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// The specified zone.
         /// </returns>
@@ -932,8 +923,8 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get a list of all supported zones.
         /// </summary>
-        /// <param name="region">The region.</param>
-        /// <param name="locale">The locale.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
         /// A list of all supported zones.
         /// </returns>
@@ -981,7 +972,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Get the host for the specified region.
         /// </summary>
-        /// <param name="region">The region.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <returns>
         /// The host for the specified region.
         /// </returns>
