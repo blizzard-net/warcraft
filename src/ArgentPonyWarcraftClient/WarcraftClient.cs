@@ -1155,7 +1155,14 @@ namespace ArgentPonyWarcraftClient
             {
                 string safeUri = requestUri.Replace(_apiKey, "{apiKey}");
                 string content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                throw new WarcraftClientException($"Response code {(int) response.StatusCode} ({response.ReasonPhrase}) does not indicate success. Request: {safeUri} Response: {content}");   
+                string message = $"Response code {(int)response.StatusCode} ({response.ReasonPhrase}) does not indicate success. Request: {safeUri} Response: {content}";
+                throw new WarcraftClientException(
+                    message: message,
+                    innerException: null,
+                    requestUri: safeUri,
+                    responseStatusCode: response.StatusCode,
+                    responseReasonPhrase: response.ReasonPhrase,
+                    responseContent: content);
             }
 
             // Deserialize an object of type T from the JSON string.
