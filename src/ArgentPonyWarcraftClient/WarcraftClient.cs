@@ -53,6 +53,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified achievement.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Achievement> GetAchievementAsync(int id)
         {
             return await GetAchievementAsync(id, _region, _locale);
@@ -67,6 +70,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified achievement.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Achievement> GetAchievementAsync(int id, Region region, string locale)
         {
             string host = GetHost(region);
@@ -80,6 +86,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified auction.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<AuctionFiles> GetAuctionAsync(string realm)
         {
             return await GetAuctionAsync(realm, _region, _locale);
@@ -94,6 +103,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified auction.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<AuctionFiles> GetAuctionAsync(string realm, Region region, string locale)
         {
             string host = GetHost(region);
@@ -107,6 +119,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The auction house snapshot from the specified file.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<AuctionHouseSnapshot> GetAuctionHouseSnapshotAsync(string url)
         {
             return await Get<AuctionHouseSnapshot>(url);
@@ -118,6 +133,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported battlegroups.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Battlegroup>> GetBattlegroupsAsync()
         {
             return await GetBattlegroupsAsync(_region, _locale);
@@ -131,6 +149,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported battlegroups.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Battlegroup>> GetBattlegroupsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -148,6 +169,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified boss.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Boss> GetBossAsync(int id)
         {
             return await GetBossAsync(id, _region, _locale);
@@ -165,6 +189,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified boss.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Boss> GetBossAsync(int id, Region region, string locale)
         {
             string host = GetHost(region);
@@ -180,6 +207,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported bosses.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<List<Boss>> GetBossesAsync()
         {
             return await GetBossesAsync(_region, _locale);
@@ -196,6 +226,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported bosses.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<List<Boss>> GetBossesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -209,6 +242,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The challenge mode data for the entire region.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Challenge>> GetChallengesAsync()
         {
             return await GetChallengesAsync(_region, _locale);
@@ -222,6 +258,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The challenge mode data for the entire region.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Challenge>> GetChallengesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -236,6 +275,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The challenge mode data for the specified realm.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Challenge>> GetChallengesAsync(string realm)
         {
             return await GetChallengesAsync(realm, _region, _locale);
@@ -250,6 +292,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The challenge mode data for the specified realm.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Challenge>> GetChallengesAsync(string realm, Region region, string locale)
         {
             string host = GetHost(region);
@@ -266,6 +311,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified character.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Character> GetCharacterAsync(string realm, string characterName, CharacterFields fields = CharacterFields.None)
         {
             return await GetCharacterAsync(realm, characterName, _region, _locale, fields);
@@ -282,6 +330,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified character.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None)
         {
             string host = GetHost(region);
@@ -295,6 +346,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync()
         {
             return await GetCharacterAchievementsAsync(_region, _locale);
@@ -308,6 +362,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -321,6 +378,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character classes.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<CharacterClassData>> GetCharacterClassesAsync()
         {
             return await GetCharacterClassesAsync(_region, _locale);
@@ -334,6 +394,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character classes.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<CharacterClassData>> GetCharacterClassesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -347,6 +410,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character races.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<CharacterRace>> GetCharacterRacesAsync()
         {
             return await GetCharacterRacesAsync(_region, _locale);
@@ -360,6 +426,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character races.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<CharacterRace>> GetCharacterRacesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -376,6 +445,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified guild.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Guild> GetGuildAsync(string realm, string guildName, GuildFields fields = GuildFields.None)
         {
             return await GetGuildAsync(realm, guildName, _region, _locale, fields);
@@ -392,6 +464,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified guild.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Guild> GetGuildAsync(string realm, string guildName, Region region, string locale, GuildFields fields = GuildFields.None)
         {
             string host = GetHost(region);
@@ -405,6 +480,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all guild achievements.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync()
         {
             return await GetGuildAchievementsAsync(_region, _locale);
@@ -418,6 +496,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all guild achievements.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -431,6 +512,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all guild perks.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Perk>> GetGuildPerksAsync()
         {
             return await GetGuildPerksAsync(_region, _locale);
@@ -444,6 +528,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all guild perks.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Perk>> GetGuildPerksAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -457,6 +544,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all guild rewards.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Reward>> GetGuildRewardsAsync()
         {
             return await GetGuildRewardsAsync(_region, _locale);
@@ -470,6 +560,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all guild rewards.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Reward>> GetGuildRewardsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -484,6 +577,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified item.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Item> GetItemAsync(int itemId)
         {
             return await GetItemAsync(itemId, _region, _locale);
@@ -498,6 +594,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified item.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Item> GetItemAsync(int itemId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -510,6 +609,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all item classes.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<ItemClass>> GetItemClassesAsync()
         {
             return await GetItemClassesAsync(_region, _locale);
@@ -523,6 +625,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all item classes.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<ItemClass>> GetItemClassesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -537,6 +642,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified item set.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<ItemSet> GetItemSetAsync(int itemSetId)
         {
             return await GetItemSetAsync(itemSetId, _region, _locale);
@@ -551,6 +659,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified item set.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<ItemSet> GetItemSetAsync(int itemSetId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -563,6 +674,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported mounts.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Mount>> GetMountsAsync()
         {
             return await GetMountsAsync(_region, _locale);
@@ -576,6 +690,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported mounts.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Mount>> GetMountsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -589,6 +706,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported pets.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Pet>> GetPetsAsync()
         {
             return await GetPetsAsync(_region, _locale);
@@ -602,6 +722,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported pets.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Pet>> GetPetsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -616,6 +739,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified pet ability.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PetAbility> GetPetAbilityAsync(int abilityId)
         {
             return await GetPetAbilityAsync(abilityId, _region, _locale);
@@ -630,6 +756,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified pet ability.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PetAbility> GetPetAbilityAsync(int abilityId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -643,6 +772,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified pet species.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId)
         {
             return await GetPetSpeciesAsync(speciesId, _region, _locale);
@@ -657,6 +789,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified pet species.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -673,6 +808,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality)
         {
             return await GetPetStatsAsync(speciesId, level, breedId, quality, _region, _locale);
@@ -690,6 +828,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, string locale)
         {
             string host = GetHost(region);
@@ -702,6 +843,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all pet types.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<PetType>> GetPetTypesAsync()
         {
             return await GetPetTypesAsync(_region, _locale);
@@ -715,6 +859,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all pet types.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<PetType>> GetPetTypesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -729,6 +876,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The PvP leaderboard for the specified bracket.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PvpLeaderboard> GetPvpLeaderboardAsync(string bracket)
         {
             return await GetPvpLeaderboardAsync(bracket, _region, _locale);
@@ -743,6 +893,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The PvP leaderboard for the specified bracket.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<PvpLeaderboard> GetPvpLeaderboardAsync(string bracket, Region region, string locale)
         {
             string host = GetHost(region);
@@ -756,6 +909,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified quest.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Quest> GetQuestAsync(int questId)
         {
             return await GetQuestAsync(questId, _region, _locale);
@@ -770,6 +926,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified quest.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Quest> GetQuestAsync(int questId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -782,6 +941,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The statuses for all realms.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Realm>> GetRealmStatusAsync()
         {
             return await GetRealmStatusAsync(_region, _locale);
@@ -795,6 +957,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The statuses for all realms.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Realm>> GetRealmStatusAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -809,6 +974,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified recipe.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Recipe> GetRecipeAsync(int recipeId)
         {
             return await GetRecipeAsync(recipeId, _region, _locale);
@@ -823,6 +991,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified recipe.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Recipe> GetRecipeAsync(int recipeId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -836,6 +1007,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified spell.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Spell> GetSpellAsync(int spellId)
         {
             return await GetSpellAsync(spellId, _region, _locale);
@@ -850,6 +1024,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified spell.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Spell> GetSpellAsync(int spellId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -862,6 +1039,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A dictionary of talents, indexed by character class.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync()
         {
             return await GetTalentsAsync(_region, _locale);
@@ -875,6 +1055,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A dictionary of talents, indexed by character class.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -889,6 +1072,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified zone.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Zone> GetZoneAsync(int zoneId)
         {
             return await GetZoneAsync(zoneId, _region, _locale);
@@ -903,6 +1089,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The specified zone.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<Zone> GetZoneAsync(int zoneId, Region region, string locale)
         {
             string host = GetHost(region);
@@ -915,6 +1104,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported zones.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Zone>> GetZonesAsync()
         {
             return await GetZonesAsync(_region, _locale);
@@ -928,6 +1120,9 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported zones.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         public async Task<IList<Zone>> GetZonesAsync(Region region, string locale)
         {
             string host = GetHost(region);
@@ -947,15 +1142,24 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
+        /// <exception cref="WarcraftClientException">
+        /// Thrown when the World of Warcraft Community APIs return an error response code.
+        /// </exception>
         private async Task<T> Get<T>(string requestUri)
         {
             // Retrieve the response.  Throw an error if we had a problem.
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            HttpResponseMessage response = await _client.GetAsync(requestUri);
-            response.EnsureSuccessStatusCode();
+            HttpResponseMessage response = await _client.GetAsync(requestUri).ConfigureAwait(false);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                string safeUri = requestUri.Replace(_apiKey, "{apiKey}");
+                string content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                throw new WarcraftClientException($"Response code {(int) response.StatusCode} ({response.ReasonPhrase}) does not indicate success. Request: {safeUri} Response: {content}");   
+            }
 
             // Deserialize an object of type T from the JSON string.
-            string json = await response.Content.ReadAsStringAsync();
+            string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
             T item = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
             {
                 ContractResolver = new ArgentPonyWarcraftClientContractResolver(),
