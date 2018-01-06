@@ -264,7 +264,7 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetSpellAsync_Gets_Spell()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            Spell spell = await warcraftClient.GetSpellAsync(8056);
+            Spell spell = await warcraftClient.GetSpellAsync(79733);
             Assert.NotNull(spell);
         }
 
