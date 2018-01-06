@@ -31,8 +31,7 @@ namespace ArgentPonyWarcraftClient
                 return null;
             }
 
-            long milliseconds;
-            if (long.TryParse(reader.Value.ToString(), out milliseconds))
+            if (long.TryParse(reader.Value.ToString(), out long milliseconds))
             {
                 return SEpochStart.AddMilliseconds(milliseconds);
             }

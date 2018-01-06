@@ -8,26 +8,26 @@
         /// <summary>
         /// China.
         /// </summary>
-        China,
+        China = 1,
 
         /// <summary>
         /// Europe.
         /// </summary>
-        Europe,
+        Europe = 2,
 
         /// <summary>
         /// Korea.
         /// </summary>
-        Korea,
+        Korea = 3,
 
         /// <summary>
         /// Taiwan.
         /// </summary>
-        Taiwan,
+        Taiwan = 4,
 
         /// <summary>
         /// United States.
         /// </summary>
-        US
+        US = 5
     }
 }
