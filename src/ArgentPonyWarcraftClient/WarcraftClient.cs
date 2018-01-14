@@ -336,7 +336,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None)
         {
             string host = GetHost(region);
-            string queryStringFields = CharacterFieldBuilder.BuildQueryString(fields);
+            string queryStringFields = fields.BuildQueryString();
             return await Get<Character>($"{host}/wow/character/{realm}/{characterName}?&locale={locale}{queryStringFields}&apikey={_apiKey}");
         }
 
@@ -470,7 +470,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<Guild> GetGuildAsync(string realm, string guildName, Region region, string locale, GuildFields fields = GuildFields.None)
         {
             string host = GetHost(region);
-            string queryStringFields = GuildFieldBuilder.BuildQueryString(fields);
+            string queryStringFields = fields.BuildQueryString();
             return await Get<Guild>($"{host}/wow/guild/{realm}/{Uri.EscapeUriString(guildName)}?locale={locale}{queryStringFields}&apikey={_apiKey}");
         }
 
