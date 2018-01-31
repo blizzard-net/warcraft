@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// A client for the World of Warcraft Community APIs.
+    ///     A client for the World of Warcraft Community APIs.
     /// </summary>
     public class WarcraftClient
     {
@@ -18,19 +18,18 @@ namespace ArgentPonyWarcraftClient
         private readonly string _locale;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WarcraftClient"/> class.
+        ///     Initializes a new instance of the <see cref="WarcraftClient"/> class.
         /// </summary>
         /// <remarks>
-        /// Defaults the region to US and the locale to "en_US".
+        ///     Defaults the region to US and the locale to "en_US".
         /// </remarks>
         /// <param name="apiKey">The API key.</param>
-        public WarcraftClient(string apiKey)
-            : this(apiKey, Region.US, "en_US")
+        public WarcraftClient(string apiKey) : this(apiKey, Region.US, "en_US")
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WarcraftClient"/> class.
+        ///     Initializes a new instance of the <see cref="WarcraftClient"/> class.
         /// </summary>
         /// <param name="apiKey">Blizzard Mashery API key. To create an API key visit https://dev.battle.net/member/register </param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
@@ -47,280 +46,232 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        /// Get the specified achievement.
+        ///     Get the specified achievement.
         /// </summary>
         /// <param name="id">The achievement ID.</param>
         /// <returns>
-        /// The specified achievement.
+        ///     The specified achievement.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Achievement> GetAchievementAsync(int id)
+        public async Task<RequestResult<Achievement>> GetAchievementAsync(int id)
         {
             return await GetAchievementAsync(id, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified achievement.
+        ///     Get the specified achievement.
         /// </summary>
         /// <param name="id">The achievement ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified achievement.
+        ///     The specified achievement.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Achievement> GetAchievementAsync(int id, Region region, string locale)
+        public async Task<RequestResult<Achievement>> GetAchievementAsync(int id, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Achievement>($"{host}/wow/achievement/{id}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the specified auction.
+        ///     Get the specified auction.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <returns>
-        /// The specified auction.
+        ///     The specified auction.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<AuctionFiles> GetAuctionAsync(string realm)
+        public async Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm)
         {
             return await GetAuctionAsync(realm, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified auction.
+        ///     Get the specified auction.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified auction.
+        ///     The specified auction.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<AuctionFiles> GetAuctionAsync(string realm, Region region, string locale)
+        public async Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<AuctionFiles>($"{host}/wow/auction/data/{realm}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the auction house snapshot from the specified file.
+        ///     Get the auction house snapshot from the specified file.
         /// </summary>
         /// <param name="url">The URL for the auction house file.</param>
         /// <returns>
-        /// The auction house snapshot from the specified file.
+        ///     The auction house snapshot from the specified file.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<AuctionHouseSnapshot> GetAuctionHouseSnapshotAsync(string url)
+        public async Task<RequestResult<AuctionHouseSnapshot>> GetAuctionHouseSnapshotAsync(string url)
         {
             return await Get<AuctionHouseSnapshot>(url);
         }
 
         /// <summary>
-        /// Get a list of all supported battlegroups.
+        ///     Get a list of all supported battlegroups.
         /// </summary>
         /// <returns>
-        /// A list of all supported battlegroups.
+        ///     A list of all supported battlegroups.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Battlegroup>> GetBattlegroupsAsync()
+        public async Task<RequestResult<BattlegroupList>> GetBattlegroupsAsync()
         {
             return await GetBattlegroupsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all supported battlegroups.
+        ///     Get a list of all supported battlegroups.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all supported battlegroups.
+        ///     A list of all supported battlegroups.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Battlegroup>> GetBattlegroupsAsync(Region region, string locale)
+        public async Task<RequestResult<BattlegroupList>> GetBattlegroupsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            BattlegroupList battlegroupList = await Get<BattlegroupList>($"{host}/wow/data/battlegroups/?locale={locale}&apikey={_apiKey}");
-            return battlegroupList.Battlegroups;
+            RequestResult<BattlegroupList> battlegroupList = await Get<BattlegroupList>($"{host}/wow/data/battlegroups/?locale={locale}&apikey={_apiKey}");
+            return battlegroupList;
         }
 
         /// <summary>
-        /// Get the specified boss.
+        ///     Get the specified boss.
         /// </summary>
         /// <remarks>
-        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
         /// </remarks>
         /// <param name="id">The boss ID.</param>
         /// <returns>
-        /// The specified boss.
+        ///     The specified boss.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Boss> GetBossAsync(int id)
+        public async Task<RequestResult<Boss>> GetBossAsync(int id)
         {
             return await GetBossAsync(id, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified boss.
+        ///     Get the specified boss.
         /// </summary>
         /// <remarks>
-        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
         /// </remarks>
         /// <param name="id">The boss ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified boss.
+        ///     The specified boss.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Boss> GetBossAsync(int id, Region region, string locale)
+        public async Task<RequestResult<Boss>> GetBossAsync(int id, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Boss>($"{host}/wow/boss/{id}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get a list of all supported bosses.
+        ///     Get a list of all supported bosses.
         /// </summary>
         /// <remarks>
-        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
         /// </remarks>
         /// <returns>
-        /// A list of all supported bosses.
+        ///     A list of all supported bosses.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<List<Boss>> GetBossesAsync()
+        public async Task<RequestResult<BossList>> GetBossesAsync()
         {
             return await GetBossesAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all supported bosses.
+        ///     Get a list of all supported bosses.
         /// </summary>
         /// <remarks>
-        /// A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
+        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
         /// </remarks>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all supported bosses.
+        ///     A list of all supported bosses.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<List<Boss>> GetBossesAsync(Region region, string locale)
+        public async Task<RequestResult<BossList>> GetBossesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            BossList bossList = await Get<BossList>($"{host}/wow/boss/?locale={locale}&apikey={_apiKey}");
-            return bossList.Bosses;
+            RequestResult<BossList> bossList = await Get<BossList>($"{host}/wow/boss/?locale={locale}&apikey={_apiKey}");
+            return bossList;
         }
 
         /// <summary>
-        /// Get the challenge mode data for the entire region.
+        ///     Get the challenge mode data for the entire region.
         /// </summary>
         /// <returns>
-        /// The challenge mode data for the entire region.
+        ///     The challenge mode data for the entire region.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Challenge>> GetChallengesAsync()
+        public async Task<RequestResult<ChallengeList>> GetChallengesAsync()
         {
             return await GetChallengesAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get the challenge mode data for the entire region.
+        ///     Get the challenge mode data for the entire region.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The challenge mode data for the entire region.
+        ///     The challenge mode data for the entire region.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Challenge>> GetChallengesAsync(Region region, string locale)
+        public async Task<RequestResult<ChallengeList>> GetChallengesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            ChallengeList challengeList = await Get<ChallengeList>($"{host}/wow/challenge/region?locale={locale}&apikey={_apiKey}");
-            return challengeList.Challenges;
+            RequestResult<ChallengeList> challengeList = await Get<ChallengeList>($"{host}/wow/challenge/region?locale={locale}&apikey={_apiKey}");
+            return challengeList;
         }
 
         /// <summary>
-        /// Get the challenge mode data for the specified realm.
+        ///     Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <returns>
-        /// The challenge mode data for the specified realm.
+        ///     The challenge mode data for the specified realm.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Challenge>> GetChallengesAsync(string realm)
+        public async Task<RequestResult<ChallengeList>> GetChallengesAsync(string realm)
         {
             return await GetChallengesAsync(realm, _region, _locale);
         }
 
         /// <summary>
-        /// Get the challenge mode data for the specified realm.
+        ///     Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The challenge mode data for the specified realm.
+        ///     The challenge mode data for the specified realm.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Challenge>> GetChallengesAsync(string realm, Region region, string locale)
+        public async Task<RequestResult<ChallengeList>> GetChallengesAsync(string realm, Region region, string locale)
         {
             string host = GetHost(region);
-            ChallengeList challengeList = await Get<ChallengeList>($"{host}/wow/challenge/{realm}?locale={locale}&apikey={_apiKey}");
-            return challengeList.Challenges;
+            RequestResult<ChallengeList> challengeList = await Get<ChallengeList>($"{host}/wow/challenge/{realm}?locale={locale}&apikey={_apiKey}");
+            return challengeList;
         }
 
         /// <summary>
-        /// Get the specified character.
+        ///     Get the specified character.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="characterName">The character name.</param>
         /// <param name="fields">The character fields to include.</param>
         /// <returns>
-        /// The specified character.
-        /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Character> GetCharacterAsync(string realm, string characterName, CharacterFields fields = CharacterFields.None)
+        ///     The specified character.
+        /// </returns>>
+        public async Task<RequestResult<Character>> GetCharacterAsync(string realm, string characterName, CharacterFields fields = CharacterFields.None)
         {
             return await GetCharacterAsync(realm, characterName, _region, _locale, fields);
         }
 
         /// <summary>
-        /// Get the specified character.
+        ///     Get the specified character.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="characterName">The character name.</param>
@@ -328,12 +279,9 @@ namespace ArgentPonyWarcraftClient
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <param name="fields">The character fields to include.</param>
         /// <returns>
-        /// The specified character.
+        ///     The specified character.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Character> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None)
+        public async Task<RequestResult<Character>> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None)
         {
             string host = GetHost(region);
             string queryStringFields = fields.BuildQueryString();
@@ -341,47 +289,38 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        ///     Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </summary>
         /// <returns>
-        /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        ///     A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync()
+        public async Task<RequestResult<AchievementCategoryList>> GetCharacterAchievementsAsync()
         {
             return await GetCharacterAchievementsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        ///     Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
+        ///     A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<AchievementCategory>> GetCharacterAchievementsAsync(Region region, string locale)
+        public async Task<RequestResult<AchievementCategoryList>> GetCharacterAchievementsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            AchievementCategoryList achievementList = await Get<AchievementCategoryList>($"{host}/wow/data/character/achievements?locale={locale}&apikey={_apiKey}");
-            return achievementList.AchievementCategories;
+            RequestResult<AchievementCategoryList> achievementList = await Get<AchievementCategoryList>($"{host}/wow/data/character/achievements?locale={locale}&apikey={_apiKey}");
+            return achievementList;
         }
 
         /// <summary>
-        /// Get a list of all supported character classes.
+        ///     Get a list of all supported character classes.
         /// </summary>
         /// <returns>
-        /// A list of all supported character classes.
+        ///     A list of all supported character classes.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<CharacterClassData>> GetCharacterClassesAsync()
+        public async Task<RequestResult<CharacterClassList>> GetCharacterClassesAsync()
         {
             return await GetCharacterClassesAsync(_region, _locale);
         }
@@ -394,67 +333,55 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character classes.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<CharacterClassData>> GetCharacterClassesAsync(Region region, string locale)
+        public async Task<RequestResult<CharacterClassList>> GetCharacterClassesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            CharacterClassList characterClassList = await Get<CharacterClassList>($"{host}/wow/data/character/classes?locale={locale}&apikey={_apiKey}");
-            return characterClassList.Classes;
+            RequestResult<CharacterClassList> characterClassList = await Get<CharacterClassList>($"{host}/wow/data/character/classes?locale={locale}&apikey={_apiKey}");
+            return characterClassList;
         }
 
         /// <summary>
-        /// Get a list of all supported character races.
+        ///     Get a list of all supported character races.
         /// </summary>
         /// <returns>
-        /// A list of all supported character races.
+        ///     A list of all supported character races.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<CharacterRace>> GetCharacterRacesAsync()
+        public async Task<RequestResult<CharacterRaceList>> GetCharacterRacesAsync()
         {
             return await GetCharacterRacesAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all supported character races.
+        ///     Get a list of all supported character races.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all supported character races.
+        ///     A list of all supported character races.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<CharacterRace>> GetCharacterRacesAsync(Region region, string locale)
+        public async Task<RequestResult<CharacterRaceList>> GetCharacterRacesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            CharacterRaceList characterRaceList = await Get<CharacterRaceList>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}");
-            return characterRaceList.Races;
+            RequestResult<CharacterRaceList> characterRaceList = await Get<CharacterRaceList>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}");
+            return characterRaceList;
         }
 
         /// <summary>
-        /// Get the specified guild.
+        ///     Get the specified guild.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="guildName">The guild name.</param>
         /// <param name="fields">The guild fields to include.</param>
         /// <returns>
-        /// The specified guild.
+        ///     The specified guild.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Guild> GetGuildAsync(string realm, string guildName, GuildFields fields = GuildFields.None)
+        public async Task<RequestResult<Guild>> GetGuildAsync(string realm, string guildName, GuildFields fields = GuildFields.None)
         {
             return await GetGuildAsync(realm, guildName, _region, _locale, fields);
         }
 
         /// <summary>
-        /// Get the specified guild.
+        ///     Get the specified guild.
         /// </summary>
         /// <param name="realm">The realm.</param>
         /// <param name="guildName">The guild name.</param>
@@ -462,12 +389,9 @@ namespace ArgentPonyWarcraftClient
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <param name="fields">The guild fields to include.</param>
         /// <returns>
-        /// The specified guild.
+        ///     The specified guild.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Guild> GetGuildAsync(string realm, string guildName, Region region, string locale, GuildFields fields = GuildFields.None)
+        public async Task<RequestResult<Guild>> GetGuildAsync(string realm, string guildName, Region region, string locale, GuildFields fields = GuildFields.None)
         {
             string host = GetHost(region);
             string queryStringFields = fields.BuildQueryString();
@@ -475,349 +399,286 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        /// Get a list of all guild achievements.
+        ///     Get a list of all guild achievements.
         /// </summary>
         /// <returns>
-        /// A list of all guild achievements.
+        ///     A list of all guild achievements.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync()
+        public async Task<RequestResult<GuildAchievementsList>> GetGuildAchievementsAsync()
         {
             return await GetGuildAchievementsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all guild achievements.
+        ///     Get a list of all guild achievements.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all guild achievements.
+        ///     A list of all guild achievements.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<AchievementCategory>> GetGuildAchievementsAsync(Region region, string locale)
+        public async Task<RequestResult<GuildAchievementsList>> GetGuildAchievementsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            GuildAchievementsList guildAchievementsList = await Get<GuildAchievementsList>($"{host}/wow/data/guild/achievements?locale={locale}&apikey={_apiKey}");
-            return guildAchievementsList.Achievements;
+            RequestResult<GuildAchievementsList> guildAchievementsList = await Get<GuildAchievementsList>($"{host}/wow/data/guild/achievements?locale={locale}&apikey={_apiKey}");
+            return guildAchievementsList;
         }
 
         /// <summary>
-        /// Get a list of all guild perks.
+        ///     Get a list of all guild perks.
         /// </summary>
         /// <returns>
-        /// A list of all guild perks.
+        ///     A list of all guild perks.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Perk>> GetGuildPerksAsync()
+        public async Task<RequestResult<GuildPerksList>> GetGuildPerksAsync()
         {
             return await GetGuildPerksAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all guild perks.
+        ///     Get a list of all guild perks.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all guild perks.
+        ///     A list of all guild perks.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Perk>> GetGuildPerksAsync(Region region, string locale)
+        public async Task<RequestResult<GuildPerksList>> GetGuildPerksAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            GuildPerksList guildPerksList = await Get<GuildPerksList>($"{host}/wow/data/guild/perks?locale={locale}&apikey={_apiKey}");
-            return guildPerksList.Perks;
+            RequestResult<GuildPerksList> guildPerksList = await Get<GuildPerksList>($"{host}/wow/data/guild/perks?locale={locale}&apikey={_apiKey}");
+            return guildPerksList;
         }
 
         /// <summary>
-        /// Get a list of all guild rewards.
+        ///     Get a list of all guild rewards.
         /// </summary>
         /// <returns>
-        /// A list of all guild rewards.
+        ///     A list of all guild rewards.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Reward>> GetGuildRewardsAsync()
+        public async Task<RequestResult<GuildRewardsList>> GetGuildRewardsAsync()
         {
             return await GetGuildRewardsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all guild rewards.
+        ///     Get a list of all guild rewards.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all guild rewards.
+        ///     A list of all guild rewards.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Reward>> GetGuildRewardsAsync(Region region, string locale)
+        public async Task<RequestResult<GuildRewardsList>> GetGuildRewardsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            GuildRewardsList guildRewardsList = await Get<GuildRewardsList>($"{host}/wow/data/guild/rewards?locale={locale}&apikey={_apiKey}");
-            return guildRewardsList.Rewards;
+            RequestResult<GuildRewardsList> guildRewardsList = await Get<GuildRewardsList>($"{host}/wow/data/guild/rewards?locale={locale}&apikey={_apiKey}");
+            return guildRewardsList;
         }
 
         /// <summary>
-        /// Get the specified item.
+        ///     Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>
         /// <returns>
-        /// The specified item.
+        ///     The specified item.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Item> GetItemAsync(int itemId)
+        public async Task<RequestResult<Item>> GetItemAsync(int itemId)
         {
             return await GetItemAsync(itemId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified item.
+        ///     Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified item.
+        ///     The specified item.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Item> GetItemAsync(int itemId, Region region, string locale)
+        public async Task<RequestResult<Item>> GetItemAsync(int itemId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Item>($"{host}/wow/item/{itemId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get a list of all item classes.
+        ///     Get a list of all item classes.
         /// </summary>
         /// <returns>
-        /// A list of all item classes.
+        ///     A list of all item classes.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<ItemClass>> GetItemClassesAsync()
+        public async Task<RequestResult<ItemClassesList>> GetItemClassesAsync()
         {
             return await GetItemClassesAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all item classes.
+        ///     Get a list of all item classes.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all item classes.
+        ///     A list of all item classes.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<ItemClass>> GetItemClassesAsync(Region region, string locale)
+        public async Task<RequestResult<ItemClassesList>> GetItemClassesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            ItemClassesList itemClassesList = await Get<ItemClassesList>($"{host}/wow/data/item/classes?locale={locale}&apikey={_apiKey}");
-            return itemClassesList.Classes;
+            RequestResult<ItemClassesList> itemClassesList = await Get<ItemClassesList>($"{host}/wow/data/item/classes?locale={locale}&apikey={_apiKey}");
+            return itemClassesList;
         }
 
         /// <summary>
-        /// Get the specified item set.
+        ///     Get the specified item set.
         /// </summary>
         /// <param name="itemSetId">The item set ID.</param>
         /// <returns>
-        /// The specified item set.
+        ///     The specified item set.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<ItemSet> GetItemSetAsync(int itemSetId)
+        public async Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId)
         {
             return await GetItemSetAsync(itemSetId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified item set.
+        ///     Get the specified item set.
         /// </summary>
         /// <param name="itemSetId">The item set ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified item set.
+        ///     The specified item set.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<ItemSet> GetItemSetAsync(int itemSetId, Region region, string locale)
+        public async Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<ItemSet>($"{host}/wow/item/set/{itemSetId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get a list of all supported mounts.
+        ///     Get a list of all supported mounts.
         /// </summary>
         /// <returns>
-        /// A list of all supported mounts.
+        ///     A list of all supported mounts.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Mount>> GetMountsAsync()
+        public async Task<RequestResult<MountList>> GetMountsAsync()
         {
             return await GetMountsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all supported mounts.
+        ///     Get a list of all supported mounts.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all supported mounts.
+        ///     A list of all supported mounts.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Mount>> GetMountsAsync(Region region, string locale)
+        public async Task<RequestResult<MountList>> GetMountsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            MountList mountList = await Get<MountList>($"{host}/wow/mount/?locale={locale}&apikey={_apiKey}");
-            return mountList.Mounts;
+            RequestResult<MountList> mountList = await Get<MountList>($"{host}/wow/mount/?locale={locale}&apikey={_apiKey}");
+            return mountList;
         }
 
         /// <summary>
-        /// Get a list of all supported pets.
+        ///     Get a list of all supported pets.
         /// </summary>
         /// <returns>
-        /// A list of all supported pets.
+        ///     A list of all supported pets.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Pet>> GetPetsAsync()
+        public async Task<RequestResult<PetList>> GetPetsAsync()
         {
             return await GetPetsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all supported pets.
+        ///     Get a list of all supported pets.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all supported pets.
+        ///     A list of all supported pets.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Pet>> GetPetsAsync(Region region, string locale)
+        public async Task<RequestResult<PetList>> GetPetsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            PetList petList = await Get<PetList>($"{host}/wow/pet/?locale={locale}&apikey={_apiKey}");
-            return petList.Pets;
+            RequestResult<PetList> petList = await Get<PetList>($"{host}/wow/pet/?locale={locale}&apikey={_apiKey}");
+            return petList;
         }
 
         /// <summary>
-        /// Get the specified pet ability.
+        ///     Get the specified pet ability.
         /// </summary>
         /// <param name="abilityId">The pet ability ID.</param>
         /// <returns>
-        /// The specified pet ability.
+        ///     The specified pet ability.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PetAbility> GetPetAbilityAsync(int abilityId)
+        public async Task<RequestResult<PetAbility>> GetPetAbilityAsync(int abilityId)
         {
             return await GetPetAbilityAsync(abilityId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified pet ability.
+        ///     Get the specified pet ability.
         /// </summary>
         /// <param name="abilityId">The pet ability ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified pet ability.
+        ///     The specified pet ability.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PetAbility> GetPetAbilityAsync(int abilityId, Region region, string locale)
+        public async Task<RequestResult<PetAbility>> GetPetAbilityAsync(int abilityId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<PetAbility>($"{host}/wow/pet/ability/{abilityId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the specified pet species.
+        ///     Get the specified pet species.
         /// </summary>
         /// <param name="speciesId">The pet species ID.</param>
         /// <returns>
-        /// The specified pet species.
+        ///     The specified pet species.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId)
+        public async Task<RequestResult<PetSpecies>> GetPetSpeciesAsync(int speciesId)
         {
             return await GetPetSpeciesAsync(speciesId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified pet species.
+        ///     Get the specified pet species.
         /// </summary>
         /// <param name="speciesId">The pet species ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified pet species.
+        ///     The specified pet species.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PetSpecies> GetPetSpeciesAsync(int speciesId, Region region, string locale)
+        public async Task<RequestResult<PetSpecies>> GetPetSpeciesAsync(int speciesId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<PetSpecies>($"{host}/wow/pet/species/{speciesId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the pet stats for the specified pet species, level, breed, and quality.
+        ///     Get the pet stats for the specified pet species, level, breed, and quality.
         /// </summary>
         /// <param name="speciesId">The pet species ID.</param>
         /// <param name="level">The pet level.</param>
         /// <param name="breedId">The breed ID.</param>
         /// <param name="quality">The quality.</param>
         /// <returns>
-        /// The pet stats for the specified pet species, level, breed, and quality.
+        ///     The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality)
+        public async Task<RequestResult<PetStats>> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality)
         {
             return await GetPetStatsAsync(speciesId, level, breedId, quality, _region, _locale);
         }
 
         /// <summary>
-        /// Get the pet stats for the specified pet species, level, breed, and quality.
+        ///     Get the pet stats for the specified pet species, level, breed, and quality.
         /// </summary>
         /// <param name="speciesId">The pet species ID.</param>
         /// <param name="level">The pet level.</param>
@@ -826,348 +687,293 @@ namespace ArgentPonyWarcraftClient
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The pet stats for the specified pet species, level, breed, and quality.
+        ///     The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PetStats> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, string locale)
+        public async Task<RequestResult<PetStats>> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<PetStats>($"{host}/wow/pet/stats/{speciesId}?level={level}&breedId={breedId}&qualityId={quality:D}&locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get a list of all pet types.
+        ///     Get a list of all pet types.
         /// </summary>
         /// <returns>
-        /// A list of all pet types.
+        ///     A list of all pet types.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<PetType>> GetPetTypesAsync()
+        public async Task<RequestResult<PetTypeList>> GetPetTypesAsync()
         {
             return await GetPetTypesAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all pet types.
+        ///     Get a list of all pet types.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all pet types.
+        ///     A list of all pet types.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<PetType>> GetPetTypesAsync(Region region, string locale)
+        public async Task<RequestResult<PetTypeList>> GetPetTypesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            PetTypeList petTypeList = await Get<PetTypeList>($"{host}/wow/data/pet/types?locale={locale}&apikey={_apiKey}");
-            return petTypeList.PetTypes;
+            RequestResult<PetTypeList> petTypeList = await Get<PetTypeList>($"{host}/wow/data/pet/types?locale={locale}&apikey={_apiKey}");
+            return petTypeList;
         }
 
         /// <summary>
-        /// Get the PvP leaderboard for the specified bracket.
+        ///     Get the PvP leaderboard for the specified bracket.
         /// </summary>
         /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
         /// <returns>
-        /// The PvP leaderboard for the specified bracket.
+        ///     The PvP leaderboard for the specified bracket.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PvpLeaderboard> GetPvpLeaderboardAsync(string bracket)
+        public async Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(string bracket)
         {
             return await GetPvpLeaderboardAsync(bracket, _region, _locale);
         }
 
         /// <summary>
-        /// Get the PvP leaderboard for the specified bracket.
+        ///     Get the PvP leaderboard for the specified bracket.
         /// </summary>
         /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The PvP leaderboard for the specified bracket.
+        ///     The PvP leaderboard for the specified bracket.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<PvpLeaderboard> GetPvpLeaderboardAsync(string bracket, Region region, string locale)
+        public async Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(string bracket, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<PvpLeaderboard>($"{host}/wow/leaderboard/{bracket}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the specified quest.
+        ///     Get the specified quest.
         /// </summary>
         /// <param name="questId">The quest ID.</param>
         /// <returns>
-        /// The specified quest.
+        ///     The specified quest.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Quest> GetQuestAsync(int questId)
+        public async Task<RequestResult<Quest>> GetQuestAsync(int questId)
         {
             return await GetQuestAsync(questId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified quest.
+        ///     Get the specified quest.
         /// </summary>
         /// <param name="questId">The quest ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified quest.
+        ///     The specified quest.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Quest> GetQuestAsync(int questId, Region region, string locale)
+        public async Task<RequestResult<Quest>> GetQuestAsync(int questId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Quest>($"{host}/wow/quest/{questId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the statuses for all realms.
+        ///     Get the statuses for all realms.
         /// </summary>
         /// <returns>
-        /// The statuses for all realms.
+        ///     The statuses for all realms.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Realm>> GetRealmStatusAsync()
+        public async Task<RequestResult<RealmList>> GetRealmStatusAsync()
         {
             return await GetRealmStatusAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get the statuses for all realms.
+        ///     Get the statuses for all realms.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The statuses for all realms.
+        ///     The statuses for all realms.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Realm>> GetRealmStatusAsync(Region region, string locale)
+        public async Task<RequestResult<RealmList>> GetRealmStatusAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RealmList realmList = await Get<RealmList>($"{host}/wow/realm/status?locale={locale}&apikey={_apiKey}");
-            return realmList.Realms;
+            RequestResult<RealmList> realmList = await Get<RealmList>($"{host}/wow/realm/status?locale={locale}&apikey={_apiKey}");
+            return realmList;
         }
 
         /// <summary>
-        /// Get the specified recipe.
+        ///     Get the specified recipe.
         /// </summary>
         /// <param name="recipeId">The recipe ID.</param>
         /// <returns>
-        /// The specified recipe.
+        ///     The specified recipe.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Recipe> GetRecipeAsync(int recipeId)
+        public async Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId)
         {
             return await GetRecipeAsync(recipeId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified recipe.
+        ///     Get the specified recipe.
         /// </summary>
         /// <param name="recipeId">The recipe ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified recipe.
+        ///     The specified recipe.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Recipe> GetRecipeAsync(int recipeId, Region region, string locale)
+        public async Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Recipe>($"{host}/wow/recipe/{recipeId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get the specified spell.
+        ///     Get the specified spell.
         /// </summary>
         /// <param name="spellId">The spell ID.</param>
         /// <returns>
-        /// The specified spell.
+        ///     The specified spell.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Spell> GetSpellAsync(int spellId)
+        public async Task<RequestResult<Spell>> GetSpellAsync(int spellId)
         {
             return await GetSpellAsync(spellId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified spell.
+        ///     Get the specified spell.
         /// </summary>
         /// <param name="spellId">The spell ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified spell.
+        ///     The specified spell.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Spell> GetSpellAsync(int spellId, Region region, string locale)
+        public async Task<RequestResult<Spell>> GetSpellAsync(int spellId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Spell>($"{host}/wow/spell/{spellId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get a dictionary of talents, indexed by character class.
+        ///     Get a dictionary of talents, indexed by character class.
         /// </summary>
         /// <returns>
-        /// A dictionary of talents, indexed by character class.
+        ///     A dictionary of talents, indexed by character class.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync()
+        public async Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync()
         {
             return await GetTalentsAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a dictionary of talents, indexed by character class.
+        ///     Get a dictionary of talents, indexed by character class.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A dictionary of talents, indexed by character class.
+        ///     A dictionary of talents, indexed by character class.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IDictionary<CharacterClass, TalentSet>> GetTalentsAsync(Region region, string locale)
+        public async Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            IDictionary<CharacterClass, TalentSet> talents = await Get<IDictionary<CharacterClass, TalentSet>>($"{host}/wow/data/talents?locale={locale}&apikey={_apiKey}");
+            RequestResult<IDictionary<CharacterClass, TalentSet>> talents = await Get<IDictionary<CharacterClass, TalentSet>>($"{host}/wow/data/talents?locale={locale}&apikey={_apiKey}");
             return talents;
         }
 
         /// <summary>
-        /// Get the specified zone.
+        ///     Get the specified zone.
         /// </summary>
         /// <param name="zoneId">The zone ID.</param>
         /// <returns>
-        /// The specified zone.
+        ///     The specified zone.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Zone> GetZoneAsync(int zoneId)
+        public async Task<RequestResult<Zone>> GetZoneAsync(int zoneId)
         {
             return await GetZoneAsync(zoneId, _region, _locale);
         }
 
         /// <summary>
-        /// Get the specified zone.
+        ///     Get the specified zone.
         /// </summary>
         /// <param name="zoneId">The zone ID.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// The specified zone.
+        ///     The specified zone.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<Zone> GetZoneAsync(int zoneId, Region region, string locale)
+        public async Task<RequestResult<Zone>> GetZoneAsync(int zoneId, Region region, string locale)
         {
             string host = GetHost(region);
             return await Get<Zone>($"{host}/wow/zone/{zoneId}?locale={locale}&apikey={_apiKey}");
         }
 
         /// <summary>
-        /// Get a list of all supported zones.
+        ///     Get a list of all supported zones.
         /// </summary>
         /// <returns>
-        /// A list of all supported zones.
+        ///     A list of all supported zones.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Zone>> GetZonesAsync()
+        public async Task<RequestResult<ZoneList>> GetZonesAsync()
         {
             return await GetZonesAsync(_region, _locale);
         }
 
         /// <summary>
-        /// Get a list of all supported zones.
+        ///     Get a list of all supported zones.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        /// A list of all supported zones.
+        ///     A list of all supported zones.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        public async Task<IList<Zone>> GetZonesAsync(Region region, string locale)
+        public async Task<RequestResult<ZoneList>> GetZonesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            ZoneList zoneList = await Get<ZoneList>($"{host}/wow/zone/?locale={locale}&apikey={_apiKey}");
-            return zoneList.Zones;
+            RequestResult<ZoneList> zoneList = await Get<ZoneList>($"{host}/wow/zone/?locale={locale}&apikey={_apiKey}");
+            return zoneList;
         }
 
         /// <summary>
-        /// Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
+        ///     Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
         /// </summary>
         /// <typeparam name="T">
-        /// The return type.
+        ///     The return type.
         /// </typeparam>
         /// <param name="requestUri">
-        /// The URI the request is sent to.
+        ///     The URI the request is sent to.
         /// </param>
         /// <returns>
-        /// The JSON response, deserialized to an object of type <typeparamref name="T"/>.
+        ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        /// <exception cref="WarcraftClientException">
-        /// Thrown when the World of Warcraft Community APIs return an error response code.
-        /// </exception>
-        private async Task<T> Get<T>(string requestUri)
+        private async Task<RequestResult<T>> Get<T>(string requestUri)
         {
-            // Retrieve the response.  Throw an error if we had a problem.
+            // Retrieve the response.
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             HttpResponseMessage response = await _client.GetAsync(requestUri).ConfigureAwait(false);
 
             if (!response.IsSuccessStatusCode)
             {
+                // Check if the request was successful and made it to the Blizzard API.
+                // The API will always send back content if successful.
+                if (response.Content != null)
+                {
+                    string content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                    RequestResult<T> requestError = JsonConvert.DeserializeObject<RequestError>(content);
+
+                    return requestError;
+                }
+
+                // If not then it is most likely a problem on our end due to an HTTP error.
                 string safeUri = requestUri.Replace(_apiKey, "{apiKey}");
-                string content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                string message = $"Response code {(int)response.StatusCode} ({response.ReasonPhrase}) does not indicate success. Request: {safeUri} Response: {content}";
-                throw new WarcraftClientException(
-                    message: message,
-                    innerException: null,
-                    requestUri: safeUri,
-                    responseStatusCode: response.StatusCode,
-                    responseReasonPhrase: response.ReasonPhrase,
-                    responseContent: content);
+                string message = $"Response code {(int)response.StatusCode} ({response.ReasonPhrase}) does not indicate success. Request: {safeUri}";
+
+                throw new HttpRequestException(message);
             }
 
             // Deserialize an object of type T from the JSON string.
             string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-            T item = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
+            RequestResult<T> requestResult = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
             {
                 ContractResolver = new ArgentPonyWarcraftClientContractResolver(),
 #if DEBUG
@@ -1177,15 +983,15 @@ namespace ArgentPonyWarcraftClient
 #endif
             });
 
-            return item;
+            return requestResult;
         }
 
         /// <summary>
-        /// Get the host for the specified region.
+        ///     Get the host for the specified region.
         /// </summary>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <returns>
-        /// The host for the specified region.
+        ///     The host for the specified region.
         /// </returns>
         private static string GetHost(Region region)
         {
