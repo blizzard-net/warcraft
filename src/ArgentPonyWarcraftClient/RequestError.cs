@@ -24,11 +24,10 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("detail")]
         public string Detail { get; set; }
-        
-        // Reason and status properties are used for a 404 status code.
+
         // Blizzard sends two types of responses back. 404 and a 'catch all'.
         // The 404 response has a reason and status properties.
-        // The 'catch all' has code, type and detail.
+        // The 'catch all' has code, type and detail properties.
         // For simplicty we can merge the two together.
         [JsonProperty("reason")]
         private string Reason 

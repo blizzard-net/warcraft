@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -117,7 +118,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported battlegroups.
         /// </returns>
-        public async Task<RequestResult<BattlegroupList>> GetBattlegroupsAsync()
+        public async Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync()
         {
             return await GetBattlegroupsAsync(_region, _locale);
         }
@@ -130,10 +131,11 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported battlegroups.
         /// </returns>
-        public async Task<RequestResult<BattlegroupList>> GetBattlegroupsAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<BattlegroupList> battlegroupList = await Get<BattlegroupList>($"{host}/wow/data/battlegroups/?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Battlegroup>> battlegroupList = await Get<IList<Battlegroup>>($"{host}/wow/data/battlegroups/?locale={locale}&apikey={_apiKey}", "battlegroups");
+
             return battlegroupList;
         }
 
@@ -179,7 +181,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported bosses.
         /// </returns>
-        public async Task<RequestResult<BossList>> GetBossesAsync()
+        public async Task<RequestResult<IList<Boss>>> GetBossesAsync()
         {
             return await GetBossesAsync(_region, _locale);
         }
@@ -195,10 +197,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported bosses.
         /// </returns>
-        public async Task<RequestResult<BossList>> GetBossesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Boss>>> GetBossesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<BossList> bossList = await Get<BossList>($"{host}/wow/boss/?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Boss>> bossList = await Get<IList<Boss>>($"{host}/wow/boss/?locale={locale}&apikey={_apiKey}", "bosses");
             return bossList;
         }
 
@@ -208,7 +210,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The challenge mode data for the entire region.
         /// </returns>
-        public async Task<RequestResult<ChallengeList>> GetChallengesAsync()
+        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync()
         {
             return await GetChallengesAsync(_region, _locale);
         }
@@ -221,10 +223,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The challenge mode data for the entire region.
         /// </returns>
-        public async Task<RequestResult<ChallengeList>> GetChallengesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<ChallengeList> challengeList = await Get<ChallengeList>($"{host}/wow/challenge/region?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Challenge>> challengeList = await Get<IList<Challenge>>($"{host}/wow/challenge/region?locale={locale}&apikey={_apiKey}", "challenge");
             return challengeList;
         }
 
@@ -235,7 +237,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The challenge mode data for the specified realm.
         /// </returns>
-        public async Task<RequestResult<ChallengeList>> GetChallengesAsync(string realm)
+        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync(string realm)
         {
             return await GetChallengesAsync(realm, _region, _locale);
         }
@@ -249,10 +251,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The challenge mode data for the specified realm.
         /// </returns>
-        public async Task<RequestResult<ChallengeList>> GetChallengesAsync(string realm, Region region, string locale)
+        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync(string realm, Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<ChallengeList> challengeList = await Get<ChallengeList>($"{host}/wow/challenge/{realm}?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Challenge>> challengeList = await Get<IList<Challenge>>($"{host}/wow/challenge/{realm}?locale={locale}&apikey={_apiKey}", "challenge");
             return challengeList;
         }
 
@@ -294,7 +296,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
-        public async Task<RequestResult<AchievementCategoryList>> GetCharacterAchievementsAsync()
+        public async Task<RequestResult<IList<AchievementCategory>>> GetCharacterAchievementsAsync()
         {
             return await GetCharacterAchievementsAsync(_region, _locale);
         }
@@ -307,10 +309,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
-        public async Task<RequestResult<AchievementCategoryList>> GetCharacterAchievementsAsync(Region region, string locale)
+        public async Task<RequestResult<IList<AchievementCategory>>> GetCharacterAchievementsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<AchievementCategoryList> achievementList = await Get<AchievementCategoryList>($"{host}/wow/data/character/achievements?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<AchievementCategory>> achievementList = await Get<IList<AchievementCategory>>($"{host}/wow/data/character/achievements?locale={locale}&apikey={_apiKey}", "achievements");
             return achievementList;
         }
 
@@ -320,7 +322,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported character classes.
         /// </returns>
-        public async Task<RequestResult<CharacterClassList>> GetCharacterClassesAsync()
+        public async Task<RequestResult<IList<CharacterClassData>>> GetCharacterClassesAsync()
         {
             return await GetCharacterClassesAsync(_region, _locale);
         }
@@ -333,10 +335,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character classes.
         /// </returns>
-        public async Task<RequestResult<CharacterClassList>> GetCharacterClassesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<CharacterClassData>>> GetCharacterClassesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<CharacterClassList> characterClassList = await Get<CharacterClassList>($"{host}/wow/data/character/classes?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<CharacterClassData>> characterClassList = await Get<IList<CharacterClassData>>($"{host}/wow/data/character/classes?locale={locale}&apikey={_apiKey}", "classes");
             return characterClassList;
         }
 
@@ -346,7 +348,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported character races.
         /// </returns>
-        public async Task<RequestResult<CharacterRaceList>> GetCharacterRacesAsync()
+        public async Task<RequestResult<IList<CharacterRace>>> GetCharacterRacesAsync()
         {
             return await GetCharacterRacesAsync(_region, _locale);
         }
@@ -359,10 +361,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported character races.
         /// </returns>
-        public async Task<RequestResult<CharacterRaceList>> GetCharacterRacesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<CharacterRace>>> GetCharacterRacesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<CharacterRaceList> characterRaceList = await Get<CharacterRaceList>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<CharacterRace>> characterRaceList = await Get<IList<CharacterRace>>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}", "races");
             return characterRaceList;
         }
 
@@ -404,7 +406,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild achievements.
         /// </returns>
-        public async Task<RequestResult<GuildAchievementsList>> GetGuildAchievementsAsync()
+        public async Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync()
         {
             return await GetGuildAchievementsAsync(_region, _locale);
         }
@@ -417,10 +419,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild achievements.
         /// </returns>
-        public async Task<RequestResult<GuildAchievementsList>> GetGuildAchievementsAsync(Region region, string locale)
+        public async Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<GuildAchievementsList> guildAchievementsList = await Get<GuildAchievementsList>($"{host}/wow/data/guild/achievements?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<AchievementCategory>> guildAchievementsList = await Get<IList<AchievementCategory>>($"{host}/wow/data/guild/achievements?locale={locale}&apikey={_apiKey}", "achievements");
             return guildAchievementsList;
         }
 
@@ -430,7 +432,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild perks.
         /// </returns>
-        public async Task<RequestResult<GuildPerksList>> GetGuildPerksAsync()
+        public async Task<RequestResult<IList<Perk>>> GetGuildPerksAsync()
         {
             return await GetGuildPerksAsync(_region, _locale);
         }
@@ -443,10 +445,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild perks.
         /// </returns>
-        public async Task<RequestResult<GuildPerksList>> GetGuildPerksAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Perk>>> GetGuildPerksAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<GuildPerksList> guildPerksList = await Get<GuildPerksList>($"{host}/wow/data/guild/perks?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Perk>> guildPerksList = await Get<IList<Perk>>($"{host}/wow/data/guild/perks?locale={locale}&apikey={_apiKey}", "perks");
             return guildPerksList;
         }
 
@@ -456,7 +458,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild rewards.
         /// </returns>
-        public async Task<RequestResult<GuildRewardsList>> GetGuildRewardsAsync()
+        public async Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync()
         {
             return await GetGuildRewardsAsync(_region, _locale);
         }
@@ -469,10 +471,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild rewards.
         /// </returns>
-        public async Task<RequestResult<GuildRewardsList>> GetGuildRewardsAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<GuildRewardsList> guildRewardsList = await Get<GuildRewardsList>($"{host}/wow/data/guild/rewards?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Reward>> guildRewardsList = await Get<IList<Reward>>($"{host}/wow/data/guild/rewards?locale={locale}&apikey={_apiKey}", "rewards");
             return guildRewardsList;
         }
 
@@ -509,7 +511,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all item classes.
         /// </returns>
-        public async Task<RequestResult<ItemClassesList>> GetItemClassesAsync()
+        public async Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync()
         {
             return await GetItemClassesAsync(_region, _locale);
         }
@@ -522,10 +524,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all item classes.
         /// </returns>
-        public async Task<RequestResult<ItemClassesList>> GetItemClassesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<ItemClassesList> itemClassesList = await Get<ItemClassesList>($"{host}/wow/data/item/classes?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<ItemClass>> itemClassesList = await Get<IList<ItemClass>>($"{host}/wow/data/item/classes?locale={locale}&apikey={_apiKey}", "classes");
             return itemClassesList;
         }
 
@@ -562,7 +564,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported mounts.
         /// </returns>
-        public async Task<RequestResult<MountList>> GetMountsAsync()
+        public async Task<RequestResult<IList<Mount>>> GetMountsAsync()
         {
             return await GetMountsAsync(_region, _locale);
         }
@@ -575,10 +577,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported mounts.
         /// </returns>
-        public async Task<RequestResult<MountList>> GetMountsAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Mount>>> GetMountsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<MountList> mountList = await Get<MountList>($"{host}/wow/mount/?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Mount>> mountList = await Get<IList<Mount>>($"{host}/wow/mount/?locale={locale}&apikey={_apiKey}", "mounts");
             return mountList;
         }
 
@@ -588,7 +590,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported pets.
         /// </returns>
-        public async Task<RequestResult<PetList>> GetPetsAsync()
+        public async Task<RequestResult<IList<Pet>>> GetPetsAsync()
         {
             return await GetPetsAsync(_region, _locale);
         }
@@ -601,10 +603,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported pets.
         /// </returns>
-        public async Task<RequestResult<PetList>> GetPetsAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Pet>>> GetPetsAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<PetList> petList = await Get<PetList>($"{host}/wow/pet/?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Pet>> petList = await Get<IList<Pet>>($"{host}/wow/pet/?locale={locale}&apikey={_apiKey}", "pets");
             return petList;
         }
 
@@ -701,7 +703,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all pet types.
         /// </returns>
-        public async Task<RequestResult<PetTypeList>> GetPetTypesAsync()
+        public async Task<RequestResult<IList<PetType>>> GetPetTypesAsync()
         {
             return await GetPetTypesAsync(_region, _locale);
         }
@@ -714,10 +716,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all pet types.
         /// </returns>
-        public async Task<RequestResult<PetTypeList>> GetPetTypesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<PetType>>> GetPetTypesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<PetTypeList> petTypeList = await Get<PetTypeList>($"{host}/wow/data/pet/types?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<PetType>> petTypeList = await Get<IList<PetType>>($"{host}/wow/data/pet/types?locale={locale}&apikey={_apiKey}", "petTypes");
             return petTypeList;
         }
 
@@ -781,7 +783,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The statuses for all realms.
         /// </returns>
-        public async Task<RequestResult<RealmList>> GetRealmStatusAsync()
+        public async Task<RequestResult<IList<Realm>>> GetRealmStatusAsync()
         {
             return await GetRealmStatusAsync(_region, _locale);
         }
@@ -794,10 +796,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The statuses for all realms.
         /// </returns>
-        public async Task<RequestResult<RealmList>> GetRealmStatusAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Realm>>> GetRealmStatusAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<RealmList> realmList = await Get<RealmList>($"{host}/wow/realm/status?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Realm>> realmList = await Get<IList<Realm>>($"{host}/wow/realm/status?locale={locale}&apikey={_apiKey}", "realms");
             return realmList;
         }
 
@@ -914,7 +916,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported zones.
         /// </returns>
-        public async Task<RequestResult<ZoneList>> GetZonesAsync()
+        public async Task<RequestResult<IList<Zone>>> GetZonesAsync()
         {
             return await GetZonesAsync(_region, _locale);
         }
@@ -927,10 +929,10 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported zones.
         /// </returns>
-        public async Task<RequestResult<ZoneList>> GetZonesAsync(Region region, string locale)
+        public async Task<RequestResult<IList<Zone>>> GetZonesAsync(Region region, string locale)
         {
             string host = GetHost(region);
-            RequestResult<ZoneList> zoneList = await Get<ZoneList>($"{host}/wow/zone/?locale={locale}&apikey={_apiKey}");
+            RequestResult<IList<Zone>> zoneList = await Get<IList<Zone>>($"{host}/wow/zone/?locale={locale}&apikey={_apiKey}", "zones");
             return zoneList;
         }
 
@@ -943,10 +945,13 @@ namespace ArgentPonyWarcraftClient
         /// <param name="requestUri">
         ///     The URI the request is sent to.
         /// </param>
+        /// <param name="arrayName">
+        ///     The name of the array to deserialize. This is used to avoid using a root object for JSON arrays.
+        /// </param>
         /// <returns>
         ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        private async Task<RequestResult<T>> Get<T>(string requestUri)
+        private async Task<RequestResult<T>> Get<T>(string requestUri, string arrayName = null)
         {
             // Retrieve the response.
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -973,6 +978,12 @@ namespace ArgentPonyWarcraftClient
 
             // Deserialize an object of type T from the JSON string.
             string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+            if (arrayName != null)
+            {
+                json = JObject.Parse(json).SelectToken(arrayName).ToString();
+            }
+
             RequestResult<T> requestResult = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
             {
                 ContractResolver = new ArgentPonyWarcraftClientContractResolver(),

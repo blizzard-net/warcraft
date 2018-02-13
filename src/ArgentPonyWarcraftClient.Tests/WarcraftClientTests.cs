@@ -43,9 +43,9 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetBattlegroupAsync_Gets_Battlegroups()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<BattlegroupList> result = await warcraftClient.GetBattlegroupsAsync();
-            Assert.NotNull(result.Value.Battlegroups);
-            Assert.NotEmpty(result.Value.Battlegroups);
+            RequestResult<IList<Battlegroup>> result = await warcraftClient.GetBattlegroupsAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -60,25 +60,25 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetBossesAsync_Gets_Bosses()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<BossList> result = await warcraftClient.GetBossesAsync();
-            Assert.NotNull(result.Value.Bosses);
-            Assert.NotEmpty(result.Value.Bosses);
+            RequestResult<IList<Boss>> result = await warcraftClient.GetBossesAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
         public async void GetChallengesAsync_Gets_Challenges_For_Region()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<ChallengeList> result = await warcraftClient.GetChallengesAsync();
-            Assert.NotNull(result.Value.Challenges);
+            RequestResult<IList<Challenge>> result = await warcraftClient.GetChallengesAsync();
+            Assert.NotNull(result.Value);
         }
 
         [Fact]
         public async void GetChallengesAsync_Gets_Challenges()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<ChallengeList> result = await warcraftClient.GetChallengesAsync("Norgannon");
-            Assert.NotNull(result.Value.Challenges);
+            RequestResult<IList<Challenge>> result = await warcraftClient.GetChallengesAsync("Norgannon");
+            Assert.NotNull(result.Value);
         }
 
         [Fact]
@@ -93,27 +93,27 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetCharacterClassesAsync_Gets_Character_Classes()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<CharacterClassList> result = await warcraftClient.GetCharacterClassesAsync();
-            Assert.NotNull(result.Value.Classes);
-            Assert.NotEmpty(result.Value.Classes);
+            RequestResult<IList<CharacterClassData>> result = await warcraftClient.GetCharacterClassesAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
         public async void GetCharacterAchievementsAsync_Gets_Achievements()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<AchievementCategoryList> result = await warcraftClient.GetCharacterAchievementsAsync();
-            Assert.NotNull(result.Value.AchievementCategories);
-            Assert.NotEmpty(result.Value.AchievementCategories);
+            RequestResult<IList<AchievementCategory>> result = await warcraftClient.GetCharacterAchievementsAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
         public async void GetCharacterRacesAsync_Gets_Character_Races()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<CharacterRaceList> result = await warcraftClient.GetCharacterRacesAsync();
-            Assert.NotNull(result.Value.Races);
-            Assert.NotEmpty(result.Value.Races);
+            RequestResult<IList<CharacterRace>> result = await warcraftClient.GetCharacterRacesAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -128,27 +128,27 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetGuildAchievementsAsync_Gets_Guild_Achievements()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<GuildAchievementsList> result = await warcraftClient.GetGuildAchievementsAsync();
-            Assert.NotNull(result.Value.Achievements);
-            Assert.NotEmpty(result.Value.Achievements);
+            RequestResult<IList<AchievementCategory>> result = await warcraftClient.GetGuildAchievementsAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
         public async void GetGuildPerksAsync_Gets_Guild_Perks()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<GuildPerksList> result = await warcraftClient.GetGuildPerksAsync();
-            Assert.NotNull(result.Value.Perks);
-            Assert.NotEmpty(result.Value.Perks);
+            RequestResult<IList<Perk>> result = await warcraftClient.GetGuildPerksAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
         public async void GetGuildRewardsAsync_Gets_Guild_Rewards()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<GuildRewardsList> result = await warcraftClient.GetGuildRewardsAsync();
-            Assert.NotNull(result.Value.Rewards);
-            Assert.NotEmpty(result.Value.Rewards);
+            RequestResult<IList<Reward>> result = await warcraftClient.GetGuildRewardsAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -163,9 +163,9 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetItemClassesAsync_Gets_Item_Classes()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<ItemClassesList> result = await warcraftClient.GetItemClassesAsync();
-            Assert.NotNull(result.Value.Classes);
-            Assert.NotEmpty(result.Value.Classes);
+            RequestResult<IList<ItemClass>> result = await warcraftClient.GetItemClassesAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -180,18 +180,18 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetMountsAsync_Gets_Mounts()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<MountList> result = await warcraftClient.GetMountsAsync();
-            Assert.NotNull(result.Value.Mounts);
-            Assert.NotEmpty(result.Value.Mounts);
+            RequestResult<IList<Mount>> result = await warcraftClient.GetMountsAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
         public async void GetPetsAsync_Gets_Pets()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<PetList> result = await warcraftClient.GetPetsAsync();
-            Assert.NotNull(result.Value.Pets);
-            Assert.NotEmpty(result.Value.Pets);
+            RequestResult<IList<Pet>> result = await warcraftClient.GetPetsAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -222,9 +222,9 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetPetTypesAsync_Gets_Pet_Types()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<PetTypeList> result = await warcraftClient.GetPetTypesAsync();
-            Assert.NotNull(result.Value.PetTypes);
-            Assert.NotEmpty(result.Value.PetTypes);
+            RequestResult<IList<PetType>> result = await warcraftClient.GetPetTypesAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -247,9 +247,9 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetRealmsAsync_Gets_Realms()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<RealmList> result = await warcraftClient.GetRealmStatusAsync();
-            Assert.NotNull(result.Value.Realms);
-            Assert.NotEmpty(result.Value.Realms);
+            RequestResult<IList<Realm>> result = await warcraftClient.GetRealmStatusAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]
@@ -289,8 +289,8 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetZonesAsync_Gets_Zones()
         {
             var warcraftClient = new WarcraftClient(_apiKey);
-            RequestResult<ZoneList> result = await warcraftClient.GetZonesAsync();
-            Assert.NotEmpty(result.Value.Zones);
+            RequestResult<IList<Zone>> result = await warcraftClient.GetZonesAsync();
+            Assert.NotEmpty(result.Value);
         }
 
         [Fact]

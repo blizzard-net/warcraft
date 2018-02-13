@@ -39,14 +39,41 @@ var warcraftClient = new WarcraftClient(apiKey, Region.US, "en_US");
 Once you have your `WarcraftClient` instance, you can start asking for data.  All methods are asynchronous.  Here's an example for retrieving a character:
 
 ``` cs
-Character character = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", CharacterFields.All);
+RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", CharacterFields.All);
 ```
 
 This will retrieve a character named Drinian from the realm Norgannon.  The `CharacterFields` enumeration allows you to specify which portions of character-related data the Blizzard API should return.  If you only want to retrieve information about the character's talents and mounts, for instance, you can ask for only those portions of the `Character` object to be populated.
 
 ``` cs
 CharacterFields fields = CharacterFields.Talents | CharacterFields.Mounts;
-Character character = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", fields);
+RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", fields);
+```
+
+Each request is wrapped in the `RequestResult<T>` class. Which has the following properties.
+
+* Value (The generic type argument)
+* Error (RequestError class)
+    * Code (The HTTP status code)
+    * Type (The HTTP status code description)
+    * Detail (The details of why the request failed)
+* Success (bool)
+
+A proper method call could look like this.
+
+``` cs
+RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", CharacterFields.All);
+
+if (result.Success)
+{
+    Console.WriteLine("Character Name: " + result.Value.Name);
+    Console.WriteLine("Character Level: " + result.Value.Level);
+}
+else
+{
+    Console.WriteLine("HTTP Status Code: " + result.Error.Code);
+    Console.WriteLine("HTTP Status Description: " + result.Error.Type);
+    Console.WriteLine("Details: " + result.Error.Detail);
+}
 ```
 
 Take a look at the [WarcraftClientTests](https://github.com/danjagnow/ArgentPonyWarcraftClient/blob/master/src/ArgentPonyWarcraftClient.Tests/WarcraftClientTests.cs) class and the Blizzard World of Warcraft Community Web APIs documentation to learn more about what else you can do.

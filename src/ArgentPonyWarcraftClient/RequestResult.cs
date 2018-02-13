@@ -48,7 +48,7 @@ namespace ArgentPonyWarcraftClient
         {
             return new RequestResult<TValue>(value);
         }
-        
+
         /// <summary>
         ///     Implicit operator for initializing an object result with an error.
         /// </summary>
