@@ -4,133 +4,133 @@ using System.ComponentModel.DataAnnotations;
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// Optional fields to include with character information.
+    ///     Optional fields to include with character information.
     /// </summary>
     [Flags]
     public enum CharacterFields
     {
         /// <summary>
-        /// None.
+        ///     None.
         /// </summary>
         [Display(Name = "None")]
         None = 0,
 
         /// <summary>
-        /// Achievements.
+        ///     Achievements.
         /// </summary>
         [Display(Name = "Achievements")]
         Achievements = 1,
 
         /// <summary>
-        /// Appearance.
+        ///     Appearance.
         /// </summary>
         [Display(Name = "Appearance")]
         Appearance = 2,
 
         /// <summary>
-        /// Feed.
+        ///     Feed.
         /// </summary>
         [Display(Name = "Feed")]
         Feed = 4,
 
         /// <summary>
-        /// Guild.
+        ///     Guild.
         /// </summary>
         [Display(Name = "Guild")]
         Guild = 8,
 
         /// <summary>
-        /// Hunter pets.
+        ///     Hunter pets.
         /// </summary>
         [Display(Name = "Hunter Pets")]
         HunterPets = 16,
 
         /// <summary>
-        /// Items.
+        ///     Items.
         /// </summary>
         [Display(Name = "Items")]
         Items = 32,
 
         /// <summary>
-        /// Mounts.
+        ///     Mounts.
         /// </summary>
         [Display(Name = "Mounts")]
         Mounts = 64,
 
         /// <summary>
-        /// Pets.
+        ///     Pets.
         /// </summary>
         [Display(Name = "Pets")]
         Pets = 128,
 
         /// <summary>
-        /// Pet slots.
+        ///     Pet slots.
         /// </summary>
         [Display(Name = "Pet Slots")]
         PetSlots = 256,
 
         /// <summary>
-        /// Professions.
+        ///     Professions.
         /// </summary>
         [Display(Name = "Professions")]
         Professions = 512,
 
         /// <summary>
-        /// Progression.
+        ///     Progression.
         /// </summary>
         [Display(Name = "Progression")]
         Progression = 1024,
 
         /// <summary>
-        /// PvP.
+        ///     PvP.
         /// </summary>
         [Display(Name = "PvP")]
         Pvp = 2048,
 
         /// <summary>
-        /// Quests.
+        ///     Quests.
         /// </summary>
         [Display(Name = "Quests")]
         Quests = 4096,
 
         /// <summary>
-        /// Reputation.
+        ///     Reputation.
         /// </summary>
         [Display(Name = "Reputation")]
         Reputation = 8192,
 
         /// <summary>
-        /// Statistics.
+        ///     Statistics.
         /// </summary>
         [Display(Name = "Statistics")]
         Statistics = 16384,
 
         /// <summary>
-        /// Stats.
+        ///     Stats.
         /// </summary>
         [Display(Name = "Stats")]
         Stats = 32768,
 
         /// <summary>
-        /// Talents.
+        ///     Talents.
         /// </summary>
         [Display(Name = "Talents")]
         Talents = 65536,
 
         /// <summary>
-        /// Titles.
+        ///     Titles.
         /// </summary>
         [Display(Name = "Titles")]
         Titles = 131072,
 
         /// <summary>
-        /// Audit.
+        ///     Audit.
         /// </summary>
         [Display(Name = "Audit")]
         Audit = 262144,
 
         /// <summary>
-        /// All.
+        ///     All.
         /// </summary>
         [Display(Name = "All")]
         All = 524287
