@@ -18,6 +18,8 @@
     <PackageIconUrl>https://raw.githubusercontent.com/danjagnow/ArgentPonyWarcraftClient/master/ArgentPony.png</PackageIconUrl>
     <RootNamespace>ArgentPonyWarcraftClient</RootNamespace>
     <AssemblyName>ArgentPonyWarcraftClient</AssemblyName>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

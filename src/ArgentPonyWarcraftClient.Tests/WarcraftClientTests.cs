@@ -12,12 +12,13 @@ namespace ArgentPonyWarcraftClient.Tests
 
         public WarcraftClientTests()
         {
-            IConfigurationRoot appSettings = new ConfigurationBuilder()
+            IConfigurationRoot configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("appsettings.json", optional: true)
+                .AddEnvironmentVariables()
                 .Build();
 
-            _apiKey = appSettings["blizzardApiKey"];
+            _apiKey = configuration["blizzardApiKey"];
         }
 
         [Fact]
