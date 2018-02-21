@@ -2,6 +2,7 @@
 The Argent Pony Warcraft Client is a .NET client for the [Blizzard World of Warcraft Community Web APIs](https://dev.battle.net/).  It lets .NET applications easily access information about World of Warcraft characters, guilds, items, spells, and more.  It is a [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) 1.1 library, which means it supports a broad range of platforms, including .NET Core 1.0+ and .NET Framework 4.5+.
 
 [![NuGet version](https://badge.fury.io/nu/ArgentPonyWarcraftClient.svg)](https://badge.fury.io/nu/ArgentPonyWarcraftClient)
+[![Build status](https://ci.appveyor.com/api/projects/status/9awhigq8te5uwllj?svg=true)](https://ci.appveyor.com/project/danjagnow/argentponywarcraftclient)
 
 ## Prerequisites
 
