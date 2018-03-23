@@ -95,6 +95,30 @@ namespace ArgentPonyWarcraftClient
         /// Pandaren (Horde).
         /// </summary>
         [Display(Name = "Pandaren (Horde)")]
-        PandarenHorde = 26
+        PandarenHorde = 26,
+
+        /// <summary>
+        /// Nightborne Elf
+        /// </summary>
+        [Display(Name = "Nightborne Elf")]
+        NightborneElf = 27,
+
+        /// <summary>
+        /// Highmountain Tauren
+        /// </summary>
+        [Display(Name = "Highmountain Tauren")]
+        HighmountainTauren = 28,
+
+        /// <summary>
+        /// Void Elf
+        /// </summary>
+        [Display(Name = "Void Elf")]
+        VoidElf = 29,
+
+        /// <summary>
+        /// Lightforged Draenei
+        /// </summary>
+        [Display(Name = "Lightforged Draenei")]
+        LightforgedDraenei = 30
     }
 }
