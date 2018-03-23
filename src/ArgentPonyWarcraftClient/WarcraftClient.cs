@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Community APIs.
     /// </summary>
-    public class WarcraftClient
+    public class WarcraftClient : IWarcraftClient
     {
         private readonly HttpClient _client;
         private readonly string _apiKey;
