@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -954,7 +953,6 @@ namespace ArgentPonyWarcraftClient
         private async Task<RequestResult<T>> Get<T>(string requestUri, string arrayName = null)
         {
             // Retrieve the response.
-            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             HttpResponseMessage response = await _client.GetAsync(requestUri).ConfigureAwait(false);
 
             if (!response.IsSuccessStatusCode)

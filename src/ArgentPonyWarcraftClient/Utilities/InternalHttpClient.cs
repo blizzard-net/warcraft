@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -12,6 +13,22 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         ///     Gets the current HttpClient instance.
         /// </summary>
-        public static HttpClient Instance => _instance ?? (_instance = new HttpClient());
+        public static HttpClient Instance
+        {
+            get
+            {
+                if (_instance != null)
+                {
+                    return _instance;
+                }
+                else
+                {
+                    _instance = new HttpClient();
+                    _instance.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    return _instance;
+                }
+            }
+        }
     }
 }
