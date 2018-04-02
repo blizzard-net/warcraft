@@ -282,5 +282,363 @@ namespace ArgentPonyWarcraftClient
         ///     A list of all guild achievements.
         /// </returns>
         Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get a list of all guild perks.
+        /// </summary>
+        /// <returns>
+        ///     A list of all guild perks.
+        /// </returns>
+        Task<RequestResult<IList<Perk>>> GetGuildPerksAsync();
+
+        /// <summary>
+        ///     Get a list of all guild perks.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A list of all guild perks.
+        /// </returns>
+        Task<RequestResult<IList<Perk>>> GetGuildPerksAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get a list of all guild rewards.
+        /// </summary>
+        /// <returns>
+        ///     A list of all guild rewards.
+        /// </returns>
+        Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync();
+
+        /// <summary>
+        ///     Get a list of all guild rewards.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A list of all guild rewards.
+        /// </returns>
+        Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified item.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <returns>
+        ///     The specified item.
+        /// </returns>
+        Task<RequestResult<Item>> GetItemAsync(int itemId);
+
+        /// <summary>
+        ///     Get the specified item.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified item.
+        /// </returns>
+        Task<RequestResult<Item>> GetItemAsync(int itemId, Region region, string locale);
+
+        /// <summary>
+        ///     Get a list of all item classes.
+        /// </summary>
+        /// <returns>
+        ///     A list of all item classes.
+        /// </returns>
+        Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync();
+
+        /// <summary>
+        ///     Get a list of all item classes.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A list of all item classes.
+        /// </returns>
+        Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified item set.
+        /// </summary>
+        /// <param name="itemSetId">The item set ID.</param>
+        /// <returns>
+        ///     The specified item set.
+        /// </returns>
+        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId);
+
+        /// <summary>
+        ///     Get the specified item set.
+        /// </summary>
+        /// <param name="itemSetId">The item set ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified item set.
+        /// </returns>
+        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, Region region, string locale);
+
+        /// <summary>
+        ///     Get a list of all supported mounts.
+        /// </summary>
+        /// <returns>
+        ///     A list of all supported mounts.
+        /// </returns>
+        Task<RequestResult<IList<Mount>>> GetMountsAsync();
+
+        /// <summary>
+        ///     Get a list of all supported pets.
+        /// </summary>
+        /// <returns>
+        ///     A list of all supported pets.
+        /// </returns>
+        Task<RequestResult<IList<Pet>>> GetPetsAsync();
+
+        /// <summary>
+        ///     Get a list of all supported pets.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A list of all supported pets.
+        /// </returns>
+        Task<RequestResult<IList<Pet>>> GetPetsAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified pet ability.
+        /// </summary>
+        /// <param name="abilityId">The pet ability ID.</param>
+        /// <returns>
+        ///     The specified pet ability.
+        /// </returns>
+        Task<RequestResult<PetAbility>> GetPetAbilityAsync(int abilityId);
+
+        /// <summary>
+        ///     Get the specified pet ability.
+        /// </summary>
+        /// <param name="abilityId">The pet ability ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified pet ability.
+        /// </returns>
+        Task<RequestResult<PetAbility>> GetPetAbilityAsync(int abilityId, Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified pet species.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <returns>
+        ///     The specified pet species.
+        /// </returns>
+        Task<RequestResult<PetSpecies>> GetPetSpeciesAsync(int speciesId);
+
+        /// <summary>
+        ///     Get the specified pet species.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified pet species.
+        /// </returns>
+        Task<RequestResult<PetSpecies>> GetPetSpeciesAsync(int speciesId, Region region, string locale);
+
+        /// <summary>
+        ///     Get the pet stats for the specified pet species, level, breed, and quality.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="level">The pet level.</param>
+        /// <param name="breedId">The breed ID.</param>
+        /// <param name="quality">The quality.</param>
+        /// <returns>
+        ///     The pet stats for the specified pet species, level, breed, and quality.
+        /// </returns>
+        Task<RequestResult<PetStats>> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality);
+
+        /// <summary>
+        ///     Get the pet stats for the specified pet species, level, breed, and quality.
+        /// </summary>
+        /// <param name="speciesId">The pet species ID.</param>
+        /// <param name="level">The pet level.</param>
+        /// <param name="breedId">The breed ID.</param>
+        /// <param name="quality">The quality.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The pet stats for the specified pet species, level, breed, and quality.
+        /// </returns>
+        Task<RequestResult<PetStats>> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, string locale);
+
+        /// <summary>
+        ///     Get a list of all pet types.
+        /// </summary>
+        /// <returns>
+        ///     A list of all pet types.
+        /// </returns>
+        Task<RequestResult<IList<PetType>>> GetPetTypesAsync();
+
+        /// <summary>
+        ///     Get a list of all pet types.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A list of all pet types.
+        /// </returns>
+        Task<RequestResult<IList<PetType>>> GetPetTypesAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get the PvP leaderboard for the specified bracket.
+        /// </summary>
+        /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
+        /// <returns>
+        ///     The PvP leaderboard for the specified bracket.
+        /// </returns>
+        Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(string bracket);
+
+        /// <summary>
+        ///     Get the PvP leaderboard for the specified bracket.
+        /// </summary>
+        /// <param name="bracket">The PvP leaderboard bracket.  Valid entries are 2v2, 3v3, 5v5, and rbg.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The PvP leaderboard for the specified bracket.
+        /// </returns>
+        Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(string bracket, Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified quest.
+        /// </summary>
+        /// <param name="questId">The quest ID.</param>
+        /// <returns>
+        ///     The specified quest.
+        /// </returns>
+        Task<RequestResult<Quest>> GetQuestAsync(int questId);
+
+        /// <summary>
+        ///     Get the specified quest.
+        /// </summary>
+        /// <param name="questId">The quest ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified quest.
+        /// </returns>
+        Task<RequestResult<Quest>> GetQuestAsync(int questId, Region region, string locale);
+
+        /// <summary>
+        ///     Get the statuses for all realms.
+        /// </summary>
+        /// <returns>
+        ///     The statuses for all realms.
+        /// </returns>
+        Task<RequestResult<IList<Realm>>> GetRealmStatusAsync();
+
+        /// <summary>
+        ///     Get the statuses for all realms.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The statuses for all realms.
+        /// </returns>
+        Task<RequestResult<IList<Realm>>> GetRealmStatusAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified recipe.
+        /// </summary>
+        /// <param name="recipeId">The recipe ID.</param>
+        /// <returns>
+        ///     The specified recipe.
+        /// </returns>
+        Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId);
+
+        /// <summary>
+        ///     Get the specified recipe.
+        /// </summary>
+        /// <param name="recipeId">The recipe ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified recipe.
+        /// </returns>
+        Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId, Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified spell.
+        /// </summary>
+        /// <param name="spellId">The spell ID.</param>
+        /// <returns>
+        ///     The specified spell.
+        /// </returns>
+        Task<RequestResult<Spell>> GetSpellAsync(int spellId);
+
+        /// <summary>
+        ///     Get the specified spell.
+        /// </summary>
+        /// <param name="spellId">The spell ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified spell.
+        /// </returns>
+        Task<RequestResult<Spell>> GetSpellAsync(int spellId, Region region, string locale);
+
+        /// <summary>
+        ///     Get a dictionary of talents, indexed by character class.
+        /// </summary>
+        /// <returns>
+        ///     A dictionary of talents, indexed by character class.
+        /// </returns>
+        Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync();
+
+        /// <summary>
+        ///     Get a dictionary of talents, indexed by character class.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A dictionary of talents, indexed by character class.
+        /// </returns>
+        Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync(Region region, string locale);
+
+        /// <summary>
+        ///     Get the specified zone.
+        /// </summary>
+        /// <param name="zoneId">The zone ID.</param>
+        /// <returns>
+        ///     The specified zone.
+        /// </returns>
+        Task<RequestResult<Zone>> GetZoneAsync(int zoneId);
+
+        /// <summary>
+        ///     Get the specified zone.
+        /// </summary>
+        /// <param name="zoneId">The zone ID.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified zone.
+        /// </returns>
+        Task<RequestResult<Zone>> GetZoneAsync(int zoneId, Region region, string locale);
+
+        /// <summary>
+        ///     Get a list of all supported zones.
+        /// </summary>
+        /// <returns>
+        ///     A list of all supported zones.
+        /// </returns>
+        Task<RequestResult<IList<Zone>>> GetZonesAsync();
+
+        /// <summary>
+        ///     Get a list of all supported zones.
+        /// </summary>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     A list of all supported zones.
+        /// </returns>
+        Task<RequestResult<IList<Zone>>> GetZonesAsync(Region region, string locale);
     }
 }
