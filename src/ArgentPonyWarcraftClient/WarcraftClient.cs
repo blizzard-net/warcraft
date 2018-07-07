@@ -37,9 +37,23 @@ namespace ArgentPonyWarcraftClient
         ///     Specifies the language that the result will be in. Visit
         ///     https://dev.battle.net/docs/read/community_apis to see a list of available locales.
         /// </param>
-        public WarcraftClient(string apiKey, Region region, string locale)
+        public WarcraftClient(string apiKey, Region region, string locale) : this (apiKey, region, locale, InternalHttpClient.Instance)
         {
-            _client = InternalHttpClient.Instance;
+        }
+
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="WarcraftClient"/> class.
+        /// </summary>
+        /// <param name="apiKey">Blizzard Mashery API key. To create an API key visit https://dev.battle.net/member/register </param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">
+        ///     Specifies the language that the result will be in. Visit
+        ///     https://dev.battle.net/docs/read/community_apis to see a list of available locales.
+        /// </param>
+        /// <param name="client">The <see cref="HttpClient"/> that communicates with Blizzard.</param>
+        public WarcraftClient(string apiKey, Region region, string locale, HttpClient client)
+        {
+            _client = client ?? throw new ArgumentNullException(nameof(client));
             _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
             _region = region;
             _locale = locale;
