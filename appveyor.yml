@@ -10,9 +10,6 @@ dotnet_csproj:
   assembly_version: '{version}'
   file_version: '{version}'
   informational_version: '{version}'
-environment:
-  blizzardApiKey:
-    secure: zpf9BZGrHQwAeqwNv2uQqPKxjVpa+fOiPVNAl8CsvufjKRryXkx8H+34gfNM33Lv
 before_build:
 - cmd: dotnet restore src\ArgentPonyWarcraftClient.sln
 build:
