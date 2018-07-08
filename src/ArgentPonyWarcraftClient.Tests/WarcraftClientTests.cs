@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -36,7 +37,7 @@ namespace ArgentPonyWarcraftClient.Tests
             IWarcraftClient warcraftClient = new WarcraftClient(
                 apiKey: "keyhere",
                 region: Region.US,
-                locale: "en_US",
+                locale: Locale.en_US,
                 client: mockHttp.ToHttpClient());
 
             //IWarcraftClient warcraftClient = new WarcraftClient(_apiKey);
@@ -421,6 +422,15 @@ namespace ArgentPonyWarcraftClient.Tests
             Assert.Null(result.Value);
         }
 
+        [Fact]
+        public void Throws_ArgumentException_Invaild_Region_Locale()
+        {
+            Assert.Throws<ArgumentException>(() =>
+            {
+                IWarcraftClient client = new WarcraftClient("APIKEY", Region.Korea, Locale.fr_FR);
+            });
+        }
+
         private static IWarcraftClient BuildMockClient(string requestUri, string responseContent)
         {
             var mockHttp = new MockHttpMessageHandler();
@@ -432,7 +442,7 @@ namespace ArgentPonyWarcraftClient.Tests
             return new WarcraftClient(
                 apiKey: "keyhere",
                 region: Region.US,
-                locale: "en_US",
+                locale: Locale.en_US,
                 client: mockHttp.ToHttpClient());
         }
 
@@ -450,7 +460,7 @@ namespace ArgentPonyWarcraftClient.Tests
             return new WarcraftClient(
                 apiKey: "keyhere",
                 region: Region.US,
-                locale: "en_US",
+                locale: Locale.en_US,
                 client: mockHttp.ToHttpClient());
         }
     }

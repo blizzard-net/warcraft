@@ -26,7 +26,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified achievement.
         /// </returns>
-        Task<RequestResult<Achievement>> GetAchievementAsync(int id, Region region, string locale);
+        Task<RequestResult<Achievement>> GetAchievementAsync(int id, Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified auction.
@@ -46,7 +46,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified auction.
         /// </returns>
-        Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm, Region region, string locale);
+        Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm, Region region, Locale locale);
 
         /// <summary>
         ///     Get the auction house snapshot from the specified file.
@@ -73,7 +73,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported battlegroups.
         /// </returns>
-        Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync(Region region, string locale);
+        Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified boss.
@@ -99,7 +99,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified boss.
         /// </returns>
-        Task<RequestResult<Boss>> GetBossAsync(int id, Region region, string locale);
+        Task<RequestResult<Boss>> GetBossAsync(int id, Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all supported bosses.
@@ -123,7 +123,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported bosses.
         /// </returns>
-        Task<RequestResult<IList<Boss>>> GetBossesAsync(Region region, string locale);
+        Task<RequestResult<IList<Boss>>> GetBossesAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the challenge mode data for the entire region.
@@ -141,7 +141,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The challenge mode data for the entire region.
         /// </returns>
-        Task<RequestResult<IList<Challenge>>> GetChallengesAsync(Region region, string locale);
+        Task<RequestResult<IList<Challenge>>> GetChallengesAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the challenge mode data for the specified realm.
@@ -161,7 +161,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The challenge mode data for the specified realm.
         /// </returns>
-        Task<RequestResult<IList<Challenge>>> GetChallengesAsync(string realm, Region region, string locale);
+        Task<RequestResult<IList<Challenge>>> GetChallengesAsync(string realm, Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified character.
@@ -185,7 +185,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified character.
         /// </returns>
-        Task<RequestResult<Character>> GetCharacterAsync(string realm, string characterName, Region region, string locale, CharacterFields fields = CharacterFields.None);
+        Task<RequestResult<Character>> GetCharacterAsync(string realm, string characterName, Region region, Locale locale, CharacterFields fields = CharacterFields.None);
 
         /// <summary>
         ///     Get a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
@@ -203,7 +203,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all of the achievements that characters can earn as well as the category structure and hierarchy.
         /// </returns>
-        Task<RequestResult<IList<AchievementCategory>>> GetCharacterAchievementsAsync(Region region, string locale);
+        Task<RequestResult<IList<AchievementCategory>>> GetCharacterAchievementsAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all supported character classes.
@@ -221,7 +221,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// A list of all supported character classes.
         /// </returns>
-        Task<RequestResult<IList<CharacterClassData>>> GetCharacterClassesAsync(Region region, string locale);
+        Task<RequestResult<IList<CharacterClassData>>> GetCharacterClassesAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all supported character races.
@@ -239,7 +239,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported character races.
         /// </returns>
-        Task<RequestResult<IList<CharacterRace>>> GetCharacterRacesAsync(Region region, string locale);
+        Task<RequestResult<IList<CharacterRace>>> GetCharacterRacesAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified guild.
@@ -263,7 +263,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified guild.
         /// </returns>
-        Task<RequestResult<Guild>> GetGuildAsync(string realm, string guildName, Region region, string locale, GuildFields fields = GuildFields.None);
+        Task<RequestResult<Guild>> GetGuildAsync(string realm, string guildName, Region region, Locale locale, GuildFields fields = GuildFields.None);
 
         /// <summary>
         ///     Get a list of all guild achievements.
@@ -281,7 +281,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild achievements.
         /// </returns>
-        Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync(Region region, string locale);
+        Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all guild perks.
@@ -299,7 +299,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild perks.
         /// </returns>
-        Task<RequestResult<IList<Perk>>> GetGuildPerksAsync(Region region, string locale);
+        Task<RequestResult<IList<Perk>>> GetGuildPerksAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all guild rewards.
@@ -317,7 +317,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all guild rewards.
         /// </returns>
-        Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync(Region region, string locale);
+        Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified item.
@@ -337,7 +337,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified item.
         /// </returns>
-        Task<RequestResult<Item>> GetItemAsync(int itemId, Region region, string locale);
+        Task<RequestResult<Item>> GetItemAsync(int itemId, Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all item classes.
@@ -355,7 +355,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all item classes.
         /// </returns>
-        Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync(Region region, string locale);
+        Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified item set.
@@ -375,7 +375,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified item set.
         /// </returns>
-        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, Region region, string locale);
+        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all supported mounts.
@@ -401,7 +401,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported pets.
         /// </returns>
-        Task<RequestResult<IList<Pet>>> GetPetsAsync(Region region, string locale);
+        Task<RequestResult<IList<Pet>>> GetPetsAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified pet ability.
@@ -421,7 +421,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified pet ability.
         /// </returns>
-        Task<RequestResult<PetAbility>> GetPetAbilityAsync(int abilityId, Region region, string locale);
+        Task<RequestResult<PetAbility>> GetPetAbilityAsync(int abilityId, Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified pet species.
@@ -441,7 +441,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified pet species.
         /// </returns>
-        Task<RequestResult<PetSpecies>> GetPetSpeciesAsync(int speciesId, Region region, string locale);
+        Task<RequestResult<PetSpecies>> GetPetSpeciesAsync(int speciesId, Region region, Locale locale);
 
         /// <summary>
         ///     Get the pet stats for the specified pet species, level, breed, and quality.
@@ -467,7 +467,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The pet stats for the specified pet species, level, breed, and quality.
         /// </returns>
-        Task<RequestResult<PetStats>> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, string locale);
+        Task<RequestResult<PetStats>> GetPetStatsAsync(int speciesId, int level, int breedId, BattlePetQuality quality, Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all pet types.
@@ -485,7 +485,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all pet types.
         /// </returns>
-        Task<RequestResult<IList<PetType>>> GetPetTypesAsync(Region region, string locale);
+        Task<RequestResult<IList<PetType>>> GetPetTypesAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the PvP leaderboard for the specified bracket.
@@ -505,7 +505,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The PvP leaderboard for the specified bracket.
         /// </returns>
-        Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(string bracket, Region region, string locale);
+        Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(string bracket, Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified quest.
@@ -525,7 +525,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified quest.
         /// </returns>
-        Task<RequestResult<Quest>> GetQuestAsync(int questId, Region region, string locale);
+        Task<RequestResult<Quest>> GetQuestAsync(int questId, Region region, Locale locale);
 
         /// <summary>
         ///     Get the statuses for all realms.
@@ -543,7 +543,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The statuses for all realms.
         /// </returns>
-        Task<RequestResult<IList<Realm>>> GetRealmStatusAsync(Region region, string locale);
+        Task<RequestResult<IList<Realm>>> GetRealmStatusAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified recipe.
@@ -563,7 +563,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified recipe.
         /// </returns>
-        Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId, Region region, string locale);
+        Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId, Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified spell.
@@ -583,7 +583,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified spell.
         /// </returns>
-        Task<RequestResult<Spell>> GetSpellAsync(int spellId, Region region, string locale);
+        Task<RequestResult<Spell>> GetSpellAsync(int spellId, Region region, Locale locale);
 
         /// <summary>
         ///     Get a dictionary of talents, indexed by character class.
@@ -601,7 +601,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A dictionary of talents, indexed by character class.
         /// </returns>
-        Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync(Region region, string locale);
+        Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync(Region region, Locale locale);
 
         /// <summary>
         ///     Get the specified zone.
@@ -621,7 +621,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The specified zone.
         /// </returns>
-        Task<RequestResult<Zone>> GetZoneAsync(int zoneId, Region region, string locale);
+        Task<RequestResult<Zone>> GetZoneAsync(int zoneId, Region region, Locale locale);
 
         /// <summary>
         ///     Get a list of all supported zones.
@@ -639,6 +639,6 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     A list of all supported zones.
         /// </returns>
-        Task<RequestResult<IList<Zone>>> GetZonesAsync(Region region, string locale);
+        Task<RequestResult<IList<Zone>>> GetZonesAsync(Region region, Locale locale);
     }
 }

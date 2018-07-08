@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard1.5</TargetFramework>
     <PackageId>ArgentPonyWarcraftClient</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Dan Jagnow, Travis Boatman</Authors>
@@ -33,6 +33,7 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.5.0" />
   </ItemGroup>
 
 </Project>
