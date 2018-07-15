@@ -31,10 +31,10 @@ string apiKey = "MY-API-KEY-GOES-HERE";
 var warcraftClient = new WarcraftClient(apiKey);
 ```
 
-You can optionally specify the region and locale to use when calling the `WarcraftClient` constructor.  If you omit these parameters, it will default to `Region.US` and `"en_US"`.  Each method on `WarcraftClient` also has an overload that allows you to override these default values for the current call.
+You can optionally specify the region and locale to use when calling the `WarcraftClient` constructor.  If you omit these parameters, it will default to `Region.US` and `"Locale.en_US"`.  Each method on `WarcraftClient` also has an overload that allows you to override these default values for the current call.
 
 ``` cs
-var warcraftClient = new WarcraftClient(apiKey, Region.US, "en_US");
+var warcraftClient = new WarcraftClient(apiKey, Region.US, "Locale.en_US");
 ```
 
 Once you have your `WarcraftClient` instance, you can start asking for data.  All methods are asynchronous.  Here's an example for retrieving a character:
