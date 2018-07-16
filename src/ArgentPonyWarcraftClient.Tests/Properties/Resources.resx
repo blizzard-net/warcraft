@@ -231,6 +231,9 @@
   <data name="Zone404ErrorResponse" xml:space="preserve">
     <value>{ "status":"nok", "reason": "unable to get zone information."}</value>
   </data>
+  <data name="CharactersResponse" xml:space="preserve">
+    <value>{"characters":[{"name":"Erlian","realm":"Cenarius","battlegroup":"Cyclone","class":2,"race":1,"gender":0,"level":8,"achievementPoints":0,"thumbnail":"cenarius/235/108809963-avatar.jpg","lastModified":0},{"name":"Drinian","realm":"Norgannon","battlegroup":"Vindication","class":1,"race":1,"gender":0,"level":110,"achievementPoints":19290,"thumbnail":"norgannon/249/107811065-avatar.jpg","spec":{"name":"Fury","role":"DPS","backgroundImage":"bg-warrior-fury","icon":"ability_warrior_innerrage","description":"A furious berserker wielding a weapon in each hand, unleashing a flurry of attacks to carve her opponents to pieces.","order":1},"guild":"Mythical Warriors","guildRealm":"Norgannon","lastModified":1529880612000}]}</value>
+  </data>
   <data name="UserResponse" xml:space="preserve">
     <value>{"battletag":"Drinian#1121","id":1742837}</value>
   </data>

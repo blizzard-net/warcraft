@@ -152,6 +152,18 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
+        public async void GetCharactersAsync_Gets_Characters()
+        {
+            IWarcraftClient warcraftClient = BuildMockClient(
+                requestUri: "https://us.api.battle.net/wow/user/characters?access_token=tokenhere",
+                responseContent: Resources.CharactersResponse);
+
+            RequestResult<IList<GuildCharacter>> result = await warcraftClient.GetCharactersAsync("tokenhere");
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
+        }
+
+        [Fact]
         public async void GetGuildAsync_Gets_Guild()
         {
             IWarcraftClient warcraftClient = BuildMockClient(

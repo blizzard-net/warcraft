@@ -184,6 +184,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;characters&quot;:[{&quot;name&quot;:&quot;Erlian&quot;,&quot;realm&quot;:&quot;Cenarius&quot;,&quot;battlegroup&quot;:&quot;Cyclone&quot;,&quot;class&quot;:2,&quot;race&quot;:1,&quot;gender&quot;:0,&quot;level&quot;:8,&quot;achievementPoints&quot;:0,&quot;thumbnail&quot;:&quot;cenarius/235/108809963-avatar.jpg&quot;,&quot;lastModified&quot;:0},{&quot;name&quot;:&quot;Drinian&quot;,&quot;realm&quot;:&quot;Norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;class&quot;:1,&quot;race&quot;:1,&quot;gender&quot;:0,&quot;level&quot;:110,&quot;achievementPoints&quot;:19290,&quot;thumbnail&quot;:&quot;norgannon/249/107811065-avatar.jpg&quot;,&quot;spec&quot;:{&quot;name&quot;:&quot;Fury&quot;,&quot;role&quot;:&quot;DPS&quot;,&quot;backgroundImage&quot;:&quot;bg-warrior-fury&quot;,&quot;icon&quot;:&quot;ability_warrior_innerrage&quot;,&quot;description&quot;:&quot;A fur [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharactersResponse {
+            get {
+                return ResourceManager.GetString("CharactersResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;achievements&quot;:[{&quot;id&quot;:15088,&quot;achievements&quot;:[{&quot;id&quot;:5362,&quot;title&quot;:&quot;Everyone Needs a Logo&quot;,&quot;points&quot;:10,&quot;description&quot;:&quot;Create and purchase a guild crest.&quot;,&quot;rewardItems&quot;:[],&quot;icon&quot;:&quot;inv_shirt_guildtabard_01&quot;,&quot;criteria&quot;:[{&quot;id&quot;:15327,&quot;description&quot;:&quot;&quot;,&quot;orderIndex&quot;:1,&quot;max&quot;:1}],&quot;accountWide&quot;:false,&quot;factionId&quot;:2},{&quot;id&quot;:4913,&quot;title&quot;:&quot;It All Adds Up&quot;,&quot;points&quot;:10,&quot;description&quot;:&quot;Spend 50,000 gold on guildmember repairs.&quot;,&quot;rewardItems&quot;:[],&quot;icon&quot;:&quot;achievement_guildperk_cashflow_rank2&quot;,&quot;criteria&quot;:[{&quot;id&quot;:13757,&quot;description&quot;:&quot;&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GuildAchievementsResponse {

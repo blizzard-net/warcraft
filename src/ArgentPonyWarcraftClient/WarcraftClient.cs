@@ -389,6 +389,33 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
+        ///     Get the characters for a user account.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <returns>
+        ///     The characters for a user account.
+        /// </returns>
+        public async Task<RequestResult<IList<GuildCharacter>>> GetCharactersAsync(string accessToken)
+        {
+            return await GetCharactersAsync(accessToken, _region);
+        }
+
+        /// <summary>
+        ///     Get the characters for a user account.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <returns>
+        ///     The characters for a user account.
+        /// </returns>
+        public async Task<RequestResult<IList<GuildCharacter>>> GetCharactersAsync(string accessToken, Region region)
+        {
+            string host = GetHost(region);
+            RequestResult<IList<GuildCharacter>> characters = await Get<IList<GuildCharacter>>($"{host}/wow/user/characters?access_token={accessToken}", "characters");
+            return characters;
+        }
+
+        /// <summary>
         ///     Get the specified guild.
         /// </summary>
         /// <param name="realm">The realm.</param>
