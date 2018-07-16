@@ -355,6 +355,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;battletag&quot;:&quot;Drinian#1121&quot;,&quot;id&quot;:1742837}.
+        /// </summary>
+        internal static string UserResponse {
+            get {
+                return ResourceManager.GetString("UserResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to { &quot;status&quot;:&quot;nok&quot;, &quot;reason&quot;: &quot;unable to get zone information.&quot;}.
         /// </summary>
         internal static string Zone404ErrorResponse {

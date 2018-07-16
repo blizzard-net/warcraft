@@ -231,4 +231,7 @@
   <data name="Zone404ErrorResponse" xml:space="preserve">
     <value>{ "status":"nok", "reason": "unable to get zone information."}</value>
   </data>
+  <data name="UserResponse" xml:space="preserve">
+    <value>{"battletag":"Drinian#1121","id":1742837}</value>
+  </data>
 </root>
