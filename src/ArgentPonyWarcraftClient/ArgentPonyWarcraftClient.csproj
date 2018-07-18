@@ -18,14 +18,7 @@
     <PackageIconUrl>https://raw.githubusercontent.com/danjagnow/ArgentPonyWarcraftClient/master/ArgentPony.png</PackageIconUrl>
     <RootNamespace>ArgentPonyWarcraftClient</RootNamespace>
     <AssemblyName>ArgentPonyWarcraftClient</AssemblyName>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.1\ArgentPonyWarcraftClient.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.1\ArgentPonyWarcraftClient.xml</DocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
