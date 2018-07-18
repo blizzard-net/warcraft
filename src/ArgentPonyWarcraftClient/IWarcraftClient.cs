@@ -242,6 +242,25 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<IList<CharacterRace>>> GetCharacterRacesAsync(Region region, Locale locale);
 
         /// <summary>
+        ///     Get the characters for a user account.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <returns>
+        ///     The characters for a user account.
+        /// </returns>
+        Task<RequestResult<IList<GuildCharacter>>> GetCharactersAsync(string accessToken);
+
+        /// <summary>
+        ///     Get the characters for a user account.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <returns>
+        ///     The characters for a user account.
+        /// </returns>
+        Task<RequestResult<IList<GuildCharacter>>> GetCharactersAsync(string accessToken, Region region);
+
+        /// <summary>
         ///     Get the specified guild.
         /// </summary>
         /// <param name="realm">The realm.</param>
@@ -602,6 +621,25 @@ namespace ArgentPonyWarcraftClient
         ///     A dictionary of talents, indexed by character class.
         /// </returns>
         Task<RequestResult<IDictionary<CharacterClass, TalentSet>>> GetTalentsAsync(Region region, Locale locale);
+
+        /// <summary>
+        ///     Get user account details.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <returns>
+        ///     User account details.
+        /// </returns>
+        Task<RequestResult<UserAccount>> GetUserAsync(string accessToken);
+
+        /// <summary>
+        ///     Get user account details.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <returns>
+        ///     User account details.
+        /// </returns>
+        Task<RequestResult<UserAccount>> GetUserAsync(string accessToken, Region region);
 
         /// <summary>
         ///     Get the specified zone.

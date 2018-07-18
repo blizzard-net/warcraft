@@ -40,7 +40,6 @@ namespace ArgentPonyWarcraftClient.Tests
                 locale: Locale.en_US,
                 client: mockHttp.ToHttpClient());
 
-            //IWarcraftClient warcraftClient = new WarcraftClient(_apiKey);
             RequestResult<AuctionFiles> result = await warcraftClient.GetAuctionAsync("Norgannon");
             Assert.NotNull(result.Value.Files);
 
@@ -148,6 +147,18 @@ namespace ArgentPonyWarcraftClient.Tests
                 responseContent: Resources.CharacterRacesResponse);
 
             RequestResult<IList<CharacterRace>> result = await warcraftClient.GetCharacterRacesAsync();
+            Assert.NotNull(result.Value);
+            Assert.NotEmpty(result.Value);
+        }
+
+        [Fact]
+        public async void GetCharactersAsync_Gets_Characters()
+        {
+            IWarcraftClient warcraftClient = BuildMockClient(
+                requestUri: "https://us.api.battle.net/wow/user/characters?access_token=tokenhere",
+                responseContent: Resources.CharactersResponse);
+
+            RequestResult<IList<GuildCharacter>> result = await warcraftClient.GetCharactersAsync("tokenhere");
             Assert.NotNull(result.Value);
             Assert.NotEmpty(result.Value);
         }
@@ -368,6 +379,17 @@ namespace ArgentPonyWarcraftClient.Tests
             RequestResult<IDictionary<CharacterClass, TalentSet>> result = await warcraftClient.GetTalentsAsync();
             Assert.NotNull(result.Value);
             Assert.NotEmpty(result.Value);
+        }
+
+        [Fact]
+        public async void GetUserAsync_Gets_User()
+        {
+            IWarcraftClient warcraftClient = BuildMockClient(
+                requestUri: "https://us.api.battle.net/account/user?access_token=tokenhere",
+                responseContent: Resources.UserResponse);
+
+            RequestResult<UserAccount> result = await warcraftClient.GetUserAsync("tokenhere");
+            Assert.NotNull(result.Value);
         }
 
         [Fact]

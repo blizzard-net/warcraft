@@ -38,7 +38,7 @@ namespace ArgentPonyWarcraftClient
         ///     Specifies the language that the result will be in. Visit
         ///     https://dev.battle.net/docs/read/community_apis to see a list of available locales.
         /// </param>
-        public WarcraftClient(string apiKey, Region region, Locale locale) : this (apiKey, region, locale, InternalHttpClient.Instance)
+        public WarcraftClient(string apiKey, Region region, Locale locale) : this(apiKey, region, locale, InternalHttpClient.Instance)
         {
         }
 
@@ -386,6 +386,33 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             RequestResult<IList<CharacterRace>> characterRaceList = await Get<IList<CharacterRace>>($"{host}/wow/data/character/races?locale={locale}&apikey={_apiKey}", "races");
             return characterRaceList;
+        }
+
+        /// <summary>
+        ///     Get the characters for a user account.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <returns>
+        ///     The characters for a user account.
+        /// </returns>
+        public async Task<RequestResult<IList<GuildCharacter>>> GetCharactersAsync(string accessToken)
+        {
+            return await GetCharactersAsync(accessToken, _region);
+        }
+
+        /// <summary>
+        ///     Get the characters for a user account.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <returns>
+        ///     The characters for a user account.
+        /// </returns>
+        public async Task<RequestResult<IList<GuildCharacter>>> GetCharactersAsync(string accessToken, Region region)
+        {
+            string host = GetHost(region);
+            RequestResult<IList<GuildCharacter>> characters = await Get<IList<GuildCharacter>>($"{host}/wow/user/characters?access_token={accessToken}", "characters");
+            return characters;
         }
 
         /// <summary>
@@ -901,6 +928,33 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             RequestResult<IDictionary<CharacterClass, TalentSet>> talents = await Get<IDictionary<CharacterClass, TalentSet>>($"{host}/wow/data/talents?locale={locale}&apikey={_apiKey}");
             return talents;
+        }
+
+        /// <summary>
+        ///     Get user account details.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <returns>
+        ///     User account details.
+        /// </returns>
+        public async Task<RequestResult<UserAccount>> GetUserAsync(string accessToken)
+        {
+            return await GetUserAsync(accessToken, _region);
+        }
+
+        /// <summary>
+        ///     Get user account details.
+        /// </summary>
+        /// <param name="accessToken">An OAuth access token for the user.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <returns>
+        ///     User account details.
+        /// </returns>
+        public async Task<RequestResult<UserAccount>> GetUserAsync(string accessToken, Region region)
+        {
+            string host = GetHost(region);
+            RequestResult<UserAccount> userAccount = await Get<UserAccount>($"{host}/account/user?access_token={accessToken}");
+            return userAccount;
         }
 
         /// <summary>
