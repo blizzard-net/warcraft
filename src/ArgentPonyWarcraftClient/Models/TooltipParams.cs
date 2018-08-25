@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -36,6 +37,12 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("transmogItem")]
         public int TransmogItem { get; set; }
+
+        /// <summary>
+        /// Gets the set.
+        /// </summary>
+        [JsonProperty(PropertyName = "set")]
+        public IList<int> Set { get; private set; }
 
         /// <summary>
         /// Gets the timewalker level.
