@@ -111,6 +111,12 @@ namespace ArgentPonyWarcraftClient
         public AzeriteItem AzeriteItem { get; set; }
 
         /// <summary>
+        /// Gets or sets the Azerite-empowered item.
+        /// </summary>
+        [JsonProperty("azeriteEmpoweredItem")]
+        public AzeriteEmpoweredItem AzeriteEmpoweredItem { get; set; }
+
+        /// <summary>
         /// Gets or sets the weapon info.
         /// </summary>
         [JsonProperty("weaponInfo")]
