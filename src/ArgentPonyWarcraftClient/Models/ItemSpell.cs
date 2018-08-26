@@ -42,5 +42,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("trigger")]
         public string Trigger { get; set; }
+
+        /// <summary>
+        /// Get or sets the scaled description.
+        /// </summary>
+        [JsonProperty("scaledDescription")]
+        public string ScaledDescription { get; set; }
     }
 }
