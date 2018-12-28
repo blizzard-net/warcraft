@@ -1037,9 +1037,12 @@ namespace ArgentPonyWarcraftClient
                 if (response.Content != null)
                 {
                     string content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-                    RequestResult<T> requestError = JsonConvert.DeserializeObject<RequestError>(content);
 
-                    return requestError;
+                    if (!string.IsNullOrEmpty(content))
+                    {
+                        RequestResult<T> requestError = JsonConvert.DeserializeObject<RequestError>(content);
+                        return requestError;
+                    }
                 }
 
                 // If not then it is most likely a problem on our end due to an HTTP error.
