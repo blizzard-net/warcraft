@@ -1042,7 +1042,7 @@ namespace ArgentPonyWarcraftClient
             // Acquire a new OAuth token if we don't have one. Get a new one if it's expired.
             if (_token == null || DateTime.UtcNow >= _tokenExpiration)
             {
-                _token = await GetOAuthToken(Region.US).ConfigureAwait(false);
+                _token = await GetOAuthToken(region).ConfigureAwait(false);
                 _tokenExpiration = DateTime.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
             }
 
