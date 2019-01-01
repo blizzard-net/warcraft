@@ -27,6 +27,12 @@ namespace ArgentPonyWarcraftClient.Tests
             var mockHttp = new MockHttpMessageHandler();
 
             mockHttp
+                .When("https://us.battle.net/oauth/token")
+                .Respond(
+                    mediaType: "application/json",
+                    content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
+
+            mockHttp
                 .When("https://us.api.blizzard.com/wow/auction/data/Norgannon?locale=en_US")
                 .Respond(mediaType: "application/json", content: Resources.AuctionResponse);
 
@@ -459,6 +465,12 @@ namespace ArgentPonyWarcraftClient.Tests
             var mockHttp = new MockHttpMessageHandler();
 
             mockHttp
+                .When("https://us.battle.net/oauth/token")
+                .Respond(
+                    mediaType: "application/json",
+                    content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
+
+            mockHttp
                 .When(requestUri)
                 .Respond(mediaType: "application/json", content: responseContent);
 
@@ -473,6 +485,12 @@ namespace ArgentPonyWarcraftClient.Tests
         private static IWarcraftClient BuildMockClient(string requestUri, string responseContent, HttpStatusCode statusCode)
         {
             var mockHttp = new MockHttpMessageHandler();
+
+            mockHttp
+                .When("https://us.battle.net/oauth/token")
+                .Respond(
+                    mediaType: "application/json",
+                    content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
 
             mockHttp
                 .When(requestUri)

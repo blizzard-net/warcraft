@@ -1106,21 +1106,18 @@ namespace ArgentPonyWarcraftClient
             string credentials = $"{_clientId}:{_clientSecret}";
             string host = GetOAuthHost(region);
 
-            using (var client = new HttpClient())
+            _client.DefaultRequestHeaders.Accept.Clear();
+            _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.UTF8.GetBytes(credentials)));
+
+            var requestBody = new FormUrlEncodedContent(new[]
             {
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.UTF8.GetBytes(credentials)));
+                new KeyValuePair<string, string>("grant_type", "client_credentials")
+            });
 
-                var requestBody = new FormUrlEncodedContent(new[]
-                {
-                    new KeyValuePair<string, string>("grant_type", "client_credentials")
-                });
-
-                HttpResponseMessage request = await client.PostAsync($"{host}/oauth/token", requestBody);
-                string response = await request.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<OAuthAccessToken>(response);
-            }
+            HttpResponseMessage request = await _client.PostAsync($"{host}/oauth/token", requestBody);
+            string response = await request.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<OAuthAccessToken>(response);
         }
 
         /// <summary>
