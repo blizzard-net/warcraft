@@ -91,5 +91,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty(PropertyName = "zoneId")]
         public int ZoneId { get; private set; }
+
+        /// <summary>
+        /// Gets the encounter faction.
+        /// </summary>
+        [JsonProperty(PropertyName = "encounterFaction")]
+        public int EncounterFaction { get; private set; }
     }
 }
