@@ -96,5 +96,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("weeklyLosses")]
         public int WeeklyLosses { get; set; }
+
+        /// <summary>
+        /// Gets or sets the character's PVP tier.
+        /// </summary>
+        [JsonProperty("tier")]
+        public string Tier { get; set; }
     }
 }
