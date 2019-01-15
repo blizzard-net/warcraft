@@ -75,6 +75,12 @@ namespace ArgentPonyWarcraftClient
         public int AzeritePower3 { get; private set; }
 
         /// <summary>
+        /// Gets the Azerite power 4.
+        /// </summary>
+        [JsonProperty(PropertyName = "azeritePower4")]
+        public int AzeritePower4 { get; private set; }
+
+        /// <summary>
         /// Gets the Azerite power level.
         /// </summary>
         [JsonProperty(PropertyName = "azeritePowerLevel")]
