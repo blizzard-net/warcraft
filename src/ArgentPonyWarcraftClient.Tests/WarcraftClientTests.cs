@@ -437,6 +437,21 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
+        public async void InvalidJsonProducesError()
+        {
+            IWarcraftClient warcraftClient = BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
+                responseContent: Resources.BossResponseTruncated);
+
+            RequestResult<Boss> result = await warcraftClient.GetBossAsync(24723);
+            Assert.NotNull(result.Error);
+            Assert.Equal("Newtonsoft.Json.JsonReaderException", result.Error.Type);
+            Assert.Equal("Unterminated string. Expected delimiter: \". Path 'description', line 1, position 86.", result.Error.Detail);
+            Assert.False(result.Success);
+            Assert.Null(result.Value);
+        }
+
+        [Fact]
         public async void ProducesForbiddenError()
         {
             IWarcraftClient warcraftClient = BuildMockClient(

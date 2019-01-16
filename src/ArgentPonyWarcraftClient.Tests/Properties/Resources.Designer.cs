@@ -130,6 +130,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;id&quot;:24723,&quot;name&quot;:&quot;Selin Fireheart&quot;,&quot;urlSlug&quot;:&quot;selin-fireheart&quot;,&quot;description&quot;:&quot;Once a.
+        /// </summary>
+        internal static string BossResponseTruncated {
+            get {
+                return ResourceManager.GetString("BossResponseTruncated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;challenge&quot;:[{&quot;groups&quot;:[]},{&quot;groups&quot;:[]}]}.
         /// </summary>
         internal static string ChallengesForRegionResponse {

@@ -237,4 +237,7 @@
   <data name="UserResponse" xml:space="preserve">
     <value>{"battletag":"Drinian#1121","id":1742837}</value>
   </data>
+  <data name="BossResponseTruncated" xml:space="preserve">
+    <value>{"id":24723,"name":"Selin Fireheart","urlSlug":"selin-fireheart","description":"Once a</value>
+  </data>
 </root>
