@@ -1076,22 +1076,35 @@ namespace ArgentPonyWarcraftClient
             // Deserialize an object of type T from the JSON string.
             string json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-            if (arrayName != null)
+            try
             {
-                json = JObject.Parse(json).SelectToken(arrayName).ToString();
-            }
+                if (arrayName != null)
+                {
+                    json = JObject.Parse(json).SelectToken(arrayName).ToString();
+                }
 
-            RequestResult<T> requestResult = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
-            {
-                ContractResolver = new ArgentPonyWarcraftClientContractResolver(),
+                RequestResult<T> requestResult = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
+                {
+                    ContractResolver = new ArgentPonyWarcraftClientContractResolver(),
 #if DEBUG
-                MissingMemberHandling = MissingMemberHandling.Error
+                    MissingMemberHandling = MissingMemberHandling.Error
 #else
-                MissingMemberHandling = MissingMemberHandling.Ignore
+                    MissingMemberHandling = MissingMemberHandling.Ignore
 #endif
-            });
+                });
 
-            return requestResult;
+                return requestResult;
+            }
+            catch (JsonReaderException ex)
+            {
+                var requestError = new RequestError
+                {
+                    Code = string.Empty,
+                    Detail = ex.Message,
+                    Type = typeof(JsonReaderException).ToString()
+                };
+                return new RequestResult<T>(requestError);
+            }
         }
 
         /// <summary>
