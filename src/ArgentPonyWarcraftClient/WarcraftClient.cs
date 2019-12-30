@@ -1145,7 +1145,7 @@ namespace ArgentPonyWarcraftClient
             switch (region)
             {
                 case Region.China:
-                    return "https://cn.api.blizzard.com";
+                    return "https://gateway.battlenet.com.cn";
                 case Region.Europe:
                     return "https://eu.api.blizzard.com";
                 case Region.Korea:
@@ -1170,7 +1170,7 @@ namespace ArgentPonyWarcraftClient
             switch (region)
             {
                 case Region.China:
-                    return "https://cn.battle.net";
+                    return "https://www.battlenet.com.cn";
                 case Region.Europe:
                     return "https://eu.battle.net";
                 case Region.Korea:
