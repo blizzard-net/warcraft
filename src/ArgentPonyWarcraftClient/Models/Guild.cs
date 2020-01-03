@@ -68,11 +68,5 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("emblem")]
         public Emblem Emblem { get; set; }
-
-        /// <summary>
-        /// Gets or sets the challenge mode dungeon information.
-        /// </summary>
-        [JsonProperty("challenge")]
-        public IList<Challenge> Challenge { get; set; }
     }
 }

@@ -151,10 +151,10 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetGuildAsync_Gets_Guild()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/guild/Norgannon/Mythical%20Warriors?locale=en_US&fields=challenge",
+                requestUri: "https://us.api.blizzard.com/wow/guild/Norgannon/Mythical%20Warriors?locale=en_US",
                 responseContent: Resources.GuildResponse);
 
-            RequestResult<Guild> result = await warcraftClient.GetGuildAsync("Norgannon", "Mythical Warriors", GuildFields.Challenge);
+            RequestResult<Guild> result = await warcraftClient.GetGuildAsync("Norgannon", "Mythical Warriors", GuildFields.None);
             Assert.NotNull(result.Value);
         }
 

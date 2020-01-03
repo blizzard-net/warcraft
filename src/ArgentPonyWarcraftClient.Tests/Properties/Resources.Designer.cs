@@ -193,7 +193,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;lastModified&quot;:1528412536000,&quot;name&quot;:&quot;Mythical Warriors&quot;,&quot;realm&quot;:&quot;Norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;level&quot;:25,&quot;side&quot;:0,&quot;achievementPoints&quot;:1610,&quot;emblem&quot;:{&quot;icon&quot;:12,&quot;iconColor&quot;:&quot;ff092a5d&quot;,&quot;iconColorId&quot;:10,&quot;border&quot;:0,&quot;borderColor&quot;:&quot;ff00317c&quot;,&quot;borderColorId&quot;:10,&quot;backgroundColor&quot;:&quot;ffffffff&quot;,&quot;backgroundColorId&quot;:49},&quot;challenge&quot;:[{&quot;realm&quot;:{&quot;name&quot;:&quot;Norgannon&quot;,&quot;slug&quot;:&quot;norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;connected_realms&quot;:[&quot;kargath&quot;,&quot;norgannon&quot;]},&quot;map&quot;:{&quot;id&quot;:11 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to {&quot;lastModified&quot;:1528412536000,&quot;name&quot;:&quot;Mythical Warriors&quot;,&quot;realm&quot;:&quot;Norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;level&quot;:25,&quot;side&quot;:0,&quot;achievementPoints&quot;:1610,&quot;emblem&quot;:{&quot;icon&quot;:12,&quot;iconColor&quot;:&quot;ff092a5d&quot;,&quot;iconColorId&quot;:10,&quot;border&quot;:0,&quot;borderColor&quot;:&quot;ff00317c&quot;,&quot;borderColorId&quot;:10,&quot;backgroundColor&quot;:&quot;ffffffff&quot;,&quot;backgroundColorId&quot;:49}}.
         /// </summary>
         internal static string GuildResponse {
             get {
