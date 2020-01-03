@@ -202,15 +202,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;rewards&quot;:[{&quot;minGuildLevel&quot;:0,&quot;minGuildRepLevel&quot;:5,&quot;item&quot;:{&quot;id&quot;:69210,&quot;name&quot;:&quot;Renowned Guild Tabard&quot;,&quot;icon&quot;:&quot;inv_epicguildtabard&quot;,&quot;quality&quot;:4,&quot;itemLevel&quot;:1,&quot;tooltipParams&quot;:{&quot;timewalkerLevel&quot;:0,&quot;azeritePower0&quot;:0,&quot;azeritePower1&quot;:0,&quot;azeritePower2&quot;:0,&quot;azeritePower3&quot;:0,&quot;azeritePowerLevel&quot;:0},&quot;stats&quot;:[],&quot;armor&quot;:0,&quot;context&quot;:&quot;&quot;,&quot;bonusLists&quot;:[],&quot;artifactId&quot;:0,&quot;displayInfoId&quot;:98991,&quot;artifactAppearanceId&quot;:0,&quot;artifactTraits&quot;:[],&quot;relics&quot;:[],&quot;appearance&quot;:{}}},{&quot;minGuildLevel&quot;:0,&quot;minGuildRepLevel&quot;:5,&quot;achievement&quot;:{&quot;id&quot;:6 [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string GuildRewardsResponse {
-            get {
-                return ResourceManager.GetString("GuildRewardsResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {&quot;classes&quot;:[{&quot;class&quot;:17,&quot;name&quot;:&quot;Battle Pets&quot;,&quot;subclasses&quot;:[{&quot;subclass&quot;:0,&quot;name&quot;:&quot;BattlePet&quot;}]},{&quot;class&quot;:2,&quot;name&quot;:&quot;Weapon&quot;,&quot;subclasses&quot;:[{&quot;subclass&quot;:1378,&quot;name&quot;:&quot;Two-Handed Melee Weapon&quot;},{&quot;subclass&quot;:20,&quot;name&quot;:&quot;Fishing Pole&quot;}]}]}.
         /// </summary>
         internal static string ItemClassesResponse {

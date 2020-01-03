@@ -432,32 +432,6 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        ///     Get a list of all guild rewards.
-        /// </summary>
-        /// <returns>
-        ///     A list of all guild rewards.
-        /// </returns>
-        public async Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync()
-        {
-            return await GetGuildRewardsAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get a list of all guild rewards.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all guild rewards.
-        /// </returns>
-        public async Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Reward>> guildRewardsList = await Get<IList<Reward>>(region, $"{host}/wow/data/guild/rewards?locale={locale}", "rewards");
-            return guildRewardsList;
-        }
-
-        /// <summary>
         ///     Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>

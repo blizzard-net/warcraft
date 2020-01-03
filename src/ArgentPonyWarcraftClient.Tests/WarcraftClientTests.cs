@@ -171,18 +171,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetGuildRewardsAsync_Gets_Guild_Rewards()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/data/guild/rewards?locale=en_US",
-                responseContent: Resources.GuildRewardsResponse);
-
-            RequestResult<IList<Reward>> result = await warcraftClient.GetGuildRewardsAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
         public async void GetItemAsync_Gets_Item()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
