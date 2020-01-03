@@ -28,12 +28,6 @@ namespace ArgentPonyWarcraftClient
         Appearance = 2,
 
         /// <summary>
-        ///     Feed.
-        /// </summary>
-        [Display(Name = "Feed")]
-        Feed = 4,
-
-        /// <summary>
         ///     Guild.
         /// </summary>
         [Display(Name = "Guild")]
@@ -127,6 +121,6 @@ namespace ArgentPonyWarcraftClient
         ///     All.
         /// </summary>
         [Display(Name = "All")]
-        All = 262143
+        All = 262139
     }
 }

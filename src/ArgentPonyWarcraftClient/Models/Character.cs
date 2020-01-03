@@ -52,12 +52,6 @@ namespace ArgentPonyWarcraftClient
         public Faction Faction { get; set; }
 
         /// <summary>
-        /// Gets or sets the activity feed.
-        /// </summary>
-        [JsonProperty("feed")]
-        public IList<Feed> Feed { get; set; }
-
-        /// <summary>
         /// Gets or sets the gender.
         /// </summary>
         [JsonProperty("gender")]

@@ -92,7 +92,7 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetCharacterAsync_Gets_Character()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/character/Norgannon/Thorpe?&locale=en_US&fields=achievements,appearance,feed,guild,hunter pets,items,mounts,pets,pet slots,professions,progression,pvp,quests,reputation,statistics,stats,talents,titles",
+                requestUri: "https://us.api.blizzard.com/wow/character/Norgannon/Thorpe?&locale=en_US&fields=achievements,appearance,guild,hunter pets,items,mounts,pets,pet slots,professions,progression,pvp,quests,reputation,statistics,stats,talents,titles",
                 responseContent: Resources.CharacterResponse);
 
             RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Thorpe", CharacterFields.All);
