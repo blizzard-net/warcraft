@@ -58,24 +58,6 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<AuctionHouseSnapshot>> GetAuctionHouseSnapshotAsync(string url);
 
         /// <summary>
-        ///     Get a list of all supported battlegroups.
-        /// </summary>
-        /// <returns>
-        ///     A list of all supported battlegroups.
-        /// </returns>
-        Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync();
-
-        /// <summary>
-        ///     Get a list of all supported battlegroups.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all supported battlegroups.
-        /// </returns>
-        Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync(Region region, Locale locale);
-
-        /// <summary>
         ///     Get the specified boss.
         /// </summary>
         /// <remarks>

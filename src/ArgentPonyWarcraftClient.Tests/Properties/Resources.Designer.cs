@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -99,15 +99,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string AuctionResponse {
             get {
                 return ResourceManager.GetString("AuctionResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;battlegroups&quot;:[{&quot;name&quot;:&quot;AU/NZ Battle Group&quot;,&quot;slug&quot;:&quot;aunz-battle-group&quot;},{&quot;name&quot;:&quot;Bloodlust&quot;,&quot;slug&quot;:&quot;bloodlust&quot;}]}.
-        /// </summary>
-        internal static string BattlegroupsResponse {
-            get {
-                return ResourceManager.GetString("BattlegroupsResponse", resourceCulture);
             }
         }
         

@@ -55,18 +55,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetBattlegroupAsync_Gets_Battlegroups()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/data/battlegroups/?locale=en_US",
-                responseContent: Resources.BattlegroupsResponse);
-
-            RequestResult<IList<Battlegroup>> result = await warcraftClient.GetBattlegroupsAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
         public async void GetBossAsync_Gets_Boss()
         {
             IWarcraftClient warcraftClient = BuildMockClient(

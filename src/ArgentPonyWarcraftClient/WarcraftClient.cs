@@ -144,33 +144,6 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        ///     Get a list of all supported battlegroups.
-        /// </summary>
-        /// <returns>
-        ///     A list of all supported battlegroups.
-        /// </returns>
-        public async Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync()
-        {
-            return await GetBattlegroupsAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get a list of all supported battlegroups.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all supported battlegroups.
-        /// </returns>
-        public async Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Battlegroup>> battlegroupList = await Get<IList<Battlegroup>>(region, $"{host}/wow/data/battlegroups/?locale={locale}", "battlegroups");
-
-            return battlegroupList;
-        }
-
-        /// <summary>
         ///     Get the specified boss.
         /// </summary>
         /// <remarks>
