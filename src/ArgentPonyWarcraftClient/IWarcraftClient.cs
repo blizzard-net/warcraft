@@ -267,24 +267,6 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync(Region region, Locale locale);
 
         /// <summary>
-        ///     Get a list of all guild perks.
-        /// </summary>
-        /// <returns>
-        ///     A list of all guild perks.
-        /// </returns>
-        Task<RequestResult<IList<Perk>>> GetGuildPerksAsync();
-
-        /// <summary>
-        ///     Get a list of all guild perks.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all guild perks.
-        /// </returns>
-        Task<RequestResult<IList<Perk>>> GetGuildPerksAsync(Region region, Locale locale);
-
-        /// <summary>
         ///     Get a list of all guild rewards.
         /// </summary>
         /// <returns>

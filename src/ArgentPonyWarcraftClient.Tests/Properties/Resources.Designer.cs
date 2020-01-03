@@ -193,15 +193,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;perks&quot;:[{&quot;guildLevel&quot;:1,&quot;spell&quot;:{&quot;id&quot;:78633,&quot;name&quot;:&quot;Mount Up&quot;,&quot;subtext&quot;:&quot;Guild Perk&quot;,&quot;icon&quot;:&quot;achievement_guildperk_mountup&quot;,&quot;description&quot;:&quot;Increases speed while mounted by 10%.  Not active in Battlegrounds or Arenas.&quot;,&quot;castTime&quot;:&quot;Passive&quot;}},{&quot;guildLevel&quot;:1,&quot;spell&quot;:{&quot;id&quot;:83958,&quot;name&quot;:&quot;Mobile Banking&quot;,&quot;subtext&quot;:&quot;Guild Perk&quot;,&quot;icon&quot;:&quot;achievement_guildperk_mobilebanking&quot;,&quot;description&quot;:&quot;Summons a Guild Chest that allows access to your guild bank for 5 min.  Only guild members with guild reputation of friendly a [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string GuildPerksResponse {
-            get {
-                return ResourceManager.GetString("GuildPerksResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {&quot;lastModified&quot;:1528412536000,&quot;name&quot;:&quot;Mythical Warriors&quot;,&quot;realm&quot;:&quot;Norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;level&quot;:25,&quot;side&quot;:0,&quot;achievementPoints&quot;:1610,&quot;emblem&quot;:{&quot;icon&quot;:12,&quot;iconColor&quot;:&quot;ff092a5d&quot;,&quot;iconColorId&quot;:10,&quot;border&quot;:0,&quot;borderColor&quot;:&quot;ff00317c&quot;,&quot;borderColorId&quot;:10,&quot;backgroundColor&quot;:&quot;ffffffff&quot;,&quot;backgroundColorId&quot;:49},&quot;challenge&quot;:[{&quot;realm&quot;:{&quot;name&quot;:&quot;Norgannon&quot;,&quot;slug&quot;:&quot;norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;connected_realms&quot;:[&quot;kargath&quot;,&quot;norgannon&quot;]},&quot;map&quot;:{&quot;id&quot;:11 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GuildResponse {
