@@ -27,7 +27,7 @@
 
             if (flags == "all")
             {
-                return "&fields=members,achievements,news,challenge";
+                return "&fields=members,achievements,challenge";
             }
             if (flags == "none")
             {
