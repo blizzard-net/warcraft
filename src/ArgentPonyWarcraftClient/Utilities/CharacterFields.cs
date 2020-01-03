@@ -124,15 +124,9 @@ namespace ArgentPonyWarcraftClient
         Titles = 131072,
 
         /// <summary>
-        ///     Audit.
-        /// </summary>
-        [Display(Name = "Audit")]
-        Audit = 262144,
-
-        /// <summary>
         ///     All.
         /// </summary>
         [Display(Name = "All")]
-        All = 524287
+        All = 262143
     }
 }

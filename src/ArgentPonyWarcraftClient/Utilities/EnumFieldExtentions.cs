@@ -10,7 +10,7 @@
             if (flags == "all")
             {
                 return "&fields=achievements,appearance,feed,guild,hunter pets,items,mounts,pets,pet slots," +
-                    "professions,progression,pvp,quests,reputation,statistics,stats,talents,titles,audit";
+                    "professions,progression,pvp,quests,reputation,statistics,stats,talents,titles";
             }
             if (flags == "none")
             {
