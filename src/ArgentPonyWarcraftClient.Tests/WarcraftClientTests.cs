@@ -55,18 +55,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetBattlegroupAsync_Gets_Battlegroups()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/data/battlegroups/?locale=en_US",
-                responseContent: Resources.BattlegroupsResponse);
-
-            RequestResult<IList<Battlegroup>> result = await warcraftClient.GetBattlegroupsAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
         public async void GetBossAsync_Gets_Boss()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
@@ -90,17 +78,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetChallengesAsync_Gets_Challenges_For_Region()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/challenge/region?locale=en_US",
-                responseContent: Resources.ChallengesForRegionResponse);
-
-            RequestResult<IList<Challenge>> result = await warcraftClient.GetChallengesAsync();
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
         public async void GetChallengesAsync_Gets_Challenges()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
@@ -115,7 +92,7 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetCharacterAsync_Gets_Character()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/character/Norgannon/Thorpe?&locale=en_US&fields=achievements,appearance,feed,guild,hunter pets,items,mounts,pets,pet slots,professions,progression,pvp,quests,reputation,statistics,stats,talents,titles,audit",
+                requestUri: "https://us.api.blizzard.com/wow/character/Norgannon/Thorpe?&locale=en_US&fields=achievements,appearance,guild,hunter pets,items,mounts,pets,pet slots,professions,progression,pvp,quests,reputation,statistics,stats,talents,titles",
                 responseContent: Resources.CharacterResponse);
 
             RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Thorpe", CharacterFields.All);
@@ -174,10 +151,10 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void GetGuildAsync_Gets_Guild()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/guild/Norgannon/Mythical%20Warriors?locale=en_US&fields=challenge",
+                requestUri: "https://us.api.blizzard.com/wow/guild/Norgannon/Mythical%20Warriors?locale=en_US",
                 responseContent: Resources.GuildResponse);
 
-            RequestResult<Guild> result = await warcraftClient.GetGuildAsync("Norgannon", "Mythical Warriors", GuildFields.Challenge);
+            RequestResult<Guild> result = await warcraftClient.GetGuildAsync("Norgannon", "Mythical Warriors", GuildFields.None);
             Assert.NotNull(result.Value);
         }
 
@@ -189,30 +166,6 @@ namespace ArgentPonyWarcraftClient.Tests
                 responseContent: Resources.GuildAchievementsResponse);
 
             RequestResult<IList<AchievementCategory>> result = await warcraftClient.GetGuildAchievementsAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
-        public async void GetGuildPerksAsync_Gets_Guild_Perks()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/data/guild/perks?locale=en_US",
-                responseContent: Resources.GuildPerksResponse);
-
-            RequestResult<IList<Perk>> result = await warcraftClient.GetGuildPerksAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
-        public async void GetGuildRewardsAsync_Gets_Guild_Rewards()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/data/guild/rewards?locale=en_US",
-                responseContent: Resources.GuildRewardsResponse);
-
-            RequestResult<IList<Reward>> result = await warcraftClient.GetGuildRewardsAsync();
             Assert.NotNull(result.Value);
             Assert.NotEmpty(result.Value);
         }

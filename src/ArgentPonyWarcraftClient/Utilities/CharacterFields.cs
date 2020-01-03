@@ -28,12 +28,6 @@ namespace ArgentPonyWarcraftClient
         Appearance = 2,
 
         /// <summary>
-        ///     Feed.
-        /// </summary>
-        [Display(Name = "Feed")]
-        Feed = 4,
-
-        /// <summary>
         ///     Guild.
         /// </summary>
         [Display(Name = "Guild")]
@@ -124,15 +118,9 @@ namespace ArgentPonyWarcraftClient
         Titles = 131072,
 
         /// <summary>
-        ///     Audit.
-        /// </summary>
-        [Display(Name = "Audit")]
-        Audit = 262144,
-
-        /// <summary>
         ///     All.
         /// </summary>
         [Display(Name = "All")]
-        All = 524287
+        All = 262139
     }
 }

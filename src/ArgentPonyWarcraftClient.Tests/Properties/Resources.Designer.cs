@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -103,15 +103,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;battlegroups&quot;:[{&quot;name&quot;:&quot;AU/NZ Battle Group&quot;,&quot;slug&quot;:&quot;aunz-battle-group&quot;},{&quot;name&quot;:&quot;Bloodlust&quot;,&quot;slug&quot;:&quot;bloodlust&quot;}]}.
-        /// </summary>
-        internal static string BattlegroupsResponse {
-            get {
-                return ResourceManager.GetString("BattlegroupsResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {&quot;bosses&quot;:[{&quot;id&quot;:86217,&quot;name&quot;:&quot;Vigilant Kaathar&quot;,&quot;urlSlug&quot;:&quot;vigilant-kaathar&quot;,&quot;description&quot;:&quot;The greatest warriors of the draenei may be called upon for one final service as they stand on the precipice of the afterlife: inhabiting one of the armored constructs that serve as the eternal protectors of Auchindoun and the draenei civilization on Draenor. This particular Vigilant is tasked with guarding the last remaining crystal that powers the shield around Auchindoun.&quot;,&quot;zoneId&quot;:6912,&quot;availableInNormalMode&quot;:tr [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string BossesResponse {
@@ -135,15 +126,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string BossResponseTruncated {
             get {
                 return ResourceManager.GetString("BossResponseTruncated", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;challenge&quot;:[{&quot;groups&quot;:[]},{&quot;groups&quot;:[]}]}.
-        /// </summary>
-        internal static string ChallengesForRegionResponse {
-            get {
-                return ResourceManager.GetString("ChallengesForRegionResponse", resourceCulture);
             }
         }
         
@@ -211,29 +193,11 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;perks&quot;:[{&quot;guildLevel&quot;:1,&quot;spell&quot;:{&quot;id&quot;:78633,&quot;name&quot;:&quot;Mount Up&quot;,&quot;subtext&quot;:&quot;Guild Perk&quot;,&quot;icon&quot;:&quot;achievement_guildperk_mountup&quot;,&quot;description&quot;:&quot;Increases speed while mounted by 10%.  Not active in Battlegrounds or Arenas.&quot;,&quot;castTime&quot;:&quot;Passive&quot;}},{&quot;guildLevel&quot;:1,&quot;spell&quot;:{&quot;id&quot;:83958,&quot;name&quot;:&quot;Mobile Banking&quot;,&quot;subtext&quot;:&quot;Guild Perk&quot;,&quot;icon&quot;:&quot;achievement_guildperk_mobilebanking&quot;,&quot;description&quot;:&quot;Summons a Guild Chest that allows access to your guild bank for 5 min.  Only guild members with guild reputation of friendly a [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string GuildPerksResponse {
-            get {
-                return ResourceManager.GetString("GuildPerksResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;lastModified&quot;:1528412536000,&quot;name&quot;:&quot;Mythical Warriors&quot;,&quot;realm&quot;:&quot;Norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;level&quot;:25,&quot;side&quot;:0,&quot;achievementPoints&quot;:1610,&quot;emblem&quot;:{&quot;icon&quot;:12,&quot;iconColor&quot;:&quot;ff092a5d&quot;,&quot;iconColorId&quot;:10,&quot;border&quot;:0,&quot;borderColor&quot;:&quot;ff00317c&quot;,&quot;borderColorId&quot;:10,&quot;backgroundColor&quot;:&quot;ffffffff&quot;,&quot;backgroundColorId&quot;:49},&quot;challenge&quot;:[{&quot;realm&quot;:{&quot;name&quot;:&quot;Norgannon&quot;,&quot;slug&quot;:&quot;norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;connected_realms&quot;:[&quot;kargath&quot;,&quot;norgannon&quot;]},&quot;map&quot;:{&quot;id&quot;:11 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to {&quot;lastModified&quot;:1528412536000,&quot;name&quot;:&quot;Mythical Warriors&quot;,&quot;realm&quot;:&quot;Norgannon&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;level&quot;:25,&quot;side&quot;:0,&quot;achievementPoints&quot;:1610,&quot;emblem&quot;:{&quot;icon&quot;:12,&quot;iconColor&quot;:&quot;ff092a5d&quot;,&quot;iconColorId&quot;:10,&quot;border&quot;:0,&quot;borderColor&quot;:&quot;ff00317c&quot;,&quot;borderColorId&quot;:10,&quot;backgroundColor&quot;:&quot;ffffffff&quot;,&quot;backgroundColorId&quot;:49}}.
         /// </summary>
         internal static string GuildResponse {
             get {
                 return ResourceManager.GetString("GuildResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;rewards&quot;:[{&quot;minGuildLevel&quot;:0,&quot;minGuildRepLevel&quot;:5,&quot;item&quot;:{&quot;id&quot;:69210,&quot;name&quot;:&quot;Renowned Guild Tabard&quot;,&quot;icon&quot;:&quot;inv_epicguildtabard&quot;,&quot;quality&quot;:4,&quot;itemLevel&quot;:1,&quot;tooltipParams&quot;:{&quot;timewalkerLevel&quot;:0,&quot;azeritePower0&quot;:0,&quot;azeritePower1&quot;:0,&quot;azeritePower2&quot;:0,&quot;azeritePower3&quot;:0,&quot;azeritePowerLevel&quot;:0},&quot;stats&quot;:[],&quot;armor&quot;:0,&quot;context&quot;:&quot;&quot;,&quot;bonusLists&quot;:[],&quot;artifactId&quot;:0,&quot;displayInfoId&quot;:98991,&quot;artifactAppearanceId&quot;:0,&quot;artifactTraits&quot;:[],&quot;relics&quot;:[],&quot;appearance&quot;:{}}},{&quot;minGuildLevel&quot;:0,&quot;minGuildRepLevel&quot;:5,&quot;achievement&quot;:{&quot;id&quot;:6 [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string GuildRewardsResponse {
-            get {
-                return ResourceManager.GetString("GuildRewardsResponse", resourceCulture);
             }
         }
         

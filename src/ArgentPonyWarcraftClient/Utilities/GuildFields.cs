@@ -28,21 +28,9 @@ namespace ArgentPonyWarcraftClient
         Achievements = 2,
 
         /// <summary>
-        ///     News.
-        /// </summary>
-        [Display(Name = "News")]
-        News = 4,
-
-        /// <summary>
-        ///     Challenge.
-        /// </summary>
-        [Display(Name = "Challenge")]
-        Challenge = 8,
-
-        /// <summary>
         ///     All.
         /// </summary>
         [Display(Name = "All")]
-        All = 15
+        All = 3
     }
 }

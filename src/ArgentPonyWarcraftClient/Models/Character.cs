@@ -28,12 +28,6 @@ namespace ArgentPonyWarcraftClient
         public CharacterAppearance Appearance { get; set; }
 
         /// <summary>
-        /// Gets or sets the character audit.
-        /// </summary>
-        [JsonProperty("audit")]
-        public Audit Audit { get; set; }
-
-        /// <summary>
         /// Gets or sets the battlegroup.
         /// </summary>
         [JsonProperty("battlegroup")]
@@ -56,12 +50,6 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("faction")]
         public Faction Faction { get; set; }
-
-        /// <summary>
-        /// Gets or sets the activity feed.
-        /// </summary>
-        [JsonProperty("feed")]
-        public IList<Feed> Feed { get; set; }
 
         /// <summary>
         /// Gets or sets the gender.

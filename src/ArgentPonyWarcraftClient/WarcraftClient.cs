@@ -144,33 +144,6 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        ///     Get a list of all supported battlegroups.
-        /// </summary>
-        /// <returns>
-        ///     A list of all supported battlegroups.
-        /// </returns>
-        public async Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync()
-        {
-            return await GetBattlegroupsAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get a list of all supported battlegroups.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all supported battlegroups.
-        /// </returns>
-        public async Task<RequestResult<IList<Battlegroup>>> GetBattlegroupsAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Battlegroup>> battlegroupList = await Get<IList<Battlegroup>>(region, $"{host}/wow/data/battlegroups/?locale={locale}", "battlegroups");
-
-            return battlegroupList;
-        }
-
-        /// <summary>
         ///     Get the specified boss.
         /// </summary>
         /// <remarks>
@@ -233,32 +206,6 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             RequestResult<IList<Boss>> bossList = await Get<IList<Boss>>(region, $"{host}/wow/boss/?locale={locale}", "bosses");
             return bossList;
-        }
-
-        /// <summary>
-        ///     Get the challenge mode data for the entire region.
-        /// </summary>
-        /// <returns>
-        ///     The challenge mode data for the entire region.
-        /// </returns>
-        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync()
-        {
-            return await GetChallengesAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get the challenge mode data for the entire region.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The challenge mode data for the entire region.
-        /// </returns>
-        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Challenge>> challengeList = await Get<IList<Challenge>>(region, $"{host}/wow/challenge/region?locale={locale}", "challenge");
-            return challengeList;
         }
 
         /// <summary>
@@ -482,58 +429,6 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             RequestResult<IList<AchievementCategory>> guildAchievementsList = await Get<IList<AchievementCategory>>(region, $"{host}/wow/data/guild/achievements?locale={locale}", "achievements");
             return guildAchievementsList;
-        }
-
-        /// <summary>
-        ///     Get a list of all guild perks.
-        /// </summary>
-        /// <returns>
-        ///     A list of all guild perks.
-        /// </returns>
-        public async Task<RequestResult<IList<Perk>>> GetGuildPerksAsync()
-        {
-            return await GetGuildPerksAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get a list of all guild perks.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all guild perks.
-        /// </returns>
-        public async Task<RequestResult<IList<Perk>>> GetGuildPerksAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Perk>> guildPerksList = await Get<IList<Perk>>(region, $"{host}/wow/data/guild/perks?locale={locale}", "perks");
-            return guildPerksList;
-        }
-
-        /// <summary>
-        ///     Get a list of all guild rewards.
-        /// </summary>
-        /// <returns>
-        ///     A list of all guild rewards.
-        /// </returns>
-        public async Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync()
-        {
-            return await GetGuildRewardsAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get a list of all guild rewards.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all guild rewards.
-        /// </returns>
-        public async Task<RequestResult<IList<Reward>>> GetGuildRewardsAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Reward>> guildRewardsList = await Get<IList<Reward>>(region, $"{host}/wow/data/guild/rewards?locale={locale}", "rewards");
-            return guildRewardsList;
         }
 
         /// <summary>
