@@ -209,32 +209,6 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        ///     Get the challenge mode data for the entire region.
-        /// </summary>
-        /// <returns>
-        ///     The challenge mode data for the entire region.
-        /// </returns>
-        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync()
-        {
-            return await GetChallengesAsync(_region, _locale);
-        }
-
-        /// <summary>
-        ///     Get the challenge mode data for the entire region.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The challenge mode data for the entire region.
-        /// </returns>
-        public async Task<RequestResult<IList<Challenge>>> GetChallengesAsync(Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            RequestResult<IList<Challenge>> challengeList = await Get<IList<Challenge>>(region, $"{host}/wow/challenge/region?locale={locale}", "challenge");
-            return challengeList;
-        }
-
-        /// <summary>
         ///     Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>

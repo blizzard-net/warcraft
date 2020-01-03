@@ -78,17 +78,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetChallengesAsync_Gets_Challenges_For_Region()
-        {
-            IWarcraftClient warcraftClient = BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/challenge/region?locale=en_US",
-                responseContent: Resources.ChallengesForRegionResponse);
-
-            RequestResult<IList<Challenge>> result = await warcraftClient.GetChallengesAsync();
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
         public async void GetChallengesAsync_Gets_Challenges()
         {
             IWarcraftClient warcraftClient = BuildMockClient(
