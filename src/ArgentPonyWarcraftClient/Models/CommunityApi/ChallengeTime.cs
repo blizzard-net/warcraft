@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient.Community
 {
     /// <summary>
     /// The time for a challenge mode dungeon.

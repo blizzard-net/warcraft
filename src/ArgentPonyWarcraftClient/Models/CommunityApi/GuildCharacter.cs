@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient.Community
 {
     /// <summary>
     /// A character in a guild.

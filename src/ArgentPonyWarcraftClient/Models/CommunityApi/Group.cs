@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient.Community
 {
     /// <summary>
     /// A challenge mode group.

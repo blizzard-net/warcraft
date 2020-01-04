@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient.Community
 {
     /// <summary>
     /// PvP information for a character.

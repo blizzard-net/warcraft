@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient.Community
 {
     /// <summary>
     /// Progression information for a boss.

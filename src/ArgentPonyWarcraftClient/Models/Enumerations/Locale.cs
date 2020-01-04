@@ -1,4 +1,6 @@
-﻿namespace ArgentPonyWarcraftClient
+﻿using ArgentPonyWarcraftClient.Community;
+
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     ///     Represents the different locales supported by the Blizzard API.

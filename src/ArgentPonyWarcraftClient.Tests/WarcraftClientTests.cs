@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using ArgentPonyWarcraftClient.Tests.Properties;
 using RichardSzalay.MockHttp;
+using ArgentPonyWarcraftClient.Community;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
