@@ -70,6 +70,31 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;categories&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/81?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Feats of Strength&quot;,
+        ///      &quot;id&quot;: 81
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/92?namespace=static-8.2.5_31884-us&quot;        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AchievementCategoriesIndexResponse {
+            get {
+                return ResourceManager.GetString("AchievementCategoriesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;id&quot;:2144,&quot;title&quot;:&quot;What a Long, Strange Trip It&apos;s Been&quot;,&quot;points&quot;:50,&quot;description&quot;:&quot;Complete the world events achievements listed below.&quot;,&quot;reward&quot;:&quot;Rewards: Violet Proto-Drake&quot;,&quot;rewardItems&quot;:[{&quot;id&quot;:44177,&quot;name&quot;:&quot;Reins of the Violet Proto-Drake&quot;,&quot;icon&quot;:&quot;ability_mount_drake_proto&quot;,&quot;quality&quot;:4,&quot;itemLevel&quot;:70,&quot;tooltipParams&quot;:{&quot;timewalkerLevel&quot;:0,&quot;azeritePower0&quot;:0,&quot;azeritePower1&quot;:0,&quot;azeritePower2&quot;:0,&quot;azeritePower3&quot;:0,&quot;azeritePowerLevel&quot;:0},&quot;stats&quot;:[],&quot;armor&quot;:0,&quot;context&quot;:&quot;&quot;,&quot;bonusLists&quot;:[],&quot;displayInfoId&quot;:0,&quot;arti [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AchievementResponse {
