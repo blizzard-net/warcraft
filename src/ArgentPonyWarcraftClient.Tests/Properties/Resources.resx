@@ -37381,4 +37381,44 @@
   ]
 }</value>
   </data>
+  <data name="GameDataAchievementResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us"
+    }
+  },
+  "id": 6,
+  "category": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/achievement-category/92?namespace=static-8.2.5_31884-us"
+    },
+    "name": "Character",
+    "id": 92
+  },
+  "name": "Level 10",
+  "description": "Reach level 10.",
+  "points": 10,
+  "is_account_wide": false,
+  "criteria": {
+    "id": 2050,
+    "description": "Reach level 10.",
+    "amount": 0
+  },
+  "next_achievement": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/achievement/7?namespace=static-8.2.5_31884-us"
+    },
+    "name": "Level 20",
+    "id": 7
+  },
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-8.2.5_31884-us"
+    },
+    "id": 6
+  },
+  "display_order": 1
+}</value>
+  </data>
 </root>

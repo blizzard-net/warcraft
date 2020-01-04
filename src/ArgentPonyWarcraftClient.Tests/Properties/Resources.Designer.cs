@@ -263,6 +263,35 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 6,
+        ///  &quot;category&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/92?namespace=static-8.2.5_31884-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Character&quot;,
+        ///    &quot;id&quot;: 92
+        ///  },
+        ///  &quot;name&quot;: &quot;Level 10&quot;,
+        ///  &quot;description&quot;: &quot;Reach level 10.&quot;,
+        ///  &quot;points&quot;: 10,
+        ///  &quot;is_account_wide&quot;: false,
+        ///  &quot;criteria&quot;: {
+        ///    &quot;id&quot;: 2050,
+        ///    &quot;description&quot;:  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GameDataAchievementResponse {
+            get {
+                return ResourceManager.GetString("GameDataAchievementResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;achievements&quot;:[{&quot;id&quot;:15089,&quot;achievements&quot;:[{&quot;id&quot;:5130,&quot;title&quot;:&quot;Diplomacy&quot;,&quot;points&quot;:10,&quot;description&quot;:&quot;Raise 15 reputations to Exalted.&quot;,&quot;rewardItems&quot;:[],&quot;icon&quot;:&quot;achievement_reputation_02&quot;,&quot;criteria&quot;:[{&quot;id&quot;:17453,&quot;description&quot;:&quot;The League of Arathor&quot;,&quot;orderIndex&quot;:0,&quot;max&quot;:42000},{&quot;id&quot;:19732,&quot;description&quot;:&quot;The Anglers&quot;,&quot;orderIndex&quot;:70,&quot;max&quot;:42000}],&quot;accountWide&quot;:false,&quot;factionId&quot;:0},{&quot;id&quot;:5812,&quot;title&quot;:&quot;United Nations&quot;,&quot;points&quot;:15,&quot;description&quot;:&quot;Raise 55 reputations to Exalted.&quot;,&quot;reward&quot;:&quot;Reward: Dark Phoenix  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GuildAchievementsResponse {
