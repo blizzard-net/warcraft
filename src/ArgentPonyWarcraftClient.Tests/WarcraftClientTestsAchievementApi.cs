@@ -27,5 +27,16 @@ namespace ArgentPonyWarcraftClient.Tests
             RequestResult<AchievementCategory> result = await warcraftClient.GetAchievementCategoryAsync(81, "static-us");
             Assert.NotNull(result.Value);
         }
+
+        [Fact]
+        public async void GetAchievementsIndexAsync_Gets_AchievementsIndex()
+        {
+            IWarcraftClientAchievementApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/achievement/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.AchievementsIndexResponse);
+
+            RequestResult<AchievementsIndex> result = await warcraftClient.GetAchievementsIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
     }
 }

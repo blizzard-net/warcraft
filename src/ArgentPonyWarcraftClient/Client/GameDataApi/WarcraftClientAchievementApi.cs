@@ -30,5 +30,18 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return await Get<AchievementCategory>(region, $"{host}/data/wow/achievement-category/{achievementCategoryId}?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AchievementsIndex>> GetAchievementsIndexAsync(string @namespace)
+        {
+            return await GetAchievementsIndexAsync(@namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AchievementsIndex>> GetAchievementsIndexAsync(string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<AchievementsIndex>(region, $"{host}/data/wow/achievement/index?namespace={@namespace}&locale={locale}");
+        }
     }
 }

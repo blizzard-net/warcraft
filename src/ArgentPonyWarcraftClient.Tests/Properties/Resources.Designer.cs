@@ -132,6 +132,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;achievements&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Level 10&quot;,
+        ///      &quot;id&quot;: 6
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/7?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Level 20&quot;,        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AchievementsIndexResponse {
+            get {
+                return ResourceManager.GetString("AchievementsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///&quot;realms&quot;: [
         ///	{&quot;name&quot;:&quot;Kargath&quot;,&quot;slug&quot;:&quot;kargath&quot;},
         ///	{&quot;name&quot;:&quot;Norgannon&quot;,&quot;slug&quot;:&quot;norgannon&quot;}],

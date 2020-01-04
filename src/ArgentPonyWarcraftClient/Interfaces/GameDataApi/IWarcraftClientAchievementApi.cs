@@ -49,5 +49,25 @@ namespace ArgentPonyWarcraftClient
         ///     The specified achievement category.
         /// </returns>
         Task<RequestResult<AchievementCategory>> GetAchievementCategoryAsync(int achievementCategoryId, string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Gets an index of achievements.
+        /// </summary>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The achievement index.
+        /// </returns>
+        Task<RequestResult<AchievementsIndex>> GetAchievementsIndexAsync(string @namespace);
+
+        /// <summary>
+        ///     Gets an index of achievements.
+        /// </summary>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The achievement index.
+        /// </returns>
+        Task<RequestResult<AchievementsIndex>> GetAchievementsIndexAsync(string @namespace, Region region, Locale locale);
     }
 }
