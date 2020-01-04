@@ -49,5 +49,16 @@ namespace ArgentPonyWarcraftClient.Tests
             RequestResult<Achievement> result = await warcraftClient.GetAchievementAsync(6, "static-us");
             Assert.NotNull(result.Value);
         }
+
+        [Fact]
+        public async void GetAchievementMediaAsync_Gets_AchievementMedia()
+        {
+            IWarcraftClientAchievementApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-us&locale=en_US",
+                responseContent: Resources.AchievementMediaResponse);
+
+            RequestResult<AchievementMedia> result = await warcraftClient.GetAchievementMediaAsync(6, "static-us");
+            Assert.NotNull(result.Value);
+        }
     }
 }

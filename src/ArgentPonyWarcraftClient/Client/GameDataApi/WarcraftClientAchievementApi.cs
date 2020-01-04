@@ -56,5 +56,18 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return await Get<Achievement>(region, $"{host}/data/wow/achievement/{achievementId}?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AchievementMedia>> GetAchievementMediaAsync(int achievementId, string @namespace)
+        {
+            return await GetAchievementMediaAsync(achievementId, @namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AchievementMedia>> GetAchievementMediaAsync(int achievementId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<AchievementMedia>(region, $"{host}/data/wow/media/achievement/{achievementId}?namespace={@namespace}&locale={locale}");
+        }
     }
 }
