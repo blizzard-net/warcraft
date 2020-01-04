@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetAchievementAsync_Gets_Achievement()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/achievement/2144?locale=en_US",
                 responseContent: Resources.AchievementResponse);
 
@@ -58,7 +58,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetBossAsync_Gets_Boss()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
                 responseContent: Resources.BossResponse);
 
@@ -69,7 +69,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetBossesAsync_Gets_Bosses()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/boss/?locale=en_US",
                 responseContent: Resources.BossesResponse);
 
@@ -81,7 +81,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetChallengesAsync_Gets_Challenges()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/challenge/Norgannon?locale=en_US",
                 responseContent: Resources.ChallengesResponse);
 
@@ -92,7 +92,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterAsync_Gets_Character()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/character/Norgannon/Thorpe?&locale=en_US&fields=achievements,appearance,guild,hunter pets,items,mounts,pets,pet slots,professions,progression,pvp,quests,reputation,statistics,stats,talents,titles",
                 responseContent: Resources.CharacterResponse);
 
@@ -103,7 +103,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterClassesAsync_Gets_Character_Classes()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/character/classes?locale=en_US",
                 responseContent: Resources.CharacterClassesResponse);
 
@@ -115,7 +115,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterAchievementsAsync_Gets_Achievements()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/character/achievements?locale=en_US",
                 responseContent: Resources.CharacterAchievementsResponse);
 
@@ -127,7 +127,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterRacesAsync_Gets_Character_Races()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/character/races?locale=en_US",
                 responseContent: Resources.CharacterRacesResponse);
 
@@ -139,7 +139,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharactersAsync_Gets_Characters()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/user/characters?access_token=tokenhere",
                 responseContent: Resources.CharactersResponse);
 
@@ -151,7 +151,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetGuildAsync_Gets_Guild()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/guild/Norgannon/Mythical%20Warriors?locale=en_US",
                 responseContent: Resources.GuildResponse);
 
@@ -162,7 +162,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetGuildAchievementsAsync_Gets_Guild_Achievements()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/guild/achievements?locale=en_US",
                 responseContent: Resources.GuildAchievementsResponse);
 
@@ -174,7 +174,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetItemAsync_Gets_Item()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/item/18803?locale=en_US",
                 responseContent: Resources.ItemResponse);
 
@@ -185,7 +185,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetItemClassesAsync_Gets_Item_Classes()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/item/classes?locale=en_US",
                 responseContent: Resources.ItemClassesResponse);
 
@@ -197,7 +197,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetItemSetAsync_Gets_Item_Set()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/item/set/1060?locale=en_US",
                 responseContent: Resources.ItemSetResponse);
 
@@ -208,7 +208,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMountsAsync_Gets_Mounts()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/mount/?locale=en_US",
                 responseContent: Resources.MountsResponse);
 
@@ -220,7 +220,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetsAsync_Gets_Pets()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/pet/?locale=en_US",
                 responseContent: Resources.PetsResponse);
 
@@ -232,7 +232,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetAbilityAsync_Gets_Pet_Ability()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/pet/ability/640?locale=en_US",
                 responseContent: Resources.PetAbilityResponse);
 
@@ -243,7 +243,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetSpeciesAsync_Gets_Pet_Species()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/pet/species/258?locale=en_US",
                 responseContent: Resources.PetSpeciesResponse);
 
@@ -254,7 +254,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetStatsAsync_Gets_Pet_Stats()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/pet/stats/258?level=25&breedId=5&qualityId=4&locale=en_US",
                 responseContent: Resources.PetStatsResponse);
 
@@ -265,7 +265,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetTypesAsync_Gets_Pet_Types()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/pet/types?locale=en_US",
                 responseContent: Resources.PetTypesResponse);
 
@@ -277,7 +277,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPvpLeaderboardAsync_Gets_Leaderboard()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/leaderboard/2v2?locale=en_US",
                 responseContent: Resources.PvpLeaderboardResponse);
 
@@ -288,7 +288,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestAsync_Gets_Quest()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/quest/13146?locale=en_US",
                 responseContent: Resources.QuestResponse);
 
@@ -299,7 +299,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetRealmsAsync_Gets_Realms()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/realm/status?locale=en_US",
                 responseContent: Resources.RealmsResponse);
 
@@ -311,7 +311,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetRecipe_Gets_Recipe()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/recipe/33994?locale=en_US",
                 responseContent: Resources.RecipeResponse);
 
@@ -322,7 +322,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetSpellAsync_Gets_Spell()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/spell/79733?locale=en_US",
                 responseContent: Resources.SpellResponse);
 
@@ -333,7 +333,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetTalentsAsync_Gets_Talents()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/data/talents?locale=en_US",
                 responseContent: Resources.TalentsResponse);
 
@@ -345,7 +345,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetUserAsync_Gets_User()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/account/user?access_token=tokenhere",
                 responseContent: Resources.UserResponse);
 
@@ -356,7 +356,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetZoneAsync_Gets_Zone()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/zone/4131?locale=en_US",
                 responseContent: Resources.ZoneResponse);
 
@@ -367,7 +367,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetZonesAsync_Gets_Zones()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/zone/?locale=en_US",
                 responseContent: Resources.ZonesResponse);
 
@@ -378,7 +378,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void ProducesNotFoundError()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/zone/99999991?locale=en_US",
                 responseContent: Resources.Zone404ErrorResponse,
                 statusCode: HttpStatusCode.NotFound);
@@ -393,7 +393,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void InvalidJsonProducesError()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
                 responseContent: Resources.BossResponseTruncated);
 
@@ -408,7 +408,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void ProducesForbiddenError()
         {
-            IWarcraftClient warcraftClient = BuildMockClient(
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/wow/zone/4131?locale=en_US",
                 responseContent: Resources.AccountInactive403ForbiddenResponse,
                 statusCode: HttpStatusCode.Forbidden);
@@ -427,53 +427,6 @@ namespace ArgentPonyWarcraftClient.Tests
             {
                 IWarcraftClient client = new WarcraftClient("clientIdHere", "clientSecretHere", Region.Korea, Locale.fr_FR);
             });
-        }
-
-        private static IWarcraftClient BuildMockClient(string requestUri, string responseContent)
-        {
-            var mockHttp = new MockHttpMessageHandler();
-
-            mockHttp
-                .When("https://us.battle.net/oauth/token")
-                .Respond(
-                    mediaType: "application/json",
-                    content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
-
-            mockHttp
-                .When(requestUri)
-                .Respond(mediaType: "application/json", content: responseContent);
-
-            return new WarcraftClient(
-                clientId: "clientIdHere",
-                clientSecret: "clientSecretHere",
-                region: Region.US,
-                locale: Locale.en_US,
-                client: mockHttp.ToHttpClient());
-        }
-
-        private static IWarcraftClient BuildMockClient(string requestUri, string responseContent, HttpStatusCode statusCode)
-        {
-            var mockHttp = new MockHttpMessageHandler();
-
-            mockHttp
-                .When("https://us.battle.net/oauth/token")
-                .Respond(
-                    mediaType: "application/json",
-                    content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
-
-            mockHttp
-                .When(requestUri)
-                .Respond(
-                    statusCode: statusCode,
-                    mediaType: "application/json",
-                    content: responseContent);
-
-            return new WarcraftClient(
-                clientId: "clientIdHere",
-                clientSecret: "clientSecretHere",
-                region: Region.US,
-                locale: Locale.en_US,
-                client: mockHttp.ToHttpClient());
         }
     }
 }
