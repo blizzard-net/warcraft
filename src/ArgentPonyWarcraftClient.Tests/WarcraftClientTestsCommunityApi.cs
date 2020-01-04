@@ -9,7 +9,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTests
+    public class WarcraftClientTestsCommunityApi
     {
         [Fact]
         public async void GetAchievementAsync_Gets_Achievement()
