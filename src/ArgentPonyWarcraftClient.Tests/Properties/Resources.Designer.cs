@@ -70,11 +70,111 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;categories&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/81?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Feats of Strength&quot;,
+        ///      &quot;id&quot;: 81
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/92?namespace=static-8.2.5_31884-us&quot;        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AchievementCategoriesIndexResponse {
+            get {
+                return ResourceManager.GetString("AchievementCategoriesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/81?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 81,
+        ///  &quot;name&quot;: &quot;Feats of Strength&quot;,
+        ///  &quot;achievements&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/456?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Realm First! Obsidian Slayer&quot;,
+        ///      &quot;id&quot;: 456
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AchievementCategoryResponse {
+            get {
+                return ResourceManager.GetString("AchievementCategoryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/achievement_level_10.jpg&quot;
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string AchievementMediaResponse {
+            get {
+                return ResourceManager.GetString("AchievementMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;id&quot;:2144,&quot;title&quot;:&quot;What a Long, Strange Trip It&apos;s Been&quot;,&quot;points&quot;:50,&quot;description&quot;:&quot;Complete the world events achievements listed below.&quot;,&quot;reward&quot;:&quot;Rewards: Violet Proto-Drake&quot;,&quot;rewardItems&quot;:[{&quot;id&quot;:44177,&quot;name&quot;:&quot;Reins of the Violet Proto-Drake&quot;,&quot;icon&quot;:&quot;ability_mount_drake_proto&quot;,&quot;quality&quot;:4,&quot;itemLevel&quot;:70,&quot;tooltipParams&quot;:{&quot;timewalkerLevel&quot;:0,&quot;azeritePower0&quot;:0,&quot;azeritePower1&quot;:0,&quot;azeritePower2&quot;:0,&quot;azeritePower3&quot;:0,&quot;azeritePowerLevel&quot;:0},&quot;stats&quot;:[],&quot;armor&quot;:0,&quot;context&quot;:&quot;&quot;,&quot;bonusLists&quot;:[],&quot;displayInfoId&quot;:0,&quot;arti [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AchievementResponse {
             get {
                 return ResourceManager.GetString("AchievementResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;achievements&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Level 10&quot;,
+        ///      &quot;id&quot;: 6
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/7?namespace=static-8.2.5_31884-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Level 20&quot;,        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AchievementsIndexResponse {
+            get {
+                return ResourceManager.GetString("AchievementsIndexResponse", resourceCulture);
             }
         }
         
@@ -180,6 +280,35 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string CharactersResponse {
             get {
                 return ResourceManager.GetString("CharactersResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 6,
+        ///  &quot;category&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement-category/92?namespace=static-8.2.5_31884-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Character&quot;,
+        ///    &quot;id&quot;: 92
+        ///  },
+        ///  &quot;name&quot;: &quot;Level 10&quot;,
+        ///  &quot;description&quot;: &quot;Reach level 10.&quot;,
+        ///  &quot;points&quot;: 10,
+        ///  &quot;is_account_wide&quot;: false,
+        ///  &quot;criteria&quot;: {
+        ///    &quot;id&quot;: 2050,
+        ///    &quot;description&quot;:  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GameDataAchievementResponse {
+            get {
+                return ResourceManager.GetString("GameDataAchievementResponse", resourceCulture);
             }
         }
         
