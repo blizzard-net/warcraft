@@ -11,11 +11,11 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <Title>Argent Pony Warcraft Client</Title>
     <PackageTags>Warcraft World-of-Warcraft WoW Blizzard</PackageTags>
-    <PackageProjectUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/danjagnow/ArgentPonyWarcraftClient</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/blizzard-net/warcraft</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/blizzard-net/warcraft</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIconUrl>https://raw.githubusercontent.com/danjagnow/ArgentPonyWarcraftClient/master/ArgentPony.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/blizzard-net/warcraft/master/ArgentPony.png</PackageIconUrl>
     <RootNamespace>ArgentPonyWarcraftClient</RootNamespace>
     <AssemblyName>ArgentPonyWarcraftClient</AssemblyName>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
