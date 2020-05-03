@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient", "ArgentPonyWarcraftClient\ArgentPonyWarcraftClient.csproj", "{D21465F9-6D0F-421A-978E-E3FAF05EB41A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient", "src\ArgentPonyWarcraftClient\ArgentPonyWarcraftClient.csproj", "{D21465F9-6D0F-421A-978E-E3FAF05EB41A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgentPonyWarcraftClient.Tests", "ArgentPonyWarcraftClient.Tests\ArgentPonyWarcraftClient.Tests.csproj", "{C97A9D75-36AC-4E07-8597-D33485BEE46F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Tests", "tests\ArgentPonyWarcraftClient.Tests\ArgentPonyWarcraftClient.Tests.csproj", "{C97A9D75-36AC-4E07-8597-D33485BEE46F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9BBC9F4C-0E04-4D3F-B24D-2A0D3CE2E67B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BED6344B-B8DB-457B-8106-E8CEF5F42570}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +28,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D21465F9-6D0F-421A-978E-E3FAF05EB41A} = {9BBC9F4C-0E04-4D3F-B24D-2A0D3CE2E67B}
+		{C97A9D75-36AC-4E07-8597-D33485BEE46F} = {BED6344B-B8DB-457B-8106-E8CEF5F42570}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EC68E72-8DE7-4206-88FC-9BF142973C0F}
 	EndGlobalSection
 EndGlobal
