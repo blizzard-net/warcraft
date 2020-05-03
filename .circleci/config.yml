@@ -9,4 +9,9 @@
     
      steps:
        - checkout
-       - run: dotnet build
+       - run: 
+           name: Build
+           command: dotnet build --configuration Release --verbosity minimal
+       - run:
+           name: Unit Tests
+           command: dotnet test --configuration Release --verbosity minimal
