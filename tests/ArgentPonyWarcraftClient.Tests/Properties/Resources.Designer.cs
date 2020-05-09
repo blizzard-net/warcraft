@@ -358,6 +358,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;tiers&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Classic&quot;,
+        ///      &quot;id&quot;: 68
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/70?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalExpansionsIndexResponse {
+            get {
+                return ResourceManager.GetString("JournalExpansionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;mounts&quot;:[{&quot;name&quot;:&quot;High Priest&apos;s Lightsworn Seeker&quot;,&quot;spellId&quot;:229377,&quot;creatureId&quot;:122124,&quot;itemId&quot;:0,&quot;qualityId&quot;:1,&quot;icon&quot;:&quot;inv_priestmount&quot;,&quot;isGround&quot;:true,&quot;isFlying&quot;:true,&quot;isAquatic&quot;:false,&quot;isJumping&quot;:false},{&quot;name&quot;:&quot;Ivory Hawkstrider&quot;,&quot;spellId&quot;:230401,&quot;creatureId&quot;:-73991,&quot;itemId&quot;:142369,&quot;qualityId&quot;:4,&quot;icon&quot;:&quot;inv_ability_mount_cockatricemount_white&quot;,&quot;isGround&quot;:true,&quot;isFlying&quot;:false,&quot;isAquatic&quot;:true,&quot;isJumping&quot;:true}]}.
         /// </summary>
         internal static string MountsResponse {

@@ -37436,4 +37436,71 @@
   ]
 }</value>
   </data>
+  <data name="JournalExpansionsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-expansion/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "tiers": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Classic",
+      "id": 68
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/70?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Burning Crusade",
+      "id": 70
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/72?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Wrath of the Lich King",
+      "id": 72
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/73?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Cataclysm",
+      "id": 73
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/74?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Mists of Pandaria",
+      "id": 74
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/124?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Warlords of Draenor",
+      "id": 124
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/395?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Legion",
+      "id": 395
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-expansion/396?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Battle for Azeroth",
+      "id": 396
+    }
+  ]
+}</value>
+  </data>
 </root>
