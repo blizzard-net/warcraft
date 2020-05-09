@@ -27,5 +27,27 @@ namespace ArgentPonyWarcraftClient
         ///     The journal expansions index.
         /// </returns>
         Task<RequestResult<JournalExpansionsIndex>> GetJournalExpansionsIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get the specified expansion.
+        /// </summary>
+        /// <param name="journalExpansionId">The journal expansion ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified expansion.
+        /// </returns>
+        Task<RequestResult<JournalExpansion>> GetJournalExpansionAsync(int journalExpansionId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified expansion.
+        /// </summary>
+        /// <param name="journalExpansionId">The journal expansion ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified expansion.
+        /// </returns>
+        Task<RequestResult<JournalExpansion>> GetJournalExpansionAsync(int journalExpansionId, string @namespace, Region region, Locale locale);
     }
 }

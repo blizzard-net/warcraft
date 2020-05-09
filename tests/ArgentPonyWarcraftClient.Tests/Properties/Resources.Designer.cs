@@ -361,6 +361,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 68,
+        ///  &quot;name&quot;: &quot;Classic&quot;,
+        ///  &quot;dungeons&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/227?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Blackfathom Deeps&quot;,
+        ///      &quot;id&quot;: 227
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/228?namesp [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalExpansionResponse {
+            get {
+                return ResourceManager.GetString("JournalExpansionResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
