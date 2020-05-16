@@ -361,6 +361,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;encounters&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Glubtok&quot;,
+        ///      &quot;id&quot;: 89
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/90?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;n [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalEncountersIndexResponse {
+            get {
+                return ResourceManager.GetString("JournalEncountersIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

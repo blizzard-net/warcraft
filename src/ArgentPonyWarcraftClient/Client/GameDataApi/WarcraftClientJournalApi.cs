@@ -30,5 +30,18 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return await Get<JournalExpansion>(region, $"{host}/data/wow/journal-expansion/{@journalExpansionId}?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<JournalEncountersIndex>> GetJournalEncountersIndexAsync(string @namespace)
+        {
+            return await GetJournalEncountersIndexAsync(@namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<JournalEncountersIndex>> GetJournalEncountersIndexAsync(string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<JournalEncountersIndex>(region, $"{host}/data/wow/journal-encounter/index?namespace={@namespace}&locale={locale}");
+        }
     }
 }

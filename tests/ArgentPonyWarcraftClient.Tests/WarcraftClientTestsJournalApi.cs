@@ -27,5 +27,16 @@ namespace ArgentPonyWarcraftClient.Tests
             RequestResult<JournalExpansion> result = await warcraftClient.GetJournalExpansionAsync(68, "static-us");
             Assert.NotNull(result.Value);
         }
+
+        [Fact]
+        public async void GetJournalEncountersIndexAsync_Gets_JournalEncounters()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalEncountersIndexResponse);
+
+            RequestResult<JournalEncountersIndex> result = await warcraftClient.GetJournalEncountersIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
     }
 }
