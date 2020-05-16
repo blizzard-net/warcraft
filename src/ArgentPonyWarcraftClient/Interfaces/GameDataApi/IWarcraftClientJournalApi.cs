@@ -69,5 +69,27 @@ namespace ArgentPonyWarcraftClient
         ///     The journal encounters index.
         /// </returns>
         Task<RequestResult<JournalEncountersIndex>> GetJournalEncountersIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get the specified encounter.
+        /// </summary>
+        /// <param name="journalEncounterId">The journal encounter ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified encounter.
+        /// </returns>
+        Task<RequestResult<Encounter>> GetJournalEncounterAsync(int journalEncounterId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified encounter.
+        /// </summary>
+        /// <param name="journalEncounterId">The journal encounter ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified encounter.
+        /// </returns>
+        Task<RequestResult<Encounter>> GetJournalEncounterAsync(int journalEncounterId, string @namespace, Region region, Locale locale);
     }
 }

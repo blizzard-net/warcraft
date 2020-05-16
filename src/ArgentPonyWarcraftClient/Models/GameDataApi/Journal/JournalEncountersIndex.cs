@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient.GameData
         /// Gets the boss encounters.
         /// </summary>
         [JsonProperty("encounters")]
-        public Encounter[] Encounters { get; set; }
+        public EncounterReference[] Encounters { get; set; }
     }
 }

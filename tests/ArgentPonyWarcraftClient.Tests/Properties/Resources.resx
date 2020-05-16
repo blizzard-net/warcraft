@@ -43710,4 +43710,211 @@
   ]
 }</value>
   </data>
+  <data name="JournalEncounterResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 89,
+  "name": "Glubtok",
+  "description": "In a fit of rage, Glubtok unleashed his potent magical abilities and reduced his ogre mound to ash. Upon hearing of his destructive talents, the Defias hired the massive ogre mage to supervise their laborers as head foreman of the Deadmines.",
+  "creatures": [
+    {
+      "id": 358,
+      "name": "Glubtok",
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/37410?namespace=static-8.3.0_32861-us"
+        },
+        "id": 37410
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": 9111,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/2169?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Buzzer Blade",
+        "id": 2169
+      }
+    },
+    {
+      "id": 9112,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/5195?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Gold-Flecked Gloves",
+        "id": 5195
+      }
+    },
+    {
+      "id": 9113,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/65163?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Buzzer Blade",
+        "id": 65163
+      }
+    },
+    {
+      "id": 9114,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/63467?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Shadow of the Past",
+        "id": 63467
+      }
+    },
+    {
+      "id": 9115,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/5444?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Miner's Cape",
+        "id": 5444
+      }
+    },
+    {
+      "id": 9116,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/63468?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Defias Brotherhood Vest",
+        "id": 63468
+      }
+    },
+    {
+      "id": 9117,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/63470?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Missing Diplomat's Pauldrons",
+        "id": 63470
+      }
+    },
+    {
+      "id": 9118,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/63471?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Vest of the Curious Visitor",
+        "id": 63471
+      }
+    },
+    {
+      "id": 37048,
+      "item": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/157628?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Gold-Flecked Gloves",
+        "id": 157628
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": 2010,
+      "title": "Stage One: Fists of Flame and Frost",
+      "sections": [
+        {
+          "id": 2011,
+          "title": "Fists of Flame",
+          "body_text": "Glubtok shrouds his fists in flame, causing each of his melee attacks that land to deal 0 Fire damage.\r\n\r\nAdditionally, when Glubtok lands a melee attack he will sometimes deal 0 Fire damage and knock up nearby enemies within 51 yards."
+        },
+        {
+          "id": 2012,
+          "title": "Fists of Frost",
+          "body_text": "Glubtok coats his fists with frost, causing each of his melee attacks that land to deal 0 Frost damage.\r\n\r\nAdditionally, when Glubtok lands a melee attack he will sometimes deal 0 Frost damage, reduce the movement speed by 40%, reduce the frequency of melee and ranged attacks by 25%, and increase the casting time by 25% of nearby enemies within 51 yards for 4 sec."
+        },
+        {
+          "id": 2013,
+          "title": "Blink",
+          "body_text": "After either Fists of Flame or Fists of Frost wears off, Glubtok will randomly teleport to a location nearby a random player."
+        }
+      ]
+    },
+    {
+      "id": 2014,
+      "title": "Stage Two: Arcane Power!",
+      "body_text": "At 50% health, Glubtok blinks to the center of the room and levitates in place. Glubtok then begins to cast Fire Blossom and Frost Blossom spells randomly throughout the room.",
+      "sections": [
+        {
+          "id": 2015,
+          "title": "Fire Blossom",
+          "body_text": "Glubtok launches a Fire Blossom at a random location in the room that lands two seconds later. When the Fire Blossom lands, it knocks up and inflicts 0 Fire damage to nearby enemies within 51 yards.",
+          "sections": [
+            {
+              "id": 2018,
+              "title": "Fire Blossom",
+              "body_text": "This elemental has very low health.",
+              "creature_display": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/media/creature-display/4607?namespace=static-8.3.0_32861-us"
+                },
+                "id": 4607
+              }
+            }
+          ]
+        },
+        {
+          "id": 2016,
+          "title": "Frost Blossom",
+          "body_text": "Glubtok launches a Frost Blossom at a random location in the room that lands two seconds later. When the Frost Blossom lands, it deals 0 Frost damage, reduces the movement speed by 40%, reduces the frequency of melee and ranged attacks by 25%, and increases the casting time by 25% of nearby enemies within 51 yards for 4 sec.",
+          "sections": [
+            {
+              "id": 2019,
+              "title": "Frost Blossom",
+              "body_text": "This elemental has very low health.",
+              "creature_display": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/media/creature-display/30160?namespace=static-8.3.0_32861-us"
+                },
+                "id": 30160
+              }
+            }
+          ]
+        },
+        {
+          "id": 2017,
+          "title": "Fire Wall",
+          "body_text": "After casting Arcane Power, Glubtok creates a single wall of fire that begins to slowly rotate around him. Players who do not avoid the Fire Wall take 0 Fire damage every second."
+        }
+      ]
+    }
+  ],
+  "instance": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Deadmines",
+    "id": 63
+  },
+  "category": {
+    "type": "DUNGEON"
+  },
+  "modes": [
+    {
+      "type": "NORMAL",
+      "name": "Normal"
+    },
+    {
+      "type": "HEROIC",
+      "name": "Heroic"
+    }
+  ]
+}</value>
+  </data>
 </root>

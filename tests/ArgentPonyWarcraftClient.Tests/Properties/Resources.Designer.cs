@@ -361,6 +361,27 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 89,
+        ///  &quot;name&quot;: &quot;Glubtok&quot;,
+        ///  &quot;description&quot;: &quot;In a fit of rage, Glubtok unleashed his potent magical abilities and reduced his ogre mound to ash. Upon hearing of his destructive talents, the Defias hired the massive ogre mage to supervise their laborers as head foreman of the Deadmines.&quot;,
+        ///  &quot;creatures&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 358,
+        ///      &quot;name&quot;: &quot;Glu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalEncounterResponse {
+            get {
+                return ResourceManager.GetString("JournalEncounterResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

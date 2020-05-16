@@ -29,12 +29,12 @@ namespace ArgentPonyWarcraftClient.GameData
         /// Gets the dungeons that belong to the expansion.
         /// </summary>
         [JsonProperty("dungeons")]
-        public Dungeon[] Dungeons { get; set; }
+        public InstanceReference[] Dungeons { get; set; }
 
         /// <summary>
         /// Gets the raids that belong to the expansion.
         /// </summary>
         [JsonProperty("raids")]
-        public Raid[] Raids { get; set; }
+        public InstanceReference[] Raids { get; set; }
     }
 }
