@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient.GameData
     /// <summary>
     /// A reference to a dungeon or raid.
     /// </summary>
-    public partial class InstanceReference
+    public class InstanceReference
     {
         /// <summary>
         /// Gets the key for the instance.

@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient.GameData
     /// <summary>
     /// A game expansion.
     /// </summary>
-    public partial class JournalExpansion
+    public class JournalExpansion
     {
         /// <summary>
         /// Gets links for the expansion.

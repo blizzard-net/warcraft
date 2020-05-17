@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient.GameData
     /// <summary>
     /// A stage of an encounter in a dungeon or raid.
     /// </summary>
-    public partial class EncounterSection
+    public class EncounterSection
     {
         /// <summary>
         /// Gets the ID of the section.

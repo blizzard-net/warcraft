@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient.GameData
     /// <summary>
     /// A boss encounter in an dungeon or raid.
     /// </summary>
-    public partial class Encounter
+    public class Encounter
     {
         /// <summary>
         /// Gets links for the encounter.
@@ -65,6 +65,6 @@ namespace ArgentPonyWarcraftClient.GameData
         /// Gets the difficulty modes of the encounter.
         /// </summary>
         [JsonProperty("modes")]
-        public InstanceMode[] Modes { get; set; }
+        public Mode[] Modes { get; set; }
     }
 }
