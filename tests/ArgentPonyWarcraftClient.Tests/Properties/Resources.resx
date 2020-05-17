@@ -45095,4 +45095,19 @@
   }
 }</value>
   </data>
+  <data name="JournalInstanceMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "tile",
+      "value": "https://render-us.worldofwarcraft.com/zones/deadmines-small.jpg"
+    }
+  ]
+}</value>
+  </data>
 </root>

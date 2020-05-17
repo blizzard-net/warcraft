@@ -71,5 +71,16 @@ namespace ArgentPonyWarcraftClient.Tests
             RequestResult<Instance> result = await warcraftClient.GetJournalInstanceAsync(63, "static-us");
             Assert.NotNull(result.Value);
         }
+
+        [Fact]
+        public async void GetJournalInstanceMediaAsync_Gets_InstanceMedia()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalInstanceMediaResponse);
+
+            RequestResult<JournalInstanceMedia> result = await warcraftClient.GetJournalInstanceMediaAsync(63, "static-us");
+            Assert.NotNull(result.Value);
+        }
     }
 }

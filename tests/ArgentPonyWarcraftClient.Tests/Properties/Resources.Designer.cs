@@ -463,6 +463,27 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;tile&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/zones/deadmines-small.jpg&quot;
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string JournalInstanceMediaResponse {
+            get {
+                return ResourceManager.GetString("JournalInstanceMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
