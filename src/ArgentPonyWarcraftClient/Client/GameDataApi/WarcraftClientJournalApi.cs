@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using ArgentPonyWarcraftClient.GameData;
 
 namespace ArgentPonyWarcraftClient
@@ -28,7 +28,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<JournalExpansion>> GetJournalExpansionAsync(int journalExpansionId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<JournalExpansion>(region, $"{host}/data/wow/journal-expansion/{@journalExpansionId}?namespace={@namespace}&locale={locale}");
+            return await Get<JournalExpansion>(region, $"{host}/data/wow/journal-expansion/{journalExpansionId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -54,7 +54,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Encounter>> GetJournalEncounterAsync(int journalEncounterId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<Encounter>(region, $"{host}/data/wow/journal-encounter/{@journalEncounterId}?namespace={@namespace}&locale={locale}");
+            return await Get<Encounter>(region, $"{host}/data/wow/journal-encounter/{journalEncounterId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
