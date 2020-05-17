@@ -44992,4 +44992,107 @@
   ]
 }</value>
   </data>
+  <data name="JournalInstanceResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 63,
+  "name": "Deadmines",
+  "map": {
+    "name": "Deadmines",
+    "id": 36
+  },
+  "area": {
+    "name": "The Deadmines",
+    "id": 1581
+  },
+  "description": "It is said the Deadmines' gold deposits once accounted for a third of Stormwind's treasure reserves. Amid the chaos of the First War, the mines were abandoned and later thought to be haunted, leaving them relatively untouched until the Defias Brotherhood--a group of former laborers turned brigands--claimed the labyrinth as a base of operations for its subversive activities against Stormwind.",
+  "encounters": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Glubtok",
+      "id": 89
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/90?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Helix Gearbreaker",
+      "id": 90
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/91?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Foe Reaper 5000",
+      "id": 91
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/92?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Admiral Ripsnarl",
+      "id": 92
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/93?namespace=static-8.3.0_32861-us"
+      },
+      "name": "\"Captain\" Cookie",
+      "id": 93
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/95?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Vanessa VanCleef",
+      "id": 95
+    }
+  ],
+  "expansion": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Classic",
+    "id": 68
+  },
+  "location": {
+    "name": "Westfall",
+    "id": 40
+  },
+  "modes": [
+    {
+      "mode": {
+        "type": "NORMAL",
+        "name": "Normal"
+      },
+      "players": 5,
+      "is_tracked": true
+    },
+    {
+      "mode": {
+        "type": "HEROIC",
+        "name": "Heroic"
+      },
+      "players": 5,
+      "is_tracked": true
+    }
+  ],
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-8.3.0_32861-us"
+    },
+    "id": 63
+  },
+  "minimum_level": 85,
+  "category": {
+    "type": "DUNGEON"
+  }
+}</value>
+  </data>
 </root>

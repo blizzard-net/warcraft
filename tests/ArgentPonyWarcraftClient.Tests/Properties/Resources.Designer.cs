@@ -463,6 +463,31 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 63,
+        ///  &quot;name&quot;: &quot;Deadmines&quot;,
+        ///  &quot;map&quot;: {
+        ///    &quot;name&quot;: &quot;Deadmines&quot;,
+        ///    &quot;id&quot;: 36
+        ///  },
+        ///  &quot;area&quot;: {
+        ///    &quot;name&quot;: &quot;The Deadmines&quot;,
+        ///    &quot;id&quot;: 1581
+        ///  },
+        ///  &quot;description&quot;: &quot;It is said the Deadmines&apos; gold deposits once accounted for a third of Stormwind&apos;s treasure reserves. Amid the chaos of the First War, the mines were abandoned and later thought to be [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalInstanceResponse {
+            get {
+                return ResourceManager.GetString("JournalInstanceResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

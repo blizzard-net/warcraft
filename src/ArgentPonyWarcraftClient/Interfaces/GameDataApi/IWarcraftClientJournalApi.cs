@@ -111,5 +111,27 @@ namespace ArgentPonyWarcraftClient
         ///     The journal instances index.
         /// </returns>
         Task<RequestResult<JournalInstancesIndex>> GetJournalInstancesIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get the specified dungeon or raid instance.
+        /// </summary>
+        /// <param name="journalInstanceId">The journal instance ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified dungeon or raid instance.
+        /// </returns>
+        Task<RequestResult<Instance>> GetJournalInstanceAsync(int journalInstanceId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified dungeon or raid instance.
+        /// </summary>
+        /// <param name="journalInstanceId">The journal instance ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified dungeon or raid instance.
+        /// </returns>
+        Task<RequestResult<Instance>> GetJournalInstanceAsync(int journalInstanceId, string @namespace, Region region, Locale locale);
     }
 }

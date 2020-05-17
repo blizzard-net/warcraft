@@ -3,20 +3,26 @@
 namespace ArgentPonyWarcraftClient.GameData
 {
     /// <summary>
-    /// The difficulty mode of the dungeon or raid.
+    /// A difficulty mode of a dungeon or raid instance.
     /// </summary>
     public class InstanceMode
     {
         /// <summary>
-        /// Gets the type of the difficulty mode.
+        /// Gets the difficulty mode.
         /// </summary>
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("mode")]
+        public Mode Mode { get; set; }
 
         /// <summary>
-        /// Gets the name of the difficulty mode.
+        /// Gets the number of players.
         /// </summary>
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("players")]
+        public long Players { get; set; }
+
+        /// <summary>
+        /// Gets a value indicating whether this difficulty mode is tracked.
+        /// </summary>
+        [JsonProperty("is_tracked")]
+        public bool IsTracked { get; set; }
     }
 }
