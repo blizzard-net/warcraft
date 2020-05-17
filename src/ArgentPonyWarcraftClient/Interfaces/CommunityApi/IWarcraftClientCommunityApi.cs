@@ -59,56 +59,6 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<AuctionHouseSnapshot>> GetAuctionHouseSnapshotAsync(string url);
 
         /// <summary>
-        ///     Get the specified boss.
-        /// </summary>
-        /// <remarks>
-        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
-        /// </remarks>
-        /// <param name="id">The boss ID.</param>
-        /// <returns>
-        ///     The specified boss.
-        /// </returns>
-        Task<RequestResult<Boss>> GetBossAsync(int id);
-
-        /// <summary>
-        ///     Get the specified boss.
-        /// </summary>
-        /// <remarks>
-        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
-        /// </remarks>
-        /// <param name="id">The boss ID.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified boss.
-        /// </returns>
-        Task<RequestResult<Boss>> GetBossAsync(int id, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get a list of all supported bosses.
-        /// </summary>
-        /// <remarks>
-        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
-        /// </remarks>
-        /// <returns>
-        ///     A list of all supported bosses.
-        /// </returns>
-        Task<RequestResult<IList<Boss>>> GetBossesAsync();
-
-        /// <summary>
-        ///     Get a list of all supported bosses.
-        /// </summary>
-        /// <remarks>
-        ///     A "boss" in this context should be considered a boss encounter, which may include more than one NPC.
-        /// </remarks>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all supported bosses.
-        /// </returns>
-        Task<RequestResult<IList<Boss>>> GetBossesAsync(Region region, Locale locale);
-
-        /// <summary>
         ///     Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>

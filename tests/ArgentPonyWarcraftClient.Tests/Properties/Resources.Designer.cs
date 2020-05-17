@@ -203,33 +203,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;bosses&quot;:[{&quot;id&quot;:86217,&quot;name&quot;:&quot;Vigilant Kaathar&quot;,&quot;urlSlug&quot;:&quot;vigilant-kaathar&quot;,&quot;description&quot;:&quot;The greatest warriors of the draenei may be called upon for one final service as they stand on the precipice of the afterlife: inhabiting one of the armored constructs that serve as the eternal protectors of Auchindoun and the draenei civilization on Draenor. This particular Vigilant is tasked with guarding the last remaining crystal that powers the shield around Auchindoun.&quot;,&quot;zoneId&quot;:6912,&quot;availableInNormalMode&quot;:tr [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BossesResponse {
-            get {
-                return ResourceManager.GetString("BossesResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:24723,&quot;name&quot;:&quot;Selin Fireheart&quot;,&quot;urlSlug&quot;:&quot;selin-fireheart&quot;,&quot;description&quot;:&quot;Once a respected captain of Kael&apos;Thas Sunstrider&apos;s personal guard, Selin Fireheart has maintained an unswervingly fierce loyalty to his lord while losing his sanity. Selin has been seduced by the demonic energies of the crystals which surround his chamber, and cannot stop from reveling in their vile power. He will slay any who dare approach the Magister&apos;s Terrace and will drink the magic, life, and blood from their dead bodies.&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BossResponse {
-            get {
-                return ResourceManager.GetString("BossResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:24723,&quot;name&quot;:&quot;Selin Fireheart&quot;,&quot;urlSlug&quot;:&quot;selin-fireheart&quot;,&quot;description&quot;:&quot;Once a.
-        /// </summary>
-        internal static string BossResponseTruncated {
-            get {
-                return ResourceManager.GetString("BossResponseTruncated", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {&quot;challenge&quot;:[{&quot;realm&quot;:{&quot;name&quot;:&quot;Kargath&quot;,&quot;slug&quot;:&quot;kargath&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;connected_realms&quot;:[&quot;kargath&quot;,&quot;norgannon&quot;]},&quot;map&quot;:{&quot;id&quot;:1182,&quot;name&quot;:&quot;Auchindoun&quot;,&quot;slug&quot;:&quot;auchindoun&quot;,&quot;hasChallengeMode&quot;:true,&quot;bronzeCriteria&quot;:{&quot;time&quot;:3300000,&quot;hours&quot;:0,&quot;minutes&quot;:55,&quot;seconds&quot;:0,&quot;milliseconds&quot;:0,&quot;isPositive&quot;:true},&quot;silverCriteria&quot;:{&quot;time&quot;:1920000,&quot;hours&quot;:0,&quot;minutes&quot;:32,&quot;seconds&quot;:0,&quot;milliseconds&quot;:0,&quot;isPositive&quot;:true},&quot;goldCriteria&quot;:{&quot;time&quot;:1140000,&quot;hours&quot;:0,&quot;minu [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ChallengesResponse {
@@ -375,6 +348,23 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string JournalEncounterResponse {
             get {
                 return ResourceManager.GetString("JournalEncounterResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 89,
+        ///  &quot;name&quot;: &quot;Glubtok&quot;,
+        ///  &quot;description&quot;: &quot;In a fit of rage, Glubtok unlea.
+        /// </summary>
+        internal static string JournalEncounterResponseTruncated {
+            get {
+                return ResourceManager.GetString("JournalEncounterResponseTruncated", resourceCulture);
             }
         }
         

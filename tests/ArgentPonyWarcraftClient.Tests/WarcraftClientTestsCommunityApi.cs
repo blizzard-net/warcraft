@@ -56,29 +56,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetBossAsync_Gets_Boss()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
-                responseContent: Resources.BossResponse);
-
-            RequestResult<Boss> result = await warcraftClient.GetBossAsync(24723);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
-        public async void GetBossesAsync_Gets_Bosses()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/boss/?locale=en_US",
-                responseContent: Resources.BossesResponse);
-
-            RequestResult<IList<Boss>> result = await warcraftClient.GetBossesAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
         public async void GetChallengesAsync_Gets_Challenges()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
@@ -394,13 +371,13 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void InvalidJsonProducesError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
-                responseContent: Resources.BossResponseTruncated);
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalEncounterResponseTruncated);
 
-            RequestResult<Boss> result = await warcraftClient.GetBossAsync(24723);
+            RequestResult<ArgentPonyWarcraftClient.GameData.Encounter> result = await warcraftClient.GetJournalEncounterAsync(89, "static-us");
             Assert.NotNull(result.Error);
             Assert.Equal("Newtonsoft.Json.JsonReaderException", result.Error.Type);
-            Assert.Equal("Unterminated string. Expected delimiter: \". Path 'description', line 1, position 86.", result.Error.Detail);
+            Assert.Equal("Unterminated string. Expected delimiter: \". Path 'description', line 9, position 49.", result.Error.Detail);
             Assert.False(result.Success);
             Assert.Null(result.Value);
         }
