@@ -1,0 +1,86 @@
+﻿using ArgentPonyWarcraftClient.GameData;
+using ArgentPonyWarcraftClient.Tests.Properties;
+using Xunit;
+
+namespace ArgentPonyWarcraftClient.Tests
+{
+    public class WarcraftClientTestsJournalApi
+    {
+        [Fact]
+        public async void GetJournalExpansionsIndexAsync_Gets_JournalExpansions()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-expansion/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalExpansionsIndexResponse);
+
+            RequestResult<JournalExpansionsIndex> result = await warcraftClient.GetJournalExpansionsIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetJournalExpansionAsync_Gets_JournalExpansion()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalExpansionResponse);
+
+            RequestResult<JournalExpansion> result = await warcraftClient.GetJournalExpansionAsync(68, "static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetJournalEncountersIndexAsync_Gets_JournalEncounters()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalEncountersIndexResponse);
+
+            RequestResult<JournalEncountersIndex> result = await warcraftClient.GetJournalEncountersIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetJournalEncounterAsync_Gets_Encounter()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalEncounterResponse);
+
+            RequestResult<Encounter> result = await warcraftClient.GetJournalEncounterAsync(89, "static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetJournalInstancesIndexAsync_Gets_JournalInstances()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-instance/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalInstancesIndexResponse);
+
+            RequestResult<JournalInstancesIndex> result = await warcraftClient.GetJournalInstancesIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetJournalInstanceAsync_Gets_Instance()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalInstanceResponse);
+
+            RequestResult<Instance> result = await warcraftClient.GetJournalInstanceAsync(63, "static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetJournalInstanceMediaAsync_Gets_InstanceMedia()
+        {
+            IWarcraftClientJournalApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-us&locale=en_US",
+                responseContent: Resources.JournalInstanceMediaResponse);
+
+            RequestResult<JournalInstanceMedia> result = await warcraftClient.GetJournalInstanceMediaAsync(63, "static-us");
+            Assert.NotNull(result.Value);
+        }
+    }
+}

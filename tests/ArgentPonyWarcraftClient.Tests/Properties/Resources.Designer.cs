@@ -203,33 +203,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;bosses&quot;:[{&quot;id&quot;:86217,&quot;name&quot;:&quot;Vigilant Kaathar&quot;,&quot;urlSlug&quot;:&quot;vigilant-kaathar&quot;,&quot;description&quot;:&quot;The greatest warriors of the draenei may be called upon for one final service as they stand on the precipice of the afterlife: inhabiting one of the armored constructs that serve as the eternal protectors of Auchindoun and the draenei civilization on Draenor. This particular Vigilant is tasked with guarding the last remaining crystal that powers the shield around Auchindoun.&quot;,&quot;zoneId&quot;:6912,&quot;availableInNormalMode&quot;:tr [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BossesResponse {
-            get {
-                return ResourceManager.GetString("BossesResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:24723,&quot;name&quot;:&quot;Selin Fireheart&quot;,&quot;urlSlug&quot;:&quot;selin-fireheart&quot;,&quot;description&quot;:&quot;Once a respected captain of Kael&apos;Thas Sunstrider&apos;s personal guard, Selin Fireheart has maintained an unswervingly fierce loyalty to his lord while losing his sanity. Selin has been seduced by the demonic energies of the crystals which surround his chamber, and cannot stop from reveling in their vile power. He will slay any who dare approach the Magister&apos;s Terrace and will drink the magic, life, and blood from their dead bodies.&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BossResponse {
-            get {
-                return ResourceManager.GetString("BossResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:24723,&quot;name&quot;:&quot;Selin Fireheart&quot;,&quot;urlSlug&quot;:&quot;selin-fireheart&quot;,&quot;description&quot;:&quot;Once a.
-        /// </summary>
-        internal static string BossResponseTruncated {
-            get {
-                return ResourceManager.GetString("BossResponseTruncated", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {&quot;challenge&quot;:[{&quot;realm&quot;:{&quot;name&quot;:&quot;Kargath&quot;,&quot;slug&quot;:&quot;kargath&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;connected_realms&quot;:[&quot;kargath&quot;,&quot;norgannon&quot;]},&quot;map&quot;:{&quot;id&quot;:1182,&quot;name&quot;:&quot;Auchindoun&quot;,&quot;slug&quot;:&quot;auchindoun&quot;,&quot;hasChallengeMode&quot;:true,&quot;bronzeCriteria&quot;:{&quot;time&quot;:3300000,&quot;hours&quot;:0,&quot;minutes&quot;:55,&quot;seconds&quot;:0,&quot;milliseconds&quot;:0,&quot;isPositive&quot;:true},&quot;silverCriteria&quot;:{&quot;time&quot;:1920000,&quot;hours&quot;:0,&quot;minutes&quot;:32,&quot;seconds&quot;:0,&quot;milliseconds&quot;:0,&quot;isPositive&quot;:true},&quot;goldCriteria&quot;:{&quot;time&quot;:1140000,&quot;hours&quot;:0,&quot;minu [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ChallengesResponse {
@@ -354,6 +327,198 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string ItemSetResponse {
             get {
                 return ResourceManager.GetString("ItemSetResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 89,
+        ///  &quot;name&quot;: &quot;Glubtok&quot;,
+        ///  &quot;description&quot;: &quot;In a fit of rage, Glubtok unleashed his potent magical abilities and reduced his ogre mound to ash. Upon hearing of his destructive talents, the Defias hired the massive ogre mage to supervise their laborers as head foreman of the Deadmines.&quot;,
+        ///  &quot;creatures&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 358,
+        ///      &quot;name&quot;: &quot;Glu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalEncounterResponse {
+            get {
+                return ResourceManager.GetString("JournalEncounterResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 89,
+        ///  &quot;name&quot;: &quot;Glubtok&quot;,
+        ///  &quot;description&quot;: &quot;In a fit of rage, Glubtok unlea.
+        /// </summary>
+        internal static string JournalEncounterResponseTruncated {
+            get {
+                return ResourceManager.GetString("JournalEncounterResponseTruncated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;encounters&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Glubtok&quot;,
+        ///      &quot;id&quot;: 89
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-encounter/90?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;n [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalEncountersIndexResponse {
+            get {
+                return ResourceManager.GetString("JournalEncountersIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 68,
+        ///  &quot;name&quot;: &quot;Classic&quot;,
+        ///  &quot;dungeons&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/227?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Blackfathom Deeps&quot;,
+        ///      &quot;id&quot;: 227
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/228?namesp [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalExpansionResponse {
+            get {
+                return ResourceManager.GetString("JournalExpansionResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;tiers&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Classic&quot;,
+        ///      &quot;id&quot;: 68
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/70?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalExpansionsIndexResponse {
+            get {
+                return ResourceManager.GetString("JournalExpansionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;tile&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/zones/deadmines-small.jpg&quot;
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string JournalInstanceMediaResponse {
+            get {
+                return ResourceManager.GetString("JournalInstanceMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 63,
+        ///  &quot;name&quot;: &quot;Deadmines&quot;,
+        ///  &quot;map&quot;: {
+        ///    &quot;name&quot;: &quot;Deadmines&quot;,
+        ///    &quot;id&quot;: 36
+        ///  },
+        ///  &quot;area&quot;: {
+        ///    &quot;name&quot;: &quot;The Deadmines&quot;,
+        ///    &quot;id&quot;: 1581
+        ///  },
+        ///  &quot;description&quot;: &quot;It is said the Deadmines&apos; gold deposits once accounted for a third of Stormwind&apos;s treasure reserves. Amid the chaos of the First War, the mines were abandoned and later thought to be [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalInstanceResponse {
+            get {
+                return ResourceManager.GetString("JournalInstanceResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;instances&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Deadmines&quot;,
+        ///      &quot;id&quot;: 63
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/64?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;nam [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JournalInstancesIndexResponse {
+            get {
+                return ResourceManager.GetString("JournalInstancesIndexResponse", resourceCulture);
             }
         }
         

@@ -56,29 +56,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetBossAsync_Gets_Boss()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
-                responseContent: Resources.BossResponse);
-
-            RequestResult<Boss> result = await warcraftClient.GetBossAsync(24723);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
-        public async void GetBossesAsync_Gets_Bosses()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/boss/?locale=en_US",
-                responseContent: Resources.BossesResponse);
-
-            RequestResult<IList<Boss>> result = await warcraftClient.GetBossesAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
         public async void GetChallengesAsync_Gets_Challenges()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
@@ -375,58 +352,6 @@ namespace ArgentPonyWarcraftClient.Tests
             Assert.NotEmpty(result.Value);
         }
 
-        [Fact]
-        public async void ProducesNotFoundError()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/zone/99999991?locale=en_US",
-                responseContent: Resources.Zone404ErrorResponse,
-                statusCode: HttpStatusCode.NotFound);
-
-            RequestResult<Zone> result = await warcraftClient.GetZoneAsync(99999991);
-            Assert.NotNull(result.Error);
-            Assert.Equal("404", result.Error.Code);
-            Assert.False(result.Success);
-            Assert.Null(result.Value);
-        }
-
-        [Fact]
-        public async void InvalidJsonProducesError()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/boss/24723?locale=en_US",
-                responseContent: Resources.BossResponseTruncated);
-
-            RequestResult<Boss> result = await warcraftClient.GetBossAsync(24723);
-            Assert.NotNull(result.Error);
-            Assert.Equal("Newtonsoft.Json.JsonReaderException", result.Error.Type);
-            Assert.Equal("Unterminated string. Expected delimiter: \". Path 'description', line 1, position 86.", result.Error.Detail);
-            Assert.False(result.Success);
-            Assert.Null(result.Value);
-        }
-
-        [Fact]
-        public async void ProducesForbiddenError()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/zone/4131?locale=en_US",
-                responseContent: Resources.AccountInactive403ForbiddenResponse,
-                statusCode: HttpStatusCode.Forbidden);
-
-            RequestResult<Zone> result = await warcraftClient.GetZoneAsync(4131);
-            Assert.NotNull(result.Error);
-            Assert.Equal("403", result.Error.Code);
-            Assert.False(result.Success);
-            Assert.Null(result.Value);
-        }
-
-        [Fact]
-        public void Throws_ArgumentException_Invaild_Region_Locale()
-        {
-            Assert.Throws<ArgumentException>(() =>
-            {
-                IWarcraftClient client = new WarcraftClient("clientIdHere", "clientSecretHere", Region.Korea, Locale.fr_FR);
-            });
-        }
+        
     }
 }
