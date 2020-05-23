@@ -544,6 +544,32 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 39,
+        ///  &quot;name&quot;: &quot;Mechanical Squirrel&quot;,
+        ///  &quot;battle_pet_type&quot;: {
+        ///    &quot;id&quot;: 9,
+        ///    &quot;type&quot;: &quot;MECHANICAL&quot;,
+        ///    &quot;name&quot;: &quot;Mechanical&quot;
+        ///  },
+        ///  &quot;description&quot;: &quot;A mechanical squirrel&apos;s logic center tells it to collect and store both nuts and bolts for the winter.&quot;,
+        ///  &quot;is_capturable&quot;: false,
+        ///  &quot;is_tradable&quot;: true,
+        ///  &quot;is_battlepet&quot;: true,
+        ///  &quot;is_alliance_only&quot;: false,        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PetResponse {
+            get {
+                return ResourceManager.GetString("PetResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

@@ -54083,4 +54083,107 @@
   ]
 }</value>
   </data>
+  <data name="PetResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 39,
+  "name": "Mechanical Squirrel",
+  "battle_pet_type": {
+    "id": 9,
+    "type": "MECHANICAL",
+    "name": "Mechanical"
+  },
+  "description": "A mechanical squirrel's logic center tells it to collect and store both nuts and bolts for the winter.",
+  "is_capturable": false,
+  "is_tradable": true,
+  "is_battlepet": true,
+  "is_alliance_only": false,
+  "is_horde_only": false,
+  "abilities": [
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/384?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Metal Fist",
+        "id": 384
+      },
+      "slot": 0,
+      "required_level": 1
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/389?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Overtune",
+        "id": 389
+      },
+      "slot": 1,
+      "required_level": 2
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/459?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Wind-Up",
+        "id": 459
+      },
+      "slot": 2,
+      "required_level": 4
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/202?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Thrash",
+        "id": 202
+      },
+      "slot": 0,
+      "required_level": 10
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/392?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Extra Plating",
+        "id": 392
+      },
+      "slot": 1,
+      "required_level": 15
+    },
+    {
+      "ability": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet-ability/278?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Repair",
+        "id": 278
+      },
+      "slot": 2,
+      "required_level": 20
+    }
+  ],
+  "source": {
+    "type": "PROFESSION",
+    "name": "Profession"
+  },
+  "icon": "https://render-us.worldofwarcraft.com/icons/56/inv_pet_mechanicalsquirrel.jpg",
+  "creature": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/creature/2671?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Mechanical Squirrel",
+    "id": 2671
+  },
+  "is_random_creature_display": false
+}</value>
+  </data>
 </root>
