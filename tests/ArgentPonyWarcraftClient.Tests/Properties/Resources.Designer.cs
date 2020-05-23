@@ -541,6 +541,34 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Mechanical Squirrel&quot;,
+        ///      &quot;id&quot;: 39
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/40?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Bombay Cat&quot;,
+        ///      &quot;id&quot;: 40        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PetsIndexResponse {
+            get {
+                return ResourceManager.GetString("PetsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;speciesId&quot;:258,&quot;petTypeId&quot;:9,&quot;creatureId&quot;:42078,&quot;name&quot;:&quot;Mini Thor&quot;,&quot;canBattle&quot;:true,&quot;icon&quot;:&quot;t_roboticon&quot;,&quot;description&quot;:&quot;Powerful artillery of the Terran army. The Thor is always the first one in and the last one out!&quot;,&quot;source&quot;:&quot;Promotion: StarCraft II: Wings of Liberty Collector&apos;s Edition&quot;,&quot;abilities&quot;:[{&quot;slot&quot;:0,&quot;order&quot;:0,&quot;requiredLevel&quot;:1,&quot;id&quot;:777,&quot;name&quot;:&quot;Missile&quot;,&quot;icon&quot;:&quot;ability_racial_rocketbarrage&quot;,&quot;cooldown&quot;:0,&quot;rounds&quot;:1,&quot;petTypeId&quot;:9,&quot;isPassive&quot;:false,&quot;hideHints&quot;:false},{&quot;slot&quot;:1,&quot;order&quot;:1,&quot;required [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PetSpeciesResponse {

@@ -5,7 +5,8 @@
     /// </summary>
     public interface IWarcraftClientGameDataApi :
         IWarcraftClientAchievementApi,
-        IWarcraftClientJournalApi
+        IWarcraftClientJournalApi,
+        IWarcraftClientPetApi
     {
     }
 }
