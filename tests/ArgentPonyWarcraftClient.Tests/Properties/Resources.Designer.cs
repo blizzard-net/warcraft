@@ -532,15 +532,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:640,&quot;name&quot;:&quot;Toxic Smoke&quot;,&quot;icon&quot;:&quot;spell_shadow_plaguecloud&quot;,&quot;cooldown&quot;:0,&quot;rounds&quot;:1,&quot;petTypeId&quot;:9,&quot;isPassive&quot;:false,&quot;hideHints&quot;:false}.
-        /// </summary>
-        internal static string PetAbilityResponse {
-            get {
-                return ResourceManager.GetString("PetAbilityResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
@@ -591,33 +582,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string PetsIndexResponse {
             get {
                 return ResourceManager.GetString("PetsIndexResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;speciesId&quot;:258,&quot;petTypeId&quot;:9,&quot;creatureId&quot;:42078,&quot;name&quot;:&quot;Mini Thor&quot;,&quot;canBattle&quot;:true,&quot;icon&quot;:&quot;t_roboticon&quot;,&quot;description&quot;:&quot;Powerful artillery of the Terran army. The Thor is always the first one in and the last one out!&quot;,&quot;source&quot;:&quot;Promotion: StarCraft II: Wings of Liberty Collector&apos;s Edition&quot;,&quot;abilities&quot;:[{&quot;slot&quot;:0,&quot;order&quot;:0,&quot;requiredLevel&quot;:1,&quot;id&quot;:777,&quot;name&quot;:&quot;Missile&quot;,&quot;icon&quot;:&quot;ability_racial_rocketbarrage&quot;,&quot;cooldown&quot;:0,&quot;rounds&quot;:1,&quot;petTypeId&quot;:9,&quot;isPassive&quot;:false,&quot;hideHints&quot;:false},{&quot;slot&quot;:1,&quot;order&quot;:1,&quot;required [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string PetSpeciesResponse {
-            get {
-                return ResourceManager.GetString("PetSpeciesResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;pets&quot;:[{&quot;canBattle&quot;:true,&quot;creatureId&quot;:17254,&quot;name&quot;:&quot;Ash&apos;ana&quot;,&quot;family&quot;:&quot;beast&quot;,&quot;icon&quot;:&quot;ability_mount_whitetiger&quot;,&quot;qualityId&quot;:4,&quot;stats&quot;:{&quot;speciesId&quot;:1927,&quot;breedId&quot;:3,&quot;petQualityId&quot;:1,&quot;level&quot;:1,&quot;health&quot;:147,&quot;power&quot;:10,&quot;speed&quot;:9},&quot;strongAgainst&quot;:[&quot;critter&quot;],&quot;typeId&quot;:7,&quot;weakAgainst&quot;:[&quot;flying&quot;]},{&quot;canBattle&quot;:true,&quot;creatureId&quot;:120830,&quot;name&quot;:&quot;Ban-Fu, Cub of Ban-Lu&quot;,&quot;family&quot;:&quot;beast&quot;,&quot;icon&quot;:&quot;inv_tigergodcubmonk&quot;,&quot;qualityId&quot;:4,&quot;stats&quot;:{&quot;speciesId&quot;:2047,&quot;breedId&quot;:3,&quot;petQualityId&quot;:1,&quot;level&quot;:1,&quot;health&quot;:147,&quot;power&quot;:10,&quot; [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string PetsResponse {
-            get {
-                return ResourceManager.GetString("PetsResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;speciesId&quot;:258,&quot;breedId&quot;:5,&quot;petQualityId&quot;:4,&quot;level&quot;:25,&quot;health&quot;:1587,&quot;power&quot;:315,&quot;speed&quot;:297}.
-        /// </summary>
-        internal static string PetStatsResponse {
-            get {
-                return ResourceManager.GetString("PetStatsResponse", resourceCulture);
             }
         }
         

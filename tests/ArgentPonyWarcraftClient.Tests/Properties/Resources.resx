@@ -153,18 +153,6 @@
   <data name="MountsResponse" xml:space="preserve">
     <value>{"mounts":[{"name":"High Priest's Lightsworn Seeker","spellId":229377,"creatureId":122124,"itemId":0,"qualityId":1,"icon":"inv_priestmount","isGround":true,"isFlying":true,"isAquatic":false,"isJumping":false},{"name":"Ivory Hawkstrider","spellId":230401,"creatureId":-73991,"itemId":142369,"qualityId":4,"icon":"inv_ability_mount_cockatricemount_white","isGround":true,"isFlying":false,"isAquatic":true,"isJumping":true}]}</value>
   </data>
-  <data name="PetAbilityResponse" xml:space="preserve">
-    <value>{"id":640,"name":"Toxic Smoke","icon":"spell_shadow_plaguecloud","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}</value>
-  </data>
-  <data name="PetSpeciesResponse" xml:space="preserve">
-    <value>{"speciesId":258,"petTypeId":9,"creatureId":42078,"name":"Mini Thor","canBattle":true,"icon":"t_roboticon","description":"Powerful artillery of the Terran army. The Thor is always the first one in and the last one out!","source":"Promotion: StarCraft II: Wings of Liberty Collector's Edition","abilities":[{"slot":0,"order":0,"requiredLevel":1,"id":777,"name":"Missile","icon":"ability_racial_rocketbarrage","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false},{"slot":1,"order":1,"requiredLevel":2,"id":640,"name":"Toxic Smoke","icon":"spell_shadow_plaguecloud","cooldown":0,"rounds":1,"petTypeId":9,"isPassive":false,"hideHints":false}]}</value>
-  </data>
-  <data name="PetsResponse" xml:space="preserve">
-    <value>{"pets":[{"canBattle":true,"creatureId":17254,"name":"Ash'ana","family":"beast","icon":"ability_mount_whitetiger","qualityId":4,"stats":{"speciesId":1927,"breedId":3,"petQualityId":1,"level":1,"health":147,"power":10,"speed":9},"strongAgainst":["critter"],"typeId":7,"weakAgainst":["flying"]},{"canBattle":true,"creatureId":120830,"name":"Ban-Fu, Cub of Ban-Lu","family":"beast","icon":"inv_tigergodcubmonk","qualityId":4,"stats":{"speciesId":2047,"breedId":3,"petQualityId":1,"level":1,"health":147,"power":10,"speed":9},"strongAgainst":["critter"],"typeId":7,"weakAgainst":["flying"]}]}</value>
-  </data>
-  <data name="PetStatsResponse" xml:space="preserve">
-    <value>{"speciesId":258,"breedId":5,"petQualityId":4,"level":25,"health":1587,"power":315,"speed":297}</value>
-  </data>
   <data name="PetTypesResponse" xml:space="preserve">
     <value>{"petTypes":[{"id":0,"key":"humanoid","name":"Humanoid","typeAbilityId":238,"strongAgainstId":1,"weakAgainstId":7},{"id":1,"key":"dragonkin","name":"Dragonkin","typeAbilityId":245,"strongAgainstId":5,"weakAgainstId":3}]}</value>
   </data>
