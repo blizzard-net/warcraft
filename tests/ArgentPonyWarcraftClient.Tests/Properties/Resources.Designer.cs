@@ -203,6 +203,37 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146/auctions?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;connected_realm&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146?namespace=dynamic-us&quot;
+        ///  },
+        ///  &quot;auctions&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 568957532,
+        ///      &quot;item&quot;: {
+        ///        &quot;id&quot;: 168185
+        ///      },
+        ///      &quot;quantity&quot;: 7,
+        ///      &quot;unit_price&quot;: 345000,
+        ///      &quot;time_left&quot;: &quot;SHORT&quot;
+        ///    },
+        ///    {
+        ///      &quot;id&quot;: 568957534,
+        ///      &quot;item&quot;: {
+        ///      [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AuctionsResponse {
+            get {
+                return ResourceManager.GetString("AuctionsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;challenge&quot;:[{&quot;realm&quot;:{&quot;name&quot;:&quot;Kargath&quot;,&quot;slug&quot;:&quot;kargath&quot;,&quot;battlegroup&quot;:&quot;Vindication&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;connected_realms&quot;:[&quot;kargath&quot;,&quot;norgannon&quot;]},&quot;map&quot;:{&quot;id&quot;:1182,&quot;name&quot;:&quot;Auchindoun&quot;,&quot;slug&quot;:&quot;auchindoun&quot;,&quot;hasChallengeMode&quot;:true,&quot;bronzeCriteria&quot;:{&quot;time&quot;:3300000,&quot;hours&quot;:0,&quot;minutes&quot;:55,&quot;seconds&quot;:0,&quot;milliseconds&quot;:0,&quot;isPositive&quot;:true},&quot;silverCriteria&quot;:{&quot;time&quot;:1920000,&quot;hours&quot;:0,&quot;minutes&quot;:32,&quot;seconds&quot;:0,&quot;milliseconds&quot;:0,&quot;isPositive&quot;:true},&quot;goldCriteria&quot;:{&quot;time&quot;:1140000,&quot;hours&quot;:0,&quot;minu [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ChallengesResponse {
