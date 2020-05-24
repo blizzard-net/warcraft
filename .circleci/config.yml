@@ -15,3 +15,9 @@ jobs:
       - run:
           name: Unit Tests
           command: dotnet test --configuration Release --verbosity minimal
+      - run:
+          name: Pack NuGet Package
+          command: dotnet pack --configuration Release --output ./out/nupkgs --include-symbols --include-source --verbosity minimal
+      - store_artifacts:
+          path: out/nupkgs
+          destination: nupkgs
