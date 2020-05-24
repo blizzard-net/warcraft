@@ -195,51 +195,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetPetsAsync_Gets_Pets()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/pet/?locale=en_US",
-                responseContent: Resources.PetsResponse);
-
-            RequestResult<IList<Pet>> result = await warcraftClient.GetPetsAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
-        public async void GetPetAbilityAsync_Gets_Pet_Ability()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/pet/ability/640?locale=en_US",
-                responseContent: Resources.PetAbilityResponse);
-
-            RequestResult<PetAbility> result = await warcraftClient.GetPetAbilityAsync(640);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
-        public async void GetPetSpeciesAsync_Gets_Pet_Species()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/pet/species/258?locale=en_US",
-                responseContent: Resources.PetSpeciesResponse);
-
-            RequestResult<PetSpecies> result = await warcraftClient.GetPetSpeciesAsync(258);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
-        public async void GetPetStatsAsync_Gets_Pet_Stats()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/pet/stats/258?level=25&breedId=5&qualityId=4&locale=en_US",
-                responseContent: Resources.PetStatsResponse);
-
-            RequestResult<PetStats> result = await warcraftClient.GetPetStatsAsync(258, 25, 5, BattlePetQuality.Epic);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
         public async void GetPetTypesAsync_Gets_Pet_Types()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
