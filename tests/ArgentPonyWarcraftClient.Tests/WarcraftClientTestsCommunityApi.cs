@@ -1,10 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using RichardSzalay.MockHttp;
 using ArgentPonyWarcraftClient.Community;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
@@ -20,39 +16,6 @@ namespace ArgentPonyWarcraftClient.Tests
 
             RequestResult<Achievement> result = await warcraftClient.GetAchievementAsync(2144);
             Assert.NotNull(result.Value);
-        }
-
-        [Fact]
-        public async void GetAuctionAsync_Gets_Auction()
-        {
-            var mockHttp = new MockHttpMessageHandler();
-
-            mockHttp
-                .When("https://us.battle.net/oauth/token")
-                .Respond(
-                    mediaType: "application/json",
-                    content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
-
-            mockHttp
-                .When("https://us.api.blizzard.com/wow/auction/data/Norgannon?locale=en_US")
-                .Respond(mediaType: "application/json", content: Resources.AuctionResponse);
-
-            mockHttp
-                .When("http://auction-api-us.worldofwarcraft.com/auction-data/0e62f05d062fb14352ada3736db60fe5/auctions.json")
-                .Respond(mediaType: "application/json", content: Resources.AuctionDataFileResponse);
-
-            IWarcraftClient warcraftClient = new WarcraftClient(
-                clientId: "clientIdHere",
-                clientSecret: "clientSecretHere",
-                region: Region.US,
-                locale: Locale.en_US,
-                client: mockHttp.ToHttpClient());
-
-            RequestResult<AuctionFiles> result = await warcraftClient.GetAuctionAsync("Norgannon");
-            Assert.NotNull(result.Value.Files);
-
-            RequestResult<AuctionHouseSnapshot> resultSnapshot = await warcraftClient.GetAuctionHouseSnapshotAsync(result.Value.Files.First().Url);
-            Assert.NotNull(resultSnapshot.Value);
         }
 
         [Fact]

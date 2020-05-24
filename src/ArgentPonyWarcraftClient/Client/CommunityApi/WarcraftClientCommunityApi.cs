@@ -38,46 +38,6 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        ///     Get the specified auction.
-        /// </summary>
-        /// <param name="realm">The realm.</param>
-        /// <returns>
-        ///     The specified auction.
-        /// </returns>
-        public async Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm)
-        {
-            return await GetAuctionAsync(realm, _region, _locale);
-        }
-
-        /// <summary>
-        ///     Get the specified auction.
-        /// </summary>
-        /// <param name="realm">The realm.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified auction.
-        /// </returns>
-        public async Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm, Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            return await Get<AuctionFiles>(region, $"{host}/wow/auction/data/{realm}?locale={locale}");
-        }
-
-        /// <summary>
-        ///     Get the auction house snapshot from the specified file.
-        /// </summary>
-        /// <param name="url">The URL for the auction house file.</param>
-        /// <returns>
-        ///     The auction house snapshot from the specified file.
-        /// </returns>
-        public async Task<RequestResult<AuctionHouseSnapshot>> GetAuctionHouseSnapshotAsync(string url)
-        {
-            // TODO: Need to extract the region from the URL or add it to the method signature.
-            return await Get<AuctionHouseSnapshot>(Region.US, url);
-        }
-
-        /// <summary>
         ///     Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>
