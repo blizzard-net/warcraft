@@ -180,30 +180,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///&quot;realms&quot;: [
-        ///	{&quot;name&quot;:&quot;Kargath&quot;,&quot;slug&quot;:&quot;kargath&quot;},
-        ///	{&quot;name&quot;:&quot;Norgannon&quot;,&quot;slug&quot;:&quot;norgannon&quot;}],
-        ///&quot;auctions&quot;: [
-        ///	{&quot;auc&quot;:1273842647,&quot;item&quot;:127834,&quot;owner&quot;:&quot;Timehealsall&quot;,&quot;ownerRealm&quot;:&quot;Kargath&quot;,&quot;bid&quot;:1039960,&quot;buyout&quot;:1039980,&quot;quantity&quot;:20,&quot;timeLeft&quot;:&quot;VERY_LONG&quot;,&quot;rand&quot;:0,&quot;seed&quot;:0,&quot;context&quot;:0},
-        ///	{&quot;auc&quot;:1272990684,&quot;item&quot;:82800,&quot;owner&quot;:&quot;Oohifarted&quot;,&quot;ownerRealm&quot;:&quot;Kargath&quot;,&quot;bid&quot;:3378623,&quot;buyout&quot;:3389895,&quot;quantity&quot;:1,&quot;timeLeft&quot;:&quot;VERY_LONG&quot;,&quot;rand&quot;:0,&quot;seed&quot;:1626849152,&quot;context&quot;:0,&quot;modifiers&quot;:[{&quot;type&quot;:3,&quot;value&quot;:1471} [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string AuctionDataFileResponse {
-            get {
-                return ResourceManager.GetString("AuctionDataFileResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;files&quot;:[{&quot;url&quot;:&quot;http://auction-api-us.worldofwarcraft.com/auction-data/0e62f05d062fb14352ada3736db60fe5/auctions.json&quot;,&quot;lastModified&quot;:1530933838000}]}.
-        /// </summary>
-        internal static string AuctionResponse {
-            get {
-                return ResourceManager.GetString("AuctionResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146/auctions?namespace=dynamic-us&quot;

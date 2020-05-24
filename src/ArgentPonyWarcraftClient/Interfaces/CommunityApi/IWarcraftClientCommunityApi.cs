@@ -30,35 +30,6 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<Achievement>> GetAchievementAsync(int id, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified auction.
-        /// </summary>
-        /// <param name="realm">The realm.</param>
-        /// <returns>
-        ///     The specified auction.
-        /// </returns>
-        Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm);
-
-        /// <summary>
-        ///     Get the specified auction.
-        /// </summary>
-        /// <param name="realm">The realm.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified auction.
-        /// </returns>
-        Task<RequestResult<AuctionFiles>> GetAuctionAsync(string realm, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get the auction house snapshot from the specified file.
-        /// </summary>
-        /// <param name="url">The URL for the auction house file.</param>
-        /// <returns>
-        ///     The auction house snapshot from the specified file.
-        /// </returns>
-        Task<RequestResult<AuctionHouseSnapshot>> GetAuctionHouseSnapshotAsync(string url);
-
-        /// <summary>
         ///     Get the challenge mode data for the specified realm.
         /// </summary>
         /// <param name="realm">The realm.</param>

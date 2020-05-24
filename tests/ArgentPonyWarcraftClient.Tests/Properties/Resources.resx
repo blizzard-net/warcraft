@@ -183,21 +183,6 @@
   <data name="AccountInactive403ForbiddenResponse" xml:space="preserve">
     <value>{"code":403, "type":"Forbidden", "detail":"Account Inactive"}</value>
   </data>
-  <data name="AuctionDataFileResponse" xml:space="preserve">
-    <value>{
-"realms": [
-	{"name":"Kargath","slug":"kargath"},
-	{"name":"Norgannon","slug":"norgannon"}],
-"auctions": [
-	{"auc":1273842647,"item":127834,"owner":"Timehealsall","ownerRealm":"Kargath","bid":1039960,"buyout":1039980,"quantity":20,"timeLeft":"VERY_LONG","rand":0,"seed":0,"context":0},
-	{"auc":1272990684,"item":82800,"owner":"Oohifarted","ownerRealm":"Kargath","bid":3378623,"buyout":3389895,"quantity":1,"timeLeft":"VERY_LONG","rand":0,"seed":1626849152,"context":0,"modifiers":[{"type":3,"value":1471},{"type":4,"value":33554452},{"type":5,"value":1},{"type":6,"value":58825}],"petSpeciesId":1471,"petBreedId":20,"petLevel":1,"petQualityId":2},
-	{"auc":1272427554,"item":15533,"owner":"Chessiec","ownerRealm":"Norgannon","bid":39332444,"buyout":49165554,"quantity":1,"timeLeft":"SHORT","rand":-12,"seed":1772355596,"context":53,"bonusLists":[{"bonusListId":4277}],"modifiers":[{"type":9,"value":100}]},
-	{"auc":1274065929,"item":55405,"owner":"Mazurik","ownerRealm":"Norgannon","bid":840681,"buyout":840681,"quantity":1,"timeLeft":"VERY_LONG","rand":-130,"seed":1826881566,"context":0}]
-}</value>
-  </data>
-  <data name="AuctionResponse" xml:space="preserve">
-    <value>{"files":[{"url":"http://auction-api-us.worldofwarcraft.com/auction-data/0e62f05d062fb14352ada3736db60fe5/auctions.json","lastModified":1530933838000}]}</value>
-  </data>
   <data name="Zone404ErrorResponse" xml:space="preserve">
     <value>{ "status":"nok", "reason": "unable to get zone information."}</value>
   </data>
