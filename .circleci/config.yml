@@ -1,17 +1,23 @@
- version: 2.1
+version: 2.1
 
- orbs:
+orbs:
   win: circleci/windows@2.2.0
 
- jobs:
-   build:
-     executor: win/default     
-    
-     steps:
-       - checkout
-       - run: 
-           name: Build
-           command: dotnet build --configuration Release --verbosity minimal
-       - run:
-           name: Unit Tests
-           command: dotnet test --configuration Release --verbosity minimal
+jobs:
+  build:
+    executor: win/default     
+
+    steps:
+      - checkout
+      - run: 
+          name: Build
+          command: dotnet build --configuration Release --verbosity minimal
+      - run:
+          name: Unit Tests
+          command: dotnet test --configuration Release --verbosity minimal
+      - run:
+          name: Pack NuGet Package
+          command: dotnet pack --configuration Release --output ./out/nupkgs --include-symbols --include-source --verbosity minimal
+      - store_artifacts:
+          path: out/nupkgs
+          destination: nupkgs
