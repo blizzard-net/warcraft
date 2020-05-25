@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient.GameData
         /// Gets the item being auctioned.
         /// </summary>
         [JsonProperty("item")]
-        public Item Item { get; set; }
+        public AuctionItem Item { get; set; }
 
         /// <summary>
         /// Gets the quantity of the item being auctioned.
