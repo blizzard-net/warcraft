@@ -54526,4 +54526,213 @@
   ]
 }</value>
   </data>
+  <data name="ItemGameDataResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 19019,
+  "name": "Thunderfury, Blessed Blade of the Windseeker",
+  "quality": {
+    "type": "LEGENDARY",
+    "name": "Legendary"
+  },
+  "level": 58,
+  "required_level": 60,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+    },
+    "id": 19019
+  },
+  "item_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Weapon",
+    "id": 2
+  },
+  "item_subclass": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Sword",
+    "id": 7
+  },
+  "inventory_type": {
+    "type": "WEAPON",
+    "name": "One-Hand"
+  },
+  "purchase_price": 575526,
+  "sell_price": 115105,
+  "max_count": 1,
+  "is_equippable": true,
+  "is_stackable": false,
+  "preview_item": {
+    "item": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+      },
+      "id": 19019
+    },
+    "quality": {
+      "type": "LEGENDARY",
+      "name": "Legendary"
+    },
+    "name": "Thunderfury, Blessed Blade of the Windseeker",
+    "media": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+      },
+      "id": 19019
+    },
+    "item_class": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Weapon",
+      "id": 2
+    },
+    "item_subclass": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Sword",
+      "id": 7
+    },
+    "inventory_type": {
+      "type": "WEAPON",
+      "name": "One-Hand"
+    },
+    "binding": {
+      "type": "ON_ACQUIRE",
+      "name": "Binds when picked up"
+    },
+    "unique_equipped": "Unique",
+    "weapon": {
+      "damage": {
+        "min_value": 16,
+        "max_value": 28,
+        "display_string": "16 - 28 Damage",
+        "damage_class": {
+          "type": "PHYSICAL",
+          "name": "Physical"
+        }
+      },
+      "attack_speed": {
+        "value": 2600,
+        "display_string": "Speed 2.60"
+      },
+      "dps": {
+        "value": 8.461538,
+        "display_string": "(8.5 damage per second)"
+      }
+    },
+    "stats": [
+      {
+        "type": {
+          "type": "AGILITY",
+          "name": "Agility"
+        },
+        "value": 3,
+        "is_negated": true,
+        "display": {
+          "display_string": "+3 Agility",
+          "color": {
+            "r": 128,
+            "g": 128,
+            "b": 128,
+            "a": 1
+          }
+        }
+      },
+      {
+        "type": {
+          "type": "STAMINA",
+          "name": "Stamina"
+        },
+        "value": 5,
+        "display": {
+          "display_string": "+5 Stamina",
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          }
+        }
+      },
+      {
+        "type": {
+          "type": "FIRE_RESISTANCE",
+          "name": "Fire Resistance"
+        },
+        "value": 5,
+        "display": {
+          "display_string": "+5 Fire Resistance",
+          "color": {
+            "r": 0,
+            "g": 255,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "type": {
+          "type": "NATURE_RESISTANCE",
+          "name": "Nature Resistance"
+        },
+        "value": 5,
+        "display": {
+          "display_string": "+5 Nature Resistance",
+          "color": {
+            "r": 0,
+            "g": 255,
+            "b": 0,
+            "a": 1
+          }
+        }
+      }
+    ],
+    "spells": [
+      {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/21992?namespace=static-8.3.0_32861-us"
+          },
+          "name": "Thunderfury",
+          "id": 21992
+        },
+        "description": "Chance on hit: Blasts your enemy with lightning, dealing 1,114 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 88. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
+      }
+    ],
+    "sell_price": {
+      "value": 115105,
+      "display_strings": {
+        "header": "Sell Price:",
+        "gold": "11",
+        "silver": "51",
+        "copper": "5"
+      }
+    },
+    "requirements": {
+      "level": {
+        "value": 60,
+        "display_string": "Requires Level 60"
+      }
+    },
+    "level": {
+      "value": 58,
+      "display_string": "Item Level 58"
+    },
+    "durability": {
+      "value": 130,
+      "display_string": "Durability 130 / 130"
+    }
+  }
+}</value>
+  </data>
 </root>
