@@ -55016,4 +55016,71 @@
   ]
 }</value>
   </data>
+  <data name="ItemSetGameDataResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "name": "The Gladiator",
+  "items": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11729?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Helm",
+      "id": 11729
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11726?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Chain",
+      "id": 11726
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11728?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Leggings",
+      "id": 11728
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11731?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Greaves",
+      "id": 11731
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11730?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Grips",
+      "id": 11730
+    }
+  ],
+  "effects": [
+    {
+      "display_string": "(2) Set: +0 Armor.",
+      "required_count": 2
+    },
+    {
+      "display_string": "(3) Set: Increases dodge by 0.",
+      "required_count": 3
+    },
+    {
+      "display_string": "(4) Set: Increases Agility by 0.",
+      "required_count": 4
+    },
+    {
+      "display_string": "(5) Set: Increases your critical strike by 0.",
+      "required_count": 5
+    }
+  ],
+  "is_effect_active": false
+}</value>
+  </data>
 </root>

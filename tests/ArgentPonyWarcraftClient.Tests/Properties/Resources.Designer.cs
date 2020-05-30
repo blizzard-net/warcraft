@@ -434,6 +434,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;The Gladiator&quot;,
+        ///  &quot;items&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/11729?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Savage Gladiator Helm&quot;,
+        ///      &quot;id&quot;: 11729
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/11726?namespace=static-8.3.0_32861 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ItemSetGameDataResponse {
+            get {
+                return ResourceManager.GetString("ItemSetGameDataResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;id&quot;:1060,&quot;name&quot;:&quot;Deep Earth Vestments&quot;,&quot;setBonuses&quot;:[{&quot;description&quot;:&quot;Reduces the mana cost of Healing Touch and Rejuvenation by 5%.&quot;,&quot;threshold&quot;:2},{&quot;description&quot;:&quot;Your Rejuvenation and Regrowth spells have a 10% chance to Timeslip and have double the normal duration.&quot;,&quot;threshold&quot;:4}],&quot;items&quot;:[76749,76750,76751,76752,76753]}.
         /// </summary>
         internal static string ItemSetResponse {
