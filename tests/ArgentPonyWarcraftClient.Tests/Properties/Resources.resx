@@ -54517,7 +54517,7 @@
   ]
 }</value>
   </data>
-  <data name="ItemGameDataResponse" xml:space="preserve">
+  <data name="ItemResponse" xml:space="preserve">
     <value>{
   "_links": {
     "self": {
@@ -55007,7 +55007,7 @@
   ]
 }</value>
   </data>
-  <data name="ItemSetGameDataResponse" xml:space="preserve">
+  <data name="ItemSetResponse" xml:space="preserve">
     <value>{
   "_links": {
     "self": {

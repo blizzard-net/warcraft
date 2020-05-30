@@ -44,7 +44,7 @@ namespace ArgentPonyWarcraftClient.Tests
         {
             IWarcraftClientItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-us&locale=en_US",
-                responseContent: Resources.ItemSetGameDataResponse);
+                responseContent: Resources.ItemSetResponse);
 
             RequestResult<ItemSet> result = await warcraftClient.GetItemSetAsync(1, "static-us");
             Assert.NotNull(result.Value);
@@ -66,7 +66,7 @@ namespace ArgentPonyWarcraftClient.Tests
         {
             IWarcraftClientItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-us&locale=en_US",
-                responseContent: Resources.ItemGameDataResponse);
+                responseContent: Resources.ItemResponse);
 
             RequestResult<Item> result = await warcraftClient.GetItemAsync(19019, "static-us");
             Assert.NotNull(result.Value);

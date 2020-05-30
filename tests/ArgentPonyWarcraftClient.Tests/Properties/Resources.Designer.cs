@@ -368,6 +368,28 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_sword_39.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 19019
+        ///}.
+        /// </summary>
+        internal static string ItemMediaResponse {
+            get {
+                return ResourceManager.GetString("ItemMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
@@ -387,31 +409,9 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///  },
         ///  &quot;item_class&quot;: {        /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ItemGameDataResponse {
+        internal static string ItemResponse {
             get {
-                return ResourceManager.GetString("ItemGameDataResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {
-        ///  &quot;_links&quot;: {
-        ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us&quot;
-        ///    }
-        ///  },
-        ///  &quot;assets&quot;: [
-        ///    {
-        ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_sword_39.jpg&quot;
-        ///    }
-        ///  ],
-        ///  &quot;id&quot;: 19019
-        ///}.
-        /// </summary>
-        internal static string ItemMediaResponse {
-            get {
-                return ResourceManager.GetString("ItemMediaResponse", resourceCulture);
+                return ResourceManager.GetString("ItemResponse", resourceCulture);
             }
         }
         
@@ -436,9 +436,9 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///      &quot;key&quot;: {
         ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/11726?namespace=static-8.3.0_32861 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ItemSetGameDataResponse {
+        internal static string ItemSetResponse {
             get {
-                return ResourceManager.GetString("ItemSetGameDataResponse", resourceCulture);
+                return ResourceManager.GetString("ItemSetResponse", resourceCulture);
             }
         }
         
