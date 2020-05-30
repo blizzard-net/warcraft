@@ -112,40 +112,6 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void GetItemAsync_Gets_Item()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/item/18803?locale=en_US",
-                responseContent: Resources.ItemResponse);
-
-            RequestResult<Item> result = await warcraftClient.GetItemAsync(18803);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
-        public async void GetItemClassesAsync_Gets_Item_Classes()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/data/item/classes?locale=en_US",
-                responseContent: Resources.ItemClassesResponse);
-
-            RequestResult<IList<ItemClass>> result = await warcraftClient.GetItemClassesAsync();
-            Assert.NotNull(result.Value);
-            Assert.NotEmpty(result.Value);
-        }
-
-        [Fact]
-        public async void GetItemSetAsync_Gets_Item_Set()
-        {
-            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/item/set/1060?locale=en_US",
-                responseContent: Resources.ItemSetResponse);
-
-            RequestResult<ItemSet> result = await warcraftClient.GetItemSetAsync(1060);
-            Assert.NotNull(result.Value);
-        }
-
-        [Fact]
         public async void GetMountsAsync_Gets_Mounts()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(

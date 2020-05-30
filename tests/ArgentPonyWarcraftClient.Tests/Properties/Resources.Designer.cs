@@ -338,15 +338,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;classes&quot;:[{&quot;class&quot;:17,&quot;name&quot;:&quot;Battle Pets&quot;,&quot;subclasses&quot;:[{&quot;subclass&quot;:0,&quot;name&quot;:&quot;BattlePet&quot;}]},{&quot;class&quot;:2,&quot;name&quot;:&quot;Weapon&quot;,&quot;subclasses&quot;:[{&quot;subclass&quot;:1378,&quot;name&quot;:&quot;Two-Handed Melee Weapon&quot;},{&quot;subclass&quot;:20,&quot;name&quot;:&quot;Fishing Pole&quot;}]}]}.
-        /// </summary>
-        internal static string ItemClassesResponse {
-            get {
-                return ResourceManager.GetString("ItemClassesResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
@@ -425,15 +416,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:18803,&quot;disenchantingSkillRank&quot;:0,&quot;description&quot;:&quot;Property of Finkle Einhorn, Grandmaster Adventurer&quot;,&quot;name&quot;:&quot;Finkle&apos;s Lava Dredger&quot;,&quot;icon&quot;:&quot;inv_gizmo_02&quot;,&quot;stackable&quot;:1,&quot;itemBind&quot;:1,&quot;bonusStats&quot;:[{&quot;stat&quot;:40,&quot;amount&quot;:13},{&quot;stat&quot;:5,&quot;amount&quot;:98},{&quot;stat&quot;:7,&quot;amount&quot;:23}],&quot;itemSpells&quot;:[],&quot;buyPrice&quot;:457008,&quot;itemClass&quot;:2,&quot;itemSubClass&quot;:5,&quot;containerSlots&quot;:0,&quot;weaponInfo&quot;:{&quot;damage&quot;:{&quot;min&quot;:43,&quot;max&quot;:56,&quot;exactMin&quot;:43.0,&quot;exactMax&quot;:56.0},&quot;weaponSpeed&quot;:3.6,&quot;dps&quot;:13.75},&quot;inventoryType&quot;:17,&quot;equippable&quot;:true,&quot;itemLevel&quot;:70 [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string ItemResponse {
-            get {
-                return ResourceManager.GetString("ItemResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
@@ -457,15 +439,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string ItemSetGameDataResponse {
             get {
                 return ResourceManager.GetString("ItemSetGameDataResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;id&quot;:1060,&quot;name&quot;:&quot;Deep Earth Vestments&quot;,&quot;setBonuses&quot;:[{&quot;description&quot;:&quot;Reduces the mana cost of Healing Touch and Rejuvenation by 5%.&quot;,&quot;threshold&quot;:2},{&quot;description&quot;:&quot;Your Rejuvenation and Regrowth spells have a 10% chance to Timeslip and have double the normal duration.&quot;,&quot;threshold&quot;:4}],&quot;items&quot;:[76749,76750,76751,76752,76753]}.
-        /// </summary>
-        internal static string ItemSetResponse {
-            get {
-                return ResourceManager.GetString("ItemSetResponse", resourceCulture);
             }
         }
         

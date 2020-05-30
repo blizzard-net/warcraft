@@ -141,15 +141,6 @@
   <data name="GuildResponse" xml:space="preserve">
     <value>{"lastModified":1528412536000,"name":"Mythical Warriors","realm":"Norgannon","battlegroup":"Vindication","level":25,"side":0,"achievementPoints":1610,"emblem":{"icon":12,"iconColor":"ff092a5d","iconColorId":10,"border":0,"borderColor":"ff00317c","borderColorId":10,"backgroundColor":"ffffffff","backgroundColorId":49}}</value>
   </data>
-  <data name="ItemClassesResponse" xml:space="preserve">
-    <value>{"classes":[{"class":17,"name":"Battle Pets","subclasses":[{"subclass":0,"name":"BattlePet"}]},{"class":2,"name":"Weapon","subclasses":[{"subclass":1378,"name":"Two-Handed Melee Weapon"},{"subclass":20,"name":"Fishing Pole"}]}]}</value>
-  </data>
-  <data name="ItemResponse" xml:space="preserve">
-    <value>{"id":18803,"disenchantingSkillRank":0,"description":"Property of Finkle Einhorn, Grandmaster Adventurer","name":"Finkle's Lava Dredger","icon":"inv_gizmo_02","stackable":1,"itemBind":1,"bonusStats":[{"stat":40,"amount":13},{"stat":5,"amount":98},{"stat":7,"amount":23}],"itemSpells":[],"buyPrice":457008,"itemClass":2,"itemSubClass":5,"containerSlots":0,"weaponInfo":{"damage":{"min":43,"max":56,"exactMin":43.0,"exactMax":56.0},"weaponSpeed":3.6,"dps":13.75},"inventoryType":17,"equippable":true,"itemLevel":70,"maxCount":0,"maxDurability":120,"minFactionId":0,"minReputation":0,"quality":4,"sellPrice":91401,"requiredSkill":0,"requiredLevel":60,"requiredSkillRank":0,"itemSource":{"sourceId":179703,"sourceType":"GAME_OBJECT_DROP"},"baseArmor":0,"hasSockets":false,"isAuctionable":false,"armor":0,"displayInfoId":31265,"nameDescription":"","nameDescriptionColor":"000000","upgradable":true,"heroicTooltip":false,"context":"","bonusLists":[],"availableContexts":[""],"bonusSummary":{"defaultBonusLists":[],"chanceBonusLists":[],"bonusChances":[]},"artifactId":0}</value>
-  </data>
-  <data name="ItemSetResponse" xml:space="preserve">
-    <value>{"id":1060,"name":"Deep Earth Vestments","setBonuses":[{"description":"Reduces the mana cost of Healing Touch and Rejuvenation by 5%.","threshold":2},{"description":"Your Rejuvenation and Regrowth spells have a 10% chance to Timeslip and have double the normal duration.","threshold":4}],"items":[76749,76750,76751,76752,76753]}</value>
-  </data>
   <data name="MountsResponse" xml:space="preserve">
     <value>{"mounts":[{"name":"High Priest's Lightsworn Seeker","spellId":229377,"creatureId":122124,"itemId":0,"qualityId":1,"icon":"inv_priestmount","isGround":true,"isFlying":true,"isAquatic":false,"isJumping":false},{"name":"Ivory Hawkstrider","spellId":230401,"creatureId":-73991,"itemId":142369,"qualityId":4,"icon":"inv_ability_mount_cockatricemount_white","isGround":true,"isFlying":false,"isAquatic":true,"isJumping":true}]}</value>
   </data>
