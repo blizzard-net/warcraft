@@ -120,8 +120,8 @@
   <data name="AccountInactive403ForbiddenResponse" xml:space="preserve">
     <value>{"code":403, "type":"Forbidden", "detail":"Account Inactive"}</value>
   </data>
-  <data name="Zone404ErrorResponse" xml:space="preserve">
-    <value>{ "status":"nok", "reason": "unable to get zone information."}</value>
+  <data name="Item404ErrorResponse" xml:space="preserve">
+    <value>{"code":404,"type":"BLZWEBAPI00000404","detail":"Not Found"}</value>
   </data>
   <data name="AchievementCategoriesIndexResponse" xml:space="preserve">
     <value>{

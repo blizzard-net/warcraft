@@ -7,20 +7,20 @@ namespace ArgentPonyWarcraftClient.Tests
 {
     public class WarcraftClientTestsErrorConditions
     {
-        //[Fact]
-        //public async void ProducesNotFoundError()
-        //{
-        //    IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-        //        requestUri: "https://us.api.blizzard.com/wow/zone/99999991?locale=en_US",
-        //        responseContent: Resources.Zone404ErrorResponse,
-        //        statusCode: HttpStatusCode.NotFound);
+        [Fact]
+        public async void InvalidIdProducesNotFoundError()
+        {
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/item/99999991?namespace=static-us&locale=en_US",
+                responseContent: Resources.Item404ErrorResponse,
+                statusCode: HttpStatusCode.NotFound);
 
-        //    RequestResult<Zone> result = await warcraftClient.GetZoneAsync(99999991);
-        //    Assert.NotNull(result.Error);
-        //    Assert.Equal("404", result.Error.Code);
-        //    Assert.False(result.Success);
-        //    Assert.Null(result.Value);
-        //}
+            RequestResult<Item> result = await warcraftClient.GetItemAsync(99999991, "static-us");
+            Assert.NotNull(result.Error);
+            Assert.Equal("404", result.Error.Code);
+            Assert.False(result.Success);
+            Assert.Null(result.Value);
+        }
 
         [Fact]
         public async void InvalidJsonProducesError()
@@ -37,20 +37,20 @@ namespace ArgentPonyWarcraftClient.Tests
             Assert.Null(result.Value);
         }
 
-        //[Fact]
-        //public async void ProducesForbiddenError()
-        //{
-        //    IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-        //        requestUri: "https://us.api.blizzard.com/wow/zone/4131?locale=en_US",
-        //        responseContent: Resources.AccountInactive403ForbiddenResponse,
-        //        statusCode: HttpStatusCode.Forbidden);
+        [Fact]
+        public async void ProducesForbiddenError()
+        {
+            IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-us&locale=en_US",
+                responseContent: Resources.AccountInactive403ForbiddenResponse,
+                statusCode: HttpStatusCode.Forbidden);
 
-        //    RequestResult<Zone> result = await warcraftClient.GetZoneAsync(4131);
-        //    Assert.NotNull(result.Error);
-        //    Assert.Equal("403", result.Error.Code);
-        //    Assert.False(result.Success);
-        //    Assert.Null(result.Value);
-        //}
+            RequestResult<Item> result = await warcraftClient.GetItemAsync(19019, "static-us");
+            Assert.NotNull(result.Error);
+            Assert.Equal("403", result.Error.Code);
+            Assert.False(result.Success);
+            Assert.Null(result.Value);
+        }
 
         [Fact]
         public void Throws_ArgumentException_Invaild_Region_Locale()

@@ -230,6 +230,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;code&quot;:404,&quot;type&quot;:&quot;BLZWEBAPI00000404&quot;,&quot;detail&quot;:&quot;Not Found&quot;}.
+        /// </summary>
+        internal static string Item404ErrorResponse {
+            get {
+                return ResourceManager.GetString("Item404ErrorResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
@@ -650,15 +659,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string PetsIndexResponse {
             get {
                 return ResourceManager.GetString("PetsIndexResponse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to { &quot;status&quot;:&quot;nok&quot;, &quot;reason&quot;: &quot;unable to get zone information.&quot;}.
-        /// </summary>
-        internal static string Zone404ErrorResponse {
-            get {
-                return ResourceManager.GetString("Zone404ErrorResponse", resourceCulture);
             }
         }
     }
