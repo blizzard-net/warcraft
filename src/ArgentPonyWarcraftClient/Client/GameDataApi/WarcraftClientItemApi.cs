@@ -6,6 +6,19 @@ namespace ArgentPonyWarcraftClient
     public partial class WarcraftClient
     {
         /// <inheritdoc />
+        public async Task<RequestResult<ItemClassesIndex>> GetItemClassesIndexAsync(string @namespace)
+        {
+            return await GetItemClassesIndexAsync(@namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<ItemClassesIndex>> GetItemClassesIndexAsync(string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<ItemClassesIndex>(region, $"{host}/data/wow/item-class/index?namespace={@namespace}&locale={locale}");
+        }
+
+        /// <inheritdoc />
         public async Task<RequestResult<Item>> GetItemAsync(int itemId, string @namespace)
         {
             return await GetItemAsync(itemId, @namespace, _region, _locale);

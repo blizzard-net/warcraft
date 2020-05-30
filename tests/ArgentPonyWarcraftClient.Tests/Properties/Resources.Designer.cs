@@ -311,6 +311,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;item_classes&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Consumable&quot;,
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Container&quot;,        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ItemClassesIndexResponse {
+            get {
+                return ResourceManager.GetString("ItemClassesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;classes&quot;:[{&quot;class&quot;:17,&quot;name&quot;:&quot;Battle Pets&quot;,&quot;subclasses&quot;:[{&quot;subclass&quot;:0,&quot;name&quot;:&quot;BattlePet&quot;}]},{&quot;class&quot;:2,&quot;name&quot;:&quot;Weapon&quot;,&quot;subclasses&quot;:[{&quot;subclass&quot;:1378,&quot;name&quot;:&quot;Two-Handed Melee Weapon&quot;},{&quot;subclass&quot;:20,&quot;name&quot;:&quot;Fishing Pole&quot;}]}]}.
         /// </summary>
         internal static string ItemClassesResponse {
