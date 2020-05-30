@@ -30,16 +30,16 @@ namespace ArgentPonyWarcraftClient
         // The 'catch all' has code, type and detail properties.
         // For simplicty we can merge the two together.
         [JsonProperty("reason")]
-        private string Reason 
-        { 
+        private string Reason
+        {
             set
-            { 
-                Detail = value; 
-            } 
+            {
+                Detail = value;
+            }
         }
 
         [JsonProperty("status")]
-        private string Status 
+        private string Status
         {
             set
             {

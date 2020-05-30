@@ -10,7 +10,7 @@
         /// </summary>
         [LocaleRegion(Region.US)]
         en_US,
-        
+
         /// <summary>
         ///     Spanish (Mexico)
         /// </summary>

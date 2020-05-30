@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
             Error = error ?? throw new ArgumentNullException(nameof(error));
             Success = false;
         }
-        
+
         /// <summary>
         ///     Implicit operator for initializing an object result with a value.
         /// </summary>
