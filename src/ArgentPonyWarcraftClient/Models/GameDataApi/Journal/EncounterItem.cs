@@ -1,7 +1,6 @@
-﻿using ArgentPonyWarcraftClient.GameData;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient.GameData
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// An item that can appear as loot from an encounter.

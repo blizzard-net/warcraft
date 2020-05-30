@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient.GameData
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A stage of an encounter in a dungeon or raid.

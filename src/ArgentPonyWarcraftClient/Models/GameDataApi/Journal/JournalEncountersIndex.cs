@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient.GameData
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// An index of boss encounters.

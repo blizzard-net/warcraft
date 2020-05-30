@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient.GameData
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A battle pet type.

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient.GameData
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// The difficulty mode of the dungeon or raid.

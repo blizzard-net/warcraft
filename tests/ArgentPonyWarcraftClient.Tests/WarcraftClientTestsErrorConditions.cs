@@ -1,5 +1,4 @@
-﻿using ArgentPonyWarcraftClient.GameData;
-using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using System;
 using System.Net;
 using Xunit;

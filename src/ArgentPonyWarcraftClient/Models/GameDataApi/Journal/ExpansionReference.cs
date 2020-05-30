@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ArgentPonyWarcraftClient.GameData
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A reference to game expansion.
