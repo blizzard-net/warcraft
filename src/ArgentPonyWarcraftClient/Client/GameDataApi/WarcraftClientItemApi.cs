@@ -17,5 +17,18 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return await Get<Item>(region, $"{host}/data/wow/item/{itemId}?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<ItemMedia>> GetItemMediaAsync(int itemId, string @namespace)
+        {
+            return await GetItemMediaAsync(itemId, @namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<ItemMedia>> GetItemMediaAsync(int itemId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<ItemMedia>(region, $"{host}/data/wow/media/item/{itemId}?namespace={@namespace}&locale={locale}");
+        }
     }
 }

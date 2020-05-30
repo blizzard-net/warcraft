@@ -54735,4 +54735,20 @@
   }
 }</value>
   </data>
+  <data name="ItemMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_sword_39.jpg"
+    }
+  ],
+  "id": 19019
+}</value>
+  </data>
 </root>
