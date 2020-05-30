@@ -350,6 +350,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;class_id&quot;: 0,
+        ///  &quot;name&quot;: &quot;Consumable&quot;,
+        ///  &quot;item_subclasses&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Explosives and Devices&quot;,
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-clas [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ItemClassResponse {
+            get {
+                return ResourceManager.GetString("ItemClassResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

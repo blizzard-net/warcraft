@@ -29,6 +29,28 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<ItemClassesIndex>> GetItemClassesIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <summary>
+        ///     Get the specified item class.
+        /// </summary>
+        /// <param name="itemClassId">The ID of the item class.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified item class.
+        /// </returns>
+        Task<RequestResult<ItemClass>> GetItemClassAsync(int itemClassId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified item class.
+        /// </summary>
+        /// <param name="itemClassId">The ID of the item class.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified item class.
+        /// </returns>
+        Task<RequestResult<ItemClass>> GetItemClassAsync(int itemClassId, string @namespace, Region region, Locale locale);
+
+        /// <summary>
         ///     Get the specified item.
         /// </summary>
         /// <param name="itemId">The item ID.</param>

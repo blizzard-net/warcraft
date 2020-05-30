@@ -18,6 +18,17 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
+        public async void GetItemClassAsync_Gets_ItemClass()
+        {
+            IWarcraftClientItemApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-us&locale=en_US",
+                responseContent: Resources.ItemClassResponse);
+
+            RequestResult<ItemClass> result = await warcraftClient.GetItemClassAsync(0, "static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
         public async void GetItemAsync_Gets_Item()
         {
             IWarcraftClientItemApi warcraftClient = ClientFactory.BuildMockClient(
