@@ -5,7 +5,7 @@
     <PackageId>ArgentPonyWarcraftClient</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Dan Jagnow, Travis Boatman</Authors>
-    <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Community Web APIs</Description>
+    <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Game Data and Profile APIs</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright © Dan Jagnow 2017</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>

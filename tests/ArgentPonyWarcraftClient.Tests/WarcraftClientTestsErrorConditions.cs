@@ -1,6 +1,4 @@
-﻿using ArgentPonyWarcraftClient.Community;
-using ArgentPonyWarcraftClient.GameData;
-using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using System;
 using System.Net;
 using Xunit;
@@ -10,14 +8,14 @@ namespace ArgentPonyWarcraftClient.Tests
     public class WarcraftClientTestsErrorConditions
     {
         [Fact]
-        public async void ProducesNotFoundError()
+        public async void InvalidIdProducesNotFoundError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/zone/99999991?locale=en_US",
-                responseContent: Resources.Zone404ErrorResponse,
+                requestUri: "https://us.api.blizzard.com/data/wow/item/99999991?namespace=static-us&locale=en_US",
+                responseContent: Resources.Item404ErrorResponse,
                 statusCode: HttpStatusCode.NotFound);
 
-            RequestResult<Zone> result = await warcraftClient.GetZoneAsync(99999991);
+            RequestResult<Item> result = await warcraftClient.GetItemAsync(99999991, "static-us");
             Assert.NotNull(result.Error);
             Assert.Equal("404", result.Error.Code);
             Assert.False(result.Success);
@@ -43,11 +41,11 @@ namespace ArgentPonyWarcraftClient.Tests
         public async void ProducesForbiddenError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/wow/zone/4131?locale=en_US",
+                requestUri: "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-us&locale=en_US",
                 responseContent: Resources.AccountInactive403ForbiddenResponse,
                 statusCode: HttpStatusCode.Forbidden);
 
-            RequestResult<Zone> result = await warcraftClient.GetZoneAsync(4131);
+            RequestResult<Item> result = await warcraftClient.GetItemAsync(19019, "static-us");
             Assert.NotNull(result.Error);
             Assert.Equal("403", result.Error.Code);
             Assert.False(result.Success);

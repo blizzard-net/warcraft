@@ -1,5 +1,6 @@
 ﻿using System;
-namespace ArgentPonyWarcraftClient.Community
+
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     ///     Used to set a valid region for a locale.

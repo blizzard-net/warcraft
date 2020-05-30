@@ -1,4 +1,4 @@
-﻿namespace ArgentPonyWarcraftClient.GameData
+﻿namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// The time remaining in an auction.

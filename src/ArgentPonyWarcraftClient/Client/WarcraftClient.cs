@@ -7,13 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using ArgentPonyWarcraftClient.Community;
 
 namespace ArgentPonyWarcraftClient
 {
-    /// <summary>
-    ///     A client for the World of Warcraft Community APIs.
-    /// </summary>
+    /// <inheritdoc />
     public partial class WarcraftClient : IWarcraftClient
     {
         private readonly HttpClient _client;
@@ -45,7 +42,7 @@ namespace ArgentPonyWarcraftClient
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">
         ///     Specifies the language that the result will be in. Visit
-        ///     https://dev.battle.net/docs/read/community_apis to see a list of available locales.
+        ///     https://develop.battle.net/documentation/world-of-warcraft/guides/localization to see a list of available locales.
         /// </param>
         public WarcraftClient(string clientId, string clientSecret, Region region, Locale locale) : this(clientId, clientSecret, region, locale, InternalHttpClient.Instance)
         {
@@ -59,7 +56,7 @@ namespace ArgentPonyWarcraftClient
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">
         ///     Specifies the language that the result will be in. Visit
-        ///     https://dev.battle.net/docs/read/community_apis to see a list of available locales.
+        ///     https://develop.battle.net/documentation/world-of-warcraft/guides/localization to see a list of available locales.
         /// </param>
         /// <param name="client">The <see cref="HttpClient"/> that communicates with Blizzard.</param>
         public WarcraftClient(string clientId, string clientSecret, Region region, Locale locale, HttpClient client)
@@ -78,7 +75,7 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <summary>
-        ///     Retrieve an item of type <typeparamref name="T"/> from the Blizzard Community API.
+        ///     Retrieve an item of type <typeparamref name="T"/> from the Blizzard World of Warcraft Game Data or Profile API.
         /// </summary>
         /// <typeparam name="T">
         ///     The return type.
