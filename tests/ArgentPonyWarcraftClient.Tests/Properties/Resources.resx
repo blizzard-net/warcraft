@@ -141,15 +141,6 @@
   <data name="GuildResponse" xml:space="preserve">
     <value>{"lastModified":1528412536000,"name":"Mythical Warriors","realm":"Norgannon","battlegroup":"Vindication","level":25,"side":0,"achievementPoints":1610,"emblem":{"icon":12,"iconColor":"ff092a5d","iconColorId":10,"border":0,"borderColor":"ff00317c","borderColorId":10,"backgroundColor":"ffffffff","backgroundColorId":49}}</value>
   </data>
-  <data name="ItemClassesResponse" xml:space="preserve">
-    <value>{"classes":[{"class":17,"name":"Battle Pets","subclasses":[{"subclass":0,"name":"BattlePet"}]},{"class":2,"name":"Weapon","subclasses":[{"subclass":1378,"name":"Two-Handed Melee Weapon"},{"subclass":20,"name":"Fishing Pole"}]}]}</value>
-  </data>
-  <data name="ItemResponse" xml:space="preserve">
-    <value>{"id":18803,"disenchantingSkillRank":0,"description":"Property of Finkle Einhorn, Grandmaster Adventurer","name":"Finkle's Lava Dredger","icon":"inv_gizmo_02","stackable":1,"itemBind":1,"bonusStats":[{"stat":40,"amount":13},{"stat":5,"amount":98},{"stat":7,"amount":23}],"itemSpells":[],"buyPrice":457008,"itemClass":2,"itemSubClass":5,"containerSlots":0,"weaponInfo":{"damage":{"min":43,"max":56,"exactMin":43.0,"exactMax":56.0},"weaponSpeed":3.6,"dps":13.75},"inventoryType":17,"equippable":true,"itemLevel":70,"maxCount":0,"maxDurability":120,"minFactionId":0,"minReputation":0,"quality":4,"sellPrice":91401,"requiredSkill":0,"requiredLevel":60,"requiredSkillRank":0,"itemSource":{"sourceId":179703,"sourceType":"GAME_OBJECT_DROP"},"baseArmor":0,"hasSockets":false,"isAuctionable":false,"armor":0,"displayInfoId":31265,"nameDescription":"","nameDescriptionColor":"000000","upgradable":true,"heroicTooltip":false,"context":"","bonusLists":[],"availableContexts":[""],"bonusSummary":{"defaultBonusLists":[],"chanceBonusLists":[],"bonusChances":[]},"artifactId":0}</value>
-  </data>
-  <data name="ItemSetResponse" xml:space="preserve">
-    <value>{"id":1060,"name":"Deep Earth Vestments","setBonuses":[{"description":"Reduces the mana cost of Healing Touch and Rejuvenation by 5%.","threshold":2},{"description":"Your Rejuvenation and Regrowth spells have a 10% chance to Timeslip and have double the normal duration.","threshold":4}],"items":[76749,76750,76751,76752,76753]}</value>
-  </data>
   <data name="MountsResponse" xml:space="preserve">
     <value>{"mounts":[{"name":"High Priest's Lightsworn Seeker","spellId":229377,"creatureId":122124,"itemId":0,"qualityId":1,"icon":"inv_priestmount","isGround":true,"isFlying":true,"isAquatic":false,"isJumping":false},{"name":"Ivory Hawkstrider","spellId":230401,"creatureId":-73991,"itemId":142369,"qualityId":4,"icon":"inv_ability_mount_cockatricemount_white","isGround":true,"isFlying":false,"isAquatic":true,"isJumping":true}]}</value>
   </data>
@@ -54524,6 +54515,563 @@
       "time_left": "VERY_LONG"
     }
   ]
+}</value>
+  </data>
+  <data name="ItemResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 19019,
+  "name": "Thunderfury, Blessed Blade of the Windseeker",
+  "quality": {
+    "type": "LEGENDARY",
+    "name": "Legendary"
+  },
+  "level": 58,
+  "required_level": 60,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+    },
+    "id": 19019
+  },
+  "item_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Weapon",
+    "id": 2
+  },
+  "item_subclass": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Sword",
+    "id": 7
+  },
+  "inventory_type": {
+    "type": "WEAPON",
+    "name": "One-Hand"
+  },
+  "purchase_price": 575526,
+  "sell_price": 115105,
+  "max_count": 1,
+  "is_equippable": true,
+  "is_stackable": false,
+  "preview_item": {
+    "item": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+      },
+      "id": 19019
+    },
+    "quality": {
+      "type": "LEGENDARY",
+      "name": "Legendary"
+    },
+    "name": "Thunderfury, Blessed Blade of the Windseeker",
+    "media": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+      },
+      "id": 19019
+    },
+    "item_class": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Weapon",
+      "id": 2
+    },
+    "item_subclass": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Sword",
+      "id": 7
+    },
+    "inventory_type": {
+      "type": "WEAPON",
+      "name": "One-Hand"
+    },
+    "binding": {
+      "type": "ON_ACQUIRE",
+      "name": "Binds when picked up"
+    },
+    "unique_equipped": "Unique",
+    "weapon": {
+      "damage": {
+        "min_value": 16,
+        "max_value": 28,
+        "display_string": "16 - 28 Damage",
+        "damage_class": {
+          "type": "PHYSICAL",
+          "name": "Physical"
+        }
+      },
+      "attack_speed": {
+        "value": 2600,
+        "display_string": "Speed 2.60"
+      },
+      "dps": {
+        "value": 8.461538,
+        "display_string": "(8.5 damage per second)"
+      }
+    },
+    "stats": [
+      {
+        "type": {
+          "type": "AGILITY",
+          "name": "Agility"
+        },
+        "value": 3,
+        "is_negated": true,
+        "display": {
+          "display_string": "+3 Agility",
+          "color": {
+            "r": 128,
+            "g": 128,
+            "b": 128,
+            "a": 1
+          }
+        }
+      },
+      {
+        "type": {
+          "type": "STAMINA",
+          "name": "Stamina"
+        },
+        "value": 5,
+        "display": {
+          "display_string": "+5 Stamina",
+          "color": {
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 1
+          }
+        }
+      },
+      {
+        "type": {
+          "type": "FIRE_RESISTANCE",
+          "name": "Fire Resistance"
+        },
+        "value": 5,
+        "display": {
+          "display_string": "+5 Fire Resistance",
+          "color": {
+            "r": 0,
+            "g": 255,
+            "b": 0,
+            "a": 1
+          }
+        }
+      },
+      {
+        "type": {
+          "type": "NATURE_RESISTANCE",
+          "name": "Nature Resistance"
+        },
+        "value": 5,
+        "display": {
+          "display_string": "+5 Nature Resistance",
+          "color": {
+            "r": 0,
+            "g": 255,
+            "b": 0,
+            "a": 1
+          }
+        }
+      }
+    ],
+    "spells": [
+      {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/21992?namespace=static-8.3.0_32861-us"
+          },
+          "name": "Thunderfury",
+          "id": 21992
+        },
+        "description": "Chance on hit: Blasts your enemy with lightning, dealing 1,114 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 88. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
+      }
+    ],
+    "sell_price": {
+      "value": 115105,
+      "display_strings": {
+        "header": "Sell Price:",
+        "gold": "11",
+        "silver": "51",
+        "copper": "5"
+      }
+    },
+    "requirements": {
+      "level": {
+        "value": 60,
+        "display_string": "Requires Level 60"
+      }
+    },
+    "level": {
+      "value": 58,
+      "display_string": "Item Level 58"
+    },
+    "durability": {
+      "value": 130,
+      "display_string": "Durability 130 / 130"
+    }
+  }
+}</value>
+  </data>
+  <data name="ItemMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_sword_39.jpg"
+    }
+  ],
+  "id": 19019
+}</value>
+  </data>
+  <data name="ItemClassesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "item_classes": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Consumable",
+      "id": 0
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Container",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Weapon",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Gem",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/4?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Armor",
+      "id": 4
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/5?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Reagent",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/6?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Projectile",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Tradeskill",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/8?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Item Enhancement",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/9?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Recipe",
+      "id": 9
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/11?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Quiver",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/12?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Quest",
+      "id": 12
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/13?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Key",
+      "id": 13
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/15?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Miscellaneous",
+      "id": 15
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/16?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Glyph",
+      "id": 16
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/17?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Battle Pets",
+      "id": 17
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/18?namespace=static-8.3.0_32861-us"
+      },
+      "name": "WoW Token",
+      "id": 18
+    }
+  ]
+}</value>
+  </data>
+  <data name="ItemClassResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "class_id": 0,
+  "name": "Consumable",
+  "item_subclasses": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Explosives and Devices",
+      "id": 0
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Potion",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Elixir",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Flask",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/5?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Food &amp; Drink",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Bandage",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/8?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Other",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/9?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Vantus Rune",
+      "id": 9
+    }
+  ]
+}</value>
+  </data>
+  <data name="ItemSubclassResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "class_id": 0,
+  "subclass_id": 0,
+  "display_name": "Explosives and Devices",
+  "hide_subclass_in_tooltips": true
+}</value>
+  </data>
+  <data name="ItemSetsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-set/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "item_sets": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Gladiator",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/41?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Dal'Rend's Arms",
+      "id": 41
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/65?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Spider's Kiss",
+      "id": 65
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/81?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Postmaster",
+      "id": 81
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/1443?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Keepsakes of the Resolute Commandant",
+      "id": 1443
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/1452?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Titanic Empowerment",
+      "id": 1452
+    }
+  ]
+}</value>
+  </data>
+  <data name="ItemSetResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "name": "The Gladiator",
+  "items": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11729?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Helm",
+      "id": 11729
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11726?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Chain",
+      "id": 11726
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11728?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Leggings",
+      "id": 11728
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11731?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Greaves",
+      "id": 11731
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item/11730?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Savage Gladiator Grips",
+      "id": 11730
+    }
+  ],
+  "effects": [
+    {
+      "display_string": "(2) Set: +0 Armor.",
+      "required_count": 2
+    },
+    {
+      "display_string": "(3) Set: Increases dodge by 0.",
+      "required_count": 3
+    },
+    {
+      "display_string": "(4) Set: Increases Agility by 0.",
+      "required_count": 4
+    },
+    {
+      "display_string": "(5) Set: Increases your critical strike by 0.",
+      "required_count": 5
+    }
+  ],
+  "is_effect_active": false
 }</value>
   </data>
 </root>

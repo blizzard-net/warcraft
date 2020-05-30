@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient.GameData
     /// <summary>
     /// An auction item.
     /// </summary>
-    public class Item
+    public class AuctionItem
     {
         /// <summary>
         /// Gets the ID of the auction item.

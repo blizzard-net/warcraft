@@ -189,64 +189,6 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<IList<AchievementCategory>>> GetGuildAchievementsAsync(Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified item.
-        /// </summary>
-        /// <param name="itemId">The item ID.</param>
-        /// <returns>
-        ///     The specified item.
-        /// </returns>
-        Task<RequestResult<Item>> GetItemAsync(int itemId);
-
-        /// <summary>
-        ///     Get the specified item.
-        /// </summary>
-        /// <param name="itemId">The item ID.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified item.
-        /// </returns>
-        Task<RequestResult<Item>> GetItemAsync(int itemId, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get a list of all item classes.
-        /// </summary>
-        /// <returns>
-        ///     A list of all item classes.
-        /// </returns>
-        Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync();
-
-        /// <summary>
-        ///     Get a list of all item classes.
-        /// </summary>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     A list of all item classes.
-        /// </returns>
-        Task<RequestResult<IList<ItemClass>>> GetItemClassesAsync(Region region, Locale locale);
-
-        /// <summary>
-        ///     Get the specified item set.
-        /// </summary>
-        /// <param name="itemSetId">The item set ID.</param>
-        /// <returns>
-        ///     The specified item set.
-        /// </returns>
-        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId);
-
-        /// <summary>
-        ///     Get the specified item set.
-        /// </summary>
-        /// <param name="itemSetId">The item set ID.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified item set.
-        /// </returns>
-        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, Region region, Locale locale);
-
-        /// <summary>
         ///     Get a list of all supported mounts.
         /// </summary>
         /// <returns>

@@ -6,6 +6,7 @@
     public interface IWarcraftClientGameDataApi :
         IWarcraftClientAchievementApi,
         IWarcraftClientAuctionHouseApi,
+        IWarcraftClientItemApi,
         IWarcraftClientJournalApi,
         IWarcraftClientPetApi
     {
