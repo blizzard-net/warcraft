@@ -6,7 +6,7 @@
         {
             // The Blizzard API only accepts lowercase fields.
             string flags = fields.ToString().ToLower();
-            
+
             if (flags == "all")
             {
                 return "&fields=achievements,appearance,guild,hunter pets,items,mounts,pets,pet slots," +
