@@ -446,6 +446,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-set/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;item_sets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;The Gladiator&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-set/41?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Dal&apos;Rend&apos;s Arms&quot;, [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ItemSetsIndexResponse {
+            get {
+                return ResourceManager.GetString("ItemSetsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

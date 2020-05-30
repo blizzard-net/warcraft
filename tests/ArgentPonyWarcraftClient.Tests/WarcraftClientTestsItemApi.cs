@@ -29,6 +29,17 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
+        public async void GetItemSetsIndexAsync_Gets_ItemSetsIndex()
+        {
+            IWarcraftClientItemApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/item-set/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.ItemSetsIndexResponse);
+
+            RequestResult<ItemSetsIndex> result = await warcraftClient.GetItemSetsIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
         public async void GetItemSubclassAsync_Gets_ItemSubclass()
         {
             IWarcraftClientItemApi warcraftClient = ClientFactory.BuildMockClient(

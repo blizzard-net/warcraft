@@ -54963,4 +54963,57 @@
   "hide_subclass_in_tooltips": true
 }</value>
   </data>
+  <data name="ItemSetsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/item-set/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "item_sets": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Gladiator",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/41?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Dal'Rend's Arms",
+      "id": 41
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/65?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Spider's Kiss",
+      "id": 65
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/81?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Postmaster",
+      "id": 81
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/1443?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Keepsakes of the Resolute Commandant",
+      "id": 1443
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/item-set/1452?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Titanic Empowerment",
+      "id": 1452
+    }
+  ]
+}</value>
+  </data>
 </root>
