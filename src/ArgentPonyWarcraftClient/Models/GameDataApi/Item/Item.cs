@@ -234,9 +234,8 @@ namespace ArgentPonyWarcraftClient
             }
 
             string value = serializer.Deserialize<string>(reader);
-            long l;
 
-            if (long.TryParse(value, out l))
+            if (long.TryParse(value, out long l))
             {
                 return l;
             }
