@@ -1,23 +1,67 @@
 version: 2.1
 
-orbs:
-  win: circleci/windows@2.2.0
+executors:
+  my-executor:
+    docker:
+      - image: mcr.microsoft.com/dotnet/core/sdk:3.1
+    working_directory: /app
 
 jobs:
   build:
-    executor: win/default     
-
+    executor: my-executor
     steps:
       - checkout
-      - run: 
+      - run:
+          name: Install .NET Core Tools
+          command: dotnet tool restore
+      - run:
           name: Build
           command: dotnet build --configuration Release --verbosity minimal
       - run:
           name: Unit Tests
-          command: dotnet test --configuration Release --verbosity minimal
+          command: dotnet test --configuration Release --verbosity minimal --logger trx
+      - run:
+          name: Transform Unit Test Results
+          command: dotnet trx2junit tests/ArgentPonyWarcraftClient.Tests/TestResults/*.trx --output out/test-results
+          when: always
+      - store_test_results:
+          path: out/test-results
       - run:
           name: Pack NuGet Package
           command: dotnet pack --configuration Release --output ./out/nupkgs --include-symbols --include-source --verbosity minimal
       - store_artifacts:
           path: out/nupkgs
           destination: nupkgs
+      - persist_to_workspace:
+          root: /app
+          paths:
+            - out/nupkgs/*.nupkg
+
+  deploy:
+    executor: my-executor
+    steps:
+      - attach_workspace:
+          at: /app
+      - run:
+          name: Check Workspace
+          command: ls /app/out/nupkgs
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              # Build for all commits to any branch. When a commit is tagged, only build if it's an appropriately-formatted SemVer 2.0 tag.
+              # Source: https://rgxdb.com/r/40OZ1HN5
+              only: /(?<=^[Vv]|^)(?:(?<major>(?:0|[1-9](?:(?:0|[1-9])+)*))[.](?<minor>(?:0|[1-9](?:(?:0|[1-9])+)*))[.](?<patch>(?:0|[1-9](?:(?:0|[1-9])+)*))(?:-(?<prerelease>(?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:0|[1-9](?:(?:0|[1-9])+)*))(?:[.](?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:0|[1-9](?:(?:0|[1-9])+)*)))*))?(?:[+](?<build>(?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:(?:0|[1-9])+))(?:[.](?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:(?:0|[1-9])+)))*))?)$/
+      - deploy:
+          requires:
+            - build
+          filters:
+            # Only deploy when tagged with an appropriately-formatted SemVer 2.0 tag.
+            branches:
+              ignore: /.*/
+            tags:
+              only: /(?<=^[Vv]|^)(?:(?<major>(?:0|[1-9](?:(?:0|[1-9])+)*))[.](?<minor>(?:0|[1-9](?:(?:0|[1-9])+)*))[.](?<patch>(?:0|[1-9](?:(?:0|[1-9])+)*))(?:-(?<prerelease>(?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:0|[1-9](?:(?:0|[1-9])+)*))(?:[.](?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:0|[1-9](?:(?:0|[1-9])+)*)))*))?(?:[+](?<build>(?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:(?:0|[1-9])+))(?:[.](?:(?:(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?|(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)(?:[A-Za-z]|-)(?:(?:(?:0|[1-9])|(?:[A-Za-z]|-))+)?)|(?:(?:0|[1-9])+)))*))?)$/
