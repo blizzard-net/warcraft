@@ -12,11 +12,20 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install .NET Core Tools
+          command: dotnet tool restore
+      - run:
           name: Build
           command: dotnet build --configuration Release --verbosity minimal
       - run:
           name: Unit Tests
-          command: dotnet test --configuration Release --verbosity minimal
+          command: dotnet test --configuration Release --verbosity minimal --logger trx
+      - run:
+          name: Transform Unit Test Results
+          command: dotnet trx2junit tests/ArgentPonyWarcraftClient.Tests/TestResults/*.trx --output out/test-results
+          when: always
+      - store_test_results:
+          path: out/test-results
       - run:
           name: Pack NuGet Package
           command: dotnet pack --configuration Release --output ./out/nupkgs --include-symbols --include-source --verbosity minimal
