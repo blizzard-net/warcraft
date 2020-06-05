@@ -28,7 +28,10 @@ jobs:
           path: out/test-results
       - run:
           name: Pack NuGet Package
-          command: dotnet pack --configuration Release --output ./out/nupkgs --include-symbols --include-source --verbosity minimal
+          command: |
+              chmod +x build/semver
+              . build/set-version.sh
+              dotnet pack --configuration Release --output ./out/nupkgs -p:PackageVersion="${PACKAGE_VERSION}" --version-suffix "${PACKAGE_SUFFIX}" --include-symbols --include-source --verbosity minimal
       - store_artifacts:
           path: out/nupkgs
           destination: nupkgs
