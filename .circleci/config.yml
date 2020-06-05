@@ -31,7 +31,7 @@ jobs:
           command: |
               chmod +x build/semver
               . build/set-version.sh
-              dotnet pack --configuration Release --output ./out/nupkgs -p:PackageVersion="${PACKAGE_VERSION}" --version-suffix "${PACKAGE_SUFFIX}" --include-symbols --include-source --verbosity minimal
+              dotnet pack --configuration Release --output ./out/nupkgs -p:Version="${PACKAGE_VERSION}-${PACKAGE_SUFFIX}" --include-symbols --include-source --verbosity minimal
       - store_artifacts:
           path: out/nupkgs
           destination: nupkgs
