@@ -204,6 +204,55 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/status?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 107811065,
+        ///  &quot;is_valid&quot;: true
+        ///}.
+        /// </summary>
+        internal static string CharacterProfileStatusResponse {
+            get {
+                return ResourceManager.GetString("CharacterProfileStatusResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 107811065,
+        ///  &quot;name&quot;: &quot;Drinian&quot;,
+        ///  &quot;gender&quot;: {
+        ///    &quot;type&quot;: &quot;MALE&quot;,
+        ///    &quot;name&quot;: &quot;Male&quot;
+        ///  },
+        ///  &quot;faction&quot;: {
+        ///    &quot;type&quot;: &quot;ALLIANCE&quot;,
+        ///    &quot;name&quot;: &quot;Alliance&quot;
+        ///  },
+        ///  &quot;race&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Human&quot;,
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;char [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterProfileSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterProfileSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
         ///    }
         ///  },

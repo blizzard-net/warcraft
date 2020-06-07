@@ -42,15 +42,10 @@ var warcraftClient = new WarcraftClient(clientId, clientSecret, Region.US, "Loca
 Once you have your `WarcraftClient` instance, you can start asking for data.  All methods are asynchronous.  Here's an example for retrieving a character:
 
 ```cs
-RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", CharacterFields.All);
+RequestResult<CharacterProfileSummary> result = await warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
 ```
 
-This will retrieve a character named Drinian from the realm Norgannon.  The `CharacterFields` enumeration allows you to specify which portions of character-related data the Blizzard API should return.  If you only want to retrieve information about the character's talents and mounts, for instance, you can ask for only those portions of the `Character` object to be populated.
-
-```cs
-CharacterFields fields = CharacterFields.Talents | CharacterFields.Mounts;
-RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", fields);
-```
+This will retrieve the summary for a character named Drinian from the realm Norgannon.
 
 Each request is wrapped in the `RequestResult<T>` class. Which has the following properties.
 
@@ -68,14 +63,16 @@ RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgan
 
 if (result.Success)
 {
-    Console.WriteLine("Character Name: " + result.Value.Name);
-    Console.WriteLine("Character Level: " + result.Value.Level);
+    CharacterProfileSummary character = result.Value;
+    Console.WriteLine("Character Name: " + character.Name);
+    Console.WriteLine("Character Level: " + character.Level);
 }
 else
 {
-    Console.WriteLine("HTTP Status Code: " + result.Error.Code);
-    Console.WriteLine("HTTP Status Description: " + result.Error.Type);
-    Console.WriteLine("Details: " + result.Error.Detail);
+    RequestError error = result.Error;
+    Console.WriteLine("HTTP Status Code: " + error.Code);
+    Console.WriteLine("HTTP Status Description: " + error.Type);
+    Console.WriteLine("Details: " + error.Detail);
 }
 ```
 

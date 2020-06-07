@@ -55014,4 +55014,141 @@
   "is_effect_active": false
 }</value>
   </data>
+  <data name="CharacterProfileSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    }
+  },
+  "id": 107811065,
+  "name": "Drinian",
+  "gender": {
+    "type": "MALE",
+    "name": "Male"
+  },
+  "faction": {
+    "type": "ALLIANCE",
+    "name": "Alliance"
+  },
+  "race": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Human",
+    "id": 1
+  },
+  "character_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Warrior",
+    "id": 1
+  },
+  "active_spec": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Fury",
+    "id": 72
+  },
+  "realm": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+    },
+    "name": "Norgannon",
+    "id": 1262,
+    "slug": "norgannon"
+  },
+  "guild": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/norgannon/mythical-warriors?namespace=profile-us"
+    },
+    "name": "Mythical Warriors",
+    "id": 43913043,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    },
+    "faction": {
+      "type": "ALLIANCE",
+      "name": "Alliance"
+    }
+  },
+  "level": 120,
+  "experience": 0,
+  "achievement_points": 20630,
+  "achievements": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements?namespace=profile-us"
+  },
+  "titles": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/titles?namespace=profile-us"
+  },
+  "pvp_summary": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/pvp-summary?namespace=profile-us"
+  },
+  "encounters": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters?namespace=profile-us"
+  },
+  "media": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/character-media?namespace=profile-us"
+  },
+  "last_login_timestamp": 1587702640000,
+  "average_item_level": 440,
+  "equipped_item_level": 430,
+  "specializations": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/specializations?namespace=profile-us"
+  },
+  "statistics": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/statistics?namespace=profile-us"
+  },
+  "mythic_keystone_profile": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/mythic-keystone-profile?namespace=profile-us"
+  },
+  "equipment": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/equipment?namespace=profile-us"
+  },
+  "appearance": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/appearance?namespace=profile-us"
+  },
+  "collections": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections?namespace=profile-us"
+  },
+  "active_title": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/title/62?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Battlelord",
+    "id": 62,
+    "display_string": "Battlelord {name}"
+  },
+  "reputations": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/reputations?namespace=profile-us"
+  },
+  "quests": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/quests?namespace=profile-us"
+  },
+  "achievements_statistics": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements/statistics?namespace=profile-us"
+  },
+  "professions": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/professions?namespace=profile-us"
+  }
+}</value>
+  </data>
+  <data name="CharacterProfileStatusResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/status?namespace=profile-us"
+    }
+  },
+  "id": 107811065,
+  "is_valid": true
+}</value>
+  </data>
 </root>
