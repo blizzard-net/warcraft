@@ -28,7 +28,10 @@ jobs:
           path: out/test-results
       - run:
           name: Pack NuGet Package
-          command: dotnet pack --configuration Release --output ./out/nupkgs --include-symbols --include-source --verbosity minimal
+          command: |
+              chmod +x build/semver
+              . build/set-version.sh
+              dotnet pack --configuration Release --output ./out/nupkgs -p:Version="${PACKAGE_VERSION}-${PACKAGE_SUFFIX}" --include-symbols --include-source --verbosity minimal
       - store_artifacts:
           path: out/nupkgs
           destination: nupkgs
@@ -43,8 +46,8 @@ jobs:
       - attach_workspace:
           at: /app
       - run:
-          name: Check Workspace
-          command: ls /app/out/nupkgs
+          name: NuGet Push
+          command: dotnet nuget push /app/out/nupkgs/*.nupkg --api-key ${NUGET_KEY} --source https://api.nuget.org/v3/index.json
 
 workflows:
   version: 2
