@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 if [[ -z "${CIRCLE_TAG}" ]]; then
-  export PACKAGE_VERSION=$(build/semver get release $(git describe --tags))
-  export PACKAGE_SUFFIX="ci-${CIRCLE_BUILD_NUM}"
+  # By default, get base version information from the most recent tag and add a "ci" suffix with the build number.
+  export PACKAGE_VERSION_MAJOR=$(build/semver get release $(git describe --tags))
+  export PACKAGE_VERSION="${PACKAGE_VERSION_MAJOR}-ci.${CIRCLE_BUILD_NUM}"
 else
-  export PACKAGE_VERSION=$(build/semver get release ${CIRCLE_TAG})
-  export PACKAGE_SUFFIX=""
+  # For a Git tag that has just been applied, remove the 'v' prefix.
+  export PACKAGE_VERSION=${CIRCLE_TAG//v}
 fi
 
 echo "PACKAGE_VERSION = ${PACKAGE_VERSION}"
-echo "PACKAGE_SUFFIX = ${PACKAGE_SUFFIX}"
