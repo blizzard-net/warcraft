@@ -170,6 +170,9 @@ namespace ArgentPonyWarcraftClient
         [JsonProperty("collections")]
         public Self Collections { get; set; }
 
+        /// <summary>
+        /// Gets a reference to the active title for the character.
+        /// </summary>
         [JsonProperty("active_title")]
         public TitleReference ActiveTitle { get; set; }
 
