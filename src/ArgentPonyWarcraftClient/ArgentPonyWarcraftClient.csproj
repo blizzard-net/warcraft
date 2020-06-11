@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="../../ArgentPony.png" Pack="true" PackagePath="\"/>
+    <None Include="../../ArgentPony.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
