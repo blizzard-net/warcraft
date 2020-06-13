@@ -204,6 +204,84 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pets&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/pets?namespace=profile-us&quot;
+        ///  },
+        ///  &quot;mounts&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us&quot;
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string CharacterCollectionsIndexResponse {
+            get {
+                return ResourceManager.GetString("CharacterCollectionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;mounts&quot;: [
+        ///    {
+        ///      &quot;mount&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;Brown Horse&quot;,
+        ///        &quot;id&quot;: 6
+        ///      }
+        ///    },
+        ///    {
+        ///      &quot;mount&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/9? [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterMountsCollectionSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterMountsCollectionSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/pets?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pets&quot;: [
+        ///    {
+        ///      &quot;species&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/202?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;Baby Blizzard Bear&quot;,
+        ///        &quot;id&quot;: 202
+        ///      },
+        ///      &quot;level&quot;: 1,
+        ///      &quot;quality&quot;: {
+        ///        &quot;type&quot;: &quot;UNCOMMON&quot;,
+        ///        &quot;name&quot;: &quot;Uncommon&quot;
+        ///      },
+        ///  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterPetsCollectionSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterPetsCollectionSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/status?namespace=profile-us&quot;
         ///    }
         ///  },

@@ -55151,4 +55151,304 @@
   "is_valid": true
 }</value>
   </data>
+  <data name="CharacterPetsCollectionSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/pets?namespace=profile-us"
+    }
+  },
+  "pets": [
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/202?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Baby Blizzard Bear",
+        "id": 202
+      },
+      "level": 1,
+      "quality": {
+        "type": "UNCOMMON",
+        "name": "Uncommon"
+      },
+      "stats": {
+        "breed_id": 7,
+        "health": 153,
+        "power": 11,
+        "speed": 10
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/16189?namespace=static-8.3.0_32861-us"
+        },
+        "id": 16189
+      },
+      "id": 57110618
+    },
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/78?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Crimson Snake",
+        "id": 78
+      },
+      "level": 1,
+      "quality": {
+        "type": "UNCOMMON",
+        "name": "Uncommon"
+      },
+      "stats": {
+        "breed_id": 12,
+        "health": 150,
+        "power": 11,
+        "speed": 10
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/6303?namespace=static-8.3.0_32861-us"
+        },
+        "id": 6303
+      },
+      "id": 57110619
+    },
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/2089?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Infernal Pyreclaw",
+        "id": 2089
+      },
+      "level": 1,
+      "quality": {
+        "type": "RARE",
+        "name": "Rare"
+      },
+      "stats": {
+        "breed_id": 20,
+        "health": 155,
+        "power": 12,
+        "speed": 11
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/38283?namespace=static-8.3.0_32861-us"
+        },
+        "id": 38283
+      },
+      "id": 147174990
+    },
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/1922?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Lurking Owl Kitten",
+        "id": 1922
+      },
+      "level": 1,
+      "quality": {
+        "type": "RARE",
+        "name": "Rare"
+      },
+      "stats": {
+        "breed_id": 18,
+        "health": 150,
+        "power": 12,
+        "speed": 12
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/71826?namespace=static-8.3.0_32861-us"
+        },
+        "id": 71826
+      },
+      "id": 147429168
+    }
+  ],
+  "unlocked_battle_pet_slots": 3
+}</value>
+  </data>
+  <data name="CharacterMountsCollectionSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us"
+    }
+  },
+  "mounts": [
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Brown Horse",
+        "id": 6
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/9?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Black Stallion",
+        "id": 9
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/11?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Pinto",
+        "id": 11
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/14?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Timber Wolf",
+        "id": 14
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/18?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Chestnut Mare",
+        "id": 18
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/19?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Dire Wolf",
+        "id": 19
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/20?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Brown Wolf",
+        "id": 20
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/21?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Gray Ram",
+        "id": 21
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/24?namespace=static-8.3.0_32861-us"
+        },
+        "name": "White Ram",
+        "id": 24
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/25?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Brown Ram",
+        "id": 25
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/26?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Striped Frostsaber",
+        "id": 26
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/27?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Emerald Raptor",
+        "id": 27
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/31?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Spotted Frostsaber",
+        "id": 31
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/34?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Striped Nightsaber",
+        "id": 34
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/36?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Turquoise Raptor",
+        "id": 36
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/1240?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Obsidian Worldbreaker",
+        "id": 1240
+      },
+      "is_favorite": true
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/1253?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Scrapforged Mechaspider",
+        "id": 1253
+      }
+    }
+  ]
+}</value>
+  </data>
+  <data name="CharacterCollectionsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections?namespace=profile-us"
+    }
+  },
+  "pets": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/pets?namespace=profile-us"
+  },
+  "mounts": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us"
+  }
+}</value>
+  </data>
 </root>
