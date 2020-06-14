@@ -739,6 +739,62 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 6,
+        ///  &quot;name&quot;: &quot;Brown Horse&quot;,
+        ///  &quot;creature_displays&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-display/2404?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 2404
+        ///    }
+        ///  ],
+        ///  &quot;description&quot;: &quot;A favorite among Stormwind&apos;s guards thanks to its patience and stamina.&quot;,
+        ///  &quot;source&quot;: {
+        ///    &quot;type&quot;: &quot;VENDOR&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MountResponse {
+            get {
+                return ResourceManager.GetString("MountResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;mounts&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Brown Horse&quot;,
+        ///      &quot;id&quot;: 6
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/7?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Gray Wolf&quot;,
+        ///      &quot;id&quot;: 7
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MountsIndexResponse {
+            get {
+                return ResourceManager.GetString("MountsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

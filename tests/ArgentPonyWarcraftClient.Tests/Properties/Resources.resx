@@ -55451,4 +55451,92 @@
   }
 }</value>
   </data>
+  <data name="MountsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mount/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "mounts": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Brown Horse",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Gray Wolf",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/8?namespace=static-8.3.0_32861-us"
+      },
+      "name": "White Stallion",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/9?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Black Stallion",
+      "id": 9
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/11?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Pinto",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/1328?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Xinlao",
+      "id": 1328
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mount/1329?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Springfur Alpaca",
+      "id": 1329
+    }
+  ]
+}</value>
+  </data>
+  <data name="MountResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 6,
+  "name": "Brown Horse",
+  "creature_displays": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/media/creature-display/2404?namespace=static-8.3.0_32861-us"
+      },
+      "id": 2404
+    }
+  ],
+  "description": "A favorite among Stormwind's guards thanks to its patience and stamina.",
+  "source": {
+    "type": "VENDOR",
+    "name": "Vendor"
+  },
+  "faction": {
+    "type": "ALLIANCE",
+    "name": "Alliance"
+  }
+}</value>
+  </data>
 </root>
