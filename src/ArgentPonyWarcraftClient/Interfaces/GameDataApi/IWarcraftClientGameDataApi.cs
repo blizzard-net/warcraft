@@ -9,7 +9,8 @@
         IWarcraftClientItemApi,
         IWarcraftClientJournalApi,
         IWarcraftClientMountApi,
-        IWarcraftClientPetApi
+        IWarcraftClientPetApi,
+        IWarcraftClientPlayableClassApi
     {
     }
 }

@@ -844,5 +844,118 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
                 return ResourceManager.GetString("PetsIndexResponse", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;classes&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Warrior&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Paladin&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PlayableClassesIndexResponse {
+            get {
+                return ResourceManager.GetString("PlayableClassesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/classicon_shaman.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 7
+        ///}.
+        /// </summary>
+        internal static string PlayableClassMediaResponse {
+            get {
+                return ResourceManager.GetString("PlayableClassMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 7,
+        ///  &quot;name&quot;: &quot;Shaman&quot;,
+        ///  &quot;gender_name&quot;: {
+        ///    &quot;male&quot;: &quot;Shaman&quot;,
+        ///    &quot;female&quot;: &quot;Shaman&quot;
+        ///  },
+        ///  &quot;power_type&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Mana&quot;,
+        ///    &quot;id&quot;: 0
+        ///  },
+        ///  &quot;specializations&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.ap [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PlayableClassResponse {
+            get {
+                return ResourceManager.GetString("PlayableClassResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;talent_slots&quot;: [
+        ///    {
+        ///      &quot;slot_number&quot;: 1,
+        ///      &quot;unlock_player_level&quot;: 20
+        ///    },
+        ///    {
+        ///      &quot;slot_number&quot;: 2,
+        ///      &quot;unlock_player_level&quot;: 40
+        ///    },
+        ///    {
+        ///      &quot;slot_number&quot;: 3,
+        ///      &quot;unlock_player_level&quot;: 70
+        ///    },
+        ///    {
+        ///      &quot;slot_number&quot;: 4,
+        ///      &quot;unlock_player_level&quot;: 110
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string PvpTalentSlotsResponse {
+            get {
+                return ResourceManager.GetString("PvpTalentSlotsResponse", resourceCulture);
+            }
+        }
     }
 }
