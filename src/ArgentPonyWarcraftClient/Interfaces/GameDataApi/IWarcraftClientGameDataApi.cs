@@ -8,6 +8,7 @@
         IWarcraftClientAuctionHouseApi,
         IWarcraftClientItemApi,
         IWarcraftClientJournalApi,
+        IWarcraftClientMountApi,
         IWarcraftClientPetApi
     {
     }
