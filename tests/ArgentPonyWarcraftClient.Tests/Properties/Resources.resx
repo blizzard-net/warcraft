@@ -55539,4 +55539,196 @@
   }
 }</value>
   </data>
+  <data name="PlayableClassesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "classes": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Warrior",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Paladin",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Hunter",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/4?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Rogue",
+      "id": 4
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Priest",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/6?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Death Knight",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Shaman",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/8?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Mage",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/9?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Warlock",
+      "id": 9
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Monk",
+      "id": 10
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/11?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Druid",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-class/12?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Demon Hunter",
+      "id": 12
+    }
+  ]
+}</value>
+  </data>
+  <data name="PlayableClassResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 7,
+  "name": "Shaman",
+  "gender_name": {
+    "male": "Shaman",
+    "female": "Shaman"
+  },
+  "power_type": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Mana",
+    "id": 0
+  },
+  "specializations": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Elemental",
+      "id": 262
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/263?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Enhancement",
+      "id": 263
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/264?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Restoration",
+      "id": 264
+    }
+  ],
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-8.3.0_32861-us"
+    },
+    "id": 7
+  },
+  "pvp_talent_slots": {
+    "href": "https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-8.3.0_32861-us"
+  }
+}</value>
+  </data>
+  <data name="PlayableClassMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/classicon_shaman.jpg"
+    }
+  ],
+  "id": 7
+}</value>
+  </data>
+  <data name="PvpTalentSlotsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "talent_slots": [
+    {
+      "slot_number": 1,
+      "unlock_player_level": 20
+    },
+    {
+      "slot_number": 2,
+      "unlock_player_level": 40
+    },
+    {
+      "slot_number": 3,
+      "unlock_player_level": 70
+    },
+    {
+      "slot_number": 4,
+      "unlock_player_level": 110
+    }
+  ]
+}</value>
+  </data>
 </root>
