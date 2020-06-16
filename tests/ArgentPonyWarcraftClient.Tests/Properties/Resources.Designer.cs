@@ -929,6 +929,61 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Orc&quot;,
+        ///  &quot;gender_name&quot;: {
+        ///    &quot;male&quot;: &quot;Orc&quot;,
+        ///    &quot;female&quot;: &quot;Orc&quot;
+        ///  },
+        ///  &quot;faction&quot;: {
+        ///    &quot;type&quot;: &quot;HORDE&quot;,
+        ///    &quot;name&quot;: &quot;Horde&quot;
+        ///  },
+        ///  &quot;is_selectable&quot;: true,
+        ///  &quot;is_allied_race&quot;: false
+        ///}.
+        /// </summary>
+        internal static string PlayableRaceResponse {
+            get {
+                return ResourceManager.GetString("PlayableRaceResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;races&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Human&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Orc&quot;,
+        ///      &quot;i [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PlayableRacesIndexResponse {
+            get {
+                return ResourceManager.GetString("PlayableRacesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

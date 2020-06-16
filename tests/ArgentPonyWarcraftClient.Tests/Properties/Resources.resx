@@ -55731,4 +55731,211 @@
   ]
 }</value>
   </data>
+  <data name="PlayableRaceResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 2,
+  "name": "Orc",
+  "gender_name": {
+    "male": "Orc",
+    "female": "Orc"
+  },
+  "faction": {
+    "type": "HORDE",
+    "name": "Horde"
+  },
+  "is_selectable": true,
+  "is_allied_race": false
+}</value>
+  </data>
+  <data name="PlayableRacesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-race/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "races": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Human",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Orc",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Dwarf",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/4?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Night Elf",
+      "id": 4
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/5?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Undead",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/6?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Tauren",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/7?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Gnome",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/8?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Troll",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/9?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Goblin",
+      "id": 9
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/10?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Blood Elf",
+      "id": 10
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/11?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Draenei",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/22?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Worgen",
+      "id": 22
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/24?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Pandaren",
+      "id": 24
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/25?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Pandaren",
+      "id": 25
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/26?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Pandaren",
+      "id": 26
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/27?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Nightborne",
+      "id": 27
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/28?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Highmountain Tauren",
+      "id": 28
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/29?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Void Elf",
+      "id": 29
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/30?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Lightforged Draenei",
+      "id": 30
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/31?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Zandalari Troll",
+      "id": 31
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/32?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Kul Tiran",
+      "id": 32
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/34?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Dark Iron Dwarf",
+      "id": 34
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/35?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Vulpera",
+      "id": 35
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/36?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Mag'har Orc",
+      "id": 36
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/37?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Mechagnome",
+      "id": 37
+    }
+  ]
+}</value>
+  </data>
 </root>
