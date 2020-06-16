@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsPetApi
+    public class PetApiTests
     {
         [Fact]
         public async void GetPetsIndexAsync_Gets_PetsIndex()

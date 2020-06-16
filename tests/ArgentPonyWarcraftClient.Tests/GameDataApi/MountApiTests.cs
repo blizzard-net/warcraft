@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsMountApi
+    public class MountApiTests
     {
         [Fact]
         public async void GetMountsIndexAsync_Gets_MountsIndex()

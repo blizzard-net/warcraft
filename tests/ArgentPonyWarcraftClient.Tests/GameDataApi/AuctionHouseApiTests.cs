@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsAuctionHouseApi
+    public class AuctionHouseApiTests
     {
         [Fact]
         public async void GetAuctionsAsync_Gets_Auctions()
