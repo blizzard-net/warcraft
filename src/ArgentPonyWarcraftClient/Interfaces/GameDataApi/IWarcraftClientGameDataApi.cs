@@ -10,7 +10,8 @@
         IWarcraftClientJournalApi,
         IWarcraftClientMountApi,
         IWarcraftClientPetApi,
-        IWarcraftClientPlayableClassApi
+        IWarcraftClientPlayableClassApi,
+        IWarcraftClientPlayableRaceApi
     {
     }
 }
