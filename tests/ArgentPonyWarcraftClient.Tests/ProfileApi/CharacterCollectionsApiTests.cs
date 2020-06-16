@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsCharacterCollectionsApi
+    public class CharacterCollectionsApiTests
     {
         [Fact]
         public async void GetCharacterCollectionsIndexAsync_Gets_CharacterCollections()

@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsPlayableClassApi
+    public class PlayableClassApiTests
     {
         [Fact]
         public async void GetPlayableClassesIndexAsync_Gets_PlayableClassesIndex()

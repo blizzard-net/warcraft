@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsAchievementApi
+    public class AchievementApiTests
     {
         [Fact]
         public async void GetAchievementCategoriesIndexAsync_Gets_AchievementCategoriesIndex()

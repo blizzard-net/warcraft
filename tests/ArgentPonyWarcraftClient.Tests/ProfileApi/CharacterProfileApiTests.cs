@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsCharacterProfileApi
+    public class CharacterProfileApiTests
     {
         [Fact]
         public async void GetCharacterProfileSummaryAsync_Gets_CharacterProfileSummary()

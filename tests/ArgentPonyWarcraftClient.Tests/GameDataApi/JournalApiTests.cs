@@ -3,7 +3,7 @@ using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
 {
-    public class WarcraftClientTestsJournalApi
+    public class JournalApiTests
     {
         [Fact]
         public async void GetJournalExpansionsIndexAsync_Gets_JournalExpansions()
