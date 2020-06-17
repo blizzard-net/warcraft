@@ -57947,4 +57947,86 @@
   "slug": "tichondrius"
 }</value>
   </data>
+  <data name="ConnectedRealmsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/?namespace=dynamic-us"
+    }
+  },
+  "connected_realms": [
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/4?namespace=dynamic-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/5?namespace=dynamic-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/7?namespace=dynamic-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/3725?namespace=dynamic-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/3726?namespace=dynamic-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/3728?namespace=dynamic-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/3729?namespace=dynamic-us"
+    }
+  ]
+}</value>
+  </data>
+  <data name="ConnectedRealmResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us"
+    }
+  },
+  "id": 11,
+  "has_queue": false,
+  "status": {
+    "type": "UP",
+    "name": "Up"
+  },
+  "population": {
+    "type": "FULL",
+    "name": "Full"
+  },
+  "realms": [
+    {
+      "id": 11,
+      "region": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us"
+        },
+        "name": "North America",
+        "id": 1
+      },
+      "connected_realm": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us"
+      },
+      "name": "Tichondrius",
+      "category": "United States",
+      "locale": "enUS",
+      "timezone": "America/Los_Angeles",
+      "type": {
+        "type": "NORMAL",
+        "name": "Normal"
+      },
+      "is_tournament": false,
+      "slug": "tichondrius"
+    }
+  ],
+  "mythic_leaderboards": {
+    "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/?namespace=dynamic-us"
+  },
+  "auctions": {
+    "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/auctions?namespace=dynamic-us"
+  }
+}</value>
+  </data>
 </root>

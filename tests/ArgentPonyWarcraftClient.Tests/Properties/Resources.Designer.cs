@@ -331,6 +331,65 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 11,
+        ///  &quot;has_queue&quot;: false,
+        ///  &quot;status&quot;: {
+        ///    &quot;type&quot;: &quot;UP&quot;,
+        ///    &quot;name&quot;: &quot;Up&quot;
+        ///  },
+        ///  &quot;population&quot;: {
+        ///    &quot;type&quot;: &quot;FULL&quot;,
+        ///    &quot;name&quot;: &quot;Full&quot;
+        ///  },
+        ///  &quot;realms&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 11,
+        ///      &quot;region&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;North America&quot;,
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConnectedRealmResponse {
+            get {
+                return ResourceManager.GetString("ConnectedRealmResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;connected_realms&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4?namespace=dynamic-us&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/5?namespace=dynamic-us&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/7?namespace=dynamic-us&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;htt [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConnectedRealmsIndexResponse {
+            get {
+                return ResourceManager.GetString("ConnectedRealmsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
         ///    }
         ///  },
