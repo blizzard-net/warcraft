@@ -1012,5 +1012,63 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
                 return ResourceManager.GetString("PvpTalentSlotsResponse", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;realms&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Lightbringer&quot;,
+        ///      &quot;id&quot;: 1,
+        ///      &quot;slug&quot;: &quot;lightbringer&quot;
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/2?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Cenarius&quot;,
+        ///      &quot;id&quot;: 2,
+        ///      [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RealmIndexResponse {
+            get {
+                return ResourceManager.GetString("RealmIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/tichondrius?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 11,
+        ///  &quot;region&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;North America&quot;,
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;connected_realm&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
+        ///  },
+        ///  &quot;name&quot;: &quot;Tichondrius&quot;,
+        ///  &quot;category&quot;: &quot;United States&quot;,
+        ///  &quot;locale&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RealmResponse {
+            get {
+                return ResourceManager.GetString("RealmResponse", resourceCulture);
+            }
+        }
     }
 }

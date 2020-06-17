@@ -11,7 +11,8 @@
         IWarcraftClientMountApi,
         IWarcraftClientPetApi,
         IWarcraftClientPlayableClassApi,
-        IWarcraftClientPlayableRaceApi
+        IWarcraftClientPlayableRaceApi,
+        IWarcraftClientRealmApi
     {
     }
 }
