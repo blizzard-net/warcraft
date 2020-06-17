@@ -6,12 +6,14 @@
     public interface IWarcraftClientGameDataApi :
         IWarcraftClientAchievementApi,
         IWarcraftClientAuctionHouseApi,
+        IWarcraftClientConnectedRealmApi,
         IWarcraftClientItemApi,
         IWarcraftClientJournalApi,
         IWarcraftClientMountApi,
         IWarcraftClientPetApi,
         IWarcraftClientPlayableClassApi,
-        IWarcraftClientPlayableRaceApi
+        IWarcraftClientPlayableRaceApi,
+        IWarcraftClientRealmApi
     {
     }
 }

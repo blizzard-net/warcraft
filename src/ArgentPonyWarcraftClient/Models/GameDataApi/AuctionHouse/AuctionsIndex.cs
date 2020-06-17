@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the connected realm associated with the auctions.
         /// </summary>
         [JsonProperty("connected_realm")]
-        public ConnectedRealm ConnectedRealm { get; set; }
+        public Self ConnectedRealm { get; set; }
 
         /// <summary>
         /// Gets the auctions.
