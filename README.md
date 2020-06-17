@@ -59,7 +59,7 @@ Each request is wrapped in the `RequestResult<T>` class. Which has the following
 A proper method call could look like this.
 
 ```cs
-RequestResult<Character> result = await warcraftClient.GetCharacterAsync("Norgannon", "Drinian", CharacterFields.All);
+RequestResult<CharacterProfileSummary> result = await warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
 
 if (result.Success)
 {
