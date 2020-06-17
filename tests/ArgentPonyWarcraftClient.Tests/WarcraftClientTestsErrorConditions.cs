@@ -1,6 +1,6 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
-using System;
+﻿using System;
 using System.Net;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests
