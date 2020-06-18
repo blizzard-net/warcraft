@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A creature.
     /// </summary>
-    public class Creature
+    public class EncounterCreature
     {
         /// <summary>
         /// Gets the ID of the creature.

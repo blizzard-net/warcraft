@@ -35,7 +35,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the creatures involved in the encounter.
         /// </summary>
         [JsonProperty("creatures")]
-        public Creature[] Creatures { get; set; }
+        public EncounterCreature[] Creatures { get; set; }
 
         /// <summary>
         /// Gets the items that can appear as loot from the encounter.

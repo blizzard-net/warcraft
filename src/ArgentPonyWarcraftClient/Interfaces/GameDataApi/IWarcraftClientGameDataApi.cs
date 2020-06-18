@@ -7,6 +7,7 @@
         IWarcraftClientAchievementApi,
         IWarcraftClientAuctionHouseApi,
         IWarcraftClientConnectedRealmApi,
+        IWarcraftClientCreatureApi,
         IWarcraftClientItemApi,
         IWarcraftClientJournalApi,
         IWarcraftClientMountApi,

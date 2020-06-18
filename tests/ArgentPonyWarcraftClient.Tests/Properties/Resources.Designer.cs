@@ -390,6 +390,175 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-display/30221?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;zoom&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/npcs/zoom/creature-display-30221.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 30221
+        ///}.
+        /// </summary>
+        internal static string CreatureDisplayMediaResponse {
+            get {
+                return ResourceManager.GetString("CreatureDisplayMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;creature_families&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Wolf&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CreatureFamiliesIndexResponse {
+            get {
+                return ResourceManager.GetString("CreatureFamiliesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ability_hunter_pet_wolf.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 1
+        ///}.
+        /// </summary>
+        internal static string CreatureFamilyMediaResponse {
+            get {
+                return ResourceManager.GetString("CreatureFamilyMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Wolf&quot;,
+        ///  &quot;specialization&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/74?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Ferocity&quot;,
+        ///    &quot;id&quot;: 74
+        ///  },
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/creature-family/1?namespace=static-8.3.0_3 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CreatureFamilyResponse {
+            get {
+                return ResourceManager.GetString("CreatureFamilyResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature/42722?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 42722,
+        ///  &quot;name&quot;: &quot;Young Mastiff&quot;,
+        ///  &quot;type&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Beast&quot;,
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;family&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-family/52?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CreatureResponse {
+            get {
+                return ResourceManager.GetString("CreatureResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Beast&quot;
+        ///}.
+        /// </summary>
+        internal static string CreatureTypeResponse {
+            get {
+                return ResourceManager.GetString("CreatureTypeResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;creature_types&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Beast&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature-type/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Dragon [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CreatureTypesIndexResponse {
+            get {
+                return ResourceManager.GetString("CreatureTypesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.2.5_31884-us&quot;
         ///    }
         ///  },
