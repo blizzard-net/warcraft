@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A mount.
     /// </summary>
-    public partial class Mount
+    public class Mount
     {
         /// <summary>
         /// Gets links for the mount.
