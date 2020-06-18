@@ -26,5 +26,38 @@ namespace ArgentPonyWarcraftClient.Tests
             RequestResult<Pet> result = await warcraftClient.GetPetAsync(39, "static-us");
             Assert.NotNull(result.Value);
         }
+
+        [Fact]
+        public async void GetPetAbilitiesIndexAsync_Gets_PetAbilitiesIndex()
+        {
+            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/pet-ability/index?namespace=static-us&locale=en_US",
+                responseContent: Resources.PetAbilitiesIndexResponse);
+
+            RequestResult<PetAbilitiesIndex> result = await warcraftClient.GetPetAbilitiesIndexAsync("static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetPetAbilityAsync_Gets_PetAbility()
+        {
+            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/pet-ability/110?namespace=static-us&locale=en_US",
+                responseContent: Resources.PetAbilityResponse);
+
+            RequestResult<PetAbility> result = await warcraftClient.GetPetAbilityAsync(110, "static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
+        public async void GetPetAbilityMediaAsync_Gets_PetAbilityMedia()
+        {
+            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/media/pet-ability/110?namespace=static-us&locale=en_US",
+                responseContent: Resources.PetAbilityMediaResponse);
+
+            RequestResult<PetAbilityMedia> result = await warcraftClient.GetPetAbilityMediaAsync(110, "static-us");
+            Assert.NotNull(result.Value);
+        }
     }
 }

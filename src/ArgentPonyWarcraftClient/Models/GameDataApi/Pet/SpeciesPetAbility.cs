@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A pet ability for a specific pet species.
     /// </summary>
-    public partial class SpeciesPetAbility
+    public class SpeciesPetAbility
     {
         /// <summary>
         /// Gets a reference to the pet ability.

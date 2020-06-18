@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// An index of character collections.
     /// </summary>
-    public partial class CharacterCollectionsIndex
+    public class CharacterCollectionsIndex
     {
         /// <summary>
         /// Gets links for the character collections index.
