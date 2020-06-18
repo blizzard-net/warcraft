@@ -58029,4 +58029,124 @@
   }
 }</value>
   </data>
+  <data name="PetAbilitiesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet-ability/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "abilities": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/110?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Bite",
+      "id": 110
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/111?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Punch",
+      "id": 111
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/112?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Peck",
+      "id": 112
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/113?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Burn",
+      "id": 113
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/114?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Beam",
+      "id": 114
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/115?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Breath",
+      "id": 115
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/116?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Zap",
+      "id": 116
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/117?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Infected Claw",
+      "id": 117
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/2360?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Void Tremors",
+      "id": 2360
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pet-ability/2361?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Void Slap",
+      "id": 2361
+    }
+  ]
+}</value>
+  </data>
+  <data name="PetAbilityResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pet-ability/110?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 110,
+  "name": "Bite",
+  "battle_pet_type": {
+    "id": 7,
+    "type": "BEAST",
+    "name": "Beast"
+  },
+  "rounds": 1,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet-ability/110?namespace=static-8.3.0_32861-us"
+    },
+    "id": 110
+  }
+}</value>
+  </data>
+  <data name="PetAbilityMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet-ability/110?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/ability_druid_ferociousbite.jpg"
+    }
+  ],
+  "id": 110
+}</value>
+  </data>
 </root>

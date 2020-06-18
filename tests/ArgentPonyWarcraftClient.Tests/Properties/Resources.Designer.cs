@@ -854,6 +854,85 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet-ability/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;abilities&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet-ability/110?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Bite&quot;,
+        ///      &quot;id&quot;: 110
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet-ability/111?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Punch&quot;,
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PetAbilitiesIndexResponse {
+            get {
+                return ResourceManager.GetString("PetAbilitiesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pet-ability/110?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ability_druid_ferociousbite.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 110
+        ///}.
+        /// </summary>
+        internal static string PetAbilityMediaResponse {
+            get {
+                return ResourceManager.GetString("PetAbilityMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet-ability/110?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 110,
+        ///  &quot;name&quot;: &quot;Bite&quot;,
+        ///  &quot;battle_pet_type&quot;: {
+        ///    &quot;id&quot;: 7,
+        ///    &quot;type&quot;: &quot;BEAST&quot;,
+        ///    &quot;name&quot;: &quot;Beast&quot;
+        ///  },
+        ///  &quot;rounds&quot;: 1,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pet-ability/110?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 110
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string PetAbilityResponse {
+            get {
+                return ResourceManager.GetString("PetAbilityResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
