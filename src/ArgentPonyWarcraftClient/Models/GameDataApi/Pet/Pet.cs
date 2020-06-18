@@ -78,7 +78,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the source where the pet can be acquired.
         /// </summary>
         [JsonProperty("source")]
-        public Source Source { get; set; }
+        public EnumType Source { get; set; }
 
         /// <summary>
         /// Gets a URI for the pet's icon.
