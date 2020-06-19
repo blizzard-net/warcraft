@@ -58405,4 +58405,508 @@
   "id": 1
 }</value>
   </data>
+  <data name="MythicKeystoneLeaderboardsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/?namespace=dynamic-us"
+    }
+  },
+  "current_leaderboards": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/244/period/755?namespace=dynamic-us"
+      },
+      "name": "Atal'Dazar",
+      "id": 244
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/245/period/755?namespace=dynamic-us"
+      },
+      "name": "Freehold",
+      "id": 245
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/246/period/755?namespace=dynamic-us"
+      },
+      "name": "Tol Dagor",
+      "id": 246
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/247/period/755?namespace=dynamic-us"
+      },
+      "name": "The MOTHERLODE!!",
+      "id": 247
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/248/period/755?namespace=dynamic-us"
+      },
+      "name": "Waycrest Manor",
+      "id": 248
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/249/period/755?namespace=dynamic-us"
+      },
+      "name": "Kings' Rest",
+      "id": 249
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/250/period/755?namespace=dynamic-us"
+      },
+      "name": "Temple of Sethraliss",
+      "id": 250
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/251/period/755?namespace=dynamic-us"
+      },
+      "name": "The Underrot",
+      "id": 251
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/252/period/755?namespace=dynamic-us"
+      },
+      "name": "Shrine of the Storm",
+      "id": 252
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/353/period/755?namespace=dynamic-us"
+      },
+      "name": "Siege of Boralus",
+      "id": 353
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/369/period/755?namespace=dynamic-us"
+      },
+      "name": "Operation: Mechagon - Junkyard",
+      "id": 369
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/370/period/755?namespace=dynamic-us"
+      },
+      "name": "Operation: Mechagon - Workshop",
+      "id": 370
+    }
+  ]
+}</value>
+  </data>
+  <data name="MythicKeystoneLeaderboardResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us"
+    }
+  },
+  "map": {
+    "name": "Eye of Azshara",
+    "id": 1456
+  },
+  "period": 641,
+  "period_start_timestamp": 1523372400000,
+  "period_end_timestamp": 1523977199000,
+  "connected_realm": {
+    "href": "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us"
+  },
+  "leading_groups": [
+    {
+      "ranking": 1,
+      "duration": 4701656,
+      "completed_timestamp": 1523646535000,
+      "keystone_level": 25,
+      "members": [
+        {
+          "profile": {
+            "name": "Volladin",
+            "id": 186986280,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/61?namespace=dynamic-us"
+              },
+              "id": 61,
+              "slug": "zuljin"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/65?namespace=static-7.3.5_25875-us"
+            },
+            "id": 65
+          }
+        },
+        {
+          "profile": {
+            "name": "Elishaa",
+            "id": 187880653,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/73?namespace=dynamic-us"
+              },
+              "id": 73,
+              "slug": "bleeding-hollow"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-7.3.5_25875-us"
+            },
+            "id": 581
+          }
+        },
+        {
+          "profile": {
+            "name": "Jackson",
+            "id": 142410055,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/73?namespace=dynamic-us"
+              },
+              "id": 73,
+              "slug": "bleeding-hollow"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/259?namespace=static-7.3.5_25875-us"
+            },
+            "id": 259
+          }
+        },
+        {
+          "profile": {
+            "name": "Pearcake",
+            "id": 179791270,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
+              },
+              "id": 11,
+              "slug": "tichondrius"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-7.3.5_25875-us"
+            },
+            "id": 265
+          }
+        },
+        {
+          "profile": {
+            "name": "Snöwy",
+            "id": 132319941,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/57?namespace=dynamic-us"
+              },
+              "id": 57,
+              "slug": "illidan"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-7.3.5_25875-us"
+            },
+            "id": 63
+          }
+        }
+      ]
+    },
+    {
+      "ranking": 2,
+      "duration": 2810578,
+      "completed_timestamp": 1523583162000,
+      "keystone_level": 23,
+      "members": [
+        {
+          "profile": {
+            "name": "Noru",
+            "id": 180317150,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/10?namespace=dynamic-us"
+              },
+              "id": 10,
+              "slug": "blackrock"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/103?namespace=static-7.3.5_25875-us"
+            },
+            "id": 103
+          }
+        },
+        {
+          "profile": {
+            "name": "Spicyramyun",
+            "id": 179491557,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
+              },
+              "id": 11,
+              "slug": "tichondrius"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-7.3.5_25875-us"
+            },
+            "id": 72
+          }
+        },
+        {
+          "profile": {
+            "name": "Viirx",
+            "id": 166923740,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/1263?namespace=dynamic-us"
+              },
+              "id": 1263,
+              "slug": "thrall"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-7.3.5_25875-us"
+            },
+            "id": 250
+          }
+        },
+        {
+          "profile": {
+            "name": "Tr",
+            "id": 125313974,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/10?namespace=dynamic-us"
+              },
+              "id": 10,
+              "slug": "blackrock"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-7.3.5_25875-us"
+            },
+            "id": 105
+          }
+        },
+        {
+          "profile": {
+            "name": "Clofnihbr",
+            "id": 175694437,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/1263?namespace=dynamic-us"
+              },
+              "id": 1263,
+              "slug": "thrall"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-7.3.5_25875-us"
+            },
+            "id": 265
+          }
+        }
+      ]
+    },
+    {
+      "ranking": 500,
+      "duration": 1816054,
+      "completed_timestamp": 1523759505000,
+      "keystone_level": 15,
+      "members": [
+        {
+          "profile": {
+            "name": "Balanceteam",
+            "id": 179161603,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/57?namespace=dynamic-us"
+              },
+              "id": 57,
+              "slug": "illidan"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/269?namespace=static-7.3.5_25875-us"
+            },
+            "id": 269
+          }
+        },
+        {
+          "profile": {
+            "name": "Bapcha",
+            "id": 133107582,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
+              },
+              "id": 11,
+              "slug": "tichondrius"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/65?namespace=static-7.3.5_25875-us"
+            },
+            "id": 65
+          }
+        },
+        {
+          "profile": {
+            "name": "Coolshiine",
+            "id": 177333613,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/3723?namespace=dynamic-us"
+              },
+              "id": 3723,
+              "slug": "barthilas"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-7.3.5_25875-us"
+            },
+            "id": 63
+          }
+        },
+        {
+          "profile": {
+            "name": "Wowprogress",
+            "id": 58815968,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/3726?namespace=dynamic-us"
+              },
+              "id": 3726,
+              "slug": "khazgoroth"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-7.3.5_25875-us"
+            },
+            "id": 250
+          }
+        },
+        {
+          "profile": {
+            "name": "Agonized",
+            "id": 173711224,
+            "realm": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/realm/3723?namespace=dynamic-us"
+              },
+              "id": 3723,
+              "slug": "barthilas"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-7.3.5_25875-us"
+            },
+            "id": 265
+          }
+        }
+      ]
+    }
+  ],
+  "keystone_affixes": [
+    {
+      "keystone_affix": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/keystone-affix/6?namespace=static-7.3.5_25875-us"
+        },
+        "name": "Raging",
+        "id": 6
+      },
+      "starting_level": 4
+    },
+    {
+      "keystone_affix": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/keystone-affix/4?namespace=static-7.3.5_25875-us"
+        },
+        "name": "Necrotic",
+        "id": 4
+      },
+      "starting_level": 7
+    },
+    {
+      "keystone_affix": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/keystone-affix/9?namespace=static-7.3.5_25875-us"
+        },
+        "name": "Tyrannical",
+        "id": 9
+      },
+      "starting_level": 10
+    }
+  ],
+  "map_challenge_mode_id": 197,
+  "name": "Eye of Azshara"
+}</value>
+  </data>
 </root>
