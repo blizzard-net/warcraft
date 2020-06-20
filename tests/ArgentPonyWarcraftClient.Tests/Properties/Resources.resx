@@ -61036,4 +61036,91 @@
   }
 }</value>
   </data>
+  <data name="MythicRaidLeaderboardResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/leaderboard/hall-of-fame/uldir/alliance?namespace=dynamic-us"
+    }
+  },
+  "slug": "uldir-alliance",
+  "criteria_type": "hall-of-fame",
+  "zone": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/zone/9389?namespace=static-us"
+    },
+    "name": "Uldir"
+  },
+  "entries": [
+    {
+      "guild": {
+        "name": "阿尔法",
+        "id": 31307591,
+        "realm": {
+          "name": "Rhonin",
+          "id": 729,
+          "slug": "rhonin"
+        }
+      },
+      "faction": {
+        "type": "ALLIANCE"
+      },
+      "timestamp": 1537733917000,
+      "region": "cn",
+      "rank": 1
+    },
+    {
+      "guild": {
+        "name": "Honestly",
+        "id": 41321785,
+        "realm": {
+          "name": "Frostmourne",
+          "id": 3725,
+          "slug": "frostmourne"
+        }
+      },
+      "faction": {
+        "type": "ALLIANCE"
+      },
+      "timestamp": 1538129132000,
+      "region": "us",
+      "rank": 2
+    },
+    {
+      "guild": {
+        "name": "P G",
+        "id": 49912595,
+        "realm": {
+          "name": "Ravencrest",
+          "id": 554,
+          "slug": "ravencrest"
+        }
+      },
+      "faction": {
+        "type": "ALLIANCE"
+      },
+      "timestamp": 1538159395000,
+      "region": "eu",
+      "rank": 3
+    },
+    {
+      "guild": {
+        "name": "Phoenix",
+        "id": 40075794,
+        "realm": {
+          "name": "Silvermoon",
+          "id": 549,
+          "slug": "silvermoon"
+        }
+      },
+      "faction": {
+        "type": "ALLIANCE"
+      },
+      "timestamp": 1541454206000,
+      "region": "eu",
+      "rank": 100
+    }
+  ]
+}</value>
+  </data>
 </root>

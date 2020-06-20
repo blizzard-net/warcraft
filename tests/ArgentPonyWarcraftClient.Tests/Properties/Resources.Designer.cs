@@ -1130,6 +1130,36 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/leaderboard/hall-of-fame/uldir/alliance?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;slug&quot;: &quot;uldir-alliance&quot;,
+        ///  &quot;criteria_type&quot;: &quot;hall-of-fame&quot;,
+        ///  &quot;zone&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/zone/9389?namespace=static-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Uldir&quot;
+        ///  },
+        ///  &quot;entries&quot;: [
+        ///    {
+        ///      &quot;guild&quot;: {
+        ///        &quot;name&quot;: &quot;阿尔法&quot;,
+        ///        &quot;id&quot;: 31307591,
+        ///        &quot;realm&quot;: {
+        ///          &quot;name&quot;: &quot;Rhonin&quot;,
+        ///  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicRaidLeaderboardResponse {
+            get {
+                return ResourceManager.GetString("MythicRaidLeaderboardResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet-ability/?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
