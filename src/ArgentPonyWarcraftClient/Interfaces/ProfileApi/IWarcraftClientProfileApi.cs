@@ -5,6 +5,7 @@
     /// </summary>
     public interface IWarcraftClientProfileApi :
         IWarcraftClientCharacterCollectionsApi,
+        IWarcraftClientCharacterMythicKeystoneProfileApi,
         IWarcraftClientCharacterProfileApi
     {
     }
