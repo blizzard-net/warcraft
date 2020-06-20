@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The Mythic Keystone season details for a character.
         /// </returns>
-        Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, string seasonId, string @namespace);
+        Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace);
 
         /// <summary>
         ///     Get the Mythic Keystone season details for a character.
@@ -55,6 +55,6 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The Mythic Keystone season details for a character.
         /// </returns>
-        Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, string seasonId, string @namespace, Region region, Locale locale);
+        Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace, Region region, Locale locale);
     }
 }

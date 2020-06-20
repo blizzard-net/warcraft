@@ -18,13 +18,13 @@ namespace ArgentPonyWarcraftClient
         }
 
         /// <inheritdoc />
-        public async Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, string seasonId, string @namespace)
+        public async Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace)
         {
             return await GetCharacterMythicKeystoneSeasonDetailsAsync(realmSlug, characterName, seasonId, @namespace, _region, _locale);
         }
 
         /// <inheritdoc />
-        public async Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, string seasonId, string @namespace, Region region, Locale locale)
+        public async Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
             return await Get<CharacterMythicKeystoneSeasonDetails>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/mythic-keystone-profile/season/{seasonId}?namespace={@namespace}&locale={locale}");

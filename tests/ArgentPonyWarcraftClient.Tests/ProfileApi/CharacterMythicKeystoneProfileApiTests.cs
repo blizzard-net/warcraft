@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient.Tests
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/zuljin/volladin/mythic-keystone-profile/season/1?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterMythicKeystoneSeasonDetailsResponse);
 
-            RequestResult<CharacterMythicKeystoneSeasonDetails> result = await warcraftClient.GetCharacterMythicKeystoneSeasonDetailsAsync("zuljin", "volladin", "1", "profile-us");
+            RequestResult<CharacterMythicKeystoneSeasonDetails> result = await warcraftClient.GetCharacterMythicKeystoneSeasonDetailsAsync("zuljin", "volladin", 1, "profile-us");
             Assert.NotNull(result.Value);
         }
     }
