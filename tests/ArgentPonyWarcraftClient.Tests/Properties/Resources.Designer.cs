@@ -253,6 +253,61 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/zuljin/volladin/mythic-keystone-profile?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;current_period&quot;: {
+        ///    &quot;period&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/755?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 755
+        ///    },
+        ///    &quot;best_runs&quot;: [
+        ///      {
+        ///        &quot;completed_timestamp&quot;: 1592440795000,
+        ///        &quot;duration&quot;: 2285852,
+        ///        &quot;keystone_level&quot;: 20,
+        ///       [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterMythicKeystoneProfileIndexResponse {
+            get {
+                return ResourceManager.GetString("CharacterMythicKeystoneProfileIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/zuljin/volladin/mythic-keystone-profile/season/1?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;season&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;best_runs&quot;: [
+        ///    {
+        ///      &quot;completed_timestamp&quot;: 1537037827000,
+        ///      &quot;duration&quot;: 2212249,
+        ///      &quot;keystone_level&quot;: 12,
+        ///      &quot;keystone_affixes&quot;: [
+        ///        {
+        ///       [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterMythicKeystoneSeasonDetailsResponse {
+            get {
+                return ResourceManager.GetString("CharacterMythicKeystoneSeasonDetailsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/pets?namespace=profile-us&quot;
         ///    }
         ///  },
