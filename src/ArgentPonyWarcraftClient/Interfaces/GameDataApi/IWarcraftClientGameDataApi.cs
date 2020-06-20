@@ -12,6 +12,7 @@
         IWarcraftClientJournalApi,
         IWarcraftClientMountApi,
         IWarcraftClientMythicKeystoneLeaderboardApi,
+        IWarcraftClientMythicRaidLeaderboardApi,
         IWarcraftClientPetApi,
         IWarcraftClientPlayableClassApi,
         IWarcraftClientPlayableRaceApi,
