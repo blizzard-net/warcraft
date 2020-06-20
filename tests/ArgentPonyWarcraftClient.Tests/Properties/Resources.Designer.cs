@@ -1023,6 +1023,58 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;map&quot;: {
+        ///    &quot;name&quot;: &quot;Eye of Azshara&quot;,
+        ///    &quot;id&quot;: 1456
+        ///  },
+        ///  &quot;period&quot;: 641,
+        ///  &quot;period_start_timestamp&quot;: 1523372400000,
+        ///  &quot;period_end_timestamp&quot;: 1523977199000,
+        ///  &quot;connected_realm&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
+        ///  },
+        ///  &quot;leading_groups&quot;: [
+        ///    {
+        ///      &quot;ranking&quot;:  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneLeaderboardResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneLeaderboardResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;current_leaderboards&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/244/period/755?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Atal&apos;Dazar&quot;,
+        ///      &quot;id&quot;: 244
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-lea [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneLeaderboardsIndexResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneLeaderboardsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet-ability/?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
