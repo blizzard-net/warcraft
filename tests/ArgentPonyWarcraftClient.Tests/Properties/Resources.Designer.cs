@@ -1151,6 +1151,84 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 353,
+        ///  &quot;name&quot;: &quot;Siege of Boralus&quot;,
+        ///  &quot;map&quot;: {
+        ///    &quot;name&quot;: &quot;Siege of Boralus&quot;,
+        ///    &quot;id&quot;: 1822
+        ///  },
+        ///  &quot;zone&quot;: {
+        ///    &quot;slug&quot;: &quot;siege-of-boralus&quot;
+        ///  },
+        ///  &quot;dungeon&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/1023?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Siege of Boralus&quot;,
+        ///    &quot;id&quot;: 1023
+        ///  },        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneDungeonResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneDungeonResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;dungeons&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/244?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Atal&apos;Dazar&quot;,
+        ///      &quot;id&quot;: 244
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/245?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Free [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneDungeonsIndexResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneDungeonsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;seasons&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/season/?namespace=dynamic-us&quot;
+        ///  },
+        ///  &quot;dungeons&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/?namespace=dynamic-us&quot;
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string MythicKeystoneIndexResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us&quot;
         ///    }
         ///  },
@@ -1196,6 +1274,111 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string MythicKeystoneLeaderboardsIndexResponse {
             get {
                 return ResourceManager.GetString("MythicKeystoneLeaderboardsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 641,
+        ///  &quot;start_timestamp&quot;: 1523372400000,
+        ///  &quot;end_timestamp&quot;: 1523977199000
+        ///}.
+        /// </summary>
+        internal static string MythicKeystonePeriodResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystonePeriodResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;periods&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 641
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/642?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 642
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystonePeriodsIndexResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystonePeriodsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;start_timestamp&quot;: 1535500800000,
+        ///  &quot;end_timestamp&quot;: 1548169200000,
+        ///  &quot;periods&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/661?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 661
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/period/662? [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneSeasonResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneSeasonResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/season/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;seasons&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/season/0?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;hre [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneSeasonsIndexResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneSeasonsIndexResponse", resourceCulture);
             }
         }
         

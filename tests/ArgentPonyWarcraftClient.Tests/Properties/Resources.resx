@@ -61301,4 +61301,393 @@
   "id": 1
 }</value>
   </data>
+  <data name="MythicKeystoneDungeonsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/?namespace=dynamic-us"
+    }
+  },
+  "dungeons": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/244?namespace=dynamic-us"
+      },
+      "name": "Atal'Dazar",
+      "id": 244
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/245?namespace=dynamic-us"
+      },
+      "name": "Freehold",
+      "id": 245
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/246?namespace=dynamic-us"
+      },
+      "name": "Tol Dagor",
+      "id": 246
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/247?namespace=dynamic-us"
+      },
+      "name": "The MOTHERLODE!!",
+      "id": 247
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/248?namespace=dynamic-us"
+      },
+      "name": "Waycrest Manor",
+      "id": 248
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/249?namespace=dynamic-us"
+      },
+      "name": "Kings' Rest",
+      "id": 249
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/250?namespace=dynamic-us"
+      },
+      "name": "Temple of Sethraliss",
+      "id": 250
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/251?namespace=dynamic-us"
+      },
+      "name": "The Underrot",
+      "id": 251
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/252?namespace=dynamic-us"
+      },
+      "name": "Shrine of the Storm",
+      "id": 252
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us"
+      },
+      "name": "Siege of Boralus",
+      "id": 353
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/369?namespace=dynamic-us"
+      },
+      "name": "Operation: Mechagon - Junkyard",
+      "id": 369
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/370?namespace=dynamic-us"
+      },
+      "name": "Operation: Mechagon - Workshop",
+      "id": 370
+    }
+  ]
+}</value>
+  </data>
+  <data name="MythicKeystoneDungeonResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us"
+    }
+  },
+  "id": 353,
+  "name": "Siege of Boralus",
+  "map": {
+    "name": "Siege of Boralus",
+    "id": 1822
+  },
+  "zone": {
+    "slug": "siege-of-boralus"
+  },
+  "dungeon": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/1023?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Siege of Boralus",
+    "id": 1023
+  },
+  "keystone_upgrades": [
+    {
+      "upgrade_level": 1,
+      "qualifying_duration": 2160000
+    },
+    {
+      "upgrade_level": 2,
+      "qualifying_duration": 1728000
+    },
+    {
+      "upgrade_level": 3,
+      "qualifying_duration": 1296000
+    }
+  ]
+}</value>
+  </data>
+  <data name="MythicKeystoneIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/?namespace=dynamic-us"
+    }
+  },
+  "seasons": {
+    "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/?namespace=dynamic-us"
+  },
+  "dungeons": {
+    "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/?namespace=dynamic-us"
+  }
+}</value>
+  </data>
+  <data name="MythicKeystonePeriodsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/?namespace=dynamic-us"
+    }
+  },
+  "periods": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-us"
+      },
+      "id": 641
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/642?namespace=dynamic-us"
+      },
+      "id": 642
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/754?namespace=dynamic-us"
+      },
+      "id": 754
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/755?namespace=dynamic-us"
+      },
+      "id": 755
+    }
+  ],
+  "current_period": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/755?namespace=dynamic-us"
+    },
+    "id": 755
+  }
+}</value>
+  </data>
+  <data name="MythicKeystonePeriodResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-us"
+    }
+  },
+  "id": 641,
+  "start_timestamp": 1523372400000,
+  "end_timestamp": 1523977199000
+}</value>
+  </data>
+  <data name="MythicKeystoneSeasonsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/?namespace=dynamic-us"
+    }
+  },
+  "seasons": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/0?namespace=dynamic-us"
+      },
+      "id": 0
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us"
+      },
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/2?namespace=dynamic-us"
+      },
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/3?namespace=dynamic-us"
+      },
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/4?namespace=dynamic-us"
+      },
+      "id": 4
+    }
+  ],
+  "current_season": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/4?namespace=dynamic-us"
+    },
+    "id": 4
+  }
+}</value>
+  </data>
+  <data name="MythicKeystoneSeasonResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us"
+    }
+  },
+  "id": 1,
+  "start_timestamp": 1535500800000,
+  "end_timestamp": 1548169200000,
+  "periods": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/661?namespace=dynamic-us"
+      },
+      "id": 661
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/662?namespace=dynamic-us"
+      },
+      "id": 662
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/663?namespace=dynamic-us"
+      },
+      "id": 663
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/664?namespace=dynamic-us"
+      },
+      "id": 664
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/665?namespace=dynamic-us"
+      },
+      "id": 665
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/666?namespace=dynamic-us"
+      },
+      "id": 666
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/667?namespace=dynamic-us"
+      },
+      "id": 667
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/668?namespace=dynamic-us"
+      },
+      "id": 668
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/669?namespace=dynamic-us"
+      },
+      "id": 669
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/670?namespace=dynamic-us"
+      },
+      "id": 670
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/671?namespace=dynamic-us"
+      },
+      "id": 671
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/672?namespace=dynamic-us"
+      },
+      "id": 672
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/673?namespace=dynamic-us"
+      },
+      "id": 673
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/674?namespace=dynamic-us"
+      },
+      "id": 674
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/675?namespace=dynamic-us"
+      },
+      "id": 675
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/676?namespace=dynamic-us"
+      },
+      "id": 676
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/677?namespace=dynamic-us"
+      },
+      "id": 677
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/678?namespace=dynamic-us"
+      },
+      "id": 678
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/679?namespace=dynamic-us"
+      },
+      "id": 679
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/680?namespace=dynamic-us"
+      },
+      "id": 680
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/period/681?namespace=dynamic-us"
+      },
+      "id": 681
+    }
+  ]
+}</value>
+  </data>
 </root>
