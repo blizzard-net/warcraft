@@ -1078,6 +1078,79 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/keystone-affix/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;affixes&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/keystone-affix/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Overflowing&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/keystone-affix/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Skit [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MythicKeystoneAffixesIndexResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneAffixesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/keystone-affix/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_misc_volatilewater.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 1
+        ///}.
+        /// </summary>
+        internal static string MythicKeystoneAffixMediaResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneAffixMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/keystone-affix/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Overflowing&quot;,
+        ///  &quot;description&quot;: &quot;Healing in excess of a target&apos;s maximum health is instead converted to a heal absorption effect.&quot;,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/keystone-affix/1?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 1
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string MythicKeystoneAffixResponse {
+            get {
+                return ResourceManager.GetString("MythicKeystoneAffixResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us&quot;
         ///    }
         ///  },
