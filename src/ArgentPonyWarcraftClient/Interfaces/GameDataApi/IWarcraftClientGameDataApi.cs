@@ -11,6 +11,7 @@
         IWarcraftClientItemApi,
         IWarcraftClientJournalApi,
         IWarcraftClientMountApi,
+        IWarcraftClientMythicKeystoneAffixApi,
         IWarcraftClientMythicKeystoneLeaderboardApi,
         IWarcraftClientMythicRaidLeaderboardApi,
         IWarcraftClientPetApi,
