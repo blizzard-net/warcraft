@@ -61690,4 +61690,146 @@
   ]
 }</value>
   </data>
+  <data name="TalentsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/talent/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "talents": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Eye of the Tiger",
+      "id": 23106
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent/19752?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Castigation",
+      "id": 19752
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent/22547?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Nemesis",
+      "id": 22547
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent/21902?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Soul Barrier",
+      "id": 21902
+    }
+  ]
+}</value>
+  </data>
+  <data name="PvpTalentsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-talent/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "pvp_talents": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Gladiator's Medallion",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-talent/4?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Adaptation",
+      "id": 4
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3755?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Cleansing Waters",
+      "id": 3755
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3756?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Ancestral Gift",
+      "id": 3756
+    }
+  ]
+}</value>
+  </data>
+  <data name="TalentResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 23106,
+  "tier_index": 0,
+  "column_index": 0,
+  "level": 15,
+  "description": "Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.",
+  "spell": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Eye of the Tiger",
+    "id": 196607
+  },
+  "playable_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Monk",
+    "id": 10
+  }
+}</value>
+  </data>
+  <data name="PvpTalentResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 3,
+  "spell": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/spell/208683?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Gladiator's Medallion",
+    "id": 208683
+  },
+  "playable_specialization": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Restoration",
+    "id": 105
+  },
+  "overrides_spell": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/spell/195710?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Honorable Medallion",
+    "id": 195710
+  },
+  "description": "Removes all movement impairing effects and all effects which cause loss of control of your character while in PvP combat.",
+  "unlock_player_level": 0,
+  "compatible_slots": [
+    1
+  ]
+}</value>
+  </data>
 </root>
