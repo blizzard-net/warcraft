@@ -18,6 +18,7 @@
         IWarcraftClientPetApi,
         IWarcraftClientPlayableClassApi,
         IWarcraftClientPlayableRaceApi,
+        IWarcraftClientProfessionApi,
         IWarcraftClientRealmApi,
         IWarcraftClientTalentApi
     {
