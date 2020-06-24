@@ -1684,6 +1684,58 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 3,
+        ///  &quot;spell&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/208683?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Gladiator&apos;s Medallion&quot;,
+        ///    &quot;id&quot;: 208683
+        ///  },
+        ///  &quot;playable_specialization&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-8.3.0_32861-us&quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpTalentResponse {
+            get {
+                return ResourceManager.GetString("PvpTalentResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pvp_talents&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Gladiator&apos;s Medallion&quot;,
+        ///      &quot;id&quot;: 3
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/4?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Ad [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpTalentsIndexResponse {
+            get {
+                return ResourceManager.GetString("PvpTalentsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
@@ -1768,6 +1820,57 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string RealmResponse {
             get {
                 return ResourceManager.GetString("RealmResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 23106,
+        ///  &quot;tier_index&quot;: 0,
+        ///  &quot;column_index&quot;: 0,
+        ///  &quot;level&quot;: 15,
+        ///  &quot;description&quot;: &quot;Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.&quot;,
+        ///  &quot;spell&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Eye [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentResponse {
+            get {
+                return ResourceManager.GetString("TalentResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;talents&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Eye of the Tiger&quot;,
+        ///      &quot;id&quot;: 23106
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/19752?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Castigation [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentsIndexResponse {
+            get {
+                return ResourceManager.GetString("TalentsIndexResponse", resourceCulture);
             }
         }
     }
