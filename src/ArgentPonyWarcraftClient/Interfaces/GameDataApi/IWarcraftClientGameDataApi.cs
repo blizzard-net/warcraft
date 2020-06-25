@@ -19,6 +19,7 @@
         IWarcraftClientPlayableClassApi,
         IWarcraftClientPlayableRaceApi,
         IWarcraftClientProfessionApi,
+        IWarcraftClientQuestApi,
         IWarcraftClientRealmApi,
         IWarcraftClientTalentApi
     {
