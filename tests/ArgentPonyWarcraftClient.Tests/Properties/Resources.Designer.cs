@@ -1684,6 +1684,79 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/trade_blacksmithing.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 164
+        ///}.
+        /// </summary>
+        internal static string ProfessionMediaResponse {
+            get {
+                return ResourceManager.GetString("ProfessionMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/164?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 164,
+        ///  &quot;name&quot;: &quot;Blacksmithing&quot;,
+        ///  &quot;description&quot;: &quot;Higher smithing skill allows you to learn higher level smithing plans.  Blacksmithing plans can be found on trainers around the world as well as from quests and monsters.&quot;,
+        ///  &quot;type&quot;: {
+        ///    &quot;type&quot;: &quot;PRIMARY&quot;,
+        ///    &quot;name&quot;: &quot;Primary&quot;
+        ///  },
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzar [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ProfessionResponse {
+            get {
+                return ResourceManager.GetString("ProfessionResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;professions&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/164?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Blacksmithing&quot;,
+        ///      &quot;id&quot;: 164
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/165?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Leat [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ProfessionsIndexResponse {
+            get {
+                return ResourceManager.GetString("ProfessionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
@@ -1820,6 +1893,81 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string RealmResponse {
             get {
                 return ResourceManager.GetString("RealmResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_stone_sharpeningstone_01.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 1631
+        ///}.
+        /// </summary>
+        internal static string RecipeMediaResponse {
+            get {
+                return ResourceManager.GetString("RecipeMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1631,
+        ///  &quot;name&quot;: &quot;Rough Sharpening Stone&quot;,
+        ///  &quot;description&quot;: null,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 1631
+        ///  },
+        ///  &quot;crafted_item&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/2862?namespace=static-8.3.0_32861-us&quot;        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RecipeResponse {
+            get {
+                return ResourceManager.GetString("RecipeResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2477,
+        ///  &quot;name&quot;: &quot;Blacksmithing&quot;,
+        ///  &quot;minimum_skill_level&quot;: 1,
+        ///  &quot;maximum_skill_level&quot;: 300,
+        ///  &quot;categories&quot;: [
+        ///    {
+        ///      &quot;name&quot;: &quot;Weapon Mods&quot;,
+        ///      &quot;recipes&quot;: [
+        ///        {
+        ///          &quot;key&quot;: {
+        ///            &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-8.3.0_32861-us&quot;
+        ///          },
+        ///          &quot;name&quot;: &quot;Ro [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SkillTierResponse {
+            get {
+                return ResourceManager.GetString("SkillTierResponse", resourceCulture);
             }
         }
         

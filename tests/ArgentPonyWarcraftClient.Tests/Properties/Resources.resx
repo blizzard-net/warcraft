@@ -61832,4 +61832,312 @@
   ]
 }</value>
   </data>
+  <data name="ProfessionsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/profession/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "professions": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Blacksmithing",
+      "id": 164
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/165?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Leatherworking",
+      "id": 165
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/171?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Alchemy",
+      "id": 171
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/182?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Herbalism",
+      "id": 182
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/185?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Cooking",
+      "id": 185
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/186?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Mining",
+      "id": 186
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/197?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Tailoring",
+      "id": 197
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/202?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Engineering",
+      "id": 202
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/333?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Enchanting",
+      "id": 333
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/356?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Fishing",
+      "id": 356
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/393?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Skinning",
+      "id": 393
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/755?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Jewelcrafting",
+      "id": 755
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/773?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Inscription",
+      "id": 773
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/794?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Archaeology",
+      "id": 794
+    }
+  ]
+}</value>
+  </data>
+  <data name="ProfessionResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/profession/164?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 164,
+  "name": "Blacksmithing",
+  "description": "Higher smithing skill allows you to learn higher level smithing plans.  Blacksmithing plans can be found on trainers around the world as well as from quests and monsters.",
+  "type": {
+    "type": "PRIMARY",
+    "name": "Primary"
+  },
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-8.3.0_32861-us"
+    },
+    "id": 164
+  },
+  "skill_tiers": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2437?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Kul Tiran Blacksmithing / Zandalari Blacksmithing",
+      "id": 2437
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2454?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Legion Blacksmithing",
+      "id": 2454
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2472?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Draenor Blacksmithing",
+      "id": 2472
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2473?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Pandaria Blacksmithing",
+      "id": 2473
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2474?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Cataclysm Blacksmithing",
+      "id": 2474
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2475?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Northrend Blacksmithing",
+      "id": 2475
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2476?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Outland Blacksmithing",
+      "id": 2476
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Blacksmithing",
+      "id": 2477
+    }
+  ]
+}</value>
+  </data>
+  <data name="ProfessionMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/trade_blacksmithing.jpg"
+    }
+  ],
+  "id": 164
+}</value>
+  </data>
+  <data name="SkillTierResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 2477,
+  "name": "Blacksmithing",
+  "minimum_skill_level": 1,
+  "maximum_skill_level": 300,
+  "categories": [
+    {
+      "name": "Weapon Mods",
+      "recipes": [
+        {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-8.3.0_32861-us"
+          },
+          "name": "Rough Sharpening Stone",
+          "id": 1631
+        },
+        {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/recipe/12302?namespace=static-8.3.0_32861-us"
+          },
+          "name": "Elemental Sharpening Stone",
+          "id": 12302
+        }
+      ]
+    },
+    {
+      "name": "Shields",
+      "recipes": [
+        {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/recipe/13805?namespace=static-8.3.0_32861-us"
+          },
+          "name": "Jagged Obsidian Shield",
+          "id": 13805
+        }
+      ]
+    }
+  ]
+}</value>
+  </data>
+  <data name="RecipeResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1631,
+  "name": "Rough Sharpening Stone",
+  "description": null,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-8.3.0_32861-us"
+    },
+    "id": 1631
+  },
+  "crafted_item": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item/2862?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Rough Sharpening Stone",
+    "id": 2862
+  },
+  "reagents": [
+    {
+      "reagent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/2835?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Rough Stone",
+        "id": 2835
+      },
+      "quantity": 1
+    }
+  ],
+  "crafted_quantity": {
+    "minimum": 1,
+    "maximum": 1
+  }
+}</value>
+  </data>
+  <data name="RecipeMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_stone_sharpeningstone_01.jpg"
+    }
+  ],
+  "id": 1631
+}</value>
+  </data>
 </root>
