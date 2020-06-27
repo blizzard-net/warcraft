@@ -62140,4 +62140,341 @@
   "id": 1631
 }</value>
   </data>
+  <data name="QuestAreaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/area/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "area": "Dun Morogh",
+  "quests": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/313?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Forced to Watch from Afar",
+      "id": 313
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/314?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Protecting the Herd",
+      "id": 314
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/43292?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Repel",
+      "id": 43292
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/47709?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Great Gnomeregan Run",
+      "id": 47709
+    }
+  ]
+}</value>
+  </data>
+  <data name="QuestAreasIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/area/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "areas": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/area/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Dun Morogh",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/area/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Badlands",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/area/10522?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Ny'alotha, the Waking City",
+      "id": 10522
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/area/10833?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Uldum",
+      "id": 10833
+    }
+  ]
+}</value>
+  </data>
+  <data name="QuestCategoriesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/category/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "categories": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/category/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Epic",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/category/21?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Hallow's End",
+      "id": 21
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/category/583?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Mechagnome",
+      "id": 583
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/category/584?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Black Empire Campaign",
+      "id": 584
+    }
+  ]
+}</value>
+  </data>
+  <data name="QuestCategoryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/category/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "category": "Epic",
+  "quests": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/8446?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Shrouded in Nightmare",
+      "id": 8446
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/8447?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Waking Legends",
+      "id": 8447
+    }
+  ]
+}</value>
+  </data>
+  <data name="QuestResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/2?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 2,
+  "title": "Sharptalon's Claw",
+  "area": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/area/331?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Ashenvale",
+    "id": 331
+  },
+  "description": "The mighty hippogryph Sharptalon has been slain, with the claw of the felled beast serving as a testament to your victory.\n\nSenani Thunderheart at the Silverwind Refuge will no doubt be interested in seeing this trophy as proof of your deeds.",
+  "recommended_minimum_level": 15,
+  "recommended_maximum_level": 60,
+  "requirements": {
+    "min_character_level": 15,
+    "faction": {
+      "type": "HORDE",
+      "name": "Horde"
+    }
+  },
+  "rewards": {
+    "experience": 6300,
+    "reputations": [
+      {
+        "reward": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/reputation-faction/76?namespace=static-8.3.0_32861-us"
+          },
+          "name": "Orgrimmar",
+          "id": 76
+        },
+        "value": 250
+      }
+    ],
+    "money": {
+      "value": 9000,
+      "units": {
+        "gold": 0,
+        "silver": 90,
+        "copper": 0
+      }
+    }
+  }
+}</value>
+  </data>
+  <data name="QuestsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "categories": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/category/?namespace=static-8.3.0_32861-us"
+  },
+  "areas": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/area/?namespace=static-8.3.0_32861-us"
+  },
+  "types": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/type/?namespace=static-8.3.0_32861-us"
+  }
+}</value>
+  </data>
+  <data name="QuestTypeResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/type/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "type": "Group",
+  "quests": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/176?namespace=static-8.3.0_32861-us"
+      },
+      "name": "WANTED:  \"Hogger\"",
+      "id": 176
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/543?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Perenolde Tiara",
+      "id": 543
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/58778?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Getting Ahead",
+      "id": 58778
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/58780?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Heralds of the Hive",
+      "id": 58780
+    }
+  ]
+}</value>
+  </data>
+  <data name="QuestTypesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/quest/type/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "types": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Group",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/41?namespace=static-8.3.0_32861-us"
+      },
+      "name": "PvP",
+      "id": 41
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/62?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Raid",
+      "id": 62
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/81?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Dungeon",
+      "id": 81
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/83?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Legendary",
+      "id": 83
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/85?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Heroic",
+      "id": 85
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/88?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Raid (10)",
+      "id": 88
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/89?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Raid (25)",
+      "id": 89
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/98?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Scenario",
+      "id": 98
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/type/102?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Account",
+      "id": 102
+    }
+  ]
+}</value>
+  </data>
 </root>

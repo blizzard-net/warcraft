@@ -1842,6 +1842,220 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;area&quot;: &quot;Dun Morogh&quot;,
+        ///  &quot;quests&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/313?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Forced to Watch from Afar&quot;,
+        ///      &quot;id&quot;: 313
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/314?namespace=static-8.3.0_32861 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestAreaResponse {
+            get {
+                return ResourceManager.GetString("QuestAreaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;areas&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Dun Morogh&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/3?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Badlands&quot;,
+        ///      &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestAreasIndexResponse {
+            get {
+                return ResourceManager.GetString("QuestAreasIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/category/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;categories&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/category/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Epic&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/category/21?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Hallow&apos; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestCategoriesIndexResponse {
+            get {
+                return ResourceManager.GetString("QuestCategoriesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/category/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;category&quot;: &quot;Epic&quot;,
+        ///  &quot;quests&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/8446?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Shrouded in Nightmare&quot;,
+        ///      &quot;id&quot;: 8446
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/8447?namespace=static-8.3.0_3286 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestCategoryResponse {
+            get {
+                return ResourceManager.GetString("QuestCategoryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/2?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;title&quot;: &quot;Sharptalon&apos;s Claw&quot;,
+        ///  &quot;area&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/331?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Ashenvale&quot;,
+        ///    &quot;id&quot;: 331
+        ///  },
+        ///  &quot;description&quot;: &quot;The mighty hippogryph Sharptalon has been slain, with the claw of the felled beast serving as a testament to your victory.\n\n [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestResponse {
+            get {
+                return ResourceManager.GetString("QuestResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;categories&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/category/?namespace=static-8.3.0_32861-us&quot;
+        ///  },
+        ///  &quot;areas&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/?namespace=static-8.3.0_32861-us&quot;
+        ///  },
+        ///  &quot;types&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/type/?namespace=static-8.3.0_32861-us&quot;
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string QuestsIndexResponse {
+            get {
+                return ResourceManager.GetString("QuestsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/type/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;type&quot;: &quot;Group&quot;,
+        ///  &quot;quests&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/176?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;WANTED:  \&quot;Hogger\&quot;&quot;,
+        ///      &quot;id&quot;: 176
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/543?namespace=static-8.3.0_32861-us&quot;
+        ///      [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestTypeResponse {
+            get {
+                return ResourceManager.GetString("QuestTypeResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/type/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;types&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/type/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Group&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/type/41?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;PvP&quot;,
+        ///      &quot;id&quot;: 41
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string QuestTypesIndexResponse {
+            get {
+                return ResourceManager.GetString("QuestTypesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/?namespace=dynamic-us&quot;
         ///    }
         ///  },
