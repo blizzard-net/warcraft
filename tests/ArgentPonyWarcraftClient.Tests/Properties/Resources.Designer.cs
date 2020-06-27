@@ -2189,6 +2189,52 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ability_druid_primalprecision.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 196607
+        ///}.
+        /// </summary>
+        internal static string SpellMediaResponse {
+            get {
+                return ResourceManager.GetString("SpellMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 196607,
+        ///  &quot;name&quot;: &quot;Eye of the Tiger&quot;,
+        ///  &quot;description&quot;: &quot;Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.&quot;,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 196607
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string SpellResponse {
+            get {
+                return ResourceManager.GetString("SpellResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

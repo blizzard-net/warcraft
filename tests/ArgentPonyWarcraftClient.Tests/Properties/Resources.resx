@@ -62477,4 +62477,38 @@
   ]
 }</value>
   </data>
+  <data name="SpellMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/ability_druid_primalprecision.jpg"
+    }
+  ],
+  "id": 196607
+}</value>
+  </data>
+  <data name="SpellResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 196607,
+  "name": "Eye of the Tiger",
+  "description": "Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.",
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-8.3.0_32861-us"
+    },
+    "id": 196607
+  }
+}</value>
+  </data>
 </root>
