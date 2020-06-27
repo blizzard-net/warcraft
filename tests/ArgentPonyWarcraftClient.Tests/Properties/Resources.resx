@@ -62477,6 +62477,296 @@
   ]
 }</value>
   </data>
+  <data name="PvpLeaderboardResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/3v3?namespace=dynamic-us"
+    }
+  },
+  "season": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us"
+    },
+    "id": 27
+  },
+  "name": "3v3",
+  "bracket": {
+    "id": 1,
+    "type": "ARENA_3v3"
+  },
+  "entries": [
+    {
+      "character": {
+        "name": "Chunlî",
+        "id": 191561142,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
+          },
+          "id": 11,
+          "slug": "tichondrius"
+        }
+      },
+      "faction": {
+        "type": "ALLIANCE"
+      },
+      "rank": 1,
+      "rating": 3242,
+      "season_match_statistics": {
+        "played": 1554,
+        "won": 1109,
+        "lost": 445
+      },
+      "tier": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-tier/14?namespace=static-8.2.0_30827-us"
+        },
+        "id": 14
+      }
+    },
+    {
+      "character": {
+        "name": "Døndøtta",
+        "id": 191068463,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
+          },
+          "id": 11,
+          "slug": "tichondrius"
+        }
+      },
+      "faction": {
+        "type": "HORDE"
+      },
+      "rank": 4987,
+      "rating": 2068,
+      "season_match_statistics": {
+        "played": 747,
+        "won": 347,
+        "lost": 400
+      },
+      "tier": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-tier/12?namespace=static-8.2.0_30827-us"
+        },
+        "id": 12
+      }
+    }
+  ]
+}</value>
+  </data>
+  <data name="PvpLeaderboardsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-us"
+    }
+  },
+  "season": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us"
+    },
+    "id": 27
+  },
+  "leaderboards": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/2v2?namespace=dynamic-us"
+      },
+      "name": "2v2",
+      "id": 0
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/3v3?namespace=dynamic-us"
+      },
+      "name": "3v3",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/rbg?namespace=dynamic-us"
+      },
+      "name": "rbg",
+      "id": 3
+    }
+  ]
+}</value>
+  </data>
+  <data name="PvpRewardsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-us"
+    }
+  },
+  "season": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us"
+    },
+    "id": 27
+  },
+  "rewards": [
+    {
+      "bracket": {
+        "id": 3,
+        "type": "BATTLEGROUNDS"
+      },
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/13211?namespace=static-8.2.0_30827-us"
+        },
+        "name": "Hero of the Horde: Sinister",
+        "id": 13211
+      },
+      "rating_cutoff": 2397,
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      }
+    },
+    {
+      "bracket": {
+        "id": 3,
+        "type": "BATTLEGROUNDS"
+      },
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/13210?namespace=static-8.2.0_30827-us"
+        },
+        "name": "Hero of the Alliance: Sinister",
+        "id": 13210
+      },
+      "rating_cutoff": 2322,
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      }
+    },
+    {
+      "bracket": {
+        "id": 1,
+        "type": "ARENA_3v3"
+      },
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/13200?namespace=static-8.2.0_30827-us"
+        },
+        "name": "Sinister Gladiator: Battle for Azeroth Season 2",
+        "id": 13200
+      },
+      "rating_cutoff": 2952,
+      "faction": {
+        "type": "HORDE",
+        "name": "Horde"
+      }
+    },
+    {
+      "bracket": {
+        "id": 1,
+        "type": "ARENA_3v3"
+      },
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/13200?namespace=static-8.2.0_30827-us"
+        },
+        "name": "Sinister Gladiator: Battle for Azeroth Season 2",
+        "id": 13200
+      },
+      "rating_cutoff": 3002,
+      "faction": {
+        "type": "ALLIANCE",
+        "name": "Alliance"
+      }
+    }
+  ]
+}</value>
+  </data>
+  <data name="PvpSeasonResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us"
+    }
+  },
+  "id": 27,
+  "leaderboards": {
+    "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-us"
+  },
+  "rewards": {
+    "href": "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-us"
+  },
+  "season_start_timestamp": 1548169200000,
+  "season_end_timestamp": 1561471200000
+}</value>
+  </data>
+  <data name="PvpSeasonsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/?namespace=dynamic-us"
+    }
+  },
+  "seasons": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/22?namespace=dynamic-us"
+      },
+      "id": 22
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/23?namespace=dynamic-us"
+      },
+      "id": 23
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/24?namespace=dynamic-us"
+      },
+      "id": 24
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/25?namespace=dynamic-us"
+      },
+      "id": 25
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/26?namespace=dynamic-us"
+      },
+      "id": 26
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us"
+      },
+      "id": 27
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/28?namespace=dynamic-us"
+      },
+      "id": 28
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-season/29?namespace=dynamic-us"
+      },
+      "id": 29
+    }
+  ],
+  "current_season": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/29?namespace=dynamic-us"
+    },
+    "id": 29
+  }
+}</value>
+  </data>
   <data name="SpellMediaResponse" xml:space="preserve">
     <value>{
   "_links": {
