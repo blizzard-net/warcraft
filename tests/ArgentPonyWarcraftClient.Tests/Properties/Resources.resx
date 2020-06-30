@@ -62801,4 +62801,181 @@
   }
 }</value>
   </data>
+  <data name="PvpTierMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/ui_rankedpvp_01.jpg"
+    }
+  ],
+  "id": 1
+}</value>
+  </data>
+  <data name="PvpTierResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "name": "Unranked",
+  "min_rating": 0,
+  "max_rating": 1400,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-8.3.0_32861-us"
+    },
+    "id": 1
+  },
+  "bracket": {
+    "id": 0,
+    "type": "ARENA_2v2"
+  },
+  "rating_type": 0
+}</value>
+  </data>
+  <data name="PvpTiersIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-tier/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "tiers": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Unranked",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Combatant",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Challenger",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/4?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Rival",
+      "id": 4
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/5?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Duelist",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/6?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Elite",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/8?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Unranked",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/9?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Combatant",
+      "id": 9
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/11?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Challenger",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/12?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Rival",
+      "id": 12
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/13?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Duelist",
+      "id": 13
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/14?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Elite",
+      "id": 14
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/16?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Unranked",
+      "id": 16
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/17?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Combatant",
+      "id": 17
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/18?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Challenger",
+      "id": 18
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/19?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Rival",
+      "id": 19
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/20?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Duelist",
+      "id": 20
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/pvp-tier/21?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Elite",
+      "id": 21
+    }
+  ]
+}</value>
+  </data>
 </root>

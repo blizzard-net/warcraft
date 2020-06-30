@@ -41,6 +41,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets a reference to the character's PvP tier.
         /// </summary>
         [JsonProperty("tier")]
-        public PvpTierReference Tier { get; set; }
+        public PvpTierReferenceWithoutName Tier { get; set; }
     }
 }

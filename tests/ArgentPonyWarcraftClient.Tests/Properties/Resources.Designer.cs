@@ -1986,6 +1986,86 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ui_rankedpvp_01.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 1
+        ///}.
+        /// </summary>
+        internal static string PvpTierMediaResponse {
+            get {
+                return ResourceManager.GetString("PvpTierMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Unranked&quot;,
+        ///  &quot;min_rating&quot;: 0,
+        ///  &quot;max_rating&quot;: 1400,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;bracket&quot;: {
+        ///    &quot;id&quot;: 0,
+        ///    &quot;type&quot;: &quot;ARENA_2v2&quot;
+        ///  },
+        ///  &quot;rating_type&quot;: 0
+        ///}.
+        /// </summary>
+        internal static string PvpTierResponse {
+            get {
+                return ResourceManager.GetString("PvpTierResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;tiers&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Unranked&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-tier/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Combatant&quot;,
+        ///      &quot;id&quot;: 2        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpTiersIndexResponse {
+            get {
+                return ResourceManager.GetString("PvpTiersIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/1?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
