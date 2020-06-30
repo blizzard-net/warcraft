@@ -20,7 +20,7 @@ namespace ArgentPonyWarcraftClient
         public MythicKeystoneSeasonReference[] Seasons { get; set; }
 
         /// <summary>
-        /// Gets a reference to the current mythic keystone seasons.
+        /// Gets a reference to the current mythic keystone season.
         /// </summary>
         [JsonProperty("current_season")]
         public MythicKeystoneSeasonReference CurrentSeason { get; set; }

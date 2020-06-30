@@ -1757,6 +1757,150 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/3v3?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;season&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 27
+        ///  },
+        ///  &quot;name&quot;: &quot;3v3&quot;,
+        ///  &quot;bracket&quot;: {
+        ///    &quot;id&quot;: 1,
+        ///    &quot;type&quot;: &quot;ARENA_3v3&quot;
+        ///  },
+        ///  &quot;entries&quot;: [
+        ///    {
+        ///      &quot;character&quot;: {
+        ///        &quot;name&quot;: &quot;Chunlî&quot;,
+        ///        &quot;id&quot;: 191561142,
+        ///        &quot;realm&quot;: {
+        ///          &quot;key [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpLeaderboardResponse {
+            get {
+                return ResourceManager.GetString("PvpLeaderboardResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;season&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 27
+        ///  },
+        ///  &quot;leaderboards&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/2v2?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;2v2&quot;,
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpLeaderboardsIndexResponse {
+            get {
+                return ResourceManager.GetString("PvpLeaderboardsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;season&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 27
+        ///  },
+        ///  &quot;rewards&quot;: [
+        ///    {
+        ///      &quot;bracket&quot;: {
+        ///        &quot;id&quot;: 3,
+        ///        &quot;type&quot;: &quot;BATTLEGROUNDS&quot;
+        ///      },
+        ///      &quot;achievement&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/13211 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpRewardsIndexResponse {
+            get {
+                return ResourceManager.GetString("PvpRewardsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 27,
+        ///  &quot;leaderboards&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/?namespace=dynamic-us&quot;
+        ///  },
+        ///  &quot;rewards&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/?namespace=dynamic-us&quot;
+        ///  },
+        ///  &quot;season_start_timestamp&quot;: 1548169200000,
+        ///  &quot;season_end_timestamp&quot;: 1561471200000
+        ///}.
+        /// </summary>
+        internal static string PvpSeasonResponse {
+            get {
+                return ResourceManager.GetString("PvpSeasonResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;seasons&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/22?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 22
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-season/23?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 23
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PvpSeasonsIndexResponse {
+            get {
+                return ResourceManager.GetString("PvpSeasonsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
