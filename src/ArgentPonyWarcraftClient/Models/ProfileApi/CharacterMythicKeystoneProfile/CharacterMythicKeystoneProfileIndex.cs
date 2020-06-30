@@ -29,6 +29,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character details.
         /// </summary>
         [JsonProperty("character")]
-        public MythicKeystoneProfileCharacter Character { get; set; }
+        public CharacterReference Character { get; set; }
     }
 }
