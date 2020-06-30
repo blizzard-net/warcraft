@@ -3,21 +3,21 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// A reference to a PvP tier.
+    /// PvP tier media.
     /// </summary>
-    public class PvpTierReference
+    public class PvpTierMedia
     {
         /// <summary>
-        /// Gets the key for the PvP tier.
+        /// Gets links for the PvP tier media.
         /// </summary>
-        [JsonProperty("key")]
-        public Self Key { get; set; }
+        [JsonProperty("_links")]
+        public Links Links { get; set; }
 
         /// <summary>
-        /// Gets the name of the PvP tier.
+        /// Gets a collection of media assets.
         /// </summary>
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("assets")]
+        public Asset[] Assets { get; set; }
 
         /// <summary>
         /// Gets the ID of the PvP tier.
