@@ -4,6 +4,7 @@
     ///     A client for the World of Warcraft Profile APIs.
     /// </summary>
     public interface IWarcraftClientProfileApi :
+        IWarcraftClientCharacterAchievementsApi,
         IWarcraftClientCharacterCollectionsApi,
         IWarcraftClientCharacterMythicKeystoneProfileApi,
         IWarcraftClientCharacterProfileApi

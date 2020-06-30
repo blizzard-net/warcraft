@@ -204,6 +204,59 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;total_quantity&quot;: 2313,
+        ///  &quot;total_points&quot;: 20630,
+        ///  &quot;achievements&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 6,
+        ///      &quot;achievement&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;Level 10&quot;,
+        ///        &quot;id&quot;: 6
+        ///      },
+        ///      &quot;criteria&quot;: {
+        ///        &quot;id&quot;: 2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterAchievementsSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterAchievementsSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements/statistics?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drinian&quot;,
+        ///    &quot;id&quot;: 107811065,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;:  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterAchievementStatisticsResponse {
+            get {
+                return ResourceManager.GetString("CharacterAchievementStatisticsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections?namespace=profile-us&quot;
         ///    }
         ///  },

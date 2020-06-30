@@ -3,9 +3,9 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// Key details about the character for a Mythic Keystone profile.
+    /// A reference to a character.
     /// </summary>
-    public class MythicKeystoneProfileCharacter
+    public class CharacterReference
     {
         /// <summary>
         /// Gets the key for the character.
