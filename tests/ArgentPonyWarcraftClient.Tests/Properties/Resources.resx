@@ -63514,4 +63514,263 @@
   ]
 }</value>
   </data>
+  <data name="CharacterAppearanceSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/appearance?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "playable_race": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Human",
+    "id": 1
+  },
+  "playable_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Warrior",
+    "id": 1
+  },
+  "active_spec": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Fury",
+    "id": 72
+  },
+  "gender": {
+    "type": "MALE",
+    "name": "Male"
+  },
+  "faction": {
+    "type": "ALLIANCE",
+    "name": "Alliance"
+  },
+  "guild_crest": {
+    "emblem": {
+      "id": 12,
+      "media": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/12?namespace=static-8.3.0_32861-us"
+        },
+        "id": 12
+      },
+      "color": {
+        "id": 10,
+        "rgba": {
+          "r": 9,
+          "g": 42,
+          "b": 93,
+          "a": 1
+        }
+      }
+    },
+    "border": {
+      "id": 0,
+      "media": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-8.3.0_32861-us"
+        },
+        "id": 0
+      },
+      "color": {
+        "id": 10,
+        "rgba": {
+          "r": 0,
+          "g": 49,
+          "b": 124,
+          "a": 1
+        }
+      }
+    },
+    "background": {
+      "color": {
+        "id": 49,
+        "rgba": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    }
+  },
+  "appearance": {
+    "face_variation": 0,
+    "skin_color": 4,
+    "hair_variation": 1,
+    "hair_color": 0,
+    "feature_variation": 8,
+    "custom_display_options": [
+      0,
+      0,
+      0
+    ]
+  },
+  "items": [
+    {
+      "id": 134110,
+      "slot": {
+        "type": "HEAD",
+        "name": "Head"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 0,
+      "subclass": 5
+    },
+    {
+      "id": 139686,
+      "slot": {
+        "type": "SHOULDER",
+        "name": "Shoulders"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 2,
+      "subclass": 4
+    },
+    {
+      "id": 89195,
+      "slot": {
+        "type": "SHIRT",
+        "name": "Shirt"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 3,
+      "subclass": 0
+    },
+    {
+      "id": 139681,
+      "slot": {
+        "type": "CHEST",
+        "name": "Chest"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 4,
+      "subclass": 4
+    },
+    {
+      "id": 63805,
+      "slot": {
+        "type": "WAIST",
+        "name": "Waist"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 5,
+      "subclass": 4
+    },
+    {
+      "id": 139685,
+      "slot": {
+        "type": "LEGS",
+        "name": "Legs"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 6,
+      "subclass": 4
+    },
+    {
+      "id": 139682,
+      "slot": {
+        "type": "FEET",
+        "name": "Feet"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 7,
+      "subclass": 4
+    },
+    {
+      "id": 139688,
+      "slot": {
+        "type": "WRIST",
+        "name": "Wrist"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 8,
+      "subclass": 4
+    },
+    {
+      "id": 139683,
+      "slot": {
+        "type": "HANDS",
+        "name": "Hands"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 9,
+      "subclass": 4
+    },
+    {
+      "id": 155092,
+      "slot": {
+        "type": "BACK",
+        "name": "Back"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 14,
+      "subclass": 1
+    },
+    {
+      "id": 163890,
+      "slot": {
+        "type": "MAIN_HAND",
+        "name": "Main Hand"
+      },
+      "enchant": 200,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 15,
+      "subclass": 8
+    },
+    {
+      "id": 163890,
+      "slot": {
+        "type": "OFF_HAND",
+        "name": "Off Hand"
+      },
+      "enchant": 200,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 16,
+      "subclass": 8
+    },
+    {
+      "id": 140580,
+      "slot": {
+        "type": "TABARD",
+        "name": "Tabard"
+      },
+      "enchant": 0,
+      "item_appearance_modifier_id": 0,
+      "internal_slot_id": 18,
+      "subclass": 0
+    }
+  ]
+}</value>
+  </data>
 </root>
