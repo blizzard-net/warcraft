@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetsIndexAsync_Gets_PetsIndex()
         {
-            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+            IPetApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pet/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.PetsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetAsync_Gets_Pet()
         {
-            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+            IPetApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pet/39?namespace=static-us&locale=en_US",
                 responseContent: Resources.PetResponse);
 
@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetAbilitiesIndexAsync_Gets_PetAbilitiesIndex()
         {
-            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+            IPetApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pet-ability/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.PetAbilitiesIndexResponse);
 
@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetAbilityAsync_Gets_PetAbility()
         {
-            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+            IPetApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pet-ability/110?namespace=static-us&locale=en_US",
                 responseContent: Resources.PetAbilityResponse);
 
@@ -52,7 +52,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPetAbilityMediaAsync_Gets_PetAbilityMedia()
         {
-            IWarcraftClientPetApi warcraftClient = ClientFactory.BuildMockClient(
+            IPetApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/pet-ability/110?namespace=static-us&locale=en_US",
                 responseContent: Resources.PetAbilityMediaResponse);
 

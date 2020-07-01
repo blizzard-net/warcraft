@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterAchievementsSummaryAsync_Gets_CharacterAchievementsSummary()
         {
-            IWarcraftClientCharacterAchievementsApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterAchievementsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterAchievementsSummaryResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterAchievementStatisticsAsync_Gets_CharacterAchievementStatistics()
         {
-            IWarcraftClientCharacterAchievementsApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterAchievementsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements/statistics?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterAchievementStatisticsResponse);
 

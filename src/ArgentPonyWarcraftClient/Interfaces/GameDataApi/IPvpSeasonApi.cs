@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft PvP Season API.
     /// </summary>
-    public interface IWarcraftClientPvpSeasonApi
+    public interface IPvpSeasonApi
     {
         /// <summary>
         ///     Gets an index of PvP seasons.

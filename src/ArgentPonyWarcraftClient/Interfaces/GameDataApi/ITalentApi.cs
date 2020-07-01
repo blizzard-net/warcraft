@@ -3,94 +3,92 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    ///     A client for the World of Warcraft Playable Class API.
+    ///     A client for the World of Warcraft Talent API.
     /// </summary>
-    public interface IWarcraftClientPlayableClassApi
+    public interface ITalentApi
     {
         /// <summary>
-        ///     Gets an index of playable classes.
+        ///     Gets an index of talents.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The playable classes index.
+        ///     The talent index.
         /// </returns>
-        Task<RequestResult<PlayableClassesIndex>> GetPlayableClassesIndexAsync(string @namespace);
+        Task<RequestResult<TalentsIndex>> GetTalentsIndexAsync(string @namespace);
 
         /// <summary>
-        ///     Gets an index of playable classes.
+        ///     Gets an index of talents.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The playable classes index.
+        ///     The talent index.
         /// </returns>
-        Task<RequestResult<PlayableClassesIndex>> GetPlayableClassesIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<TalentsIndex>> GetTalentsIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified playable class.
+        ///     Get the specified talent.
         /// </summary>
-        /// <param name="classId">The playable class ID.</param>
+        /// <param name="talentId">The talent ID.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified playable class.
+        ///     The specified talent.
         /// </returns>
-        Task<RequestResult<PlayableClass>> GetPlayableClassAsync(int classId, string @namespace);
+        Task<RequestResult<Talent>> GetTalentAsync(int talentId, string @namespace);
 
         /// <summary>
-        ///     Get the specified playable class.
+        ///     Get the specified talent.
         /// </summary>
-        /// <param name="classId">The playable class ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified playable class.
-        /// </returns>
-        Task<RequestResult<PlayableClass>> GetPlayableClassAsync(int classId, string @namespace, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get media for a playable class by ID.
-        /// </summary>
-        /// <param name="classId">The playable class ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <returns>
-        ///     Media for a playable class by ID.
-        /// </returns>
-        Task<RequestResult<PlayableClassMedia>> GetPlayableClassMediaAsync(int classId, string @namespace);
-
-        /// <summary>
-        ///     Get media for a playable class by ID.
-        /// </summary>
-        /// <param name="classId">The playable class ID.</param>
+        /// <param name="talentId">The talent ID.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     Media for a playable class by ID.
+        ///     The specified talent.
         /// </returns>
-        Task<RequestResult<PlayableClassMedia>> GetPlayableClassMediaAsync(int classId, string @namespace, Region region, Locale locale);
+        Task<RequestResult<Talent>> GetTalentAsync(int talentId, string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the PvP talent slots for the specified playable class.
+        ///     Gets an index of PvP talents.
         /// </summary>
-        /// <param name="classId">The playable class ID.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The PvP talent slots for the specified playable class.
+        ///     The PvP talent index.
         /// </returns>
-        Task<RequestResult<PvpTalentSlots>> GetPvpTalentSlotsAsync(int classId, string @namespace);
+        Task<RequestResult<PvpTalentsIndex>> GetPvpTalentsIndexAsync(string @namespace);
 
         /// <summary>
-        ///     Get the PvP talent slots for the specified playable class.
+        ///     Gets an index of PvP talents.
         /// </summary>
-        /// <param name="classId">The playable class ID.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The PvP talent slots for the specified playable class.
+        ///     The PvP talent index.
         /// </returns>
-        Task<RequestResult<PvpTalentSlots>> GetPvpTalentSlotsAsync(int classId, string @namespace, Region region, Locale locale);
+        Task<RequestResult<PvpTalentsIndex>> GetPvpTalentsIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get the specified PvP talent.
+        /// </summary>
+        /// <param name="pvpTalentId">The PvP talent ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified PvP talent.
+        /// </returns>
+        Task<RequestResult<PvpTalent>> GetPvpTalentAsync(int pvpTalentId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified PvP talent.
+        /// </summary>
+        /// <param name="pvpTalentId">The PvP talent ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified PvP talent.
+        /// </returns>
+        Task<RequestResult<PvpTalent>> GetPvpTalentAsync(int pvpTalentId, string @namespace, Region region, Locale locale);
     }
 }

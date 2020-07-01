@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Mythic Raid Leaderboard API.
     /// </summary>
-    public interface IWarcraftClientMythicRaidLeaderboardApi
+    public interface IMythicRaidLeaderboardApi
     {
         /// <summary>
         ///     Gets the leaderboard for a given raid and faction.

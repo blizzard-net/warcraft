@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
         {
-            IWarcraftClientConnectedRealmApi warcraftClient = ClientFactory.BuildMockClient(
+            IConnectedRealmApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/index?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.ConnectedRealmsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetRealmAsync_Gets_Realm()
         {
-            IWarcraftClientConnectedRealmApi warcraftClient = ClientFactory.BuildMockClient(
+            IConnectedRealmApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.ConnectedRealmResponse);
 

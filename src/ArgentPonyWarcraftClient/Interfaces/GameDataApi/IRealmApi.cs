@@ -3,50 +3,50 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    ///     A client for the World of Warcraft Playable Race API.
+    ///     A client for the World of Warcraft Realm API.
     /// </summary>
-    public interface IWarcraftClientPlayableRaceApi
+    public interface IRealmApi
     {
         /// <summary>
-        ///     Gets an index of playable races.
+        ///     Gets an index of realms.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The playable races index.
+        ///     The realms index.
         /// </returns>
-        Task<RequestResult<PlayableRacesIndex>> GetPlayableRacesIndexAsync(string @namespace);
+        Task<RequestResult<RealmsIndex>> GetRealmsIndexAsync(string @namespace);
 
         /// <summary>
-        ///     Gets an index of playable races.
+        ///     Gets an index of realms.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The playable races index.
+        ///     The realms index.
         /// </returns>
-        Task<RequestResult<PlayableRacesIndex>> GetPlayableRacesIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<RealmsIndex>> GetRealmsIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified playable race.
+        ///     Get the specified realm.
         /// </summary>
-        /// <param name="playableRaceId">The playable race ID.</param>
+        /// <param name="realmSlug">The realm slug.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified playable race.
+        ///     The specified realm.
         /// </returns>
-        Task<RequestResult<PlayableRace>> GetPlayableRaceAsync(int playableRaceId, string @namespace);
+        Task<RequestResult<Realm>> GetRealmAsync(string realmSlug, string @namespace);
 
         /// <summary>
-        ///     Get the specified playable race.
+        ///     Get the specified realm.
         /// </summary>
-        /// <param name="playableRaceId">The playable race ID.</param>
+        /// <param name="realmSlug">The realm slug.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The specified playable race.
+        ///     The specified realm.
         /// </returns>
-        Task<RequestResult<PlayableRace>> GetPlayableRaceAsync(int playableRaceId, string @namespace, Region region, Locale locale);
+        Task<RequestResult<Realm>> GetRealmAsync(string realmSlug, string @namespace, Region region, Locale locale);
     }
 }

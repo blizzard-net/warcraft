@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMountsIndexAsync_Gets_MountsIndex()
         {
-            IWarcraftClientMountApi warcraftClient = ClientFactory.BuildMockClient(
+            IMountApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mount/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.MountsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMountAsync_Gets_Mount()
         {
-            IWarcraftClientMountApi warcraftClient = ClientFactory.BuildMockClient(
+            IMountApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mount/6?namespace=static-us&locale=en_US",
                 responseContent: Resources.MountResponse);
 

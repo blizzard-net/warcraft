@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestsIndexAsync_Gets_QuestsIndex()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestAsync_Gets_Quest()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/2?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestResponse);
 
@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestCategoriesIndexAsync_Gets_QuestCategoriesIndex()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/category/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestCategoriesIndexResponse);
 
@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestCategoryAsync_Gets_QuestCategory()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/category/1?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestCategoryResponse);
 
@@ -52,7 +52,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestAreasIndexAsync_Gets_QuestAreasIndex()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/area/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestAreasIndexResponse);
 
@@ -63,7 +63,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestAreaAsync_Gets_QuestArea()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/area/1?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestAreaResponse);
 
@@ -74,7 +74,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestTypesIndexAsync_Gets_QuestTypesIndex()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/type/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestTypesIndexResponse);
 
@@ -85,7 +85,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetQuestTypeAsync_Gets_QuestType()
         {
-            IWarcraftClientQuestApi warcraftClient = ClientFactory.BuildMockClient(
+            IQuestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/quest/type/1?namespace=static-us&locale=en_US",
                 responseContent: Resources.QuestTypeResponse);
 

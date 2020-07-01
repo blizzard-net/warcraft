@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
         {
-            IWarcraftClientPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
+            IPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.PlayableRacesIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPlayableRaceAsync_Gets_PlayableRace()
         {
-            IWarcraftClientPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
+            IPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-us&locale=en_US",
                 responseContent: Resources.PlayableRaceResponse);
 

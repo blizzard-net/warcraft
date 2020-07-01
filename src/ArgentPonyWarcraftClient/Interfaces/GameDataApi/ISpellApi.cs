@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Spell API.
     /// </summary>
-    public interface IWarcraftClientSpellApi
+    public interface ISpellApi
     {
         /// <summary>
         ///     Get the specified spell.

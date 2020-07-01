@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Quest API.
     /// </summary>
-    public interface IWarcraftClientQuestApi
+    public interface IQuestApi
     {
         /// <summary>
         ///     Gets an index of quests.

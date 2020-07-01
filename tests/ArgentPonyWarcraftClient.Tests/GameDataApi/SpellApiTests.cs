@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetSpellAsync_Gets_Spell()
         {
-            IWarcraftClientSpellApi warcraftClient = ClientFactory.BuildMockClient(
+            ISpellApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-us&locale=en_US",
                 responseContent: Resources.SpellResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetSpellMediaAsync_Gets_SpellMedia()
         {
-            IWarcraftClientSpellApi warcraftClient = ClientFactory.BuildMockClient(
+            ISpellApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-us&locale=en_US",
                 responseContent: Resources.SpellMediaResponse);
 

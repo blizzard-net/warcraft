@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Mythic Keystone Dungeon API.
     /// </summary>
-    public interface IWarcraftClientMythicKeystoneDungeonApi
+    public interface IMythicKeystoneDungeonApi
     {
         /// <summary>
         ///     Gets an index of mythic keystone dungeons.
