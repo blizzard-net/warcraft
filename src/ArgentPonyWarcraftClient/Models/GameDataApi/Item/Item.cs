@@ -218,42 +218,4 @@ namespace ArgentPonyWarcraftClient
         [JsonProperty("level")]
         public DescribedValue Level { get; set; }
     }
-
-    internal class ParseStringConverter : JsonConverter
-    {
-        public override bool CanConvert(Type t)
-        {
-            return t == typeof(long) || t == typeof(long?);
-        }
-
-        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
-        {
-            if (reader.TokenType == JsonToken.Null)
-            {
-                return null;
-            }
-
-            string value = serializer.Deserialize<string>(reader);
-
-            if (long.TryParse(value, out long l))
-            {
-                return l;
-            }
-
-            throw new Exception("Cannot unmarshal type long");
-        }
-
-        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
-        {
-            if (untypedValue == null)
-            {
-                serializer.Serialize(writer, null);
-                return;
-            }
-
-            serializer.Serialize(writer, ((long)untypedValue).ToString());
-        }
-
-        public static readonly ParseStringConverter Singleton = new ParseStringConverter();
-    }
 }

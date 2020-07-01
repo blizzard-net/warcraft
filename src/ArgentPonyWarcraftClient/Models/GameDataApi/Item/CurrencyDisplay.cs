@@ -17,21 +17,18 @@ namespace ArgentPonyWarcraftClient
         /// Gets the gold portion of the price.
         /// </summary>
         [JsonProperty("gold")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Gold { get; set; }
 
         /// <summary>
         /// Gets the silver portion of the price.
         /// </summary>
         [JsonProperty("silver")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Silver { get; set; }
 
         /// <summary>
         /// Gets the copper portion of the price.
         /// </summary>
         [JsonProperty("copper")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Copper { get; set; }
     }
 }
