@@ -5,6 +5,7 @@
     /// </summary>
     public interface IProfileApi :
         ICharacterAchievementsApi,
+        ICharacterAppearanceApi,
         ICharacterCollectionsApi,
         ICharacterMythicKeystoneProfileApi,
         ICharacterProfileApi
