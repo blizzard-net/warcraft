@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Auction House API.
     /// </summary>
-    public interface IWarcraftClientAuctionHouseApi
+    public interface IAuctionHouseApi
     {
         /// <summary>
         ///     Gets an index of auctions.

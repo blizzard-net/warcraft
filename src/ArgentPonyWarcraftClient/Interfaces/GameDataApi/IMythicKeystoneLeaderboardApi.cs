@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Mythic Keystone Leaderboard API.
     /// </summary>
-    public interface IWarcraftClientMythicKeystoneLeaderboardApi
+    public interface IMythicKeystoneLeaderboardApi
     {
         /// <summary>
         ///     Gets an index of Mythic Keystone Leaderboard dungeon instances for a connected realm.

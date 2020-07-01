@@ -32,11 +32,10 @@ namespace ArgentPonyWarcraftClient
         public long? UnitPrice { get; set; }
 
         /// <summary>
-        /// Gets the approximate time remaining for the auction.
+        /// Gets the approximate time remaining for the auction (SHORT or VERY_LONG).
         /// </summary>
         [JsonProperty("time_left")]
-        [JsonConverter(typeof(TimeLeftConverter))]
-        public TimeLeft TimeLeft { get; set; }
+        public string TimeLeft { get; set; }
 
         /// <summary>
         /// Gets the current bid, if any, for the auction.

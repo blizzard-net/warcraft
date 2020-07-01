@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Mythic Keystone Affix API.
     /// </summary>
-    public interface IWarcraftClientMythicKeystoneAffixApi
+    public interface IMythicKeystoneAffixApi
     {
         /// <summary>
         ///     Gets an index of mythic keystone affixes.

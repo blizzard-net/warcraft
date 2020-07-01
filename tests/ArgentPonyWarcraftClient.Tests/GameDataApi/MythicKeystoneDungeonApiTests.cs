@@ -1,14 +1,14 @@
 ﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
-namespace ArgentPonyWarcraftClient.Tests
+namespace ArgentPonyWarcraftClient.Tests.GameDataApi
 {
     public class MythicKeystoneDungeonApiTests
     {
         [Fact]
         public async void GetMythicKeystoneDungeonsIndexAsync_Gets_MythicKeystoneDungeonsIndex()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/index?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystoneDungeonsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystoneDungeonResponse);
 
@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMythicKeystoneIndexAsync_Gets_MythicKeystoneIndex()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/index?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystoneIndexResponse);
 
@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMythicKeystonePeriodsIndexAsync_Gets_MythicKeystonePeriodsIndex()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/period/index?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystonePeriodsIndexResponse);
 
@@ -52,7 +52,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMythicKeystonePeriodAsync_Gets_MythicKeystonePeriod()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystonePeriodResponse);
 
@@ -63,7 +63,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMythicKeystoneSeasonsIndexAsync_Gets_MythicKeystoneSeasonsIndex()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/season/index?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystoneSeasonsIndexResponse);
 
@@ -74,7 +74,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetMythicKeystoneSeasonAsync_Gets_MythicKeystoneSeason()
         {
-            IWarcraftClientMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
+            IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.MythicKeystoneSeasonResponse);
 

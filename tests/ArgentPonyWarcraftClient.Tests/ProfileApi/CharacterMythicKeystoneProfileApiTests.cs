@@ -1,14 +1,14 @@
 ﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
-namespace ArgentPonyWarcraftClient.Tests
+namespace ArgentPonyWarcraftClient.Tests.ProfileApi
 {
     public class CharacterMythicKeystoneProfileApiTests
     {
         [Fact]
         public async void GetCharacterMythicKeystoneProfileIndexAsync_Gets_CharacterMythicKeystoneProfileIndex()
         {
-            IWarcraftClientCharacterMythicKeystoneProfileApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterMythicKeystoneProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/zuljin/volladin/mythic-keystone-profile?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterMythicKeystoneProfileIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterMythicKeystoneSeasonDetailsAsync_Gets_CharacterMythicKeystoneSeasonDetails()
         {
-            IWarcraftClientCharacterMythicKeystoneProfileApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterMythicKeystoneProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/zuljin/volladin/mythic-keystone-profile/season/1?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterMythicKeystoneSeasonDetailsResponse);
 

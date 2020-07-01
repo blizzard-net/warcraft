@@ -3,156 +3,160 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    ///     A client for the World of Warcraft Journal API.
+    ///     A client for the World of Warcraft Item API.
     /// </summary>
-    public interface IWarcraftClientJournalApi
+    public interface IItemApi
     {
         /// <summary>
-        ///     Get the journal expansions index.
+        ///     Gets an index of item classes.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The journal expansions index.
+        ///     The item classes index.
         /// </returns>
-        Task<RequestResult<JournalExpansionsIndex>> GetJournalExpansionsIndexAsync(string @namespace);
+        Task<RequestResult<ItemClassesIndex>> GetItemClassesIndexAsync(string @namespace);
 
         /// <summary>
-        ///     Get the journal expansions index.
+        ///     Gets an index of item classes.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The journal expansions index.
+        ///     The item classes index.
         /// </returns>
-        Task<RequestResult<JournalExpansionsIndex>> GetJournalExpansionsIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<ItemClassesIndex>> GetItemClassesIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified expansion.
+        ///     Get the specified item class.
         /// </summary>
-        /// <param name="journalExpansionId">The journal expansion ID.</param>
+        /// <param name="itemClassId">The ID of the item class.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified expansion.
+        ///     The specified item class.
         /// </returns>
-        Task<RequestResult<JournalExpansion>> GetJournalExpansionAsync(int journalExpansionId, string @namespace);
+        Task<RequestResult<ItemClass>> GetItemClassAsync(int itemClassId, string @namespace);
 
         /// <summary>
-        ///     Get the specified expansion.
+        ///     Get the specified item class.
         /// </summary>
-        /// <param name="journalExpansionId">The journal expansion ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified expansion.
-        /// </returns>
-        Task<RequestResult<JournalExpansion>> GetJournalExpansionAsync(int journalExpansionId, string @namespace, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get the journal encounters index.
-        /// </summary>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <returns>
-        ///     The journal encounters index.
-        /// </returns>
-        Task<RequestResult<JournalEncountersIndex>> GetJournalEncountersIndexAsync(string @namespace);
-
-        /// <summary>
-        ///     Get the journal encounters index.
-        /// </summary>
+        /// <param name="itemClassId">The ID of the item class.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The journal encounters index.
+        ///     The specified item class.
         /// </returns>
-        Task<RequestResult<JournalEncountersIndex>> GetJournalEncountersIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<ItemClass>> GetItemClassAsync(int itemClassId, string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified encounter.
-        /// </summary>
-        /// <param name="journalEncounterId">The journal encounter ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <returns>
-        ///     The specified encounter.
-        /// </returns>
-        Task<RequestResult<Encounter>> GetJournalEncounterAsync(int journalEncounterId, string @namespace);
-
-        /// <summary>
-        ///     Get the specified encounter.
-        /// </summary>
-        /// <param name="journalEncounterId">The journal encounter ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified encounter.
-        /// </returns>
-        Task<RequestResult<Encounter>> GetJournalEncounterAsync(int journalEncounterId, string @namespace, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get the journal instances index.
+        ///     Gets an index of item sets.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The journal instances index.
+        ///     The item sets index.
         /// </returns>
-        Task<RequestResult<JournalInstancesIndex>> GetJournalInstancesIndexAsync(string @namespace);
+        Task<RequestResult<ItemSetsIndex>> GetItemSetsIndexAsync(string @namespace);
 
         /// <summary>
-        ///     Get the journal instances index.
+        ///     Gets an index of item sets.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The journal instances index.
+        ///     The item sets index.
         /// </returns>
-        Task<RequestResult<JournalInstancesIndex>> GetJournalInstancesIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<ItemSetsIndex>> GetItemSetsIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified dungeon or raid instance.
+        ///     Get the specified item set.
         /// </summary>
-        /// <param name="journalInstanceId">The journal instance ID.</param>
+        /// <param name="itemSetId">The ID of the item set.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified dungeon or raid instance.
+        ///     The specified item set.
         /// </returns>
-        Task<RequestResult<Instance>> GetJournalInstanceAsync(int journalInstanceId, string @namespace);
+        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, string @namespace);
 
         /// <summary>
-        ///     Get the specified dungeon or raid instance.
+        ///     Get the specified item set.
         /// </summary>
-        /// <param name="journalInstanceId">The journal instance ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
-        /// <param name="locale">Specifies the language that the result will be in.</param>
-        /// <returns>
-        ///     The specified dungeon or raid instance.
-        /// </returns>
-        Task<RequestResult<Instance>> GetJournalInstanceAsync(int journalInstanceId, string @namespace, Region region, Locale locale);
-
-        /// <summary>
-        ///     Get media for a journal instance by ID.
-        /// </summary>
-        /// <param name="journalInstanceId">The journal instance ID.</param>
-        /// <param name="namespace">The namespace to use to locate this document.</param>
-        /// <returns>
-        ///     Media for a journal instance by ID.
-        /// </returns>
-        Task<RequestResult<JournalInstanceMedia>> GetJournalInstanceMediaAsync(int journalInstanceId, string @namespace);
-
-        /// <summary>
-        ///     Get media for a journal instance by ID.
-        /// </summary>
-        /// <param name="journalInstanceId">The journal instance ID.</param>
+        /// <param name="itemSetId">The ID of the item set.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     Media for a journal instance by ID.
+        ///     The specified item set.
         /// </returns>
-        Task<RequestResult<JournalInstanceMedia>> GetJournalInstanceMediaAsync(int journalInstanceId, string @namespace, Region region, Locale locale);
+        Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get the specified item subclass.
+        /// </summary>
+        /// <param name="itemClassId">The ID of the item class.</param>
+        /// <param name="itemSubclassId">The ID of the item subclass.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified item subclass.
+        /// </returns>
+        Task<RequestResult<ItemSubclass>> GetItemSubclassAsync(int itemClassId, int itemSubclassId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified item subclass.
+        /// </summary>
+        /// <param name="itemClassId">The ID of the item class.</param>
+        /// <param name="itemSubclassId">The ID of the item subclass.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified item subclass.
+        /// </returns>
+        Task<RequestResult<ItemSubclass>> GetItemSubclassAsync(int itemClassId, int itemSubclassId, string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get the specified item.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     The specified item.
+        /// </returns>
+        Task<RequestResult<Item>> GetItemAsync(int itemId, string @namespace);
+
+        /// <summary>
+        ///     Get the specified item.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     The specified item.
+        /// </returns>
+        Task<RequestResult<Item>> GetItemAsync(int itemId, string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        ///     Get media for an item by ID.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        ///     Media for an item by ID.
+        /// </returns>
+        Task<RequestResult<ItemMedia>> GetItemMediaAsync(int itemId, string @namespace);
+
+        /// <summary>
+        ///     Get media for an item by ID.
+        /// </summary>
+        /// <param name="itemId">The item ID.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language that the result will be in.</param>
+        /// <returns>
+        ///     Media for an item by ID.
+        /// </returns>
+        Task<RequestResult<ItemMedia>> GetItemMediaAsync(int itemId, string @namespace, Region region, Locale locale);
     }
 }

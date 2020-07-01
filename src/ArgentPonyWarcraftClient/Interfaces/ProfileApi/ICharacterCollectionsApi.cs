@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Character Collections API.
     /// </summary>
-    public interface IWarcraftClientCharacterCollectionsApi
+    public interface ICharacterCollectionsApi
     {
         /// <summary>
         ///     Get the specified character collections index.

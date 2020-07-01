@@ -1,14 +1,14 @@
 ﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
-namespace ArgentPonyWarcraftClient.Tests
+namespace ArgentPonyWarcraftClient.Tests.ProfileApi
 {
     public class CharacterCollectionsApiTests
     {
         [Fact]
         public async void GetCharacterCollectionsIndexAsync_Gets_CharacterCollections()
         {
-            IWarcraftClientCharacterCollectionsApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterCollectionsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterCollectionsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterMountsCollectionSummaryAsync_Gets_CharacterMountsSummary()
         {
-            IWarcraftClientCharacterCollectionsApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterCollectionsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterMountsCollectionSummaryResponse);
 
@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetCharacterPetsCollectionSummaryAsync_Gets_CharacterPetsSummary()
         {
-            IWarcraftClientCharacterCollectionsApi warcraftClient = ClientFactory.BuildMockClient(
+            ICharacterCollectionsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/pets?namespace=profile-us&locale=en_US",
                 responseContent: Resources.CharacterPetsCollectionSummaryResponse);
 

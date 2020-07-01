@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft PvP Tier API.
     /// </summary>
-    public interface IWarcraftClientPvpTierApi
+    public interface IPvpTierApi
     {
         /// <summary>
         ///     Gets an index of PvP tiers.

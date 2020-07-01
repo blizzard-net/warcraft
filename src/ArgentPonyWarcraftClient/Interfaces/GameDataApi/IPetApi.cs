@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Pet API.
     /// </summary>
-    public interface IWarcraftClientPetApi
+    public interface IPetApi
     {
         /// <summary>
         ///     Gets an index of pets.

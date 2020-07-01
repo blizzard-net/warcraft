@@ -3,50 +3,50 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    ///     A client for the World of Warcraft Mount API.
+    ///     A client for the World of Warcraft Connected Realm API.
     /// </summary>
-    public interface IWarcraftClientMountApi
+    public interface IConnectedRealmApi
     {
         /// <summary>
-        ///     Gets an index of mounts.
+        ///     Gets an index of connected realms.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The mount index.
+        ///     The connected realms index.
         /// </returns>
-        Task<RequestResult<MountsIndex>> GetMountsIndexAsync(string @namespace);
+        Task<RequestResult<ConnectedRealmsIndex>> GetConnectedRealmsIndexAsync(string @namespace);
 
         /// <summary>
-        ///     Gets an index of mounts.
+        ///     Gets an index of connected realms.
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The mount index.
+        ///     The connected realms index.
         /// </returns>
-        Task<RequestResult<MountsIndex>> GetMountsIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<ConnectedRealmsIndex>> GetConnectedRealmsIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified mount.
+        ///     Get the specified connected realm.
         /// </summary>
-        /// <param name="mountId">The mount ID.</param>
+        /// <param name="connectedRealmId">The ID of the connected realm.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified mount.
+        ///     The specified connected realm.
         /// </returns>
-        Task<RequestResult<Mount>> GetMountAsync(int mountId, string @namespace);
+        Task<RequestResult<ConnectedRealm>> GetConnectedRealmAsync(int connectedRealmId, string @namespace);
 
         /// <summary>
-        ///     Get the specified mount.
+        ///     Get the specified connected realm.
         /// </summary>
-        /// <param name="mountId">The mount ID.</param>
+        /// <param name="connectedRealmId">The ID of the connected realm.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The specified mount.
+        ///     The specified connected realm.
         /// </returns>
-        Task<RequestResult<Mount>> GetMountAsync(int mountId, string @namespace, Region region, Locale locale);
+        Task<RequestResult<ConnectedRealm>> GetConnectedRealmAsync(int connectedRealmId, string @namespace, Region region, Locale locale);
     }
 }

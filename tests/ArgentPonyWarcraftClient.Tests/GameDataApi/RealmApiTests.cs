@@ -1,14 +1,14 @@
 ﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
-namespace ArgentPonyWarcraftClient.Tests
+namespace ArgentPonyWarcraftClient.Tests.GameDataApi
 {
     public class RealmApiTests
     {
         [Fact]
         public async void GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
         {
-            IWarcraftClientRealmApi warcraftClient = ClientFactory.BuildMockClient(
+            IRealmApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/realm/index?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.RealmIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetRealmAsync_Gets_Realm()
         {
-            IWarcraftClientRealmApi warcraftClient = ClientFactory.BuildMockClient(
+            IRealmApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/realm/tichondrius?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.RealmResponse);
 

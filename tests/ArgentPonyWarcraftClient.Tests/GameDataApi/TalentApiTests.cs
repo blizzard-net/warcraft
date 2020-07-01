@@ -1,14 +1,14 @@
 ﻿using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
-namespace ArgentPonyWarcraftClient.Tests
+namespace ArgentPonyWarcraftClient.Tests.GameDataApi
 {
     public class TalentApiTests
     {
         [Fact]
         public async void GetTalentsIndexAsync_Gets_TalentsIndex()
         {
-            IWarcraftClientTalentApi warcraftClient = ClientFactory.BuildMockClient(
+            ITalentApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/talent/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.TalentsIndexResponse);
 
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetTalentAsync_Gets_Talent()
         {
-            IWarcraftClientTalentApi warcraftClient = ClientFactory.BuildMockClient(
+            ITalentApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-us&locale=en_US",
                 responseContent: Resources.TalentResponse);
 
@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPvpTalentsIndexAsync_Gets_PvpTalentsIndex()
         {
-            IWarcraftClientTalentApi warcraftClient = ClientFactory.BuildMockClient(
+            ITalentApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-talent/index?namespace=static-us&locale=en_US",
                 responseContent: Resources.PvpTalentsIndexResponse);
 
@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient.Tests
         [Fact]
         public async void GetPvpTalentAsync_Gets_PvpTalent()
         {
-            IWarcraftClientTalentApi warcraftClient = ClientFactory.BuildMockClient(
+            ITalentApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-us&locale=en_US",
                 responseContent: Resources.PvpTalentResponse);
 

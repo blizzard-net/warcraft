@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Profession API.
     /// </summary>
-    public interface IWarcraftClientProfessionApi
+    public interface IProfessionApi
     {
         /// <summary>
         ///     Gets an index of professions.

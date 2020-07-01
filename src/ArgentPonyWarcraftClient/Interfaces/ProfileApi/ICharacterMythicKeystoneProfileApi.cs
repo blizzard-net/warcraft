@@ -3,23 +3,23 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    ///     A client for the World of Warcraft Character Achievements API.
+    ///     A client for the World of Warcraft Character Mythic Keystone Profile API.
     /// </summary>
-    public interface IWarcraftClientCharacterAchievementsApi
+    public interface ICharacterMythicKeystoneProfileApi
     {
         /// <summary>
-        ///     Get the specified character achievement summary.
+        ///     Get the specified Mythic Keystone profile index for a character.
         /// </summary>
         /// <param name="realmSlug">The slug of the realm.</param>
         /// <param name="characterName">The name of the character.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified character achievement summary.
+        ///     The specified Mythic Keystone profile index for a character.
         /// </returns>
-        Task<RequestResult<CharacterAchievementsSummary>> GetCharacterAchievementsSummaryAsync(string realmSlug, string characterName, string @namespace);
+        Task<RequestResult<CharacterMythicKeystoneProfileIndex>> GetCharacterMythicKeystoneProfileIndexAsync(string realmSlug, string characterName, string @namespace);
 
         /// <summary>
-        ///     Get the specified character achievement summary.
+        ///     Get the specified Mythic Keystone profile index for a character.
         /// </summary>
         /// <param name="realmSlug">The slug of the realm.</param>
         /// <param name="characterName">The name of the character.</param>
@@ -27,32 +27,34 @@ namespace ArgentPonyWarcraftClient
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The specified character achievement summary.
+        ///     The specified Mythic Keystone profile index for a character.
         /// </returns>
-        Task<RequestResult<CharacterAchievementsSummary>> GetCharacterAchievementsSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale);
+        Task<RequestResult<CharacterMythicKeystoneProfileIndex>> GetCharacterMythicKeystoneProfileIndexAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale);
 
         /// <summary>
-        ///     Get the specified character achievement statistics.
+        ///     Get the Mythic Keystone season details for a character.
         /// </summary>
         /// <param name="realmSlug">The slug of the realm.</param>
         /// <param name="characterName">The name of the character.</param>
+        /// <param name="seasonId">The ID of the Mythic Keystone season.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        ///     The specified character achievement statistics.
+        ///     The Mythic Keystone season details for a character.
         /// </returns>
-        Task<RequestResult<CharacterAchievementStatistics>> GetCharacterAchievementStatisticsAsync(string realmSlug, string characterName, string @namespace);
+        Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace);
 
         /// <summary>
-        ///     Get the specified character achievement statistics.
+        ///     Get the Mythic Keystone season details for a character.
         /// </summary>
         /// <param name="realmSlug">The slug of the realm.</param>
         /// <param name="characterName">The name of the character.</param>
+        /// <param name="seasonId">The ID of the Mythic Keystone season.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language that the result will be in.</param>
         /// <returns>
-        ///     The specified character achievement statistics.
+        ///     The Mythic Keystone season details for a character.
         /// </returns>
-        Task<RequestResult<CharacterAchievementStatistics>> GetCharacterAchievementStatisticsAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale);
+        Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace, Region region, Locale locale);
     }
 }

@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Game Data APIs.
     /// </summary>
-    public interface IWarcraftClientAchievementApi
+    public interface IAchievementApi
     {
         /// <summary>
         ///     Get the achievement categories index.

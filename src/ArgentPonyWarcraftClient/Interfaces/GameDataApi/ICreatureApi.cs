@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     ///     A client for the World of Warcraft Creature API.
     /// </summary>
-    public interface IWarcraftClientCreatureApi
+    public interface ICreatureApi
     {
         /// <summary>
         ///     Gets an index of creature families.
