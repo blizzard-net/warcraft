@@ -8,16 +8,16 @@ namespace ArgentPonyWarcraftClient
     public class GuildCrest
     {
         /// <summary>
-        /// Gets the guild crest emblem.
+        /// Gets the guild crest emblem and color.
         /// </summary>
         [JsonProperty("emblem")]
-        public GuildCrestEmblem Emblem { get; set; }
+        public GuildCrestEmblemWithColor Emblem { get; set; }
 
         /// <summary>
-        /// Gets the guild crest border.
+        /// Gets the guild crest border and color.
         /// </summary>
         [JsonProperty("border")]
-        public GuildCrestBorder Border { get; set; }
+        public GuildCrestBorderWithColor Border { get; set; }
 
         /// <summary>
         /// Gets the guild crest background.
