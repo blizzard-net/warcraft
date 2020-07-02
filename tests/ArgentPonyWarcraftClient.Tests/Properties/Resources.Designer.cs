@@ -1835,6 +1835,78 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/playable-specialization/262?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/spell_nature_lightning.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 262
+        ///}.
+        /// </summary>
+        internal static string PlayableSpecializationMediaResponse {
+            get {
+                return ResourceManager.GetString("PlayableSpecializationMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 262,
+        ///  &quot;playable_class&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Shaman&quot;,
+        ///    &quot;id&quot;: 7
+        ///  },
+        ///  &quot;name&quot;: &quot;Elemental&quot;,
+        ///  &quot;gender_description&quot;: {
+        ///    &quot;male&quot;: &quot;A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PlayableSpecializationResponse {
+            get {
+                return ResourceManager.GetString("PlayableSpecializationResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character_specializations&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/62?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Arcane&quot;,
+        ///      &quot;id&quot;: 62
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-8.3 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PlayableSpecializationsIndexResponse {
+            get {
+                return ResourceManager.GetString("PlayableSpecializationsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
