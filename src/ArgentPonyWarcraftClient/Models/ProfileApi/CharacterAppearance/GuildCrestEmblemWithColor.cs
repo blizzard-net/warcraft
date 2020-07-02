@@ -3,9 +3,9 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// A guild crest emblem.
+    /// A guild crest emblem with color.
     /// </summary>
-    public class GuildCrestEmblem
+    public class GuildCrestEmblemWithColor
     {
         /// <summary>
         /// Gets the ID of the emblem.

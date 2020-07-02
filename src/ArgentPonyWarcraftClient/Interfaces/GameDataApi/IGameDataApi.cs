@@ -8,6 +8,7 @@
         IAuctionHouseApi,
         IConnectedRealmApi,
         ICreatureApi,
+        IGuildCrestApi,
         IItemApi,
         IJournalApi,
         IMountApi,

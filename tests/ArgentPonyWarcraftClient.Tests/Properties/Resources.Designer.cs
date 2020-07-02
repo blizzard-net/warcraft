@@ -718,6 +718,79 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;image&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/guild/tabards/border_00.png&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 0
+        ///}.
+        /// </summary>
+        internal static string GuildCrestBorderMediaResponse {
+            get {
+                return ResourceManager.GetString("GuildCrestBorderMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild-crest/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;emblems&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 0,
+        ///      &quot;media&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;id&quot;: 0
+        ///      }
+        ///    },
+        ///    {
+        ///      &quot;id&quot;: 1,
+        ///      &quot;media&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-cr [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GuildCrestComponentsIndexResponse {
+            get {
+                return ResourceManager.GetString("GuildCrestComponentsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;image&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/guild/tabards/emblem_00.png&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 0
+        ///}.
+        /// </summary>
+        internal static string GuildCrestEmblemMediaResponse {
+            get {
+                return ResourceManager.GetString("GuildCrestEmblemMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;code&quot;:404,&quot;type&quot;:&quot;BLZWEBAPI00000404&quot;,&quot;detail&quot;:&quot;Not Found&quot;}.
         /// </summary>
         internal static string Item404ErrorResponse {
