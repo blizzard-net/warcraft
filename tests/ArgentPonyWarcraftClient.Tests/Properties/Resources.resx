@@ -65636,4 +65636,275 @@
   "id": 0
 }</value>
   </data>
+  <data name="PlayableSpecializationMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/playable-specialization/262?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/spell_nature_lightning.jpg"
+    }
+  ],
+  "id": 262
+}</value>
+  </data>
+  <data name="PlayableSpecializationResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 262,
+  "playable_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Shaman",
+    "id": 7
+  },
+  "name": "Elemental",
+  "gender_description": {
+    "male": "A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r\nPreferred Weapon: Mace, Dagger, and Shield",
+    "female": "A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r\nPreferred Weapon: Mace, Dagger, and Shield"
+  },
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/playable-specialization/262?namespace=static-8.3.0_32861-us"
+    },
+    "id": 262
+  },
+  "role": {
+    "type": "DAMAGE",
+    "name": "Damage"
+  },
+  "talent_tiers": [
+    {
+      "level": 15,
+      "talents": [
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22356?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Earthen Rage",
+            "id": 22356
+          },
+          "spell_tooltip": {
+            "description": "Your damaging spells incite the earth around you to come to your aid for 6 sec, repeatedly dealing 833 Nature damage to your most recently attacked target.",
+            "cast_time": "Passive"
+          },
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22357?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Echo of the Elements",
+            "id": 22357
+          },
+          "spell_tooltip": {
+            "description": "Lava Burst now has 2 charges. Effects that reset its remaining cooldown will instead grant 1 charge.",
+            "cast_time": "Passive"
+          },
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22358?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Elemental Blast",
+            "id": 22358
+          },
+          "spell_tooltip": {
+            "description": "Harnesses the raw power of the elements, dealing 3,818 Elemental damage and increasing your Critical Strike, Haste, or Mastery by 366 for 10 sec.\r\n\r\nCan cause an Elemental Overload.",
+            "cast_time": "2 sec cast",
+            "range": "40 yd range",
+            "cooldown": "12 sec cooldown"
+          },
+          "column_index": 2
+        }
+      ],
+      "tier_index": 0
+    },
+    {
+      "level": 100,
+      "talents": [
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/21198?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Unlimited Power",
+            "id": 21198
+          },
+          "spell_tooltip": {
+            "description": "When your spells cause an elemental overload, you gain 2% Haste for 10 sec. Gaining a stack does not refresh the duration.",
+            "cast_time": "Passive"
+          },
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22153?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Stormkeeper",
+            "id": 22153
+          },
+          "spell_tooltip": {
+            "description": "Charge yourself with lightning, causing your next 2 Lightning Bolts to deal 150% more damage, and also causes your next 2 Lightning Bolts or Chain Lightnings to be instant cast and trigger an Elemental Overload on every target.",
+            "cast_time": "1.5 sec cast",
+            "cooldown": "1 min cooldown"
+          },
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/21675?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Ascendance",
+            "id": 21675
+          },
+          "spell_tooltip": {
+            "description": "Transform into a Flame Ascendant for 15 sec, replacing Chain Lightning with Lava Beam, removing the cooldown on Lava Burst, and increasing the damage of Lava Burst by an amount equal to your critical strike chance.",
+            "cast_time": "Instant",
+            "cooldown": "3 min cooldown"
+          },
+          "column_index": 2
+        }
+      ],
+      "tier_index": 6
+    }
+  ],
+  "pvp_talents": [
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/727?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Elemental Attunement",
+        "id": 727
+      },
+      "spell_tooltip": {
+        "description": "Increases your maximum Maelstrom by 50.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3490?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Counterstrike Totem",
+        "id": 3490
+      },
+      "spell_tooltip": {
+        "description": "Summons an Air Totem with 5 health at the feet of the caster for 15 sec. \r\n\r\nWhenever enemies within 20 yards of the totem deal direct damage, the totem will deal 100% of the damage dealt back to attacker. ",
+        "cast_time": "Instant",
+        "power_cost": "600 Mana",
+        "range": "40 yd range",
+        "cooldown": "45 sec cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3620?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Grounding Totem",
+        "id": 3620
+      },
+      "spell_tooltip": {
+        "description": "Summons an Air Totem with 5 health at the feet of the caster that will redirect all harmful spells cast on a nearby party or raid member to itself. Will not redirect area of effect spells. Lasts 3 sec.",
+        "cast_time": "Instant",
+        "power_cost": "1,180 Mana",
+        "cooldown": "30 sec cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3621?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Swelling Waves",
+        "id": 3621
+      },
+      "spell_tooltip": {
+        "description": "When you cast Healing Surge on yourself, you are healed for 50% of the amount 3 sec later.",
+        "cast_time": "Passive"
+      }
+    }
+  ]
+}</value>
+  </data>
+  <data name="PlayableSpecializationsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "character_specializations": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/62?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Arcane",
+      "id": 62
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Fire",
+      "id": 63
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/577?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Havoc",
+      "id": 577
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Vengeance",
+      "id": 581
+    }
+  ],
+  "pet_specializations": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/74?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Ferocity",
+      "id": 74
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/79?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Cunning",
+      "id": 79
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/81?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Tenacity",
+      "id": 81
+    }
+  ]
+}</value>
+  </data>
 </root>
