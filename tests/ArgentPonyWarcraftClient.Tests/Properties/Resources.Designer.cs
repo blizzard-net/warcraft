@@ -204,6 +204,81 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/azerite-essence/2?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/spell_azerite_essence08.jpg&quot;
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 293019
+        ///}.
+        /// </summary>
+        internal static string AzeriteEssenceMediaResponse {
+            get {
+                return ResourceManager.GetString("AzeriteEssenceMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Azeroth&apos;s Undying Gift&quot;,
+        ///  &quot;allowed_specializations&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/66?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Protection&quot;,
+        ///      &quot;id&quot;: 66
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pla [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AzeriteEssenceResponse {
+            get {
+                return ResourceManager.GetString("AzeriteEssenceResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/azerite-essence/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;azerite_essences&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Azeroth&apos;s Undying Gift&quot;,
+        ///      &quot;id&quot;: 2
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/azerite-essence/3?namespace=static-8.3.0_32861-us&quot;
+        ///       [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AzeriteEssencesIndexResponse {
+            get {
+                return ResourceManager.GetString("AzeriteEssencesIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements?namespace=profile-us&quot;
         ///    }
         ///  },

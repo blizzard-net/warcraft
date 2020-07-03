@@ -65907,4 +65907,187 @@
   ]
 }</value>
   </data>
+  <data name="AzeriteEssencesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/azerite-essence/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "azerite_essences": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Azeroth's Undying Gift",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/azerite-essence/3?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Sphere of Suppression",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/azerite-essence/37?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Formless Void",
+      "id": 37
+    }
+  ]
+}</value>
+  </data>
+  <data name="AzeriteEssenceMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/azerite-essence/2?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/spell_azerite_essence08.jpg"
+    }
+  ],
+  "id": 293019
+}</value>
+  </data>
+  <data name="AzeriteEssenceResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 2,
+  "name": "Azeroth's Undying Gift",
+  "allowed_specializations": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/66?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Protection",
+      "id": 66
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Protection",
+      "id": 73
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/104?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Guardian",
+      "id": 104
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Vengeance",
+      "id": 581
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/268?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Brewmaster",
+      "id": 268
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Blood",
+      "id": 250
+    }
+  ],
+  "powers": [
+    {
+      "id": 5,
+      "rank": 1,
+      "main_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/293019?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Azeroth's Undying Gift",
+        "id": 293019
+      },
+      "passive_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/294668?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Hardened Azerite",
+        "id": 294668
+      }
+    },
+    {
+      "id": 6,
+      "rank": 2,
+      "main_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/298080?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Azeroth's Undying Gift",
+        "id": 298080
+      },
+      "passive_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/298082?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Hardened Azerite",
+        "id": 298082
+      }
+    },
+    {
+      "id": 7,
+      "rank": 3,
+      "main_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/298081?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Azeroth's Undying Gift",
+        "id": 298081
+      },
+      "passive_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/298083?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Hardened Azerite",
+        "id": 298083
+      }
+    },
+    {
+      "id": 8,
+      "rank": 4,
+      "main_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/298081?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Azeroth's Undying Gift",
+        "id": 298081
+      },
+      "passive_power_spell": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/spell/298083?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Hardened Azerite",
+        "id": 298083
+      }
+    }
+  ],
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/azerite-essence/2?namespace=static-8.3.0_32861-us"
+    },
+    "id": 2
+  }
+}</value>
+  </data>
 </root>
