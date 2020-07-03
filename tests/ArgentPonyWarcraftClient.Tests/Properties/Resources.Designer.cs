@@ -2729,6 +2729,44 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;North America&quot;,
+        ///  &quot;tag&quot;: &quot;US&quot;
+        ///}.
+        /// </summary>
+        internal static string RegionResponse {
+            get {
+                return ResourceManager.GetString("RegionResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;regions&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us&quot;
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string RegionsIndexResponse {
+            get {
+                return ResourceManager.GetString("RegionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

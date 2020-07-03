@@ -66231,4 +66231,30 @@
   ]
 }</value>
   </data>
+  <data name="RegionResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us"
+    }
+  },
+  "id": 1,
+  "name": "North America",
+  "tag": "US"
+}</value>
+  </data>
+  <data name="RegionsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/region/?namespace=dynamic-us"
+    }
+  },
+  "regions": [
+    {
+      "href": "https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us"
+    }
+  ]
+}</value>
+  </data>
 </root>

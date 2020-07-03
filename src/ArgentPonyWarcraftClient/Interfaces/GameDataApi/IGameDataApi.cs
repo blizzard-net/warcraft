@@ -27,6 +27,7 @@
         IPvpTierApi,
         IQuestApi,
         IRealmApi,
+        IRegionApi,
         ISpellApi,
         ITalentApi
     {
