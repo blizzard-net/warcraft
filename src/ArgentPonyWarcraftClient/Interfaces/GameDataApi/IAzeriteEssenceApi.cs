@@ -3,7 +3,7 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    ///     A client for the World of Warcraft AzeriteEssence API.
+    ///     A client for the World of Warcraft Azerite Essence API.
     /// </summary>
     public interface IAzeriteEssenceApi
     {

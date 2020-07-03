@@ -21,6 +21,7 @@
         IPlayableClassApi,
         IPlayableRaceApi,
         IPlayableSpecializationApi,
+        IPowerTypeApi,
         IProfessionApi,
         IPvpSeasonApi,
         IPvpTierApi,
