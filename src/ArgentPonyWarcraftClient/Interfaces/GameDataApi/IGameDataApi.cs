@@ -6,6 +6,7 @@
     public interface IGameDataApi :
         IAchievementApi,
         IAuctionHouseApi,
+        IAzeriteEssenceApi,
         IConnectedRealmApi,
         ICreatureApi,
         IGuildCrestApi,

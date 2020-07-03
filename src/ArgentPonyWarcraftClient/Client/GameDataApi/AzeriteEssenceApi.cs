@@ -1,0 +1,46 @@
+﻿using System.Threading.Tasks;
+
+namespace ArgentPonyWarcraftClient
+{
+    public partial class WarcraftClient
+    {
+        /// <inheritdoc />
+        public async Task<RequestResult<AzeriteEssencesIndex>> GetAzeriteEssencesIndexAsync(string @namespace)
+        {
+            return await GetAzeriteEssencesIndexAsync(@namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AzeriteEssencesIndex>> GetAzeriteEssencesIndexAsync(string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<AzeriteEssencesIndex>(region, $"{host}/data/wow/azerite-essence/index?namespace={@namespace}&locale={locale}");
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AzeriteEssence>> GetAzeriteEssenceAsync(int azeriteEssenceId, string @namespace)
+        {
+            return await GetAzeriteEssenceAsync(azeriteEssenceId, @namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AzeriteEssence>> GetAzeriteEssenceAsync(int azeriteEssenceId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<AzeriteEssence>(region, $"{host}/data/wow/azerite-essence/{azeriteEssenceId}?namespace={@namespace}&locale={locale}");
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AzeriteEssenceMedia>> GetAzeriteEssenceMediaAsync(int azeriteEssenceId, string @namespace)
+        {
+            return await GetAzeriteEssenceMediaAsync(azeriteEssenceId, @namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<AzeriteEssenceMedia>> GetAzeriteEssenceMediaAsync(int azeriteEssenceId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<AzeriteEssenceMedia>(region, $"{host}/data/wow/media/azerite-essence/{azeriteEssenceId}?namespace={@namespace}&locale={locale}");
+        }
+    }
+}
