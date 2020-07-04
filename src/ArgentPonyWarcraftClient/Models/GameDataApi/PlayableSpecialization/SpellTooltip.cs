@@ -8,6 +8,12 @@ namespace ArgentPonyWarcraftClient
     public class SpellTooltip
     {
         /// <summary>
+        /// Gets a reference to the spell.
+        /// </summary>
+        [JsonProperty("spell", NullValueHandling = NullValueHandling.Ignore)]
+        public SpellReference Spell { get; set; }
+
+        /// <summary>
         /// Gets the description of the spell.
         /// </summary>
         [JsonProperty("description")]
