@@ -30,5 +30,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("display")]
         public StatDisplay Display { get; set; }
+
+        /// <summary>
+        /// Gets a value indicating whether the stat modifier is an equip bonus.
+        /// </summary>
+        [JsonProperty("is_equip_bonus", NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsEquipBonus { get; set; }
     }
 }

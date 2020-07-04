@@ -65,6 +65,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's equipped items.
         /// </summary>
         [JsonProperty("items")]
-        public EquippedItem[] Items { get; set; }
+        public EquippedItemAppearance[] Items { get; set; }
     }
 }

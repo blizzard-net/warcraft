@@ -3,9 +3,9 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// An equipped item.
+    /// Details about the appearance of an equipped item.
     /// </summary>
-    public class EquippedItem
+    public class EquippedItemAppearance
     {
         /// <summary>
         /// Gets the ID of the item.

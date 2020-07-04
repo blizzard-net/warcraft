@@ -18,5 +18,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonProperty("description")]
         public string Description { get; set; }
+
+        /// <summary>
+        /// Gets the RGBA display color for the spell.
+        /// </summary>
+        [JsonProperty("display_color", NullValueHandling = NullValueHandling.Ignore)]
+        public ColorDetails DisplayColor { get; set; }
     }
 }
