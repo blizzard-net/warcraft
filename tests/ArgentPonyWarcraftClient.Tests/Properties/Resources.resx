@@ -66257,4 +66257,198 @@
   ]
 }</value>
   </data>
+  <data name="CharacterHunterPetsSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/anradin/hunter-pets?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/anradin?namespace=profile-us"
+    },
+    "name": "Anradin",
+    "id": 107173914,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "hunter_pets": [
+    {
+      "name": "Spirit Beast",
+      "level": 120,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/50051?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Ghostcrawler",
+        "id": 50051
+      },
+      "slot": 4,
+      "is_active": true,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/37396?namespace=static-8.3.0_32861-us"
+        },
+        "id": 37396
+      }
+    },
+    {
+      "name": "Tabby",
+      "level": 31,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/2043?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Nightsaber Stalker",
+        "id": 2043
+      },
+      "slot": 5,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/14318?namespace=static-8.3.0_32861-us"
+        },
+        "id": 14318
+      }
+    },
+    {
+      "name": "Raptor",
+      "level": 45,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/687?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Jungle Stalker",
+        "id": 687
+      },
+      "slot": 6,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/11317?namespace=static-8.3.0_32861-us"
+        },
+        "id": 11317
+      }
+    },
+    {
+      "name": "Gorilla",
+      "level": 87,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/1557?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Elder Mistvale Gorilla",
+        "id": 1557
+      },
+      "slot": 0,
+      "is_active": true,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/838?namespace=static-8.3.0_32861-us"
+        },
+        "id": 838
+      }
+    },
+    {
+      "name": "Raptor",
+      "level": 102,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/730?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Tethis",
+        "id": 730
+      },
+      "slot": 2,
+      "is_active": true,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/8472?namespace=static-8.3.0_32861-us"
+        },
+        "id": 8472
+      }
+    },
+    {
+      "name": "Warp Stalker",
+      "level": 100,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/18884?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Warp Chaser",
+        "id": 18884
+      },
+      "slot": 7,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/19979?namespace=static-8.3.0_32861-us"
+        },
+        "id": 19979
+      }
+    },
+    {
+      "name": "Devilsaur",
+      "level": 86,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/20931?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Tyrantus",
+        "id": 20931
+      },
+      "slot": 3,
+      "is_active": true,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/5238?namespace=static-8.3.0_32861-us"
+        },
+        "id": 5238
+      }
+    },
+    {
+      "name": "Hati",
+      "level": 120,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/151144?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Hati",
+        "id": 151144
+      },
+      "slot": 1,
+      "is_active": true,
+      "is_summoned": true,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/68899?namespace=static-8.3.0_32861-us"
+        },
+        "id": 68899
+      }
+    },
+    {
+      "name": "Hati",
+      "level": 120,
+      "creature": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/creature/151096?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Hati",
+        "id": 151096
+      },
+      "slot": 8,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/70574?namespace=static-8.3.0_32861-us"
+        },
+        "id": 70574
+      }
+    }
+  ]
+}</value>
+  </data>
 </root>

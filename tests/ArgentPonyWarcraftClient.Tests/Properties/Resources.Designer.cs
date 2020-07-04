@@ -378,6 +378,31 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/anradin/hunter-pets?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/anradin?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Anradin&quot;,
+        ///    &quot;id&quot;: 107173914,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Norgannon&quot;, [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterHunterPetsSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterHunterPetsSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us&quot;
         ///    }
         ///  },
