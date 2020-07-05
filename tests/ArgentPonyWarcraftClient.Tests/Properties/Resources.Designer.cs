@@ -541,6 +541,34 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/professions?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;primaries&quot;: [
+        ///    {
+        ///      &quot;profession&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/164?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;Blacksmithing&quot;,
+        ///        &quot;id&quot;: 164
+        ///      },
+        ///      &quot;tiers&quot;: [
+        ///        {
+        ///          &quot;skill_points&quot;: 170,
+        ///          &quot;max_skill_points&quot;: 175,
+        ///      [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterProfessionsSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterProfessionsSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/status?namespace=profile-us&quot;
         ///    }
         ///  },

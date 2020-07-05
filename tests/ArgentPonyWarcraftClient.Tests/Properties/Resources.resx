@@ -69779,4 +69779,274 @@
   ]
 }</value>
   </data>
+  <data name="CharacterProfessionsSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/professions?namespace=profile-us"
+    }
+  },
+  "primaries": [
+    {
+      "profession": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/profession/164?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Blacksmithing",
+        "id": 164
+      },
+      "tiers": [
+        {
+          "skill_points": 170,
+          "max_skill_points": 175,
+          "tier": {
+            "name": "Kul Tiran Blacksmithing",
+            "id": 2437
+          },
+          "known_recipes": [
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Monel-Hardened Boots",
+              "id": 38729
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/38730?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Monel-Hardened Breastplate",
+              "id": 38730
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/42346?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Void Focus",
+              "id": 42346
+            }
+          ]
+        },
+        {
+          "skill_points": 300,
+          "max_skill_points": 300,
+          "tier": {
+            "name": "Blacksmithing",
+            "id": 2477
+          },
+          "known_recipes": [
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Rough Sharpening Stone",
+              "id": 1631
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/1632?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Copper Chain Belt",
+              "id": 1632
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/16001?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Heavy Copper Longsword",
+              "id": 16001
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profession": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/profession/186?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Mining",
+        "id": 186
+      },
+      "tiers": [
+        {
+          "skill_points": 175,
+          "max_skill_points": 175,
+          "tier": {
+            "name": "Kul Tiran Mining",
+            "id": 2565
+          },
+          "known_recipes": [
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/39279?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Monelite Deposit",
+              "id": 39279
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/39282?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Monelite Seam",
+              "id": 39282
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/40570?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Osmenite Seam",
+              "id": 40570
+            }
+          ]
+        },
+        {
+          "skill_points": 300,
+          "max_skill_points": 300,
+          "tier": {
+            "name": "Mining",
+            "id": 2572
+          },
+          "known_recipes": [
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/1599?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Smelt Silver",
+              "id": 1599
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/1600?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Smelt Bronze",
+              "id": 1600
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/39310?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Mining",
+              "id": 39310
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "secondaries": [
+    {
+      "profession": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/profession/185?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Cooking",
+        "id": 185
+      },
+      "tiers": [
+        {
+          "skill_points": 175,
+          "max_skill_points": 175,
+          "tier": {
+            "name": "Kul Tiran Cooking",
+            "id": 2541
+          },
+          "known_recipes": [
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/39615?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Kul Tiramisu",
+              "id": 39615
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/39617?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Ravenberry Tarts",
+              "id": 39617
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/43090?namespace=static-8.3.0_32861-us"
+              },
+              "name": "K'Bab",
+              "id": 43090
+            }
+          ]
+        },
+        {
+          "skill_points": 300,
+          "max_skill_points": 300,
+          "tier": {
+            "name": "Cooking",
+            "id": 2548
+          },
+          "known_recipes": [
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/1535?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Charred Wolf Meat",
+              "id": 1535
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/1536?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Spiced Wolf Meat",
+              "id": 1536
+            },
+            {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/recipe/34291?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Fancy Darkmoon Feast",
+              "id": 34291
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "profession": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/profession/356?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Fishing",
+        "id": 356
+      },
+      "tiers": [
+        {
+          "skill_points": 87,
+          "max_skill_points": 175,
+          "tier": {
+            "name": "Kul Tiran Fishing",
+            "id": 2585
+          }
+        },
+        {
+          "skill_points": 300,
+          "max_skill_points": 300,
+          "tier": {
+            "name": "Fishing",
+            "id": 2592
+          }
+        }
+      ]
+    },
+    {
+      "profession": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/profession/794?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Archaeology",
+        "id": 794
+      },
+      "skill_points": 883,
+      "max_skill_points": 950
+    }
+  ]
+}</value>
+  </data>
 </root>
