@@ -10,6 +10,7 @@
         ICharacterEquipmentApi,
         ICharacterHunterPetsApi,
         ICharacterMythicKeystoneProfileApi,
+        ICharacterProfessionsApi,
         ICharacterProfileApi
     {
     }
