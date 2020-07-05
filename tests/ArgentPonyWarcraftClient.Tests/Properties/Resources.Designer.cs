@@ -378,6 +378,59 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/dungeons?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;expansions&quot;: [
+        ///    {
+        ///      &quot;expansion&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;Classic&quot;,
+        ///        &quot;id&quot;: 68
+        ///      },
+        ///      &quot;instances&quot;: [
+        ///        {
+        ///          &quot;instance&quot;: {
+        ///            &quot;key&quot;: {
+        ///              &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterDungeonsResponse {
+            get {
+                return ResourceManager.GetString("CharacterDungeonsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drinian&quot;,
+        ///    &quot;id&quot;: 107811065,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Norgannon&quot;,        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterEncountersSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterEncountersSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/equipment?namespace=profile-us&quot;
         ///    }
         ///  },
@@ -611,6 +664,31 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string CharacterProfileSummaryResponse {
             get {
                 return ResourceManager.GetString("CharacterProfileSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/raids?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drinian&quot;,
+        ///    &quot;id&quot;: 107811065,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Norgan [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterRaidsResponse {
+            get {
+                return ResourceManager.GetString("CharacterRaidsResponse", resourceCulture);
             }
         }
         

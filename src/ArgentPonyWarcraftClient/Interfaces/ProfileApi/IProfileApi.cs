@@ -7,6 +7,7 @@
         ICharacterAchievementsApi,
         ICharacterAppearanceApi,
         ICharacterCollectionsApi,
+        ICharacterEncountersApi,
         ICharacterEquipmentApi,
         ICharacterHunterPetsApi,
         ICharacterMythicKeystoneProfileApi,

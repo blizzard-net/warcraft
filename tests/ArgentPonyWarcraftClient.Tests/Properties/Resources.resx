@@ -69779,6 +69779,313 @@
   ]
 }</value>
   </data>
+  <data name="CharacterDungeonsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/dungeons?namespace=profile-us"
+    }
+  },
+  "expansions": [
+    {
+      "expansion": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Classic",
+        "id": 68
+      },
+      "instances": [
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Deadmines",
+            "id": 63
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "HEROIC",
+                "name": "Heroic"
+              },
+              "status": {
+                "type": "IN_PROGRESS",
+                "name": "In Progress"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 2,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/95?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Vanessa VanCleef",
+                      "id": 95
+                    },
+                    "completed_count": 7,
+                    "last_kill_timestamp": 1394602126000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/64?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Shadowfang Keep",
+            "id": 64
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "NORMAL",
+                "name": "Normal"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/100?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Lord Godfrey",
+                      "id": 100
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1258430835000
+                  }
+                ]
+              }
+            },
+            {
+              "difficulty": {
+                "type": "HEROIC",
+                "name": "Heroic"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/100?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Lord Godfrey",
+                      "id": 100
+                    },
+                    "completed_count": 6,
+                    "last_kill_timestamp": 1427772782000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/260?namespace=static-8.3.0_32861-us"
+            },
+            "name": "The Slave Pens",
+            "id": 260
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "NORMAL",
+                "name": "Normal"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/572?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Quagmirran",
+                      "id": 572
+                    },
+                    "completed_count": 2,
+                    "last_kill_timestamp": 1485582305000
+                  }
+                ]
+              }
+            },
+            {
+              "difficulty": {
+                "type": "HEROIC",
+                "name": "Heroic"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/572?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Quagmirran",
+                      "id": 572
+                    },
+                    "completed_count": 2,
+                    "last_kill_timestamp": 1485582305000
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "expansion": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/journal-expansion/396?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Battle for Azeroth",
+        "id": 396
+      },
+      "instances": [
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/1001?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Freehold",
+            "id": 1001
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "NORMAL",
+                "name": "Normal"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2095?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Harlan Sweete",
+                      "id": 2095
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1540764298000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/1178?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Operation: Mechagon",
+            "id": 1178
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "HEROIC",
+                "name": "Heroic"
+              },
+              "status": {
+                "type": "IN_PROGRESS",
+                "name": "In Progress"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 2,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2331?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "King Mechagon",
+                      "id": 2331
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1584513528000
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</value>
+  </data>
+  <data name="CharacterEncountersSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "dungeons": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/dungeons?namespace=profile-us"
+  },
+  "raids": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/raids?namespace=profile-us"
+  }
+}</value>
+  </data>
   <data name="CharacterProfessionsSummaryResponse" xml:space="preserve">
     <value>{
   "_links": {
@@ -70045,6 +70352,386 @@
       },
       "skill_points": 883,
       "max_skill_points": 950
+    }
+  ]
+}</value>
+  </data>
+  <data name="CharacterRaidsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/raids?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "expansions": [
+    {
+      "expansion": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Classic",
+        "id": 68
+      },
+      "instances": [
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/741?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Molten Core",
+            "id": 741
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "NORMAL",
+                "name": "Normal"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/1528?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Ragnaros",
+                      "id": 1528
+                    },
+                    "completed_count": 24,
+                    "last_kill_timestamp": 1486789387000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/742?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Blackwing Lair",
+            "id": 742
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "NORMAL",
+                "name": "Normal"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 2,
+                "total_count": 2,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/1529?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Razorgore the Untamed",
+                      "id": 1529
+                    },
+                    "completed_count": 7,
+                    "last_kill_timestamp": 1331408883000
+                  },
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/1536?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Nefarian",
+                      "id": 1536
+                    },
+                    "completed_count": 10,
+                    "last_kill_timestamp": 1491777736000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/744?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Temple of Ahn'Qiraj",
+            "id": 744
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "NORMAL",
+                "name": "Normal"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 1,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/1551?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "C'thun",
+                      "id": 1551
+                    },
+                    "completed_count": 4,
+                    "last_kill_timestamp": 1485574549000
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "expansion": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/journal-expansion/396?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Battle for Azeroth",
+        "id": 396
+      },
+      "instances": [
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/1176?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Battle of Dazar'alor",
+            "id": 1176
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "LFR",
+                "name": "Raid Finder"
+              },
+              "status": {
+                "type": "IN_PROGRESS",
+                "name": "In Progress"
+              },
+              "progress": {
+                "completed_count": 2,
+                "total_count": 9,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2330?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Conclave of the Chosen",
+                      "id": 2330
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1551048966000
+                  },
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2335?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "King Rastakhan",
+                      "id": 2335
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1551049892000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/1177?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Crucible of Storms",
+            "id": 1177
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "LFR",
+                "name": "Raid Finder"
+              },
+              "status": {
+                "type": "COMPLETE",
+                "name": "Complete"
+              },
+              "progress": {
+                "completed_count": 2,
+                "total_count": 2,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2328?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "The Restless Cabal",
+                      "id": 2328
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1575697420000
+                  },
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2332?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Uu'nat, Harbinger of the Void",
+                      "id": 2332
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1575698804000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/1179?namespace=static-8.3.0_32861-us"
+            },
+            "name": "The Eternal Palace",
+            "id": 1179
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "LFR",
+                "name": "Raid Finder"
+              },
+              "status": {
+                "type": "IN_PROGRESS",
+                "name": "In Progress"
+              },
+              "progress": {
+                "completed_count": 4,
+                "total_count": 8,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2347?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Blackwater Behemoth",
+                      "id": 2347
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1585374803000
+                  },
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2353?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Radiance of Azshara",
+                      "id": 2353
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1585377503000
+                  },
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2349?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Za'qul, Harbinger of Ny'alotha",
+                      "id": 2349
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1583559472000
+                  },
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2361?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "Queen Azshara",
+                      "id": 2361
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1583561048000
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "instance": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/journal-instance/1180?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Ny'alotha, the Waking City",
+            "id": 1180
+          },
+          "modes": [
+            {
+              "difficulty": {
+                "type": "LFR",
+                "name": "Raid Finder"
+              },
+              "status": {
+                "type": "IN_PROGRESS",
+                "name": "In Progress"
+              },
+              "progress": {
+                "completed_count": 1,
+                "total_count": 12,
+                "encounters": [
+                  {
+                    "encounter": {
+                      "key": {
+                        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/2375?namespace=static-8.3.0_32861-us"
+                      },
+                      "name": "N'Zoth the Corruptor",
+                      "id": 2375
+                    },
+                    "completed_count": 1,
+                    "last_kill_timestamp": 1584688112000
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }</value>
