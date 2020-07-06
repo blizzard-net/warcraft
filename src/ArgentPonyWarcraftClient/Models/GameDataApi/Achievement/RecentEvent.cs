@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// A recent achievement by a character.
+    /// A recent achievement by a character or guild.
     /// </summary>
     public class RecentEvent
     {

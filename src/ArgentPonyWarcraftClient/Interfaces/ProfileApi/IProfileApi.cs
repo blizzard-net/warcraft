@@ -12,7 +12,8 @@
         ICharacterHunterPetsApi,
         ICharacterMythicKeystoneProfileApi,
         ICharacterProfessionsApi,
-        ICharacterProfileApi
+        ICharacterProfileApi,
+        IGuildApi
     {
     }
 }
