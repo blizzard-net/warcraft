@@ -70736,4 +70736,476 @@
   ]
 }</value>
   </data>
+  <data name="GuildAchievementsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/achievements?namespace=profile-us"
+    }
+  },
+  "guild": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us"
+    },
+    "name": "Enigma",
+    "id": 40732076,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+      },
+      "name": "Deathwing",
+      "id": 15,
+      "slug": "deathwing"
+    },
+    "faction": {
+      "type": "HORDE",
+      "name": "Horde"
+    }
+  },
+  "total_quantity": 123,
+  "total_points": 1145,
+  "achievements": [
+    {
+      "id": 4860,
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/4860?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Working as a Team",
+        "id": 4860
+      },
+      "criteria": {
+        "id": 16854,
+        "is_completed": false,
+        "child_criteria": [
+          {
+            "id": 16858,
+            "amount": 921,
+            "is_completed": true
+          },
+          {
+            "id": 16857,
+            "amount": 600,
+            "is_completed": true
+          },
+          {
+            "id": 71006,
+            "amount": 600,
+            "is_completed": true
+          }
+        ]
+      },
+      "completed_timestamp": 1297288102000
+    },
+    {
+      "id": 4861,
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/4861?namespace=static-8.3.0_32861-us"
+        },
+        "name": "We Are Legendary",
+        "id": 4861
+      },
+      "criteria": {
+        "id": 17195,
+        "amount": 9,
+        "is_completed": true,
+        "child_criteria": [
+          {
+            "id": 17201,
+            "amount": 1,
+            "is_completed": true
+          },
+          {
+            "id": 17197,
+            "amount": 1,
+            "is_completed": true
+          },
+          {
+            "id": 34062,
+            "amount": 1,
+            "is_completed": true
+          }
+        ]
+      },
+      "completed_timestamp": 1291831210000
+    },
+    {
+      "id": 7844,
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/7844?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Ambassadors",
+        "id": 7844
+      },
+      "criteria": {
+        "id": 30305,
+        "amount": 70,
+        "is_completed": true,
+        "child_criteria": [
+          {
+            "id": 30306,
+            "amount": 42999,
+            "is_completed": true
+          },
+          {
+            "id": 30376,
+            "amount": 42999,
+            "is_completed": true
+          }
+        ]
+      },
+      "completed_timestamp": 1346190787000
+    },
+    {
+      "id": 8708,
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/8708?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Shroud of the Celestials - Guild Edition",
+        "id": 8708
+      },
+      "criteria": {
+        "id": 34052,
+        "amount": 2,
+        "is_completed": true,
+        "child_criteria": [
+          {
+            "id": 34053,
+            "amount": 0,
+            "is_completed": false
+          },
+          {
+            "id": 34054,
+            "amount": 0,
+            "is_completed": false
+          },
+          {
+            "id": 34055,
+            "amount": 0,
+            "is_completed": false
+          },
+          {
+            "id": 34056,
+            "amount": 1,
+            "is_completed": true
+          },
+          {
+            "id": 34057,
+            "amount": 1,
+            "is_completed": true
+          },
+          {
+            "id": 34058,
+            "amount": 0,
+            "is_completed": false
+          }
+        ]
+      },
+      "completed_timestamp": 1378878072000
+    }
+  ],
+  "category_progress": [
+    {
+      "category": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement-category/15090?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Battlegrounds",
+        "id": 15090
+      },
+      "quantity": 1,
+      "points": 10
+    },
+    {
+      "category": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement-category/15082?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Classic",
+        "id": 15082
+      },
+      "quantity": 9,
+      "points": 90
+    },
+    {
+      "category": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement-category/15093?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Guild Feats of Strength",
+        "id": 15093
+      },
+      "quantity": 11,
+      "points": 0
+    }
+  ],
+  "recent_events": [
+    {
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/5028?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Skinnin' for a Livin'",
+        "id": 5028
+      },
+      "timestamp": 1574308541000
+    },
+    {
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/6702?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Master Pandaria Crafter",
+        "id": 6702
+      },
+      "timestamp": 1557629746000
+    },
+    {
+      "achievement": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/achievement/7844?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Ambassadors",
+        "id": 7844
+      },
+      "timestamp": 1346190787000
+    }
+  ]
+}</value>
+  </data>
+  <data name="GuildActivityResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/activity?namespace=profile-us"
+    }
+  },
+  "guild": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us"
+    },
+    "name": "Enigma",
+    "id": 40732076,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+      },
+      "name": "Deathwing",
+      "id": 15,
+      "slug": "deathwing"
+    },
+    "faction": {
+      "type": "HORDE",
+      "name": "Horde"
+    }
+  }
+}</value>
+  </data>
+  <data name="GuildResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us"
+    }
+  },
+  "id": 40732076,
+  "name": "Enigma",
+  "faction": {
+    "type": "HORDE",
+    "name": "Horde"
+  },
+  "achievement_points": 1145,
+  "member_count": 90,
+  "realm": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+    },
+    "name": "Deathwing",
+    "id": 15,
+    "slug": "deathwing"
+  },
+  "crest": {
+    "emblem": {
+      "id": 73,
+      "media": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/73?namespace=static-8.3.0_32861-us"
+        },
+        "id": 73
+      },
+      "color": {
+        "id": 16,
+        "rgba": {
+          "r": 223,
+          "g": 165,
+          "b": 90,
+          "a": 1
+        }
+      }
+    },
+    "border": {
+      "id": 0,
+      "media": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-8.3.0_32861-us"
+        },
+        "id": 0
+      },
+      "color": {
+        "id": 14,
+        "rgba": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 1
+        }
+      }
+    },
+    "background": {
+      "color": {
+        "id": 2,
+        "rgba": {
+          "r": 158,
+          "g": 0,
+          "b": 54,
+          "a": 1
+        }
+      }
+    }
+  },
+  "roster": {
+    "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/roster?namespace=profile-us"
+  },
+  "achievements": {
+    "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/achievements?namespace=profile-us"
+  },
+  "created_timestamp": 1226176953000,
+  "activity": {
+    "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/activity?namespace=profile-us"
+  }
+}</value>
+  </data>
+  <data name="GuildRosterResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/roster?namespace=profile-us"
+    }
+  },
+  "guild": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us"
+    },
+    "name": "Enigma",
+    "id": 40732076,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+      },
+      "name": "Deathwing",
+      "id": 15,
+      "slug": "deathwing"
+    },
+    "faction": {
+      "type": "HORDE",
+      "name": "Horde"
+    }
+  },
+  "members": [
+    {
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/deathwing/vanstr7a268a?namespace=profile-us"
+        },
+        "name": "Vanstr7A268A",
+        "id": 125445770,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+          },
+          "id": 15,
+          "slug": "deathwing"
+        },
+        "level": 85,
+        "playable_class": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-us"
+          },
+          "id": 2
+        },
+        "playable_race": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/playable-race/10?namespace=static-8.3.0_32861-us"
+          },
+          "id": 10
+        }
+      },
+      "rank": 4
+    },
+    {
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/deathwing/spaawn7a2850?namespace=profile-us"
+        },
+        "name": "Spaawn7A2850",
+        "id": 125446224,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+          },
+          "id": 15,
+          "slug": "deathwing"
+        },
+        "level": 85,
+        "playable_class": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/playable-class/5?namespace=static-8.3.0_32861-us"
+          },
+          "id": 5
+        },
+        "playable_race": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/playable-race/8?namespace=static-8.3.0_32861-us"
+          },
+          "id": 8
+        }
+      },
+      "rank": 4
+    },
+    {
+      "character": {
+        "key": {
+          "href": "https://us.api.blizzard.com/profile/wow/character/deathwing/sharkweak?namespace=profile-us"
+        },
+        "name": "Sharkweak",
+        "id": 169314709,
+        "realm": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us"
+          },
+          "id": 15,
+          "slug": "deathwing"
+        },
+        "level": 59,
+        "playable_class": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-us"
+          },
+          "id": 2
+        },
+        "playable_race": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/playable-race/10?namespace=static-8.3.0_32861-us"
+          },
+          "id": 10
+        }
+      },
+      "rank": 4
+    }
+  ]
+}</value>
+  </data>
 </root>

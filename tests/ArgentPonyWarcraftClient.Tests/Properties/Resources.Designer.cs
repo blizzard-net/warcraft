@@ -953,6 +953,60 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/achievements?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;guild&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Enigma&quot;,
+        ///    &quot;id&quot;: 40732076,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Deathwing&quot;,
+        ///      &quot;id&quot;: 15,
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GuildAchievementsResponse {
+            get {
+                return ResourceManager.GetString("GuildAchievementsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/activity?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;guild&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Enigma&quot;,
+        ///    &quot;id&quot;: 40732076,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Deathwing&quot;,
+        ///      &quot;id&quot;: 15,
+        ///      &quot;s [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GuildActivityResponse {
+            get {
+                return ResourceManager.GetString("GuildActivityResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
@@ -1019,6 +1073,65 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string GuildCrestEmblemMediaResponse {
             get {
                 return ResourceManager.GetString("GuildCrestEmblemMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 40732076,
+        ///  &quot;name&quot;: &quot;Enigma&quot;,
+        ///  &quot;faction&quot;: {
+        ///    &quot;type&quot;: &quot;HORDE&quot;,
+        ///    &quot;name&quot;: &quot;Horde&quot;
+        ///  },
+        ///  &quot;achievement_points&quot;: 1145,
+        ///  &quot;member_count&quot;: 90,
+        ///  &quot;realm&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Deathwing&quot;,
+        ///    &quot;id&quot;: 15,
+        ///    &quot;slug&quot;: &quot;deathwing&quot;
+        ///  },
+        ///  &quot;crest&quot;: {
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GuildResponse {
+            get {
+                return ResourceManager.GetString("GuildResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/roster?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;guild&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Enigma&quot;,
+        ///    &quot;id&quot;: 40732076,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/15?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Deathwing&quot;,
+        ///      &quot;id&quot;: 15,
+        ///      &quot;slu [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GuildRosterResponse {
+            get {
+                return ResourceManager.GetString("GuildRosterResponse", resourceCulture);
             }
         }
         
