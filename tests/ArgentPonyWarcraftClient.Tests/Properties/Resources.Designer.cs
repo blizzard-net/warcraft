@@ -671,6 +671,58 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/3v3?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/malganis/zenli?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Zenli&quot;,
+        ///    &quot;id&quot;: 181528180,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/59?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Mal&apos;Ganis&quot;,
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterPvpBracketStatisticsResponse {
+            get {
+                return ResourceManager.GetString("CharacterPvpBracketStatisticsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-summary?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;brackets&quot;: [
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/2v2?namespace=profile-us&quot;
+        ///    },
+        ///    {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/3v3?namespace=profile-us&quot;
+        ///    }
+        ///  ],
+        ///  &quot;honor_level&quot;: 365,
+        ///  &quot;pvp_map_statistics&quot;: [
+        ///    {
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterPvpSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterPvpSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/raids?namespace=profile-us&quot;
         ///    }
         ///  },
