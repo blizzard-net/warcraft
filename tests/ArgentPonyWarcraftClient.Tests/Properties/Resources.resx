@@ -71208,4 +71208,260 @@
   ]
 }</value>
   </data>
+  <data name="CharacterPvpBracketStatisticsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/3v3?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/malganis/zenli?namespace=profile-us"
+    },
+    "name": "Zenli",
+    "id": 181528180,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/59?namespace=dynamic-us"
+      },
+      "name": "Mal'Ganis",
+      "id": 59,
+      "slug": "malganis"
+    }
+  },
+  "faction": {
+    "type": "HORDE",
+    "name": "Horde"
+  },
+  "bracket": {
+    "id": 1,
+    "type": "ARENA_3v3"
+  },
+  "rating": 3204,
+  "season": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-season/29?namespace=dynamic-us"
+    },
+    "id": 29
+  },
+  "tier": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/pvp-tier/14?namespace=static-8.3.0_32861-us"
+    },
+    "id": 14
+  },
+  "season_match_statistics": {
+    "played": 1289,
+    "won": 894,
+    "lost": 395
+  },
+  "weekly_match_statistics": {
+    "played": 0,
+    "won": 0,
+    "lost": 0
+  }
+}</value>
+  </data>
+  <data name="CharacterPvpSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-summary?namespace=profile-us"
+    }
+  },
+  "brackets": [
+    {
+      "href": "https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/2v2?namespace=profile-us"
+    },
+    {
+      "href": "https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/3v3?namespace=profile-us"
+    }
+  ],
+  "honor_level": 365,
+  "pvp_map_statistics": [
+    {
+      "world_map": {
+        "name": "Alterac Valley",
+        "id": 30
+      },
+      "match_statistics": {
+        "played": 3,
+        "won": 1,
+        "lost": 2
+      }
+    },
+    {
+      "world_map": {
+        "name": "Classic Warsong Gulch",
+        "id": 489
+      },
+      "match_statistics": {
+        "played": 67,
+        "won": 59,
+        "lost": 8
+      }
+    },
+    {
+      "world_map": {
+        "name": "Classic Arathi Basin",
+        "id": 529
+      },
+      "match_statistics": {
+        "played": 61,
+        "won": 43,
+        "lost": 18
+      }
+    },
+    {
+      "world_map": {
+        "name": "Eye of the Storm",
+        "id": 566
+      },
+      "match_statistics": {
+        "played": 42,
+        "won": 36,
+        "lost": 6
+      }
+    },
+    {
+      "world_map": {
+        "name": "Strand of the Ancients",
+        "id": 607
+      },
+      "match_statistics": {
+        "played": 31,
+        "won": 25,
+        "lost": 6
+      }
+    },
+    {
+      "world_map": {
+        "name": "Isle of Conquest",
+        "id": 628
+      },
+      "match_statistics": {
+        "played": 10,
+        "won": 6,
+        "lost": 4
+      }
+    },
+    {
+      "world_map": {
+        "name": "Twin Peaks",
+        "id": 726
+      },
+      "match_statistics": {
+        "played": 74,
+        "won": 62,
+        "lost": 12
+      }
+    },
+    {
+      "world_map": {
+        "name": "Silvershard Mines",
+        "id": 727
+      },
+      "match_statistics": {
+        "played": 47,
+        "won": 37,
+        "lost": 10
+      }
+    },
+    {
+      "world_map": {
+        "name": "The Battle for Gilneas",
+        "id": 761
+      },
+      "match_statistics": {
+        "played": 59,
+        "won": 46,
+        "lost": 13
+      }
+    },
+    {
+      "world_map": {
+        "name": "Temple of Kotmogu",
+        "id": 998
+      },
+      "match_statistics": {
+        "played": 61,
+        "won": 53,
+        "lost": 8
+      }
+    },
+    {
+      "world_map": {
+        "name": "Deepwind Gorge (Legacy)",
+        "id": 1105
+      },
+      "match_statistics": {
+        "played": 54,
+        "won": 47,
+        "lost": 7
+      }
+    },
+    {
+      "world_map": {
+        "name": "Seething Shore",
+        "id": 1803
+      },
+      "match_statistics": {
+        "played": 9,
+        "won": 6,
+        "lost": 3
+      }
+    },
+    {
+      "world_map": {
+        "name": "Warsong Gulch",
+        "id": 2106
+      },
+      "match_statistics": {
+        "played": 7,
+        "won": 3,
+        "lost": 4
+      }
+    },
+    {
+      "world_map": {
+        "name": "Arathi Basin",
+        "id": 2107
+      },
+      "match_statistics": {
+        "played": 6,
+        "won": 6,
+        "lost": 0
+      }
+    },
+    {
+      "world_map": {
+        "name": "Deepwind Gorge",
+        "id": 2245
+      },
+      "match_statistics": {
+        "played": 1,
+        "won": 1,
+        "lost": 0
+      }
+    }
+  ],
+  "honorable_kills": 23215,
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/malganis/zenli?namespace=profile-us"
+    },
+    "name": "Zenli",
+    "id": 181528180,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/59?namespace=dynamic-us"
+      },
+      "name": "Mal'Ganis",
+      "id": 59,
+      "slug": "malganis"
+    }
+  }
+}</value>
+  </data>
 </root>

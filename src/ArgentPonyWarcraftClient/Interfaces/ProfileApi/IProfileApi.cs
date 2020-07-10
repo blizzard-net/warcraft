@@ -13,6 +13,7 @@
         ICharacterMythicKeystoneProfileApi,
         ICharacterProfessionsApi,
         ICharacterProfileApi,
+        ICharacterPvpApi,
         IGuildApi
     {
     }
