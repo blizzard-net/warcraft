@@ -378,6 +378,31 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/quests/completed?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drinian&quot;,
+        ///    &quot;id&quot;: 107811065,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Norgan [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterCompletedQuestsResponse {
+            get {
+                return ResourceManager.GetString("CharacterCompletedQuestsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/dungeons?namespace=profile-us&quot;
         ///    }
         ///  },
@@ -716,6 +741,32 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string CharacterPvpSummaryResponse {
             get {
                 return ResourceManager.GetString("CharacterPvpSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/quests?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drinian&quot;,
+        ///    &quot;id&quot;: 107811065,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Norgannon&quot;,
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterQuestsResponse {
+            get {
+                return ResourceManager.GetString("CharacterQuestsResponse", resourceCulture);
             }
         }
         
