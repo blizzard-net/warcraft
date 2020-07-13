@@ -71464,4 +71464,164 @@
   }
 }</value>
   </data>
+  <data name="CharacterCompletedQuestsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/quests/completed?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "quests": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/11?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Riverpaw Gnoll Bounty",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/35?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Further Concerns",
+      "id": 35
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/59000?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Elements of Corruption",
+      "id": 59000
+    }
+  ]
+}</value>
+  </data>
+  <data name="CharacterQuestsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/quests?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "in_progress": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/29433?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Test Your Strength",
+      "id": 29433
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/29507?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Fun for the Little Ones",
+      "id": 29507
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/36960?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Nemesis: Death Stalker",
+      "id": 36960
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/45172?namespace=static-8.3.0_32861-us"
+      },
+      "name": "To Battle!",
+      "id": 45172
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/47725?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Tomb of Sargeras: Aegwynn's Path",
+      "id": 47725
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/47727?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Tomb of Sargeras: Aegwynn's Path",
+      "id": 47727
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/49015?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Antorus, the Burning Throne: The Death of a Titan",
+      "id": 49015
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/49032?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Antorus, the Burning Throne: Dark Passage",
+      "id": 49032
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/49133?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Antorus, the Burning Throne: The Heart of Argus",
+      "id": 49133
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/56348?namespace=static-8.3.0_32861-us"
+      },
+      "name": "The Eternal Palace: We Can Make It Stronger...",
+      "id": 56348
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/57394?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Reconstructing \"Fear and Flesh\"",
+      "id": 57394
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/quest/57464?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Maintaining Focus",
+      "id": 57464
+    }
+  ],
+  "completed": {
+    "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/quests/completed?namespace=profile-us"
+  }
+}</value>
+  </data>
 </root>
