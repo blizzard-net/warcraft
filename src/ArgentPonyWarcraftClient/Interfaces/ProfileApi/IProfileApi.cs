@@ -15,6 +15,7 @@
         ICharacterProfileApi,
         ICharacterPvpApi,
         ICharacterQuestsApi,
+        ICharacterReputationsApi,
         IGuildApi
     {
     }

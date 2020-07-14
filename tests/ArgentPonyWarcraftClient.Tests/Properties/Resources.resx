@@ -71783,4 +71783,305 @@
   }
 }</value>
   </data>
+  <data name="CharacterReputationsSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/reputations?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "reputations": [
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Booty Bay",
+        "id": 21
+      },
+      "standing": {
+        "raw": 37498,
+        "value": 16498,
+        "max": 21000,
+        "tier": 6,
+        "name": "Revered"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/47?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Ironforge",
+        "id": 47
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1859?namespace=static-8.3.0_32861-us"
+        },
+        "name": "The Nightfallen",
+        "id": 1859
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 8950,
+        "value": 8950,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1883?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Dreamweavers",
+        "id": 1883
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 7080,
+        "value": 7080,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1894?namespace=static-8.3.0_32861-us"
+        },
+        "name": "The Wardens",
+        "id": 1894
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 12380,
+        "value": 2380,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1900?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Court of Farondis",
+        "id": 1900
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 8125,
+        "value": 8125,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1948?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Valarjar",
+        "id": 1948
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 9830,
+        "value": 9830,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1975?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Conjurer Margoss",
+        "id": 1975
+      },
+      "standing": {
+        "raw": 5115,
+        "value": 5115,
+        "max": 8400,
+        "tier": 0,
+        "name": "Stranger"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2045?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Armies of Legionfall",
+        "id": 2045
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 15895,
+        "value": 5895,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2135?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Chromie",
+        "id": 2135
+      },
+      "standing": {
+        "raw": 15100,
+        "value": 100,
+        "max": 0,
+        "tier": 6,
+        "name": "Timelord"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2170?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Argussian Reach",
+        "id": 2170
+      },
+      "standing": {
+        "raw": 42000,
+        "value": 0,
+        "max": 0,
+        "tier": 7,
+        "name": "Exalted"
+      },
+      "paragon": {
+        "raw": 5758,
+        "value": 5758,
+        "max": 10000
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2391?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Rustbolt Resistance",
+        "id": 2391
+      },
+      "standing": {
+        "raw": 28160,
+        "value": 7160,
+        "max": 21000,
+        "tier": 6,
+        "name": "Revered"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2400?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Waveblade Ankoan",
+        "id": 2400
+      },
+      "standing": {
+        "raw": 33375,
+        "value": 12375,
+        "max": 21000,
+        "tier": 6,
+        "name": "Revered"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2415?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Rajani",
+        "id": 2415
+      },
+      "standing": {
+        "raw": 9432,
+        "value": 432,
+        "max": 12000,
+        "tier": 5,
+        "name": "Honored"
+      }
+    },
+    {
+      "faction": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2417?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Uldum Accord",
+        "id": 2417
+      },
+      "standing": {
+        "raw": 8195,
+        "value": 5195,
+        "max": 6000,
+        "tier": 4,
+        "name": "Friendly"
+      }
+    }
+  ]
+}</value>
+  </data>
 </root>
