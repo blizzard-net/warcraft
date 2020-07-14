@@ -3140,6 +3140,116 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 21,
+        ///  &quot;name&quot;: &quot;Booty Bay&quot;,
+        ///  &quot;description&quot;: &quot;This booming coastal city is run by Baron Revilgaz of the Blackwater Raiders.  Mortal enemies of the Bloodsail Buccaneers and part of the Steamwheedle Cartel.&quot;,
+        ///  &quot;reputation_tiers&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-us [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ReputationFactionResponse {
+            get {
+                return ResourceManager.GetString("ReputationFactionResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-faction/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;factions&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Booty Bay&quot;,
+        ///      &quot;id&quot;: 21
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-faction/47?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ReputationFactionsIndexResponse {
+            get {
+                return ResourceManager.GetString("ReputationFactionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-tiers/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;reputation_tiers&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Farmer Fung&quot;,
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ReputationTiersIndexResponse {
+            get {
+                return ResourceManager.GetString("ReputationTiersIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;tiers&quot;: [
+        ///    {
+        ///      &quot;name&quot;: &quot;Stranger&quot;,
+        ///      &quot;min_value&quot;: 0,
+        ///      &quot;max_value&quot;: 8400,
+        ///      &quot;id&quot;: 0
+        ///    },
+        ///    {
+        ///      &quot;name&quot;: &quot;Acquaintance&quot;,
+        ///      &quot;min_value&quot;: 8400,
+        ///      &quot;max_value&quot;: 16800,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;name&quot;: &quot;Buddy&quot;,
+        ///      &quot;min_value&quot;: 16800,
+        ///      &quot;max_value&quot;: 25200,
+        ///      &quot;id&quot;: 2
+        ///    },
+        ///    {
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ReputationTiersResponse {
+            get {
+                return ResourceManager.GetString("ReputationTiersResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
