@@ -71624,4 +71624,163 @@
   }
 }</value>
   </data>
+  <data name="ReputationFactionResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 21,
+  "name": "Booty Bay",
+  "description": "This booming coastal city is run by Baron Revilgaz of the Blackwater Raiders.  Mortal enemies of the Bloodsail Buccaneers and part of the Steamwheedle Cartel.",
+  "reputation_tiers": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-us"
+    },
+    "id": 0
+  }
+}</value>
+  </data>
+  <data name="ReputationFactionsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/reputation-faction/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "factions": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Booty Bay",
+      "id": 21
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-faction/47?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Ironforge",
+      "id": 47
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2417?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Uldum Accord",
+      "id": 2417
+    }
+  ],
+  "root_factions": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1169?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Guild",
+      "id": 1169
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-faction/2104?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Battle for Azeroth",
+      "id": 2104
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-faction/589?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Wintersaber Trainers",
+      "id": 589
+    }
+  ]
+}</value>
+  </data>
+  <data name="ReputationTiersIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/reputation-tiers/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "reputation_tiers": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-tiers/0?namespace=static-8.3.0_32861-us"
+      },
+      "id": 0
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Farmer Fung",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/reputation-tiers/340?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Brawl'gar Arena (Season 3)",
+      "id": 340
+    }
+  ]
+}</value>
+  </data>
+  <data name="ReputationTiersResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 2,
+  "tiers": [
+    {
+      "name": "Stranger",
+      "min_value": 0,
+      "max_value": 8400,
+      "id": 0
+    },
+    {
+      "name": "Acquaintance",
+      "min_value": 8400,
+      "max_value": 16800,
+      "id": 1
+    },
+    {
+      "name": "Buddy",
+      "min_value": 16800,
+      "max_value": 25200,
+      "id": 2
+    },
+    {
+      "name": "Friend",
+      "min_value": 25200,
+      "max_value": 33600,
+      "id": 3
+    },
+    {
+      "name": "Good Friend",
+      "min_value": 33600,
+      "max_value": 42000,
+      "id": 4
+    },
+    {
+      "name": "Best Friend",
+      "min_value": 42000,
+      "max_value": 42000,
+      "id": 5
+    }
+  ],
+  "faction": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/reputation-faction/1283?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Farmer Fung",
+    "id": 1283
+  }
+}</value>
+  </data>
 </root>

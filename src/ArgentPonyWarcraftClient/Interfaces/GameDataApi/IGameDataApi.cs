@@ -28,6 +28,7 @@
         IQuestApi,
         IRealmApi,
         IRegionApi,
+        IReputationsApi,
         ISpellApi,
         ITalentApi
     {
