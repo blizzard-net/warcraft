@@ -72281,4 +72281,59 @@
   "price": 1203380000
 }</value>
   </data>
+  <data name="CharacterTitlesSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/titles?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "active_title": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/title/62?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Battlelord",
+    "id": 62,
+    "display_string": "Battlelord {name}"
+  },
+  "titles": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/title/38?namespace=static-8.3.0_32861-us"
+      },
+      "name": "of the Shattered Sun",
+      "id": 38
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/title/42?namespace=static-8.3.0_32861-us"
+      },
+      "name": "the Seeker",
+      "id": 42
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/title/412?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Veteran of the Fourth War",
+      "id": 412
+    }
+  ]
+}</value>
+  </data>
 </root>

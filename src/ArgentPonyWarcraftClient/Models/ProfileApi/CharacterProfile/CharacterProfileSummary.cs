@@ -174,7 +174,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets a reference to the active title for the character.
         /// </summary>
         [JsonProperty("active_title")]
-        public TitleReference ActiveTitle { get; set; }
+        public TitleReferenceWithDisplayString ActiveTitle { get; set; }
 
         /// <summary>
         /// Gets a link to the character's reputations.
