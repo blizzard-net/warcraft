@@ -1,0 +1,20 @@
+﻿using System.Threading.Tasks;
+
+namespace ArgentPonyWarcraftClient
+{
+    public partial class WarcraftClient
+    {
+        /// <inheritdoc />
+        public async Task<RequestResult<CharacterStatisticsSummary>> GetCharacterStatisticsSummaryAsync(string realmSlug, string characterName, string @namespace)
+        {
+            return await GetCharacterStatisticsSummaryAsync(realmSlug, characterName, @namespace, _region, _locale);
+        }
+
+        /// <inheritdoc />
+        public async Task<RequestResult<CharacterStatisticsSummary>> GetCharacterStatisticsSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return await Get<CharacterStatisticsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/statistics?namespace={@namespace}&locale={locale}");
+        }
+    }
+}
