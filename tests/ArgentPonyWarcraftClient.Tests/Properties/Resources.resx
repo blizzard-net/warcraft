@@ -72084,4 +72084,143 @@
   ]
 }</value>
   </data>
+  <data name="CharacterStatisticsSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/statistics?namespace=profile-us"
+    }
+  },
+  "health": 351080,
+  "power": 100,
+  "power_type": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/power-type/1?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Rage",
+    "id": 1
+  },
+  "speed": {
+    "rating": 0,
+    "rating_bonus": 0
+  },
+  "strength": {
+    "base": 1467,
+    "effective": 8449
+  },
+  "agility": {
+    "base": 1012,
+    "effective": 1012
+  },
+  "intellect": {
+    "base": 998,
+    "effective": 998
+  },
+  "stamina": {
+    "base": 1001,
+    "effective": 17554
+  },
+  "melee_crit": {
+    "rating": 1162,
+    "rating_bonus": 16.13889,
+    "value": 21.13889
+  },
+  "melee_haste": {
+    "rating": 1504,
+    "rating_bonus": 22.117647,
+    "value": 22.117653
+  },
+  "mastery": {
+    "rating": 840,
+    "rating_bonus": 16.333334,
+    "value": 27.533335
+  },
+  "bonus_armor": 0,
+  "lifesteal": {
+    "rating": 101,
+    "rating_bonus": 2.525,
+    "value": 2.525
+  },
+  "versatility": 863,
+  "versatility_damage_done_bonus": 10.152941,
+  "versatility_healing_done_bonus": 10.152941,
+  "versatility_damage_taken_bonus": 5.0764704,
+  "avoidance": {
+    "rating": 0,
+    "rating_bonus": 0
+  },
+  "attack_power": 8449,
+  "main_hand_damage_min": 4446.3013,
+  "main_hand_damage_max": 5025.375,
+  "main_hand_speed": 2.948,
+  "main_hand_dps": 1606.4579,
+  "off_hand_damage_min": 2178.043,
+  "off_hand_damage_max": 2327.6306,
+  "off_hand_speed": 2.948,
+  "off_hand_dps": 764.19165,
+  "spell_power": 998,
+  "spell_penetration": 0,
+  "spell_crit": {
+    "rating": 1162,
+    "rating_bonus": 16.13889,
+    "value": 21.13889
+  },
+  "mana_regen": 0,
+  "mana_regen_combat": 0,
+  "armor": {
+    "base": 0,
+    "effective": 6135
+  },
+  "dodge": {
+    "rating": 0,
+    "rating_bonus": 0,
+    "value": 3
+  },
+  "parry": {
+    "rating": 0,
+    "rating_bonus": 0,
+    "value": 18.907757
+  },
+  "block": {
+    "rating": 0,
+    "rating_bonus": 0,
+    "value": 10
+  },
+  "ranged_crit": {
+    "rating": 1162,
+    "rating_bonus": 16.13889,
+    "value": 21.13889
+  },
+  "ranged_haste": {
+    "rating": 1504,
+    "rating_bonus": 22.117647,
+    "value": 22.117653
+  },
+  "spell_haste": {
+    "rating": 1504,
+    "rating_bonus": 22.117647,
+    "value": 22.117653
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "corruption": {
+    "corruption": 65,
+    "corruption_resistance": 30,
+    "effective_corruption": 35
+  }
+}</value>
+  </data>
 </root>

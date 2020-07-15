@@ -824,6 +824,38 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/statistics?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;health&quot;: 351080,
+        ///  &quot;power&quot;: 100,
+        ///  &quot;power_type&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/1?namespace=static-8.3.0_32861-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Rage&quot;,
+        ///    &quot;id&quot;: 1
+        ///  },
+        ///  &quot;speed&quot;: {
+        ///    &quot;rating&quot;: 0,
+        ///    &quot;rating_bonus&quot;: 0
+        ///  },
+        ///  &quot;strength&quot;: {
+        ///    &quot;base&quot;: 1467,
+        ///    &quot;effective&quot;: 8449
+        ///  },
+        ///  &quot;ag [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterStatisticsSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterStatisticsSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
         ///    }
         ///  },
