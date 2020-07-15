@@ -3477,5 +3477,22 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
                 return ResourceManager.GetString("TitlesIndexResponse", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/token/?namespace=dynamic-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;last_updated_timestamp&quot;: 1594853730000,
+        ///  &quot;price&quot;: 1203380000
+        ///}.
+        /// </summary>
+        internal static string WowTokenIndexResponse {
+            get {
+                return ResourceManager.GetString("WowTokenIndexResponse", resourceCulture);
+            }
+        }
     }
 }
