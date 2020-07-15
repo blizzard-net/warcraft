@@ -72270,4 +72270,15 @@
   ]
 }</value>
   </data>
+  <data name="WowTokenIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/token/?namespace=dynamic-us"
+    }
+  },
+  "last_updated_timestamp": 1594853730000,
+  "price": 1203380000
+}</value>
+  </data>
 </root>
