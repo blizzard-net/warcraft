@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets references to the titles.
         /// </summary>
         [JsonProperty("titles")]
-        public TitleReference[] Titles { get; set; }
+        public TitleReferenceWithDisplayString[] Titles { get; set; }
     }
 }
