@@ -72223,4 +72223,51 @@
   }
 }</value>
   </data>
+  <data name="TitleResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/title/1?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "id": 1,
+  "name": "Private",
+  "gender_name": {
+    "male": "Private {name}",
+    "female": "Private {name}"
+  }
+}</value>
+  </data>
+  <data name="TitlesIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/title/?namespace=static-8.3.0_32861-us"
+    }
+  },
+  "titles": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/title/1?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Private",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/title/2?namespace=static-8.3.0_32861-us"
+      },
+      "name": "Corporal",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/title/419?namespace=static-8.3.0_32861-us"
+      },
+      "name": "the Faceless One",
+      "id": 419
+    }
+  ]
+}</value>
+  </data>
 </root>

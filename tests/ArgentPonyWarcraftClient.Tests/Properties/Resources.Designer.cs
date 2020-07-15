@@ -3426,5 +3426,56 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
                 return ResourceManager.GetString("TalentsIndexResponse", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/title/1?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Private&quot;,
+        ///  &quot;gender_name&quot;: {
+        ///    &quot;male&quot;: &quot;Private {name}&quot;,
+        ///    &quot;female&quot;: &quot;Private {name}&quot;
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string TitleResponse {
+            get {
+                return ResourceManager.GetString("TitleResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/title/?namespace=static-8.3.0_32861-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;titles&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/title/1?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Private&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/title/2?namespace=static-8.3.0_32861-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Corporal&quot;,
+        ///      &quot;id&quot;: 2
+        ///    },
+        ///  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TitlesIndexResponse {
+            get {
+                return ResourceManager.GetString("TitlesIndexResponse", resourceCulture);
+            }
+        }
     }
 }

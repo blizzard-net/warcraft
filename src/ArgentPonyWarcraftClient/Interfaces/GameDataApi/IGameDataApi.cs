@@ -30,7 +30,8 @@
         IRegionApi,
         IReputationsApi,
         ISpellApi,
-        ITalentApi
+        ITalentApi,
+        ITitleApi
     {
     }
 }
