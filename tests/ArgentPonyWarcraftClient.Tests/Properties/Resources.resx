@@ -73148,4 +73148,397 @@
   }
 }</value>
   </data>
+  <data name="AccountProfileSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us"
+    },
+    "user": {
+      "href": "https://us.api.blizzard.com/profile/user"
+    },
+    "profile": {
+      "href": "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us"
+    }
+  },
+  "id": 1142637,
+  "wow_accounts": [
+    {
+      "id": 19995845,
+      "characters": [
+        {
+          "character": {
+            "href": "https://us.api.blizzard.com/profile/wow/character/darrowmere/bregal932b58?namespace=profile-us"
+          },
+          "protected_character": {
+            "href": "https://us.api.blizzard.com/profile/user/wow/protected-character/1351-93420968?namespace=profile-us"
+          },
+          "name": "Bregal932B58",
+          "id": 93530968,
+          "realm": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/realm/1351?namespace=dynamic-us"
+            },
+            "name": "Darrowmere",
+            "id": 1351,
+            "slug": "darrowmere"
+          },
+          "playable_class": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-class/3?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Hunter",
+            "id": 3
+          },
+          "playable_race": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-race/6?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Tauren",
+            "id": 6
+          },
+          "gender": {
+            "type": "MALE",
+            "name": "Male"
+          },
+          "faction": {
+            "type": "HORDE",
+            "name": "Horde"
+          },
+          "level": 0
+        },
+        {
+          "character": {
+            "href": "https://us.api.blizzard.com/profile/wow/character/steamwheedle-cartel/rilian?namespace=profile-us"
+          },
+          "protected_character": {
+            "href": "https://us.api.blizzard.com/profile/user/wow/protected-character/1270-187342265?namespace=profile-us"
+          },
+          "name": "Rilian",
+          "id": 187393265,
+          "realm": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/realm/1260?namespace=dynamic-us"
+            },
+            "name": "Steamwheedle Cartel",
+            "id": 1260,
+            "slug": "steamwheedle-cartel"
+          },
+          "playable_class": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-class/2?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Paladin",
+            "id": 2
+          },
+          "playable_race": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/playable-race/1?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Human",
+            "id": 1
+          },
+          "gender": {
+            "type": "MALE",
+            "name": "Male"
+          },
+          "faction": {
+            "type": "ALLIANCE",
+            "name": "Alliance"
+          },
+          "level": 6
+        }
+      ]
+    }
+  ],
+  "collections": {
+    "href": "https://us.api.blizzard.com/profile/user/wow/collections?namespace=profile-us"
+  }
+}</value>
+  </data>
+  <data name="AccountCollectionsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/user/wow/collections?namespace=profile-us"
+    },
+    "user": {
+      "href": "https://us.api.blizzard.com/profile/user"
+    },
+    "profile": {
+      "href": "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us"
+    }
+  },
+  "pets": {
+    "href": "https://us.api.blizzard.com/profile/user/wow/collections/pets?namespace=profile-us"
+  },
+  "mounts": {
+    "href": "https://us.api.blizzard.com/profile/user/wow/collections/mounts?namespace=profile-us"
+  }
+}</value>
+  </data>
+  <data name="AccountMountsCollectionSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/user/wow/collections/mounts?namespace=profile-us"
+    },
+    "user": {
+      "href": "https://us.api.blizzard.com/profile/user"
+    },
+    "profile": {
+      "href": "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us"
+    }
+  },
+  "mounts": [
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Brown Horse",
+        "id": 6
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/9?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Black Stallion",
+        "id": 9
+      }
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/1239?namespace=static-8.3.0_32861-us"
+        },
+        "name": "X-995 Mechanocat",
+        "id": 1239
+      },
+      "is_favorite": true
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/1240?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Obsidian Worldbreaker",
+        "id": 1240
+      },
+      "is_favorite": true
+    },
+    {
+      "mount": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/mount/1253?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Scrapforged Mechaspider",
+        "id": 1253
+      }
+    }
+  ]
+}</value>
+  </data>
+  <data name="AccountPetsCollectionSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/user/wow/collections/pets?namespace=profile-us"
+    },
+    "user": {
+      "href": "https://us.api.blizzard.com/profile/user"
+    },
+    "profile": {
+      "href": "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us"
+    }
+  },
+  "pets": [
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/202?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Baby Blizzard Bear",
+        "id": 202
+      },
+      "level": 1,
+      "quality": {
+        "type": "UNCOMMON",
+        "name": "Uncommon"
+      },
+      "stats": {
+        "breed_id": 7,
+        "health": 153,
+        "power": 11,
+        "speed": 10
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/16189?namespace=static-8.3.0_32861-us"
+        },
+        "id": 16189
+      },
+      "id": 57110618
+    },
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/78?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Crimson Snake",
+        "id": 78
+      },
+      "level": 1,
+      "quality": {
+        "type": "UNCOMMON",
+        "name": "Uncommon"
+      },
+      "stats": {
+        "breed_id": 12,
+        "health": 150,
+        "power": 11,
+        "speed": 10
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/6303?namespace=static-8.3.0_32861-us"
+        },
+        "id": 6303
+      },
+      "id": 57110619
+    },
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/730?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Tolai Hare Pup",
+        "id": 730
+      },
+      "level": 23,
+      "quality": {
+        "type": "UNCOMMON",
+        "name": "Uncommon"
+      },
+      "stats": {
+        "breed_id": 12,
+        "health": 1328,
+        "power": 204,
+        "speed": 259
+      },
+      "is_active": true,
+      "active_slot": 1,
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/28998?namespace=static-8.3.0_32861-us"
+        },
+        "id": 28998
+      },
+      "id": 57110887
+    },
+    {
+      "species": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pet/1922?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Lurking Owl Kitten",
+        "id": 1922
+      },
+      "level": 1,
+      "quality": {
+        "type": "RARE",
+        "name": "Rare"
+      },
+      "stats": {
+        "breed_id": 18,
+        "health": 150,
+        "power": 12,
+        "speed": 12
+      },
+      "creature_display": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/media/creature-display/71826?namespace=static-8.3.0_32861-us"
+        },
+        "id": 71826
+      },
+      "id": 147429168
+    }
+  ],
+  "unlocked_battle_pet_slots": 3
+}</value>
+  </data>
+  <data name="ProtectedCharacterProfileSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/user/wow/protected-character/1262-107811065?namespace=profile-us"
+    },
+    "user": {
+      "href": "https://us.api.blizzard.com/profile/user"
+    },
+    "profile": {
+      "href": "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us"
+    }
+  },
+  "id": 107811065,
+  "name": "Drinian",
+  "money": 1466691688,
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "protected_stats": {
+    "total_number_deaths": 5475,
+    "total_gold_gained": 10579308330,
+    "total_gold_lost": 9149012174,
+    "total_item_value_gained": 3712943866,
+    "level_number_deaths": 242,
+    "level_gold_gained": 1721193990,
+    "level_gold_lost": 1410241805,
+    "level_item_value_gained": 767552800
+  },
+  "position": {
+    "zone": {
+      "name": "Tradewinds Market",
+      "id": 8718
+    },
+    "map": {
+      "name": "Kul Tiras",
+      "id": 1643
+    },
+    "x": 1158.7345,
+    "y": -594.15985,
+    "z": 28.691963,
+    "facing": 0.8178539
+  },
+  "bind_position": {
+    "zone": {
+      "name": "Snug Harbor Inn",
+      "id": 9801
+    },
+    "map": {
+      "name": "Kul Tiras",
+      "id": 1643
+    },
+    "x": 1184.1769,
+    "y": -593.08014,
+    "z": 31.502104,
+    "facing": 3.7450316
+  },
+  "wow_account": 19795845
+}</value>
+  </data>
 </root>
