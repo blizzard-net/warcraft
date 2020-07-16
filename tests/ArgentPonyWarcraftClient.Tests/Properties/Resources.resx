@@ -72336,4 +72336,816 @@
   ]
 }</value>
   </data>
+  <data name="CharacterSpecializationsSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/specializations?namespace=profile-us"
+    }
+  },
+  "specializations": [
+    {
+      "specialization": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Fury",
+        "id": 72
+      },
+      "talents": [
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22633?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Endless Rage",
+            "id": 22633
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202296?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Endless Rage",
+              "id": 202296
+            },
+            "description": "Gain 6 Rage whenever you Enrage.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 0,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/19676?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Double Time",
+            "id": 19676
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/103827?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Double Time",
+              "id": 103827
+            },
+            "description": "Increases the maximum number of charges on Charge by 1, and reduces its cooldown by 3 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 1,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22381?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Sudden Death",
+            "id": 22381
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/280721?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Sudden Death",
+              "id": 280721
+            },
+            "description": "Your attacks have a chance to reset the cooldown of Execute and make it usable on any target, regardless of their health.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 2,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22627?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Bounding Stride",
+            "id": 22627
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202163?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Bounding Stride",
+              "id": 202163
+            },
+            "description": "Reduces the cooldown on Heroic Leap by 15 sec, and Heroic Leap now also increases your run speed by 70% for 3 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 3,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22383?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Carnage",
+            "id": 22383
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202922?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Carnage",
+              "id": 202922
+            },
+            "description": "Rampage costs 10 less Rage and deals 15% increased damage.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 4,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22398?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Dragon Roar",
+            "id": 22398
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/118000?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Dragon Roar",
+              "id": 118000
+            },
+            "description": "Roar explosively, dealing 18,018 Physical damage to all enemies within 12 yds and reducing their movement speed by 50% for 6 sec.\r\n\r\nGenerates 10 Rage.",
+            "cast_time": "Instant",
+            "cooldown": "35 sec cooldown"
+          },
+          "tier_index": 5,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22405?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Reckless Abandon",
+            "id": 22405
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202751?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Reckless Abandon",
+              "id": 202751
+            },
+            "description": "Recklessness generates 100 Rage and lasts 4 sec longer.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 6,
+          "column_index": 0
+        }
+      ],
+      "pvp_talent_slots": [
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3590?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Adaptation",
+              "id": 3590
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/214027?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Adaptation",
+                "id": 214027
+              },
+              "description": "Removes any loss of control effect with a duration of 5 seconds or more. This effect can only occur once every 1 min.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 1
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/25?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Death Sentence",
+              "id": 25
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/198500?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Death Sentence",
+                "id": 198500
+              },
+              "description": "Execute now has a 15 yard range, causing you to charge to targets when used.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 2
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/170?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Battle Trance",
+              "id": 170
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/213857?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Battle Trance",
+                "id": 213857
+              },
+              "description": "You go into a trance causing you to regenerate 3% of your health and generate 5 Rage every 3 sec for 18 sec after using Raging Blow twice in a row on a target.\r\n\r\nUsing Raging Blow on a new target will cancel this effect.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 3
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/172?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Thirst for Battle",
+              "id": 172
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/199202?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Thirst for Battle",
+                "id": 199202
+              },
+              "description": "Bloodthirst clears all snares and increases your movement speed by 15% for 2 sec.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 4
+        }
+      ]
+    },
+    {
+      "specialization": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/71?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Arms",
+        "id": 71
+      },
+      "talents": [
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22360?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Sudden Death",
+            "id": 22360
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/29725?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Sudden Death",
+              "id": 29725
+            },
+            "description": "Your attacks have a chance to make your next Execute cost no Rage, be usable on any target regardless of their health, and deal damage as if you spent 40 Rage.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 0,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/19676?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Double Time",
+            "id": 19676
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/103827?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Double Time",
+              "id": 103827
+            },
+            "description": "Increases the maximum number of charges on Charge by 1, and reduces its cooldown by 3 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 1,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22380?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Massacre",
+            "id": 22380
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/281001?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Massacre",
+              "id": 281001
+            },
+            "description": "Execute is now usable on targets below 35% health.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 2,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22627?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Bounding Stride",
+            "id": 22627
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202163?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Bounding Stride",
+              "id": 202163
+            },
+            "description": "Reduces the cooldown on Heroic Leap by 15 sec, and Heroic Leap now also increases your run speed by 70% for 3 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 3,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22391?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Warbreaker",
+            "id": 22391
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/262161?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Warbreaker",
+              "id": 262161
+            },
+            "description": "Smash the ground and shatter the armor of all enemies within 8 yds, dealing 15,898 Physical damage and increasing damage you deal to them by 30% for 10 sec.",
+            "cast_time": "Instant",
+            "cooldown": "45 sec cooldown"
+          },
+          "tier_index": 4,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22394?namespace=static-8.3.0_32861-us"
+            },
+            "name": "In For The Kill",
+            "id": 22394
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/248621?namespace=static-8.3.0_32861-us"
+              },
+              "name": "In For The Kill",
+              "id": 248621
+            },
+            "description": "Colossus Smash increases your Haste by 10%, or by 20% if the target is below 20% health. Lasts 10 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 5,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/21204?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Anger Management",
+            "id": 21204
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/152278?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Anger Management",
+              "id": 152278
+            },
+            "description": "Every 20 Rage you spend reduces the remaining cooldown on Recklessness by 1 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 6,
+          "column_index": 0
+        }
+      ],
+      "pvp_talent_slots": [
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3587?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Adaptation",
+              "id": 3587
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/214027?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Adaptation",
+                "id": 214027
+              },
+              "description": "Removes any loss of control effect with a duration of 5 seconds or more. This effect can only occur once every 1 min.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 1
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/29?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Shadow of the Colossus",
+              "id": 29
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/198807?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Shadow of the Colossus",
+                "id": 198807
+              },
+              "description": "Charge resets the cooldown of your Overpower and Rage gained from Charge increased by 15.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 2
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/31?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Storm of Destruction",
+              "id": 31
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/236308?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Storm of Destruction",
+                "id": 236308
+              },
+              "description": "Reduces the cooldown of Bladestorm by 33%, and Bladestorm now also applies Mortal Wound to all targets you hit.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 3
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3522?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Death Sentence",
+              "id": 3522
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/198500?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Death Sentence",
+                "id": 198500
+              },
+              "description": "Execute now has a 15 yard range, causing you to charge to targets when used.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 4
+        }
+      ]
+    },
+    {
+      "specialization": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-8.3.0_32861-us"
+        },
+        "name": "Protection",
+        "id": 73
+      },
+      "talents": [
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/15760?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Into the Fray",
+            "id": 15760
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202603?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Into the Fray",
+              "id": 202603
+            },
+            "description": "You gain 3% Haste for each enemy or ally within 10 yards, up to 15% Haste.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 0,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22629?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Bounding Stride",
+            "id": 22629
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202163?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Bounding Stride",
+              "id": 202163
+            },
+            "description": "Reduces the cooldown on Heroic Leap by 15 sec, and Heroic Leap now also increases your run speed by 70% for 3 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 1,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22626?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Unstoppable Force",
+            "id": 22626
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/275336?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Unstoppable Force",
+              "id": 275336
+            },
+            "description": "Avatar increases the damage of Thunder Clap by 30%, and reduces its cooldown by 50%.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 2,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22488?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Bolster",
+            "id": 22488
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/280001?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Bolster",
+              "id": 280001
+            },
+            "description": "Last Stand's cooldown is reduced by 60 sec, and it additionally causes you to block all melee attacks.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 3,
+          "column_index": 2
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22631?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Rumbling Earth",
+            "id": 22631
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/275339?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Rumbling Earth",
+              "id": 275339
+            },
+            "description": "When Shockwave strikes at least 3 targets, its cooldown is reduced by 15 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 4,
+          "column_index": 1
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/22395?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Booming Voice",
+            "id": 22395
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/202743?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Booming Voice",
+              "id": 202743
+            },
+            "description": "Demoralizing Shout also generates 40 Rage, and increases damage you deal to affected targets by 15%.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 5,
+          "column_index": 0
+        },
+        {
+          "talent": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/talent/21204?namespace=static-8.3.0_32861-us"
+            },
+            "name": "Anger Management",
+            "id": 21204
+          },
+          "spell_tooltip": {
+            "spell": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/spell/152278?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Anger Management",
+              "id": 152278
+            },
+            "description": "Every 20 Rage you spend reduces the remaining cooldown on Recklessness by 1 sec.",
+            "cast_time": "Passive"
+          },
+          "tier_index": 6,
+          "column_index": 0
+        }
+      ],
+      "pvp_talent_slots": [
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3593?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Adaptation",
+              "id": 3593
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/214027?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Adaptation",
+                "id": 214027
+              },
+              "description": "Removes any loss of control effect with a duration of 5 seconds or more. This effect can only occur once every 1 min.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 1
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/171?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Morale Killer",
+              "id": 171
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/199023?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Morale Killer",
+                "id": 199023
+              },
+              "description": "Reduces the cooldown of Demoralizing Shout by 15 sec, and Demoralizing Shout now reduces the damage enemies deal to all targets, not just you.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 2
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/178?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Warpath",
+              "id": 178
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/199086?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Warpath",
+                "id": 199086
+              },
+              "description": "When landing with Heroic Leap, all targets are stunned for 3 sec.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 3
+        },
+        {
+          "selected": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/pvp-talent/175?namespace=static-8.3.0_32861-us"
+              },
+              "name": "Thunderstruck",
+              "id": 175
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/199045?namespace=static-8.3.0_32861-us"
+                },
+                "name": "Thunderstruck",
+                "id": 199045
+              },
+              "description": "Thunder Clap roots all targets for 1 sec.",
+              "cast_time": "Passive"
+            }
+          },
+          "slot_number": 4
+        }
+      ]
+    }
+  ],
+  "active_specialization": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-us"
+    },
+    "name": "Fury",
+    "id": 72
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 107811065,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  }
+}</value>
+  </data>
 </root>
