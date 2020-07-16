@@ -16,6 +16,7 @@
         ICharacterPvpApi,
         ICharacterQuestsApi,
         ICharacterReputationsApi,
+        ICharacterSpecializationsApi,
         ICharacterStatisticsApi,
         ICharacterTitlesApi,
         IGuildApi

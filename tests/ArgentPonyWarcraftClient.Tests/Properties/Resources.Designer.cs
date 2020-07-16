@@ -824,6 +824,34 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/specializations?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;specializations&quot;: [
+        ///    {
+        ///      &quot;specialization&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///        &quot;name&quot;: &quot;Fury&quot;,
+        ///        &quot;id&quot;: 72
+        ///      },
+        ///      &quot;talents&quot;: [
+        ///        {
+        ///          &quot;talent&quot;: {
+        ///            &quot;key&quot;: {
+        ///           [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterSpecializationsSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterSpecializationsSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/statistics?namespace=profile-us&quot;
         ///    }
         ///  },
