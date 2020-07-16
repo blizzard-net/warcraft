@@ -61,11 +61,118 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow/collections?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;user&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user&quot;
+        ///    },
+        ///    &quot;profile&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pets&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow/collections/pets?namespace=profile-us&quot;
+        ///  },
+        ///  &quot;mounts&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AccountCollectionsIndexResponse {
+            get {
+                return ResourceManager.GetString("AccountCollectionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;code&quot;:403, &quot;type&quot;:&quot;Forbidden&quot;, &quot;detail&quot;:&quot;Account Inactive&quot;}.
         /// </summary>
         internal static string AccountInactive403ForbiddenResponse {
             get {
                 return ResourceManager.GetString("AccountInactive403ForbiddenResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow/collections/mounts?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;user&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user&quot;
+        ///    },
+        ///    &quot;profile&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;mounts&quot;: [
+        ///    {
+        ///      &quot;mount&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///       [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AccountMountsCollectionSummaryResponse {
+            get {
+                return ResourceManager.GetString("AccountMountsCollectionSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow/collections/pets?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;user&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user&quot;
+        ///    },
+        ///    &quot;profile&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;pets&quot;: [
+        ///    {
+        ///      &quot;species&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/202?namespace=static-8.3.0_32861-us&quot;
+        ///        },
+        ///         [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AccountPetsCollectionSummaryResponse {
+            get {
+                return ResourceManager.GetString("AccountPetsCollectionSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;user&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user&quot;
+        ///    },
+        ///    &quot;profile&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1142637,
+        ///  &quot;wow_accounts&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 19995845,
+        ///      &quot;characters&quot;: [
+        ///        {
+        ///          &quot;character&quot;: {
+        ///            &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/cha [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AccountProfileSummaryResponse {
+            get {
+                return ResourceManager.GetString("AccountProfileSummaryResponse", resourceCulture);
             }
         }
         
@@ -2577,6 +2684,32 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string ProfessionsIndexResponse {
             get {
                 return ResourceManager.GetString("ProfessionsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow/protected-character/1262-107811065?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;user&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user&quot;
+        ///    },
+        ///    &quot;profile&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 107811065,
+        ///  &quot;name&quot;: &quot;Drinian&quot;,
+        ///  &quot;money&quot;: 1466691688,
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/chara [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ProtectedCharacterProfileSummaryResponse {
+            get {
+                return ResourceManager.GetString("ProtectedCharacterProfileSummaryResponse", resourceCulture);
             }
         }
         

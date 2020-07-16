@@ -6,7 +6,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -84,13 +83,10 @@ namespace ArgentPonyWarcraftClient
         /// <param name="requestUri">
         ///     The URI the request is sent to.
         /// </param>
-        /// <param name="arrayName">
-        ///     The name of the array to deserialize. This is used to avoid using a root object for JSON arrays.
-        /// </param>
         /// <returns>
         ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        private async Task<RequestResult<T>> Get<T>(Region region, string requestUri, string arrayName = null)
+        private async Task<RequestResult<T>> Get<T>(Region region, string requestUri)
         {
             // Acquire a new OAuth token if we don't have one. Get a new one if it's expired.
             if (_token == null || DateTime.UtcNow >= _tokenExpiration)
@@ -99,8 +95,29 @@ namespace ArgentPonyWarcraftClient
                 _tokenExpiration = DateTime.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
             }
 
+            return await Get<T>(region, requestUri, _token.AccessToken);
+        }
+
+        /// <summary>
+        ///     Retrieve an item of type <typeparamref name="T"/> from the Blizzard World of Warcraft Game Data or Profile API.
+        /// </summary>
+        /// <typeparam name="T">
+        ///     The return type.
+        /// </typeparam>
+        /// <param name="region">The region from which to request a token.</param>
+        /// <param name="requestUri">
+        ///     The URI the request is sent to.
+        /// </param>
+        /// <param name="accessToken">
+        ///     The OAuth access token.
+        /// </param>
+        /// <returns>
+        ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
+        /// </returns>
+        private async Task<RequestResult<T>> Get<T>(Region region, string requestUri, string accessToken)
+        {
             // Add an authentication header with the token.
-            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token.AccessToken);
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
             // Retrieve the response.
             HttpResponseMessage response = await _client.GetAsync(requestUri).ConfigureAwait(false);
@@ -131,11 +148,6 @@ namespace ArgentPonyWarcraftClient
 
             try
             {
-                if (arrayName != null)
-                {
-                    json = JObject.Parse(json).SelectToken(arrayName).ToString();
-                }
-
                 RequestResult<T> requestResult = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
                 {
                     ContractResolver = new ArgentPonyWarcraftClientContractResolver(),
