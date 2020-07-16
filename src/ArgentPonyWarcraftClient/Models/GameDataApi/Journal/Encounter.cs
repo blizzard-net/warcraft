@@ -65,6 +65,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the difficulty modes of the encounter.
         /// </summary>
         [JsonProperty("modes")]
-        public Mode[] Modes { get; set; }
+        public EnumType[] Modes { get; set; }
     }
 }
