@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the difficulty mode.
         /// </summary>
         [JsonProperty("mode")]
-        public Mode Mode { get; set; }
+        public EnumType Mode { get; set; }
 
         /// <summary>
         /// Gets the number of players.
