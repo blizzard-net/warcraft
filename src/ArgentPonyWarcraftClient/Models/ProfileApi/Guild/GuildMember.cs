@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public GuildCharacter Character { get; set; }
 
         /// <summary>
         /// Gets the character's rank in the guild.
         /// </summary>
-        [JsonProperty("rank")]
+        [JsonPropertyName("rank")]
         public long Rank { get; set; }
     }
 }

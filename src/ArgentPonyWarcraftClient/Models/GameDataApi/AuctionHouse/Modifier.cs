@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the type of modifier.
         /// </summary>
-        [JsonProperty("type")]
+        [JsonPropertyName("type")]
         public long Type { get; set; }
 
         /// <summary>
         /// Gets the value of the modifier.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public long Value { get; set; }
     }
 }

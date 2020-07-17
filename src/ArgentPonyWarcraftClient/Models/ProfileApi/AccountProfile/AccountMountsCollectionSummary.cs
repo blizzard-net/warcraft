@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the summary of the mounts the account has obtained.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public LinksForAccountProfile Links { get; set; }
 
         /// <summary>
         /// Gets the mounts for the account.
         /// </summary>
-        [JsonProperty("mounts")]
+        [JsonPropertyName("mounts")]
         public AccountMount[] Mounts { get; set; }
     }
 }

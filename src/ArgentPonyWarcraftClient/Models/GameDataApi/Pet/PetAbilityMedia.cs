@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the pet ability media.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; private set; }
 
         /// <summary>
         /// Gets a collection of media assets.
         /// </summary>
-        [JsonProperty("assets")]
+        [JsonPropertyName("assets")]
         public Asset[] Assets { get; private set; }
 
         /// <summary>
         /// Gets the ID of the pet ability.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
     }
 }

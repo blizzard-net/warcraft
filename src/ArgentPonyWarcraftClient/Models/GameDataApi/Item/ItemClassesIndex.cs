@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of item classes.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; private set; }
 
         /// <summary>
         /// Gets references to item classes.
         /// </summary>
-        [JsonProperty("item_classes")]
+        [JsonPropertyName("item_classes")]
         public ItemClassReference[] ItemClasses { get; private set; }
     }
 }

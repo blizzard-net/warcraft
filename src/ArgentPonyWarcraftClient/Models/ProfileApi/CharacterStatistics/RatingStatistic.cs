@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the rating.
         /// </summary>
-        [JsonProperty("rating")]
+        [JsonPropertyName("rating")]
         public long Rating { get; set; }
 
         /// <summary>
         /// Gets the rating bonus.
         /// </summary>
-        [JsonProperty("rating_bonus")]
+        [JsonPropertyName("rating_bonus")]
         public double RatingBonus { get; set; }
 
         /// <summary>
         /// Gets the value.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public double Value { get; set; }
     }
 }

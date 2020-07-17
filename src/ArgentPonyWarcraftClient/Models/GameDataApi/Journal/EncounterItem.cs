@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the encounter item.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the item.
         /// </summary>
-        [JsonProperty("item")]
+        [JsonPropertyName("item")]
         public ItemReference Item { get; set; }
     }
 }

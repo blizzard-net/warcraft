@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the pet ability.
         /// </summary>
-        [JsonProperty("ability")]
+        [JsonPropertyName("ability")]
         public PetAbilityReference Ability { get; set; }
 
         /// <summary>
         /// Gets the slot number for the pet ability.
         /// </summary>
-        [JsonProperty("slot")]
+        [JsonPropertyName("slot")]
         public long Slot { get; set; }
 
         /// <summary>
         /// Gets the required pet level to use the pet ability.
         /// </summary>
-        [JsonProperty("required_level")]
+        [JsonPropertyName("required_level")]
         public long RequiredLevel { get; set; }
     }
 }

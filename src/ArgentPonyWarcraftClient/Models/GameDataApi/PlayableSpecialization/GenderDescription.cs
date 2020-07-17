@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the description for male characters of a playable specialization.
         /// </summary>
-        [JsonProperty("male")]
+        [JsonPropertyName("male")]
         public string Male { get; set; }
 
         /// <summary>
         /// Gets the description for female characters of a playable specialization.
         /// </summary>
-        [JsonProperty("female")]
+        [JsonPropertyName("female")]
         public string Female { get; set; }
     }
 }

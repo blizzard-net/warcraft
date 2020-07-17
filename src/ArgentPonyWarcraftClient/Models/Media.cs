@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the key for the media.
         /// </summary>
-        [JsonProperty("key")]
+        [JsonPropertyName("key")]
         public Self Key { get; private set; }
 
         /// <summary>
         /// Gets the ID of the media.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public int Id { get; private set; }
     }
 }

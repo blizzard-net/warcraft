@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the PvP rewards.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets a reference to the PvP season.
         /// </summary>
-        [JsonProperty("season")]
+        [JsonPropertyName("season")]
         public PvpSeasonReference Season { get; set; }
 
         /// <summary>
         /// Gets the rewards for the PvP season.
         /// </summary>
-        [JsonProperty("rewards")]
+        [JsonPropertyName("rewards")]
         public PvpSeasonReward[] Rewards { get; set; }
     }
 }

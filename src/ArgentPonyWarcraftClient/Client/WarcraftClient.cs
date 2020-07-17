@@ -4,14 +4,16 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <inheritdoc />
     public partial class WarcraftClient : IWarcraftClient
     {
+        private static readonly JsonSerializerOptions s_jsonSerializerOptions;
+
         private readonly HttpClient _client;
         private readonly string _clientId;
         private readonly string _clientSecret;
@@ -20,6 +22,15 @@ namespace ArgentPonyWarcraftClient
 
         private OAuthAccessToken _token;
         private DateTime _tokenExpiration;
+
+        /// <summary>
+        /// A static constructor for the <see cref="WarcraftClient"/> class.
+        /// </summary>
+        static WarcraftClient()
+        {
+            s_jsonSerializerOptions = new JsonSerializerOptions();
+            s_jsonSerializerOptions.Converters.Add(new EpochConverter());
+        }
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="WarcraftClient"/> class.
@@ -81,7 +92,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// The Blizzard OAuth client secret.
         /// </summary>
-        internal string ClientSecret =>  _clientSecret;
+        internal string ClientSecret => _clientSecret;
 
         /// <summary>
         /// The language that results will be in.
@@ -157,7 +168,7 @@ namespace ArgentPonyWarcraftClient
 
                     if (!string.IsNullOrEmpty(content))
                     {
-                        RequestResult<T> requestError = JsonConvert.DeserializeObject<RequestError>(content);
+                        RequestResult<T> requestError = JsonSerializer.Deserialize<RequestError>(content);
                         return requestError;
                     }
                 }
@@ -173,25 +184,16 @@ namespace ArgentPonyWarcraftClient
 
             try
             {
-                RequestResult<T> requestResult = JsonConvert.DeserializeObject<T>(json, new JsonSerializerSettings
-                {
-                    ContractResolver = new ArgentPonyWarcraftClientContractResolver(),
-#if DEBUG
-                    MissingMemberHandling = MissingMemberHandling.Error
-#else
-                    MissingMemberHandling = MissingMemberHandling.Ignore
-#endif
-                });
-
+                RequestResult<T> requestResult = JsonSerializer.Deserialize<T>(json, s_jsonSerializerOptions);
                 return requestResult;
             }
-            catch (JsonReaderException ex)
+            catch (JsonException ex)
             {
                 var requestError = new RequestError
                 {
-                    Code = string.Empty,
+                    Code = null,
                     Detail = ex.Message,
-                    Type = typeof(JsonReaderException).ToString()
+                    Type = typeof(JsonException).ToString()
                 };
                 return new RequestResult<T>(requestError);
             }
@@ -220,7 +222,7 @@ namespace ArgentPonyWarcraftClient
 
             HttpResponseMessage request = await _client.PostAsync($"{host}/oauth/token", requestBody);
             string response = await request.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<OAuthAccessToken>(response);
+            return JsonSerializer.Deserialize<OAuthAccessToken>(response);
         }
 
         /// <summary>

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the key for the guild.
         /// </summary>
-        [JsonProperty("key")]
+        [JsonPropertyName("key")]
         public Self Key { get; set; }
 
         /// <summary>
         /// Gets the name of the guild.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the ID of the guild.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the guild's realm.
         /// </summary>
-        [JsonProperty("realm")]
+        [JsonPropertyName("realm")]
         public RealmReference Realm { get; set; }
 
         /// <summary>
         /// Gets the faction of the guild (Alliance or Horde).
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumType Faction { get; set; }
     }
 }

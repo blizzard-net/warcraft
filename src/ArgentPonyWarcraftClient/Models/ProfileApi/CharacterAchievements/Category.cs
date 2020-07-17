@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the category.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the category.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the subcategories of the category, if any.
         /// </summary>
-        [JsonProperty("sub_categories", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("sub_categories")]
         public Category[] SubCategories { get; set; }
 
         /// <summary>
         /// Gets the character achievement statistics in the category.
         /// </summary>
-        [JsonProperty("statistics")]
+        [JsonPropertyName("statistics")]
         public Statistic[] Statistics { get; set; }
     }
 }

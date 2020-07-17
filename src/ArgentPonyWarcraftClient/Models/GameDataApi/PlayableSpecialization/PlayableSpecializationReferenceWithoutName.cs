@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the key for the playable specialization.
         /// </summary>
-        [JsonProperty("key")]
+        [JsonPropertyName("key")]
         public Self Key { get; set; }
 
         /// <summary>
         /// Gets the ID of the playable specialization.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
     }
 }

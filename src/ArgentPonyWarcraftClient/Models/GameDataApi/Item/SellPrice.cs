@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the numeric value of the sell price.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public long Value { get; set; }
 
         /// <summary>
         /// Gets the currency display information for the sell price.
         /// </summary>
-        [JsonProperty("display_strings")]
+        [JsonPropertyName("display_strings")]
         public CurrencyDisplay DisplayStrings { get; set; }
     }
 }

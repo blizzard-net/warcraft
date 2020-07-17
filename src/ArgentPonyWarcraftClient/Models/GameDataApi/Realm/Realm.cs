@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,67 +10,67 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the realm.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the realm.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the region to which this realm belongs.
         /// </summary>
-        [JsonProperty("region")]
+        [JsonPropertyName("region")]
         public RegionReference Region { get; set; }
 
         /// <summary>
         /// Gets a reference to the connected realm.
         /// </summary>
-        [JsonProperty("connected_realm")]
+        [JsonPropertyName("connected_realm")]
         public Self ConnectedRealm { get; set; }
 
         /// <summary>
         /// Gets the name of the realm.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the category of the realm.
         /// </summary>
-        [JsonProperty("category")]
+        [JsonPropertyName("category")]
         public string Category { get; set; }
 
         /// <summary>
         /// Gets the locale of the realm.
         /// </summary>
-        [JsonProperty("locale")]
+        [JsonPropertyName("locale")]
         public string Locale { get; set; }
 
         /// <summary>
         /// Gets the time zone for the realm.
         /// </summary>
-        [JsonProperty("timezone")]
+        [JsonPropertyName("timezone")]
         public string Timezone { get; set; }
 
         /// <summary>
         /// Gets the realm type.
         /// </summary>
-        [JsonProperty("type")]
+        [JsonPropertyName("type")]
         public EnumType Type { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this is a tournament realm.
         /// </summary>
-        [JsonProperty("is_tournament")]
+        [JsonPropertyName("is_tournament")]
         public bool IsTournament { get; set; }
 
         /// <summary>
         /// Gets the slug for the realm.
         /// </summary>
-        [JsonProperty("slug")]
+        [JsonPropertyName("slug")]
         public string Slug { get; set; }
     }
 }

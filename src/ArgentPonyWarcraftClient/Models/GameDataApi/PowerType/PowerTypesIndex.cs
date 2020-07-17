@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of power types.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to the power types.
         /// </summary>
-        [JsonProperty("power_types")]
+        [JsonPropertyName("power_types")]
         public PowerTypeReference[] PowerTypes { get; set; }
     }
 }

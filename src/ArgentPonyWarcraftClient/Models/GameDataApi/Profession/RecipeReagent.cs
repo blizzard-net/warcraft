@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the reagent item.
         /// </summary>
-        [JsonProperty("reagent")]
+        [JsonPropertyName("reagent")]
         public ItemReference Reagent { get; set; }
 
         /// <summary>
         /// Gets the quantity of the reagent required.
         /// </summary>
-        [JsonProperty("quantity")]
+        [JsonPropertyName("quantity")]
         public long Quantity { get; set; }
     }
 }

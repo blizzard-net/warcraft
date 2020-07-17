@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the border.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the media associated with the border.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
 
         /// <summary>
         /// Gets the border color.
         /// </summary>
-        [JsonProperty("color")]
+        [JsonPropertyName("color")]
         public Color Color { get; set; }
     }
 }

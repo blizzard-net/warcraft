@@ -48,7 +48,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
                             continue;
                         }
 
-                        yield return new object[] {locale, region};
+                        yield return new object[] { locale, region };
                     }
                 }
             }

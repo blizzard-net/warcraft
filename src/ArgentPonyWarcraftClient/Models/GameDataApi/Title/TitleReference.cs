@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the key for the title.
         /// </summary>
-        [JsonProperty("key")]
+        [JsonPropertyName("key")]
         public Self Key { get; set; }
 
         /// <summary>
         /// Gets the name of the title.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the ID of the title.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the display string for the title.
         /// </summary>
-        [JsonProperty("display_string")]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
     }
 }

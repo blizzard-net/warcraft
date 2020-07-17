@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the instance.
         /// </summary>
-        [JsonProperty("instance")]
+        [JsonPropertyName("instance")]
         public InstanceReference Instance { get; set; }
 
         /// <summary>
         /// Gets the dungeon completions for the instance, organized by difficulty mode.
         /// </summary>
-        [JsonProperty("modes")]
+        [JsonPropertyName("modes")]
         public CharacterInstanceMode[] Modes { get; set; }
     }
 }

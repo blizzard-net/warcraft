@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of Mythic Keystone Leaderboards.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to the Mythic Keystone Leaderboards.
         /// </summary>
-        [JsonProperty("current_leaderboards")]
+        [JsonPropertyName("current_leaderboards")]
         public MythicKeystoneLeaderboardReference[] CurrentLeaderboards { get; set; }
     }
 }

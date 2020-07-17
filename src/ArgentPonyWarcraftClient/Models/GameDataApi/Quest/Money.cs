@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the numerical value of the money.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public long Value { get; set; }
 
         /// <summary>
         /// Gets the monetary amount as gold, silver, and copper units.
         /// </summary>
-        [JsonProperty("units")]
+        [JsonPropertyName("units")]
         public Units Units { get; set; }
     }
 }

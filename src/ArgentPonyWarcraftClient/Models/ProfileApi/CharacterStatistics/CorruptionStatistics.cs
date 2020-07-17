@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the corruption level.
         /// </summary>
-        [JsonProperty("corruption")]
+        [JsonPropertyName("corruption")]
         public long Corruption { get; set; }
 
         /// <summary>
         /// Gets the corruption resistance.
         /// </summary>
-        [JsonProperty("corruption_resistance")]
+        [JsonPropertyName("corruption_resistance")]
         public long CorruptionResistance { get; set; }
 
         /// <summary>
         /// Gets the effective corruption.
         /// </summary>
-        [JsonProperty("effective_corruption")]
+        [JsonPropertyName("effective_corruption")]
         public long EffectiveCorruption { get; set; }
     }
 }

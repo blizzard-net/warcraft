@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the stat type.
         /// </summary>
-        [JsonProperty("type")]
+        [JsonPropertyName("type")]
         public EnumType Type { get; set; }
 
         /// <summary>
         /// Gets the numerical value of the stat modifier.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public long Value { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the stat modifier is negated.
         /// </summary>
-        [JsonProperty("is_negated", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("is_negated")]
         public bool? IsNegated { get; set; }
 
         /// <summary>
         /// Gets the display details for the stat modifier.
         /// </summary>
-        [JsonProperty("display")]
+        [JsonPropertyName("display")]
         public StatDisplay Display { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the stat modifier is an equip bonus.
         /// </summary>
-        [JsonProperty("is_equip_bonus", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("is_equip_bonus")]
         public bool? IsEquipBonus { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
         [Fact]
         public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown()
         {
-            var exception = Assert.Throws<ArgumentNullException>(() => 
+            var exception = Assert.Throws<ArgumentNullException>(() =>
                 _services.AddWarcraftClients(null, "fake-client-secret")
             );
 
@@ -28,7 +28,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
         [Fact]
         public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown()
         {
-            var exception = Assert.Throws<ArgumentNullException>(() => 
+            var exception = Assert.Throws<ArgumentNullException>(() =>
                 _services.AddWarcraftClients("fake-client-id", null)
             );
 

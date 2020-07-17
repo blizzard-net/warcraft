@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the PvP Leaderboard.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets a reference to the PvP season.
         /// </summary>
-        [JsonProperty("season")]
+        [JsonPropertyName("season")]
         public PvpSeasonReference Season { get; set; }
 
         /// <summary>
         /// Gets the name of the PvP leaderboard.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// A PvP bracket.
         /// </summary>
-        [JsonProperty("bracket")]
+        [JsonPropertyName("bracket")]
         public Bracket Bracket { get; set; }
 
         /// <summary>
         /// Gets the entries in the PvP leaderboard.
         /// </summary>
-        [JsonProperty("entries")]
+        [JsonPropertyName("entries")]
         public PvpLeaderboardEntry[] Entries { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,37 +10,37 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the azerite essence.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the azerite essence.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the azerite essence.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets references to the allowed specializations for the azerite essence.
         /// </summary>
-        [JsonProperty("allowed_specializations")]
+        [JsonPropertyName("allowed_specializations")]
         public PlayableSpecializationReference[] AllowedSpecializations { get; set; }
 
         /// <summary>
         /// Gets the powers for the azerite essence.
         /// </summary>
-        [JsonProperty("powers")]
+        [JsonPropertyName("powers")]
         public Power[] Powers { get; set; }
 
         /// <summary>
         /// Gets the media associated with the azerite essence.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
     }
 }

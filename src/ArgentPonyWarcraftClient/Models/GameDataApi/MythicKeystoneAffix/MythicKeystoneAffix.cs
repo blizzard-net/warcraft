@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the mythic keystone affix.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the mythic keystone affix.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the mythic keystone affix.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the description of the mythic keystone affix.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets the media for this mythic keystone affix.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
     }
 }

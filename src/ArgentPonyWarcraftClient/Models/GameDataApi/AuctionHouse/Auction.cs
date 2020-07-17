@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,43 +10,43 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the auction.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the item being auctioned.
         /// </summary>
-        [JsonProperty("item")]
+        [JsonPropertyName("item")]
         public AuctionItem Item { get; set; }
 
         /// <summary>
         /// Gets the quantity of the item being auctioned.
         /// </summary>
-        [JsonProperty("quantity")]
+        [JsonPropertyName("quantity")]
         public long Quantity { get; set; }
 
         /// <summary>
         /// Gets the unit price of the item being auctioned.
         /// </summary>
-        [JsonProperty("unit_price", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("unit_price")]
         public long? UnitPrice { get; set; }
 
         /// <summary>
         /// Gets the approximate time remaining for the auction (SHORT or VERY_LONG).
         /// </summary>
-        [JsonProperty("time_left")]
+        [JsonPropertyName("time_left")]
         public string TimeLeft { get; set; }
 
         /// <summary>
         /// Gets the current bid, if any, for the auction.
         /// </summary>
-        [JsonProperty("bid", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("bid")]
         public long? Bid { get; set; }
 
         /// <summary>
         /// Gets the buyout price of the item being auctioned.
         /// </summary>
-        [JsonProperty("buyout", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("buyout")]
         public long? Buyout { get; set; }
     }
 }

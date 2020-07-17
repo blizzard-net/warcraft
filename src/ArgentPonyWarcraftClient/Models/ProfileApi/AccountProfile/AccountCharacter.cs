@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,61 +10,61 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a link to the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public Self Character { get; set; }
 
         /// <summary>
         /// Gets a link to the protected character information.
         /// </summary>
-        [JsonProperty("protected_character")]
+        [JsonPropertyName("protected_character")]
         public Self ProtectedCharacter { get; set; }
 
         /// <summary>
         /// Gets the name of the character.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the ID of the character.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's realm.
         /// </summary>
-        [JsonProperty("realm")]
+        [JsonPropertyName("realm")]
         public RealmReference Realm { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's class.
         /// </summary>
-        [JsonProperty("playable_class")]
+        [JsonPropertyName("playable_class")]
         public PlayableClassReference PlayableClass { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's race.
         /// </summary>
-        [JsonProperty("playable_race")]
+        [JsonPropertyName("playable_race")]
         public PlayableClassReference PlayableRace { get; set; }
 
         /// <summary>
         /// Gets the gender of the character.
         /// </summary>
-        [JsonProperty("gender")]
+        [JsonPropertyName("gender")]
         public EnumType Gender { get; set; }
 
         /// <summary>
         /// Gets the faction of the character (Alliance or Horde).
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumType Faction { get; set; }
 
         /// <summary>
         /// Gets the level of the character.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public long Level { get; set; }
     }
 }

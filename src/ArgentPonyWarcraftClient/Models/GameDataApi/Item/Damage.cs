@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the minimum damage.
         /// </summary>
-        [JsonProperty("min_value")]
+        [JsonPropertyName("min_value")]
         public long MinValue { get; set; }
 
         /// <summary>
         /// Gets the maximum damage.
         /// </summary>
-        [JsonProperty("max_value")]
+        [JsonPropertyName("max_value")]
         public long MaxValue { get; set; }
 
         /// <summary>
         /// Gets the display string that describes the damage.
         /// </summary>
-        [JsonProperty("display_string")]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
 
         /// <summary>
         /// Gets the damage class.
         /// </summary>
-        [JsonProperty("damage_class")]
+        [JsonPropertyName("damage_class")]
         public EnumType DamageClass { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,7 +10,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a self-reference.
         /// </summary>
-        [JsonProperty("self")]
+        [JsonPropertyName("self")]
         public Self Self { get; private set; }
     }
 }

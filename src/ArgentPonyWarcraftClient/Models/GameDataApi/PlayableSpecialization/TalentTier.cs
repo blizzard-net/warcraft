@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the player level at which the talent tier unlocks.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public long Level { get; set; }
 
         /// <summary>
         /// Gets references to the talents for this tier.
         /// </summary>
-        [JsonProperty("talents")]
+        [JsonPropertyName("talents")]
         public TalentTierElement[] Talents { get; set; }
 
         /// <summary>
         /// Gets the index of the talent tier.
         /// </summary>
-        [JsonProperty("tier_index")]
+        [JsonPropertyName("tier_index")]
         public long TierIndex { get; set; }
     }
 }

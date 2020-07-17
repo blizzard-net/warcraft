@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the character's skill points in this profession skill tier.
         /// </summary>
-        [JsonProperty("skill_points")]
+        [JsonPropertyName("skill_points")]
         public long SkillPoints { get; set; }
 
         /// <summary>
         /// Gets the maximum possible skill points in this profession skill tier.
         /// </summary>
-        [JsonProperty("max_skill_points")]
+        [JsonPropertyName("max_skill_points")]
         public long MaxSkillPoints { get; set; }
 
         /// <summary>
         /// Gets a reference to the skill tier.
         /// </summary>
-        [JsonProperty("tier")]
+        [JsonPropertyName("tier")]
         public SkillTierReferenceWithoutKey Tier { get; set; }
 
         /// <summary>
         /// Gets references to the known recipes for this profession skill tier.
         /// </summary>
-        [JsonProperty("known_recipes", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("known_recipes")]
         public RecipeReference[] KnownRecipes { get; set; }
     }
 }

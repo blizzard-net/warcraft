@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the aggregates for the Alliance.
         /// </summary>
-        [JsonProperty("alliance")]
+        [JsonPropertyName("alliance")]
         public FactionAchievementAggregates Alliance { get; private set; }
 
         /// <summary>
         /// Gets the aggregates for the Horde.
         /// </summary>
-        [JsonProperty("horde")]
+        [JsonPropertyName("horde")]
         public FactionAchievementAggregates Horde { get; private set; }
     }
 }

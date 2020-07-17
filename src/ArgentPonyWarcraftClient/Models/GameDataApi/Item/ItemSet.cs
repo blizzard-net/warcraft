@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,37 +10,37 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the item set.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the item set.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the item set.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets references to the items in the item set.
         /// </summary>
-        [JsonProperty("items")]
+        [JsonPropertyName("items")]
         public ItemReference[] Items { get; set; }
 
         /// <summary>
         /// Gets the item set bonuses.
         /// </summary>
-        [JsonProperty("effects")]
+        [JsonPropertyName("effects")]
         public Effect[] Effects { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the effect is active.
         /// </summary>
-        [JsonProperty("is_effect_active")]
+        [JsonPropertyName("is_effect_active")]
         public bool IsEffectActive { get; set; }
     }
 }

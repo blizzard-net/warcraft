@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,97 +10,97 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the item.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the item.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the item.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the item quality.
         /// </summary>
-        [JsonProperty("quality")]
+        [JsonPropertyName("quality")]
         public EnumType Quality { get; set; }
 
         /// <summary>
         /// Gets the item level of the item.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public long Level { get; set; }
 
         /// <summary>
         /// Gets the required character level for using the item.
         /// </summary>
-        [JsonProperty("required_level")]
+        [JsonPropertyName("required_level")]
         public long RequiredLevel { get; set; }
 
         /// <summary>
         /// Gets the media associated with this item.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
 
         /// <summary>
         /// Gets a reference to the item class.
         /// </summary>
-        [JsonProperty("item_class")]
+        [JsonPropertyName("item_class")]
         public ItemClassReference ItemClass { get; set; }
 
         /// <summary>
         /// Gets a reference to the item subclass.
         /// </summary>
-        [JsonProperty("item_subclass")]
+        [JsonPropertyName("item_subclass")]
         public ItemSubclassReference ItemSubclass { get; set; }
 
         /// <summary>
         /// Gets the inventory type for the item.
         /// </summary>
-        [JsonProperty("inventory_type")]
+        [JsonPropertyName("inventory_type")]
         public EnumType InventoryType { get; set; }
 
         /// <summary>
         /// Gets the purchase price of the item.
         /// </summary>
-        [JsonProperty("purchase_price")]
+        [JsonPropertyName("purchase_price")]
         public long PurchasePrice { get; set; }
 
         /// <summary>
         /// Gets the vendor sell price of the item.
         /// </summary>
-        [JsonProperty("sell_price")]
+        [JsonPropertyName("sell_price")]
         public long SellPrice { get; set; }
 
         /// <summary>
         /// Gets the maximum count of the item, which applies to stackable items.
         /// </summary>
-        [JsonProperty("max_count")]
+        [JsonPropertyName("max_count")]
         public long MaxCount { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the item can be equipped.
         /// </summary>
-        [JsonProperty("is_equippable")]
+        [JsonPropertyName("is_equippable")]
         public bool IsEquippable { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the item can be stacked in inventory.
         /// </summary>
-        [JsonProperty("is_stackable")]
+        [JsonPropertyName("is_stackable")]
         public bool IsStackable { get; set; }
 
         /// <summary>
         /// Gets item preview data.
         /// </summary>
-        [JsonProperty("preview_item")]
+        [JsonPropertyName("preview_item")]
         public PreviewItem PreviewItem { get; set; }
     }
 }

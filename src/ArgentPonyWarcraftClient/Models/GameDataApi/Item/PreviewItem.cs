@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,97 +10,97 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the item.
         /// </summary>
-        [JsonProperty("item")]
+        [JsonPropertyName("item")]
         public Media Item { get; set; }
 
         /// <summary>
         /// Gets the quality of the item.
         /// </summary>
-        [JsonProperty("quality")]
+        [JsonPropertyName("quality")]
         public EnumType Quality { get; set; }
 
         /// <summary>
         /// Gets the name of the item.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the media associated with this item.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
 
         /// <summary>
         /// Gets a reference to the item class.
         /// </summary>
-        [JsonProperty("item_class")]
+        [JsonPropertyName("item_class")]
         public ItemClassReference ItemClass { get; set; }
 
         /// <summary>
         /// Gets a reference to the item subclass.
         /// </summary>
-        [JsonProperty("item_subclass")]
+        [JsonPropertyName("item_subclass")]
         public ItemSubclassReference ItemSubclass { get; set; }
 
         /// <summary>
         /// Gets the inventory type for the item.
         /// </summary>
-        [JsonProperty("inventory_type")]
+        [JsonPropertyName("inventory_type")]
         public EnumType InventoryType { get; set; }
 
         /// <summary>
         /// Gets the binding type for the item.
         /// </summary>
-        [JsonProperty("binding")]
+        [JsonPropertyName("binding")]
         public EnumType Binding { get; set; }
 
         /// <summary>
         /// Gets an indication of whether the item is unique-equipped.
         /// </summary>
-        [JsonProperty("unique_equipped")]
+        [JsonPropertyName("unique_equipped")]
         public string UniqueEquipped { get; set; }
 
         /// <summary>
         /// Gets weapon information for the item.
         /// </summary>
-        [JsonProperty("weapon")]
+        [JsonPropertyName("weapon")]
         public Weapon Weapon { get; set; }
 
         /// <summary>
         /// Gets the stats associated with the item.
         /// </summary>
-        [JsonProperty("stats")]
+        [JsonPropertyName("stats")]
         public Stat[] Stats { get; set; }
 
         /// <summary>
         /// Gets the spells associated with the item.
         /// </summary>
-        [JsonProperty("spells")]
+        [JsonPropertyName("spells")]
         public ItemSpell[] Spells { get; set; }
 
         /// <summary>
         /// Gets the sell price of the item.
         /// </summary>
-        [JsonProperty("sell_price")]
+        [JsonPropertyName("sell_price")]
         public SellPrice SellPrice { get; set; }
 
         /// <summary>
         /// Gets the level requiements for using an item.
         /// </summary>
-        [JsonProperty("requirements")]
+        [JsonPropertyName("requirements")]
         public Requirements Requirements { get; set; }
 
         /// <summary>
         /// Gets the item level.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public DescribedValue Level { get; set; }
 
         /// <summary>
         /// Gets the durability of the item.
         /// </summary>
-        [JsonProperty("durability")]
+        [JsonPropertyName("durability")]
         public DescribedValue Durability { get; set; }
     }
 }

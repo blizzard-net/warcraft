@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a URI for retrieving the data for this object.
         /// </summary>
-        [JsonProperty("href")]
+        [JsonPropertyName("href")]
         public Uri Href { get; private set; }
     }
 }

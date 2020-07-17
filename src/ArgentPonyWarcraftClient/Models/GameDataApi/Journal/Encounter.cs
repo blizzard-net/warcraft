@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,61 +10,61 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the encounter.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the encounter.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the encounter.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the description of the encounter.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets the creatures involved in the encounter.
         /// </summary>
-        [JsonProperty("creatures")]
+        [JsonPropertyName("creatures")]
         public EncounterCreature[] Creatures { get; set; }
 
         /// <summary>
         /// Gets the items that can appear as loot from the encounter.
         /// </summary>
-        [JsonProperty("items")]
+        [JsonPropertyName("items")]
         public EncounterItem[] Items { get; set; }
 
         /// <summary>
         /// Gets the stages of the encounter.
         /// </summary>
-        [JsonProperty("sections")]
+        [JsonPropertyName("sections")]
         public EncounterSection[] Sections { get; set; }
 
         /// <summary>
         /// Gets a reference to the dungeon or raid where this encounter takes place.
         /// </summary>
-        [JsonProperty("instance")]
+        [JsonPropertyName("instance")]
         public InstanceReference Instance { get; set; }
 
         /// <summary>
         /// Gets the category of the instance.
         /// </summary>
-        [JsonProperty("category")]
+        [JsonPropertyName("category")]
         public InstanceCategory Category { get; set; }
 
         /// <summary>
         /// Gets the difficulty modes of the encounter.
         /// </summary>
-        [JsonProperty("modes")]
+        [JsonPropertyName("modes")]
         public EnumType[] Modes { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the world map.
         /// </summary>
-        [JsonProperty("world_map")]
+        [JsonPropertyName("world_map")]
         public Map WorldMap { get; set; }
 
         /// <summary>
         /// Gets the character's PvP match statistics for the map.
         /// </summary>
-        [JsonProperty("match_statistics")]
+        [JsonPropertyName("match_statistics")]
         public PvpMatchStatistics MatchStatistics { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the playable specialization.
         /// </summary>
-        [JsonProperty("specialization")]
+        [JsonPropertyName("specialization")]
         public PlayableSpecializationReference Specialization { get; set; }
 
         /// <summary>
         /// Gets the character's selected talents.
         /// </summary>
-        [JsonProperty("talents")]
+        [JsonPropertyName("talents")]
         public TalentSelection[] Talents { get; set; }
 
         /// <summary>
         /// Gets the PvP talent slots for the specialization.
         /// </summary>
-        [JsonProperty("pvp_talent_slots")]
+        [JsonPropertyName("pvp_talent_slots")]
         public PvpTalentSlot[] PvpTalentSlots { get; set; }
     }
 }

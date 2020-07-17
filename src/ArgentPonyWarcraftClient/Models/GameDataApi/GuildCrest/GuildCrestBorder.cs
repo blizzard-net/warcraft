@@ -1,7 +1,7 @@
-﻿namespace ArgentPonyWarcraftClient
-{
-    using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
+namespace ArgentPonyWarcraftClient
+{
     /// <summary>
     /// A guild crest border.
     /// </summary>
@@ -10,13 +10,13 @@
         /// <summary>
         /// Gets the ID of the border.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the media associated with the border.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
     }
 }

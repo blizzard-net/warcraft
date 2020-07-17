@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the profile of the character.
         /// </summary>
-        [JsonProperty("profile")]
+        [JsonPropertyName("profile")]
         public Profile Profile { get; set; }
 
         /// <summary>
         /// Gets the character's faction (Alliance or Horde).
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumTypeWithoutName Faction { get; set; }
 
         /// <summary>
         /// Gets the character's specialization.
         /// </summary>
-        [JsonProperty("specialization")]
+        [JsonPropertyName("specialization")]
         public PlayableSpecializationReferenceWithoutName Specialization { get; set; }
     }
 }

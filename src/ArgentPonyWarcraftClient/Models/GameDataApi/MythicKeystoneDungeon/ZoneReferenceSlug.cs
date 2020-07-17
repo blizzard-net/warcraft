@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,7 +10,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the slug for the zone.
         /// </summary>
-        [JsonProperty("slug")]
+        [JsonPropertyName("slug")]
         public string Slug { get; set; }
     }
 }

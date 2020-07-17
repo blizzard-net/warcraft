@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the faction.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public EnumType Value { get; set; }
 
         /// <summary>
         /// Gets the display string for the faction requirement.
         /// </summary>
-        [JsonProperty("display_string")]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
     }
 }

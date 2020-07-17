@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the guild roster.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets a reference to the guild.
         /// </summary>
-        [JsonProperty("guild")]
+        [JsonPropertyName("guild")]
         public GuildReference Guild { get; set; }
 
         /// <summary>
         /// Gets the guild members.
         /// </summary>
-        [JsonProperty("members")]
+        [JsonPropertyName("members")]
         public GuildMember[] Members { get; set; }
     }
 }

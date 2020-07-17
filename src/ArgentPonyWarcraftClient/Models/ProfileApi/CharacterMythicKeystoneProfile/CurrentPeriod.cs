@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the Mythic Keystone period.
         /// </summary>
-        [JsonProperty("period")]
+        [JsonPropertyName("period")]
         public MythicKeystonePeriodReference Period { get; set; }
 
         /// <summary>
         /// Gets the best runs during the current period.
         /// </summary>
-        [JsonProperty("best_runs")]
+        [JsonPropertyName("best_runs")]
         public MythicKeystoneRun[] BestRuns { get; set; }
     }
 }

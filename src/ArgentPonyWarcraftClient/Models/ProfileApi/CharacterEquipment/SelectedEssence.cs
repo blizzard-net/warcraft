@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,37 +10,37 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the slot of the selected essence.
         /// </summary>
-        [JsonProperty("slot")]
+        [JsonPropertyName("slot")]
         public long Slot { get; set; }
 
         /// <summary>
         /// Gets the rank of the selected essence.
         /// </summary>
-        [JsonProperty("rank")]
+        [JsonPropertyName("rank")]
         public long Rank { get; set; }
 
         /// <summary>
         /// Gets the main spell tooltip.
         /// </summary>
-        [JsonProperty("main_spell_tooltip", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("main_spell_tooltip")]
         public SpellTooltip MainSpellTooltip { get; set; }
 
         /// <summary>
         /// Gets the passive spell tooltip.
         /// </summary>
-        [JsonProperty("passive_spell_tooltip")]
+        [JsonPropertyName("passive_spell_tooltip")]
         public SpellTooltip PassiveSpellTooltip { get; set; }
 
         /// <summary>
         /// Gets a reference to the azerite essence.
         /// </summary>
-        [JsonProperty("essence")]
+        [JsonPropertyName("essence")]
         public AzeriteEssenceReference Essence { get; set; }
 
         /// <summary>
         /// Gets a reference to the azerite essence media.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public AzeritEssenceMediaReference Media { get; set; }
     }
 }

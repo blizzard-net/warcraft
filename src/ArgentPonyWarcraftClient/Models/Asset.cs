@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the key of the asset.
         /// </summary>
-        [JsonProperty("key")]
+        [JsonPropertyName("key")]
         public string Key { get; private set; }
 
         /// <summary>
         /// Gets a URI for retrieving the asset value.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public Uri Value { get; private set; }
     }
 }

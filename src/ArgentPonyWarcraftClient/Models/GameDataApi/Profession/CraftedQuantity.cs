@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the minimum number of the item produced.
         /// </summary>
-        [JsonProperty("minimum")]
+        [JsonPropertyName("minimum")]
         public long Minimum { get; set; }
 
         /// <summary>
         /// Gets the maximum number of the item produced.
         /// </summary>
-        [JsonProperty("maximum")]
+        [JsonPropertyName("maximum")]
         public long Maximum { get; set; }
     }
 }

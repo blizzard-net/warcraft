@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the required level for using an item.
         /// </summary>
-        [JsonProperty("level", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("level")]
         public DescribedValue Level { get; set; }
 
         /// <summary>
         /// Gets the required faction for using an item.
         /// </summary>
-        [JsonProperty("faction", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("faction")]
         public FactionRequirement Faction { get; set; }
     }
 }

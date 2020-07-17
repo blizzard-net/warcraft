@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the item.
         /// </summary>
-        [JsonProperty("item")]
+        [JsonPropertyName("item")]
         public ItemReference Item { get; set; }
 
         /// <summary>
         /// Gets the display string to describe the transmogrification.
         /// </summary>
-        [JsonProperty("display_string")]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
 
         /// <summary>
         /// Gets the ID of the item that supplied the modified appearance.
         /// </summary>
-        [JsonProperty("item_modified_appearance_id")]
+        [JsonPropertyName("item_modified_appearance_id")]
         public long ItemModifiedAppearanceId { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the quantity.
         /// </summary>
-        [JsonProperty("quantity")]
+        [JsonPropertyName("quantity")]
         public int Quantity { get; private set; }
 
         /// <summary>
         /// Gets the number of points.
         /// </summary>
-        [JsonProperty("points")]
+        [JsonPropertyName("points")]
         public int Points { get; private set; }
     }
 }
