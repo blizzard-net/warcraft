@@ -34,21 +34,33 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             }
         }
 
+        public static IEnumerable<object[]> LocalAndRegionPairsWithClientInterfaces
+        {
+            get
+            {
+                foreach (var clientInterface in GetWarcraftClientInterfaces())
+                {
+                    foreach (var localeAndRegionPair in LocaleAndRegionPairs)
+                    {
+                        yield return localeAndRegionPair.Concat(new [] { clientInterface }).ToArray();
+                    }
+                }
+            }
+        }
+
         [Theory]
-        [MemberData(nameof(LocaleAndRegionPairs))]
-        public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_Warcraft_Client_Instance(LocaleAndRegionPair localeAndRegion)
+        [MemberData(nameof(LocalAndRegionPairsWithClientInterfaces))]
+        public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance(
+            LocaleAndRegionPair localeAndRegion, Type clientInterfaceToResolve)
         {
             _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndRegion.Region,
                 localeAndRegion.Locale);
 
             IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-            foreach (var clientInterface in GetWarcraftClientInterfaces())
-            {
-                var client = serviceProvider.GetRequiredService(clientInterface);
+            var client = serviceProvider.GetRequiredService(clientInterfaceToResolve);
 
-                Assert.IsType<WarcraftClient>(client);
-            }
+            Assert.IsType<WarcraftClient>(client);
         }
 
         [Theory]
