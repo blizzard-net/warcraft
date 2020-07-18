@@ -38,6 +38,16 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
         public static IServiceCollection AddWarcraftClients(this IServiceCollection services, string clientId,
             string clientSecret, Region region, Locale locale)
         {
+            if (clientId == null)
+            {
+                throw new ArgumentNullException(nameof(clientId));
+            }
+
+            if (clientSecret == null)
+            {
+                throw new ArgumentNullException(nameof(clientSecret));
+            }
+
             services.AddHttpClient(
                 "ArgentPonyWarcraftClient.WarcraftClient.HttpClient",
                 client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"))

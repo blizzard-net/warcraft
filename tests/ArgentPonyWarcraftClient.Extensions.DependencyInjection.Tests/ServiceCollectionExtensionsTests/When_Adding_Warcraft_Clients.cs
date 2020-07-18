@@ -15,6 +15,26 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         }
 
+        [Fact]
+        public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown()
+        {
+            var exception = Assert.Throws<ArgumentNullException>(() => 
+                _services.AddWarcraftClients(null, "fake-client-secret")
+            );
+
+            Assert.Equal("clientId", exception.ParamName);
+        }
+
+        [Fact]
+        public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown()
+        {
+            var exception = Assert.Throws<ArgumentNullException>(() => 
+                _services.AddWarcraftClients("fake-client-id", null)
+            );
+
+            Assert.Equal("clientSecret", exception.ParamName);
+        }
+
         [Theory]
         [ClassData(typeof(WarcraftClientInterfaceData))]
         public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance(Type clientInterfaceToResolve)

@@ -45,6 +45,28 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
         }
 
         [Theory]
+        [MemberData(nameof(LocaleAndRegionPairs))]
+        public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown(LocaleAndRegionPair localeAndRegion)
+        {
+            var exception = Assert.Throws<ArgumentNullException>(() =>
+                _services.AddWarcraftClients(null, "fake-client-secret", localeAndRegion.Region, localeAndRegion.Locale)
+            );
+
+            Assert.Equal("clientId", exception.ParamName);
+        }
+
+        [Theory]
+        [MemberData(nameof(LocaleAndRegionPairs))]
+        public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown(LocaleAndRegionPair localeAndRegion)
+        {
+            var exception = Assert.Throws<ArgumentNullException>(() =>
+                _services.AddWarcraftClients("fake-client-id", null, localeAndRegion.Region, localeAndRegion.Locale)
+            );
+
+            Assert.Equal("clientSecret", exception.ParamName);
+        }
+
+        [Theory]
         [MemberData(nameof(ClientInterfacesWithLocaleAndRegionPair))]
         public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance(
             Type clientInterfaceToResolve, LocaleAndRegionPair localeAndRegion)
