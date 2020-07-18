@@ -30,6 +30,30 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             }
         }
 
+        public static IEnumerable<object[]> InvalidLocaleAndRegionPairs
+        {
+            get
+            {
+                var allLocales = Enum.GetValues(typeof(Locale)).Cast<Locale>().ToList();
+                var allRegions = Enum.GetValues(typeof(Region)).Cast<Region>().ToList();
+
+                foreach (var locale in allLocales)
+                {
+                    foreach (var region in allRegions)
+                    {
+                        var validLocaleAndRegion = new LocaleAndRegionPair(locale);
+
+                        if (region == validLocaleAndRegion.Region)
+                        {
+                            continue;
+                        }
+
+                        yield return new object[] {locale, region};
+                    }
+                }
+            }
+        }
+
         public static IEnumerable<object[]> ClientInterfacesWithLocaleAndRegionPair
         {
             get
@@ -64,6 +88,19 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             );
 
             Assert.Equal("clientSecret", exception.ParamName);
+        }
+
+        [Theory]
+        [MemberData(nameof(InvalidLocaleAndRegionPairs))]
+        public void
+            If_Locale_And_Region_Are_Not_Compatible_Then_ArgumentException_Is_Thrown_Stating_The_Locale_And_Region_Are_Not_Compatible(
+                Locale locale, Region region)
+        {
+            var exception = Assert.Throws<ArgumentException>(() =>
+                _services.AddWarcraftClients("fake-client-id", "fake-client-secret", region, locale)
+            );
+
+            Assert.Equal("The locale selected is not supported by the selected region.", exception.Message);
         }
 
         [Theory]
