@@ -256,10 +256,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>Returns true if the locale is supported by the selected region.</returns>
         private static bool ValidateRegionLocale(Locale locale, Region region)
         {
-            FieldInfo type = locale.GetType().GetRuntimeField(locale.ToString());
-            LocaleRegion attribute = type.GetCustomAttribute<LocaleRegion>();
-
-            return attribute.Region == region;
+            return locale.GetRegionForLocale() == region;
         }
     }
 }

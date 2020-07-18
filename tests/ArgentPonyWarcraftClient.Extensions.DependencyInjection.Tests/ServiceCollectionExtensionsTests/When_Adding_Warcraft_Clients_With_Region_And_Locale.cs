@@ -50,6 +50,8 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             }
         }
 
+
+
         private static IEnumerable<Type> GetWarcraftClientInterfaces()
         {
             return typeof(IWarcraftClient).Assembly.GetTypes()
@@ -71,16 +73,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
                 Locale = locale;
             }
 
-            public Region Region
-            {
-                get
-                {
-                    var fieldInfo = Locale.GetType().GetRuntimeField(Locale.ToString());
-                    var localeRegionAttribute = fieldInfo.GetCustomAttribute<LocaleRegion>();
-
-                    return localeRegionAttribute.Region;
-                }
-            }
+            public Region Region => Locale.GetRegionForLocale();
 
             public Locale Locale { get; }
         }
