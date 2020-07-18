@@ -73,14 +73,29 @@ namespace ArgentPonyWarcraftClient
             _locale = locale;
         }
 
+        /// <summary>
+        /// The Blizzard OAuth client ID.
+        /// </summary>
         internal string ClientId => _clientId;
 
+        /// <summary>
+        /// The Blizzard OAuth client secret.
+        /// </summary>
         internal string ClientSecret =>  _clientSecret;
 
+        /// <summary>
+        /// The language that results will be in.
+        /// </summary>
         internal Locale Locale => _locale;
 
+        /// <summary>
+        /// The region the API will retrieve data from.
+        /// </summary>
         internal Region Region => _region;
 
+        /// <summary>
+        /// The <see cref="HttpClient"/> instance handling requests.
+        /// </summary>
         internal HttpClient Client => _client;
 
         /// <summary>
