@@ -64,7 +64,7 @@ namespace ArgentPonyWarcraftClient
             _clientId = clientId ?? throw new ArgumentNullException(nameof(clientId));
             _clientSecret = clientSecret ?? throw new ArgumentNullException(nameof(clientSecret));
 
-            if (!ValidateRegionLocale(locale, region))
+            if (!locale.IsSupportedInRegion(region))
             {
                 throw new ArgumentException("The locale selected is not supported by the selected region.");
             }
@@ -256,17 +256,6 @@ namespace ArgentPonyWarcraftClient
                 default:
                     return "https://us.battle.net";
             }
-        }
-
-        /// <summary>
-        ///     Checks if the locale is supported by the selected region.
-        /// </summary>
-        /// <param name="locale">The selected locale.</param>
-        /// <param name="region">The selected region.</param>
-        /// <returns>Returns true if the locale is supported by the selected region.</returns>
-        private static bool ValidateRegionLocale(Locale locale, Region region)
-        {
-            return locale.GetRegionForLocale() == region;
         }
     }
 }
