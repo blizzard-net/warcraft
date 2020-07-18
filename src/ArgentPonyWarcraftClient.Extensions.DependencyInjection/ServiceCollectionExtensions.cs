@@ -14,6 +14,19 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Registers the the various World of Warcraft API interfaces using the specified client credentials,
+        /// <paramref name="region"/>, and <paramref name="locale"/>.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> instance.</param>
+        /// <param name="clientId">The Blizzard OAuth client ID.</param>
+        /// <param name="clientSecret">The Blizzard OAuth client secret.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">
+        ///     Specifies the language that the result will be in. Visit
+        ///     https://develop.battle.net/documentation/world-of-warcraft/guides/localization to see a list of available locales.
+        /// </param>
+        /// <returns>The updated <see cref="IServiceCollection"/> instance.</returns>
         public static IServiceCollection AddWarcraftClients(this IServiceCollection services, string clientId,
             string clientSecret, Region region, Locale locale)
         {
@@ -21,72 +34,90 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 .AddTypedClient(httpClient =>
                     new WarcraftClient(clientId, clientSecret, region, locale, httpClient));
 
-            services.AddTransientWithFactory<IWarcraftClient, WarcraftClient>()
+            services.AddTransientUsingServiceProvider<IWarcraftClient, WarcraftClient>()
                 .AddProfileApiServices()
                 .AddGameDataApiServices();
 
             return services;
         }
 
+        /// <summary>
+        /// Adds the interfaces for the profile APIs.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> instance.</param>
+        /// <returns>The updated <see cref="IServiceCollection"/> instance.</returns>
         private static IServiceCollection AddProfileApiServices(this IServiceCollection services)
         {
-            services.AddTransientWithFactory<IProfileApi, IWarcraftClient>();
+            services.AddTransientUsingServiceProvider<IProfileApi, IWarcraftClient>();
 
-            return services.AddTransientWithFactory<IAccountProfileApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterAchievementsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterAppearanceApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterCollectionsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterEncountersApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterEquipmentApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterHunterPetsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterMythicKeystoneProfileApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterProfessionsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterProfileApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterPvpApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterQuestsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterReputationsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterSpecializationsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterStatisticsApi, IProfileApi>()
-                .AddTransientWithFactory<ICharacterTitlesApi, IProfileApi>()
-                .AddTransientWithFactory<IGuildApi, IProfileApi>();
+            return services.AddTransientUsingServiceProvider<IAccountProfileApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterAchievementsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterAppearanceApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterCollectionsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterEncountersApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterEquipmentApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterHunterPetsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterMythicKeystoneProfileApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterProfessionsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterProfileApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterPvpApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterQuestsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterReputationsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterSpecializationsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterStatisticsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterTitlesApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<IGuildApi, IProfileApi>();
         }
 
+        /// <summary>
+        /// Adds the interfaces for the game data APIs.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> instance.</param>
+        /// <returns>The updated <see cref="IServiceCollection"/> instance.</returns>
         private static IServiceCollection AddGameDataApiServices(this IServiceCollection services)
         {
-            services.AddTransientWithFactory<IGameDataApi, IWarcraftClient>();
+            services.AddTransientUsingServiceProvider<IGameDataApi, IWarcraftClient>();
 
-            return services.AddTransientWithFactory<IAchievementApi, IGameDataApi>()
-                .AddTransientWithFactory<IAuctionHouseApi, IGameDataApi>()
-                .AddTransientWithFactory<IAzeriteEssenceApi, IGameDataApi>()
-                .AddTransientWithFactory<IConnectedRealmApi, IGameDataApi>()
-                .AddTransientWithFactory<ICreatureApi, IGameDataApi>()
-                .AddTransientWithFactory<IGuildCrestApi, IGameDataApi>()
-                .AddTransientWithFactory<IItemApi, IGameDataApi>()
-                .AddTransientWithFactory<IJournalApi, IGameDataApi>()
-                .AddTransientWithFactory<IMountApi, IGameDataApi>()
-                .AddTransientWithFactory<IMythicKeystoneAffixApi, IGameDataApi>()
-                .AddTransientWithFactory<IMythicKeystoneDungeonApi, IGameDataApi>()
-                .AddTransientWithFactory<IMythicKeystoneLeaderboardApi, IGameDataApi>()
-                .AddTransientWithFactory<IMythicRaidLeaderboardApi, IGameDataApi>()
-                .AddTransientWithFactory<IPetApi, IGameDataApi>()
-                .AddTransientWithFactory<IPlayableClassApi, IGameDataApi>()
-                .AddTransientWithFactory<IPlayableRaceApi, IGameDataApi>()
-                .AddTransientWithFactory<IPlayableSpecializationApi, IGameDataApi>()
-                .AddTransientWithFactory<IPowerTypeApi, IGameDataApi>()
-                .AddTransientWithFactory<IProfessionApi, IGameDataApi>()
-                .AddTransientWithFactory<IPvpSeasonApi, IGameDataApi>()
-                .AddTransientWithFactory<IPvpTierApi, IGameDataApi>()
-                .AddTransientWithFactory<IQuestApi, IGameDataApi>()
-                .AddTransientWithFactory<IRealmApi, IGameDataApi>()
-                .AddTransientWithFactory<IRegionApi, IGameDataApi>()
-                .AddTransientWithFactory<IReputationsApi, IGameDataApi>()
-                .AddTransientWithFactory<ISpellApi, IGameDataApi>()
-                .AddTransientWithFactory<ITalentApi, IGameDataApi>()
-                .AddTransientWithFactory<ITitleApi, IGameDataApi>()
-                .AddTransientWithFactory<IWowTokenApi, IGameDataApi>();
+            return services.AddTransientUsingServiceProvider<IAchievementApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IAuctionHouseApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IAzeriteEssenceApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IConnectedRealmApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<ICreatureApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IGuildCrestApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IItemApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IJournalApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IMountApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IMythicKeystoneAffixApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IMythicKeystoneDungeonApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IMythicKeystoneLeaderboardApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IMythicRaidLeaderboardApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPetApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPlayableClassApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPlayableRaceApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPlayableSpecializationApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPowerTypeApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IProfessionApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPvpSeasonApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IPvpTierApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IQuestApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IRealmApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IRegionApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IReputationsApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<ISpellApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<ITalentApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<ITitleApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IWowTokenApi, IGameDataApi>();
         }
 
-        private static IServiceCollection AddTransientWithFactory<TService, TImplementation>(this IServiceCollection services)
+        /// <summary>
+        /// Adds a transient service of the type specified in <typeparamref name="TService"/> with a
+        /// factory that uses the type specified in <typeparamref name="TImplementation"/>.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> instance.</param>
+        /// <typeparam name="TService">The type of service to add.</typeparam>
+        /// <typeparam name="TImplementation">The type of the implementation to use.</typeparam>
+        /// <returns>The updated <see cref="IServiceCollection"/> instance.</returns>
+        private static IServiceCollection AddTransientUsingServiceProvider<TService, TImplementation>(this IServiceCollection services)
             where TService : class
             where TImplementation : class, TService
 
