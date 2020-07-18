@@ -48,6 +48,11 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 throw new ArgumentNullException(nameof(clientSecret));
             }
 
+            if (!locale.IsSupportedInRegion(region))
+            {
+                throw new ArgumentException("The locale selected is not supported by the selected region.");
+            }
+
             services.AddHttpClient(
                 "ArgentPonyWarcraftClient.WarcraftClient.HttpClient",
                 client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"))
