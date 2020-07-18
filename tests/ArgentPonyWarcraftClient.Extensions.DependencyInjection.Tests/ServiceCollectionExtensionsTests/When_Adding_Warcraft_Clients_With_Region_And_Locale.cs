@@ -25,7 +25,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
                 return locales.Select(locale => new object[]
                 {
-                    new LocaleAndRegionPair(locale)
+                    new ValidLocaleAndRegionPair(locale)
                 });
             }
         }
@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
                 {
                     foreach (var region in allRegions)
                     {
-                        var validLocaleAndRegion = new LocaleAndRegionPair(locale);
+                        var validLocaleAndRegion = new ValidLocaleAndRegionPair(locale);
 
                         if (region == validLocaleAndRegion.Region)
                         {
@@ -70,7 +70,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
-        public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown(LocaleAndRegionPair localeAndRegion)
+        public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown(ValidLocaleAndRegionPair localeAndRegion)
         {
             var exception = Assert.Throws<ArgumentNullException>(() =>
                 _services.AddWarcraftClients(null, "fake-client-secret", localeAndRegion.Region, localeAndRegion.Locale)
@@ -81,7 +81,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
-        public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown(LocaleAndRegionPair localeAndRegion)
+        public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown(ValidLocaleAndRegionPair localeAndRegion)
         {
             var exception = Assert.Throws<ArgumentNullException>(() =>
                 _services.AddWarcraftClients("fake-client-id", null, localeAndRegion.Region, localeAndRegion.Locale)
@@ -106,7 +106,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
         [Theory]
         [MemberData(nameof(ClientInterfacesWithLocaleAndRegionPair))]
         public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance(
-            Type clientInterfaceToResolve, LocaleAndRegionPair localeAndRegion)
+            Type clientInterfaceToResolve, ValidLocaleAndRegionPair localeAndRegion)
         {
             _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndRegion.Region,
                 localeAndRegion.Locale);
@@ -121,7 +121,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
         public void Then_WarcraftClient_Is_Created_With_Provided_Client_Credentials_And_Region_And_Locale(
-            LocaleAndRegionPair localeAndRegion)
+            ValidLocaleAndRegionPair localeAndRegion)
         {
             const string expectedClientId = "the client Id";
             const string expectedClientSecret = "the client secret";
@@ -141,10 +141,10 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
-        public void Then_WarcraftClient_Does_Not_Use_InternalHttpClient(LocaleAndRegionPair localeAndregion)
+        public void Then_WarcraftClient_Does_Not_Use_InternalHttpClient(ValidLocaleAndRegionPair validLocaleAndRegion)
         {
-            _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndregion.Region,
-                localeAndregion.Locale);
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret", validLocaleAndRegion.Region,
+                validLocaleAndRegion.Locale);
 
             IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
@@ -155,7 +155,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
-        public void Then_WarcraftClient_Is_Configured_To_Accept_Json_Content(LocaleAndRegionPair localeAndRegion)
+        public void Then_WarcraftClient_Is_Configured_To_Accept_Json_Content(ValidLocaleAndRegionPair localeAndRegion)
         {
             _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndRegion.Region,
                 localeAndRegion.Locale);
@@ -170,9 +170,9 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             Assert.True(acceptsJsonContent);
         }
 
-        public class LocaleAndRegionPair
+        public class ValidLocaleAndRegionPair
         {
-            public LocaleAndRegionPair(Locale locale)
+            public ValidLocaleAndRegionPair(Locale locale)
             {
                 Locale = locale;
             }
