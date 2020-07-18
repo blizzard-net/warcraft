@@ -22,7 +22,8 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                     new WarcraftClient(clientId, clientSecret, region, locale, httpClient));
 
             services.AddTransientWithFactory<IWarcraftClient, WarcraftClient>()
-                .AddProfileApiServices();
+                .AddProfileApiServices()
+                .AddGameDataApiServices();
 
             return services;
         }
@@ -31,7 +32,8 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
         {
             services.AddTransientWithFactory<IProfileApi, IWarcraftClient>();
 
-            return services.AddTransientWithFactory<ICharacterAchievementsApi, IProfileApi>()
+            return services.AddTransientWithFactory<IAccountProfileApi, IProfileApi>()
+                .AddTransientWithFactory<ICharacterAchievementsApi, IProfileApi>()
                 .AddTransientWithFactory<ICharacterAppearanceApi, IProfileApi>()
                 .AddTransientWithFactory<ICharacterCollectionsApi, IProfileApi>()
                 .AddTransientWithFactory<ICharacterEncountersApi, IProfileApi>()
@@ -47,6 +49,41 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 .AddTransientWithFactory<ICharacterStatisticsApi, IProfileApi>()
                 .AddTransientWithFactory<ICharacterTitlesApi, IProfileApi>()
                 .AddTransientWithFactory<IGuildApi, IProfileApi>();
+        }
+
+        private static IServiceCollection AddGameDataApiServices(this IServiceCollection services)
+        {
+            services.AddTransientWithFactory<IGameDataApi, IWarcraftClient>();
+
+            return services.AddTransientWithFactory<IAchievementApi, IGameDataApi>()
+                .AddTransientWithFactory<IAuctionHouseApi, IGameDataApi>()
+                .AddTransientWithFactory<IAzeriteEssenceApi, IGameDataApi>()
+                .AddTransientWithFactory<IConnectedRealmApi, IGameDataApi>()
+                .AddTransientWithFactory<ICreatureApi, IGameDataApi>()
+                .AddTransientWithFactory<IGuildCrestApi, IGameDataApi>()
+                .AddTransientWithFactory<IItemApi, IGameDataApi>()
+                .AddTransientWithFactory<IJournalApi, IGameDataApi>()
+                .AddTransientWithFactory<IMountApi, IGameDataApi>()
+                .AddTransientWithFactory<IMythicKeystoneAffixApi, IGameDataApi>()
+                .AddTransientWithFactory<IMythicKeystoneDungeonApi, IGameDataApi>()
+                .AddTransientWithFactory<IMythicKeystoneLeaderboardApi, IGameDataApi>()
+                .AddTransientWithFactory<IMythicRaidLeaderboardApi, IGameDataApi>()
+                .AddTransientWithFactory<IPetApi, IGameDataApi>()
+                .AddTransientWithFactory<IPlayableClassApi, IGameDataApi>()
+                .AddTransientWithFactory<IPlayableRaceApi, IGameDataApi>()
+                .AddTransientWithFactory<IPlayableSpecializationApi, IGameDataApi>()
+                .AddTransientWithFactory<IPowerTypeApi, IGameDataApi>()
+                .AddTransientWithFactory<IProfessionApi, IGameDataApi>()
+                .AddTransientWithFactory<IPvpSeasonApi, IGameDataApi>()
+                .AddTransientWithFactory<IPvpTierApi, IGameDataApi>()
+                .AddTransientWithFactory<IQuestApi, IGameDataApi>()
+                .AddTransientWithFactory<IRealmApi, IGameDataApi>()
+                .AddTransientWithFactory<IRegionApi, IGameDataApi>()
+                .AddTransientWithFactory<IReputationsApi, IGameDataApi>()
+                .AddTransientWithFactory<ISpellApi, IGameDataApi>()
+                .AddTransientWithFactory<ITalentApi, IGameDataApi>()
+                .AddTransientWithFactory<ITitleApi, IGameDataApi>()
+                .AddTransientWithFactory<IWowTokenApi, IGameDataApi>();
         }
 
         private static IServiceCollection AddTransientWithFactory<TService, TImplementation>(this IServiceCollection services)
