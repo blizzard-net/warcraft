@@ -1,3 +1,5 @@
+using System;
+using System.Net.Http.Headers;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
@@ -13,28 +15,73 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         }
 
-        [Fact]
-        public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance()
+        [Theory]
+        [ClassData(typeof(WarcraftClientInterfaceData))]
+        public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance(Type clientInterfaceToResolve)
         {
-            Assert.True(false, "TODO");
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret");
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var client = serviceProvider.GetRequiredService(clientInterfaceToResolve);
+
+            Assert.IsType<WarcraftClient>(client);
         }
 
         [Fact]
         public void Then_WarcraftClient_Is_Created_Provided_Client_Credentials()
         {
-            Assert.True(false, "TODO");
+            const string expectedClientId = "the client Id";
+            const string expectedClientSecret = "the client secret";
+
+            _services.AddWarcraftClients(expectedClientId, expectedClientSecret);
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+
+            Assert.Equal(expectedClientId, warcraftClient.ClientId);
+            Assert.Equal(expectedClientSecret, warcraftClient.ClientSecret);
         }
 
         [Fact]
         public void Then_WarcraftClient_Is_Created_With_US_Region_And_en_US_Locale()
         {
-            Assert.True(false, "TODO");
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret");
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+
+            Assert.Equal(Locale.en_US, warcraftClient.Locale);
+            Assert.Equal(Region.US, warcraftClient.Region);
         }
 
         [Fact]
-        public void Then_WarcraftClient_Uses_HttpClient_From_Http_Client_Factory()
+        public void Then_WarcraftClient_Does_Not_Use_InternalHttpClient()
         {
-            Assert.True(false, "TODO");
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret");
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+
+            Assert.NotSame(InternalHttpClient.Instance, warcraftClient.Client);
+        }
+
+        [Fact]
+        public void Then_WarcraftClient_Is_Configured_To_Accept_Json_Content()
+        {
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret");
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+            var acceptsJsonContent =
+                warcraftClient.Client.DefaultRequestHeaders.Accept.Contains(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+
+            Assert.True(acceptsJsonContent);
         }
     }
 }
