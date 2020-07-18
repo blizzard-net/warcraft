@@ -10,9 +10,16 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
     /// </summary>
     public static class ServiceCollectionExtensions
     {
+        /// <summary>
+        /// Registers the the various World of Warcraft API interfaces using the specified client credentials.
+        /// </summary>
+        /// <param name="services">The <see cref="IServiceCollection"/> instance.</param>
+        /// <param name="clientId">The Blizzard OAuth client ID.</param>
+        /// <param name="clientSecret">The Blizzard OAuth client secret.</param>
+        /// <returns>The updated <see cref="IServiceCollection"/> instance.</returns>
         public static IServiceCollection AddWarcraftClients(this IServiceCollection services, string clientId, string clientSecret)
         {
-            throw new NotImplementedException();
+            return services.AddWarcraftClients(clientId, clientSecret, Region.US, Locale.en_US);
         }
 
         /// <summary>
