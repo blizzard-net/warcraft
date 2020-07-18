@@ -94,7 +94,7 @@ To start off, add the appropriate `using` statement to the file.
 using ArgentPoneyWarcraftClient.Extensions.DependencyInjection;
 ```
 
-Then use the `AddWarcraftClients()` method on the `IServiceCollection` instance. For example, in ASP.NET Core applications this would be in the `Configure()` services method like so
+Then use the `AddWarcraftClients()` method on the `IServiceCollection` instance. For example, in ASP.NET Core applications this would be in the `ConfigureServices()` method like so.
 
 ```cs
 public class Startup
