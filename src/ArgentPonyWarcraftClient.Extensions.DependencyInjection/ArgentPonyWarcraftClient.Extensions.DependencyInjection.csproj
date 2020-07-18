@@ -29,4 +29,8 @@
     <ProjectReference Include="..\ArgentPonyWarcraftClient\ArgentPonyWarcraftClient.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="../../ArgentPony.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
 </Project>
