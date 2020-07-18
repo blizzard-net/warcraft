@@ -1,4 +1,5 @@
 using System;
+using System.Net.Http.Headers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
@@ -30,9 +31,12 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
         public static IServiceCollection AddWarcraftClients(this IServiceCollection services, string clientId,
             string clientSecret, Region region, Locale locale)
         {
-            services.AddHttpClient("ArgentPonyWarcraftClient.WarcraftClient.HttpClient")
-                .AddTypedClient(httpClient =>
-                    new WarcraftClient(clientId, clientSecret, region, locale, httpClient));
+            services.AddHttpClient(
+                "ArgentPonyWarcraftClient.WarcraftClient.HttpClient",
+                client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"))
+            ).AddTypedClient(httpClient =>
+                new WarcraftClient(clientId, clientSecret, region, locale, httpClient)
+            );
 
             services.AddTransientUsingServiceProvider<IWarcraftClient, WarcraftClient>()
                 .AddProfileApiServices()

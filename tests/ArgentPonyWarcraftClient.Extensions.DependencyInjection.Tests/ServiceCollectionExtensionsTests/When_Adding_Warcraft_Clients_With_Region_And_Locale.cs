@@ -1,13 +1,10 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using System.Reflection;
+using System.Net.Http.Headers;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceCollectionExtensionsTests
 {
@@ -65,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
-        public void Then_Warcraft_Client_Is_Created_With_Provided_Client_Keys_And_Region_And_Locale(
+        public void Then_WarcraftClient_Is_Created_With_Provided_Client_Credentials_And_Region_And_Locale(
             LocaleAndRegionPair localeAndRegion)
         {
             const string expectedClientId = "the client Id";
@@ -86,7 +83,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         [Theory]
         [MemberData(nameof(LocaleAndRegionPairs))]
-        public void Then_Warcraft_Client_Uses_HttpClient_From_Http_Client_Factory(LocaleAndRegionPair localeAndregion)
+        public void Then_WarcraftClient_Does_Not_Use_InternalHttpClient(LocaleAndRegionPair localeAndregion)
         {
             _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndregion.Region,
                 localeAndregion.Locale);
@@ -96,6 +93,23 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
 
             Assert.NotSame(InternalHttpClient.Instance, warcraftClient.Client);
+        }
+
+        [Theory]
+        [MemberData(nameof(LocaleAndRegionPairs))]
+        public void Then_WarcraftClient_Is_Configured_To_Accept_Json_Content(LocaleAndRegionPair localeAndRegion)
+        {
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndRegion.Region,
+                localeAndRegion.Locale);
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+            var acceptsJsonContent =
+                warcraftClient.Client.DefaultRequestHeaders.Accept.Contains(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+
+            Assert.True(acceptsJsonContent);
         }
 
         private static IEnumerable<Type> GetWarcraftClientInterfaces()
