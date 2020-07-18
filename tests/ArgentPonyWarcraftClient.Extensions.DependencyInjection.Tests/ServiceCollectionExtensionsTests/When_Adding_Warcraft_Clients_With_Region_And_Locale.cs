@@ -34,7 +34,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             }
         }
 
-        public static IEnumerable<object[]> LocalAndRegionPairsWithClientInterfaces
+        public static IEnumerable<object[]> ClientInterfacesWithLocaleAndRegionPair
         {
             get
             {
@@ -42,16 +42,16 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
                 {
                     foreach (var localeAndRegionPair in LocaleAndRegionPairs)
                     {
-                        yield return localeAndRegionPair.Concat(new [] { clientInterface }).ToArray();
+                        yield return new object[] { clientInterface }.Concat(localeAndRegionPair).ToArray();
                     }
                 }
             }
         }
 
         [Theory]
-        [MemberData(nameof(LocalAndRegionPairsWithClientInterfaces))]
+        [MemberData(nameof(ClientInterfacesWithLocaleAndRegionPair))]
         public void Then_All_Warcraft_Interfaces_Are_Resolved_To_A_WarcraftClient_Instance(
-            LocaleAndRegionPair localeAndRegion, Type clientInterfaceToResolve)
+            Type clientInterfaceToResolve, LocaleAndRegionPair localeAndRegion)
         {
             _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndRegion.Region,
                 localeAndRegion.Locale);
