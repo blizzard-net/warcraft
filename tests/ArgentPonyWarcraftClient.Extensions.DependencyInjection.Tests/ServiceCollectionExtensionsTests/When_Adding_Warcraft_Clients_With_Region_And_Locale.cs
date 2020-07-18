@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
-using System.Text.RegularExpressions;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
@@ -35,11 +34,11 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
         {
             get
             {
-                foreach (var clientInterface in GetWarcraftClientInterfaces())
+                foreach (var clientInterfaceTestData in new WarcraftClientInterfaceData())
                 {
                     foreach (var localeAndRegionPair in LocaleAndRegionPairs)
                     {
-                        yield return new object[] { clientInterface }.Concat(localeAndRegionPair).ToArray();
+                        yield return clientInterfaceTestData.Concat(localeAndRegionPair).ToArray();
                     }
                 }
             }
@@ -110,20 +109,6 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
                     new MediaTypeWithQualityHeaderValue("application/json"));
 
             Assert.True(acceptsJsonContent);
-        }
-
-        private static IEnumerable<Type> GetWarcraftClientInterfaces()
-        {
-            return typeof(IWarcraftClient).Assembly.GetTypes()
-                .Where(type =>
-                    type.IsInterface &&
-                    TypeNameEndsWithApiOrClient(type)
-                );
-        }
-
-        private static bool TypeNameEndsWithApiOrClient(Type type)
-        {
-            return Regex.IsMatch(type.FullName ?? string.Empty, @"I\w+(Api|Client)$");
         }
 
         public class LocaleAndRegionPair
