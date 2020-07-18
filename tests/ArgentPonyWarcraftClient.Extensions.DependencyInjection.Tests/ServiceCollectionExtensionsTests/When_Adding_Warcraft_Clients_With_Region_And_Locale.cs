@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.DependencyInjection;
@@ -50,7 +51,40 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
             }
         }
 
+        [Theory]
+        [MemberData(nameof(LocaleAndRegionPairs))]
+        public void Then_Warcraft_Client_Is_Created_With_Provided_Client_Keys_And_Region_And_Locale(
+            LocaleAndRegionPair localeAndRegion)
+        {
+            const string expectedClientId = "the client Id";
+            const string expectedClientSecret = "the client secret";
 
+            _services.AddWarcraftClients(expectedClientId, expectedClientSecret, localeAndRegion.Region,
+                localeAndRegion.Locale);
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+
+            Assert.Equal(expectedClientId, warcraftClient.ClientId);
+            Assert.Equal(expectedClientSecret, warcraftClient.ClientSecret);
+            Assert.Equal(localeAndRegion.Region, warcraftClient.Region);
+            Assert.Equal(localeAndRegion.Locale, warcraftClient.Locale);
+        }
+
+        [Theory]
+        [MemberData(nameof(LocaleAndRegionPairs))]
+        public void Then_Warcraft_Client_Uses_HttpClient_From_Http_Client_Factory(LocaleAndRegionPair localeAndregion)
+        {
+            _services.AddWarcraftClients("fake-client-id", "fake-client-secret", localeAndregion.Region,
+                localeAndregion.Locale);
+
+            IServiceProvider serviceProvider = _services.BuildServiceProvider();
+
+            var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+
+            Assert.NotSame(InternalHttpClient.Instance, warcraftClient.Client);
+        }
 
         private static IEnumerable<Type> GetWarcraftClientInterfaces()
         {

@@ -73,6 +73,16 @@ namespace ArgentPonyWarcraftClient
             _locale = locale;
         }
 
+        internal string ClientId => _clientId;
+
+        internal string ClientSecret =>  _clientSecret;
+
+        internal Locale Locale => _locale;
+
+        internal Region Region => _region;
+
+        internal HttpClient Client => _client;
+
         /// <summary>
         ///     Retrieve an item of type <typeparamref name="T"/> from the Blizzard World of Warcraft Game Data or Profile API.
         /// </summary>
