@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9BBC9F4C-0E0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BED6344B-B8DB-457B-8106-E8CEF5F42570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgentPonyWarcraftClient.Extensions.DependencyInjection", "src\ArgentPonyWarcraftClient.Extensions.DependencyInjection\ArgentPonyWarcraftClient.Extensions.DependencyInjection.csproj", "{95EFCE5F-F1A4-49CF-874E-0B7682A8FB3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Extensions.DependencyInjection", "src\ArgentPonyWarcraftClient.Extensions.DependencyInjection\ArgentPonyWarcraftClient.Extensions.DependencyInjection.csproj", "{95EFCE5F-F1A4-49CF-874E-0B7682A8FB3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests", "tests\ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests\ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.csproj", "{B39A9AB0-E23F-499C-A6A9-6CA563EB1BD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests", "tests\ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests\ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.csproj", "{B39A9AB0-E23F-499C-A6A9-6CA563EB1BD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
