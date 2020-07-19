@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Dan Jagnow, Travis Boatman</Authors>
+    <Authors>Dan Jagnow, Travis Boatman, William Wolfram</Authors>
     <Description>Extensions of Microsoft.Extensions.DependencyInjection for the Argent Pony .NET client.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright © Dan Jagnow 2017</Copyright>
