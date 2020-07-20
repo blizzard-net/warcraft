@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -8,7 +8,7 @@
     <Copyright>Copyright © Dan Jagnow 2017</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Title>Argent Pony Warcraft Client</Title>
-    <PackageTags>Warcraft World-of-Warcraft WoW Blizzard</PackageTags>
+    <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard</PackageTags>
     <PackageProjectUrl>https://github.com/blizzard-net/warcraft</PackageProjectUrl>
     <RepositoryUrl>https://github.com/blizzard-net/warcraft</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
