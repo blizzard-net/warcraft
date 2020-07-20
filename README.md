@@ -77,3 +77,91 @@ else
 ```
 
 Take a look at the [ArgentPonyWarcraftClient.Tests](https://github.com/blizzard-net/warcraft/tree/master/tests/ArgentPonyWarcraftClient.Tests) project and the Blizzard World of Warcraft Game Data and Profile APIs documentation to learn more about what else you can do.
+
+## Using with Dependency Injection
+The Argent Pony Warcraft Client includes tools to make registering the various interfaces with the `IServiceCollection` in .NET Core applications a snap!
+
+### Installing via NuGet
+You can install the ArgentPonyWarcraftClient.Extensions.DependencyInjection package from the NuGet Package Manager in Visual Studio or by running the following command from the Package Manager Console:
+```
+Install-Package ArgentPonyWarcraftClient.Extensions.DependencyInjection
+```
+
+### Register services
+To start off, add the appropriate `using` statement to the file.
+
+```cs
+using ArgentPoneyWarcraftClient.Extensions.DependencyInjection;
+```
+
+Then use the `AddWarcraftClients()` method on the `IServiceCollection` instance. For example, in ASP.NET Core applications this would be in the `ConfigureServices()` method like so.
+
+```cs
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        string clientId = "MY-CLIENT-ID-GOES-HERE";
+        string clientSecret = "MY-CLIENT-SECRET-GOES-HERE";
+
+        services.AddWarcraftClients(clientId, clientSecret);
+    }
+}
+```
+
+Similar to directly instantiating the `WarcraftClient`, you also have the option to specify the locale and region you want to use.
+
+```cs
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        string clientId = "MY-CLIENT-ID-GOES-HERE";
+        string clientSecret = "MY-CLIENT-SECRET-GOES-HERE";
+
+        services.AddWarcraftClients(clientId, clientSecret, Region.Europe, Locale.en_GB);
+    }
+}
+```
+
+Once the services are registered with the container you can list them as dependencies for your controllers or services.
+
+```cs
+public class CharacterProfileController
+{
+    private readonly IWarcraftClient _warcraftClient;
+
+    public CharacterProfileController(IWarcraftClient warcraftClient)
+    {
+        _warcraftClient = warcraftClient;
+    }
+
+    public async Task<ActionResult> GetCharacterProfileSummary()
+    {
+        RequestResult<CharacterProfileSummary> result = await _warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
+
+        return Ok(result);
+    }
+}
+```
+
+In addition to registering the `IWarcraftClient`, it registers all of the discrete interfaces as well, such as the `IProfileApi` or `IAchievementApi`. This allows your component to depend only on the specific APIs you need.
+
+```cs
+public class CharacterProfileController
+{
+    private readonly ICharacterProfileApi _characterProfileClient;
+
+    public CharacterProfileController(ICharacterProfileApi characterProfileClient)
+    {
+        _characterProfileClient = characterProfileClient;
+    }
+
+    public async Task<ActionResult> GetCharacterProfileSummary()
+    {
+        RequestResult<CharacterProfileSummary> result = await _characterProfileClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
+
+        return Ok(result);
+    }
+}
+```
