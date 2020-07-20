@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of auctions.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the connected realm associated with the auctions.
         /// </summary>
-        [JsonProperty("connected_realm")]
+        [JsonPropertyName("connected_realm")]
         public Self ConnectedRealm { get; set; }
 
         /// <summary>
         /// Gets the auctions.
         /// </summary>
-        [JsonProperty("auctions")]
+        [JsonPropertyName("auctions")]
         public Auction[] Auctions { get; set; }
     }
 }

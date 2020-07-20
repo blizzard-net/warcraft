@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the raw number.
         /// </summary>
-        [JsonProperty("raw")]
+        [JsonPropertyName("raw")]
         public long Raw { get; set; }
 
         /// <summary>
         /// Gets the value.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public long Value { get; set; }
 
         /// <summary>
         /// Gets the maximum value.
         /// </summary>
-        [JsonProperty("max")]
+        [JsonPropertyName("max")]
         public long Max { get; set; }
     }
 }

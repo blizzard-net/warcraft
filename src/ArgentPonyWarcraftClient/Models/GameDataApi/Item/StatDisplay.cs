@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the display string for the stat.
         /// </summary>
-        [JsonProperty("display_string")]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
 
         /// <summary>
         /// Gets the color associated with the stat.
         /// </summary>
-        [JsonProperty("color")]
+        [JsonPropertyName("color")]
         public ColorDetails Color { get; set; }
     }
 }

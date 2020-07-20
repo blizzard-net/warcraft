@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the azerite essence power.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the rank of the azerite essence power.
         /// </summary>
-        [JsonProperty("rank")]
+        [JsonPropertyName("rank")]
         public long Rank { get; set; }
 
         /// <summary>
         /// Gets a reference to the spell that is the main power for this azerite essence.
         /// </summary>
-        [JsonProperty("main_power_spell")]
+        [JsonPropertyName("main_power_spell")]
         public SpellReference MainPowerSpell { get; set; }
 
         /// <summary>
         /// Gets a reference to the spell that is the passive power for this azerite essence.
         /// </summary>
-        [JsonProperty("passive_power_spell")]
+        [JsonPropertyName("passive_power_spell")]
         public SpellReference PassivePowerSpell { get; set; }
     }
 }

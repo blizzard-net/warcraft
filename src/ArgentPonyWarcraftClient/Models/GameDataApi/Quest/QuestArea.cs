@@ -1,7 +1,7 @@
-﻿namespace ArgentPonyWarcraftClient
-{
-    using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
+namespace ArgentPonyWarcraftClient
+{
     /// <summary>
     /// A quest area.
     /// </summary>
@@ -10,25 +10,25 @@
         /// <summary>
         /// Gets links for the quest area.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the quest area.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the quest area name.
         /// </summary>
-        [JsonProperty("area")]
+        [JsonPropertyName("area")]
         public string Area { get; set; }
 
         /// <summary>
         /// Gets references to the quests in this area.
         /// </summary>
-        [JsonProperty("quests")]
+        [JsonPropertyName("quests")]
         public QuestReference[] Quests { get; set; }
     }
 }

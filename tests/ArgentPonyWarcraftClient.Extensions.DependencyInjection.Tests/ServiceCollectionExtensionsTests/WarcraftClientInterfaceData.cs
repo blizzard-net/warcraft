@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 
         public IEnumerator<object[]> GetEnumerator()
         {
-            return ClientInterfaces.Select(type => new object[] {type}).GetEnumerator();
+            return ClientInterfaces.Select(type => new object[] { type }).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

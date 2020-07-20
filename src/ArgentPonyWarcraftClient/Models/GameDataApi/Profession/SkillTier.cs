@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,37 +10,37 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the skill tier.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the skill tier.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the skill tier.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the minimum skill level for the skill tier.
         /// </summary>
-        [JsonProperty("minimum_skill_level")]
+        [JsonPropertyName("minimum_skill_level")]
         public long MinimumSkillLevel { get; set; }
 
         /// <summary>
         /// Gets the maximum skill level for the skill tier.
         /// </summary>
-        [JsonProperty("maximum_skill_level")]
+        [JsonPropertyName("maximum_skill_level")]
         public long MaximumSkillLevel { get; set; }
 
         /// <summary>
         /// Gets the categories in the skill tier.
         /// </summary>
-        [JsonProperty("categories")]
+        [JsonPropertyName("categories")]
         public RecipeCategory[] Categories { get; set; }
     }
 }

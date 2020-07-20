@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,49 +10,49 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the recipe.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the recipe.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the recipe.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the description of the recipe.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets the media associated with the recipe.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
 
         /// <summary>
         /// Gets a reference to the item crafted by this recipe.
         /// </summary>
-        [JsonProperty("crafted_item")]
+        [JsonPropertyName("crafted_item")]
         public ItemReference CraftedItem { get; set; }
 
         /// <summary>
         /// Gets the reagents required for the recipe.
         /// </summary>
-        [JsonProperty("reagents")]
+        [JsonPropertyName("reagents")]
         public RecipeReagent[] Reagents { get; set; }
 
         /// <summary>
         /// Gets the range of item quantities produced by this recipe.
         /// </summary>
-        [JsonProperty("crafted_quantity")]
+        [JsonPropertyName("crafted_quantity")]
         public CraftedQuantity CraftedQuantity { get; set; }
     }
 }

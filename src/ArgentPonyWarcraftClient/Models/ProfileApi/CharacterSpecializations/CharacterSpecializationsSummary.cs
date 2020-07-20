@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the summary of the character's specializations.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the character's specializations.
         /// </summary>
-        [JsonProperty("specializations")]
+        [JsonPropertyName("specializations")]
         public CharacterSpecialization[] Specializations { get; set; }
 
         /// <summary>
         /// Gets the character's active specialization.
         /// </summary>
-        [JsonProperty("active_specialization")]
+        [JsonPropertyName("active_specialization")]
         public PlayableSpecializationReference ActiveSpecialization { get; set; }
 
         /// <summary>
         /// Gets a reference to the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public CharacterReference Character { get; set; }
     }
 }

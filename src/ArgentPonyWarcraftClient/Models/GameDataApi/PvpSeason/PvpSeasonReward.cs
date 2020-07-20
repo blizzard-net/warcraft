@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the PvP bracket for the reward.
         /// </summary>
-        [JsonProperty("bracket")]
+        [JsonPropertyName("bracket")]
         public Bracket Bracket { get; set; }
 
         /// <summary>
         /// Gets a reference to the achievement associated with this reward.
         /// </summary>
-        [JsonProperty("achievement")]
+        [JsonPropertyName("achievement")]
         public AchievementReference Achievement { get; set; }
 
         /// <summary>
         /// Gets the PvP rating cutoff for this reward.
         /// </summary>
-        [JsonProperty("rating_cutoff")]
+        [JsonPropertyName("rating_cutoff")]
         public long RatingCutoff { get; set; }
 
         /// <summary>
         /// Gets the faction (Alliance or Horde) for this reward.
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumType Faction { get; set; }
     }
 }

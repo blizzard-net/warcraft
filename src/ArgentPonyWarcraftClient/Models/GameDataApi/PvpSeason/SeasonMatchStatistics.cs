@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the number of matches played.
         /// </summary>
-        [JsonProperty("played")]
+        [JsonPropertyName("played")]
         public long Played { get; set; }
 
         /// <summary>
         /// Gets the number of matches won.
         /// </summary>
-        [JsonProperty("won")]
+        [JsonPropertyName("won")]
         public long Won { get; set; }
 
         /// <summary>
         /// Gets the number of matches lost.
         /// </summary>
-        [JsonProperty("lost")]
+        [JsonPropertyName("lost")]
         public long Lost { get; set; }
     }
 }

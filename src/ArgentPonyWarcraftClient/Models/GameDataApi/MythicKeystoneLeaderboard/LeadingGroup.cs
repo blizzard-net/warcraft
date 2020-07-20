@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,31 +11,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ranking of the group.
         /// </summary>
-        [JsonProperty("ranking")]
+        [JsonPropertyName("ranking")]
         public long Ranking { get; set; }
 
         /// <summary>
         /// Gets the duration of the run.
         /// </summary>
-        [JsonProperty("duration")]
+        [JsonPropertyName("duration")]
         public long Duration { get; set; }
 
         /// <summary>
         /// Gets the timestamp of the completion.
         /// </summary>
-        [JsonProperty("completed_timestamp")]
+        [JsonPropertyName("completed_timestamp")]
         public DateTime CompletedTimestamp { get; set; }
 
         /// <summary>
         /// Gets the keystone level.
         /// </summary>
-        [JsonProperty("keystone_level")]
+        [JsonPropertyName("keystone_level")]
         public long KeystoneLevel { get; set; }
 
         /// <summary>
         /// Gets the members of the group.
         /// </summary>
-        [JsonProperty("members")]
+        [JsonPropertyName("members")]
         public Member[] Members { get; set; }
     }
 }

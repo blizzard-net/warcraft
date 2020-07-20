@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the related achievement that is a criterion for completing the parent achievement.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the criterion achievment has been completed.
         /// </summary>
-        [JsonProperty("is_completed")]
+        [JsonPropertyName("is_completed")]
         public bool IsCompleted { get; set; }
 
         /// <summary>
         /// Gets child criteria of the criterion achievment, if any.
         /// </summary>
-        [JsonProperty("child_criteria", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("child_criteria")]
         public Criteria[] ChildCriteria { get; set; }
 
         /// <summary>
         /// Gets an amount associated with this criterion achievment, if any.
         /// </summary>
-        [JsonProperty("amount", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("amount")]
         public long? Amount { get; set; }
     }
 }

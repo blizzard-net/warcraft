@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the breed ID of the pet.
         /// </summary>
-        [JsonProperty("breed_id")]
+        [JsonPropertyName("breed_id")]
         public long BreedId { get; set; }
 
         /// <summary>
         /// Gets the health of the pet.
         /// </summary>
-        [JsonProperty("health")]
+        [JsonPropertyName("health")]
         public long Health { get; set; }
 
         /// <summary>
         /// Gets the power of the pet.
         /// </summary>
-        [JsonProperty("power")]
+        [JsonPropertyName("power")]
         public long Power { get; set; }
 
         /// <summary>
         /// Gets the speed of the pet.
         /// </summary>
-        [JsonProperty("speed")]
+        [JsonPropertyName("speed")]
         public long Speed { get; set; }
     }
 }

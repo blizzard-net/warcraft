@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the achievement category.
         /// </summary>
-        [JsonProperty("category")]
+        [JsonPropertyName("category")]
         public AchievementCategoryReference Category { get; set; }
 
         /// <summary>
         /// Gets the number of achievements the character has in this category.
         /// </summary>
-        [JsonProperty("quantity")]
+        [JsonPropertyName("quantity")]
         public long Quantity { get; set; }
 
         /// <summary>
         /// Gets the number of achievement points the character has in this category.
         /// </summary>
-        [JsonProperty("points")]
+        [JsonPropertyName("points")]
         public long Points { get; set; }
     }
 }

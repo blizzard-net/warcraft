@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the display string for the effect.
         /// </summary>
-        [JsonProperty("display_string")]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
 
         /// <summary>
         /// Gets the required count of items in the set that must be equipped to activate the effect.
         /// </summary>
-        [JsonProperty("required_count")]
+        [JsonPropertyName("required_count")]
         public long RequiredCount { get; set; }
     }
 }

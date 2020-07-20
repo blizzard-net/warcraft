@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the Mythic Raid leaderboard.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the slug for the raid and faction.
         /// </summary>
-        [JsonProperty("slug")]
+        [JsonPropertyName("slug")]
         public string Slug { get; set; }
 
         /// <summary>
         /// Gets the criteria type.
         /// </summary>
-        [JsonProperty("criteria_type")]
+        [JsonPropertyName("criteria_type")]
         public string CriteriaType { get; set; }
 
         /// <summary>
         /// Gets a reference to the zone for the raid.
         /// </summary>
-        [JsonProperty("zone")]
+        [JsonPropertyName("zone")]
         public ZoneReference Zone { get; set; }
 
         /// <summary>
         /// Gets the entries for the Mythic Raid leaderboard.
         /// </summary>
-        [JsonProperty("entries")]
+        [JsonPropertyName("entries")]
         public MythicRaidLeaderboardEntry[] Entries { get; set; }
     }
 }

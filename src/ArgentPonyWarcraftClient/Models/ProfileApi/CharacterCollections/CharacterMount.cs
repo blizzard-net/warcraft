@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the type of mount.
         /// </summary>
-        [JsonProperty("mount")]
+        [JsonPropertyName("mount")]
         public MountReference Mount { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this mount is a favorite for the character.
         /// </summary>
-        [JsonProperty("is_favorite", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("is_favorite")]
         public bool? IsFavorite { get; set; }
     }
 }

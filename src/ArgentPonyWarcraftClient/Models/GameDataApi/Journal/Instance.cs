@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,79 +10,79 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the instance.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the instance.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the instance.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the map of the instance.
         /// </summary>
-        [JsonProperty("map")]
+        [JsonPropertyName("map")]
         public Map Map { get; set; }
 
         /// <summary>
         /// Gets the area where the instance is found.
         /// </summary>
-        [JsonProperty("area")]
+        [JsonPropertyName("area")]
         public Area Area { get; set; }
 
         /// <summary>
         /// Gets the description of the instance.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets the encounters found within the instance.
         /// </summary>
-        [JsonProperty("encounters")]
+        [JsonPropertyName("encounters")]
         public EncounterReference[] Encounters { get; set; }
 
         /// <summary>
         /// Gets a reference to the game expansion where this instance was introduced.
         /// </summary>
-        [JsonProperty("expansion")]
+        [JsonPropertyName("expansion")]
         public ExpansionReference Expansion { get; set; }
 
         /// <summary>
         /// Gets the location of the instance.
         /// </summary>
-        [JsonProperty("location")]
+        [JsonPropertyName("location")]
         public Location Location { get; set; }
 
         /// <summary>
         /// Gets the available difficulty modes for the instance.
         /// </summary>
-        [JsonProperty("modes")]
+        [JsonPropertyName("modes")]
         public InstanceMode[] Modes { get; set; }
 
         /// <summary>
         /// Gets the media associated with the instance.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
 
         /// <summary>
         /// Gets the minimum character level for the instance.
         /// </summary>
-        [JsonProperty("minimum_level")]
+        [JsonPropertyName("minimum_level")]
         public long MinimumLevel { get; set; }
 
         /// <summary>
         /// Gets the category of the instance (i.e., "DUNGEON" or "RAID").
         /// </summary>
-        [JsonProperty("category")]
+        [JsonPropertyName("category")]
         public InstanceCategory Category { get; set; }
     }
 }

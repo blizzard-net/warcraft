@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the World of Warcraft account.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the characters associated with the World of Warcraft account.
         /// </summary>
-        [JsonProperty("characters")]
+        [JsonPropertyName("characters")]
         public AccountCharacter[] Characters { get; set; }
     }
 }

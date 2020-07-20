@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the section.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the title of the section.
         /// </summary>
-        [JsonProperty("title")]
+        [JsonPropertyName("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// Gets the body text that describes this section of the encounter.
         /// </summary>
-        [JsonProperty("body_text", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("body_text")]
         public string BodyText { get; set; }
 
         /// <summary>
         /// Gets the media associated with this section.
         /// </summary>
-        [JsonProperty("creature_display", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("creature_display")]
         public Media CreatureDisplay { get; set; }
 
         /// <summary>
         /// Gets any child sections within this section.
         /// </summary>
-        [JsonProperty("sections")]
+        [JsonPropertyName("sections")]
         public EncounterSection[] Sections { get; set; }
     }
 }

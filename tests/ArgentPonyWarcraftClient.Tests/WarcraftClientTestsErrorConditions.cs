@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient.Tests
 
             RequestResult<Item> result = await warcraftClient.GetItemAsync(99999991, "static-us");
             Assert.NotNull(result.Error);
-            Assert.Equal("404", result.Error.Code);
+            Assert.Equal(404, result.Error.Code);
             Assert.False(result.Success);
             Assert.Null(result.Value);
         }
@@ -31,8 +31,8 @@ namespace ArgentPonyWarcraftClient.Tests
 
             RequestResult<Encounter> result = await warcraftClient.GetJournalEncounterAsync(89, "static-us");
             Assert.NotNull(result.Error);
-            Assert.Equal("Newtonsoft.Json.JsonReaderException", result.Error.Type);
-            Assert.Equal("Unterminated string. Expected delimiter: \". Path 'description', line 9, position 49.", result.Error.Detail);
+            Assert.Equal("System.Text.Json.JsonException", result.Error.Type);
+            Assert.Equal("Expected end of string, but instead reached end of data. Path: $.description | LineNumber: 8 | BytePositionInLine: 49.", result.Error.Detail);
             Assert.False(result.Success);
             Assert.Null(result.Value);
         }
@@ -47,7 +47,7 @@ namespace ArgentPonyWarcraftClient.Tests
 
             RequestResult<Item> result = await warcraftClient.GetItemAsync(19019, "static-us");
             Assert.NotNull(result.Error);
-            Assert.Equal("403", result.Error.Code);
+            Assert.Equal(403, result.Error.Code);
             Assert.False(result.Success);
             Assert.Null(result.Value);
         }

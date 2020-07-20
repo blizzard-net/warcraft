@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,31 +11,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the mythic keystone season.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the mythic keystone season.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the start timestamp of the mythic keystone season.
         /// </summary>
-        [JsonProperty("start_timestamp")]
+        [JsonPropertyName("start_timestamp")]
         public DateTime StartTimestamp { get; set; }
 
         /// <summary>
         /// Gets the end timestamp of the mythic keystone season.
         /// </summary>
-        [JsonProperty("end_timestamp")]
+        [JsonPropertyName("end_timestamp")]
         public DateTime EndTimestamp { get; set; }
 
         /// <summary>
         /// Gets refernces to the periods in the mythic keystone season.
         /// </summary>
-        [JsonProperty("periods")]
+        [JsonPropertyName("periods")]
         public MythicKeystonePeriodReference[] Periods { get; set; }
     }
 }

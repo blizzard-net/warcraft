@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the name of the reputation tier.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the minimum value of the reputation tier.
         /// </summary>
-        [JsonProperty("min_value")]
+        [JsonPropertyName("min_value")]
         public long MinValue { get; set; }
 
         /// <summary>
         /// Gets the maximum value of the reputation tier.
         /// </summary>
-        [JsonProperty("max_value")]
+        [JsonPropertyName("max_value")]
         public long MaxValue { get; set; }
 
         /// <summary>
         /// Gets the ID of the reputation tier.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
     }
 }

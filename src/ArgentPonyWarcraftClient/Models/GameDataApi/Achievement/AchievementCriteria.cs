@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the criteria.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public int Id { get; private set; }
 
         /// <summary>
         /// Gets the description of the criteria.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; private set; }
 
         /// <summary>
         /// Gets the amount of the criteria.
         /// </summary>
-        [JsonProperty("amount")]
+        [JsonPropertyName("amount")]
         public int Amount { get; private set; }
     }
 }

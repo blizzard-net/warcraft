@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,49 +10,49 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the character achievements summary.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the total number of achievements for this character.
         /// </summary>
-        [JsonProperty("total_quantity")]
+        [JsonPropertyName("total_quantity")]
         public long TotalQuantity { get; set; }
 
         /// <summary>
         /// Gets the total number of achievement points for this character.
         /// </summary>
-        [JsonProperty("total_points")]
+        [JsonPropertyName("total_points")]
         public long TotalPoints { get; set; }
 
         /// <summary>
         /// Gets the achievements for this character.
         /// </summary>
-        [JsonProperty("achievements")]
+        [JsonPropertyName("achievements")]
         public AchievementProgress[] Achievements { get; set; }
 
         /// <summary>
         /// Gets the character's progress in various achievement categories.
         /// </summary>
-        [JsonProperty("category_progress")]
+        [JsonPropertyName("category_progress")]
         public CategoryProgress[] CategoryProgress { get; set; }
 
         /// <summary>
         /// Gets recent achievements by the character.
         /// </summary>
-        [JsonProperty("recent_events")]
+        [JsonPropertyName("recent_events")]
         public RecentEvent[] RecentEvents { get; set; }
 
         /// <summary>
         /// Gets a reference to the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public CharacterReference Character { get; set; }
 
         /// <summary>
         /// Gets a link to the character's achievement statistics.
         /// </summary>
-        [JsonProperty("statistics")]
+        [JsonPropertyName("statistics")]
         public Self Statistics { get; set; }
     }
 }

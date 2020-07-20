@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the character professions summary.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the character's primary professions.
         /// </summary>
-        [JsonProperty("primaries")]
+        [JsonPropertyName("primaries")]
         public CharacterProfession[] Primaries { get; set; }
 
         /// <summary>
         /// Gets the character's secondary professions.
         /// </summary>
-        [JsonProperty("secondaries")]
+        [JsonPropertyName("secondaries")]
         public CharacterProfession[] Secondaries { get; set; }
     }
 }

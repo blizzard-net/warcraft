@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the name for male characters.
         /// </summary>
-        [JsonProperty("male")]
+        [JsonPropertyName("male")]
         public string Male { get; set; }
 
         /// <summary>
         /// Gets the name for female characters.
         /// </summary>
-        [JsonProperty("female")]
+        [JsonPropertyName("female")]
         public string Female { get; set; }
     }
 }

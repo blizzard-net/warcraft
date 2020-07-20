@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of PvP talents.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to PvP talents.
         /// </summary>
-        [JsonProperty("pvp_talents")]
+        [JsonPropertyName("pvp_talents")]
         public PvpTalentReference[] PvpTalents { get; set; }
     }
 }

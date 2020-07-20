@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,19 +11,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the WoW Token index.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the last updated timestamp for the WoW Token index.
         /// </summary>
-        [JsonProperty("last_updated_timestamp")]
+        [JsonPropertyName("last_updated_timestamp")]
         public DateTime LastUpdatedTimestamp { get; set; }
 
         /// <summary>
         /// Gets the price for a Wow token.
         /// </summary>
-        [JsonProperty("price")]
+        [JsonPropertyName("price")]
         public long Price { get; set; }
     }
 }

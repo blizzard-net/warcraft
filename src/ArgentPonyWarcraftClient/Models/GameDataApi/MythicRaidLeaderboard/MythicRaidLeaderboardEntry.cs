@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,31 +11,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the guild.
         /// </summary>
-        [JsonProperty("guild")]
+        [JsonPropertyName("guild")]
         public GuildReferenceWithoutKeyAndFaction Guild { get; set; }
 
         /// <summary>
         /// Gets the faction.
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumTypeWithoutName Faction { get; set; }
 
         /// <summary>
         /// Gets the timestamp.
         /// </summary>
-        [JsonProperty("timestamp")]
+        [JsonPropertyName("timestamp")]
         public DateTime Timestamp { get; set; }
 
         /// <summary>
         /// Gets the region.
         /// </summary>
-        [JsonProperty("region")]
+        [JsonPropertyName("region")]
         public string Region { get; set; }
 
         /// <summary>
         /// Gets the rank.
         /// </summary>
-        [JsonProperty("rank")]
+        [JsonPropertyName("rank")]
         public long Rank { get; set; }
     }
 }

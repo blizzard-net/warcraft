@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,43 +10,43 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the mount.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the mount.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the mount.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the creature displays media for the mount.
         /// </summary>
-        [JsonProperty("creature_displays")]
+        [JsonPropertyName("creature_displays")]
         public Media[] CreatureDisplays { get; set; }
 
         /// <summary>
         /// Gets the description of the mount.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets the source for where the mount is acquired.
         /// </summary>
-        [JsonProperty("source")]
+        [JsonPropertyName("source")]
         public EnumType Source { get; set; }
 
         /// <summary>
         /// Gets the faction for the mount.
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumType Faction { get; set; }
     }
 }

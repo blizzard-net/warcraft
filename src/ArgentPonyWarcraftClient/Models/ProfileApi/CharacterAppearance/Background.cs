@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,7 +10,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the background color.
         /// </summary>
-        [JsonProperty("color")]
+        [JsonPropertyName("color")]
         public Color Color { get; set; }
     }
 }

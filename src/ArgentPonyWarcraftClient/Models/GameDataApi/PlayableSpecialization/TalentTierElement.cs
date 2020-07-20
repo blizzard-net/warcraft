@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the talent.
         /// </summary>
-        [JsonProperty("talent")]
+        [JsonPropertyName("talent")]
         public TalentReference Talent { get; set; }
 
         /// <summary>
         /// Gets the spell tooltip for the talent as it appears in the tier.
         /// </summary>
-        [JsonProperty("spell_tooltip")]
+        [JsonPropertyName("spell_tooltip")]
         public SpellTooltip SpellTooltip { get; set; }
 
         /// <summary>
         /// Gets the column index at which the talent appears in the talent tier.
         /// </summary>
-        [JsonProperty("column_index")]
+        [JsonPropertyName("column_index")]
         public long ColumnIndex { get; set; }
     }
 }

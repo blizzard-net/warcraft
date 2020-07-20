@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the name of the recipe category.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the recipes in the recipe category.
         /// </summary>
-        [JsonProperty("recipes")]
+        [JsonPropertyName("recipes")]
         public RecipeReference[] Recipes { get; set; }
     }
 }

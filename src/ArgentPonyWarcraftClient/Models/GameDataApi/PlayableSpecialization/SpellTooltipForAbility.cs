@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the spell.
         /// </summary>
-        [JsonProperty("spell", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("spell")]
         public SpellReference Spell { get; set; }
 
         /// <summary>
         /// Gets the description of the spell.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets the cast time of the spell.
         /// </summary>
-        [JsonProperty("cast_time")]
+        [JsonPropertyName("cast_time")]
         public string CastTime { get; set; }
 
         /// <summary>
         /// Gets the cooldown of the spell.
         /// </summary>
-        [JsonProperty("cooldown", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("cooldown")]
         public string Cooldown { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,49 +10,49 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the playable class.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the playable class.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the playable class.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the gender-specific names for the playable class.
         /// </summary>
-        [JsonProperty("gender_name")]
+        [JsonPropertyName("gender_name")]
         public GenderName GenderName { get; set; }
 
         /// <summary>
         /// Gets a reference to the power type used by this playable class.
         /// </summary>
-        [JsonProperty("power_type")]
+        [JsonPropertyName("power_type")]
         public PowerTypeReference PowerType { get; set; }
 
         /// <summary>
         /// Gets references to the specializations for this playable class.
         /// </summary>
-        [JsonProperty("specializations")]
+        [JsonPropertyName("specializations")]
         public PlayableSpecializationReference[] Specializations { get; set; }
 
         /// <summary>
         /// Gets the media for this playable class.
         /// </summary>
-        [JsonProperty("media")]
+        [JsonPropertyName("media")]
         public Media Media { get; set; }
 
         /// <summary>
         /// Gets a link to the PVP talent slots for this playable class.
         /// </summary>
-        [JsonProperty("pvp_talent_slots")]
+        [JsonPropertyName("pvp_talent_slots")]
         public Self PvpTalentSlots { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the character encounters summary.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets a reference to the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public CharacterReference Character { get; set; }
 
         /// <summary>
         /// Gets a link to the character's dungeon encounters.
         /// </summary>
-        [JsonProperty("dungeons")]
+        [JsonPropertyName("dungeons")]
         public Self Dungeons { get; set; }
 
         /// <summary>
         /// Gets a link to the character's raid encounters.
         /// </summary>
-        [JsonProperty("raids")]
+        [JsonPropertyName("raids")]
         public Self Raids { get; set; }
     }
 }

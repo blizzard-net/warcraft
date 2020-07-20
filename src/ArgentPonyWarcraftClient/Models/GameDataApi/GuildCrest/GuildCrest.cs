@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the guild crest emblem and color.
         /// </summary>
-        [JsonProperty("emblem")]
+        [JsonPropertyName("emblem")]
         public GuildCrestEmblemWithColor Emblem { get; set; }
 
         /// <summary>
         /// Gets the guild crest border and color.
         /// </summary>
-        [JsonProperty("border")]
+        [JsonPropertyName("border")]
         public GuildCrestBorderWithColor Border { get; set; }
 
         /// <summary>
         /// Gets the guild crest background.
         /// </summary>
-        [JsonProperty("background")]
+        [JsonPropertyName("background")]
         public Background Background { get; set; }
     }
 }

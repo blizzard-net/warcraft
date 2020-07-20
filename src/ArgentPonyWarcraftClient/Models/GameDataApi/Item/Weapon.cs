@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the damage of the weapon.
         /// </summary>
-        [JsonProperty("damage")]
+        [JsonPropertyName("damage")]
         public Damage Damage { get; set; }
 
         /// <summary>
         /// Gets the attack speed of the weapon.
         /// </summary>
-        [JsonProperty("attack_speed")]
+        [JsonPropertyName("attack_speed")]
         public DescribedValue AttackSpeed { get; set; }
 
         /// <summary>
         /// Gets the damage per second (DPS) of the weapon.
         /// </summary>
-        [JsonProperty("dps")]
+        [JsonPropertyName("dps")]
         public DescribedValue Dps { get; set; }
     }
 }

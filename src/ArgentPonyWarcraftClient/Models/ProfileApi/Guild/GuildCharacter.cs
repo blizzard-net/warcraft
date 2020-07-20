@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,43 +10,43 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a link to the character's profile.
         /// </summary>
-        [JsonProperty("key")]
+        [JsonPropertyName("key")]
         public Self Key { get; set; }
 
         /// <summary>
         /// Gets the name of the character.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the ID of the character.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's realm.
         /// </summary>
-        [JsonProperty("realm")]
+        [JsonPropertyName("realm")]
         public RealmReference Realm { get; set; }
 
         /// <summary>
         /// Gets the level of the character.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public long Level { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's class.
         /// </summary>
-        [JsonProperty("playable_class")]
+        [JsonPropertyName("playable_class")]
         public PlayableClassReferenceWithoutName PlayableClass { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's race.
         /// </summary>
-        [JsonProperty("playable_race")]
+        [JsonPropertyName("playable_race")]
         public PlayableRaceReferenceWithoutName PlayableRace { get; set; }
     }
 }

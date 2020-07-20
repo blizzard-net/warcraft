@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of reputation factions.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to the factions.
         /// </summary>
-        [JsonProperty("factions")]
+        [JsonPropertyName("factions")]
         public ReputationFactionReference[] Factions { get; set; }
 
         /// <summary>
         /// Gets references to the root factions.
         /// </summary>
-        [JsonProperty("root_factions")]
+        [JsonPropertyName("root_factions")]
         public ReputationFactionReference[] RootFactions { get; set; }
     }
 }

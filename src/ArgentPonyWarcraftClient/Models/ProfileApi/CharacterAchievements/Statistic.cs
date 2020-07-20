@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,31 +11,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the statistic.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the statistic.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the timestamp when the statistic was last updated.
         /// </summary>
-        [JsonProperty("last_updated_timestamp")]
+        [JsonPropertyName("last_updated_timestamp")]
         public DateTime LastUpdatedTimestamp { get; set; }
 
         /// <summary>
         /// Gets a quantity associated with the statistic.
         /// </summary>
-        [JsonProperty("quantity")]
+        [JsonPropertyName("quantity")]
         public double Quantity { get; set; }
 
         /// <summary>
         /// Gets an optional description of the statistic.
         /// </summary>
-        [JsonProperty("description", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
     }
 }

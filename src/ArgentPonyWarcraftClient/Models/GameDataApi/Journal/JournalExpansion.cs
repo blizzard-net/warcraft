@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,31 +10,31 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the expansion.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the expansion.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the name of the expansion.
         /// </summary>
-        [JsonProperty("name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets the dungeons that belong to the expansion.
         /// </summary>
-        [JsonProperty("dungeons")]
+        [JsonPropertyName("dungeons")]
         public InstanceReference[] Dungeons { get; set; }
 
         /// <summary>
         /// Gets the raids that belong to the expansion.
         /// </summary>
-        [JsonProperty("raids")]
+        [JsonPropertyName("raids")]
         public InstanceReference[] Raids { get; set; }
     }
 }

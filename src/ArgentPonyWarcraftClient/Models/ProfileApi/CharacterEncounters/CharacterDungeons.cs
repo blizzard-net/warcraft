@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the character's completed instances.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the character's completed instances, organized by game expansion.
         /// </summary>
-        [JsonProperty("expansions")]
+        [JsonPropertyName("expansions")]
         public CharacterExpansionInstances[] Expansions { get; set; }
     }
 }

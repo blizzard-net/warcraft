@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the reputation faction.
         /// </summary>
-        [JsonProperty("reward")]
+        [JsonPropertyName("reward")]
         public ReputationFactionReference Reward { get; set; }
 
         /// <summary>
         /// Gets the amount of reputation gained with the reputation faction.
         /// </summary>
-        [JsonProperty("value")]
+        [JsonPropertyName("value")]
         public long Value { get; set; }
     }
 }

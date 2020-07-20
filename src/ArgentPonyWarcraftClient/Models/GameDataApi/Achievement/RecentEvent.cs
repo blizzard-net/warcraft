@@ -1,5 +1,5 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the achievement.
         /// </summary>
-        [JsonProperty("achievement")]
+        [JsonPropertyName("achievement")]
         public AchievementReference Achievement { get; set; }
 
         /// <summary>
         /// Gets the timestamp when the achievement was completed.
         /// </summary>
-        [JsonProperty("timestamp")]
+        [JsonPropertyName("timestamp")]
         public DateTime Timestamp { get; set; }
     }
 }

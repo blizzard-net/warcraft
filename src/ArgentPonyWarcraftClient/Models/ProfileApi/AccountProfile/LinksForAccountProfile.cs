@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a self-reference.
         /// </summary>
-        [JsonProperty("self")]
+        [JsonPropertyName("self")]
         public Self Self { get; set; }
 
         /// <summary>
         /// Gets a link to the user.
         /// </summary>
-        [JsonProperty("user")]
+        [JsonPropertyName("user")]
         public Self User { get; set; }
 
         /// <summary>
         /// Gets a link to the profile.
         /// </summary>
-        [JsonProperty("profile")]
+        [JsonPropertyName("profile")]
         public Self Profile { get; set; }
     }
 }

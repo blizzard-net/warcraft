@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,37 +10,37 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the socket type.
         /// </summary>
-        [JsonProperty("socket_type")]
+        [JsonPropertyName("socket_type")]
         public EnumType SocketType { get; set; }
 
         /// <summary>
         /// Gets a reference to the item.
         /// </summary>
-        [JsonProperty("item", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("item")]
         public ItemReference Item { get; set; }
 
         /// <summary>
         /// Gets the context.
         /// </summary>
-        [JsonProperty("context", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("context")]
         public long? Context { get; set; }
 
         /// <summary>
         /// Gets the display string for the socket.
         /// </summary>
-        [JsonProperty("display_string", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("display_string")]
         public string DisplayString { get; set; }
 
         /// <summary>
         /// Gets a reference to the media for the item.
         /// </summary>
-        [JsonProperty("media", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("media")]
         public ItemMediaReference Media { get; set; }
 
         /// <summary>
         /// Gets a list of bonus IDs for the socket.
         /// </summary>
-        [JsonProperty("bonus_list", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("bonus_list")]
         public long[] BonusList { get; set; }
     }
 }

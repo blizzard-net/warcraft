@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,55 +10,55 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a reference to the pet's species.
         /// </summary>
-        [JsonProperty("species")]
+        [JsonPropertyName("species")]
         public PetReference Species { get; set; }
 
         /// <summary>
         /// Gets the level of the pet.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public long Level { get; set; }
 
         /// <summary>
         /// Gets the quality of the pet.
         /// </summary>
-        [JsonProperty("quality")]
+        [JsonPropertyName("quality")]
         public EnumType Quality { get; set; }
 
         /// <summary>
         /// Gets the stats for the pet.
         /// </summary>
-        [JsonProperty("stats")]
+        [JsonPropertyName("stats")]
         public PetStats Stats { get; set; }
 
         /// <summary>
         /// Gets the display information for the pet.
         /// </summary>
-        [JsonProperty("creature_display", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("creature_display")]
         public Media CreatureDisplay { get; set; }
 
         /// <summary>
         /// Gets the ID of the pet.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the pet has been selected as a favorite.
         /// </summary>
-        [JsonProperty("is_favorite", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("is_favorite")]
         public bool? IsFavorite { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the pet is currently active.
         /// </summary>
-        [JsonProperty("is_active", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("is_active")]
         public bool? IsActive { get; set; }
 
         /// <summary>
         /// Gets the active slot, if any, for the pet.
         /// </summary>
-        [JsonProperty("active_slot", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("active_slot")]
         public long? ActiveSlot { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of collection types for the account.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public LinksForAccountProfile Links { get; set; }
 
         /// <summary>
         /// Gets a link to the pets collection for the account.
         /// </summary>
-        [JsonProperty("pets")]
+        [JsonPropertyName("pets")]
         public Self Pets { get; set; }
 
         /// <summary>
         /// Gets a link to the mounts collection for the account.
         /// </summary>
-        [JsonProperty("mounts")]
+        [JsonPropertyName("mounts")]
         public Self Mounts { get; set; }
     }
 }

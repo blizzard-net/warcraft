@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,37 +10,37 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the zone.
         /// </summary>
-        [JsonProperty("zone")]
+        [JsonPropertyName("zone")]
         public Map Zone { get; set; }
 
         /// <summary>
         /// Gets the map.
         /// </summary>
-        [JsonProperty("map")]
+        [JsonPropertyName("map")]
         public Map Map { get; set; }
 
         /// <summary>
         /// Gets the x coordinate.
         /// </summary>
-        [JsonProperty("x")]
+        [JsonPropertyName("x")]
         public double X { get; set; }
 
         /// <summary>
         /// Gets the y coordinate.
         /// </summary>
-        [JsonProperty("y")]
+        [JsonPropertyName("y")]
         public double Y { get; set; }
 
         /// <summary>
         /// Gets the z coordinate.
         /// </summary>
-        [JsonProperty("z")]
+        [JsonPropertyName("z")]
         public double Z { get; set; }
 
         /// <summary>
         /// Gets the facing.
         /// </summary>
-        [JsonProperty("facing")]
+        [JsonPropertyName("facing")]
         public double Facing { get; set; }
     }
 }

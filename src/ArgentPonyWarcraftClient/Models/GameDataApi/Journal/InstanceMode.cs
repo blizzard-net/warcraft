@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,19 +10,19 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the difficulty mode.
         /// </summary>
-        [JsonProperty("mode")]
+        [JsonPropertyName("mode")]
         public EnumType Mode { get; set; }
 
         /// <summary>
         /// Gets the number of players.
         /// </summary>
-        [JsonProperty("players")]
+        [JsonPropertyName("players")]
         public long Players { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this difficulty mode is tracked.
         /// </summary>
-        [JsonProperty("is_tracked")]
+        [JsonPropertyName("is_tracked")]
         public bool IsTracked { get; set; }
     }
 }

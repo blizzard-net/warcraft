@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the header.
         /// </summary>
-        [JsonProperty("header")]
+        [JsonPropertyName("header")]
         public string Header { get; set; }
 
         /// <summary>
         /// Gets the gold portion of the price.
         /// </summary>
-        [JsonProperty("gold")]
-        public long Gold { get; set; }
+        [JsonPropertyName("gold")]
+        public string Gold { get; set; }
 
         /// <summary>
         /// Gets the silver portion of the price.
         /// </summary>
-        [JsonProperty("silver")]
-        public long Silver { get; set; }
+        [JsonPropertyName("silver")]
+        public string Silver { get; set; }
 
         /// <summary>
         /// Gets the copper portion of the price.
         /// </summary>
-        [JsonProperty("copper")]
-        public long Copper { get; set; }
+        [JsonPropertyName("copper")]
+        public string Copper { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the red channel value for the color.
         /// </summary>
-        [JsonProperty("r")]
+        [JsonPropertyName("r")]
         public long Red { get; set; }
 
         /// <summary>
         /// Gets the green channel value for the color.
         /// </summary>
-        [JsonProperty("g")]
+        [JsonPropertyName("g")]
         public long Green { get; set; }
 
         /// <summary>
         /// Gets the blue channel value for the color.
         /// </summary>
-        [JsonProperty("b")]
+        [JsonPropertyName("b")]
         public long Blue { get; set; }
 
         /// <summary>
         /// Gets the alpha (opacity) channel value for the color.
         /// </summary>
-        [JsonProperty("a")]
+        [JsonPropertyName("a")]
         public long Alpha { get; set; }
     }
 }

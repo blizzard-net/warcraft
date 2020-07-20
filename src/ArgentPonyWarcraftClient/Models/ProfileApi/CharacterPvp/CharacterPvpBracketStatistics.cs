@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,55 +10,55 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the PvP bracket statistics for the character.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets a reference to the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public CharacterReference Character { get; set; }
 
         /// <summary>
         /// Gets the faction.
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumType Faction { get; set; }
 
         /// <summary>
         /// Gets the PvP bracket.
         /// </summary>
-        [JsonProperty("bracket")]
+        [JsonPropertyName("bracket")]
         public Bracket Bracket { get; set; }
 
         /// <summary>
         /// Gets the character's rating in this PvP bracket.
         /// </summary>
-        [JsonProperty("rating")]
+        [JsonPropertyName("rating")]
         public long Rating { get; set; }
 
         /// <summary>
         /// Gets a reference to the PvP season.
         /// </summary>
-        [JsonProperty("season")]
+        [JsonPropertyName("season")]
         public PvpSeasonReference Season { get; set; }
 
         /// <summary>
         /// Gets a reference to the PvP tier.
         /// </summary>
-        [JsonProperty("tier")]
+        [JsonPropertyName("tier")]
         public PvpTierReferenceWithoutName Tier { get; set; }
 
         /// <summary>
         /// Gets the PvP match statistics for the season.
         /// </summary>
-        [JsonProperty("season_match_statistics")]
+        [JsonPropertyName("season_match_statistics")]
         public PvpMatchStatistics SeasonMatchStatistics { get; set; }
 
         /// <summary>
         /// Gets the PvP match statistics for the week.
         /// </summary>
-        [JsonProperty("weekly_match_statistics")]
+        [JsonPropertyName("weekly_match_statistics")]
         public PvpMatchStatistics WeeklyMatchStatistics { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,61 +10,61 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the character appearance summary.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets a reference to the character.
         /// </summary>
-        [JsonProperty("character")]
+        [JsonPropertyName("character")]
         public CharacterReference Character { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's race.
         /// </summary>
-        [JsonProperty("playable_race")]
+        [JsonPropertyName("playable_race")]
         public PlayableRaceReference PlayableRace { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's class.
         /// </summary>
-        [JsonProperty("playable_class")]
+        [JsonPropertyName("playable_class")]
         public PlayableClassReference PlayableClass { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's active specialization.
         /// </summary>
-        [JsonProperty("active_spec")]
+        [JsonPropertyName("active_spec")]
         public PlayableSpecializationReference ActiveSpec { get; set; }
 
         /// <summary>
         /// Gets the character's gender.
         /// </summary>
-        [JsonProperty("gender")]
+        [JsonPropertyName("gender")]
         public EnumType Gender { get; set; }
 
         /// <summary>
         /// Gets the character's faction (Alliance or Horde).
         /// </summary>
-        [JsonProperty("faction")]
+        [JsonPropertyName("faction")]
         public EnumType Faction { get; set; }
 
         /// <summary>
         /// Gets the guild crest of the character's guild.
         /// </summary>
-        [JsonProperty("guild_crest")]
+        [JsonPropertyName("guild_crest")]
         public GuildCrest GuildCrest { get; set; }
 
         /// <summary>
         /// Gets the settings related to the character's appearance.
         /// </summary>
-        [JsonProperty("appearance")]
+        [JsonPropertyName("appearance")]
         public Appearance Appearance { get; set; }
 
         /// <summary>
         /// Gets the character's equipped items.
         /// </summary>
-        [JsonProperty("items")]
+        [JsonPropertyName("items")]
         public EquippedItemAppearance[] Items { get; set; }
     }
 }

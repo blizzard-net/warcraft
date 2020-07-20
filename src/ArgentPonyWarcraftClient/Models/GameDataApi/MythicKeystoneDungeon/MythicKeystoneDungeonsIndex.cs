@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the index of mythic keystone dungeons.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to the mythic keystone dungeons.
         /// </summary>
-        [JsonProperty("dungeons")]
+        [JsonPropertyName("dungeons")]
         public MythicKeystoneDungeonReference[] Dungeons { get; set; }
     }
 }

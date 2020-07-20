@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,49 +10,49 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets links for the talent.
         /// </summary>
-        [JsonProperty("_links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the talent.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the tier index for the talent.
         /// </summary>
-        [JsonProperty("tier_index")]
+        [JsonPropertyName("tier_index")]
         public long TierIndex { get; set; }
 
         /// <summary>
         /// Gets the column index of the talent.
         /// </summary>
-        [JsonProperty("column_index")]
+        [JsonPropertyName("column_index")]
         public long ColumnIndex { get; set; }
 
         /// <summary>
         /// Gets the level of the talent.
         /// </summary>
-        [JsonProperty("level")]
+        [JsonPropertyName("level")]
         public long Level { get; set; }
 
         /// <summary>
         /// Gets the description of the talent.
         /// </summary>
-        [JsonProperty("description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets a reference to the spell associated with this talent.
         /// </summary>
-        [JsonProperty("spell")]
+        [JsonPropertyName("spell")]
         public SpellReference Spell { get; set; }
 
         /// <summary>
         /// Gets a reference to the playable class associated with this talent.
         /// </summary>
-        [JsonProperty("playable_class")]
+        [JsonPropertyName("playable_class")]
         public PlayableClassReference PlayableClass { get; set; }
     }
 }

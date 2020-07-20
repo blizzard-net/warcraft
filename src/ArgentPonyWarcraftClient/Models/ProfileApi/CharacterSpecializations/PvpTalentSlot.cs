@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the selected PvP talent.
         /// </summary>
-        [JsonProperty("selected")]
+        [JsonPropertyName("selected")]
         public PvpTalentElementForAbility Selected { get; set; }
 
         /// <summary>
         /// Gets the PvP talent slot number.
         /// </summary>
-        [JsonProperty("slot_number")]
+        [JsonPropertyName("slot_number")]
         public long SlotNumber { get; set; }
     }
 }

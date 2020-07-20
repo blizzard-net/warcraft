@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,25 +10,25 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the ID of the azerite power.
         /// </summary>
-        [JsonProperty("id")]
+        [JsonPropertyName("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// Gets the tier for the azerite power.
         /// </summary>
-        [JsonProperty("tier")]
+        [JsonPropertyName("tier")]
         public long Tier { get; set; }
 
         /// <summary>
         /// Gets the spell tooltip for the azerite power.
         /// </summary>
-        [JsonProperty("spell_tooltip")]
+        [JsonPropertyName("spell_tooltip")]
         public SpellTooltip SpellTooltip { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the display is hidden.
         /// </summary>
-        [JsonProperty("is_display_hidden", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonPropertyName("is_display_hidden")]
         public bool? IsDisplayHidden { get; set; }
     }
 }

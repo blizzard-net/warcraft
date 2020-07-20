@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -10,13 +10,13 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the base statistic.
         /// </summary>
-        [JsonProperty("base")]
+        [JsonPropertyName("base")]
         public long Base { get; set; }
 
         /// <summary>
         /// Gets the effective statistic.
         /// </summary>
-        [JsonProperty("effective")]
+        [JsonPropertyName("effective")]
         public long Effective { get; set; }
     }
 }
