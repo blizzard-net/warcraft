@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the total number of deaths for the character.
         /// </summary>
         [JsonPropertyName("total_number_deaths")]
-        public long TotalNumberDeaths { get; set; }
+        public int TotalNumberDeaths { get; set; }
 
         /// <summary>
         /// Gets the total gold gained by the character.
@@ -35,7 +35,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of deaths at this level for the character.
         /// </summary>
         [JsonPropertyName("level_number_deaths")]
-        public long LevelNumberDeaths { get; set; }
+        public int LevelNumberDeaths { get; set; }
 
         /// <summary>
         /// Gets the gold gained at this level by the character.

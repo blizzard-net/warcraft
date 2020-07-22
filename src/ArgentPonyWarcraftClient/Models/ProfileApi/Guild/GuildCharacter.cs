@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the character.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's realm.
@@ -35,7 +35,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the level of the character.
         /// </summary>
         [JsonPropertyName("level")]
-        public long Level { get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's class.

@@ -23,6 +23,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the item that supplied the modified appearance.
         /// </summary>
         [JsonPropertyName("item_modified_appearance_id")]
-        public long ItemModifiedAppearanceId { get; set; }
+        public int ItemModifiedAppearanceId { get; set; }
     }
 }

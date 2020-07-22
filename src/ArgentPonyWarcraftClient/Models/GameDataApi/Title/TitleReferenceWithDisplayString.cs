@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the title.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the display string for the title.

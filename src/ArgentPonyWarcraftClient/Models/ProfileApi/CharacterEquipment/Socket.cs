@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the context.
         /// </summary>
         [JsonPropertyName("context")]
-        public long? Context { get; set; }
+        public int? Context { get; set; }
 
         /// <summary>
         /// Gets the display string for the socket.
@@ -41,6 +41,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets a list of bonus IDs for the socket.
         /// </summary>
         [JsonPropertyName("bonus_list")]
-        public long[] BonusList { get; set; }
+        public int[] BonusList { get; set; }
     }
 }

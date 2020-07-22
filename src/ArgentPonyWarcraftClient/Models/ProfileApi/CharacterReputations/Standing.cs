@@ -11,25 +11,25 @@ namespace ArgentPonyWarcraftClient
         /// Gets the raw number.
         /// </summary>
         [JsonPropertyName("raw")]
-        public long Raw { get; set; }
+        public int Raw { get; set; }
 
         /// <summary>
         /// Gets the value.
         /// </summary>
         [JsonPropertyName("value")]
-        public long Value { get; set; }
+        public int Value { get; set; }
 
         /// <summary>
         /// Gets the maximum value.
         /// </summary>
         [JsonPropertyName("max")]
-        public long Max { get; set; }
+        public int Max { get; set; }
 
         /// <summary>
         /// Gets the reputation tier.
         /// </summary>
         [JsonPropertyName("tier")]
-        public long Tier { get; set; }
+        public int Tier { get; set; }
 
         /// <summary>
         /// Gets the name of the standing.

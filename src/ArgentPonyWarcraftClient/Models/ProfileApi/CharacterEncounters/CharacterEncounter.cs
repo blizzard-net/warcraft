@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of times the encounter has been completed by the character.
         /// </summary>
         [JsonPropertyName("completed_count")]
-        public long CompletedCount { get; set; }
+        public int CompletedCount { get; set; }
 
         /// <summary>
         /// Gets the timestamp of the last kill.

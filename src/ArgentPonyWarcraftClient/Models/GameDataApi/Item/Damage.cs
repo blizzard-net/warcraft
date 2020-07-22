@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the minimum damage.
         /// </summary>
         [JsonPropertyName("min_value")]
-        public long MinValue { get; set; }
+        public int MinValue { get; set; }
 
         /// <summary>
         /// Gets the maximum damage.
         /// </summary>
         [JsonPropertyName("max_value")]
-        public long MaxValue { get; set; }
+        public int MaxValue { get; set; }
 
         /// <summary>
         /// Gets the display string that describes the damage.

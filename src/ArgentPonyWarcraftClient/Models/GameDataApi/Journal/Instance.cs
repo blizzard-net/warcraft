@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the instance.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the instance.
@@ -77,7 +77,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the minimum character level for the instance.
         /// </summary>
         [JsonPropertyName("minimum_level")]
-        public long MinimumLevel { get; set; }
+        public int MinimumLevel { get; set; }
 
         /// <summary>
         /// Gets the category of the instance (i.e., "DUNGEON" or "RAID").

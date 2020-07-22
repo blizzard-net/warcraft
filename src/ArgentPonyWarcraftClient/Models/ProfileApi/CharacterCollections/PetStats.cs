@@ -11,24 +11,24 @@ namespace ArgentPonyWarcraftClient
         /// Gets the breed ID of the pet.
         /// </summary>
         [JsonPropertyName("breed_id")]
-        public long BreedId { get; set; }
+        public int BreedId { get; set; }
 
         /// <summary>
         /// Gets the health of the pet.
         /// </summary>
         [JsonPropertyName("health")]
-        public long Health { get; set; }
+        public int Health { get; set; }
 
         /// <summary>
         /// Gets the power of the pet.
         /// </summary>
         [JsonPropertyName("power")]
-        public long Power { get; set; }
+        public int Power { get; set; }
 
         /// <summary>
         /// Gets the speed of the pet.
         /// </summary>
         [JsonPropertyName("speed")]
-        public long Speed { get; set; }
+        public int Speed { get; set; }
     }
 }

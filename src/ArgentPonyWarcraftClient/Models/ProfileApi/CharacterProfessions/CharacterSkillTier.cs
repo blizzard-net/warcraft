@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's skill points in this profession skill tier.
         /// </summary>
         [JsonPropertyName("skill_points")]
-        public long SkillPoints { get; set; }
+        public int SkillPoints { get; set; }
 
         /// <summary>
         /// Gets the maximum possible skill points in this profession skill tier.
         /// </summary>
         [JsonPropertyName("max_skill_points")]
-        public long MaxSkillPoints { get; set; }
+        public int MaxSkillPoints { get; set; }
 
         /// <summary>
         /// Gets a reference to the skill tier.

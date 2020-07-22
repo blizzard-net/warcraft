@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the PvP talent.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the spell associated with this talent.
@@ -47,12 +47,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the levle at which the player unlocks this PvP talent.
         /// </summary>
         [JsonPropertyName("unlock_player_level")]
-        public long UnlockPlayerLevel { get; set; }
+        public int UnlockPlayerLevel { get; set; }
 
         /// <summary>
         /// Gets the compatible slots for this talent.
         /// </summary>
         [JsonPropertyName("compatible_slots")]
-        public long[] CompatibleSlots { get; set; }
+        public int[] CompatibleSlots { get; set; }
     }
 }

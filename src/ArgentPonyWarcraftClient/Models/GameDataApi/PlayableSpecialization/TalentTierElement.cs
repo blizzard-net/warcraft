@@ -23,6 +23,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the column index at which the talent appears in the talent tier.
         /// </summary>
         [JsonPropertyName("column_index")]
-        public long ColumnIndex { get; set; }
+        public int ColumnIndex { get; set; }
     }
 }

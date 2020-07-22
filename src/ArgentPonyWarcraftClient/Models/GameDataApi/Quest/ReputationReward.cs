@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the amount of reputation gained with the reputation faction.
         /// </summary>
         [JsonPropertyName("value")]
-        public long Value { get; set; }
+        public int Value { get; set; }
     }
 }

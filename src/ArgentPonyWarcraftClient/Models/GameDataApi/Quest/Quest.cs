@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the quest.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the title of the quest.
@@ -41,13 +41,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the recommended minimum level for the quest.
         /// </summary>
         [JsonPropertyName("recommended_minimum_level")]
-        public long RecommendedMinimumLevel { get; set; }
+        public int RecommendedMinimumLevel { get; set; }
 
         /// <summary>
         /// Gets the recommended maximum level for the quest.
         /// </summary>
         [JsonPropertyName("recommended_maximum_level")]
-        public long RecommendedMaximumLevel { get; set; }
+        public int RecommendedMaximumLevel { get; set; }
 
         /// <summary>
         /// Gets the requirements for the quest.

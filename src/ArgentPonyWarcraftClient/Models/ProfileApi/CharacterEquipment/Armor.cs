@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of armor points for the item.
         /// </summary>
         [JsonPropertyName("value")]
-        public long Value { get; set; }
+        public int Value { get; set; }
 
         /// <summary>
         /// Gets a display information for the armor.

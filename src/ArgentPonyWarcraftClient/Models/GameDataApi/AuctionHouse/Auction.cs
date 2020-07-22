@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the auction.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the item being auctioned.
@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the quantity of the item being auctioned.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public long Quantity { get; set; }
+        public int Quantity { get; set; }
 
         /// <summary>
         /// Gets the unit price of the item being auctioned.

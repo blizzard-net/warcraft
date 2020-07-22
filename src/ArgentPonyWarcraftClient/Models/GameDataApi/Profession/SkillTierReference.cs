@@ -23,6 +23,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the skill tier.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
     }
 }

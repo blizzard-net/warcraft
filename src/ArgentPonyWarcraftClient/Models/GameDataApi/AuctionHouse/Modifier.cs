@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the type of modifier.
         /// </summary>
         [JsonPropertyName("type")]
-        public long Type { get; set; }
+        public int Type { get; set; }
 
         /// <summary>
         /// Gets the value of the modifier.
         /// </summary>
         [JsonPropertyName("value")]
-        public long Value { get; set; }
+        public int Value { get; set; }
     }
 }

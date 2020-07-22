@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of this achievement.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; private set; }
+        public int Id { get; private set; }
 
         /// <summary>
         /// Gets a reference to the achievement category to which this achievement belongs.

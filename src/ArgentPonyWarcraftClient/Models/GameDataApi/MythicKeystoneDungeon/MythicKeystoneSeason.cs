@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the mythic keystone season.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the start timestamp of the mythic keystone season.

@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the character.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the character.
@@ -59,6 +59,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the WoW account for the character.
         /// </summary>
         [JsonPropertyName("wow_account")]
-        public long WowAccount { get; set; }
+        public int WowAccount { get; set; }
     }
 }

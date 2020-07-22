@@ -23,13 +23,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the total number of guild achievements.
         /// </summary>
         [JsonPropertyName("total_quantity")]
-        public long TotalQuantity { get; set; }
+        public int TotalQuantity { get; set; }
 
         /// <summary>
         /// Gets the total number of guild achievement points.
         /// </summary>
         [JsonPropertyName("total_points")]
-        public long TotalPoints { get; set; }
+        public int TotalPoints { get; set; }
 
         /// <summary>
         /// Gets the guild achievements.

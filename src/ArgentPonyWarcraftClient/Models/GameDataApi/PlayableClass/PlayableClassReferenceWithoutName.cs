@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the playable class.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
     }
 }

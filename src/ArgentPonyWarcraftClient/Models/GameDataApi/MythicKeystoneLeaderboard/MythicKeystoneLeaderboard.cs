@@ -24,7 +24,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the unique identifier for the leaderboard period.
         /// </summary>
         [JsonPropertyName("period")]
-        public long Period { get; set; }
+        public int Period { get; set; }
 
         /// <summary>
         /// Gets the start timestamp for the time period.
@@ -60,7 +60,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the map challenge mode ID.
         /// </summary>
         [JsonPropertyName("map_challenge_mode_id")]
-        public long MapChallengeModeId { get; set; }
+        public int MapChallengeModeId { get; set; }
 
         /// <summary>
         /// Gets the name of the instance.

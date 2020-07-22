@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of players.
         /// </summary>
         [JsonPropertyName("players")]
-        public long Players { get; set; }
+        public int Players { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this difficulty mode is tracked.

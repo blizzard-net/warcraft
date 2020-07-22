@@ -23,12 +23,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the tier index for the talent.
         /// </summary>
         [JsonPropertyName("tier_index")]
-        public long TierIndex { get; set; }
+        public int TierIndex { get; set; }
 
         /// <summary>
         /// Gets the column index for the talent.
         /// </summary>
         [JsonPropertyName("column_index")]
-        public long ColumnIndex { get; set; }
+        public int ColumnIndex { get; set; }
     }
 }

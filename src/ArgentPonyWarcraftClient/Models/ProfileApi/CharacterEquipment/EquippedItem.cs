@@ -23,19 +23,19 @@ namespace ArgentPonyWarcraftClient
         /// Gets the quantity of the item.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public long Quantity { get; set; }
+        public int Quantity { get; set; }
 
         /// <summary>
         /// Gets the context of the item.
         /// </summary>
         [JsonPropertyName("context")]
-        public long? Context { get; set; }
+        public int? Context { get; set; }
 
         /// <summary>
         /// Gets the IDs of bonuses for the item.
         /// </summary>
         [JsonPropertyName("bonus_list")]
-        public long[] BonusList { get; set; }
+        public int[] BonusList { get; set; }
 
         /// <summary>
         /// Gets the quality of the item.
@@ -167,7 +167,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the modified appearance ID for the item.
         /// </summary>
         [JsonPropertyName("modified_appearance_id")]
-        public long? ModifiedAppearanceId { get; set; }
+        public int? ModifiedAppearanceId { get; set; }
 
         /// <summary>
         /// Gets the item sockets.

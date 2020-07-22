@@ -11,18 +11,18 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of matches played.
         /// </summary>
         [JsonPropertyName("played")]
-        public long Played { get; set; }
+        public int Played { get; set; }
 
         /// <summary>
         /// Gets the number of matches won.
         /// </summary>
         [JsonPropertyName("won")]
-        public long Won { get; set; }
+        public int Won { get; set; }
 
         /// <summary>
         /// Gets the number of matches lost.
         /// </summary>
         [JsonPropertyName("lost")]
-        public long Lost { get; set; }
+        public int Lost { get; set; }
     }
 }

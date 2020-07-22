@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the numerical value of the stat modifier.
         /// </summary>
         [JsonPropertyName("value")]
-        public long Value { get; set; }
+        public int Value { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the stat modifier is negated.

@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the base statistic.
         /// </summary>
         [JsonPropertyName("base")]
-        public long Base { get; set; }
+        public int Base { get; set; }
 
         /// <summary>
         /// Gets the effective statistic.
         /// </summary>
         [JsonPropertyName("effective")]
-        public long Effective { get; set; }
+        public int Effective { get; set; }
     }
 }

@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's rank in the guild.
         /// </summary>
         [JsonPropertyName("rank")]
-        public long Rank { get; set; }
+        public int Rank { get; set; }
     }
 }

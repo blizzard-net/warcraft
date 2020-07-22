@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the quantity of the reagent required.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public long Quantity { get; set; }
+        public int Quantity { get; set; }
     }
 }

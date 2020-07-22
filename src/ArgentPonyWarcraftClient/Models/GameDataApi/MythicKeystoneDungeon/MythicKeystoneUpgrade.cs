@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the upgrade level.
         /// </summary>
         [JsonPropertyName("upgrade_level")]
-        public long UpgradeLevel { get; set; }
+        public int UpgradeLevel { get; set; }
 
         /// <summary>
         /// Gets the qualifying duration.

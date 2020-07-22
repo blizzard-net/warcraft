@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the required count of items in the set that must be equipped to activate the effect.
         /// </summary>
         [JsonPropertyName("required_count")]
-        public long RequiredCount { get; set; }
+        public int RequiredCount { get; set; }
     }
 }

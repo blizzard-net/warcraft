@@ -36,6 +36,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the rank.
         /// </summary>
         [JsonPropertyName("rank")]
-        public long Rank { get; set; }
+        public int Rank { get; set; }
     }
 }
