@@ -36,12 +36,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the start timestamp of the PvP season.
         /// </summary>
         [JsonPropertyName("season_start_timestamp")]
-        public DateTime SeasonStartTimestamp { get; set; }
+        public DateTimeOffset SeasonStartTimestamp { get; set; }
 
         /// <summary>
         /// Gets the end timestamp of the PvP season.
         /// </summary>
         [JsonPropertyName("season_end_timestamp")]
-        public DateTime SeasonEndTimestamp { get; set; }
+        public DateTimeOffset SeasonEndTimestamp { get; set; }
     }
 }

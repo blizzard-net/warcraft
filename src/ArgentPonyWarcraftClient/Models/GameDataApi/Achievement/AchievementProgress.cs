@@ -30,6 +30,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp when the character or guild completed the achievement, or <c>null</c> if it has not been completed.
         /// </summary>
         [JsonPropertyName("completed_timestamp")]
-        public DateTime? CompletedTimestamp { get; set; }
+        public DateTimeOffset? CompletedTimestamp { get; set; }
     }
 }

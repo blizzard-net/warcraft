@@ -24,6 +24,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp of the last kill.
         /// </summary>
         [JsonPropertyName("last_kill_timestamp")]
-        public DateTime LastKillTimestamp { get; set; }
+        public DateTimeOffset LastKillTimestamp { get; set; }
     }
 }

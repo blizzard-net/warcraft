@@ -72,7 +72,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp when the guild was created.
         /// </summary>
         [JsonPropertyName("created_timestamp")]
-        public DateTime CreatedTimestamp { get; set; }
+        public DateTimeOffset CreatedTimestamp { get; set; }
 
         /// <summary>
         /// Gets a link to the guild activity.

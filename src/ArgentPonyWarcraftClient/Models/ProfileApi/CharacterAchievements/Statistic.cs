@@ -24,7 +24,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp when the statistic was last updated.
         /// </summary>
         [JsonPropertyName("last_updated_timestamp")]
-        public DateTime LastUpdatedTimestamp { get; set; }
+        public DateTimeOffset LastUpdatedTimestamp { get; set; }
 
         /// <summary>
         /// Gets a quantity associated with the statistic.

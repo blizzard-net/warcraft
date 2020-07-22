@@ -24,13 +24,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the start timestamp of the mythic keystone season.
         /// </summary>
         [JsonPropertyName("start_timestamp")]
-        public DateTime StartTimestamp { get; set; }
+        public DateTimeOffset StartTimestamp { get; set; }
 
         /// <summary>
         /// Gets the end timestamp of the mythic keystone season.
         /// </summary>
         [JsonPropertyName("end_timestamp")]
-        public DateTime EndTimestamp { get; set; }
+        public DateTimeOffset EndTimestamp { get; set; }
 
         /// <summary>
         /// Gets refernces to the periods in the mythic keystone season.
