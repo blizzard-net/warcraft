@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the character.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the character.
@@ -72,19 +72,19 @@ namespace ArgentPonyWarcraftClient
         /// Gets the level of the character.
         /// </summary>
         [JsonPropertyName("level")]
-        public long Level { get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// Gets the character's experience points.
         /// </summary>
         [JsonPropertyName("experience")]
-        public long Experience { get; set; }
+        public int Experience { get; set; }
 
         /// <summary>
         /// Gets the number of achievement points the character has earned.
         /// </summary>
         [JsonPropertyName("achievement_points")]
-        public long AchievementPoints { get; set; }
+        public int AchievementPoints { get; set; }
 
         /// <summary>
         /// Gets a link to the character's achievements.
@@ -126,13 +126,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's average item level.
         /// </summary>
         [JsonPropertyName("average_item_level")]
-        public long AverageItemLevel { get; set; }
+        public int AverageItemLevel { get; set; }
 
         /// <summary>
         /// Gets the character's equipped item level.
         /// </summary>
         [JsonPropertyName("equipped_item_level")]
-        public long EquippedItemLevel { get; set; }
+        public int EquippedItemLevel { get; set; }
 
         /// <summary>
         /// Gets a link to the character's specializations.

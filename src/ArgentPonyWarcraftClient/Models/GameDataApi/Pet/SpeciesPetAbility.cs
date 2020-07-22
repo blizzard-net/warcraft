@@ -17,12 +17,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the slot number for the pet ability.
         /// </summary>
         [JsonPropertyName("slot")]
-        public long Slot { get; set; }
+        public int Slot { get; set; }
 
         /// <summary>
         /// Gets the required pet level to use the pet ability.
         /// </summary>
         [JsonPropertyName("required_level")]
-        public long RequiredLevel { get; set; }
+        public int RequiredLevel { get; set; }
     }
 }

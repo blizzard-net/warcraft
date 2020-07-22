@@ -17,13 +17,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's health.
         /// </summary>
         [JsonPropertyName("health")]
-        public long Health { get; set; }
+        public int Health { get; set; }
 
         /// <summary>
         /// Gets the character's power.
         /// </summary>
         [JsonPropertyName("power")]
-        public long Power { get; set; }
+        public int Power { get; set; }
 
         /// <summary>
         /// Gets a reference to the character's power type.
@@ -83,7 +83,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's bonus armor.
         /// </summary>
         [JsonPropertyName("bonus_armor")]
-        public long BonusArmor { get; set; }
+        public int BonusArmor { get; set; }
 
         /// <summary>
         /// Gets the character's lifesteal.
@@ -95,7 +95,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's versatility.
         /// </summary>
         [JsonPropertyName("versatility")]
-        public long Versatility { get; set; }
+        public int Versatility { get; set; }
 
         /// <summary>
         /// Gets the character's versatility damage done bonus.
@@ -125,7 +125,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's attack power.
         /// </summary>
         [JsonPropertyName("attack_power")]
-        public long AttackPower { get; set; }
+        public int AttackPower { get; set; }
 
         /// <summary>
         /// Gets the character's main hand damage minimum.
@@ -179,13 +179,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's spell power.
         /// </summary>
         [JsonPropertyName("spell_power")]
-        public long SpellPower { get; set; }
+        public int SpellPower { get; set; }
 
         /// <summary>
         /// Gets the character's spell penetration.
         /// </summary>
         [JsonPropertyName("spell_penetration")]
-        public long SpellPenetration { get; set; }
+        public int SpellPenetration { get; set; }
 
         /// <summary>
         /// Gets the character's spell crit.
@@ -197,13 +197,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's mana regeneration.
         /// </summary>
         [JsonPropertyName("mana_regen")]
-        public long ManaRegen { get; set; }
+        public int ManaRegen { get; set; }
 
         /// <summary>
         /// Gets the character's mana regeneration in combat.
         /// </summary>
         [JsonPropertyName("mana_regen_combat")]
-        public long ManaRegenCombat { get; set; }
+        public int ManaRegenCombat { get; set; }
 
         /// <summary>
         /// Gets the character's armor.

@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the item.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the item.
@@ -35,13 +35,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the item level of the item.
         /// </summary>
         [JsonPropertyName("level")]
-        public long Level { get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// Gets the required character level for using the item.
         /// </summary>
         [JsonPropertyName("required_level")]
-        public long RequiredLevel { get; set; }
+        public int RequiredLevel { get; set; }
 
         /// <summary>
         /// Gets the media associated with this item.
@@ -83,7 +83,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the maximum count of the item, which applies to stackable items.
         /// </summary>
         [JsonPropertyName("max_count")]
-        public long MaxCount { get; set; }
+        public int MaxCount { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the item can be equipped.

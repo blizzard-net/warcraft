@@ -17,12 +17,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of achievements the character has in this category.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public long Quantity { get; set; }
+        public int Quantity { get; set; }
 
         /// <summary>
         /// Gets the number of achievement points the character has in this category.
         /// </summary>
         [JsonPropertyName("points")]
-        public long Points { get; set; }
+        public int Points { get; set; }
     }
 }

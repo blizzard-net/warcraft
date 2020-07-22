@@ -23,6 +23,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of battle pet slots the account has unlocked.
         /// </summary>
         [JsonPropertyName("unlocked_battle_pet_slots")]
-        public long UnlockedBattlePetSlots { get; set; }
+        public int UnlockedBattlePetSlots { get; set; }
     }
 }

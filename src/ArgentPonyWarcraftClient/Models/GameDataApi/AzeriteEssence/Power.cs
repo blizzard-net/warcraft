@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the azerite essence power.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the rank of the azerite essence power.
         /// </summary>
         [JsonPropertyName("rank")]
-        public long Rank { get; set; }
+        public int Rank { get; set; }
 
         /// <summary>
         /// Gets a reference to the spell that is the main power for this azerite essence.

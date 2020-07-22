@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -17,12 +17,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the amount of silver.
         /// </summary>
         [JsonPropertyName("silver")]
-        public long Silver { get; set; }
+        public int Silver { get; set; }
 
         /// <summary>
         /// Gets the amount of copper.
         /// </summary>
         [JsonPropertyName("copper")]
-        public long Copper { get; set; }
+        public int Copper { get; set; }
     }
 }

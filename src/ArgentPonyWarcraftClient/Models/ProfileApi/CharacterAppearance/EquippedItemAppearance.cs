@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the item.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the slot in which the item is equipped.
@@ -23,24 +23,24 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the enchantment that has been applied to the item or zero if it is not enchanted.
         /// </summary>
         [JsonPropertyName("enchant")]
-        public long Enchant { get; set; }
+        public int Enchant { get; set; }
 
         /// <summary>
         /// Gets the ID of the item appearance modifier.
         /// </summary>
         [JsonPropertyName("item_appearance_modifier_id")]
-        public long ItemAppearanceModifierId { get; set; }
+        public int ItemAppearanceModifierId { get; set; }
 
         /// <summary>
         /// Gets the internal slot ID.
         /// </summary>
         [JsonPropertyName("internal_slot_id")]
-        public long InternalSlotId { get; set; }
+        public int InternalSlotId { get; set; }
 
         /// <summary>
         /// Gets the subclass of the item.
         /// </summary>
         [JsonPropertyName("subclass")]
-        public long Subclass { get; set; }
+        public int Subclass { get; set; }
     }
 }

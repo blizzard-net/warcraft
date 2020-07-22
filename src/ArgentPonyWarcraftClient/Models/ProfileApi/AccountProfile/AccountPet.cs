@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the level of the pet.
         /// </summary>
         [JsonPropertyName("level")]
-        public long Level { get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// Gets the quality of the pet.
@@ -41,7 +41,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the pet.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the pet is a favorite.
@@ -59,6 +59,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the slot number if the pet is currently active.
         /// </summary>
         [JsonPropertyName("active_slot")]
-        public long? ActiveSlot { get; set; }
+        public int? ActiveSlot { get; set; }
     }
 }

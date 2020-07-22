@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the slot of the selected essence.
         /// </summary>
         [JsonPropertyName("slot")]
-        public long Slot { get; set; }
+        public int Slot { get; set; }
 
         /// <summary>
         /// Gets the rank of the selected essence.
         /// </summary>
         [JsonPropertyName("rank")]
-        public long Rank { get; set; }
+        public int Rank { get; set; }
 
         /// <summary>
         /// Gets the main spell tooltip.

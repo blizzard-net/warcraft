@@ -35,7 +35,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's rating in this PvP bracket.
         /// </summary>
         [JsonPropertyName("rating")]
-        public long Rating { get; set; }
+        public int Rating { get; set; }
 
         /// <summary>
         /// Gets a reference to the PvP season.

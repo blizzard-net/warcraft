@@ -11,13 +11,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of times the instance has been completed by the character.
         /// </summary>
         [JsonPropertyName("completed_count")]
-        public long CompletedCount { get; set; }
+        public int CompletedCount { get; set; }
 
         /// <summary>
         /// Gets the number of times the instance has been attempted by the character.
         /// </summary>
         [JsonPropertyName("total_count")]
-        public long TotalCount { get; set; }
+        public int TotalCount { get; set; }
 
         /// <summary>
         /// Gets encounter statistics for the instance.

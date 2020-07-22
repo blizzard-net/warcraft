@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the honor level of the character.
         /// </summary>
         [JsonPropertyName("honor_level")]
-        public long HonorLevel { get; set; }
+        public int HonorLevel { get; set; }
 
         /// <summary>
         /// Gets the PvP map statistics for the character.
@@ -35,7 +35,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of honorable kills for the character.
         /// </summary>
         [JsonPropertyName("honorable_kills")]
-        public long HonorableKills { get; set; }
+        public int HonorableKills { get; set; }
 
         /// <summary>
         /// Gets a reference to the character.

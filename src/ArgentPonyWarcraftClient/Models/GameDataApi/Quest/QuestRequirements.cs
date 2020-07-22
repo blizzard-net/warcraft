@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the minimum character level for the quest.
         /// </summary>
         [JsonPropertyName("min_character_level")]
-        public long MinCharacterLevel { get; set; }
+        public int MinCharacterLevel { get; set; }
 
         /// <summary>
         /// Gets the faction for the question (Alliance or Horde).

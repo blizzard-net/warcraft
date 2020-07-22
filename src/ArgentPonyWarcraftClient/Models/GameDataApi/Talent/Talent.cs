@@ -17,25 +17,25 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the talent.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the tier index for the talent.
         /// </summary>
         [JsonPropertyName("tier_index")]
-        public long TierIndex { get; set; }
+        public int TierIndex { get; set; }
 
         /// <summary>
         /// Gets the column index of the talent.
         /// </summary>
         [JsonPropertyName("column_index")]
-        public long ColumnIndex { get; set; }
+        public int ColumnIndex { get; set; }
 
         /// <summary>
         /// Gets the level of the talent.
         /// </summary>
         [JsonPropertyName("level")]
-        public long Level { get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// Gets the description of the talent.

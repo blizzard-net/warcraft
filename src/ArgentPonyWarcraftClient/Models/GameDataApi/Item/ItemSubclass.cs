@@ -17,13 +17,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the class ID for the item class.
         /// </summary>
         [JsonPropertyName("class_id")]
-        public long ClassId { get; set; }
+        public int ClassId { get; set; }
 
         /// <summary>
         /// Gets the subclass ID for the item subclass.
         /// </summary>
         [JsonPropertyName("subclass_id")]
-        public long SubclassId { get; set; }
+        public int SubclassId { get; set; }
 
         /// <summary>
         /// Gets the display name of the item subclass.

@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the border.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the media associated with the border.

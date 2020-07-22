@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the category.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the category.

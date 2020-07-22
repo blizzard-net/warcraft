@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
@@ -24,7 +24,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the keystone level.
         /// </summary>
         [JsonPropertyName("keystone_level")]
-        public long KeystoneLevel { get; set; }
+        public int KeystoneLevel { get; set; }
 
         /// <summary>
         /// Gets references to the Mythic Keystone affixes for this run.

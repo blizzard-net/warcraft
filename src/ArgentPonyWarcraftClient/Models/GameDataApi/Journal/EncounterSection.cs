@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the section.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the title of the section.

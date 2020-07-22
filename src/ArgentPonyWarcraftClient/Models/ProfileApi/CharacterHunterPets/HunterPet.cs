@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the level of the hunter pet.
         /// </summary>
         [JsonPropertyName("level")]
-        public long Level { get; set; }
+        public int Level { get; set; }
 
         /// <summary>
         /// Gets a reference to the creature type of the hunter pet.
@@ -29,7 +29,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the slot to which the hunter pet is assigned.
         /// </summary>
         [JsonPropertyName("slot")]
-        public long Slot { get; set; }
+        public int Slot { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the hunter pet is active.

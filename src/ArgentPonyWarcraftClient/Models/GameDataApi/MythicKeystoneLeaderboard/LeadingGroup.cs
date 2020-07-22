@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
@@ -12,7 +12,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ranking of the group.
         /// </summary>
         [JsonPropertyName("ranking")]
-        public long Ranking { get; set; }
+        public int Ranking { get; set; }
 
         /// <summary>
         /// Gets the duration of the run.
@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the keystone level.
         /// </summary>
         [JsonPropertyName("keystone_level")]
-        public long KeystoneLevel { get; set; }
+        public int KeystoneLevel { get; set; }
 
         /// <summary>
         /// Gets the members of the group.

@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the PvP season.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a link to PvP leaderboards.

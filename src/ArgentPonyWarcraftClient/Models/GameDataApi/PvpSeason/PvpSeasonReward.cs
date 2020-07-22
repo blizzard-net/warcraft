@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the PvP rating cutoff for this reward.
         /// </summary>
         [JsonPropertyName("rating_cutoff")]
-        public long RatingCutoff { get; set; }
+        public int RatingCutoff { get; set; }
 
         /// <summary>
         /// Gets the faction (Alliance or Horde) for this reward.

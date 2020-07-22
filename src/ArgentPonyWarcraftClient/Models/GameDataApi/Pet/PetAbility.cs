@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the pet ability.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the pet ability.
@@ -35,7 +35,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the number of rounds for the pet ability cooldown.
         /// </summary>
         [JsonPropertyName("rounds")]
-        public long Rounds { get; set; }
+        public int Rounds { get; set; }
 
         /// <summary>
         /// Gets the media associated with this pet ability.

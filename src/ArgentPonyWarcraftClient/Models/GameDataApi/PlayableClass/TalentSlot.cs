@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the PvP talent slot number.
         /// </summary>
         [JsonPropertyName("slot_number")]
-        public long SlotNumber { get; set; }
+        public int SlotNumber { get; set; }
 
         /// <summary>
         /// Gets the player level required to unlock the PvP talent slot.
         /// </summary>
         [JsonPropertyName("unlock_player_level")]
-        public long UnlockPlayerLevel { get; set; }
+        public int UnlockPlayerLevel { get; set; }
     }
 }

@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the starting level for the mythic keystone affix.
         /// </summary>
         [JsonPropertyName("starting_level")]
-        public long StartingLevel { get; set; }
+        public int StartingLevel { get; set; }
     }
 }

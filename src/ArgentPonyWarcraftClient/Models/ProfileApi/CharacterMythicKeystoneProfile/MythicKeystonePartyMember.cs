@@ -29,6 +29,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the equipped item level of the character.
         /// </summary>
         [JsonPropertyName("equipped_item_level")]
-        public long EquippedItemLevel { get; set; }
+        public int EquippedItemLevel { get; set; }
     }
 }

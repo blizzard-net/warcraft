@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the related achievement that is a criterion for completing the parent achievement.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the criterion achievment has been completed.

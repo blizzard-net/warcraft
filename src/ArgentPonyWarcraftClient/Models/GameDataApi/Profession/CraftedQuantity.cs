@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the minimum number of the item produced.
         /// </summary>
         [JsonPropertyName("minimum")]
-        public long Minimum { get; set; }
+        public int Minimum { get; set; }
 
         /// <summary>
         /// Gets the maximum number of the item produced.
         /// </summary>
         [JsonPropertyName("maximum")]
-        public long Maximum { get; set; }
+        public int Maximum { get; set; }
     }
 }

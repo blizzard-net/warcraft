@@ -23,13 +23,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's rank on this PvP leaderboard.
         /// </summary>
         [JsonPropertyName("rank")]
-        public long Rank { get; set; }
+        public int Rank { get; set; }
 
         /// <summary>
         /// Gets the character's rating on this PvP leaderboard.
         /// </summary>
         [JsonPropertyName("rating")]
-        public long Rating { get; set; }
+        public int Rating { get; set; }
 
         /// <summary>
         /// Gets the season match statistics for the character.

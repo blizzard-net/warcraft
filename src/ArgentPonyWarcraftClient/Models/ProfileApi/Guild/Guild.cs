@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the guild.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the guild.
@@ -36,13 +36,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the guild achievement points.
         /// </summary>
         [JsonPropertyName("achievement_points")]
-        public long AchievementPoints { get; set; }
+        public int AchievementPoints { get; set; }
 
         /// <summary>
         /// Gets the number of members in the guild.
         /// </summary>
         [JsonPropertyName("member_count")]
-        public long MemberCount { get; set; }
+        public int MemberCount { get; set; }
 
         /// <summary>
         /// Gets a reference to the guild's realm.

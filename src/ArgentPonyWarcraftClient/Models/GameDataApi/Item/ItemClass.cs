@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the class ID for the item class.
         /// </summary>
         [JsonPropertyName("class_id")]
-        public long ClassId { get; set; }
+        public int ClassId { get; set; }
 
         /// <summary>
         /// Gets the name of the item class.

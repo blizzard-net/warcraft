@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the set of reputation tiers.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the reputation tiers.

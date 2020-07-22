@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the connected realm.
         /// </summary>
         [JsonPropertyName("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether there is a queue to log in to the connected realm.
