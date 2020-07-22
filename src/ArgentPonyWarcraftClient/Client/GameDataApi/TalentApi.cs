@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<TalentsIndex>> GetTalentsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<TalentsIndex>(region, $"{host}/data/wow/talent/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<TalentsIndex>(region, $"{host}/data/wow/talent/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Talent>> GetTalentAsync(int talentId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<Talent>(region, $"{host}/data/wow/talent/{talentId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Talent>(region, $"{host}/data/wow/talent/{talentId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PvpTalentsIndex>> GetPvpTalentsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<PvpTalentsIndex>(region, $"{host}/data/wow/pvp-talent/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PvpTalentsIndex>(region, $"{host}/data/wow/pvp-talent/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PvpTalent>> GetPvpTalentAsync(int pvpTalentId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<PvpTalent>(region, $"{host}/data/wow/pvp-talent/{pvpTalentId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PvpTalent>(region, $"{host}/data/wow/pvp-talent/{pvpTalentId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

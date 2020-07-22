@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterMythicKeystoneProfileIndex>> GetCharacterMythicKeystoneProfileIndexAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CharacterMythicKeystoneProfileIndex>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/mythic-keystone-profile?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterMythicKeystoneProfileIndex>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/mythic-keystone-profile?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterMythicKeystoneSeasonDetails>> GetCharacterMythicKeystoneSeasonDetailsAsync(string realmSlug, string characterName, int seasonId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CharacterMythicKeystoneSeasonDetails>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/mythic-keystone-profile/season/{seasonId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterMythicKeystoneSeasonDetails>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/mythic-keystone-profile/season/{seasonId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

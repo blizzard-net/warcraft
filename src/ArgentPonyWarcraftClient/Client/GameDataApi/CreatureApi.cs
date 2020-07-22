@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CreatureFamiliesIndex>> GetCreatureFamiliesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CreatureFamiliesIndex>(region, $"{host}/data/wow/creature-family/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CreatureFamiliesIndex>(region, $"{host}/data/wow/creature-family/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CreatureFamily>> GetCreatureFamilyAsync(int creatureFamilyId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CreatureFamily>(region, $"{host}/data/wow/creature-family/{creatureFamilyId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CreatureFamily>(region, $"{host}/data/wow/creature-family/{creatureFamilyId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CreatureTypesIndex>> GetCreatureTypesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CreatureTypesIndex>(region, $"{host}/data/wow/creature-type/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CreatureTypesIndex>(region, $"{host}/data/wow/creature-type/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CreatureType>> GetCreatureTypeAsync(int creatureTypeId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CreatureType>(region, $"{host}/data/wow/creature-type/{creatureTypeId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CreatureType>(region, $"{host}/data/wow/creature-type/{creatureTypeId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -66,7 +66,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Creature>> GetCreatureAsync(int creatureId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<Creature>(region, $"{host}/data/wow/creature/{creatureId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Creature>(region, $"{host}/data/wow/creature/{creatureId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -79,7 +79,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CreatureDisplayMedia>> GetCreatureDisplayMediaAsync(int creatureDisplayId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CreatureDisplayMedia>(region, $"{host}/data/wow/media/creature-display/{creatureDisplayId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CreatureDisplayMedia>(region, $"{host}/data/wow/media/creature-display/{creatureDisplayId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -92,7 +92,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CreatureFamilyMedia>> GetCreatureFamilyMediaAsync(int creatureFamilyId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CreatureFamilyMedia>(region, $"{host}/data/wow/media/creature-family/{creatureFamilyId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CreatureFamilyMedia>(region, $"{host}/data/wow/media/creature-family/{creatureFamilyId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

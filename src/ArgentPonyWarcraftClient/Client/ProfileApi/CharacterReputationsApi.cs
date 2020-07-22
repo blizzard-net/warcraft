@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterReputationsSummary>> GetCharacterReputationsSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CharacterReputationsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/reputations?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterReputationsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/reputations?namespace={@namespace}&locale={locale}");
         }
     }
 }

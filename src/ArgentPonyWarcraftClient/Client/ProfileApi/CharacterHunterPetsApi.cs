@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterHunterPetsSummary>> GetCharacterHunterPetsSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<CharacterHunterPetsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/hunter-pets?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterHunterPetsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/hunter-pets?namespace={@namespace}&locale={locale}");
         }
     }
 }
