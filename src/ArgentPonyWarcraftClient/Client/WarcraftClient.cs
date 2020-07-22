@@ -140,7 +140,6 @@ namespace ArgentPonyWarcraftClient
         /// <typeparam name="T">
         ///     The return type.
         /// </typeparam>
-        /// <param name="region">The region from which to request a token.</param>
         /// <param name="requestUri">
         ///     The URI the request is sent to.
         /// </param>
