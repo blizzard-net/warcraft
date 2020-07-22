@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the duration.
         /// </summary>
         [JsonPropertyName("duration")]
-        public long Duration { get; set; }
+        public TimeSpan Duration { get; set; }
 
         /// <summary>
         /// Gets the keystone level.

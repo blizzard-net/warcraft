@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the duration of the run.
         /// </summary>
         [JsonPropertyName("duration")]
-        public long Duration { get; set; }
+        public TimeSpan Duration { get; set; }
 
         /// <summary>
         /// Gets the timestamp of the completion.

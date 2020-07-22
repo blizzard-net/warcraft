@@ -1,3 +1,4 @@
+﻿using System;
 using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
@@ -17,6 +18,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the qualifying duration.
         /// </summary>
         [JsonPropertyName("qualifying_duration")]
-        public long QualifyingDuration { get; set; }
+        public TimeSpan QualifyingDuration { get; set; }
     }
 }
