@@ -18,6 +18,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp when the achievement was completed.
         /// </summary>
         [JsonPropertyName("timestamp")]
-        public DateTime Timestamp { get; set; }
+        public DateTimeOffset Timestamp { get; set; }
     }
 }

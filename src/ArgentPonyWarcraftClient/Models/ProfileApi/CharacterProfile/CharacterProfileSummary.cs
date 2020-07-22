@@ -120,7 +120,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the last login timestamp for the character.
         /// </summary>
         [JsonPropertyName("last_login_timestamp")]
-        public DateTime LastLoginTimestamp { get; set; }
+        public DateTimeOffset LastLoginTimestamp { get; set; }
 
         /// <summary>
         /// Gets the character's average item level.

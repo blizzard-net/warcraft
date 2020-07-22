@@ -21,7 +21,7 @@ namespace ArgentPonyWarcraftClient
         private readonly Locale _locale;
 
         private OAuthAccessToken _token;
-        private DateTime _tokenExpiration;
+        private DateTimeOffset _tokenExpiration;
 
         /// <summary>
         /// A static constructor for the <see cref="WarcraftClient"/> class.
@@ -125,10 +125,10 @@ namespace ArgentPonyWarcraftClient
         private async Task<RequestResult<T>> Get<T>(Region region, string requestUri)
         {
             // Acquire a new OAuth token if we don't have one. Get a new one if it's expired.
-            if (_token == null || DateTime.UtcNow >= _tokenExpiration)
+            if (_token == null || DateTimeOffset.UtcNow >= _tokenExpiration)
             {
                 _token = await GetOAuthToken(region).ConfigureAwait(false);
-                _tokenExpiration = DateTime.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
+                _tokenExpiration = DateTimeOffset.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
             }
 
             return await Get<T>(region, requestUri, _token.AccessToken);

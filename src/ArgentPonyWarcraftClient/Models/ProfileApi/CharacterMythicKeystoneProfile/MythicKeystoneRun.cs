@@ -12,7 +12,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp when the run was completed.
         /// </summary>
         [JsonPropertyName("completed_timestamp")]
-        public DateTime CompletedTimestamp { get; set; }
+        public DateTimeOffset CompletedTimestamp { get; set; }
 
         /// <summary>
         /// Gets the duration.

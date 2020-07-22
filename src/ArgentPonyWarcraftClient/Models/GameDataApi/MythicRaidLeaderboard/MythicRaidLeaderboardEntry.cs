@@ -24,7 +24,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp.
         /// </summary>
         [JsonPropertyName("timestamp")]
-        public DateTime Timestamp { get; set; }
+        public DateTimeOffset Timestamp { get; set; }
 
         /// <summary>
         /// Gets the region.

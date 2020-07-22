@@ -30,13 +30,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the start timestamp for the time period.
         /// </summary>
         [JsonPropertyName("period_start_timestamp")]
-        public DateTime PeriodStartTimestamp { get; set; }
+        public DateTimeOffset PeriodStartTimestamp { get; set; }
 
         /// <summary>
         /// Gets the end timestamp for the time period.
         /// </summary>
         [JsonPropertyName("period_end_timestamp")]
-        public DateTime PeriodEndTimestamp { get; set; }
+        public DateTimeOffset PeriodEndTimestamp { get; set; }
 
         /// <summary>
         /// Gets a reference to the connected realm.

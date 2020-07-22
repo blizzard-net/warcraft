@@ -18,7 +18,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the last updated timestamp for the WoW Token index.
         /// </summary>
         [JsonPropertyName("last_updated_timestamp")]
-        public DateTime LastUpdatedTimestamp { get; set; }
+        public DateTimeOffset LastUpdatedTimestamp { get; set; }
 
         /// <summary>
         /// Gets the price for a Wow token.

@@ -24,7 +24,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the timestamp of the completion.
         /// </summary>
         [JsonPropertyName("completed_timestamp")]
-        public DateTime CompletedTimestamp { get; set; }
+        public DateTimeOffset CompletedTimestamp { get; set; }
 
         /// <summary>
         /// Gets the keystone level.
