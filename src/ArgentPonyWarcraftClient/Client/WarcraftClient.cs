@@ -122,16 +122,16 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        private async Task<RequestResult<T>> Get<T>(Region region, string requestUri)
+        private async Task<RequestResult<T>> GetAsync<T>(Region region, string requestUri)
         {
             // Acquire a new OAuth token if we don't have one. Get a new one if it's expired.
             if (_token == null || DateTimeOffset.UtcNow >= _tokenExpiration)
             {
-                _token = await GetOAuthToken(region).ConfigureAwait(false);
+                _token = await GetOAuthTokenAsync(region).ConfigureAwait(false);
                 _tokenExpiration = DateTimeOffset.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
             }
 
-            return await Get<T>(region, requestUri, _token.AccessToken);
+            return await GetAsync<T>(requestUri, _token.AccessToken);
         }
 
         /// <summary>
@@ -140,7 +140,6 @@ namespace ArgentPonyWarcraftClient
         /// <typeparam name="T">
         ///     The return type.
         /// </typeparam>
-        /// <param name="region">The region from which to request a token.</param>
         /// <param name="requestUri">
         ///     The URI the request is sent to.
         /// </param>
@@ -150,7 +149,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        private async Task<RequestResult<T>> Get<T>(Region region, string requestUri, string accessToken)
+        private async Task<RequestResult<T>> GetAsync<T>(string requestUri, string accessToken)
         {
             // Add an authentication header with the token.
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
@@ -206,7 +205,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     An OAuth token.
         /// </returns>
-        private async Task<OAuthAccessToken> GetOAuthToken(Region region)
+        private async Task<OAuthAccessToken> GetOAuthTokenAsync(Region region)
         {
             string credentials = $"{_clientId}:{_clientSecret}";
             string host = GetOAuthHost(region);

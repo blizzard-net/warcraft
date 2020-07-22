@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PowerTypesIndex>> GetPowerTypesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<PowerTypesIndex>(region, $"{host}/data/wow/power-type/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PowerTypesIndex>(region, $"{host}/data/wow/power-type/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PowerType>> GetPowerTypeAsync(int powerTypeId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<PowerType>(region, $"{host}/data/wow/power-type/{powerTypeId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PowerType>(region, $"{host}/data/wow/power-type/{powerTypeId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

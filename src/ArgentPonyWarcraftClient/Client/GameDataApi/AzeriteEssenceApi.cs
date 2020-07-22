@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AzeriteEssencesIndex>> GetAzeriteEssencesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<AzeriteEssencesIndex>(region, $"{host}/data/wow/azerite-essence/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AzeriteEssencesIndex>(region, $"{host}/data/wow/azerite-essence/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AzeriteEssence>> GetAzeriteEssenceAsync(int azeriteEssenceId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<AzeriteEssence>(region, $"{host}/data/wow/azerite-essence/{azeriteEssenceId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AzeriteEssence>(region, $"{host}/data/wow/azerite-essence/{azeriteEssenceId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AzeriteEssenceMedia>> GetAzeriteEssenceMediaAsync(int azeriteEssenceId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<AzeriteEssenceMedia>(region, $"{host}/data/wow/media/azerite-essence/{azeriteEssenceId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AzeriteEssenceMedia>(region, $"{host}/data/wow/media/azerite-essence/{azeriteEssenceId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<RealmsIndex>> GetRealmsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<RealmsIndex>(region, $"{host}/data/wow/realm/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<RealmsIndex>(region, $"{host}/data/wow/realm/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Realm>> GetRealmAsync(string realmSlug, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<Realm>(region, $"{host}/data/wow/realm/{realmSlug}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Realm>(region, $"{host}/data/wow/realm/{realmSlug}?namespace={@namespace}&locale={locale}");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Spell>> GetSpellAsync(int spellId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<Spell>(region, $"{host}/data/wow/spell/{spellId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Spell>(region, $"{host}/data/wow/spell/{spellId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<SpellMedia>> GetSpellMediaAsync(int spellId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<SpellMedia>(region, $"{host}/data/wow/media/spell/{spellId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<SpellMedia>(region, $"{host}/data/wow/media/spell/{spellId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

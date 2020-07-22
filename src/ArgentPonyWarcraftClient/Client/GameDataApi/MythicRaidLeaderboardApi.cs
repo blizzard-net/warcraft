@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MythicRaidLeaderboard>> GetMythicRaidLeaderboardAsync(string raid, string faction, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<MythicRaidLeaderboard>(region, $"{host}/data/wow/leaderboard/hall-of-fame/{raid}/{faction}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MythicRaidLeaderboard>(region, $"{host}/data/wow/leaderboard/hall-of-fame/{raid}/{faction}?namespace={@namespace}&locale={locale}");
         }
     }
 }

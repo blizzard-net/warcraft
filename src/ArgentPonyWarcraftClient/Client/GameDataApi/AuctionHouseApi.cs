@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AuctionsIndex>> GetAuctionsAsync(int connectedRealmId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await Get<AuctionsIndex>(region, $"{host}/data/wow/connected-realm/{connectedRealmId}/auctions?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AuctionsIndex>(region, $"{host}/data/wow/connected-realm/{connectedRealmId}/auctions?namespace={@namespace}&locale={locale}");
         }
     }
 }
