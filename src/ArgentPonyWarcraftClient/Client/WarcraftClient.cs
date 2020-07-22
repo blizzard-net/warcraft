@@ -131,7 +131,7 @@ namespace ArgentPonyWarcraftClient
                 _tokenExpiration = DateTimeOffset.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
             }
 
-            return await Get<T>(region, requestUri, _token.AccessToken);
+            return await Get<T>(requestUri, _token.AccessToken);
         }
 
         /// <summary>
@@ -150,7 +150,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        private async Task<RequestResult<T>> Get<T>(Region region, string requestUri, string accessToken)
+        private async Task<RequestResult<T>> Get<T>(string requestUri, string accessToken)
         {
             // Add an authentication header with the token.
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
