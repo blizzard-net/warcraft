@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -30,6 +29,7 @@ namespace ArgentPonyWarcraftClient
         {
             s_jsonSerializerOptions = new JsonSerializerOptions();
             s_jsonSerializerOptions.Converters.Add(new EpochConverter());
+            s_jsonSerializerOptions.Converters.Add(new MillisecondTimeSpanConverter());
         }
 
         /// <summary>
