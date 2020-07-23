@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets links for the index of item sets.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; private set; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to item sets.

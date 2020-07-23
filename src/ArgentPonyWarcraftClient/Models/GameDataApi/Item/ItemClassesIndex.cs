@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets links for the index of item classes.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; private set; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to item classes.
         /// </summary>
         [JsonPropertyName("item_classes")]
-        public ItemClassReference[] ItemClasses { get; private set; }
+        public ItemClassReference[] ItemClasses { get; set; }
     }
 }

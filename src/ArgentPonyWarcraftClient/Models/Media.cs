@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the key for the media.
         /// </summary>
         [JsonPropertyName("key")]
-        public Self Key { get; private set; }
+        public Self Key { get; set; }
 
         /// <summary>
         /// Gets the ID of the media.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; private set; }
+        public int Id { get; set; }
     }
 }

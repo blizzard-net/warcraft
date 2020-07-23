@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets links for the achievement media.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; private set; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets a collection of media assets.
         /// </summary>
         [JsonPropertyName("assets")]
-        public Asset[] Assets { get; private set; }
+        public Asset[] Assets { get; set; }
     }
 }

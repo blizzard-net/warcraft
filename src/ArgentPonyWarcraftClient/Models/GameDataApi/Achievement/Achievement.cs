@@ -11,66 +11,66 @@ namespace ArgentPonyWarcraftClient
         /// Gets links for this achievement.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; private set; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of this achievement.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; private set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a reference to the achievement category to which this achievement belongs.
         /// </summary>
         [JsonPropertyName("category")]
-        public AchievementCategoryReference Category { get; private set; }
+        public AchievementCategoryReference Category { get; set; }
 
         /// <summary>
         /// Gets the name of this achievement.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets the description of this achievement.
         /// </summary>
         [JsonPropertyName("description")]
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Gets the number of achievement points associated with this achievement.
         /// </summary>
         [JsonPropertyName("points")]
-        public int Points { get; private set; }
+        public int Points { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether this achievement is account-wide.
         /// </summary>
         [JsonPropertyName("is_account_wide")]
-        public bool IsAccountWide { get; private set; }
+        public bool IsAccountWide { get; set; }
 
         /// <summary>
         /// Gets the criteria for this achievement.
         /// </summary>
         [JsonPropertyName("criteria")]
-        public AchievementCriteria Criteria { get; private set; }
+        public AchievementCriteria Criteria { get; set; }
 
         /// <summary>
         /// Gets a reference to the next achievement.
         /// </summary>
         [JsonPropertyName("next_achievement")]
-        public AchievementReference NextAchievement { get; private set; }
+        public AchievementReference NextAchievement { get; set; }
 
         /// <summary>
         /// Gets the media associated with this achievement.
         /// </summary>
         [JsonPropertyName("media")]
-        public Media Media { get; private set; }
+        public Media Media { get; set; }
 
         /// <summary>
         /// Gets the display order.
         /// </summary>
         [JsonPropertyName("display_order")]
-        public int DisplayOrder { get; private set; }
+        public int DisplayOrder { get; set; }
     }
 }
