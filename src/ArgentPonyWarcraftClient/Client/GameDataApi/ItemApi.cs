@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<ItemClassesIndex>> GetItemClassesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<ItemClassesIndex>(region, $"{host}/data/wow/item-class/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<ItemClassesIndex>($"{host}/data/wow/item-class/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<ItemClass>> GetItemClassAsync(int itemClassId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<ItemClass>(region, $"{host}/data/wow/item-class/{itemClassId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<ItemClass>($"{host}/data/wow/item-class/{itemClassId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<ItemSetsIndex>> GetItemSetsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<ItemSetsIndex>(region, $"{host}/data/wow/item-set/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<ItemSetsIndex>($"{host}/data/wow/item-set/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<ItemSet>> GetItemSetAsync(int itemSetId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<ItemSet>(region, $"{host}/data/wow/item-set/{itemSetId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<ItemSet>($"{host}/data/wow/item-set/{itemSetId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -66,7 +66,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<ItemSubclass>> GetItemSubclassAsync(int itemClassId, int itemSubclassId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<ItemSubclass>(region, $"{host}/data/wow/item-class/{itemClassId}/item-subclass/{itemSubclassId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<ItemSubclass>($"{host}/data/wow/item-class/{itemClassId}/item-subclass/{itemSubclassId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -79,7 +79,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Item>> GetItemAsync(int itemId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<Item>(region, $"{host}/data/wow/item/{itemId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Item>($"{host}/data/wow/item/{itemId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -92,7 +92,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<ItemMedia>> GetItemMediaAsync(int itemId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<ItemMedia>(region, $"{host}/data/wow/media/item/{itemId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<ItemMedia>($"{host}/data/wow/media/item/{itemId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

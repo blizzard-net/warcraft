@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MythicKeystoneLeaderboardsIndex>> GetMythicKeystoneLeaderboardsIndexAsync(int connectedRealmId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<MythicKeystoneLeaderboardsIndex>(region, $"{host}/data/wow/connected-realm/{connectedRealmId}/mythic-leaderboard/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MythicKeystoneLeaderboardsIndex>($"{host}/data/wow/connected-realm/{connectedRealmId}/mythic-leaderboard/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MythicKeystoneLeaderboard>> GetMythicKeystoneLeaderboard(int connectedRealmId, int dungeonId, int period, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<MythicKeystoneLeaderboard>(region, $"{host}/data/wow/connected-realm/{connectedRealmId}/mythic-leaderboard/{dungeonId}/period/{period}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MythicKeystoneLeaderboard>($"{host}/data/wow/connected-realm/{connectedRealmId}/mythic-leaderboard/{dungeonId}/period/{period}?namespace={@namespace}&locale={locale}");
         }
     }
 }

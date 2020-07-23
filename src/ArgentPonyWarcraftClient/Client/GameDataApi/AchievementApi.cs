@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AchievementCategoriesIndex>> GetAchievementCategoriesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<AchievementCategoriesIndex>(region, $"{host}/data/wow/achievement-category/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AchievementCategoriesIndex>($"{host}/data/wow/achievement-category/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AchievementCategory>> GetAchievementCategoryAsync(int achievementCategoryId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<AchievementCategory>(region, $"{host}/data/wow/achievement-category/{achievementCategoryId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AchievementCategory>($"{host}/data/wow/achievement-category/{achievementCategoryId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AchievementsIndex>> GetAchievementsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<AchievementsIndex>(region, $"{host}/data/wow/achievement/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AchievementsIndex>($"{host}/data/wow/achievement/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Achievement>> GetAchievementAsync(int achievementId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<Achievement>(region, $"{host}/data/wow/achievement/{achievementId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Achievement>($"{host}/data/wow/achievement/{achievementId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -66,7 +66,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<AchievementMedia>> GetAchievementMediaAsync(int achievementId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<AchievementMedia>(region, $"{host}/data/wow/media/achievement/{achievementId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<AchievementMedia>($"{host}/data/wow/media/achievement/{achievementId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

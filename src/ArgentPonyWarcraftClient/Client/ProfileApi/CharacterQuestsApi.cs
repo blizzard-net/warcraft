@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterQuests>> GetCharacterQuestsAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterQuests>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/quests?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterQuests>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/quests?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterCompletedQuests>> GetCharacterCompletedQuestsAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterCompletedQuests>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/quests/completed?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterCompletedQuests>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/quests/completed?namespace={@namespace}&locale={locale}");
         }
     }
 }

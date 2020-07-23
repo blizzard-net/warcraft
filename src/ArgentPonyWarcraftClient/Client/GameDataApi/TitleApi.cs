@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<TitlesIndex>> GetTitlesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<TitlesIndex>(region, $"{host}/data/wow/title/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<TitlesIndex>($"{host}/data/wow/title/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Title>> GetTitleAsync(int titleId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<Title>(region, $"{host}/data/wow/title/{titleId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Title>($"{host}/data/wow/title/{titleId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

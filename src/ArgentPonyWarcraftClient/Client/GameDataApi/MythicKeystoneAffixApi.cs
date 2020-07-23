@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MythicKeystoneAffixesIndex>> GetMythicKeystoneAffixesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<MythicKeystoneAffixesIndex>(region, $"{host}/data/wow/keystone-affix/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MythicKeystoneAffixesIndex>($"{host}/data/wow/keystone-affix/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MythicKeystoneAffix>> GetMythicKeystoneAffixAsync(int keystoneAffixId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<MythicKeystoneAffix>(region, $"{host}/data/wow/keystone-affix/{keystoneAffixId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MythicKeystoneAffix>($"{host}/data/wow/keystone-affix/{keystoneAffixId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MythicKeystoneAffixMedia>> GetMythicKeystoneAffixMediaAsync(int keystoneAffixId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<MythicKeystoneAffixMedia>(region, $"{host}/data/wow/media/keystone-affix/{keystoneAffixId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MythicKeystoneAffixMedia>($"{host}/data/wow/media/keystone-affix/{keystoneAffixId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<MountsIndex>> GetMountsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<MountsIndex>(region, $"{host}/data/wow/mount/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<MountsIndex>($"{host}/data/wow/mount/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Mount>> GetMountAsync(int mountId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<Mount>(region, $"{host}/data/wow/mount/{mountId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Mount>($"{host}/data/wow/mount/{mountId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

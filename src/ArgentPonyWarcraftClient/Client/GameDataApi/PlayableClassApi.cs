@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PlayableClassesIndex>> GetPlayableClassesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PlayableClassesIndex>(region, $"{host}/data/wow/playable-class/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PlayableClassesIndex>($"{host}/data/wow/playable-class/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PlayableClass>> GetPlayableClassAsync(int classId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PlayableClass>(region, $"{host}/data/wow/playable-class/{classId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PlayableClass>($"{host}/data/wow/playable-class/{classId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PlayableClassMedia>> GetPlayableClassMediaAsync(int classId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PlayableClassMedia>(region, $"{host}/data/wow/media/playable-class/{classId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PlayableClassMedia>($"{host}/data/wow/media/playable-class/{classId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PvpTalentSlots>> GetPvpTalentSlotsAsync(int classId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PvpTalentSlots>(region, $"{host}/data/wow/playable-class/{classId}/pvp-talent-slots?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PvpTalentSlots>($"{host}/data/wow/playable-class/{classId}/pvp-talent-slots?namespace={@namespace}&locale={locale}");
         }
     }
 }

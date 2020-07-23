@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterProfessionsSummary>> GetCharacterProfessionsSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterProfessionsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/professions?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterProfessionsSummary>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/professions?namespace={@namespace}&locale={locale}");
         }
     }
 }
