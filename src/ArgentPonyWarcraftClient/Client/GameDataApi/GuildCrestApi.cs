@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<GuildCrestComponentsIndex>> GetGuildCrestComponentsIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<GuildCrestComponentsIndex>(region, $"{host}/data/wow/guild-crest/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<GuildCrestComponentsIndex>($"{host}/data/wow/guild-crest/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<GuildCrestBorderMedia>> GetGuildCrestBorderMediaAsync(int borderId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<GuildCrestBorderMedia>(region, $"{host}/data/wow/media/guild-crest/border/{borderId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<GuildCrestBorderMedia>($"{host}/data/wow/media/guild-crest/border/{borderId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<GuildCrestEmblemMedia>> GetGuildCrestEmblemMediaAsync(int emblemId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<GuildCrestEmblemMedia>(region, $"{host}/data/wow/media/guild-crest/emblem/{emblemId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<GuildCrestEmblemMedia>($"{host}/data/wow/media/guild-crest/emblem/{emblemId}?namespace={@namespace}&locale={locale}");
         }
     }
 }

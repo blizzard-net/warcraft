@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterAchievementsSummary>> GetCharacterAchievementsSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterAchievementsSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/achievements?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterAchievementsSummary>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/achievements?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterAchievementStatistics>> GetCharacterAchievementStatisticsAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterAchievementStatistics>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/achievements/statistics?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterAchievementStatistics>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/achievements/statistics?namespace={@namespace}&locale={locale}");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<WowTokenIndex>> GetWowTokenIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<WowTokenIndex>(region, $"{host}/data/wow/token/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<WowTokenIndex>($"{host}/data/wow/token/index?namespace={@namespace}&locale={locale}");
         }
     }
 }

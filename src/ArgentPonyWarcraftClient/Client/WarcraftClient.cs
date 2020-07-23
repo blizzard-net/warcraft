@@ -115,23 +115,23 @@ namespace ArgentPonyWarcraftClient
         /// <typeparam name="T">
         ///     The return type.
         /// </typeparam>
-        /// <param name="region">The region from which to request a token.</param>
         /// <param name="requestUri">
         ///     The URI the request is sent to.
         /// </param>
         /// <returns>
         ///     The JSON response, deserialized to an object of type <typeparamref name="T"/>.
         /// </returns>
-        private async Task<RequestResult<T>> GetAsync<T>(Region region, string requestUri)
+        private async Task<RequestResult<T>> GetAsync<T>(string requestUri)
         {
             // Acquire a new OAuth token if we don't have one. Get a new one if it's expired.
             if (_token == null || DateTimeOffset.UtcNow >= _tokenExpiration)
             {
+                Region region = GetRegionFromUri(requestUri);
                 _token = await GetOAuthTokenAsync(region).ConfigureAwait(false);
                 _tokenExpiration = DateTimeOffset.UtcNow.AddSeconds(_token.ExpiresIn).AddSeconds(-30);
             }
 
-            return await GetAsync<T>(requestUri, _token.AccessToken);
+            return await GetAsync<T>(requestUri, _token.AccessToken).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -246,6 +246,36 @@ namespace ArgentPonyWarcraftClient
                 case Region.US:
                 default:
                     return "https://us.api.blizzard.com";
+            }
+        }
+
+        /// <summary>
+        ///     Determine the region for a URI.
+        /// </summary>
+        /// <param name="requestUri">
+        ///     The URI the request is sent to.
+        /// </param>
+        /// <returns>
+        ///     The region corresponding to the URI.
+        /// </returns>
+        private static Region GetRegionFromUri(string requestUri)
+        {
+            Uri uri = new Uri(requestUri);
+
+            switch (uri.Host)
+            {
+                case "gateway.battlenet.com.cn":
+                    return Region.China;
+                case "eu.api.blizzard.com":
+                    return Region.Europe;
+                case "kr.api.blizzard.com":
+                    return Region.Korea;
+                case "tw.api.blizzard.com":
+                    return Region.Taiwan;
+                case "us.api.blizzard.com":
+                    return Region.US;
+                default:
+                    throw new ArgumentException($"The requestUri '{requestUri}' contains host '{uri.Host}', which is not recognized.", nameof(requestUri));
             }
         }
 

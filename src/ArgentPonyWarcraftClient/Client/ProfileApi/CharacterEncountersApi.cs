@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterEncountersSummary>> GetCharacterEncountersSummaryAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterEncountersSummary>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/encounters?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterEncountersSummary>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/encounters?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterDungeons>> GetCharacterDungeonsAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterDungeons>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/encounters/dungeons?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterDungeons>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/encounters/dungeons?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<CharacterRaids>> GetCharacterRaidsAsync(string realmSlug, string characterName, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<CharacterRaids>(region, $"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/encounters/raids?namespace={@namespace}&locale={locale}");
+            return await GetAsync<CharacterRaids>($"{host}/profile/wow/character/{realmSlug}/{characterName?.ToLowerInvariant()}/encounters/raids?namespace={@namespace}&locale={locale}");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<Guild>> GetGuildAsync(string realmSlug, string nameSlug, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<Guild>(region, $"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<Guild>($"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<GuildActivity>> GetGuildActivityAsync(string realmSlug, string nameSlug, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<GuildActivity>(region, $"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}/activity?namespace={@namespace}&locale={locale}");
+            return await GetAsync<GuildActivity>($"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}/activity?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<GuildAchievements>> GetGuildAchievementsAsync(string realmSlug, string nameSlug, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<GuildAchievements>(region, $"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}/achievements?namespace={@namespace}&locale={locale}");
+            return await GetAsync<GuildAchievements>($"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}/achievements?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<GuildRoster>> GetGuildRosterAsync(string realmSlug, string nameSlug, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<GuildRoster>(region, $"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}/roster?namespace={@namespace}&locale={locale}");
+            return await GetAsync<GuildRoster>($"{host}/data/wow/guild/{realmSlug}/{nameSlug?.ToLowerInvariant()}/roster?namespace={@namespace}&locale={locale}");
         }
     }
 }

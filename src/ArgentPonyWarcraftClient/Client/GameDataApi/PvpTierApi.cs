@@ -14,7 +14,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PvpTiersIndex>> GetPvpTiersIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PvpTiersIndex>(region, $"{host}/data/wow/pvp-tier/index?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PvpTiersIndex>($"{host}/data/wow/pvp-tier/index?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PvpTier>> GetPvpTierAsync(int pvpTierId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PvpTier>(region, $"{host}/data/wow/pvp-tier/{pvpTierId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PvpTier>($"{host}/data/wow/pvp-tier/{pvpTierId}?namespace={@namespace}&locale={locale}");
         }
 
         /// <inheritdoc />
@@ -40,7 +40,7 @@ namespace ArgentPonyWarcraftClient
         public async Task<RequestResult<PvpTierMedia>> GetPvpTierMediaAsync(int pvpTierId, string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
-            return await GetAsync<PvpTierMedia>(region, $"{host}/data/wow/media/pvp-tier/{pvpTierId}?namespace={@namespace}&locale={locale}");
+            return await GetAsync<PvpTierMedia>($"{host}/data/wow/media/pvp-tier/{pvpTierId}?namespace={@namespace}&locale={locale}");
         }
     }
 }
