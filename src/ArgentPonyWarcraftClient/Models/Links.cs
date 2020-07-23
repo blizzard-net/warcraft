@@ -11,6 +11,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets a self-reference.
         /// </summary>
         [JsonPropertyName("self")]
-        public Self Self { get; private set; }
+        public Self Self { get; set; }
     }
 }

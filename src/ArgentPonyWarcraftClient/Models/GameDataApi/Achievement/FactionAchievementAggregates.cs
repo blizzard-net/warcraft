@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the quantity.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public int Quantity { get; private set; }
+        public int Quantity { get; set; }
 
         /// <summary>
         /// Gets the number of points.
         /// </summary>
         [JsonPropertyName("points")]
-        public int Points { get; private set; }
+        public int Points { get; set; }
     }
 }

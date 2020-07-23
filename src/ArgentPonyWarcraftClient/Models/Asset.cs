@@ -12,12 +12,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the key of the asset.
         /// </summary>
         [JsonPropertyName("key")]
-        public string Key { get; private set; }
+        public string Key { get; set; }
 
         /// <summary>
         /// Gets a URI for retrieving the asset value.
         /// </summary>
         [JsonPropertyName("value")]
-        public Uri Value { get; private set; }
+        public Uri Value { get; set; }
     }
 }

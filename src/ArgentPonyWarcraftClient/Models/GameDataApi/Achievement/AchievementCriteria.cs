@@ -11,18 +11,18 @@ namespace ArgentPonyWarcraftClient
         /// Gets the ID of the criteria.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; private set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the description of the criteria.
         /// </summary>
         [JsonPropertyName("description")]
-        public string Description { get; private set; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Gets the amount of the criteria.
         /// </summary>
         [JsonPropertyName("amount")]
-        public int Amount { get; private set; }
+        public int Amount { get; set; }
     }
 }

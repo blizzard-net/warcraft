@@ -11,18 +11,18 @@ namespace ArgentPonyWarcraftClient
         /// Gets the key for this achievement category.
         /// </summary>
         [JsonPropertyName("key")]
-        public Self Key { get; private set; }
+        public Self Key { get; set; }
 
         /// <summary>
         /// Gets the name of this achievement category.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets the ID of this achievement category.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; private set; }
+        public int Id { get; set; }
     }
 }

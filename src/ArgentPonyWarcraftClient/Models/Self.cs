@@ -12,6 +12,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets a URI for retrieving the data for this object.
         /// </summary>
         [JsonPropertyName("href")]
-        public Uri Href { get; private set; }
+        public Uri Href { get; set; }
     }
 }

@@ -11,12 +11,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets links for the index of achievements.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; private set; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to achievements.
         /// </summary>
         [JsonPropertyName("achievements")]
-        public AchievementReference[] Achievements { get; private set; }
+        public AchievementReference[] Achievements { get; set; }
     }
 }
