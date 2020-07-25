@@ -23,7 +23,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the percentage remaining to the next level.
         /// </summary>
         [JsonPropertyName("percentage_to_next_level")]
-        public double? PercentageToNextLevel { get; set; }
+        public float? PercentageToNextLevel { get; set; }
 
         /// <summary>
         /// Gets the selected azerite essences.

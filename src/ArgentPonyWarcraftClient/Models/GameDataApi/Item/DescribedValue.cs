@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the numerical value.
         /// </summary>
         [JsonPropertyName("value")]
-        public double Value { get; set; }
+        public float Value { get; set; }
 
         /// <summary>
         /// Gets a display string for the value.

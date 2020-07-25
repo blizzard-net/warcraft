@@ -23,24 +23,24 @@ namespace ArgentPonyWarcraftClient
         /// Gets the x coordinate.
         /// </summary>
         [JsonPropertyName("x")]
-        public double X { get; set; }
+        public float X { get; set; }
 
         /// <summary>
         /// Gets the y coordinate.
         /// </summary>
         [JsonPropertyName("y")]
-        public double Y { get; set; }
+        public float Y { get; set; }
 
         /// <summary>
         /// Gets the z coordinate.
         /// </summary>
         [JsonPropertyName("z")]
-        public double Z { get; set; }
+        public float Z { get; set; }
 
         /// <summary>
         /// Gets the facing.
         /// </summary>
         [JsonPropertyName("facing")]
-        public double Facing { get; set; }
+        public float Facing { get; set; }
     }
 }
