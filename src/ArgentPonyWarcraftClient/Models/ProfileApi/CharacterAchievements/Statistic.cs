@@ -30,7 +30,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets a quantity associated with the statistic.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public double Quantity { get; set; }
+        public float Quantity { get; set; }
 
         /// <summary>
         /// Gets an optional description of the statistic.

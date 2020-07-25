@@ -17,12 +17,12 @@ namespace ArgentPonyWarcraftClient
         /// Gets the rating bonus.
         /// </summary>
         [JsonPropertyName("rating_bonus")]
-        public double RatingBonus { get; set; }
+        public float RatingBonus { get; set; }
 
         /// <summary>
         /// Gets the value.
         /// </summary>
         [JsonPropertyName("value")]
-        public double Value { get; set; }
+        public float Value { get; set; }
     }
 }

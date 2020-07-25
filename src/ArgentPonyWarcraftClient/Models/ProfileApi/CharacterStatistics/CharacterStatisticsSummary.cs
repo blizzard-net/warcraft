@@ -95,25 +95,25 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's versatility.
         /// </summary>
         [JsonPropertyName("versatility")]
-        public double Versatility { get; set; }
+        public float Versatility { get; set; }
 
         /// <summary>
         /// Gets the character's versatility damage done bonus.
         /// </summary>
         [JsonPropertyName("versatility_damage_done_bonus")]
-        public double VersatilityDamageDoneBonus { get; set; }
+        public float VersatilityDamageDoneBonus { get; set; }
 
         /// <summary>
         /// Gets the character's versatility healing done bonus.
         /// </summary>
         [JsonPropertyName("versatility_healing_done_bonus")]
-        public double VersatilityHealingDoneBonus { get; set; }
+        public float VersatilityHealingDoneBonus { get; set; }
 
         /// <summary>
         /// Gets the character's versatility damage taken bonus.
         /// </summary>
         [JsonPropertyName("versatility_damage_taken_bonus")]
-        public double VersatilityDamageTakenBonus { get; set; }
+        public float VersatilityDamageTakenBonus { get; set; }
 
         /// <summary>
         /// Gets the character's avoidance.
@@ -131,49 +131,49 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's main hand damage minimum.
         /// </summary>
         [JsonPropertyName("main_hand_damage_min")]
-        public double MainHandDamageMin { get; set; }
+        public float MainHandDamageMin { get; set; }
 
         /// <summary>
         /// Gets the character's main hand damage maximum.
         /// </summary>
         [JsonPropertyName("main_hand_damage_max")]
-        public double MainHandDamageMax { get; set; }
+        public float MainHandDamageMax { get; set; }
 
         /// <summary>
         /// Gets the character's main hand speed.
         /// </summary>
         [JsonPropertyName("main_hand_speed")]
-        public double MainHandSpeed { get; set; }
+        public float MainHandSpeed { get; set; }
 
         /// <summary>
         /// Gets the character's main hand DPS.
         /// </summary>
         [JsonPropertyName("main_hand_dps")]
-        public double MainHandDps { get; set; }
+        public float MainHandDps { get; set; }
 
         /// <summary>
         /// Gets the character's off hand damage minimum.
         /// </summary>
         [JsonPropertyName("off_hand_damage_min")]
-        public double OffHandDamageMin { get; set; }
+        public float OffHandDamageMin { get; set; }
 
         /// <summary>
         /// Gets the character's off hand damage maximum.
         /// </summary>
         [JsonPropertyName("off_hand_damage_max")]
-        public double OffHandDamageMax { get; set; }
+        public float OffHandDamageMax { get; set; }
 
         /// <summary>
         /// Gets the character's off hand speed.
         /// </summary>
         [JsonPropertyName("off_hand_speed")]
-        public double OffHandSpeed { get; set; }
+        public float OffHandSpeed { get; set; }
 
         /// <summary>
         /// Gets the character's off hand DPS.
         /// </summary>
         [JsonPropertyName("off_hand_dps")]
-        public double OffHandDps { get; set; }
+        public float OffHandDps { get; set; }
 
         /// <summary>
         /// Gets the character's spell power.
