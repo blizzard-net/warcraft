@@ -95,7 +95,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's versatility.
         /// </summary>
         [JsonPropertyName("versatility")]
-        public int Versatility { get; set; }
+        public double Versatility { get; set; }
 
         /// <summary>
         /// Gets the character's versatility damage done bonus.
@@ -197,13 +197,13 @@ namespace ArgentPonyWarcraftClient
         /// Gets the character's mana regeneration.
         /// </summary>
         [JsonPropertyName("mana_regen")]
-        public int ManaRegen { get; set; }
+        public float ManaRegen { get; set; }
 
         /// <summary>
         /// Gets the character's mana regeneration in combat.
         /// </summary>
         [JsonPropertyName("mana_regen_combat")]
-        public int ManaRegenCombat { get; set; }
+        public float ManaRegenCombat { get; set; }
 
         /// <summary>
         /// Gets the character's armor.

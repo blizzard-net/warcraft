@@ -11,18 +11,18 @@ namespace ArgentPonyWarcraftClient
         /// Gets the corruption level.
         /// </summary>
         [JsonPropertyName("corruption")]
-        public int Corruption { get; set; }
+        public float Corruption { get; set; }
 
         /// <summary>
         /// Gets the corruption resistance.
         /// </summary>
         [JsonPropertyName("corruption_resistance")]
-        public int CorruptionResistance { get; set; }
+        public float CorruptionResistance { get; set; }
 
         /// <summary>
         /// Gets the effective corruption.
         /// </summary>
         [JsonPropertyName("effective_corruption")]
-        public int EffectiveCorruption { get; set; }
+        public float EffectiveCorruption { get; set; }
     }
 }

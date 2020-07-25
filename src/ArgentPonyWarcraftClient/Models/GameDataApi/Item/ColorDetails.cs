@@ -29,6 +29,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the alpha (opacity) channel value for the color.
         /// </summary>
         [JsonPropertyName("a")]
-        public int Alpha { get; set; }
+        public float Alpha { get; set; }
     }
 }
