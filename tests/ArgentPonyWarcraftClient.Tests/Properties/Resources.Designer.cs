@@ -614,6 +614,31 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/character-media?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drinian&quot;,
+        ///    &quot;id&quot;: 183057723,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Norgann [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterMediaSummaryResponse {
+            get {
+                return ResourceManager.GetString("CharacterMediaSummaryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/collections/mounts?namespace=profile-us&quot;
         ///    }
         ///  },
