@@ -11,6 +11,7 @@
         ICharacterEncountersApi,
         ICharacterEquipmentApi,
         ICharacterHunterPetsApi,
+        ICharacterMediaApi,
         ICharacterMythicKeystoneProfileApi,
         ICharacterProfessionsApi,
         ICharacterProfileApi,

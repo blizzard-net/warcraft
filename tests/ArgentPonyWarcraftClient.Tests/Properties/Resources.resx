@@ -73541,4 +73541,31 @@
   "wow_account": 19795845
 }</value>
   </data>
+  <data name="CharacterMediaSummaryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/character-media?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us"
+    },
+    "name": "Drinian",
+    "id": 183057723,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1262?namespace=dynamic-us"
+      },
+      "name": "Norgannon",
+      "id": 1262,
+      "slug": "norgannon"
+    }
+  },
+  "avatar_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-avatar.jpg",
+  "bust_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-inset.jpg",
+  "render_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-main.jpg"
+}</value>
+  </data>
 </root>
