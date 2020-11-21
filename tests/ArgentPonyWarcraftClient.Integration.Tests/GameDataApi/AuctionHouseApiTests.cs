@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         public async void GetAuctionsAsync_Gets_Auctions()
         {
             IAuctionHouseApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<AuctionsIndex> result = await warcraftClient.GetAuctionsAsync(1146, "dynamic-us");
+            RequestResult<AuctionsIndex> result = await warcraftClient.GetAuctionsAsync(4, "dynamic-us");
             Assert.NotNull(result.Value);
         }
     }

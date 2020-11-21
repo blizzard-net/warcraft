@@ -280,26 +280,26 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146/auctions?namespace=dynamic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4/auctions?namespace=dynamic-us&quot;
         ///    }
         ///  },
         ///  &quot;connected_realm&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146?namespace=dynamic-us&quot;
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4?namespace=dynamic-us&quot;
         ///  },
         ///  &quot;auctions&quot;: [
         ///    {
-        ///      &quot;id&quot;: 568957532,
+        ///      &quot;id&quot;: 37781919,
         ///      &quot;item&quot;: {
-        ///        &quot;id&quot;: 168185
+        ///        &quot;id&quot;: 86280,
+        ///        &quot;context&quot;: 0,
+        ///        &quot;modifiers&quot;: [
+        ///          {
+        ///            &quot;type&quot;: 28,
+        ///            &quot;value&quot;: 2008
+        ///          }
+        ///        ]
         ///      },
-        ///      &quot;quantity&quot;: 7,
-        ///      &quot;unit_price&quot;: 345000,
-        ///      &quot;time_left&quot;: &quot;SHORT&quot;
-        ///    },
-        ///    {
-        ///      &quot;id&quot;: 568957534,
-        ///      &quot;item&quot;: {
-        ///      [rest of string was truncated]&quot;;.
+        ///      &quot;buyo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AuctionsResponse {
             get {
