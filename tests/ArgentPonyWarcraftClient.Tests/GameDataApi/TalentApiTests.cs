@@ -42,10 +42,10 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         public async void GetPvpTalentAsync_Gets_PvpTalent()
         {
             ITalentApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-us&locale=en_US",
+                requestUri: "https://us.api.blizzard.com/data/wow/pvp-talent/11?namespace=static-us&locale=en_US",
                 responseContent: Resources.PvpTalentResponse);
 
-            RequestResult<PvpTalent> result = await warcraftClient.GetPvpTalentAsync(3, "static-us");
+            RequestResult<PvpTalent> result = await warcraftClient.GetPvpTalentAsync(11, "static-us");
             Assert.NotNull(result.Value);
         }
     }

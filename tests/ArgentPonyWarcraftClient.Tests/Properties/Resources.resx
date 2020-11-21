@@ -61800,35 +61800,31 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/pvp-talent/11?namespace=static-9.0.2_36532-us"
     }
   },
-  "id": 3,
+  "id": 11,
   "spell": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/spell/208683?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/spell/199954?namespace=static-9.0.2_36532-us"
     },
-    "name": "Gladiator's Medallion",
-    "id": 208683
+    "name": "Bane of Fragility",
+    "id": 199954
   },
   "playable_specialization": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-9.0.2_36532-us"
     },
-    "name": "Restoration",
-    "id": 105
+    "name": "Affliction",
+    "id": 265
   },
-  "overrides_spell": {
-    "key": {
-      "href": "https://us.api.blizzard.com/data/wow/spell/195710?namespace=static-8.3.0_32861-us"
-    },
-    "name": "Honorable Medallion",
-    "id": 195710
-  },
-  "description": "Removes all movement impairing effects and all effects which cause loss of control of your character while in PvP combat.",
-  "unlock_player_level": 0,
+  "description": "Reduces the target's maximum health by up to 15% for 10 sec.",
+  "unlock_player_level": 25,
   "compatible_slots": [
-    1
+    1,
+    2,
+    3,
+    4
   ]
 }</value>
   </data>

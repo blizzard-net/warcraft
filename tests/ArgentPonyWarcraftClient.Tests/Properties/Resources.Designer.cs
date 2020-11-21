@@ -2886,20 +2886,21 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/11?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 3,
+        ///  &quot;id&quot;: 11,
         ///  &quot;spell&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/208683?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/199954?namespace=static-9.0.2_36532-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Gladiator&apos;s Medallion&quot;,
-        ///    &quot;id&quot;: 208683
+        ///    &quot;name&quot;: &quot;Bane of Fragility&quot;,
+        ///    &quot;id&quot;: 199954
         ///  },
         ///  &quot;playable_specialization&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-8.3.0_32861-us&quot; [rest of string was truncated]&quot;;.
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-9.0.2_36532-us&quot;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PvpTalentResponse {
             get {
