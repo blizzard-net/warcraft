@@ -113,6 +113,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 .AddTransientUsingServiceProvider<IGuildCrestApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IItemApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IJournalApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<IModifiedCraftingApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IMountApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IMythicKeystoneAffixApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IMythicKeystoneDungeonApi, IGameDataApi>()
