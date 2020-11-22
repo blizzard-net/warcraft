@@ -8,6 +8,7 @@
         IAuctionHouseApi,
         IAzeriteEssenceApi,
         IConnectedRealmApi,
+        ICovenantApi,
         ICreatureApi,
         IGuildCrestApi,
         IItemApi,
