@@ -280,26 +280,26 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146/auctions?namespace=dynamic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4/auctions?namespace=dynamic-us&quot;
         ///    }
         ///  },
         ///  &quot;connected_realm&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/1146?namespace=dynamic-us&quot;
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/4?namespace=dynamic-us&quot;
         ///  },
         ///  &quot;auctions&quot;: [
         ///    {
-        ///      &quot;id&quot;: 568957532,
+        ///      &quot;id&quot;: 37781919,
         ///      &quot;item&quot;: {
-        ///        &quot;id&quot;: 168185
+        ///        &quot;id&quot;: 86280,
+        ///        &quot;context&quot;: 0,
+        ///        &quot;modifiers&quot;: [
+        ///          {
+        ///            &quot;type&quot;: 28,
+        ///            &quot;value&quot;: 2008
+        ///          }
+        ///        ]
         ///      },
-        ///      &quot;quantity&quot;: 7,
-        ///      &quot;unit_price&quot;: 345000,
-        ///      &quot;time_left&quot;: &quot;SHORT&quot;
-        ///    },
-        ///    {
-        ///      &quot;id&quot;: 568957534,
-        ///      &quot;item&quot;: {
-        ///      [rest of string was truncated]&quot;;.
+        ///      &quot;buyo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AuctionsResponse {
             get {
@@ -2886,20 +2886,21 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/3?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pvp-talent/11?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 3,
+        ///  &quot;id&quot;: 11,
         ///  &quot;spell&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/208683?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/199954?namespace=static-9.0.2_36532-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Gladiator&apos;s Medallion&quot;,
-        ///    &quot;id&quot;: 208683
+        ///    &quot;name&quot;: &quot;Bane of Fragility&quot;,
+        ///    &quot;id&quot;: 199954
         ///  },
         ///  &quot;playable_specialization&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-8.3.0_32861-us&quot; [rest of string was truncated]&quot;;.
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-9.0.2_36532-us&quot;
+        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PvpTalentResponse {
             get {

@@ -9,10 +9,10 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         public async void GetAuctionsAsync_Gets_Auctions()
         {
             IAuctionHouseApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/1146/auctions?namespace=dynamic-us&locale=en_US",
+                requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/4/auctions?namespace=dynamic-us&locale=en_US",
                 responseContent: Resources.AuctionsResponse);
 
-            RequestResult<AuctionsIndex> result = await warcraftClient.GetAuctionsAsync(1146, "dynamic-us");
+            RequestResult<AuctionsIndex> result = await warcraftClient.GetAuctionsAsync(4, "dynamic-us");
             Assert.NotNull(result.Value);
         }
     }

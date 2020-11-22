@@ -32,7 +32,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         public async void GetPvpTalentAsync_Gets_PvpTalent()
         {
             ITalentApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<PvpTalent> result = await warcraftClient.GetPvpTalentAsync(3, "static-us");
+            RequestResult<PvpTalent> result = await warcraftClient.GetPvpTalentAsync(11, "static-us");
             Assert.NotNull(result.Value);
         }
     }
