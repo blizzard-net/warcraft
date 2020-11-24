@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class CharacterAchievementsApiTests
     {
         [Fact]
-        public async void GetCharacterAchievementsSummaryAsync_Gets_CharacterAchievementsSummary()
+        public async Task GetCharacterAchievementsSummaryAsync_Gets_CharacterAchievementsSummary()
         {
             ICharacterAchievementsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements?namespace=profile-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetCharacterAchievementStatisticsAsync_Gets_CharacterAchievementStatistics()
+        public async Task GetCharacterAchievementStatisticsAsync_Gets_CharacterAchievementStatistics()
         {
             ICharacterAchievementsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/achievements/statistics?namespace=profile-us&locale=en_US",

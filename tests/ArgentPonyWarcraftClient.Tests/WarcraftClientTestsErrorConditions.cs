@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net;
+using System.Threading.Tasks;
 using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
@@ -8,7 +9,7 @@ namespace ArgentPonyWarcraftClient.Tests
     public class WarcraftClientTestsErrorConditions
     {
         [Fact]
-        public async void InvalidIdProducesNotFoundError()
+        public async Task InvalidIdProducesNotFoundError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item/99999991?namespace=static-us&locale=en_US",
@@ -23,7 +24,7 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void InvalidJsonProducesError()
+        public async Task InvalidJsonProducesError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-us&locale=en_US",
@@ -38,7 +39,7 @@ namespace ArgentPonyWarcraftClient.Tests
         }
 
         [Fact]
-        public async void ProducesForbiddenError()
+        public async Task ProducesForbiddenError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-us&locale=en_US",

@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class MythicKeystoneLeaderboardApiTests
     {
         [Fact]
-        public async void GetMythicKeystoneLeaderboardsIndexAsync_Gets_MythicKeystoneLeaderboardsIndex()
+        public async Task GetMythicKeystoneLeaderboardsIndexAsync_Gets_MythicKeystoneLeaderboardsIndex()
         {
             IMythicKeystoneLeaderboardApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/index?namespace=dynamic-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneLeaderboard_Gets_MythicKeystoneLeaderboard()
+        public async Task GetMythicKeystoneLeaderboard_Gets_MythicKeystoneLeaderboard()
         {
             IMythicKeystoneLeaderboardApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us&locale=en_US",

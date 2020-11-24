@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class PlayableClassApiTests
     {
         [Fact]
-        public async void GetPlayableClassesIndexAsync_Gets_PlayableClassesIndex()
+        public async Task GetPlayableClassesIndexAsync_Gets_PlayableClassesIndex()
         {
             IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-class/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPlayableClassAsync_Gets_PlayableClass()
+        public async Task GetPlayableClassAsync_Gets_PlayableClass()
         {
             IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPlayableClassMediaAsync_Gets_PlayableClassMedia()
+        public async Task GetPlayableClassMediaAsync_Gets_PlayableClassMedia()
         {
             IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpTalentSlotsAsync_Gets_PvpTalentSlots()
+        public async Task GetPvpTalentSlotsAsync_Gets_PvpTalentSlots()
         {
             IPlayableClassApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-us&locale=en_US",

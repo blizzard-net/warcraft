@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class ReputationFactionApiTests
     {
         [Fact]
-        public async void GetReputationFactionsIndexAsync_Gets_ReputationFactionsIndex()
+        public async Task GetReputationFactionsIndexAsync_Gets_ReputationFactionsIndex()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/reputation-faction/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetReputationFactionAsync_Gets_ReputationFaction()
+        public async Task GetReputationFactionAsync_Gets_ReputationFaction()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/reputation-faction/21?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetReputationTiersIndexAsync_Gets_ReputationTiersIndex()
+        public async Task GetReputationTiersIndexAsync_Gets_ReputationTiersIndex()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/reputation-tiers/index?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetReputationTiersAsync_Gets_ReputationTiers()
+        public async Task GetReputationTiersAsync_Gets_ReputationTiers()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/reputation-tiers/2?namespace=static-us&locale=en_US",

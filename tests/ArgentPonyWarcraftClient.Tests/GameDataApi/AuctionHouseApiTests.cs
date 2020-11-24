@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class AuctionHouseApiTests
     {
         [Fact]
-        public async void GetAuctionsAsync_Gets_Auctions()
+        public async Task GetAuctionsAsync_Gets_Auctions()
         {
             IAuctionHouseApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/4/auctions?namespace=dynamic-us&locale=en_US",

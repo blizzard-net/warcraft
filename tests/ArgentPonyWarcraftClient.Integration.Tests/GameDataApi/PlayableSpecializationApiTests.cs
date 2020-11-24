@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class PlayableSpecializationApiTests
     {
         [ResilientFact]
-        public async void GetPlayableSpecializationsIndexAsync_Gets_PlayableSpecializationsIndex()
+        public async Task GetPlayableSpecializationsIndexAsync_Gets_PlayableSpecializationsIndex()
         {
             IPlayableSpecializationApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PlayableSpecializationsIndex> result = await warcraftClient.GetPlayableSpecializationsIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetPlayableSpecializationAsync_Gets_PlayableSpecialization()
+        public async Task GetPlayableSpecializationAsync_Gets_PlayableSpecialization()
         {
             IPlayableSpecializationApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PlayableSpecialization> result = await warcraftClient.GetPlayableSpecializationAsync(262, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetPlayableSpecializationMediaAsync_Gets_PlayableSpecializationMedia()
+        public async Task GetPlayableSpecializationMediaAsync_Gets_PlayableSpecializationMedia()
         {
             IPlayableSpecializationApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PlayableSpecializationMedia> result = await warcraftClient.GetPlayableSpecializationMediaAsync(262, "static-us");

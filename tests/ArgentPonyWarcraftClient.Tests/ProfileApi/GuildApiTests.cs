@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class GuildApiTests
     {
         [Fact]
-        public async void GetGuildAsync_Gets_Guild()
+        public async Task GetGuildAsync_Gets_Guild()
         {
             IGuildApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma?namespace=profile-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetGuildActivityAsync_Gets_GuildActivity()
+        public async Task GetGuildActivityAsync_Gets_GuildActivity()
         {
             IGuildApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/activity?namespace=profile-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetGuildAchievementsAsync_Gets_GuildAchievements()
+        public async Task GetGuildAchievementsAsync_Gets_GuildAchievements()
         {
             IGuildApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/achievements?namespace=profile-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetGuildRosterAsync_Gets_GuildRoster()
+        public async Task GetGuildRosterAsync_Gets_GuildRoster()
         {
             IGuildApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/guild/deathwing/enigma/roster?namespace=profile-us&locale=en_US",

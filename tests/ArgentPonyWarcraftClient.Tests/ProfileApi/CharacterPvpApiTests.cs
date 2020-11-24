@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class CharacterPvpApiTests
     {
         [Fact]
-        public async void GetCharacterPvpBracketStatisticsAsync_Gets_PvpBracketStatistics()
+        public async Task GetCharacterPvpBracketStatisticsAsync_Gets_PvpBracketStatistics()
         {
             ICharacterPvpApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-bracket/3v3?namespace=profile-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetCharacterPvpSummaryAsync_Gets_CharacterPvpSummary()
+        public async Task GetCharacterPvpSummaryAsync_Gets_CharacterPvpSummary()
         {
             ICharacterPvpApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/malganis/zenli/pvp-summary?namespace=profile-us&locale=en_US",

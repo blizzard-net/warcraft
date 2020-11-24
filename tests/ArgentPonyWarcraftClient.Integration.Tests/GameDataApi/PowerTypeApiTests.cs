@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class PowerTypeApiTests
     {
         [ResilientFact]
-        public async void GetPowerTypesIndexAsync_Gets_PowerTypesIndex()
+        public async Task GetPowerTypesIndexAsync_Gets_PowerTypesIndex()
         {
             IPowerTypeApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PowerTypesIndex> result = await warcraftClient.GetPowerTypesIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetPowerTypeAsync_Gets_PowerType()
+        public async Task GetPowerTypeAsync_Gets_PowerType()
         {
             IPowerTypeApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PowerType> result = await warcraftClient.GetPowerTypeAsync(0, "static-us");

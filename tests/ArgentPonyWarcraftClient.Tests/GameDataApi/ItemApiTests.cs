@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class ItemApiTests
     {
         [Fact]
-        public async void GetItemClassesIndexAsync_Gets_ItemClassesIndex()
+        public async Task GetItemClassesIndexAsync_Gets_ItemClassesIndex()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item-class/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetItemClassAsync_Gets_ItemClass()
+        public async Task GetItemClassAsync_Gets_ItemClass()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item-class/0?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetItemSetsIndexAsync_Gets_ItemSetsIndex()
+        public async Task GetItemSetsIndexAsync_Gets_ItemSetsIndex()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item-set/index?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetItemSetAsync_Gets_ItemSet()
+        public async Task GetItemSetAsync_Gets_ItemSet()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item-set/1?namespace=static-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetItemSubclassAsync_Gets_ItemSubclass()
+        public async Task GetItemSubclassAsync_Gets_ItemSubclass()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item-class/0/item-subclass/0?namespace=static-us&locale=en_US",
@@ -61,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetItemAsync_Gets_Item()
+        public async Task GetItemAsync_Gets_Item()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-us&locale=en_US",
@@ -72,7 +73,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetItemMediaAsync_Gets_Item()
+        public async Task GetItemMediaAsync_Gets_Item()
         {
             IItemApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-us&locale=en_US",

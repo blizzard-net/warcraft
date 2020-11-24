@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class MythicKeystoneDungeonApiTests
     {
         [Fact]
-        public async void GetMythicKeystoneDungeonsIndexAsync_Gets_MythicKeystoneDungeonsIndex()
+        public async Task GetMythicKeystoneDungeonsIndexAsync_Gets_MythicKeystoneDungeonsIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/index?namespace=dynamic-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
+        public async Task GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneIndexAsync_Gets_MythicKeystoneIndex()
+        public async Task GetMythicKeystoneIndexAsync_Gets_MythicKeystoneIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/index?namespace=dynamic-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystonePeriodsIndexAsync_Gets_MythicKeystonePeriodsIndex()
+        public async Task GetMythicKeystonePeriodsIndexAsync_Gets_MythicKeystonePeriodsIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/period/index?namespace=dynamic-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystonePeriodAsync_Gets_MythicKeystonePeriod()
+        public async Task GetMythicKeystonePeriodAsync_Gets_MythicKeystonePeriod()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/period/641?namespace=dynamic-us&locale=en_US",
@@ -61,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneSeasonsIndexAsync_Gets_MythicKeystoneSeasonsIndex()
+        public async Task GetMythicKeystoneSeasonsIndexAsync_Gets_MythicKeystoneSeasonsIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/season/index?namespace=dynamic-us&locale=en_US",
@@ -72,7 +73,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneSeasonAsync_Gets_MythicKeystoneSeason()
+        public async Task GetMythicKeystoneSeasonAsync_Gets_MythicKeystoneSeason()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/season/1?namespace=dynamic-us&locale=en_US",

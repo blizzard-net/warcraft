@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class ReputationFactionApiTests
     {
         [ResilientFact]
-        public async void GetReputationFactionsIndexAsync_Gets_ReputationFactionsIndex()
+        public async Task GetReputationFactionsIndexAsync_Gets_ReputationFactionsIndex()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<ReputationFactionsIndex> result = await warcraftClient.GetReputationFactionsIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetReputationFactionAsync_Gets_ReputationFaction()
+        public async Task GetReputationFactionAsync_Gets_ReputationFaction()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<ReputationFaction> result = await warcraftClient.GetReputationFactionAsync(21, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetReputationTiersIndexAsync_Gets_ReputationTiersIndex()
+        public async Task GetReputationTiersIndexAsync_Gets_ReputationTiersIndex()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<ReputationTiersIndex> result = await warcraftClient.GetReputationTiersIndexAsync("static-us");
@@ -29,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetReputationTiersAsync_Gets_ReputationTiers()
+        public async Task GetReputationTiersAsync_Gets_ReputationTiers()
         {
             IReputationsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<ReputationTiers> result = await warcraftClient.GetReputationTiersAsync(2, "static-us");

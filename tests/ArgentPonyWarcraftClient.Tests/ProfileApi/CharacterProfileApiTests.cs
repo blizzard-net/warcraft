@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class CharacterProfileApiTests
     {
         [Fact]
-        public async void GetCharacterProfileSummaryAsync_Gets_CharacterProfileSummary()
+        public async Task GetCharacterProfileSummaryAsync_Gets_CharacterProfileSummary()
         {
             ICharacterProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian?namespace=profile-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetCharacterStatusAsync_Gets_CharacterStatus()
+        public async Task GetCharacterStatusAsync_Gets_CharacterStatus()
         {
             ICharacterProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/status?namespace=profile-us&locale=en_US",

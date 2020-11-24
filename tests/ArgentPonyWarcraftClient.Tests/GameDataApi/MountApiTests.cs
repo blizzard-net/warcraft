@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class MountApiTests
     {
         [Fact]
-        public async void GetMountsIndexAsync_Gets_MountsIndex()
+        public async Task GetMountsIndexAsync_Gets_MountsIndex()
         {
             IMountApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mount/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMountAsync_Gets_Mount()
+        public async Task GetMountAsync_Gets_Mount()
         {
             IMountApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/mount/6?namespace=static-us&locale=en_US",

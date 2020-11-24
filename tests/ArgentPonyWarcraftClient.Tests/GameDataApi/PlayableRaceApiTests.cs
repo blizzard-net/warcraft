@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class PlayableRaceApiTests
     {
         [Fact]
-        public async void GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
+        public async Task GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
         {
             IPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPlayableRaceAsync_Gets_PlayableRace()
+        public async Task GetPlayableRaceAsync_Gets_PlayableRace()
         {
             IPlayableRaceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-us&locale=en_US",

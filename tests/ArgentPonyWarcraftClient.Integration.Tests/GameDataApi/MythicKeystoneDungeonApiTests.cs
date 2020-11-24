@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class MythicKeystoneDungeonApiTests
     {
         [ResilientFact]
-        public async void GetMythicKeystoneDungeonsIndexAsync_Gets_MythicKeystoneDungeonsIndex()
+        public async Task GetMythicKeystoneDungeonsIndexAsync_Gets_MythicKeystoneDungeonsIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneDungeonsIndex> result = await warcraftClient.GetMythicKeystoneDungeonsIndexAsync("dynamic-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
+        public async Task GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(353, "dynamic-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystoneIndexAsync_Gets_MythicKeystoneIndex()
+        public async Task GetMythicKeystoneIndexAsync_Gets_MythicKeystoneIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneIndex> result = await warcraftClient.GetMythicKeystoneIndexAsync("dynamic-us");
@@ -29,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystonePeriodsIndexAsync_Gets_MythicKeystonePeriodsIndex()
+        public async Task GetMythicKeystonePeriodsIndexAsync_Gets_MythicKeystonePeriodsIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystonePeriodsIndex> result = await warcraftClient.GetMythicKeystonePeriodsIndexAsync("dynamic-us");
@@ -37,7 +38,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystonePeriodAsync_Gets_MythicKeystonePeriod()
+        public async Task GetMythicKeystonePeriodAsync_Gets_MythicKeystonePeriod()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystonePeriod> result = await warcraftClient.GetMythicKeystonePeriodAsync(641, "dynamic-us");
@@ -45,7 +46,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystoneSeasonsIndexAsync_Gets_MythicKeystoneSeasonsIndex()
+        public async Task GetMythicKeystoneSeasonsIndexAsync_Gets_MythicKeystoneSeasonsIndex()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneSeasonsIndex> result = await warcraftClient.GetMythicKeystoneSeasonsIndexAsync("dynamic-us");
@@ -53,7 +54,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystoneSeasonAsync_Gets_MythicKeystoneSeason()
+        public async Task GetMythicKeystoneSeasonAsync_Gets_MythicKeystoneSeason()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneSeason> result = await warcraftClient.GetMythicKeystoneSeasonAsync(1, "dynamic-us");

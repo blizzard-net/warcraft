@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class PlayableSpecializationApiTests
     {
         [Fact]
-        public async void GetPlayableSpecializationsIndexAsync_Gets_PlayableSpecializationsIndex()
+        public async Task GetPlayableSpecializationsIndexAsync_Gets_PlayableSpecializationsIndex()
         {
             IPlayableSpecializationApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-specialization/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPlayableSpecializationAsync_Gets_PlayableSpecialization()
+        public async Task GetPlayableSpecializationAsync_Gets_PlayableSpecialization()
         {
             IPlayableSpecializationApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPlayableSpecializationMediaAsync_Gets_PlayableSpecializationMedia()
+        public async Task GetPlayableSpecializationMediaAsync_Gets_PlayableSpecializationMedia()
         {
             IPlayableSpecializationApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/playable-specialization/262?namespace=static-us&locale=en_US",

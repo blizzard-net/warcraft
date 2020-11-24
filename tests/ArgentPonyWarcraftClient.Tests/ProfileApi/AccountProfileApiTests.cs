@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class AccountProfileApiTests
     {
         [Fact]
-        public async void GetAccountProfileSummaryAsync_Gets_AccountProfileSummary()
+        public async Task GetAccountProfileSummaryAsync_Gets_AccountProfileSummary()
         {
             IAccountProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/user/wow?namespace=profile-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetProtectedCharacterProfileSummaryAsync_Gets_ProtectedCharacterProfileSummary()
+        public async Task GetProtectedCharacterProfileSummaryAsync_Gets_ProtectedCharacterProfileSummary()
         {
             IAccountProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/user/wow/protected-character/1262-107811065?namespace=profile-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetAccountCollectionsIndexAsync_Gets_AccountCollectionsIndex()
+        public async Task GetAccountCollectionsIndexAsync_Gets_AccountCollectionsIndex()
         {
             IAccountProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/user/wow/collections?namespace=profile-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetAccountMountsCollectionSummaryAsync_Gets_AccountMountsCollectionSummary()
+        public async Task GetAccountMountsCollectionSummaryAsync_Gets_AccountMountsCollectionSummary()
         {
             IAccountProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/user/wow/collections/mounts?namespace=profile-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetAccountPetsCollectionSummaryAsync_Gets_AccountPetsCollectionSummary()
+        public async Task GetAccountPetsCollectionSummaryAsync_Gets_AccountPetsCollectionSummary()
         {
             IAccountProfileApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/user/wow/collections/pets?namespace=profile-us&locale=en_US",

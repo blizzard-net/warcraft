@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class QuestApiTests
     {
         [ResilientFact]
-        public async void GetQuestsIndexAsync_Gets_QuestsIndex()
+        public async Task GetQuestsIndexAsync_Gets_QuestsIndex()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestsIndex> result = await warcraftClient.GetQuestsIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestAsync_Gets_Quest()
+        public async Task GetQuestAsync_Gets_Quest()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<Quest> result = await warcraftClient.GetQuestAsync(2, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestCategoriesIndexAsync_Gets_QuestCategoriesIndex()
+        public async Task GetQuestCategoriesIndexAsync_Gets_QuestCategoriesIndex()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestCategoriesIndex> result = await warcraftClient.GetQuestCategoriesIndexAsync("static-us");
@@ -29,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestCategoryAsync_Gets_QuestCategory()
+        public async Task GetQuestCategoryAsync_Gets_QuestCategory()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestCategory> result = await warcraftClient.GetQuestCategoryAsync(1, "static-us");
@@ -37,7 +38,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestAreasIndexAsync_Gets_QuestAreasIndex()
+        public async Task GetQuestAreasIndexAsync_Gets_QuestAreasIndex()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestAreasIndex> result = await warcraftClient.GetQuestAreasIndexAsync("static-us");
@@ -45,7 +46,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestAreaAsync_Gets_QuestArea()
+        public async Task GetQuestAreaAsync_Gets_QuestArea()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestArea> result = await warcraftClient.GetQuestAreaAsync(1, "static-us");
@@ -53,7 +54,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestTypesIndexAsync_Gets_QuestTypesIndex()
+        public async Task GetQuestTypesIndexAsync_Gets_QuestTypesIndex()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestTypesIndex> result = await warcraftClient.GetQuestTypesIndexAsync("static-us");
@@ -61,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetQuestTypeAsync_Gets_QuestType()
+        public async Task GetQuestTypeAsync_Gets_QuestType()
         {
             IQuestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<QuestType> result = await warcraftClient.GetQuestTypeAsync(1, "static-us");

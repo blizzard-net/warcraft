@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class TitleApiTests
     {
         [Fact]
-        public async void GetTitlesIndexAsync_Gets_TitlesIndex()
+        public async Task GetTitlesIndexAsync_Gets_TitlesIndex()
         {
             ITitleApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/title/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetTitleAsync_Gets_Title()
+        public async Task GetTitleAsync_Gets_Title()
         {
             ITitleApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/title/1?namespace=static-us&locale=en_US",

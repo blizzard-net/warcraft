@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class JournalApiTests
     {
         [Fact]
-        public async void GetJournalExpansionsIndexAsync_Gets_JournalExpansions()
+        public async Task GetJournalExpansionsIndexAsync_Gets_JournalExpansions()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-expansion/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetJournalExpansionAsync_Gets_JournalExpansion()
+        public async Task GetJournalExpansionAsync_Gets_JournalExpansion()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetJournalEncountersIndexAsync_Gets_JournalEncounters()
+        public async Task GetJournalEncountersIndexAsync_Gets_JournalEncounters()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/index?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetJournalEncounterAsync_Gets_Encounter()
+        public async Task GetJournalEncounterAsync_Gets_Encounter()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetJournalInstancesIndexAsync_Gets_JournalInstances()
+        public async Task GetJournalInstancesIndexAsync_Gets_JournalInstances()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-instance/index?namespace=static-us&locale=en_US",
@@ -61,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetJournalInstanceAsync_Gets_Instance()
+        public async Task GetJournalInstanceAsync_Gets_Instance()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-us&locale=en_US",
@@ -72,7 +73,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetJournalInstanceMediaAsync_Gets_InstanceMedia()
+        public async Task GetJournalInstanceMediaAsync_Gets_InstanceMedia()
         {
             IJournalApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-us&locale=en_US",

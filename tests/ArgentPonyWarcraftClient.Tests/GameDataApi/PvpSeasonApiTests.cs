@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class PvpSeasonApiTests
     {
         [Fact]
-        public async void GetPvpSeasonsIndexAsync_Gets_PvpSeasonsIndex()
+        public async Task GetPvpSeasonsIndexAsync_Gets_PvpSeasonsIndex()
         {
             IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/index?namespace=dynamic-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpSeasonAsync_Gets_PvpSeason()
+        public async Task GetPvpSeasonAsync_Gets_PvpSeason()
         {
             IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/27?namespace=dynamic-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpLeaderboardsIndexAsync_Gets_PvpLeaderboardsIndex()
+        public async Task GetPvpLeaderboardsIndexAsync_Gets_PvpLeaderboardsIndex()
         {
             IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/index?namespace=dynamic-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpLeaderboardAsync_Gets_PvpLeaderboard()
+        public async Task GetPvpLeaderboardAsync_Gets_PvpLeaderboard()
         {
             IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-leaderboard/3v3?namespace=dynamic-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpRewardsIndexAsync_Gets_PvpRewardsIndex()
+        public async Task GetPvpRewardsIndexAsync_Gets_PvpRewardsIndex()
         {
             IPvpSeasonApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-season/27/pvp-reward/index?namespace=dynamic-us&locale=en_US",

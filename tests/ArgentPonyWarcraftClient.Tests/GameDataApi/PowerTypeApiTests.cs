@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class PowerTypeApiTests
     {
         [Fact]
-        public async void GetPowerTypesIndexAsync_Gets_PowerTypesIndex()
+        public async Task GetPowerTypesIndexAsync_Gets_PowerTypesIndex()
         {
             IPowerTypeApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/power-type/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPowerTypeAsync_Gets_PowerType()
+        public async Task GetPowerTypeAsync_Gets_PowerType()
         {
             IPowerTypeApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-us&locale=en_US",

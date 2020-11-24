@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class AchievementApiTests
     {
         [Fact]
-        public async void GetAchievementCategoriesIndexAsync_Gets_AchievementCategoriesIndex()
+        public async Task GetAchievementCategoriesIndexAsync_Gets_AchievementCategoriesIndex()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/achievement-category/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetAchievementCategoryAsync_Gets_AchievementCategory()
+        public async Task GetAchievementCategoryAsync_Gets_AchievementCategory()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/achievement-category/81?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetAchievementsIndexAsync_Gets_AchievementsIndex()
+        public async Task GetAchievementsIndexAsync_Gets_AchievementsIndex()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/achievement/index?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetAchievementAsync_Gets_Achievement()
+        public async Task GetAchievementAsync_Gets_Achievement()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/achievement/6?namespace=static-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetAchievementMediaAsync_Gets_AchievementMedia()
+        public async Task GetAchievementMediaAsync_Gets_AchievementMedia()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-us&locale=en_US",

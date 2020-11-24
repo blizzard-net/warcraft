@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class CharacterEncountersApiTests
     {
         [Fact]
-        public async void GetCharacterEncountersSummaryAsync_Gets_CharacterEncountersSummary()
+        public async Task GetCharacterEncountersSummaryAsync_Gets_CharacterEncountersSummary()
         {
             ICharacterEncountersApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters?namespace=profile-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetCharacterDungeonsAsync_Gets_CharacterDungeons()
+        public async Task GetCharacterDungeonsAsync_Gets_CharacterDungeons()
         {
             ICharacterEncountersApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/dungeons?namespace=profile-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
         }
 
         [Fact]
-        public async void GetCharacterRaidsAsync_Gets_CharacterRaids()
+        public async Task GetCharacterRaidsAsync_Gets_CharacterRaids()
         {
             ICharacterEncountersApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/encounters/raids?namespace=profile-us&locale=en_US",
