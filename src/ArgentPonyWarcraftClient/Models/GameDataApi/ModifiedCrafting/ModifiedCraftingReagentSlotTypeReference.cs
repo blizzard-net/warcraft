@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient.Models.GameDataApi.ModifiedCrafting
+namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A Modified Crafting reagent slot type.

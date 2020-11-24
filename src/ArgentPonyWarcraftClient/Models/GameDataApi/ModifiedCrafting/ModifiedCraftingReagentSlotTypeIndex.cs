@@ -12,5 +12,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("_links")]
         public Links Links { get; set; }
+
+        /// <summary>
+        /// Gets references to the Modified Crafting reagent slot types.
+        /// </summary>
+        [JsonPropertyName("slot_types")]
+        public ModifiedCraftingReagentSlotTypeReference[] SlotTypes { get; set; }
     }
 }
