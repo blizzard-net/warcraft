@@ -73328,4 +73328,416 @@
   "render_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-main.jpg"
 }</value>
   </data>
+  <data name="ModifiedCraftingCategoryIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "categories": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify Haste",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/5?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify Mastery",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/6?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify Critical Strike",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/7?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify Versatity",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/8?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/11?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Loosened Belt",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/15?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify Suit",
+      "id": 15
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/18?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 18
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/25?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Miscellaneous",
+      "id": 25
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/29?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Set Item Level",
+      "id": 29
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/30?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 30
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/31?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 31
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/32?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 32
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/33?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 33
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/35?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Elethium Setting",
+      "id": 35
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/37?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Necrostatic Micro Capacitor",
+      "id": 37
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/38?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Reinforced Girdle",
+      "id": 38
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/39?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Craftman's Pouch",
+      "id": 39
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/40?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hydrodynamic Accelerators",
+      "id": 40
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/41?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Luxurios Feather",
+      "id": 41
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/42?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shadowy Rabbit's Foot",
+      "id": 42
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/44?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Alchemist's Pouch",
+      "id": 44
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/45?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Set Item Level",
+      "id": 45
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/46?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 46
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/47?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 47
+    }
+  ]
+}</value>
+  </data>
+  <data name="ModifiedCraftingCategoryResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 1,
+  "name": "Specify Haste"
+}</value>
+  </data>
+  <data name="ModifiedCraftingIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/modified-crafting/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "categories": {
+    "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/?namespace=static-9.0.2_36532-us"
+  },
+  "slot_types": {
+    "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/?namespace=static-9.0.2_36532-us"
+  }
+}</value>
+  </data>
+  <data name="ModifiedCraftingReagentSlotTypeIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "slot_types": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 16
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/17?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify a Secondary Stat",
+      "id": 17
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/25?namespace=static-9.0.2_36532-us"
+      },
+      "id": 25
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/31?namespace=static-9.0.2_36532-us"
+      },
+      "id": 31
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/38?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 38
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/39?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 39
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/40?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 40
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/41?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 41
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/42?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 42
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/43?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 43
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/44?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 44
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/45?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonus Effect",
+      "id": 45
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/46?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 46
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/47?namespace=static-9.0.2_36532-us"
+      },
+      "id": 47
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/48?namespace=static-9.0.2_36532-us"
+      },
+      "id": 48
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/49?namespace=static-9.0.2_36532-us"
+      },
+      "id": 49
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/50?namespace=static-9.0.2_36532-us"
+      },
+      "id": 50
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/67?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify a Secondary Stat",
+      "id": 67
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/72?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify a Secondary Stat",
+      "id": 72
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/73?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify a Secondary Stat",
+      "id": 73
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/74?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify a Secondary Stat",
+      "id": 74
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/75?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Specify a Secondary Stat",
+      "id": 75
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/77?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 77
+    }
+  ]
+}</value>
+  </data>
+  <data name="ModifiedCraftingReagentSlotTypeResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 16,
+  "description": "Increase Item Level",
+  "compatible_categories": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/45?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Set Item Level",
+      "id": 45
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/29?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Set Item Level",
+      "id": 29
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/modified-crafting/category/46?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increase Item Level",
+      "id": 46
+    }
+  ]
+}</value>
+  </data>
 </root>

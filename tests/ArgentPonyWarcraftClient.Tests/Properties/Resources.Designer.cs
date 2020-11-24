@@ -1864,6 +1864,121 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/category/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;categories&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Specify Haste&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/category/5?namespace=static-9.0.2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ModifiedCraftingCategoryIndexResponse {
+            get {
+                return ResourceManager.GetString("ModifiedCraftingCategoryIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 1,
+        ///  &quot;name&quot;: &quot;Specify Haste&quot;
+        ///}.
+        /// </summary>
+        internal static string ModifiedCraftingCategoryResponse {
+            get {
+                return ResourceManager.GetString("ModifiedCraftingCategoryResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;categories&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/category/?namespace=static-9.0.2_36532-us&quot;
+        ///  },
+        ///  &quot;slot_types&quot;: {
+        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/?namespace=static-9.0.2_36532-us&quot;
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string ModifiedCraftingIndexResponse {
+            get {
+                return ResourceManager.GetString("ModifiedCraftingIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;slot_types&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Increase Item Level&quot;,
+        ///      &quot;id&quot;: 16
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/reagent [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ModifiedCraftingReagentSlotTypeIndexResponse {
+            get {
+                return ResourceManager.GetString("ModifiedCraftingReagentSlotTypeIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 16,
+        ///  &quot;description&quot;: &quot;Increase Item Level&quot;,
+        ///  &quot;compatible_categories&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/modified-crafting/category/45?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Set Item Level&quot;,
+        ///      &quot;id&quot;: 45
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://u [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ModifiedCraftingReagentSlotTypeResponse {
+            get {
+                return ResourceManager.GetString("ModifiedCraftingReagentSlotTypeResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mount/6?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

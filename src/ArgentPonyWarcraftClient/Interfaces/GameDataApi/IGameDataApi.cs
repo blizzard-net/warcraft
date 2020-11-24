@@ -12,6 +12,7 @@
         IGuildCrestApi,
         IItemApi,
         IJournalApi,
+        IModifiedCraftingApi,
         IMountApi,
         IMythicKeystoneAffixApi,
         IMythicKeystoneDungeonApi,
