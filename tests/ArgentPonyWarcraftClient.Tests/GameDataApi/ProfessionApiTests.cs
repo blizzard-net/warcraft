@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class ProfessionApiTests
     {
         [Fact]
-        public async void GetProfessionsIndexAsync_Gets_ProfessionsIndex()
+        public async Task GetProfessionsIndexAsync_Gets_ProfessionsIndex()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/profession/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetProfessionAsync_Gets_Profession()
+        public async Task GetProfessionAsync_Gets_Profession()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/profession/164?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetProfessionMediaAsync_Gets_ProfessionMedia()
+        public async Task GetProfessionMediaAsync_Gets_ProfessionMedia()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetSkillTierAsync_Gets_SkillTier()
+        public async Task GetSkillTierAsync_Gets_SkillTier()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetRecipeAsync_Gets_Recipe()
+        public async Task GetRecipeAsync_Gets_Recipe()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-us&locale=en_US",
@@ -61,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetRecipeMediaAsync_Gets_RecipeMedia()
+        public async Task GetRecipeMediaAsync_Gets_RecipeMedia()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-us&locale=en_US",

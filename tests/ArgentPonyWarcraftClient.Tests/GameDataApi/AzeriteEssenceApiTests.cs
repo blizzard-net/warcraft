@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class AzeriteEssenceApiTests
     {
         [Fact]
-        public async void GetAzeriteEssencesIndexAsync_Gets_AzeriteEssencesIndex()
+        public async Task GetAzeriteEssencesIndexAsync_Gets_AzeriteEssencesIndex()
         {
             IAzeriteEssenceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/azerite-essence/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetAzeriteEssenceAsync_Gets_AzeriteEssence()
+        public async Task GetAzeriteEssenceAsync_Gets_AzeriteEssence()
         {
             IAzeriteEssenceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/azerite-essence/2?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetAzeriteEssenceMediaAsync_Gets_AzeriteEssenceMedia()
+        public async Task GetAzeriteEssenceMediaAsync_Gets_AzeriteEssenceMedia()
         {
             IAzeriteEssenceApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/azerite-essence/2?namespace=static-us&locale=en_US",

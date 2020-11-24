@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class MythicKeystoneAffixApiTests
     {
         [Fact]
-        public async void GetMythicKeystoneLeaderboardsIndexAsync_Gets_MythicKeystoneLeaderboardsIndex()
+        public async Task GetMythicKeystoneLeaderboardsIndexAsync_Gets_MythicKeystoneLeaderboardsIndex()
         {
             IMythicKeystoneAffixApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/keystone-affix/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneAffixAsync_Gets_MythicKeystoneAffix()
+        public async Task GetMythicKeystoneAffixAsync_Gets_MythicKeystoneAffix()
         {
             IMythicKeystoneAffixApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/keystone-affix/1?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetMythicKeystoneAffixMediaAsync_Gets_MythicKeystoneAffixMedia()
+        public async Task GetMythicKeystoneAffixMediaAsync_Gets_MythicKeystoneAffixMedia()
         {
             IMythicKeystoneAffixApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/keystone-affix/1?namespace=static-us&locale=en_US",

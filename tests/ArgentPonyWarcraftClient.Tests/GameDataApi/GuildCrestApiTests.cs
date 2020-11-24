@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class GuildCrestApiTests
     {
         [Fact]
-        public async void GetGuildCrestComponentsIndexAsync_Gets_GuildCrestComponentsIndex()
+        public async Task GetGuildCrestComponentsIndexAsync_Gets_GuildCrestComponentsIndex()
         {
             IGuildCrestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/guild-crest/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetGuildCrestBorderMediaAsync_Gets_GuildCrestBorderMedia()
+        public async Task GetGuildCrestBorderMediaAsync_Gets_GuildCrestBorderMedia()
         {
             IGuildCrestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/guild-crest/border/0?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetGuildCrestEmblemMediaAsync_Gets_GuildCrestEmblemMedia()
+        public async Task GetGuildCrestEmblemMediaAsync_Gets_GuildCrestEmblemMedia()
         {
             IGuildCrestApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/guild-crest/emblem/0?namespace=static-us&locale=en_US",

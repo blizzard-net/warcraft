@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class SpellApiTests
     {
         [Fact]
-        public async void GetSpellAsync_Gets_Spell()
+        public async Task GetSpellAsync_Gets_Spell()
         {
             ISpellApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetSpellMediaAsync_Gets_SpellMedia()
+        public async Task GetSpellMediaAsync_Gets_SpellMedia()
         {
             ISpellApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-us&locale=en_US",

@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi
 {
     public class CharacterCollectionsApiTests
     {
         [ResilientFact]
-        public async void GetCharacterCollectionsIndexAsync_Gets_CharacterCollections()
+        public async Task GetCharacterCollectionsIndexAsync_Gets_CharacterCollections()
         {
             ICharacterCollectionsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<CharacterCollectionsIndex> result = await warcraftClient.GetCharacterCollectionsIndexAsync("norgannon", "drinian", "profile-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi
         }
 
         [ResilientFact]
-        public async void GetCharacterMountsCollectionSummaryAsync_Gets_CharacterMountsSummary()
+        public async Task GetCharacterMountsCollectionSummaryAsync_Gets_CharacterMountsSummary()
         {
             ICharacterCollectionsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<CharacterMountsCollectionSummary> result = await warcraftClient.GetCharacterMountsCollectionSummaryAsync("norgannon", "drinian", "profile-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi
         }
 
         [ResilientFact]
-        public async void GetCharacterPetsCollectionSummaryAsync_Gets_CharacterPetsSummary()
+        public async Task GetCharacterPetsCollectionSummaryAsync_Gets_CharacterPetsSummary()
         {
             ICharacterCollectionsApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<CharacterPetsCollectionSummary> result = await warcraftClient.GetCharacterPetsCollectionSummaryAsync("norgannon", "drinian", "profile-us");

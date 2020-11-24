@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class MythicKeystoneAffixApiTests
     {
         [ResilientFact]
-        public async void GetMythicKeystoneLeaderboardsIndexAsync_Gets_MythicKeystoneLeaderboardsIndex()
+        public async Task GetMythicKeystoneLeaderboardsIndexAsync_Gets_MythicKeystoneLeaderboardsIndex()
         {
             IMythicKeystoneAffixApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneAffixesIndex> result = await warcraftClient.GetMythicKeystoneAffixesIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystoneAffixAsync_Gets_MythicKeystoneAffix()
+        public async Task GetMythicKeystoneAffixAsync_Gets_MythicKeystoneAffix()
         {
             IMythicKeystoneAffixApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneAffix> result = await warcraftClient.GetMythicKeystoneAffixAsync(1, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetMythicKeystoneAffixMediaAsync_Gets_MythicKeystoneAffixMedia()
+        public async Task GetMythicKeystoneAffixMediaAsync_Gets_MythicKeystoneAffixMedia()
         {
             IMythicKeystoneAffixApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<MythicKeystoneAffixMedia> result = await warcraftClient.GetMythicKeystoneAffixMediaAsync(1, "static-us");

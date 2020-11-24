@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class ConnectedRealmApiTests
     {
         [Fact]
-        public async void GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
+        public async Task GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
         {
             IConnectedRealmApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/index?namespace=dynamic-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetRealmAsync_Gets_Realm()
+        public async Task GetRealmAsync_Gets_Realm()
         {
             IConnectedRealmApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&locale=en_US",

@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class PvpTierApiTests
     {
         [ResilientFact]
-        public async void GetPvpTiersIndexAsync_Gets_PvpTiersIndex()
+        public async Task GetPvpTiersIndexAsync_Gets_PvpTiersIndex()
         {
             IPvpTierApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PvpTiersIndex> result = await warcraftClient.GetPvpTiersIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetPvpTierAsync_Gets_PvpTier()
+        public async Task GetPvpTierAsync_Gets_PvpTier()
         {
             IPvpTierApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PvpTier> result = await warcraftClient.GetPvpTierAsync(1, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetPvpTierMediaAsync_Gets_PvpTierMedia()
+        public async Task GetPvpTierMediaAsync_Gets_PvpTierMedia()
         {
             IPvpTierApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<PvpTierMedia> result = await warcraftClient.GetPvpTierMediaAsync(1, "static-us");

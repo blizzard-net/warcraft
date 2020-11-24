@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class RegionApiTests
     {
         [Fact]
-        public async void GetRegionsIndexAsync_Gets_RegionsIndex()
+        public async Task GetRegionsIndexAsync_Gets_RegionsIndex()
         {
             IRegionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/region/index?namespace=dynamic-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetRegionAsync_Gets_Region()
+        public async Task GetRegionAsync_Gets_Region()
         {
             IRegionApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us&locale=en_US",

@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class AchievementApiTests
     {
         [ResilientFact]
-        public async void GetAchievementCategoriesIndexAsync_Gets_AchievementCategoriesIndex()
+        public async Task GetAchievementCategoriesIndexAsync_Gets_AchievementCategoriesIndex()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<AchievementCategoriesIndex> result = await warcraftClient.GetAchievementCategoriesIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetAchievementCategoryAsync_Gets_AchievementCategory()
+        public async Task GetAchievementCategoryAsync_Gets_AchievementCategory()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<AchievementCategory> result = await warcraftClient.GetAchievementCategoryAsync(81, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetAchievementsIndexAsync_Gets_AchievementsIndex()
+        public async Task GetAchievementsIndexAsync_Gets_AchievementsIndex()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<AchievementsIndex> result = await warcraftClient.GetAchievementsIndexAsync("static-us");
@@ -29,7 +30,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetAchievementAsync_Gets_Achievement()
+        public async Task GetAchievementAsync_Gets_Achievement()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<Achievement> result = await warcraftClient.GetAchievementAsync(6, "static-us");
@@ -37,7 +38,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetAchievementMediaAsync_Gets_AchievementMedia()
+        public async Task GetAchievementMediaAsync_Gets_AchievementMedia()
         {
             IAchievementApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<AchievementMedia> result = await warcraftClient.GetAchievementMediaAsync(6, "static-us");

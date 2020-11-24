@@ -1,4 +1,5 @@
 ﻿using System.Net.Http;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests
     public class WarcraftClientTestsErrorConditions
     {
         [ResilientFact]
-        public async void InvalidIdProducesNotFoundError()
+        public async Task InvalidIdProducesNotFoundError()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildClient();
 
@@ -18,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests
         }
 
         [ResilientFact]
-        public async void InvalidTokenThrowsHttpRequestException()
+        public async Task InvalidTokenThrowsHttpRequestException()
         {
             IWarcraftClient warcraftClient = ClientFactory.BuildClient();
 

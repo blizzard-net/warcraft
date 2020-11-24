@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class PvpTierApiTests
     {
         [Fact]
-        public async void GetPvpTiersIndexAsync_Gets_PvpTiersIndex()
+        public async Task GetPvpTiersIndexAsync_Gets_PvpTiersIndex()
         {
             IPvpTierApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-tier/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpTierAsync_Gets_PvpTier()
+        public async Task GetPvpTierAsync_Gets_PvpTier()
         {
             IPvpTierApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/pvp-tier/1?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetPvpTierMediaAsync_Gets_PvpTierMedia()
+        public async Task GetPvpTierMediaAsync_Gets_PvpTierMedia()
         {
             IPvpTierApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/media/pvp-tier/1?namespace=static-us&locale=en_US",

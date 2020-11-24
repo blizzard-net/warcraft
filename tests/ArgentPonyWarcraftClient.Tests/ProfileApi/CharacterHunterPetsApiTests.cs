@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class CharacterHunterPetsApiTests
     {
         [Fact]
-        public async void GetCharacterHunterPetsSummaryAsync_Gets_CharacterHunterPetsSummary()
+        public async Task GetCharacterHunterPetsSummaryAsync_Gets_CharacterHunterPetsSummary()
         {
             ICharacterHunterPetsApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/anradin/hunter-pets?namespace=profile-us&locale=en_US",

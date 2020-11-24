@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.ProfileApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.ProfileApi
     public class CharacterTitlesApiTests
     {
         [Fact]
-        public async void GetCharacterTitlesSummaryAsync_Gets_CharacterTitlesSummary()
+        public async Task GetCharacterTitlesSummaryAsync_Gets_CharacterTitlesSummary()
         {
             ICharacterTitlesApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/titles?namespace=profile-us&locale=en_US",

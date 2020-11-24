@@ -1,11 +1,12 @@
-﻿using Xunit;
+﻿using System.Threading.Tasks;
+using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
     public class GuildCrestApiTests
     {
         [ResilientFact]
-        public async void GetGuildCrestComponentsIndexAsync_Gets_GuildCrestComponentsIndex()
+        public async Task GetGuildCrestComponentsIndexAsync_Gets_GuildCrestComponentsIndex()
         {
             IGuildCrestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<GuildCrestComponentsIndex> result = await warcraftClient.GetGuildCrestComponentsIndexAsync("static-us");
@@ -13,7 +14,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetGuildCrestBorderMediaAsync_Gets_GuildCrestBorderMedia()
+        public async Task GetGuildCrestBorderMediaAsync_Gets_GuildCrestBorderMedia()
         {
             IGuildCrestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<GuildCrestBorderMedia> result = await warcraftClient.GetGuildCrestBorderMediaAsync(0, "static-us");
@@ -21,7 +22,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public async void GetGuildCrestEmblemMediaAsync_Gets_GuildCrestEmblemMedia()
+        public async Task GetGuildCrestEmblemMediaAsync_Gets_GuildCrestEmblemMedia()
         {
             IGuildCrestApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<GuildCrestEmblemMedia> result = await warcraftClient.GetGuildCrestEmblemMediaAsync(0, "static-us");
