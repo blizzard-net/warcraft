@@ -90,6 +90,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 .AddTransientUsingServiceProvider<ICharacterPvpApi, IProfileApi>()
                 .AddTransientUsingServiceProvider<ICharacterQuestsApi, IProfileApi>()
                 .AddTransientUsingServiceProvider<ICharacterReputationsApi, IProfileApi>()
+                .AddTransientUsingServiceProvider<ICharacterSoulbindsApi, IProfileApi>()
                 .AddTransientUsingServiceProvider<ICharacterSpecializationsApi, IProfileApi>()
                 .AddTransientUsingServiceProvider<ICharacterStatisticsApi, IProfileApi>()
                 .AddTransientUsingServiceProvider<ICharacterTitlesApi, IProfileApi>()
