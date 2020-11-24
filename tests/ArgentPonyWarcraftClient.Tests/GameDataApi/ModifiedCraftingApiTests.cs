@@ -1,4 +1,5 @@
-﻿using ArgentPonyWarcraftClient.Tests.Properties;
+﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Properties;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -6,7 +7,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class ModifiedCraftingApiTests
     {
         [Fact]
-        public async void GetModifiedCraftingIndexAsync_Gets_ModifiedCraftingIndex()
+        public async Task GetModifiedCraftingIndexAsync_Gets_ModifiedCraftingIndex()
         {
             IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/index?namespace=static-us&locale=en_US",
@@ -17,7 +18,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetModifiedCraftingCategoryIndexAsync_Gets_ModifiedCraftingCategoryIndex()
+        public async Task GetModifiedCraftingCategoryIndexAsync_Gets_ModifiedCraftingCategoryIndex()
         {
             IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/category/index?namespace=static-us&locale=en_US",
@@ -28,7 +29,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetModifiedCraftingCategoryAsync_Gets_ModifiedCraftingCategory()
+        public async Task GetModifiedCraftingCategoryAsync_Gets_ModifiedCraftingCategory()
         {
             IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-us&locale=en_US",
@@ -39,7 +40,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetModifiedCraftingReagentSlotTypeIndexAsync_Gets_ModifiedCraftingReagentSlotTypeIndex()
+        public async Task GetModifiedCraftingReagentSlotTypeIndexAsync_Gets_ModifiedCraftingReagentSlotTypeIndex()
         {
             IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/index?namespace=static-us&locale=en_US",
@@ -50,7 +51,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void GetModifiedCraftingReagentSlotTypeAsync_Gets_ModifiedCraftingReagentSlotType()
+        public async Task GetModifiedCraftingReagentSlotTypeAsync_Gets_ModifiedCraftingReagentSlotType()
         {
             IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
                 requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-us&locale=en_US",
