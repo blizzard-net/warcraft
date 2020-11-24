@@ -1,12 +1,18 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace ArgentPonyWarcraftClient
 {
     public partial class WarcraftClient
     {
-        public Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace) => throw new NotImplementedException();
+        /// <inheritdoc />
+        public Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace) =>
+            GetCovenantsIndexAsync(@namespace, _region, _locale);
 
-        public Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace, Region region, Locale locale) => throw new NotImplementedException();
+        /// <inheritdoc />
+        public Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return GetAsync<CovenantsIndex>($"{host}/data/wow/covenant/index?namespace={@namespace}&locale={locale}");
+        }
     }
 }
