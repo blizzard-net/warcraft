@@ -3,7 +3,7 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// A reference to any covenant.
+    /// A reference to a covenant.
     /// </summary>
     public class CovenantReference
     {
