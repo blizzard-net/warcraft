@@ -67,5 +67,15 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return GetAsync<ConduitsIndex>($"{host}/data/wow/covenant/conduit/index?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace) => GetConduitAsync(conduitId, @namespace, _region, _locale);
+
+        /// <inheritdoc />
+        public Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return GetAsync<Conduit>($"{host}/data/wow/covenant/conduit/{conduitId}?namespace={@namespace}&locale={locale}");
+        }
     }
 }

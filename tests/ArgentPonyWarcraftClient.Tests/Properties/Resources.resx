@@ -76833,4 +76833,253 @@
   ]
 }</value>
   </data>
+  <data name="ConduitResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 10,
+  "name": "Fueled by Violence",
+  "item": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item/180932?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Fueled by Violence",
+    "id": 180932
+  },
+  "socket_type": {
+    "type": "ENDURANCE",
+    "name": "Endurance Conduit Slot"
+  },
+  "ranks": [
+    {
+      "id": 73,
+      "tier": 0,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 15.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 74,
+      "tier": 1,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 16.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 75,
+      "tier": 2,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 18.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 76,
+      "tier": 3,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 19.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 77,
+      "tier": 4,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 21.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 78,
+      "tier": 5,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 22.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 79,
+      "tier": 6,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 24.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 80,
+      "tier": 7,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 25.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 81,
+      "tier": 8,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 27.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 82,
+      "tier": 9,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 28.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 83,
+      "tier": 10,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 30.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 84,
+      "tier": 11,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 31.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 85,
+      "tier": 12,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 33.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 86,
+      "tier": 13,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 34.5% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "id": 87,
+      "tier": 14,
+      "spell_tooltip": {
+        "spell": {
+          "key": {
+            "href": "https://us.api.blizzard.com/data/wow/spell/347213?namespace=static-9.0.2_36532-us"
+          },
+          "name": "Fueled by Violence",
+          "id": 347213
+        },
+        "description": "You are healed for 36.0% of the damage dealt by Deep Wounds.",
+        "cast_time": "Passive"
+      }
+    }
+  ]
+}</value>
+  </data>
 </root>

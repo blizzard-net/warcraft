@@ -132,5 +132,27 @@ namespace ArgentPonyWarcraftClient
         /// The index of conduits.
         /// </returns>
         Task<RequestResult<ConduitsIndex>> GetConduitsIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        /// Gets a conduit by Id.
+        /// </summary>
+        /// <param name="conduitId">The Id of the conduit to retrieve.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The conduit.
+        /// </returns>
+        Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace);
+
+        /// <summary>
+        /// Gets a conduit by Id.
+        /// </summary>
+        /// <param name="conduitId">The Id of the conduit to retrieve.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language the result will be in.</param>
+        /// <returns>
+        /// The conduit.
+        /// </returns>
+        Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace, Region region, Locale locale);
     }
 }

@@ -1068,6 +1068,36 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 10,
+        ///  &quot;name&quot;: &quot;Fueled by Violence&quot;,
+        ///  &quot;item&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/180932?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Fueled by Violence&quot;,
+        ///    &quot;id&quot;: 180932
+        ///  },
+        ///  &quot;socket_type&quot;: {
+        ///    &quot;type&quot;: &quot;ENDURANCE&quot;,
+        ///    &quot;name&quot;: &quot;Endurance Conduit Slot&quot;
+        ///  },
+        ///  &quot;ranks&quot;: [
+        ///    {
+        ///      &quot;id&quot;: [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConduitResponse {
+            get {
+                return ResourceManager.GetString("ConduitResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
