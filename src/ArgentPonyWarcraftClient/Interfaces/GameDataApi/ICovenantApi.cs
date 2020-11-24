@@ -12,7 +12,7 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
-        /// The covenants index.
+        /// The <see cref="CovenantsIndex"/>.
         /// </returns>
         Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace);
 
@@ -23,8 +23,30 @@ namespace ArgentPonyWarcraftClient
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language the result will be in.</param>
         /// <returns>
-        /// The covenants index.
+        /// The <see cref="CovenantsIndex"/>.
         /// </returns>
         Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        /// Gets a covenant by ID.
+        /// </summary>
+        /// <param name="covenantId">The ID of the covenant.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The <see cref="Covenant"/>.
+        /// </returns>
+        Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace);
+
+        /// <summary>
+        /// Gets a covenant by ID.
+        /// </summary>
+        /// <param name="covenantId">The ID of the covenant.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language the result will be in.</param>
+        /// <returns>
+        /// The <see cref="Covenant"/>.
+        /// </returns>
+        Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace, Region region, Locale locale);
     }
 }

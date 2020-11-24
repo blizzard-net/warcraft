@@ -14,5 +14,12 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return GetAsync<CovenantsIndex>($"{host}/data/wow/covenant/index?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace) =>
+            GetCovenantAsync(covenantId, @namespace, _region, _locale);
+
+        /// <inheritdoc />
+        public Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace, Region region, Locale locale) => throw new System.NotImplementedException();
     }
 }
