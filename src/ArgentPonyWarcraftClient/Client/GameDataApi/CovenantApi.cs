@@ -36,5 +36,11 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return GetAsync<CovenantMedia>($"{host}/data/wow/media/covenant/{covenantId}?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace) => GetSoulbindsIndexAsync(@namespace, _region, _locale);
+
+        /// <inheritdoc />
+        public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace, Region region, Locale locale) => throw new System.NotImplementedException();
     }
 }

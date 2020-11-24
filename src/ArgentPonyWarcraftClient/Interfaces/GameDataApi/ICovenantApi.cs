@@ -70,5 +70,25 @@ namespace ArgentPonyWarcraftClient
         /// Media for a covenant.
         /// </returns>
         Task<RequestResult<CovenantMedia>> GetCovenantMediaAsync(int covenantId, string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        /// Gets an index of soulbinds.
+        /// </summary>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The index of soulbinds.
+        /// </returns>
+        Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace);
+
+        /// <summary>
+        /// Gets an index of soulbinds.
+        /// </summary>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language the result will be in.</param>
+        /// <returns>
+        /// The index of soulbinds.
+        /// </returns>
+        Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace, Region region, Locale locale);
     }
 }
