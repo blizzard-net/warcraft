@@ -3761,6 +3761,34 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Dreamweaver&quot;,
+        ///  &quot;covenant&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Night Fae&quot;,
+        ///    &quot;id&quot;: 3
+        ///  },
+        ///  &quot;creature&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature/164387?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SoulbindResponse {
+            get {
+                return ResourceManager.GetString("SoulbindResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },

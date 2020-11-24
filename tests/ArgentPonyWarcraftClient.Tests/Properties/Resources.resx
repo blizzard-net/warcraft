@@ -74822,6 +74822,42 @@
   ]
 }</value>
   </data>
+  <data name="SoulbindResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 2,
+  "name": "Dreamweaver",
+  "covenant": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Night Fae",
+    "id": 3
+  },
+  "creature": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/creature/164387?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Dreamweaver",
+    "id": 164387
+  },
+  "follower": {
+    "name": "Dreamweaver",
+    "id": 1264
+  },
+  "talent_tree": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Dreamweaver",
+    "id": 275
+  }
+}</value>
+  </data>
   <data name="SoulbindsIndex" xml:space="preserve">
     <value>{
   "_links": {

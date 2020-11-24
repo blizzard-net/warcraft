@@ -90,5 +90,27 @@ namespace ArgentPonyWarcraftClient
         /// The index of soulbinds.
         /// </returns>
         Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace, Region region, Locale locale);
+
+        /// <summary>
+        /// Gets a soulbind by Id.
+        /// </summary>
+        /// <param name="soulbindId">The Id of the soulbind to retrieve.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The soulbind.
+        /// </returns>
+        Task<RequestResult<Soulbind>> GetSoulbindAsync(int soulbindId, string @namespace);
+
+        /// <summary>
+        /// Gets a soulbind by Id.
+        /// </summary>
+        /// <param name="soulbindId">The Id of the soulbind to retrieve.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+        /// <param name="locale">Specifies the language the result will be in.</param>
+        /// <returns>
+        /// The soulbind.
+        /// </returns>
+        Task<RequestResult<Soulbind>> GetSoulbindAsync(int soulbindId, string @namespace, Region region, Locale locale);
     }
 }
