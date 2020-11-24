@@ -41,6 +41,10 @@ namespace ArgentPonyWarcraftClient
         public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace) => GetSoulbindsIndexAsync(@namespace, _region, _locale);
 
         /// <inheritdoc />
-        public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace, Region region, Locale locale) => throw new System.NotImplementedException();
+        public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return GetAsync<SoulbindsIndex>($"{host}/data/wow/covenant/soulbind/index?namespace=static-us&locale={locale}");
+        }
     }
 }

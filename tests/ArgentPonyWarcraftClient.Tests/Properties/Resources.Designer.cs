@@ -3761,6 +3761,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;soulbinds&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/1?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Niya&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SoulbindsIndex {
+            get {
+                return ResourceManager.GetString("SoulbindsIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/spell/196607?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

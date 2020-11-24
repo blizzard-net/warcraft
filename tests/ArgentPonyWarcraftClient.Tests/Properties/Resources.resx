@@ -74822,4 +74822,99 @@
   ]
 }</value>
   </data>
+  <data name="SoulbindsIndex" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "soulbinds": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/1?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Niya",
+      "id": 1
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dreamweaver",
+      "id": 2
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/3?namespace=static-9.0.2_36532-us"
+      },
+      "name": "General Draven",
+      "id": 3
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/4?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Plague Deviser Marileth",
+      "id": 4
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/5?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Emeni",
+      "id": 5
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/6?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Korayn",
+      "id": 6
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/7?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pelagos",
+      "id": 7
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/8?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nadjia the Mistblade",
+      "id": 8
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/9?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Theotar the Mad Duke",
+      "id": 9
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/10?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonesmith Heirmir",
+      "id": 10
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/13?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kleia",
+      "id": 13
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/18?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Forgelite Prime Mikanikos",
+      "id": 18
+    }
+  ]
+}</value>
+  </data>
 </root>
