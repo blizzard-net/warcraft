@@ -3806,9 +3806,9 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///      },
         ///      &quot;name&quot;: &quot; [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string SoulbindsIndex {
+        internal static string SoulbindsIndexResponse {
             get {
-                return ResourceManager.GetString("SoulbindsIndex", resourceCulture);
+                return ResourceManager.GetString("SoulbindsIndexResponse", resourceCulture);
             }
         }
         

@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi.CovenantApiTests
         {
             ICovenantApi client = ClientFactory.BuildMockClient(
                 "https://us.api.blizzard.com/data/wow/covenant/soulbind/index?namespace=static-us&locale=en_US",
-                Resources.SoulbindsIndex
+                Resources.SoulbindsIndexResponse
             );
 
             RequestResult<SoulbindsIndex> result = await client.GetSoulbindsIndexAsync("static-us");

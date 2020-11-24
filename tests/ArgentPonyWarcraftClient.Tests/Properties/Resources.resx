@@ -74858,7 +74858,7 @@
   }
 }</value>
   </data>
-  <data name="SoulbindsIndex" xml:space="preserve">
+  <data name="SoulbindsIndexResponse" xml:space="preserve">
     <value>{
   "_links": {
     "self": {
