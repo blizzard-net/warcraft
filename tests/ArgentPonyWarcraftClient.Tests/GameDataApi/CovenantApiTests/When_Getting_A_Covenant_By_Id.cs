@@ -19,6 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi.CovenantApiTests
             Assert.NotNull(result);
             Assert.True(result.Success);
             Assert.Null(result.Error);
+            Assert.NotNull(result.Value);
             // TODO: Validate result content
         }
     }
