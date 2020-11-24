@@ -1127,6 +1127,29 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/2?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Venthyr&quot;,
+        ///  &quot;description&quot;: &quot;The Venthyr are aristocratic overseers of souls burdened with excessive pride and wickedness. They guide troubled souls upon the rigorous path to atonement, harvesting anima to keep their realm strong.&quot;,
+        ///  &quot;signature_ability&quot;: {
+        ///    &quot;id&quot;: 67,
+        ///    &quot;spell_tooltip&quot;: {
+        ///      &quot;spell&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CovenantResponse {
+            get {
+                return ResourceManager.GetString("CovenantResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },

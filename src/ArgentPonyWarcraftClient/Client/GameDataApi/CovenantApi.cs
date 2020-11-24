@@ -20,6 +20,10 @@ namespace ArgentPonyWarcraftClient
             GetCovenantAsync(covenantId, @namespace, _region, _locale);
 
         /// <inheritdoc />
-        public Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace, Region region, Locale locale) => throw new System.NotImplementedException();
+        public Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return GetAsync<Covenant>($"{host}/data/wow/covenant/{covenantId}?namespace={@namespace}&locale={locale}");
+        }
     }
 }
