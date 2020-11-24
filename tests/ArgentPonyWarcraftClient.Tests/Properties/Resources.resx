@@ -74806,4 +74806,20 @@
   }
 }</value>
   </data>
+  <data name="CovenantMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/covenant/2?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_misc_sigil_revendreth01.jpg",
+      "file_data_id": 3641397
+    }
+  ]
+}</value>
+  </data>
 </root>

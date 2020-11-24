@@ -25,5 +25,16 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return GetAsync<Covenant>($"{host}/data/wow/covenant/{covenantId}?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public Task<RequestResult<CovenantMedia>> GetCovenantMediaAsync(int covenantId, string @namespace) =>
+            GetCovenantMediaAsync(covenantId, @namespace, _region, _locale);
+
+        /// <inheritdoc />
+        public Task<RequestResult<CovenantMedia>> GetCovenantMediaAsync(int covenantId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return GetAsync<CovenantMedia>($"{host}/data/wow/media/covenant/{covenantId}?namespace={@namespace}&locale={locale}");
+        }
     }
 }

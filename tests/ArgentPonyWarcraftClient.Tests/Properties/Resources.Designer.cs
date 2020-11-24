@@ -1127,6 +1127,28 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/covenant/2?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_misc_sigil_revendreth01.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 3641397
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string CovenantMediaResponse {
+            get {
+                return ResourceManager.GetString("CovenantMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/2?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
