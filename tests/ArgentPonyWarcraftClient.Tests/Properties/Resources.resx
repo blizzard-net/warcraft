@@ -74953,4 +74953,1884 @@
   ]
 }</value>
   </data>
+  <data name="ConduitsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "conduits": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fueled by Violence",
+      "id": 10
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/11?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ashen Juggernaut",
+      "id": 11
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/12?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Crash the Ramparts",
+      "id": 12
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/13?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cacophonous Roar",
+      "id": 13
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/14?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Merciless Bonegrinder",
+      "id": 14
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/15?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Harm Denial",
+      "id": 15
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/16?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Inner Fury",
+      "id": 16
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/17?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unrelenting Cold",
+      "id": 17
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/18?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shivering Core",
+      "id": 18
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/19?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Calculated Strikes",
+      "id": 19
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/20?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Icy Propulsion",
+      "id": 20
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/21?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ice Bite",
+      "id": 21
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/22?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Coordinated Offensive",
+      "id": 22
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/23?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Winter's Protection",
+      "id": 23
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/24?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Xuen's Bond",
+      "id": 24
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/26?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flow of Time",
+      "id": 26
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/27?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Indelible Victory",
+      "id": 27
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/28?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Jade Bond",
+      "id": 28
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/29?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Grounding Surge",
+      "id": 29
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/30?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Infernal Cascade",
+      "id": 30
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/31?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resplendent Mist",
+      "id": 31
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/32?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Master Flame",
+      "id": 32
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/33?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fortifying Ingredients",
+      "id": 33
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/34?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Arcane Prodigy",
+      "id": 34
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/35?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lingering Numbness",
+      "id": 35
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/36?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nether Precision",
+      "id": 36
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/37?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dizzying Tumble",
+      "id": 37
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/38?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Discipline of the Grove",
+      "id": 38
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/39?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Gift of the Lich",
+      "id": 39
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/40?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ire of the Ascended",
+      "id": 40
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/41?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Swift Transference",
+      "id": 41
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/42?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tumbling Technique",
+      "id": 42
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/43?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Siphoned Malice",
+      "id": 43
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/44?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Rising Sun Revival",
+      "id": 44
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/45?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cryo-Freeze",
+      "id": 45
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/46?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Scalding Brew",
+      "id": 46
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/47?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Celestial Effervescence",
+      "id": 47
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/48?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Diverted Energy",
+      "id": 48
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/49?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unnerving Focus",
+      "id": 49
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/50?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Depths of Insanity",
+      "id": 50
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/51?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Magi's Brand",
+      "id": 51
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/52?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hack and Slash",
+      "id": 52
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/53?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flame Accretion",
+      "id": 53
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/54?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nourishing Chi",
+      "id": 54
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/55?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Artifice of the Archmage",
+      "id": 55
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/58?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Incantation of Swiftness",
+      "id": 58
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/59?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Strike with Clarity",
+      "id": 59
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/60?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bone Marrow Hops",
+      "id": 60
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/61?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tempest Barrier",
+      "id": 61
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/62?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Imbued Reflections",
+      "id": 62
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/63?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Way of the Fae",
+      "id": 63
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/64?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Vicious Contempt",
+      "id": 64
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/65?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Eternal Hunger",
+      "id": 65
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/66?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Translucent Image",
+      "id": 66
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/67?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Move with Grace",
+      "id": 67
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/68?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Chilled Resilience",
+      "id": 68
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/69?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Clear Mind",
+      "id": 69
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/70?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Spirit Drain",
+      "id": 70
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/71?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Charitable Soul",
+      "id": 71
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/72?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Light's Inspiration",
+      "id": 72
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/73?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Power Unto Others",
+      "id": 73
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/74?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Reinforced Shell",
+      "id": 74
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/75?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shining Radiance",
+      "id": 75
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/76?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pain Transformation",
+      "id": 76
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/77?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Exaltation",
+      "id": 77
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/78?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lasting Spirit",
+      "id": 78
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/79?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Accelerated Cold",
+      "id": 79
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/80?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Withering Plague",
+      "id": 80
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/81?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Swift Penitence",
+      "id": 81
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/82?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Focused Mending",
+      "id": 82
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/83?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Eradicating Blow",
+      "id": 83
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/84?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resonant Words",
+      "id": 84
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/85?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mental Recovery",
+      "id": 85
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/86?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Blood Bond",
+      "id": 86
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/87?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Courageous Ascension",
+      "id": 87
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/88?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hardened Bones",
+      "id": 88
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/89?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Embrace Death",
+      "id": 89
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/90?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Festering Transfusion",
+      "id": 90
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/91?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Everfrost",
+      "id": 91
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/92?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Astral Protection",
+      "id": 92
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/93?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Refreshing Waters",
+      "id": 93
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/94?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Vital Accretion",
+      "id": 94
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/95?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Thunderous Paws",
+      "id": 95
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/96?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Totemic Surge",
+      "id": 96
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/97?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Crippling Hex",
+      "id": 97
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/98?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Spiritual Resonance",
+      "id": 98
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/99?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fleeting Wind",
+      "id": 99
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/100?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pyroclastic Shock",
+      "id": 100
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/101?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fae Fermata",
+      "id": 101
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/102?namespace=static-9.0.2_36532-us"
+      },
+      "name": "High Voltage",
+      "id": 102
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/103?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shake the Foundations",
+      "id": 103
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/104?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Call of Flame",
+      "id": 104
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/105?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shattered Perceptions",
+      "id": 105
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/106?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unending Grip",
+      "id": 106
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/107?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Haunting Apparitions",
+      "id": 107
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/108?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Insatiable Appetite",
+      "id": 108
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/109?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unruly Winds",
+      "id": 109
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/110?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Focused Lightning",
+      "id": 110
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/111?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Magma Fist",
+      "id": 111
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/112?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Chilled to the Core",
+      "id": 112
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/113?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mind Devourer",
+      "id": 113
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/114?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Rabid Shadows",
+      "id": 114
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/115?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dissonant Echoes",
+      "id": 115
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/116?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Holy Oration",
+      "id": 116
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/117?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Embrace of Earth",
+      "id": 117
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/118?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Swirling Currents",
+      "id": 118
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/119?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Heavy Rainfall",
+      "id": 119
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/120?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nature's Reach",
+      "id": 120
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/121?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Meat Shield",
+      "id": 121
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/122?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unleashed Frenzy",
+      "id": 122
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/123?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Debilitating Malady",
+      "id": 123
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/124?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Convocation of the Dead",
+      "id": 124
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/125?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lingering Plague",
+      "id": 125
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/126?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Impenetrable Gloom",
+      "id": 126
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/127?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Brutal Grasp",
+      "id": 127
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/128?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Proliferation",
+      "id": 128
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/129?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Divine Call",
+      "id": 129
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/130?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fel Defender",
+      "id": 130
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/131?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Viscous Ink",
+      "id": 131
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/132?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shattered Restoration",
+      "id": 132
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/133?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shielding Words",
+      "id": 133
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/134?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Felfire Haste",
+      "id": 134
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/135?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ravenous Consumption",
+      "id": 135
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/137?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Enfeebled Mark",
+      "id": 137
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/138?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Demonic Parole",
+      "id": 138
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/139?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Empowered Release",
+      "id": 139
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/140?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Spirit Attunement",
+      "id": 140
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/141?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Golden Path",
+      "id": 141
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/142?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pure Concentration",
+      "id": 142
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/143?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Necrotic Barrage",
+      "id": 143
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/144?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fel Celerity",
+      "id": 144
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/145?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lost in Darkness",
+      "id": 145
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/146?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Elysian Dirge",
+      "id": 146
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/147?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tumbling Waves",
+      "id": 147
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/148?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Essential Extraction",
+      "id": 148
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/149?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lavish Harvest",
+      "id": 149
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/150?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Relentless Onslaught",
+      "id": 150
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/151?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dancing with Fate",
+      "id": 151
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/152?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Serrated Glaive",
+      "id": 152
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/153?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Growing Inferno",
+      "id": 153
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/154?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Piercing Verdict",
+      "id": 154
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/157?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Markman's Advantage",
+      "id": 157
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/158?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Veteran's Repute",
+      "id": 158
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/159?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Light's Barding",
+      "id": 159
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/160?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resolute Barrier",
+      "id": 160
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/161?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wrench Evil",
+      "id": 161
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/162?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Accrued Vitality",
+      "id": 162
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/163?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Echoing Blessings",
+      "id": 163
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/164?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Expurgation",
+      "id": 164
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/165?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Harrowing Punishment",
+      "id": 165
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/166?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Harmony of the Tortollan",
+      "id": 166
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/167?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Truth's Wake",
+      "id": 167
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/168?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shade of Terror",
+      "id": 168
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/169?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mortal Combo",
+      "id": 169
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/170?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Rejuvenating Wind",
+      "id": 170
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/171?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Demonic Momentum",
+      "id": 171
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/172?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soul Furnace",
+      "id": 172
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/173?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resilience of the Hunter",
+      "id": 173
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/174?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Corrupting Leer",
+      "id": 174
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/175?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Reversal of Fortune",
+      "id": 175
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/176?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Templar's Vindication",
+      "id": 176
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/177?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Enkindled Spirit",
+      "id": 177
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/178?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cheetah's Vigor",
+      "id": 178
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/179?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Demon Muzzle",
+      "id": 179
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/180?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Roaring Fire",
+      "id": 180
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/181?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tactical Retreat",
+      "id": 181
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/182?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Virtuous Command",
+      "id": 182
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/183?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ferocious Appetite",
+      "id": 183
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/184?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resplendent Light",
+      "id": 184
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/185?namespace=static-9.0.2_36532-us"
+      },
+      "name": "One With the Beast",
+      "id": 185
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/186?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Show of Force",
+      "id": 186
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/187?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Repeat Decree",
+      "id": 187
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/188?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sharpshooter's Focus",
+      "id": 188
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/189?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Brutal Projectiles",
+      "id": 189
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/190?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Destructive Reverberations",
+      "id": 190
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/191?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Disturb the Peace",
+      "id": 191
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/192?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deadly Chain",
+      "id": 192
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/193?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Focused Light",
+      "id": 193
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/194?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Untempered Dedication",
+      "id": 194
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/195?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Vengeful Shock",
+      "id": 195
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/196?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Punish the Guilty",
+      "id": 196
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/197?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resolute Defender",
+      "id": 197
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/198?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Increased Scrutiny",
+      "id": 198
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/199?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Powerful Precision",
+      "id": 199
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/200?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Brooding Pool",
+      "id": 200
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/201?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Rolling Agony",
+      "id": 201
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/202?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Focused Malignancy",
+      "id": 202
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/203?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cold Embrace",
+      "id": 203
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/204?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Borne of Blood",
+      "id": 204
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/205?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Carnivorous Stalkers",
+      "id": 205
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/206?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tyrant's Soul",
+      "id": 206
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/207?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fel Commando",
+      "id": 207
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/208?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Duplicitous Havoc",
+      "id": 208
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/209?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Royal Decree",
+      "id": 209
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/210?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Long Summer",
+      "id": 210
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/211?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ashen Remains",
+      "id": 211
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/212?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Combusting Engine",
+      "id": 212
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/213?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Righteous Might",
+      "id": 213
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/214?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Infernal Brand",
+      "id": 214
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/215?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hallowed Discernment",
+      "id": 215
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/216?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ringing Clarity",
+      "id": 216
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/217?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soul Tithe",
+      "id": 217
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/218?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fatal Decimation",
+      "id": 218
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/219?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Catastrophic Origin",
+      "id": 219
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/220?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soul Eater",
+      "id": 220
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/221?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kilrogg's Cunning",
+      "id": 221
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/222?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Diabolic Bloodstone",
+      "id": 222
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/223?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Echoing Call",
+      "id": 223
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/224?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Strength of the Pack",
+      "id": 224
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/225?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Reverberation",
+      "id": 225
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/226?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Stinging Strike",
+      "id": 226
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/227?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sudden Fractures",
+      "id": 227
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/228?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Septic Shock",
+      "id": 228
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/229?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lashing Scars",
+      "id": 229
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/230?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nimble Fingers",
+      "id": 230
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/231?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Recuperator",
+      "id": 231
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/232?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cloaked in Shadows",
+      "id": 232
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/233?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Quick Decisions",
+      "id": 233
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/234?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fade to Nothing",
+      "id": 234
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/235?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Rushed Setup",
+      "id": 235
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/236?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Prepared for All",
+      "id": 236
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/237?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Poisoned Katar",
+      "id": 237
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/238?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Well-Placed Steel",
+      "id": 238
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/239?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Maim, Mangle",
+      "id": 239
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/240?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lethal Poisons",
+      "id": 240
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/241?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Triple Threat",
+      "id": 241
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/242?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ambidexterity",
+      "id": 242
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/243?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sleight of Hand",
+      "id": 243
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/244?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Count the Odds",
+      "id": 244
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/245?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deeper Daggers",
+      "id": 245
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/246?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Planned Execution",
+      "id": 246
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/247?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Stiletto Staccato",
+      "id": 247
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/248?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Perforated Veins",
+      "id": 248
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/249?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Controlled Destruction",
+      "id": 249
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/250?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Withering Ground",
+      "id": 250
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/251?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deadly Tandem",
+      "id": 251
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/252?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flame Infusion",
+      "id": 252
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/253?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bloodletting",
+      "id": 253
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/254?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tough as Bark",
+      "id": 254
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/255?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ursine Vigor",
+      "id": 255
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/256?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Innate Resolve",
+      "id": 256
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/257?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tireless Pursuit",
+      "id": 257
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/258?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Born Anew",
+      "id": 258
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/259?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Front of the Pack",
+      "id": 259
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/260?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Born of the Wilds",
+      "id": 260
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/261?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Stellar Inspiration",
+      "id": 261
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/262?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Precise Alignment",
+      "id": 262
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/263?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fury of the Skies",
+      "id": 263
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/264?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Umbral Intensity",
+      "id": 264
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/265?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Taste for Blood",
+      "id": 265
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/266?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Incessant Hunter",
+      "id": 266
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/267?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sudden Ambush",
+      "id": 267
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/268?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Carnivorous Instinct",
+      "id": 268
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/269?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unchecked Aggression",
+      "id": 269
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/270?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Savage Combatant",
+      "id": 270
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/271?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Well-Honed Instincts",
+      "id": 271
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/272?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Layered Mane",
+      "id": 272
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/273?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unstoppable Growth",
+      "id": 273
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/274?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flash of Clarity",
+      "id": 274
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/275?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Floral Recycling",
+      "id": 275
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/276?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ready for Anything",
+      "id": 276
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/277?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deep Allegiance",
+      "id": 277
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/278?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Evolved Swarm",
+      "id": 278
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/279?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Conflux of Elements",
+      "id": 279
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/280?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endless Thirst",
+      "id": 280
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/281?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unnatural Malice",
+      "id": 281
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/282?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ambuscade",
+      "id": 282
+    }
+  ]
+}</value>
+  </data>
 </root>

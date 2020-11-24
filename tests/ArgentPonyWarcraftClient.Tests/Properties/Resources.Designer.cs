@@ -1068,6 +1068,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;conduits&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Fueled by Violence&quot;,
+        ///      &quot;id&quot;: 10
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/11?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConduitsIndexResponse {
+            get {
+                return ResourceManager.GetString("ConduitsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
         ///    }
         ///  },
