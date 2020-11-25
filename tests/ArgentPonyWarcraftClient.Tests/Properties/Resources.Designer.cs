@@ -956,6 +956,32 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/ravencrest/drizzy/soulbinds?namespace=profile-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;character&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/ravencrest/drizzy?namespace=profile-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Drizzy&quot;,
+        ///    &quot;id&quot;: 215331728,
+        ///    &quot;realm&quot;: {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/realm/1072?namespace=dynamic-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Ravencrest&quot;,
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CharacterSoulbindsResponse {
+            get {
+                return ResourceManager.GetString("CharacterSoulbindsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/profile/wow/character/norgannon/drinian/specializations?namespace=profile-us&quot;
         ///    }
         ///  },

@@ -73740,4 +73740,81 @@
   ]
 }</value>
   </data>
+  <data name="CharacterSoulbindsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/ravencrest/drizzy/soulbinds?namespace=profile-us"
+    }
+  },
+  "character": {
+    "key": {
+      "href": "https://us.api.blizzard.com/profile/wow/character/ravencrest/drizzy?namespace=profile-us"
+    },
+    "name": "Drizzy",
+    "id": 215331728,
+    "realm": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/realm/1072?namespace=dynamic-us"
+      },
+      "name": "Ravencrest",
+      "id": 1072,
+      "slug": "ravencrest"
+    }
+  },
+  "chosen_covenant": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/covenant/1?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Kyrian",
+    "id": 1
+  },
+  "renown_level": 2,
+  "soulbinds": [
+    {
+      "soulbind": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/covenant/soulbind/7?namespace=static-9.0.2_36532-us"
+        },
+        "name": "Pelagos",
+        "id": 7
+      },
+      "traits": [
+        {
+          "trait": {
+            "key": {
+              "href": "https://us.api.blizzard.com/data/wow/tech-talent/1316?namespace=static-9.0.2_36532-us"
+            },
+            "name": "Combat Meditation",
+            "id": 1316
+          },
+          "tier": 0,
+          "display_order": 1
+        },
+        {
+          "conduit_socket": {
+            "type": {
+              "type": "POTENCY",
+              "name": "Potency Conduit Slot"
+            },
+            "socket": {
+              "conduit": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/covenant/conduit/59?namespace=static-9.0.2_36532-us"
+                },
+                "name": "Strike with Clarity",
+                "id": 59
+              },
+              "rank": 1
+            }
+          },
+          "tier": 1,
+          "display_order": 0
+        }
+      ],
+      "is_active": true
+    }
+  ]
+}</value>
+  </data>
 </root>

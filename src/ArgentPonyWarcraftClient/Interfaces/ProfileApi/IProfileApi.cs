@@ -18,6 +18,7 @@
         ICharacterPvpApi,
         ICharacterQuestsApi,
         ICharacterReputationsApi,
+        ICharacterSoulbindsApi,
         ICharacterSpecializationsApi,
         ICharacterStatisticsApi,
         ICharacterTitlesApi,
