@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the tier of the conduit rank.
         /// </summary>
         [JsonPropertyName("tier")]
-        public int Tier { get; set; }
+        public long Tier { get; set; }
 
         /// <summary>
         /// Gets the spell tooltip of the conduit rank.
