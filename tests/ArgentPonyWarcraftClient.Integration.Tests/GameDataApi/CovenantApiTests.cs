@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
@@ -60,13 +56,21 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
-        public Task When_Getting_Covenants_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public async Task When_Getting_Covenants_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
             ICovenantApi client = ClientFactory.BuildClient();
 
-            Assert.True(false, "TODO");
+            RequestResult<CovenantsIndex> result = await client.GetCovenantsIndexAsync("static-us");
 
-            return Task.CompletedTask;
+            Assert.NotNull(result);
+            Assert.True(result.Success);
+            Assert.Null(result.Error);
+            Assert.NotNull(result.Value);
+
+            await AssertResultMatchesBlizzardResponseAsync(
+                result,
+                "https://us.api.blizzard.com/data/wow/covenant/index?namespace=static-us&locale=en_US"
+            );
         }
 
         [ResilientFact]
@@ -77,6 +81,15 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
             Assert.True(false, "TODO");
 
             return Task.CompletedTask;
+        }
+
+        private async Task AssertResultMatchesBlizzardResponseAsync<T>(RequestResult<T> actualValue, string blizzardRequestUri)
+        {
+            RawBlizzardClient client = ClientFactory.BuildRawBlizzardClient();
+
+            string response = await client.GetRawBlizzardResponseAsync(blizzardRequestUri);
+
+            actualValue.ShouldMatchJsonContent(response);
         }
     }
 }
