@@ -110,6 +110,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 .AddTransientUsingServiceProvider<IAuctionHouseApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IAzeriteEssenceApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IConnectedRealmApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<ICovenantApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<ICreatureApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IGuildCrestApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IItemApi, IGameDataApi>()
