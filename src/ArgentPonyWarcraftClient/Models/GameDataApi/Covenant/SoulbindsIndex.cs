@@ -10,7 +10,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets the links for the index of soulbinds.
         /// </summary>
-        [JsonPropertyName("links")]
+        [JsonPropertyName("_links")]
         public Links Links { get; set; }
 
         /// <summary>
