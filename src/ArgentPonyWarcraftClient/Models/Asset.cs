@@ -19,5 +19,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("value")]
         public Uri Value { get; set; }
+
+        /// <summary>
+        /// Gets the file data id for the asset.
+        /// </summary>
+        [JsonPropertyName("file_data_id")]
+        public long FileDataId { get; set; }
     }
 }
