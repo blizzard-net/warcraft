@@ -232,15 +232,17 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/achievement_level_10.jpg&quot;
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/achievement_level_10.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 236562
         ///    }
-        ///  ]
+        ///  ],
+        ///  &quot;id&quot;: 6
         ///}.
         /// </summary>
         internal static string AchievementMediaResponse {

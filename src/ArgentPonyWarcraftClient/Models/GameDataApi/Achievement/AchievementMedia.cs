@@ -18,5 +18,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("assets")]
         public Asset[] Assets { get; set; }
+
+        /// <summary>
+        /// Gets the Id of the achievement that the media belongs to.
+        /// </summary>
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
     }
 }
