@@ -42,5 +42,23 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("class_abilities")]
         public CovenantClassAbility[] ClassAbilities { get; set; }
+
+        /// <summary>
+        /// Gets the soulbind references for this covenant.
+        /// </summary>
+        [JsonPropertyName("soulbinds")]
+        public SoulbindReference[] Soulbinds { get; set; }
+
+        /// <summary>
+        /// Gets the renown rewards for this covenant.
+        /// </summary>
+        [JsonPropertyName("renown_rewards")]
+        public RenownReward[] RenownRewards { get; set; }
+
+        /// <summary>
+        /// Gets the media reference for this covenant.
+        /// </summary>
+        [JsonPropertyName("media")]
+        public CovenantMediaReference Media { get; set; }
     }
 }
