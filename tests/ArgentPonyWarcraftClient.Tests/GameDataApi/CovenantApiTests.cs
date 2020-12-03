@@ -1,5 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Text.Json;
+using System.Threading.Tasks;
 using ArgentPonyWarcraftClient.Tests.Properties;
+using FluentAssertions;
+using Newtonsoft.Json.Linq;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -58,7 +62,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void When_Getting_Conduits_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public async Task When_Getting_Conduits_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
             ICovenantApi client = ClientFactory.BuildMockClient(
                 "https://us.api.blizzard.com/data/wow/covenant/conduit/index?namespace=static-us&locale=en_US",
@@ -92,7 +96,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async void When_Getting_Covenants_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public async Task When_Getting_Covenants_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
             ICovenantApi client = ClientFactory.BuildMockClient(
                 "https://us.api.blizzard.com/data/wow/covenant/index?namespace=static-us&locale=en_US",
@@ -109,20 +113,36 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
-        public async Task When_Getting_Soulbinds_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_Soulbinds_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        {
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
+                "https://us.api.blizzard.com/data/wow/covenant/soulbind/index?namespace=static-us&locale=en_US",
+                Resources.SoulbindsIndexResponse,
+                client => client.GetSoulbindsIndexAsync("static-us")
+            );
+        }
+
+        private async Task ThenClientReturnsSuccessfulResultWithExpectedContent<T>(
+            string expectedRequestUri,
+            string expectedContent,
+            Func<ICovenantApi, Task<RequestResult<T>>> clientMethodUnderTest)
         {
             ICovenantApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/covenant/soulbind/index?namespace=static-us&locale=en_US",
-                Resources.SoulbindsIndexResponse
+                expectedRequestUri,
+                expectedContent
             );
 
-            RequestResult<SoulbindsIndex> result = await client.GetSoulbindsIndexAsync("static-us");
+            RequestResult<T> result = await clientMethodUnderTest(client);
 
             Assert.NotNull(result);
             Assert.True(result.Success);
             Assert.Null(result.Error);
             Assert.NotNull(result.Value);
-            // TODO: Assert object content matches
+
+            var actualJsonValue = JObject.Parse(JsonSerializer.Serialize(result.Value));
+            var expectedJsonValue = JObject.Parse(expectedContent);
+
+            actualJsonValue.Should().BeEquivalentTo(expectedJsonValue);
         }
     }
 }
