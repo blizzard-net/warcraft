@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Text.Json;
 using System.Threading.Tasks;
 using ArgentPonyWarcraftClient.Tests.Properties;
-using FluentAssertions.Json;
-using Newtonsoft.Json.Linq;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -97,13 +94,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
             Assert.Null(result.Error);
             Assert.NotNull(result.Value);
 
-            var actualJsonValue = JObject.Parse(JsonSerializer.Serialize(result.Value, new JsonSerializerOptions
-            {
-                IgnoreNullValues = true
-            }));
-            var expectedJsonValue = JObject.Parse(expectedContent);
-
-            actualJsonValue.Should().BeEquivalentTo(expectedJsonValue);
+            result.ShouldMatchJsonContent(expectedContent);
         }
     }
 }
