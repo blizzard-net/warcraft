@@ -11,105 +11,63 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
     public class CovenantApiTests
     {
         [Fact]
-        public async Task When_Getting_A_Conduit_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_A_Conduit_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
-            ICovenantApi client = ClientFactory.BuildMockClient(
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
                 "https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-us&locale=en_US",
-                Resources.ConduitResponse
+                Resources.ConduitResponse,
+                client => client.GetConduitAsync(10, "static-us")
             );
-
-            RequestResult<Conduit> result = await client.GetConduitAsync(10, "static-us");
-
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-            // TODO: Validate result content
         }
 
         [Fact]
-        public async Task When_Getting_A_Covenant_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_A_Covenant_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
-            ICovenantApi client = ClientFactory.BuildMockClient(
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
                 "https://us.api.blizzard.com/data/wow/covenant/2?namespace=static-us&locale=en_US",
-                Resources.CovenantResponse
+                Resources.CovenantResponse,
+                client => client.GetCovenantAsync(2, "static-us")
             );
-
-            RequestResult<Covenant> result = await client.GetCovenantAsync(2, "static-us");
-
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-            // TODO: Validate result content
         }
 
         [Fact]
-        public async Task When_Getting_A_Soulbind_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_A_Soulbind_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
-            ICovenantApi client = ClientFactory.BuildMockClient(
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
                 "https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-us&locale=en_US",
-                Resources.SoulbindResponse
+                Resources.SoulbindResponse,
+                client => client.GetSoulbindAsync(2, "static-us")
             );
-
-            RequestResult<Soulbind> result = await client.GetSoulbindAsync(2, "static-us");
-
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-            // TODO: Assert object content matches
         }
 
         [Fact]
-        public async Task When_Getting_Conduits_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_Conduits_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
-            ICovenantApi client = ClientFactory.BuildMockClient(
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
                 "https://us.api.blizzard.com/data/wow/covenant/conduit/index?namespace=static-us&locale=en_US",
-                Resources.ConduitsIndexResponse
+                Resources.ConduitsIndexResponse,
+                client => client.GetConduitsIndexAsync("static-us")
             );
-
-            RequestResult<ConduitsIndex> result = await client.GetConduitsIndexAsync("static-us");
-
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-            // TODO: Assert object content matches
         }
 
         [Fact]
-        public async Task When_Getting_Covenant_Media_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_Covenant_Media_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
-            ICovenantApi client = ClientFactory.BuildMockClient(
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
                 "https://us.api.blizzard.com/data/wow/media/covenant/2?namespace=static-us&locale=en_US",
-                Resources.CovenantMediaResponse
+                Resources.CovenantMediaResponse,
+                client => client.GetCovenantMediaAsync(2, "static-us")
             );
-
-            RequestResult<CovenantMedia> result = await client.GetCovenantMediaAsync(2, "static-us");
-
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-            // TODO: Assert object content matches
         }
 
         [Fact]
-        public async Task When_Getting_Covenants_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        public Task When_Getting_Covenants_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
-            ICovenantApi client = ClientFactory.BuildMockClient(
+            return ThenClientReturnsSuccessfulResultWithExpectedContent(
                 "https://us.api.blizzard.com/data/wow/covenant/index?namespace=static-us&locale=en_US",
-                responseContent: Resources.CovenantsIndexResponse
+                Resources.CovenantsIndexResponse,
+                client => client.GetCovenantsIndexAsync("static-us")
             );
-
-            RequestResult<CovenantsIndex> result = await client.GetCovenantsIndexAsync("static-us");
-
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-            // TODO: Assert object content matches
         }
 
         [Fact]
