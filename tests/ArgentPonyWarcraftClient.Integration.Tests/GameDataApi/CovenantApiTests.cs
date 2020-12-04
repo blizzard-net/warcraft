@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Tests.Assertions;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
@@ -12,10 +13,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<Conduit> result = await client.GetConduitAsync(17, "static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -30,10 +28,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<Covenant> result = await client.GetCovenantAsync(3, "static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -48,10 +43,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<Soulbind> result = await client.GetSoulbindAsync(9, "static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -66,10 +58,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<ConduitsIndex> result = await client.GetConduitsIndexAsync("static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -84,10 +73,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<CovenantMedia> result = await client.GetCovenantMediaAsync(3, "static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -102,10 +88,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<CovenantsIndex> result = await client.GetCovenantsIndexAsync("static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -120,10 +103,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<SoulbindsIndex> result = await client.GetSoulbindsIndexAsync("static-us");
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
+            result.Should().BeSuccessfulRequest();
 
             await AssertResultMatchesBlizzardResponseAsync(
                 result,
@@ -137,7 +117,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             string response = await client.GetRawBlizzardResponseAsync(blizzardRequestUri);
 
-            actualValue.ShouldMatchJsonContent(response);
+            actualValue.Should().BeEquivalentToJson(response);
         }
     }
 }
