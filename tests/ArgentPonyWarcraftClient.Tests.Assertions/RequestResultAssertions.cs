@@ -5,7 +5,7 @@ using FluentAssertions.Execution;
 using FluentAssertions.Primitives;
 using Newtonsoft.Json.Linq;
 
-namespace ArgentPonyWarcraftClient.Tests
+namespace ArgentPonyWarcraftClient.Tests.Assertions
 {
     public class RequestResultAssertions<T> : ReferenceTypeAssertions<RequestResult<T>, RequestResultAssertions<T>>
     {

@@ -1,4 +1,4 @@
-﻿namespace ArgentPonyWarcraftClient.Tests
+﻿namespace ArgentPonyWarcraftClient.Tests.Assertions
 {
     public static class RequestResultExtensions
     {
