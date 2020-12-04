@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ArgentPonyWarcraftClient.Tests.Properties;
+using FluentAssertions;
 using Xunit;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi
@@ -89,12 +91,8 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
 
             RequestResult<T> result = await clientMethodUnderTest(client);
 
-            Assert.NotNull(result);
-            Assert.True(result.Success);
-            Assert.Null(result.Error);
-            Assert.NotNull(result.Value);
-
-            result.ShouldMatchJsonContent(expectedContent);
+            result.Should().BeSuccessfulRequest()
+                .BeEquivalentToJson(expectedContent);
         }
     }
 }

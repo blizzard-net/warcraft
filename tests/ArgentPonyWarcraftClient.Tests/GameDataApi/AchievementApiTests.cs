@@ -59,8 +59,6 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
 
             RequestResult<AchievementMedia> result = await warcraftClient.GetAchievementMediaAsync(6, "static-us");
             Assert.NotNull(result.Value);
-
-            result.ShouldMatchJsonContent(Resources.AchievementMediaResponse);
         }
     }
 }
