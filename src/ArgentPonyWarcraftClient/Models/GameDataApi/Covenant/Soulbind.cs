@@ -38,7 +38,7 @@ namespace ArgentPonyWarcraftClient
         public CreatureReference Creature { get; set; }
 
         /// <summary>
-        /// Gets the follow for this soulbind.
+        /// Gets the follower for this soulbind.
         /// </summary>
         [JsonPropertyName("follower")]
         public SoulbindFollower Follower { get; set; }
