@@ -17,6 +17,21 @@ namespace ArgentPonyWarcraftClient.Tests
         /// <inheritdoc />
         protected override string Identifier => $"RequestResult<{typeof(T).Name}>";
 
+        /// <summary>
+        /// Asserts that the <see cref="RequestResult{T}"/> is a successful request.<para />
+        /// Verifies that <see cref="RequestResult{T}.Success"/> is true and <see cref="RequestResult{T}.Error"/>
+        /// is null.
+        /// </summary>
+        /// <param name="because">
+        /// A formatted phrase as is supported by <see cref="string.Format(string,object[])" /> explaining why the assertion
+        /// is needed. If the phrase does not start with the word <i>because</i>, it is prepended automatically.
+        /// </param>
+        /// <param name="becauseArgs">
+        /// Zero or more objects to format using the placeholders in <paramref name="because"/>.
+        /// </param>
+        /// <returns>
+        /// A <see cref="RequestResultAssertions{T}"/> for chaining assertions.
+        /// </returns>
         public RequestResultAssertions<T> BeSuccessfulRequest(string because = "", params object[] becauseArgs)
         {
             using (new AssertionScope())
@@ -29,6 +44,22 @@ namespace ArgentPonyWarcraftClient.Tests
             return this;
         }
 
+        /// <summary>
+        /// Asserts that the <see cref="RequestResult{T}.Value"/> matches the given JSON string.
+        /// </summary>
+        /// <param name="expectedJson">
+        /// The JSON that should be matched.
+        /// </param>
+        /// <param name="because">
+        /// A formatted phrase as is supported by <see cref="string.Format(string,object[])" /> explaining why the assertion
+        /// is needed. If the phrase does not start with the word <i>because</i>, it is prepended automatically.
+        /// </param>
+        /// <param name="becauseArgs">
+        /// Zero or more objects to format using the placeholders in <paramref name="because"/>.
+        /// </param>
+        /// <returns>
+        /// A <see cref="RequestResultAssertions{T}"/> for chaining assertions.
+        /// </returns>
         public void BeEquivalentToJson(string expectedJson, string because = "", params object[] becauseArgs)
         {
             // Compare values as JObjects, removing null values on both actual and result. This
