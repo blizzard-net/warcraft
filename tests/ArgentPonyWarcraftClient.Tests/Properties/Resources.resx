@@ -73323,9 +73323,24 @@
       "slug": "norgannon"
     }
   },
-  "avatar_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-avatar.jpg",
-  "bust_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-inset.jpg",
-  "render_url": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-main.jpg"
+  "assets": [
+    {
+      "key": "avatar",
+      "value": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-avatar.jpg"
+    },
+    {
+      "key": "inset",
+      "value": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-inset.jpg"
+    },
+    {
+      "key": "main",
+      "value": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-main.jpg"
+    },
+    {
+      "key": "main-raw",
+      "value": "https://render-us.worldofwarcraft.com/character/norgannon/59/183057723-main-raw.png"
+    }
+  ]
 }</value>
   </data>
   <data name="ModifiedCraftingCategoryIndexResponse" xml:space="preserve">
