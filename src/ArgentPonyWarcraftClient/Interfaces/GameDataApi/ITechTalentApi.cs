@@ -7,8 +7,8 @@ namespace ArgentPonyWarcraftClient
     /// </summary>
     public interface ITechTalentApi
     {
-        /// <inheritdoc cref="GetTechTalentTreeIndexAsync(string, Region, Locale)"/>
-        Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreeIndexAsync(string @namespace);
+        /// <inheritdoc cref="GetTechTalentTreesIndexAsync(string,Region,Locale)"/>
+        Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace);
 
         /// <summary>
         /// Gets an index of tech talent trees.
@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient
         /// <returns>
         /// The index of tech talent trees.
         /// </returns>
-        Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreeIndexAsync(string @namespace, Region region, Locale locale);
+        Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace, Region region, Locale locale);
 
         /// <inheritdoc cref="GetTechTalentTreeAsync(int,string,Region,Locale)" />
         Task<RequestResult<TechTalentTree>> GetTechTalentTreeAsync(int techTalentTreeId, string @namespace);

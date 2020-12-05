@@ -15,7 +15,7 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
                 Resources.TechTalentTreeIndexResponse
             );
 
-            RequestResult<TechTalentTreesIndex> result = await client.GetTechTalentTreeIndexAsync("static-us");
+            RequestResult<TechTalentTreesIndex> result = await client.GetTechTalentTreesIndexAsync("static-us");
 
             result.Should().BeSuccessfulRequest()
                 .BeEquivalentToJson(Resources.TechTalentTreeIndexResponse);

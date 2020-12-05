@@ -6,11 +6,11 @@ namespace ArgentPonyWarcraftClient
     public partial class WarcraftClient
     {
         /// <inheritdoc />
-        public Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreeIndexAsync(string @namespace) =>
-            GetTechTalentTreeIndexAsync(@namespace, _region, _locale);
+        public Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace) =>
+            GetTechTalentTreesIndexAsync(@namespace, _region, _locale);
 
         /// <inheritdoc />
-        public Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreeIndexAsync(string @namespace, Region region, Locale locale)
+        public Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace, Region region, Locale locale)
         {
             string host = GetHost(region);
             return GetAsync<TechTalentTreesIndex>($"{host}/data/wow/tech-talent-tree/index?namespace={@namespace}&locale={locale}");

@@ -11,7 +11,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         {
             ITechTalentApi client = ClientFactory.BuildClient();
 
-            RequestResult<TechTalentTreesIndex> result = await client.GetTechTalentTreeIndexAsync("static-us");
+            RequestResult<TechTalentTreesIndex> result = await client.GetTechTalentTreesIndexAsync("static-us");
 
             await result.Should().BeSuccessfulRequest()
                 .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent-tree/index?namespace=static-us&locale=en_US");
