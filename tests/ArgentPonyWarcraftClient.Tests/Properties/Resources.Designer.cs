@@ -3972,6 +3972,28 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_misc_uncutgemnormal5.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 463893
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string TechTalentMediaResponse {
+            get {
+                return ResourceManager.GetString("TechTalentMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },

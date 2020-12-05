@@ -79764,4 +79764,20 @@
   }
 }</value>
   </data>
+  <data name="TechTalentMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_misc_uncutgemnormal5.jpg",
+      "file_data_id": 463893
+    }
+  ]
+}</value>
+  </data>
 </root>

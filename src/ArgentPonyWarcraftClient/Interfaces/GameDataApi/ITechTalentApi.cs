@@ -19,5 +19,9 @@ namespace ArgentPonyWarcraftClient
         Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace);
 
         Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace, Region region, Locale locale);
+
+        Task<RequestResult<TechTalentMedia>> GetTechTalentMediaAsync(int techTalentId, string @namespace);
+
+        Task<RequestResult<TechTalentMedia>> GetTechTalentMediaAsync(int techTalentId, string @namespace, Region region, Locale locale);
     }
 }
