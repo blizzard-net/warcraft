@@ -59,8 +59,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities
         private static ClientCredentials GetHardCodedCredentialsForLocal()
         {
             // Add your client ID and client secret here to enable integration tests, but don't commit the change!
-            string clientId = "d9d3d9a023ef4e719c51801ad78a032f";
-            string clientSecret = "09AXw07vE1WVht7WM3OIz8wk0DsQyB6E";
+            string clientId = "";
+            string clientSecret = "";
 
             if (string.IsNullOrWhiteSpace(clientId) || string.IsNullOrWhiteSpace(clientSecret))
             {
