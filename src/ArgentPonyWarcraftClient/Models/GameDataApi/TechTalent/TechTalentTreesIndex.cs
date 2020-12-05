@@ -8,6 +8,6 @@ namespace ArgentPonyWarcraftClient
         public Links Links { get; set; }
 
         [JsonPropertyName("talent_trees")]
-        public TechTalentReference TalentTrees { get; set; }
+        public TechTalentReference[] TalentTrees { get; set; }
     }
 }

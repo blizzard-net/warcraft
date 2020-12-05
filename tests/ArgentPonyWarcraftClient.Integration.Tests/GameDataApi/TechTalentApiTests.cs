@@ -16,5 +16,16 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
             await result.Should().BeSuccessfulRequest()
                 .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent-tree/index?namespace=static-us&locale=en_US");
         }
+
+        [ResilientFact]
+        public async Task When_Getting_A_Tech_Talent_Tree_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        {
+            ITechTalentApi client = ClientFactory.BuildClient();
+
+            RequestResult<TechTalentTree> result = await client.GetTechTalentTreeAsync(317, "static-us");
+
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent-tree/317?namespace=static-us&locale=en_US");
+        }
     }
 }

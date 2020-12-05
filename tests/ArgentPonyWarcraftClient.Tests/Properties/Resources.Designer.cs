@@ -3998,6 +3998,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 307,
+        ///  &quot;max_tiers&quot;: 3,
+        ///  &quot;talents&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/1053?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Nurtured Roots&quot;,
+        ///      &quot;id&quot;: 1053
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/1054?namespace=static-9. [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TechTalentTreeResponse {
+            get {
+                return ResourceManager.GetString("TechTalentTreeResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/title/1?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

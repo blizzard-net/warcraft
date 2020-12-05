@@ -77397,4 +77397,38 @@
   ]
 }</value>
   </data>
+  <data name="TechTalentTreeResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 307,
+  "max_tiers": 3,
+  "talents": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1053?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nurtured Roots",
+      "id": 1053
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1054?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fun with Fungi",
+      "id": 1054
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1055?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Blossoming Network",
+      "id": 1055
+    }
+  ]
+}</value>
+  </data>
 </root>
