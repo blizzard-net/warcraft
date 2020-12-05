@@ -53,7 +53,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets media for a covenant by the covenant Id.
         /// </summary>
         /// <param name="covenantId">The Id of the covenant.</param>
-        /// <param name="namespace"></param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <returns>
         /// Media for a covenant.
         /// </returns>
@@ -63,7 +63,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets media for a covenant by the covenant Id.
         /// </summary>
         /// <param name="covenantId">The Id of the covenant.</param>
-        /// <param name="namespace"></param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language the result will be in.</param>
         /// <returns>
