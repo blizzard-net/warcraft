@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
+using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 using ArgentPonyWarcraftClient.Tests.Assertions;
-using Xunit;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
@@ -13,12 +13,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<Conduit> result = await client.GetConduitAsync(17, "static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/covenant/conduit/17?namespace=static-us&locale=en_US"
-            );
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/covenant/conduit/17?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -28,12 +24,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<Covenant> result = await client.GetCovenantAsync(3, "static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-us&locale=en_US"
-            );
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -43,12 +35,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<Soulbind> result = await client.GetSoulbindAsync(9, "static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/covenant/soulbind/9?namespace=static-us&locale=en_US"
-            );
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/covenant/soulbind/9?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -58,12 +46,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<ConduitsIndex> result = await client.GetConduitsIndexAsync("static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/covenant/conduit/index?namespace=static-us&locale=en_US"
-            );
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/covenant/conduit/index?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -73,12 +57,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<CovenantMedia> result = await client.GetCovenantMediaAsync(3, "static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/media/covenant/3?namespace=static-us&locale=en_US"
-            );
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/covenant/3?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -88,12 +68,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<CovenantsIndex> result = await client.GetCovenantsIndexAsync("static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/covenant/index?namespace=static-us&locale=en_US"
-            );
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/covenant/index?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -103,21 +79,8 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 
             RequestResult<SoulbindsIndex> result = await client.GetSoulbindsIndexAsync("static-us");
 
-            result.Should().BeSuccessfulRequest();
-
-            await AssertResultMatchesBlizzardResponseAsync(
-                result,
-                "https://us.api.blizzard.com/data/wow/covenant/soulbind/index?namespace=static-us&locale=en_US"
-            );
-        }
-
-        private async Task AssertResultMatchesBlizzardResponseAsync<T>(RequestResult<T> actualValue, string blizzardRequestUri)
-        {
-            RawBlizzardClient client = ClientFactory.BuildRawBlizzardClient();
-
-            string response = await client.GetRawBlizzardResponseAsync(blizzardRequestUri);
-
-            actualValue.Should().BeEquivalentToJson(response);
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/covenant/soulbind/index?namespace=static-us&locale=en_US");
         }
     }
 }
