@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the reward reference.
         /// </summary>
         [JsonPropertyName("reward")]
-        public RenownRewardReference Reward { get; set; }
+        public CovenantRewardReference Reward { get; set; }
     }
 }
