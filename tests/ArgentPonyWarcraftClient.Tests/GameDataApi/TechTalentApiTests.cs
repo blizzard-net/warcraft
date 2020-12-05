@@ -48,5 +48,18 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
             result.Should().BeSuccessfulRequest()
                 .BeEquivalentToJson(Resources.TechTalentsIndexResponse);
         }
+
+        [Fact]
+        public async Task When_Getting_A_Tech_Talent_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+        {
+            ITechTalentApi client = ClientFactory.BuildMockClient(
+                "https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-us&locale=en_US",
+                Resources.TechTalentResponse);
+
+            RequestResult<TechTalent> result = await client.GetTechTalentAsync(812, "static-us");
+
+            result.Should().BeSuccessfulRequest()
+                .BeEquivalentToJson(Resources.TechTalentResponse);
+        }
     }
 }

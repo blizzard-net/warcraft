@@ -36,5 +36,16 @@ namespace ArgentPonyWarcraftClient
             string host = GetHost(region);
             return GetAsync<TechTalentsIndex>($"{host}/data/wow/tech-talent/index?namespace={@namespace}&locale={locale}");
         }
+
+        /// <inheritdoc />
+        public Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace) =>
+            GetTechTalentAsync(techTalentId, @namespace, _region, _locale);
+
+        /// <inheritdoc />
+        public Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace, Region region, Locale locale)
+        {
+            string host = GetHost(region);
+            return GetAsync<TechTalent>($"{host}/data/wow/tech-talent/{techTalentId}?namespace={@namespace}&locale={locale}");
+        }
     }
 }

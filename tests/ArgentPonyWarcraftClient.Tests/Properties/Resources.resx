@@ -79738,4 +79738,30 @@
   ]
 }</value>
   </data>
+  <data name="TechTalentResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 812,
+  "talent_tree": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Nadjia the Mistblade",
+    "id": 272
+  },
+  "name": "Exacting Preparation",
+  "tier": 2,
+  "display_order": 1,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/812?namespace=static-9.0.2_36532-us"
+    },
+    "id": 812
+  }
+}</value>
+  </data>
 </root>

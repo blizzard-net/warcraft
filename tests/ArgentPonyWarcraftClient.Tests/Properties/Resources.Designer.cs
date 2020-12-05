@@ -3972,6 +3972,34 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 812,
+        ///  &quot;talent_tree&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Nadjia the Mistblade&quot;,
+        ///    &quot;id&quot;: 272
+        ///  },
+        ///  &quot;name&quot;: &quot;Exacting Preparation&quot;,
+        ///  &quot;tier&quot;: 2,
+        ///  &quot;display_order&quot;: 1,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TechTalentResponse {
+            get {
+                return ResourceManager.GetString("TechTalentResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
