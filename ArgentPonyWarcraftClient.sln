@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Integration.Tests", "tests\ArgentPonyWarcraftClient.Integration.Tests\ArgentPonyWarcraftClient.Integration.Tests.csproj", "{2BFC549E-D7A0-47FC-AFD2-50E48EB5BF06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgentPonyWarcraftClient.Tests.Assertions", "tests\ArgentPonyWarcraftClient.Tests.Assertions\ArgentPonyWarcraftClient.Tests.Assertions.csproj", "{3E7ECD80-040D-4BD8-AF1F-3430CA645622}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Tests.Assertions", "tests\ArgentPonyWarcraftClient.Tests.Assertions\ArgentPonyWarcraftClient.Tests.Assertions.csproj", "{3E7ECD80-040D-4BD8-AF1F-3430CA645622}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
