@@ -33,6 +33,7 @@
         IReputationsApi,
         ISpellApi,
         ITalentApi,
+        ITechTalentApi,
         ITitleApi,
         IWowTokenApi
     {

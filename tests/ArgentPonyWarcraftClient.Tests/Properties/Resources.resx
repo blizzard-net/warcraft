@@ -77099,4 +77099,302 @@
   ]
 }</value>
   </data>
+  <data name="TechTalentTreeIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "talent_trees": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nadjia the Mistblade",
+      "id": 272
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dreamweaver",
+      "id": 275
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Niya",
+      "id": 276
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/304?namespace=static-9.0.2_36532-us"
+      },
+      "name": "General Draven",
+      "id": 304
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 307
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/308?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 308
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/309?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 309
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/310?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 310
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/311?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 311
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/312?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 312
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/313?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 313
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/314?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 314
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/315?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 315
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/316?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 316
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/317?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 317
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/318?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 318
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/319?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Queen's Conservatory",
+      "id": 319
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/320?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Path of Ascension",
+      "id": 320
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/321?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Abomination Factory",
+      "id": 321
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/324?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Ember Court",
+      "id": 324
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/325?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Plague Deviser Marileth",
+      "id": 325
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/326?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Revendreth - Resevoir Upgrades",
+      "id": 326
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/327?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bastion - Resevoir Upgrades",
+      "id": 327
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/328?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ardenweald - Resevoir Upgrades",
+      "id": 328
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/329?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Maldraxxus- Resevoir Upgrades",
+      "id": 329
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/330?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Emeni",
+      "id": 330
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/334?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Korayn",
+      "id": 334
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/345?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 345
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/346?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 346
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/347?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 347
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/348?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 348
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/349?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonesmith Heirmir",
+      "id": 349
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/357?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pelagos",
+      "id": 357
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/360?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kleia",
+      "id": 360
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/365?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mikanikos",
+      "id": 365
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/368?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nadjia the Mistblade",
+      "id": 368
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/392?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Theotar the Mad Duke",
+      "id": 392
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/393?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bastion - Covenant Abilities",
+      "id": 393
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/395?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Maldraxxus - Covenant Abilities",
+      "id": 395
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/396?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Revendreth - Covenant Abilities",
+      "id": 396
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/397?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ardenweald - Covenant Abilities",
+      "id": 397
+    }
+  ]
+}</value>
+  </data>
 </root>
