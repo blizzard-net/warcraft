@@ -3972,6 +3972,33 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;talents&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/807?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Skillful Duelist&quot;,
+        ///      &quot;id&quot;: 807
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/808?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Sw [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TechTalentsIndexResponse {
+            get {
+                return ResourceManager.GetString("TechTalentsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
