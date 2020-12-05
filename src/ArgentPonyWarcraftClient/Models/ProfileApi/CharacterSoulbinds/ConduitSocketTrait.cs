@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets the socket details for the conduit.
         /// </summary>
         [JsonPropertyName("socket")]
-        public ConduitRank Socket { get; set; }
+        public ConduitSocket Socket { get; set; }
     }
 }

@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\ArgentPonyWarcraftClient\ArgentPonyWarcraftClient.csproj" />
+    <ProjectReference Include="..\ArgentPonyWarcraftClient.Tests.Assertions\ArgentPonyWarcraftClient.Tests.Assertions.csproj" />
   </ItemGroup>
 
   <ItemGroup>

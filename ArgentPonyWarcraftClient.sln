@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Integration.Tests", "tests\ArgentPonyWarcraftClient.Integration.Tests\ArgentPonyWarcraftClient.Integration.Tests.csproj", "{2BFC549E-D7A0-47FC-AFD2-50E48EB5BF06}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgentPonyWarcraftClient.Tests.Assertions", "tests\ArgentPonyWarcraftClient.Tests.Assertions\ArgentPonyWarcraftClient.Tests.Assertions.csproj", "{3E7ECD80-040D-4BD8-AF1F-3430CA645622}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{2BFC549E-D7A0-47FC-AFD2-50E48EB5BF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BFC549E-D7A0-47FC-AFD2-50E48EB5BF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BFC549E-D7A0-47FC-AFD2-50E48EB5BF06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7ECD80-040D-4BD8-AF1F-3430CA645622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7ECD80-040D-4BD8-AF1F-3430CA645622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7ECD80-040D-4BD8-AF1F-3430CA645622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7ECD80-040D-4BD8-AF1F-3430CA645622}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{95EFCE5F-F1A4-49CF-874E-0B7682A8FB3C} = {9BBC9F4C-0E04-4D3F-B24D-2A0D3CE2E67B}
 		{B39A9AB0-E23F-499C-A6A9-6CA563EB1BD8} = {BED6344B-B8DB-457B-8106-E8CEF5F42570}
 		{2BFC549E-D7A0-47FC-AFD2-50E48EB5BF06} = {BED6344B-B8DB-457B-8106-E8CEF5F42570}
+		{3E7ECD80-040D-4BD8-AF1F-3430CA645622} = {BED6344B-B8DB-457B-8106-E8CEF5F42570}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4EC68E72-8DE7-4206-88FC-9BF142973C0F}

@@ -232,15 +232,17 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-8.2.5_31884-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/achievement/6?namespace=static-9.0.2_36532-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/achievement_level_10.jpg&quot;
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/achievement_level_10.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 236562
         ///    }
-        ///  ]
+        ///  ],
+        ///  &quot;id&quot;: 6
         ///}.
         /// </summary>
         internal static string AchievementMediaResponse {
@@ -1068,6 +1070,63 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 10,
+        ///  &quot;name&quot;: &quot;Fueled by Violence&quot;,
+        ///  &quot;item&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/180932?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Fueled by Violence&quot;,
+        ///    &quot;id&quot;: 180932
+        ///  },
+        ///  &quot;socket_type&quot;: {
+        ///    &quot;type&quot;: &quot;ENDURANCE&quot;,
+        ///    &quot;name&quot;: &quot;Endurance Conduit Slot&quot;
+        ///  },
+        ///  &quot;ranks&quot;: [
+        ///    {
+        ///      &quot;id&quot;: [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConduitResponse {
+            get {
+                return ResourceManager.GetString("ConduitResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;conduits&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/10?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Fueled by Violence&quot;,
+        ///      &quot;id&quot;: 10
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/conduit/11?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConduitsIndexResponse {
+            get {
+                return ResourceManager.GetString("ConduitsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
         ///    }
         ///  },
@@ -1120,6 +1179,79 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string ConnectedRealmsIndexResponse {
             get {
                 return ResourceManager.GetString("ConnectedRealmsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/covenant/2?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_misc_sigil_revendreth01.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 3641397
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string CovenantMediaResponse {
+            get {
+                return ResourceManager.GetString("CovenantMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/2?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Venthyr&quot;,
+        ///  &quot;description&quot;: &quot;The Venthyr are aristocratic overseers of souls burdened with excessive pride and wickedness. They guide troubled souls upon the rigorous path to atonement, harvesting anima to keep their realm strong.&quot;,
+        ///  &quot;signature_ability&quot;: {
+        ///    &quot;id&quot;: 67,
+        ///    &quot;spell_tooltip&quot;: {
+        ///      &quot;spell&quot;: {
+        ///        &quot;key&quot;: {
+        ///          &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CovenantResponse {
+            get {
+                return ResourceManager.GetString("CovenantResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;covenants&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/1?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Kyrian&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/2?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Venthyr&quot;,
+        ///      &quot;id&quot;: 2        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CovenantsIndexResponse {
+            get {
+                return ResourceManager.GetString("CovenantsIndexResponse", resourceCulture);
             }
         }
         
@@ -3681,6 +3813,61 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string SkillTierResponse {
             get {
                 return ResourceManager.GetString("SkillTierResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 2,
+        ///  &quot;name&quot;: &quot;Dreamweaver&quot;,
+        ///  &quot;covenant&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/3?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Night Fae&quot;,
+        ///    &quot;id&quot;: 3
+        ///  },
+        ///  &quot;creature&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/creature/164387?namespace=static-9.0.2_36532-us&quot;
+        ///    },
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SoulbindResponse {
+            get {
+                return ResourceManager.GetString("SoulbindResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/?namespace=static-9.0.2_36532-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;soulbinds&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/1?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Niya&quot;,
+        ///      &quot;id&quot;: 1
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/covenant/soulbind/2?namespace=static-9.0.2_36532-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SoulbindsIndexResponse {
+            get {
+                return ResourceManager.GetString("SoulbindsIndexResponse", resourceCulture);
             }
         }
         

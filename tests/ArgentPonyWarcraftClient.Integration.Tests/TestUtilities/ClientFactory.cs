@@ -14,5 +14,12 @@ namespace ArgentPonyWarcraftClient.Integration.Tests
                 region: Region.US,
                 locale: Locale.en_US);
         }
+
+        public static RawBlizzardClient BuildRawBlizzardClient()
+        {
+            var credentials = ClientCredentialsSource.GetCredentials();
+
+            return new RawBlizzardClient(credentials);
+        }
     }
 }

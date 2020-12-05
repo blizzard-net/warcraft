@@ -5,7 +5,7 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// Rank details for a conduit socket.
     /// </summary>
-    public class ConduitRank
+    public class ConduitSocket
     {
         /// <summary>
         /// Gets a reference to the conduit.

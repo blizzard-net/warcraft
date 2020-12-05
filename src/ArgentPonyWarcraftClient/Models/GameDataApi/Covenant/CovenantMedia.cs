@@ -3,12 +3,12 @@
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
-    /// Achievement media.
+    /// Media for a covenant.
     /// </summary>
-    public class AchievementMedia
+    public class CovenantMedia
     {
         /// <summary>
-        /// Gets links for the achievement media.
+        /// Gets the key for this covenant media.
         /// </summary>
         [JsonPropertyName("_links")]
         public Links Links { get; set; }
@@ -18,11 +18,5 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("assets")]
         public Asset[] Assets { get; set; }
-
-        /// <summary>
-        /// Gets the Id of the achievement that the media belongs to.
-        /// </summary>
-        [JsonPropertyName("id")]
-        public int Id { get; set; }
     }
 }
