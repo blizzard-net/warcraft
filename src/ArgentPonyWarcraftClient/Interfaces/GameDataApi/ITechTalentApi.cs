@@ -7,7 +7,13 @@ namespace ArgentPonyWarcraftClient
     /// </summary>
     public interface ITechTalentApi
     {
-        /// <inheritdoc cref="GetTechTalentTreesIndexAsync(string,Region,Locale)"/>
+        /// <summary>
+        /// Gets an index of tech talent trees.
+        /// </summary>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The index of tech talent trees.
+        /// </returns>
         Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace);
 
         /// <summary>
@@ -21,7 +27,14 @@ namespace ArgentPonyWarcraftClient
         /// </returns>
         Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace, Region region, Locale locale);
 
-        /// <inheritdoc cref="GetTechTalentTreeAsync(int,string,Region,Locale)" />
+        /// <summary>
+        /// Gets a tech talent tree by Id.
+        /// </summary>
+        /// <param name="techTalentTreeId">The Id of the tech talent tree.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The tech talent tree by Id.
+        /// </returns>
         Task<RequestResult<TechTalentTree>> GetTechTalentTreeAsync(int techTalentTreeId, string @namespace);
 
         /// <summary>
@@ -36,7 +49,13 @@ namespace ArgentPonyWarcraftClient
         /// </returns>
         Task<RequestResult<TechTalentTree>> GetTechTalentTreeAsync(int techTalentTreeId, string @namespace, Region region, Locale locale);
 
-        /// <inheritdoc cref="GetTechTalentsIndexAsync(string,Region,Locale)"/>
+        /// <summary>
+        /// Gets an index of the tech talents.
+        /// </summary>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The index of the tech talents.
+        /// </returns>
         Task<RequestResult<TechTalentsIndex>> GetTechTalentsIndexAsync(string @namespace);
 
         /// <summary>
@@ -50,7 +69,14 @@ namespace ArgentPonyWarcraftClient
         /// </returns>
         Task<RequestResult<TechTalentsIndex>> GetTechTalentsIndexAsync(string @namespace, Region region, Locale locale);
 
-        /// <inheritdoc cref="GetTechTalentAsync(int,string,Region,Locale)"/>
+        /// <summary>
+        /// Gets a tech talent by Id.
+        /// </summary>
+        /// <param name="techTalentId">The tech talent Id.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The tech talent.
+        /// </returns>
         Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace);
 
         /// <summary>
@@ -65,7 +91,14 @@ namespace ArgentPonyWarcraftClient
         /// </returns>
         Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace, Region region, Locale locale);
 
-        /// <inheritdoc cref="GetTechTalentMediaAsync(int,string,Region,Locale)"/>
+        /// <summary>
+        /// Gets the media for a tech talent.
+        /// </summary>
+        /// <param name="techTalentId">The tech talent Id.</param>
+        /// <param name="namespace">The namespace to use to locate this document.</param>
+        /// <returns>
+        /// The media for the tech talent Id.
+        /// </returns>
         Task<RequestResult<TechTalentMedia>> GetTechTalentMediaAsync(int techTalentId, string @namespace);
 
         /// <summary>
