@@ -77099,4 +77099,2685 @@
   ]
 }</value>
   </data>
+  <data name="TechTalentTreeIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "talent_trees": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nadjia the Mistblade",
+      "id": 272
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dreamweaver",
+      "id": 275
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Niya",
+      "id": 276
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/304?namespace=static-9.0.2_36532-us"
+      },
+      "name": "General Draven",
+      "id": 304
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 307
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/308?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 308
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/309?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 309
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/310?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Transport Network",
+      "id": 310
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/311?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 311
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/312?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 312
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/313?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 313
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/314?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Anima Conductor",
+      "id": 314
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/315?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 315
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/316?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 316
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/317?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 317
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/318?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Command Table",
+      "id": 318
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/319?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Queen's Conservatory",
+      "id": 319
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/320?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Path of Ascension",
+      "id": 320
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/321?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Abomination Factory",
+      "id": 321
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/324?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Ember Court",
+      "id": 324
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/325?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Plague Deviser Marileth",
+      "id": 325
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/326?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Revendreth - Resevoir Upgrades",
+      "id": 326
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/327?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bastion - Resevoir Upgrades",
+      "id": 327
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/328?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ardenweald - Resevoir Upgrades",
+      "id": 328
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/329?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Maldraxxus- Resevoir Upgrades",
+      "id": 329
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/330?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Emeni",
+      "id": 330
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/334?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Korayn",
+      "id": 334
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/345?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 345
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/346?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 346
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/347?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 347
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/348?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Channel Anima",
+      "id": 348
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/349?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonesmith Heirmir",
+      "id": 349
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/357?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pelagos",
+      "id": 357
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/360?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kleia",
+      "id": 360
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/365?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mikanikos",
+      "id": 365
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/368?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nadjia the Mistblade",
+      "id": 368
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/392?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Theotar the Mad Duke",
+      "id": 392
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/393?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bastion - Covenant Abilities",
+      "id": 393
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/395?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Maldraxxus - Covenant Abilities",
+      "id": 395
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/396?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Revendreth - Covenant Abilities",
+      "id": 396
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/397?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ardenweald - Covenant Abilities",
+      "id": 397
+    }
+  ]
+}</value>
+  </data>
+  <data name="TechTalentTreeResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 307,
+  "max_tiers": 3,
+  "talents": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1053?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nurtured Roots",
+      "id": 1053
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1054?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fun with Fungi",
+      "id": 1054
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1055?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Blossoming Network",
+      "id": 1055
+    }
+  ]
+}</value>
+  </data>
+  <data name="TechTalentsIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "talents": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/807?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Skillful Duelist",
+      "id": 807
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/808?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Swift Impale",
+      "id": 808
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/809?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deflecting Flourish",
+      "id": 809
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/811?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Payment in Advance",
+      "id": 811
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Exacting Preparation",
+      "id": 812
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/814?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fancy Footwork",
+      "id": 814
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/815?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Inspiring Panache",
+      "id": 815
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/816?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Keep It Interesting",
+      "id": 816
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/824?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Field of Poppies",
+      "id": 824
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/826?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Social Butterfly",
+      "id": 826
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/827?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soothing Voice",
+      "id": 827
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/828?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Empowered Chrysalis",
+      "id": 828
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/829?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 829
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/830?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 830
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/831?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 831
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/832?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 832
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/833?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Faerie Dust",
+      "id": 833
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/834?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Somnambulist",
+      "id": 834
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/835?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 835
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/836?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 836
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/837?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Podtender",
+      "id": 837
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/844?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Care Package",
+      "id": 844
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/849?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 849
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/850?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 850
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/851?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 851
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/858?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Niya's Tools: Burrs",
+      "id": 858
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/859?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Niya's Tools: Poison",
+      "id": 859
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/860?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Niya's Tools: Herbs",
+      "id": 860
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/862?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Stay on the Move",
+      "id": 862
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Run Without Tiring",
+      "id": 863
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/864?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cycle of Seasons",
+      "id": 864
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/866?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Swift Patrol",
+      "id": 866
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/870?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 870
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/994?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 994
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/995?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 995
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/997?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 997
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/998?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Built for War",
+      "id": 998
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/999?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hold Your Ground",
+      "id": 999
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1000?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1000
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1001?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1001
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1005?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1005
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1006?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1006
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1009?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1009
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1010?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1010
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1047?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mirror, Mirror",
+      "id": 1047
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1048?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Looking Glass",
+      "id": 1048
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1049?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mirror's Edge",
+      "id": 1049
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1050?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ziggurat Now",
+      "id": 1050
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1051?namespace=static-9.0.2_36532-us"
+      },
+      "name": "A Keep Above",
+      "id": 1051
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1052?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flying Fortress",
+      "id": 1052
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1053?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nurtured Roots",
+      "id": 1053
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1054?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fun with Fungi",
+      "id": 1054
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1055?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Blossoming Network",
+      "id": 1055
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1056?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Step of Faith",
+      "id": 1056
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1057?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Leap of Power",
+      "id": 1057
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1058?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Eternal Paths",
+      "id": 1058
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1062?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Tendrils",
+      "id": 1062
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1063?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Streaming Threads",
+      "id": 1063
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1064?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Power",
+      "id": 1064
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1065?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Tendrils",
+      "id": 1065
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1066?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Streaming Threads",
+      "id": 1066
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1067?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Power",
+      "id": 1067
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1068?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Tendrils",
+      "id": 1068
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1069?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Streaming Threads",
+      "id": 1069
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1070?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Power",
+      "id": 1070
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1071?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Tendrils",
+      "id": 1071
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1072?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Streaming Threads",
+      "id": 1072
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1073?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flowing Power",
+      "id": 1073
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1074?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tactical Insight",
+      "id": 1074
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1075?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Grovetender's Gift",
+      "id": 1075
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1076?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hidden Pathways",
+      "id": 1076
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1077?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tactical Insight",
+      "id": 1077
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1078?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Enhanced Purification",
+      "id": 1078
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1079?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wings of Light",
+      "id": 1079
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1080?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tactical Insight",
+      "id": 1080
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1081?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deserved Feast",
+      "id": 1081
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1082?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Superior Efficiency",
+      "id": 1082
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1083?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tactical Insight",
+      "id": 1083
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1084?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Recuperative Treatments",
+      "id": 1084
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1085?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Forced March",
+      "id": 1085
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1086?namespace=static-9.0.2_36532-us"
+      },
+      "name": "First Planting",
+      "id": 1086
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1087?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Initial Growth",
+      "id": 1087
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1088?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Nurtured Souls",
+      "id": 1088
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1089?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flourishing Beds",
+      "id": 1089
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1090?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Final Forms",
+      "id": 1090
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1091?namespace=static-9.0.2_36532-us"
+      },
+      "name": "First Steps",
+      "id": 1091
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1092?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sacred Trials",
+      "id": 1092
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1093?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Continued Training",
+      "id": 1093
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1094?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Teachings of Wisdom",
+      "id": 1094
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1095?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Trials of Humility",
+      "id": 1095
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1096?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Build a Buddy",
+      "id": 1096
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1097?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Crafting limbs",
+      "id": 1097
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1098?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bring them to Life",
+      "id": 1098
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1099?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Forged Friends",
+      "id": 1099
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1100?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Best Fiends Forvever",
+      "id": 1100
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1111?namespace=static-9.0.2_36532-us"
+      },
+      "name": "A New Court",
+      "id": 1111
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1112?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Discerning Taste",
+      "id": 1112
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1113?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Homegrown Help",
+      "id": 1113
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1114?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Court Influencer",
+      "id": 1114
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1115?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Professionals",
+      "id": 1115
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1121?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1121
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1122?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1122
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1123?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1123
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1124?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Volatile Solvent",
+      "id": 1124
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1125?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Travel with Bloop",
+      "id": 1125
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1126?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ooz's Frictionless Coating",
+      "id": 1126
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1127?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Plaguey's Watchful Eye",
+      "id": 1127
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1128?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1128
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1129?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kevin's Keyring",
+      "id": 1129
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1130?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Plagueborn Cleansing Slime",
+      "id": 1130
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1132?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1132
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1133?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1133
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1135?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1135
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1136?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ultimate Form",
+      "id": 1136
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1137?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Expanding Potential",
+      "id": 1137
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1138?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Growing Power",
+      "id": 1138
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1139?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Final Capacity",
+      "id": 1139
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1140?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Expanding Potential",
+      "id": 1140
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1141?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Growing Power",
+      "id": 1141
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1142?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Final Capacity",
+      "id": 1142
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1143?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Expanding Potential",
+      "id": 1143
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1144?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Growing Power",
+      "id": 1144
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1145?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Final Capacity",
+      "id": 1145
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1146?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Expanding Potential",
+      "id": 1146
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1147?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Growing Power",
+      "id": 1147
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1148?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Final Capacity",
+      "id": 1148
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1154?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Lead By Example",
+      "id": 1154
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1155?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cartilaginous Legs",
+      "id": 1155
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1156?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hearth Kidneystone",
+      "id": 1156
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1158?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sulfuric Emission",
+      "id": 1158
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1160?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Gristled Toes",
+      "id": 1160
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1161?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Gnashing Chompers",
+      "id": 1161
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1163?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Emeni's Magnificent Skin",
+      "id": 1163
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1164?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Throughput Conduit",
+      "id": 1164
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1165?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1165
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1167?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1167
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1168?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1168
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1169?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1169
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1170?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1170
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1202?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wild Hunt's Charge",
+      "id": 1202
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1203?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wild Hunt Tactics",
+      "id": 1203
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1204?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Horn of the Wild Hunt",
+      "id": 1204
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1205?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Face Your Foes",
+      "id": 1205
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1206?namespace=static-9.0.2_36532-us"
+      },
+      "name": "First Strike",
+      "id": 1206
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1207?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hold the Line",
+      "id": 1207
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1208?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Vorkai Sharpening Techniques",
+      "id": 1208
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1209?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1209
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1210?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1210
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1211?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1211
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1212?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1212
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1213?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1213
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1214?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1214
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1215?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1215
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1216?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Get In Formation",
+      "id": 1216
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1237?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Purity's Pinnacle",
+      "id": 1237
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1238?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Temple of Courage",
+      "id": 1238
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1239?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Temple of Humility",
+      "id": 1239
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1240?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Eternal Forge",
+      "id": 1240
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1241?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Citadel of Loyalty",
+      "id": 1241
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1242?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Eonian Archives",
+      "id": 1242
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1243?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Glitterfall Basin",
+      "id": 1243
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1244?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dreamsong Fenn",
+      "id": 1244
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1245?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tirna Vaal",
+      "id": 1245
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1246?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hibernal Hollow",
+      "id": 1246
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1247?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Tirna Scithe",
+      "id": 1247
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1248?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Claw's Edge",
+      "id": 1248
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1249?namespace=static-9.0.2_36532-us"
+      },
+      "name": "House of the Chosen",
+      "id": 1249
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1250?namespace=static-9.0.2_36532-us"
+      },
+      "name": "House of Constructs",
+      "id": 1250
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1251?namespace=static-9.0.2_36532-us"
+      },
+      "name": "House of Plagues",
+      "id": 1251
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1252?namespace=static-9.0.2_36532-us"
+      },
+      "name": "House of Eyes",
+      "id": 1252
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1253?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Theatre of Pain",
+      "id": 1253
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1254?namespace=static-9.0.2_36532-us"
+      },
+      "name": "House of Rituals",
+      "id": 1254
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1255?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Crypt of the Forgotten",
+      "id": 1255
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1256?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wanecrypt Hill",
+      "id": 1256
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1257?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Court of the Harvesters",
+      "id": 1257
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1258?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Pridefall Hamlet",
+      "id": 1258
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1259?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dominance Keep",
+      "id": 1259
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1260?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Shrouded Asylum",
+      "id": 1260
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1263?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1263
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1264?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1264
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1265?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1265
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1266?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Serrated Shoulder Blades",
+      "id": 1266
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1267?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resourceful Fleshcrafting",
+      "id": 1267
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1268?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Heirmir's Arsenal: Ravenous Pendant",
+      "id": 1268
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1269?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Heirmir's Arsenal: Alacritous Boots",
+      "id": 1269
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1270?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bone Spurs",
+      "id": 1270
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1271?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Smithing Expertise",
+      "id": 1271
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1272?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Forgeborne Reveries",
+      "id": 1272
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1273?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1273
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1274?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1274
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1275?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1275
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1276?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1276
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1277?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Heirmir's Arsenal: Marrowed Gemstone",
+      "id": 1277
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1303?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Let Go of the Past",
+      "id": 1303
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1305?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1305
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1306?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1306
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1308?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Focusing Mantra",
+      "id": 1308
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1309?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Phial of Patience",
+      "id": 1309
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1310?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cleansed Vestments",
+      "id": 1310
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1311?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1311
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1312?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1312
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1313?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1313
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1314?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bond of Friendship",
+      "id": 1314
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1315?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1315
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1316?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Combat Meditation",
+      "id": 1316
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1317?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Road of Trials",
+      "id": 1317
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1364?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1364
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1365?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1365
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1366?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1366
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1367?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ascendant Phial",
+      "id": 1367
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1368?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mentorship",
+      "id": 1368
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1369?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kyrian Insight",
+      "id": 1369
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1370?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kyrian Grace",
+      "id": 1370
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1371?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kyrian Perseverence",
+      "id": 1371
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1372?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Cleansing Rites",
+      "id": 1372
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1373?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ever Forward",
+      "id": 1373
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1374?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1374
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1375?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1375
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1377?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1377
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1378?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Valiant Strikes",
+      "id": 1378
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1379?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1379
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1380?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1380
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1381?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1381
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1393?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Agent of Chaos",
+      "id": 1393
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1394?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fancy Footwork",
+      "id": 1394
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1395?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1395
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1396?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1396
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1397?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1397
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1398?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Friends in Low Places",
+      "id": 1398
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1399?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1399
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1400?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1400
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1401?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1401
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1402?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Exacting Preparation",
+      "id": 1402
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1403?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Familiar Predicaments",
+      "id": 1403
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1404?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Dauntless Duelist",
+      "id": 1404
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1405?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1405
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1406?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Thrill Seeker",
+      "id": 1406
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1407?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Elite Mixture",
+      "id": 1407
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1408?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Forgelite Filter",
+      "id": 1408
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1409?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1409
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1410?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Hammer of Genesis",
+      "id": 1410
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1411?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sparkling Driftglobe Core",
+      "id": 1411
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1412?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soulsteel Clamps",
+      "id": 1412
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1413?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1413
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1414?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1414
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1415?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1415
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1416?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Regenerating Materials",
+      "id": 1416
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1417?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Steward's Resilience",
+      "id": 1417
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1418?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Forgelite Prime's Expertise",
+      "id": 1418
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1419?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unbreakable Body",
+      "id": 1419
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1420?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Expedition Leader",
+      "id": 1420
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1421?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Superior Tactics",
+      "id": 1421
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1422?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1422
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1423?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1423
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1424?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Enduring Gloom",
+      "id": 1424
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1425?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Move As One",
+      "id": 1425
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1426?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Service in Stone",
+      "id": 1426
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1545?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Watch the Shoes!",
+      "id": 1545
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1546?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Leisurely Gait",
+      "id": 1546
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1547?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1547
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1548?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1548
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1549?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1549
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1550?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Refined Palate",
+      "id": 1550
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1551?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soothing Shade",
+      "id": 1551
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1552?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Token of Appreciation",
+      "id": 1552
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1553?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1553
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1554?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1554
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1555?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1555
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1556?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1556
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1557?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Life of the Party",
+      "id": 1557
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1559?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Exquisite Ingredients",
+      "id": 1559
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1560?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wasteland Propriety",
+      "id": 1560
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1561?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Summon Steward",
+      "id": 1561
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1562?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shackle the Unworthy",
+      "id": 1562
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1563?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Spear of Bastion",
+      "id": 1563
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1564?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Divine Toll",
+      "id": 1564
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1565?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Elysian Decree",
+      "id": 1565
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1566?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Boon of the Ascended",
+      "id": 1566
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1567?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Kindred Spirits",
+      "id": 1567
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1568?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Echoing Reprimand",
+      "id": 1568
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1569?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Resonating Arrow",
+      "id": 1569
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1570?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Vesper Totem",
+      "id": 1570
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1571?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Radiant Spark",
+      "id": 1571
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1572?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Scouring Tithe",
+      "id": 1572
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1573?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Weapons of Order",
+      "id": 1573
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1575?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fleshcraft",
+      "id": 1575
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1576?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Abomination Limb",
+      "id": 1576
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1577?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Vanquisher's Hammer",
+      "id": 1577
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1578?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fodder to the Flame",
+      "id": 1578
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1579?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Unholy Nova",
+      "id": 1579
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1580?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Adaptive Swarm",
+      "id": 1580
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1581?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Serrated Bone Spike",
+      "id": 1581
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1582?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Death Chakram",
+      "id": 1582
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1583?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Primordial Wave",
+      "id": 1583
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1584?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Deathborne",
+      "id": 1584
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1585?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Decimating Bolt",
+      "id": 1585
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1586?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Bonedust Brew",
+      "id": 1586
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1587?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Conqueror's Banner",
+      "id": 1587
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1588?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Door of Shadows",
+      "id": 1588
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1589?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Swarming Mist",
+      "id": 1589
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1590?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ashen Hallow",
+      "id": 1590
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1591?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sinful Brand",
+      "id": 1591
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1592?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mindgames",
+      "id": 1592
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1593?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ravenous Frenzy",
+      "id": 1593
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1594?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flagellation",
+      "id": 1594
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1595?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Flayed Shot",
+      "id": 1595
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1596?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Chain Harvest",
+      "id": 1596
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1597?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Mirrors of Torment",
+      "id": 1597
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1598?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Impending Catastrophe",
+      "id": 1598
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1599?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fallen Order",
+      "id": 1599
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1600?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Condemn",
+      "id": 1600
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1601?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soulshape",
+      "id": 1601
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1602?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Death's Due",
+      "id": 1602
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1603?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Blessing of the Seasons",
+      "id": 1603
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1604?namespace=static-9.0.2_36532-us"
+      },
+      "name": "The Hunt",
+      "id": 1604
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1605?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fae Blessings",
+      "id": 1605
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1606?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Convoke the Spirits",
+      "id": 1606
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1607?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Sepsis",
+      "id": 1607
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1608?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Wild Spirits",
+      "id": 1608
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1609?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Fae Transfusion",
+      "id": 1609
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1610?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Shifting Power",
+      "id": 1610
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1611?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Soul Rot",
+      "id": 1611
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1612?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Faeline Stomp",
+      "id": 1612
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1613?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Ancient Aftershock",
+      "id": 1613
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1765?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1765
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1766?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1766
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1767?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1767
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1770?namespace=static-9.0.2_36532-us"
+      },
+      "name": "Emeni's Ambulatory Flesh",
+      "id": 1770
+    }
+  ]
+}</value>
+  </data>
+  <data name="TechTalentResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "id": 812,
+  "talent_tree": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us"
+    },
+    "name": "Nadjia the Mistblade",
+    "id": 272
+  },
+  "name": "Exacting Preparation",
+  "tier": 2,
+  "display_order": 1,
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/812?namespace=static-9.0.2_36532-us"
+    },
+    "id": 812
+  }
+}</value>
+  </data>
+  <data name="TechTalentMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-9.0.2_36532-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_misc_uncutgemnormal5.jpg",
+      "file_data_id": 463893
+    }
+  ]
+}</value>
+  </data>
 </root>

@@ -135,6 +135,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 .AddTransientUsingServiceProvider<IReputationsApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<ISpellApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<ITalentApi, IGameDataApi>()
+                .AddTransientUsingServiceProvider<ITechTalentApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<ITitleApi, IGameDataApi>()
                 .AddTransientUsingServiceProvider<IWowTokenApi, IGameDataApi>();
         }
