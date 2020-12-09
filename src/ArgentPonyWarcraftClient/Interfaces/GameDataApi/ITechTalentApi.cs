@@ -27,7 +27,7 @@ namespace ArgentPonyWarcraftClient
         /// <summary>
         /// Gets a tech talent tree by Id.
         /// </summary>
-        /// <param name="techTalentTreeId">The d of the tech talent tree.</param>
+        /// <param name="techTalentTreeId">The Id of the tech talent tree.</param>
         /// <param name="namespace">The namespace to use to locate this document.</param>
         /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
         /// <param name="locale">Specifies the language the result will be in.</param>

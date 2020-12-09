@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient
     public class TechTalentTreesIndex
     {
         /// <summary>
-        /// Gets links for the index of tech talent trees..
+        /// Gets links for the index of tech talent trees.
         /// </summary>
         [JsonPropertyName("_links")]
         public Links Links { get; set; }
