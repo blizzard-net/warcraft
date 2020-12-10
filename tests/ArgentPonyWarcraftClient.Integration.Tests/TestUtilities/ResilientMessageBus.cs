@@ -28,10 +28,6 @@ namespace ArgentPonyWarcraftClient.Integration.Tests
                 string exceptionType = testFailed.ExceptionTypes.FirstOrDefault();
                 CanRetry = exceptionType == typeof(HttpRequestException).FullName;
             }
-            else
-            {
-                CanRetry = false;
-            }
 
             lock (_messages)
             {
