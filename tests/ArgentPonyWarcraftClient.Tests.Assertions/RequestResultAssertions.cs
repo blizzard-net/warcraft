@@ -2,6 +2,7 @@ using System.Linq;
 using System.Text.Json;
 using FluentAssertions;
 using FluentAssertions.Execution;
+using FluentAssertions.Json;
 using FluentAssertions.Primitives;
 using Newtonsoft.Json.Linq;
 
