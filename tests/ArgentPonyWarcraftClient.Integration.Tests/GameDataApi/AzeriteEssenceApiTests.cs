@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
-using Xunit;
+using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
+using ArgentPonyWarcraftClient.Tests.Assertions;
 
 namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
 {
@@ -10,23 +11,33 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         {
             IAzeriteEssenceApi warcraftClient = ClientFactory.BuildClient();
             RequestResult<AzeriteEssencesIndex> result = await warcraftClient.GetAzeriteEssencesIndexAsync("static-us");
-            Assert.NotNull(result.Value);
+
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/azerite-essence/index?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
         public async Task GetAzeriteEssenceAsync_Gets_AzeriteEssence()
         {
+            const int azeriteEssenceId = 2;
+
             IAzeriteEssenceApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<AzeriteEssence> result = await warcraftClient.GetAzeriteEssenceAsync(2, "static-us");
-            Assert.NotNull(result.Value);
+            RequestResult<AzeriteEssence> result = await warcraftClient.GetAzeriteEssenceAsync(azeriteEssenceId, "static-us");
+
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync($"https://us.api.blizzard.com/data/wow/azerite-essence/{azeriteEssenceId}?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
         public async Task GetAzeriteEssenceMediaAsync_Gets_AzeriteEssenceMedia()
         {
+            const int azeriteEssenceId = 2;
+
             IAzeriteEssenceApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<AzeriteEssenceMedia> result = await warcraftClient.GetAzeriteEssenceMediaAsync(2, "static-us");
-            Assert.NotNull(result.Value);
+            RequestResult<AzeriteEssenceMedia> result = await warcraftClient.GetAzeriteEssenceMediaAsync(azeriteEssenceId, "static-us");
+
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync($"https://us.api.blizzard.com/data/wow/media/azerite-essence/{azeriteEssenceId}?namespace=static-us&locale=en_US");
         }
     }
 }
