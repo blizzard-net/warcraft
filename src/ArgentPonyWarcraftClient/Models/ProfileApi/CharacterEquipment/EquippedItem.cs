@@ -20,12 +20,6 @@ namespace ArgentPonyWarcraftClient
         public EnumType Slot { get; set; }
 
         /// <summary>
-        /// Gets the enchantment of the item.
-        /// </summary>
-        [JsonPropertyName("enchantments")]
-        public Enchantment[] Enchantments { get; set; }
-
-        /// <summary>
         /// Gets the quantity of the item.
         /// </summary>
         [JsonPropertyName("quantity")]
@@ -180,6 +174,12 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("sockets")]
         public Socket[] Sockets { get; set; }
+
+        /// <summary>
+        /// Gets the enchantment of the item.
+        /// </summary>
+        [JsonPropertyName("enchantments")]
+        public Enchantment[] Enchantments { get; set; }
 
         /// <summary>
         /// Gets weapon details for the item.
