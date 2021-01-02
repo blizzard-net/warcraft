@@ -25,7 +25,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi
         public async Task GetGuildAchievementsAsync_Gets_GuildAchievements()
         {
             IGuildApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<GuildAchievements> result = await warcraftClient.GetGuildAchievementsAsync("deathwing", "enigma", "profile-us");
+            RequestResult<GuildAchievements> result = await warcraftClient.GetGuildAchievementsAsync("arygos", "enigma", "profile-us");
             Assert.NotNull(result.Value);
         }
 

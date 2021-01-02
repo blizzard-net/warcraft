@@ -176,6 +176,12 @@ namespace ArgentPonyWarcraftClient
         public Socket[] Sockets { get; set; }
 
         /// <summary>
+        /// Gets the enchantment of the item.
+        /// </summary>
+        [JsonPropertyName("enchantments")]
+        public Enchantment[] Enchantments { get; set; }
+
+        /// <summary>
         /// Gets weapon details for the item.
         /// </summary>
         [JsonPropertyName("weapon")]
