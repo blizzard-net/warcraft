@@ -14,16 +14,15 @@ namespace ArgentPonyWarcraftClient
         public string DisplayString { get; set; }
 
         /// <summary>
-        /// Gets the enchantment_id for the enchantment.
+        /// Gets the enchantment ID for the enchantment.
         /// </summary>
         [JsonPropertyName("enchantment_id")]
-        public int enchantment_id { get; set; }
+        public int EnchantmentId { get; set; }
 
         /// <summary>
         /// Gets a reference to the item.
         /// </summary>
         [JsonPropertyName("source_item")]
-        public ItemReference Item { get; set; }
-
+        public ItemReference SourceItem { get; set; }
     }
 }
