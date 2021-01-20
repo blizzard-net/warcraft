@@ -17,7 +17,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         public async Task GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
         {
             IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(353, "dynamic-us");
+            RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(375, "dynamic-us");
             Assert.NotNull(result.Value);
         }
 
