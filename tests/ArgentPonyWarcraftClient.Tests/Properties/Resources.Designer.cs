@@ -3972,14 +3972,14 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-9.0.2_36532-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-9.0.5_37760-us&quot;
         ///    }
         ///  },
         ///  &quot;assets&quot;: [
         ///    {
         ///      &quot;key&quot;: &quot;icon&quot;,
-        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/inv_misc_uncutgemnormal5.jpg&quot;,
-        ///      &quot;file_data_id&quot;: 463893
+        ///      &quot;value&quot;: &quot;https://render-us.worldofwarcraft.com/icons/56/ability_ardenweald_monk.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 3636842
         ///    }
         ///  ]
         ///}.
@@ -3994,23 +3994,21 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.0.5_37760-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 812,
+        ///  &quot;id&quot;: 863,
         ///  &quot;talent_tree&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.0.5_37760-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Nadjia the Mistblade&quot;,
-        ///    &quot;id&quot;: 272
+        ///    &quot;name&quot;: &quot;Niya&quot;,
+        ///    &quot;id&quot;: 276
         ///  },
-        ///  &quot;name&quot;: &quot;Exacting Preparation&quot;,
-        ///  &quot;tier&quot;: 2,
-        ///  &quot;display_order&quot;: 1,
-        ///  &quot;media&quot;: {
-        ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/ [rest of string was truncated]&quot;;.
+        ///  &quot;name&quot;: &quot;Run Without Tiring&quot;,
+        ///  &quot;description&quot;: &quot;While in Soulshape, you regenerate 5% of your maximum health every 3 sec.&quot;,
+        ///  &quot;spell_tooltip&quot;: {
+        ///    &quot;spel [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TechTalentResponse {
             get {
