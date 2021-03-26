@@ -2,12 +2,6 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "trx2junit": {
-      "version": "1.4.0",
-      "commands": [
-        "trx2junit"
-      ]
-    },
     "dotnet-format": {
       "version": "4.1.131201",
       "commands": [
