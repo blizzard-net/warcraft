@@ -53,10 +53,10 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         public async Task When_Getting_A_Tech_Talent_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
             ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-us&locale=en_US",
+                "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-us&locale=en_US",
                 Resources.TechTalentResponse);
 
-            RequestResult<TechTalent> result = await client.GetTechTalentAsync(812, "static-us");
+            RequestResult<TechTalent> result = await client.GetTechTalentAsync(863, "static-us");
 
             result.Should().BeSuccessfulRequest()
                 .BeEquivalentToJson(Resources.TechTalentResponse);
@@ -66,11 +66,11 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         public async Task When_Getting_Tech_Talent_Media_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
         {
             ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-us&locale=en_US",
+                "https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-us&locale=en_US",
                 Resources.TechTalentMediaResponse
             );
 
-            RequestResult<TechTalentMedia> result = await client.GetTechTalentMediaAsync(1006, "static-us");
+            RequestResult<TechTalentMedia> result = await client.GetTechTalentMediaAsync(1612, "static-us");
 
             result.Should().BeSuccessfulRequest()
                 .BeEquivalentToJson(Resources.TechTalentMediaResponse);

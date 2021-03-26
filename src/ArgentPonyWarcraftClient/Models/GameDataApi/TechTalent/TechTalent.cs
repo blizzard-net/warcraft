@@ -32,6 +32,18 @@ namespace ArgentPonyWarcraftClient
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets a description for the tech talent.
+        /// </summary>
+        [JsonPropertyName("description")]
+        public string Description { get; set; }
+
+        /// <summary>
+        /// Gets the spell tooltip for this tech talent.
+        /// </summary>
+        [JsonPropertyName("spell_tooltip")]
+        public SpellTooltipForAbility SpellTooltip { get; set; }
+
+        /// <summary>
         /// Gets the tier for the tech talent.
         /// </summary>
         [JsonPropertyName("tier")]
@@ -42,6 +54,12 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("display_order")]
         public int DisplayOrder { get; set; }
+
+        /// <summary>
+        /// Gets the prerequisite talent for the tech talent.
+        /// </summary>
+        [JsonPropertyName("prerequisite_talent")]
+        public TalentReferenceWithoutName PrerequisiteTalent { get; set; }
 
         /// <summary>
         /// Gets the media for the tech talent.
