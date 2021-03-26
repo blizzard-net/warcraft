@@ -2,22 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Dan Jagnow, Travis Boatman</Authors>
     <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Game Data and Profile APIs</Description>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Copyright>Copyright © Dan Jagnow 2017</Copyright>
-    <NeutralLanguage>en-US</NeutralLanguage>
     <Title>Argent Pony Warcraft Client</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard</PackageTags>
-    <PackageProjectUrl>https://github.com/blizzard-net/warcraft</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/blizzard-net/warcraft</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>ArgentPony.png</PackageIcon>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(CI)' == 'true'">
@@ -27,10 +14,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
     <PackageReference Include="System.Text.Json" Version="4.7.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="../../ArgentPony.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
