@@ -1,0 +1,38 @@
+name: build
+
+on: push
+
+env:
+  DOTNET_NOLOGO: 1 # Disable the .NET welcome message
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1 # Opt out of the .NET SDK telemetry feature
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # avoid shallow clone so nbgv can do its work.
+
+    - name: Install .NET 5 SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.201
+
+    - name: Build
+      run: dotnet build --configuration Release --verbosity minimal
+
+    - name: Test
+      run: dotnet test --no-build --configuration Release --verbosity minimal
+      env:
+        BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+        BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: NuGet packages
+        path: |
+          artifacts/*.nupkg
+          artifacts/*.snupkg
