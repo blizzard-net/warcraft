@@ -29,6 +29,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets an amount associated with this criterion achievment, if any.
         /// </summary>
         [JsonPropertyName("amount")]
-        public long? Amount { get; set; }
+        public ulong? Amount { get; set; }
     }
 }

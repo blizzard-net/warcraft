@@ -79742,25 +79742,43 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-9.0.2_36532-us"
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.0.5_37760-us"
     }
   },
-  "id": 812,
+  "id": 863,
   "talent_tree": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/272?namespace=static-9.0.2_36532-us"
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.0.5_37760-us"
     },
-    "name": "Nadjia the Mistblade",
-    "id": 272
+    "name": "Niya",
+    "id": 276
   },
-  "name": "Exacting Preparation",
+  "name": "Run Without Tiring",
+  "description": "While in Soulshape, you regenerate 5% of your maximum health every 3 sec.",
+  "spell_tooltip": {
+    "spell": {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/spell/342270?namespace=static-9.0.5_37760-us"
+      },
+      "name": "Run Without Tiring",
+      "id": 342270
+    },
+    "description": "While in Soulshape, you regenerate 5% of your maximum health every 3 sec.",
+    "cast_time": "Passive"
+  },
   "tier": 2,
-  "display_order": 1,
+  "display_order": 0,
+  "prerequisite_talent": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/850?namespace=static-9.0.5_37760-us"
+    },
+    "id": 850
+  },
   "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/812?namespace=static-9.0.2_36532-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/863?namespace=static-9.0.5_37760-us"
     },
-    "id": 812
+    "id": 863
   }
 }</value>
   </data>
@@ -79768,14 +79786,14 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-9.0.2_36532-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-9.0.5_37760-us"
     }
   },
   "assets": [
     {
       "key": "icon",
-      "value": "https://render-us.worldofwarcraft.com/icons/56/inv_misc_uncutgemnormal5.jpg",
-      "file_data_id": 463893
+      "value": "https://render-us.worldofwarcraft.com/icons/56/ability_ardenweald_monk.jpg",
+      "file_data_id": 3636842
     }
   ]
 }</value>

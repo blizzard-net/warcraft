@@ -2,22 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Dan Jagnow, Travis Boatman, William Wolfram</Authors>
     <Description>Extensions of Microsoft.Extensions.DependencyInjection for the Argent Pony .NET client.</Description>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Copyright>Copyright © Dan Jagnow 2017</Copyright>
-    <NeutralLanguage>en-US</NeutralLanguage>
     <Title>Argent Pony Warcraft Client Dependency Injection</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard;Dependency-Injection;DI</PackageTags>
-    <PackageProjectUrl>https://github.com/blizzard-net/warcraft</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/blizzard-net/warcraft</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>ArgentPony.png</PackageIcon>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(CI)' == 'true'">
@@ -32,10 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ArgentPonyWarcraftClient\ArgentPonyWarcraftClient.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="../../ArgentPony.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,8 @@
 The Argent Pony Warcraft Client is a .NET client for the [Blizzard World of Warcraft APIs](https://develop.battle.net/documentation/world-of-warcraft).  It lets .NET applications easily access information about World of Warcraft characters, guilds, items, spells, and more.  It is a [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) 2.0 library, which means it supports a broad range of platforms, including .NET Core 2.0+ and .NET Framework 4.6.1+.
 
 [![NuGet version](https://badge.fury.io/nu/ArgentPonyWarcraftClient.svg)](https://badge.fury.io/nu/ArgentPonyWarcraftClient)
-[![CircleCI](https://circleci.com/gh/blizzard-net/warcraft.svg?style=svg&circle-token=a71bb5e43b4487cdbbf382347407fb67ee18df4f)](https://circleci.com/gh/blizzard-net/warcraft)
+[![build](https://github.com/blizzard-net/warcraft/actions/workflows/build.yml/badge.svg)](https://github.com/blizzard-net/warcraft/actions/workflows/build.yml)
+[![CodeQL](https://github.com/blizzard-net/warcraft/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/blizzard-net/warcraft/actions/workflows/codeql-analysis.yml)
 
 ## Prerequisites
 
@@ -79,15 +80,19 @@ else
 Take a look at the [ArgentPonyWarcraftClient.Tests](https://github.com/blizzard-net/warcraft/tree/master/tests/ArgentPonyWarcraftClient.Tests) project and the Blizzard World of Warcraft Game Data and Profile APIs documentation to learn more about what else you can do.
 
 ## Using with Dependency Injection
+
 The Argent Pony Warcraft Client includes tools to make registering the various interfaces with the `IServiceCollection` in .NET Core applications a snap!
 
-### Installing via NuGet
+### Installing dependency injection via NuGet
+
 You can install the ArgentPonyWarcraftClient.Extensions.DependencyInjection package from the NuGet Package Manager in Visual Studio or by running the following command from the Package Manager Console:
-```
+
+```shell
 Install-Package ArgentPonyWarcraftClient.Extensions.DependencyInjection
 ```
 
 ### Register services
+
 To start off, add the appropriate `using` statement to the file.
 
 ```cs

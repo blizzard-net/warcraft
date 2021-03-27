@@ -18,8 +18,6 @@ namespace ArgentPonyWarcraftClient.Integration.Tests
         private static readonly HttpClient _client;
 
         private readonly ClientCredentials _credentials;
-        private readonly Region _region;
-        private readonly Locale _locale;
 
         private OAuthAccessToken _token;
         private DateTimeOffset _tokenExpiration;

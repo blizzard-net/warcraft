@@ -44,10 +44,10 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         {
             ITechTalentApi client = ClientFactory.BuildClient();
 
-            RequestResult<TechTalent> result = await client.GetTechTalentAsync(812, "static-us");
+            RequestResult<TechTalent> result = await client.GetTechTalentAsync(863, "static-us");
 
             await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent/812?namespace=static-us&locale=en_US");
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]
@@ -55,10 +55,10 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         {
             ITechTalentApi client = ClientFactory.BuildClient();
 
-            RequestResult<TechTalentMedia> result = await client.GetTechTalentMediaAsync(1006, "static-us");
+            RequestResult<TechTalentMedia> result = await client.GetTechTalentMediaAsync(1612, "static-us");
 
             await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/tech-talent/1006?namespace=static-us&locale=en_US");
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-us&locale=en_US");
         }
     }
 }
