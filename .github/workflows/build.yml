@@ -36,3 +36,18 @@ jobs:
         path: |
           artifacts/*.nupkg
           artifacts/*.snupkg
+
+    - name: Push NuGet packages to NuGet
+      if: ${{ startsWith(github.ref, 'refs/tags/v') }} # Only for a tag
+      run: dotnet nuget push "artifacts/*.nupkg" --skip-duplicate --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
+
+    - name: Create GitHub Release
+      if: ${{ startsWith(github.ref, 'refs/tags/v') }} # Only for a tag
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
