@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Argent Pony Warcraft Client',
   tagline: 'A .NET client for the Blizzard World of Warcraft APIs',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://blizzard-net.github.io/warcraft',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
