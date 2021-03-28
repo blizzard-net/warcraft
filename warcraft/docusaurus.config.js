@@ -2,11 +2,11 @@
 module.exports = {
   title: 'Argent Pony Warcraft Client',
   tagline: 'A .NET client for the Blizzard World of Warcraft APIs',
-  url: 'https://blizzard-net.github.io/warcraft',
-  baseUrl: '/',
+  url: 'https://blizzard-net.github.io',
+  baseUrl: '/warcraft/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: '../img/favicon.ico',
   organizationName: 'blizzard-net', // Usually your GitHub org/user name.
   projectName: 'warcraft', // Usually your repo name.
   themeConfig: {
@@ -14,7 +14,7 @@ module.exports = {
       title: 'Argent Pony Warcraft Client',
       logo: {
         alt: 'Argent Pony Warcraft Client Logo',
-        src: 'img/ArgentPony.png',
+        src: '../img/ArgentPony.png',
       },
       items: [
         {
