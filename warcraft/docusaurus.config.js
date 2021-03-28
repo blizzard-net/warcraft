@@ -1,19 +1,19 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Argent Pony Warcraft Client',
+  tagline: 'A .NET client for the Blizzard World of Warcraft APIs',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'blizzard-net', // Usually your GitHub org/user name.
+  projectName: 'warcraft', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Argent Pony Warcraft Client',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Argent Pony Warcraft Client Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -25,7 +25,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/blizzard-net/warcraft',
           label: 'GitHub',
           position: 'right',
         },
@@ -69,12 +69,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/blizzard-net/warcraft',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Argent Pony Warcraft Client contributors`,
     },
   },
   presets: [
@@ -85,13 +85,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/blizzard-net/warcraft/edit/documentation/warcraft/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/blizzard-net/warcraft/edit/documentation/warcraft/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
