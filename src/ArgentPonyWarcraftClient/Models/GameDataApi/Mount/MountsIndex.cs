@@ -1,34 +1,22 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// An index of mounts.
     /// </summary>
-    public record MountsIndex
+    public class MountsIndex
     {
         /// <summary>
         /// Gets links for the index of mounts.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets references to the mounts.
         /// </summary>
         [JsonPropertyName("mounts")]
-        public MountReference[] Mounts { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MountsIndex"/> class.
-        /// </summary>
-        /// <param name="links">Links for the index of mounts.</param>
-        /// <param name="mounts">References to the mounts.</param>
-        [JsonConstructor]
-        public MountsIndex(Links links, MountReference[] mounts)
-        {
-            Links = links;
-            Mounts = mounts;
-        }
+        public MountReference[] Mounts { get; set; }
     }
 }

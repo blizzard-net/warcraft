@@ -1,42 +1,28 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A reference to a reputation tier.
     /// </summary>
-    public record ReputationTierReference
+    public class ReputationTierReference
     {
         /// <summary>
         /// Gets the key for the reputation tier.
         /// </summary>
         [JsonPropertyName("key")]
-        public Self Key { get; }
+        public Self Key { get; set; }
 
         /// <summary>
         /// Gets the ID of the reputation tier.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the reputation tier.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ReputationTierReference"/> class.
-        /// </summary>
-        /// <param name="key">The key for the reputation tier.</param>
-        /// <param name="id">The ID of the reputation tier.</param>
-        /// <param name="name">The name of the reputation tier.</param>
-        [JsonConstructor]
-        public ReputationTierReference(Self key, int id, string name)
-        {
-            Key = key;
-            Id = id;
-            Name = name;
-        }
+        public string Name { get; set; }
     }
 }

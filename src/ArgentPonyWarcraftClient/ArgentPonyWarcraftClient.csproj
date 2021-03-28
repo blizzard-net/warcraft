@@ -1,8 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
     <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Game Data and Profile APIs</Description>
     <Title>Argent Pony Warcraft Client</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard</PackageTags>

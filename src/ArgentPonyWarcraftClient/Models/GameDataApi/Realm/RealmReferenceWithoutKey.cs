@@ -1,42 +1,28 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A reference to a realm.
     /// </summary>
-    public record RealmReferenceWithoutKey
+    public class RealmReferenceWithoutKey
     {
         /// <summary>
         /// Gets the name of the realm.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets the ID of the realm.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a slug for the realm.
         /// </summary>
         [JsonPropertyName("slug")]
-        public string Slug { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="RealmReferenceWithoutKey"/> class.
-        /// </summary>
-        /// <param name="name">The name of the realm.</param>
-        /// <param name="id">The ID of the realm.</param>
-        /// <param name="slug">A slug for the realm.</param>
-        [JsonConstructor]
-        public RealmReferenceWithoutKey(string name, int id, string slug)
-        {
-            Name = name;
-            Id = id;
-            Slug = slug;
-        }
+        public string Slug { get; set; }
     }
 }

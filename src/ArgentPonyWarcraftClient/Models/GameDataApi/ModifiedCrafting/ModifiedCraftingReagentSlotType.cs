@@ -1,50 +1,34 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A Modified Crafting reagent slot type.
     /// </summary>
-    public record ModifiedCraftingReagentSlotType
+    public class ModifiedCraftingReagentSlotType
     {
         /// <summary>
         /// Gets links for the Modified Crafting reagent slot type.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the Modified Crafting reagent slot type.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets a description of the Modified Crafting reagent slot type.
         /// </summary>
         [JsonPropertyName("description")]
-        public string Description { get; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Gets references to the Modified Crafting categories that are compatible with this reagent slot type.
         /// </summary>
         [JsonPropertyName("compatible_categories")]
-        public ModifiedCraftingCategoryReference[] CompatibleCategories { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ModifiedCraftingReagentSlotType"/> class.
-        /// </summary>
-        /// <param name="links">Links for the Modified Crafting reagent slot type.</param>
-        /// <param name="id">The ID of the Modified Crafting reagent slot type.</param>
-        /// <param name="description">A description of the Modified Crafting reagent slot type.</param>
-        /// <param name="compatibleCategories">References to the Modified Crafting categories that are compatible with this reagent slot type.</param>
-        [JsonConstructor]
-        public ModifiedCraftingReagentSlotType(Links links, int id, string description, ModifiedCraftingCategoryReference[] compatibleCategories)
-        {
-            Links = links;
-            Id = id;
-            Description = description;
-            CompatibleCategories = compatibleCategories;
-        }
+        public ModifiedCraftingCategoryReference[] CompatibleCategories { get; set; }
     }
 }

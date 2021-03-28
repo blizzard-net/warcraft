@@ -1,50 +1,34 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// RGBA color information.
     /// </summary>
-    public record ColorDetails
+    public class ColorDetails
     {
         /// <summary>
         /// Gets the red channel value for the color.
         /// </summary>
         [JsonPropertyName("r")]
-        public int Red { get; }
+        public int Red { get; set; }
 
         /// <summary>
         /// Gets the green channel value for the color.
         /// </summary>
         [JsonPropertyName("g")]
-        public int Green { get; }
+        public int Green { get; set; }
 
         /// <summary>
         /// Gets the blue channel value for the color.
         /// </summary>
         [JsonPropertyName("b")]
-        public int Blue { get; }
+        public int Blue { get; set; }
 
         /// <summary>
         /// Gets the alpha (opacity) channel value for the color.
         /// </summary>
         [JsonPropertyName("a")]
-        public float Alpha { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ColorDetails"/> class.
-        /// </summary>
-        /// <param name="red">The red channel value for the color.</param>
-        /// <param name="green">The green channel value for the color.</param>
-        /// <param name="blue">The blue channel value for the color.</param>
-        /// <param name="alpha">The alpha (opacity) channel value for the color.</param>
-        [JsonConstructor]
-        public ColorDetails(int red, int green, int blue, float alpha)
-        {
-            Red = red;
-            Green = green;
-            Blue = blue;
-            Alpha = alpha;
-        }
+        public float Alpha { get; set; }
     }
 }

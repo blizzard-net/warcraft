@@ -1,42 +1,28 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A power type.
     /// </summary>
-    public record PowerType
+    public class PowerType
     {
         /// <summary>
         /// Gets links for the power type.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; }
+        public Links Links { get; set; }
 
         /// <summary>
         /// Gets the ID of the power type.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the name of the power type.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PowerType"/> class.
-        /// </summary>
-        /// <param name="links">Links for the power type.</param>
-        /// <param name="id">The ID of the power type.</param>
-        /// <param name="name">The name of the power type.</param>
-        [JsonConstructor]
-        public PowerType(Links links, int id, string name)
-        {
-            Links = links;
-            Id = id;
-            Name = name;
-        }
+        public string Name { get; set; }
     }
 }

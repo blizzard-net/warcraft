@@ -1,258 +1,190 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// An equipped item.
     /// </summary>
-    public record EquippedItem
+    public class EquippedItem
     {
         /// <summary>
         /// Gets a reference to the item.
         /// </summary>
         [JsonPropertyName("item")]
-        public ItemReferenceWithoutName Item { get; }
+        public ItemReferenceWithoutName Item { get; set; }
 
         /// <summary>
         /// Gets the slot in which the item is equipped.
         /// </summary>
         [JsonPropertyName("slot")]
-        public EnumType Slot { get; }
+        public EnumType Slot { get; set; }
 
         /// <summary>
         /// Gets the quantity of the item.
         /// </summary>
         [JsonPropertyName("quantity")]
-        public int Quantity { get; }
+        public int Quantity { get; set; }
 
         /// <summary>
         /// Gets the context of the item.
         /// </summary>
         [JsonPropertyName("context")]
-        public int? Context { get; }
+        public int? Context { get; set; }
 
         /// <summary>
         /// Gets the IDs of bonuses for the item.
         /// </summary>
         [JsonPropertyName("bonus_list")]
-        public int[] BonusList { get; }
+        public int[] BonusList { get; set; }
 
         /// <summary>
         /// Gets the quality of the item.
         /// </summary>
         [JsonPropertyName("quality")]
-        public EnumType Quality { get; }
+        public EnumType Quality { get; set; }
 
         /// <summary>
         /// Gets the name of the item.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets the azerite details for the item.
         /// </summary>
         [JsonPropertyName("azerite_details")]
-        public AzeriteDetails AzeriteDetails { get; }
+        public AzeriteDetails AzeriteDetails { get; set; }
 
         /// <summary>
         /// Gets a reference to the item media.
         /// </summary>
         [JsonPropertyName("media")]
-        public ItemMediaReference Media { get; }
+        public ItemMediaReference Media { get; set; }
 
         /// <summary>
         /// Gets a reference to the item class.
         /// </summary>
         [JsonPropertyName("item_class")]
-        public ItemClassReference ItemClass { get; }
+        public ItemClassReference ItemClass { get; set; }
 
         /// <summary>
         /// Gets a reference to the item subclass.
         /// </summary>
         [JsonPropertyName("item_subclass")]
-        public ItemSubclassReference ItemSubclass { get; }
+        public ItemSubclassReference ItemSubclass { get; set; }
 
         /// <summary>
         /// Gets the inventory type.
         /// </summary>
         [JsonPropertyName("inventory_type")]
-        public EnumType InventoryType { get; }
+        public EnumType InventoryType { get; set; }
 
         /// <summary>
         /// Gets the binding type.
         /// </summary>
         [JsonPropertyName("binding")]
-        public EnumType Binding { get; }
+        public EnumType Binding { get; set; }
 
         /// <summary>
         /// Gets the armor details for the item.
         /// </summary>
         [JsonPropertyName("armor")]
-        public Armor Armor { get; }
+        public Armor Armor { get; set; }
 
         /// <summary>
         /// Gets the statistics for the item.
         /// </summary>
         [JsonPropertyName("stats")]
-        public Stat[] Stats { get; }
+        public Stat[] Stats { get; set; }
 
         /// <summary>
         /// Gets the requirements for using the item.
         /// </summary>
         [JsonPropertyName("requirements")]
-        public Requirements Requirements { get; }
+        public Requirements Requirements { get; set; }
 
         /// <summary>
         /// Gets the item level.
         /// </summary>
         [JsonPropertyName("level")]
-        public DescribedValue Level { get; }
+        public DescribedValue Level { get; set; }
 
         /// <summary>
         /// Gets the transmogrification details for the item.
         /// </summary>
         [JsonPropertyName("transmog")]
-        public Transmog Transmog { get; }
+        public Transmog Transmog { get; set; }
 
         /// <summary>
         /// Gets the durability of the item.
         /// </summary>
         [JsonPropertyName("durability")]
-        public DescribedValue Durability { get; }
+        public DescribedValue Durability { get; set; }
 
         /// <summary>
         /// Gets a unique-equipped indication.
         /// </summary>
         [JsonPropertyName("unique_equipped")]
-        public string UniqueEquipped { get; }
+        public string UniqueEquipped { get; set; }
 
         /// <summary>
         /// Gets the spell effects for the item.
         /// </summary>
         [JsonPropertyName("spells")]
-        public ItemSpell[] Spells { get; }
+        public ItemSpell[] Spells { get; set; }
 
         /// <summary>
         /// Gets a description of the item.
         /// </summary>
         [JsonPropertyName("description")]
-        public string Description { get; }
+        public string Description { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the item subclass is hidden.
         /// </summary>
         [JsonPropertyName("is_subclass_hidden")]
-        public bool? IsSubclassHidden { get; }
+        public bool? IsSubclassHidden { get; set; }
 
         /// <summary>
         /// Gets the sell price of the item.
         /// </summary>
         [JsonPropertyName("sell_price")]
-        public SellPrice SellPrice { get; }
+        public SellPrice SellPrice { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the item is corrupted.
         /// </summary>
         [JsonPropertyName("is_corrupted")]
-        public bool? IsCorrupted { get; }
+        public bool? IsCorrupted { get; set; }
 
         /// <summary>
         /// Gets a name description modifier for the item.
         /// </summary>
         [JsonPropertyName("name_description")]
-        public NameDescription NameDescription { get; }
+        public NameDescription NameDescription { get; set; }
 
         /// <summary>
         /// Gets the modified appearance ID for the item.
         /// </summary>
         [JsonPropertyName("modified_appearance_id")]
-        public int? ModifiedAppearanceId { get; }
+        public int? ModifiedAppearanceId { get; set; }
 
         /// <summary>
         /// Gets the item sockets.
         /// </summary>
         [JsonPropertyName("sockets")]
-        public Socket[] Sockets { get; }
+        public Socket[] Sockets { get; set; }
 
         /// <summary>
         /// Gets the enchantment of the item.
         /// </summary>
         [JsonPropertyName("enchantments")]
-        public Enchantment[] Enchantments { get; }
+        public Enchantment[] Enchantments { get; set; }
 
         /// <summary>
         /// Gets weapon details for the item.
         /// </summary>
         [JsonPropertyName("weapon")]
-        public Weapon Weapon { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="EquippedItem"/> class.
-        /// </summary>
-        /// <param name="item">A reference to the item.</param>
-        /// <param name="slot">The slot in which the item is equipped.</param>
-        /// <param name="quantity">The quantity of the item.</param>
-        /// <param name="context">The context of the item.</param>
-        /// <param name="bonusList">The IDs of bonuses for the item.</param>
-        /// <param name="quality">The quality of the item.</param>
-        /// <param name="name">The name of the item.</param>
-        /// <param name="azeriteDetails">The azerite details for the item.</param>
-        /// <param name="media">A reference to the item media.</param>
-        /// <param name="itemClass">A reference to the item class.</param>
-        /// <param name="itemSubclass">A reference to the item subclass.</param>
-        /// <param name="inventoryType">The inventory type.</param>
-        /// <param name="binding">The binding type.</param>
-        /// <param name="armor">The armor details for the item.</param>
-        /// <param name="stats">The statistics for the item.</param>
-        /// <param name="requirements">The requirements for using the item.</param>
-        /// <param name="level">The item level.</param>
-        /// <param name="transmog">The transmogrification details for the item.</param>
-        /// <param name="durability">The durability of the item.</param>
-        /// <param name="uniqueEquipped">A unique-equipped indication.</param>
-        /// <param name="spells">The spell effects for the item.</param>
-        /// <param name="description">A description of the item.</param>
-        /// <param name="isSubclassHidden">A value indicating whether the item subclass is hidden.</param>
-        /// <param name="sellPrice">The sell price of the item.</param>
-        /// <param name="isCorrupted">A value indicating whether the item is corrupted.</param>
-        /// <param name="nameDescription">A name description modifier for the item.</param>
-        /// <param name="modifiedAppearanceId">The modified appearance ID for the item.</param>
-        /// <param name="sockets">The item sockets.</param>
-        /// <param name="enchantments">The enchantment of the item.</param>
-        /// <param name="weapon">Weapon details for the item.</param>
-        [JsonConstructor]
-        public EquippedItem(ItemReferenceWithoutName item, EnumType slot, int quantity, int? context, int[] bonusList, EnumType quality, string name, AzeriteDetails azeriteDetails, ItemMediaReference media, ItemClassReference itemClass, ItemSubclassReference itemSubclass, EnumType inventoryType, EnumType binding, Armor armor, Stat[] stats, Requirements requirements, DescribedValue level, Transmog transmog, DescribedValue durability, string uniqueEquipped, ItemSpell[] spells, string description, bool? isSubclassHidden, SellPrice sellPrice, bool? isCorrupted, NameDescription nameDescription, int? modifiedAppearanceId, Socket[] sockets, Enchantment[] enchantments, Weapon weapon)
-        {
-            Item = item;
-            Slot = slot;
-            Quantity = quantity;
-            Context = context;
-            BonusList = bonusList;
-            Quality = quality;
-            Name = name;
-            AzeriteDetails = azeriteDetails;
-            Media = media;
-            ItemClass = itemClass;
-            ItemSubclass = itemSubclass;
-            InventoryType = inventoryType;
-            Binding = binding;
-            Armor = armor;
-            Stats = stats;
-            Requirements = requirements;
-            Level = level;
-            Transmog = transmog;
-            Durability = durability;
-            UniqueEquipped = uniqueEquipped;
-            Spells = spells;
-            Description = description;
-            IsSubclassHidden = isSubclassHidden;
-            SellPrice = sellPrice;
-            IsCorrupted = isCorrupted;
-            NameDescription = nameDescription;
-            ModifiedAppearanceId = modifiedAppearanceId;
-            Sockets = sockets;
-            Enchantments = enchantments;
-            Weapon = weapon;
-        }
+        public Weapon Weapon { get; set; }
     }
 }

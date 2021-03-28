@@ -1,58 +1,40 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
 {
     /// <summary>
     /// A stage of an encounter in a dungeon or raid.
     /// </summary>
-    public record EncounterSection
+    public class EncounterSection
     {
         /// <summary>
         /// Gets the ID of the section.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets the title of the section.
         /// </summary>
         [JsonPropertyName("title")]
-        public string Title { get; }
+        public string Title { get; set; }
 
         /// <summary>
         /// Gets the body text that describes this section of the encounter.
         /// </summary>
         [JsonPropertyName("body_text")]
-        public string BodyText { get; }
+        public string BodyText { get; set; }
 
         /// <summary>
         /// Gets the media associated with this section.
         /// </summary>
         [JsonPropertyName("creature_display")]
-        public Media CreatureDisplay { get; }
+        public Media CreatureDisplay { get; set; }
 
         /// <summary>
         /// Gets any child sections within this section.
         /// </summary>
         [JsonPropertyName("sections")]
-        public EncounterSection[] Sections { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="EncounterSection"/> class.
-        /// </summary>
-        /// <param name="id">The ID of the section.</param>
-        /// <param name="title">The title of the section.</param>
-        /// <param name="bodyText">The body text that describes this section of the encounter.</param>
-        /// <param name="creatureDisplay">The media associated with this section.</param>
-        /// <param name="sections">Any child sections within this section.</param>
-        [JsonConstructor]
-        public EncounterSection(int id, string title, string bodyText, Media creatureDisplay, EncounterSection[] sections)
-        {
-            Id = id;
-            Title = title;
-            BodyText = bodyText;
-            CreatureDisplay = creatureDisplay;
-            Sections = sections;
-        }
+        public EncounterSection[] Sections { get; set; }
     }
 }
