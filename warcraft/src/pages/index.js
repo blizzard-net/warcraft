@@ -9,31 +9,28 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/warcraft-logo.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Easily access information about World of Warcraft characters, guilds, items, spells, and more.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Broad .NET Support',
+    imageUrl: 'img/microsoft-dotnet.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Works with .NET Core 2.0+ and .NET 5.  Still on .NET Framework? Works with .NET Framework 4.6.1+.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Great Coverage',
+    imageUrl: 'img/battle-net-logo.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Covers the vast majority of the available Game Data and Profile APIs for World of Warcraft.
       </>
     ),
   },
