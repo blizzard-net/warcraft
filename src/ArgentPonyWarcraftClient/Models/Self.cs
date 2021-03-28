@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.Json.Serialization;
 
 namespace ArgentPonyWarcraftClient
@@ -6,12 +6,22 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A self-reference.
     /// </summary>
-    public class Self
+    public record Self
     {
         /// <summary>
         /// Gets a URI for retrieving the data for this object.
         /// </summary>
         [JsonPropertyName("href")]
-        public Uri Href { get; set; }
+        public Uri Href { get; }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Self"/> class.
+        /// </summary>
+        /// <param name="href">A URI for retrieving the data for this object.</param>
+        [JsonConstructor]
+        public Self(Uri href)
+        {
+            Href = href;
+        }
     }
 }
