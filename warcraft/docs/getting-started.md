@@ -1,28 +1,21 @@
 ---
 title: Getting Started
-slug: /
 ---
 
-## Step 1: Generate a new Docusaurus site
+## Installing via NuGet
 
-If you haven't already, generate a new Docusaurus site using the classic template:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Step 2: Start your Docusaurus site
-
-Run the development server in the newly created `my-website` folder:
+Install the [ArgentPonyWarcraftClient](https://www.nuget.org/packages/ArgentPonyWarcraftClient) package from the NuGet Package Manager in Visual Studio or by running the following command from the Package Manager Console:
 
 ```shell
-cd my-website
-
-npx docusaurus start
+Install-Package ArgentPonyWarcraftClient
 ```
 
-Open `docs/getting-started.md` and edit some lines. The site reloads automatically and display your changes.
+## Optional Dependency Injection Support
 
-## That's it!
+If you'd like to use dependency injection, install the [ArgentPonyWarcraftClient.Extensions.DependencyInjection](https://www.nuget.org/packages/ArgentPonyWarcraftClient.Extensions.DependencyInjection) package from the NuGet Package Manager in Visual Studio or by running the following command from the Package Manager Console:
 
-Congratulations! You've successfully run and modified your Docusaurus project.
+```shell
+Install-Package ArgentPonyWarcraftClient.Extensions.DependencyInjection
+```
+
+To learn more about dependency injection support, see [Dependency injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) in the .NET fundamentals documentation and the [Dependency Injection](./dependency-injection) topic later in the tutorial.
