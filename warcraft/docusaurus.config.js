@@ -14,7 +14,7 @@ module.exports = {
       title: 'Argent Pony Warcraft Client',
       logo: {
         alt: 'Argent Pony Warcraft Client Logo',
-        src: 'img/logo.svg',
+        src: 'img/ArgentPony.png',
       },
       items: [
         {
