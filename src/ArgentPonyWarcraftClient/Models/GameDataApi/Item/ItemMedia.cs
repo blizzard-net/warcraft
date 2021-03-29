@@ -5,24 +5,24 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// Item media.
     /// </summary>
-    public class ItemMedia
+    public record ItemMedia
     {
         /// <summary>
         /// Gets links for the achievement media.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; set; }
+        public Links Links { get; init; }
 
         /// <summary>
         /// Gets a collection of media assets.
         /// </summary>
         [JsonPropertyName("assets")]
-        public Asset[] Assets { get; set; }
+        public Asset[] Assets { get; init; }
 
         /// <summary>
         /// Gets the ID of the item.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; set; }
+        public int Id { get; init; }
     }
 }

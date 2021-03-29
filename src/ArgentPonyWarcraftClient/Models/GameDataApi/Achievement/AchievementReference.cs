@@ -5,24 +5,24 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A reference to any achievement.
     /// </summary>
-    public class AchievementReference
+    public record AchievementReference
     {
         /// <summary>
         /// Gets the key for this achievement.
         /// </summary>
         [JsonPropertyName("key")]
-        public Self Key { get; set; }
+        public Self Key { get; init; }
 
         /// <summary>
         /// Gets the name of this achievement.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string Name { get; init; }
 
         /// <summary>
         /// Gets the ID of this achievement.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; set; }
+        public int Id { get; init; }
     }
 }

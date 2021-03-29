@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// An index of reputation tiers.
     /// </summary>
-    public class ReputationTiersIndex
+    public record ReputationTiersIndex
     {
         /// <summary>
         /// Gets links for the index of reputation tiers.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; set; }
+        public Links Links { get; init; }
 
         /// <summary>
         /// Gets references to the reputation tiers.
         /// </summary>
         [JsonPropertyName("reputation_tiers")]
-        public ReputationTierReference[] ReputationTiers { get; set; }
+        public ReputationTierReference[] ReputationTiers { get; init; }
     }
 }

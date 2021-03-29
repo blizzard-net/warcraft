@@ -5,24 +5,24 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A guild roster.
     /// </summary>
-    public class GuildRoster
+    public record GuildRoster
     {
         /// <summary>
         /// Gets links for the guild roster.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; set; }
+        public Links Links { get; init; }
 
         /// <summary>
         /// Gets a reference to the guild.
         /// </summary>
         [JsonPropertyName("guild")]
-        public GuildReference Guild { get; set; }
+        public GuildReference Guild { get; init; }
 
         /// <summary>
         /// Gets the guild members.
         /// </summary>
         [JsonPropertyName("members")]
-        public GuildMember[] Members { get; set; }
+        public GuildMember[] Members { get; init; }
     }
 }

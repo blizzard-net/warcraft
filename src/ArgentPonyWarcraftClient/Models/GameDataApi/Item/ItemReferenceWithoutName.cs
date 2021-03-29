@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A reference to an item.
     /// </summary>
-    public class ItemReferenceWithoutName
+    public record ItemReferenceWithoutName
     {
         /// <summary>
         /// Gets the key for the item.
         /// </summary>
         [JsonPropertyName("key")]
-        public Self Key { get; set; }
+        public Self Key { get; init; }
 
         /// <summary>
         /// Gets the ID of the item.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; set; }
+        public int Id { get; init; }
     }
 }

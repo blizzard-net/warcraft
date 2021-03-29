@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A character statistic.
     /// </summary>
-    public class PrimaryStatistic
+    public record PrimaryStatistic
     {
         /// <summary>
         /// Gets the base statistic.
         /// </summary>
         [JsonPropertyName("base")]
-        public int Base { get; set; }
+        public int Base { get; init; }
 
         /// <summary>
         /// Gets the effective statistic.
         /// </summary>
         [JsonPropertyName("effective")]
-        public int Effective { get; set; }
+        public int Effective { get; init; }
     }
 }

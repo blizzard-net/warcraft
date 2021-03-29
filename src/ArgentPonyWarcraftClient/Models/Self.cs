@@ -6,12 +6,12 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A self-reference.
     /// </summary>
-    public class Self
+    public record Self
     {
         /// <summary>
         /// Gets a URI for retrieving the data for this object.
         /// </summary>
         [JsonPropertyName("href")]
-        public Uri Href { get; set; }
+        public Uri Href { get; init; }
     }
 }

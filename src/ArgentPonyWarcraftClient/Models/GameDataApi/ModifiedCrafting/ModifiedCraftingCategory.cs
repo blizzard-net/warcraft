@@ -5,24 +5,24 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A Modified Crafting category.
     /// </summary>
-    public class ModifiedCraftingCategory
+    public record ModifiedCraftingCategory
     {
         /// <summary>
         /// Gets links for the Modified Crafting category.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; set; }
+        public Links Links { get; init; }
 
         /// <summary>
         /// Gets the ID of the Modified Crafting category.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; set; }
+        public int Id { get; init; }
 
         /// <summary>
         /// Gets the name of the Modified Crafting category.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string Name { get; init; }
     }
 }

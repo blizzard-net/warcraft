@@ -5,12 +5,12 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A background.
     /// </summary>
-    public class Background
+    public record Background
     {
         /// <summary>
         /// Gets the background color.
         /// </summary>
         [JsonPropertyName("color")]
-        public Color Color { get; set; }
+        public Color Color { get; init; }
     }
 }
