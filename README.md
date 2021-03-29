@@ -70,7 +70,7 @@ dotnet run
 ```
 
 The console output displays the profile data that was retrieved from the Blizzard Character Profile API.
-The library supports many other APIS, too.
+The library supports many other APIs, too.
 
 ```shell
 Level for Drinian: 60
