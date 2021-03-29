@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Easy to Use',
-    imageUrl: '../img/warcraft-logo.svg',
+    imageUrl: 'img/warcraft-logo.svg',
     description: (
       <>
         Easily access information about World of Warcraft characters, guilds, items, spells, and more.
@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: 'Broad .NET Support',
-    imageUrl: '../img/microsoft-dotnet.svg',
+    imageUrl: 'img/microsoft-dotnet.svg',
     description: (
       <>
         Works with .NET Core 2.0+ and .NET 5.  Still on .NET Framework? Works with .NET Framework 4.6.1+.
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: 'Great Coverage',
-    imageUrl: '../img/battle-net-logo.svg',
+    imageUrl: 'img/battle-net-logo.svg',
     description: (
       <>
         Covers the vast majority of the available Game Data and Profile APIs for World of Warcraft.
