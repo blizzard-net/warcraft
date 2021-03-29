@@ -1,13 +1,33 @@
-# Argent Squire Warcraft Client Documentation
+# Website
 
-This is the **documentation** branch of the Argent Squire Warcraft client.
-It includes documentation based on [Docusaurus](https://docusaurus.io/).
-Updates to this branch are deployed to the **gh-pages** branch via the [documentation](https://github.com/blizzard-net/warcraft/actions/workflows/documentation.yml) GitHub Actions workflow.
-See the [Deploying to GitHub Pages](https://docusaurus.io/docs/deployment#deploying-to-github-pages) section of the Docusaurus documentation for additional details on how this works.
+This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-To run the website locally, install Node.js and Yarn as described in the [Requirements](https://docusaurus.io/docs/installation#requirements) section of the Docusarus docs, then run the website from the **warcraft** subfolder:
+## Installation
 
-```bash
-cd warcraft
-npm run start
+```console
+yarn install
 ```
+
+## Local Development
+
+```console
+yarn start
+```
+
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
