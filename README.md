@@ -51,7 +51,7 @@ namespace QuickStart
             RequestResult<CharacterProfileSummary> result =
                 await warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
 
-            // If we got it, display the faction.
+            // If we got it, display the level.
             if (result.Success)
             {
                 CharacterProfileSummary profile = result.Value;
