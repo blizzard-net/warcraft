@@ -77,13 +77,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/blizzard-net/warcraft/edit/documentation/warcraft/',
+            'https://github.com/blizzard-net/warcraft/edit/documentation/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/blizzard-net/warcraft/edit/documentation/warcraft/blog/',
+            'https://github.com/blizzard-net/warcraft/edit/documentation/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
