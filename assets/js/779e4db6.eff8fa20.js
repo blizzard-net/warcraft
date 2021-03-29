@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{84:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"New Docs","permalink":"/warcraft/blog/new-docs"}]}')}}]);

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Argent Pony Warcraft Client Blog</title>
+        <link>https://blizzard-net.github.io/blog</link>
+        <description>Argent Pony Warcraft Client Blog</description>
+        <lastBuildDate>Sat, 27 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[New Docs]]></title>
+            <link>https://blizzard-net.github.io/warcraft/blog/new-docs</link>
+            <guid>new-docs</guid>
+            <pubDate>Sat, 27 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Blizzard World of Warcraft APIs expose a lot of information, which means the Argent Pony Warcraft Client has many classes to work with.]]></description>
+        </item>
+    </channel>
+</rss>
