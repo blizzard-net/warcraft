@@ -6,167 +6,72 @@ The Argent Pony Warcraft Client is a .NET client for the [Blizzard World of Warc
 [![build](https://github.com/blizzard-net/warcraft/actions/workflows/build.yml/badge.svg)](https://github.com/blizzard-net/warcraft/actions/workflows/build.yml)
 [![CodeQL](https://github.com/blizzard-net/warcraft/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/blizzard-net/warcraft/actions/workflows/codeql-analysis.yml)
 
-## Prerequisites
+## Documentation
 
-All users of the Blizzard World of Warcraft Game Data and Profile APIs must have a Battle.net account and a client ID.  Follow Blizzard's [Getting Started](https://develop.battle.net/documentation/guides/getting-started) instructions.
+Documentation is available at [https://blizzard-net.github.io/warcraft/](https://blizzard-net.github.io/warcraft/)
 
-## Installing via NuGet
+- [Introduction](https://blizzard-net.github.io/warcraft/docs/)
+- [Getting Started](https://blizzard-net.github.io/warcraft/docs/getting-started)
+- [Using the Library](https://blizzard-net.github.io/warcraft/docs/usage)
+- [Dependency Injection](https://blizzard-net.github.io/warcraft/docs/dependency-injection)
 
-You can install the **ArgentPonyWarcraftClient** package from the NuGet Package Manager in Visual Studio or by running the following command from the Package Manager Console:
+## Quick Start
+
+Create a new Console Application in Visual Studio or via [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new).
 
 ```shell
-Install-Package ArgentPonyWarcraftClient
+dotnet new console --name QuickStart
 ```
 
-## Using the Argent Pony Warcraft Client
+Add the [ArgentPonyWarcraftClient](https://www.nuget.org/packages/ArgentPonyWarcraftClient) NuGet package to the project:
 
-Assuming you're working in C#, add the appropriate `using` statement to reference the library:
+```shell
+dotnet add QuickStart package ArgentPonyWarcraftClient
+```
+
+Update **Program.cs** in the new project as follows, subsituting your own client ID and secret from Blizzard's [Getting Started](https://develop.battle.net/documentation/guides/getting-started) instructions:
 
 ```cs
+using System;
+using System.Threading.Tasks;
 using ArgentPonyWarcraftClient;
-```
 
-Instantiate a `WarcraftClient` with the the client ID and client secret that you registered for in the **Prerequisites** step.  For simplicity, these values are stored in the source code in the example below.  You should instead use the configuration API for your .NET platform to store the key securely.  For example, ASP.NET Core developers should read [Configuration in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration).
-
-```cs
-string clientId = "MY-CLIENT-ID-GOES-HERE";
-string clientSecret = "MY-CLIENT-SECRET-GOES-HERE";
-var warcraftClient = new WarcraftClient(clientId, clientSecret);
-```
-
-You can optionally specify the region and locale to use when calling the `WarcraftClient` constructor.  If you omit these parameters, it will default to `Region.US` and `"Locale.en_US"`.  Each method on `WarcraftClient` also has an overload that allows you to override these default values for the current call.
-
-```cs
-var warcraftClient = new WarcraftClient(clientId, clientSecret, Region.US, "Locale.en_US");
-```
-
-Once you have your `WarcraftClient` instance, you can start asking for data.  All methods are asynchronous.  Here's an example for retrieving a character:
-
-```cs
-RequestResult<CharacterProfileSummary> result = await warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
-```
-
-This will retrieve the summary for a character named Drinian from the realm Norgannon.
-
-Each request is wrapped in the `RequestResult<T>` class. Which has the following properties.
-
-* Value (The generic type argument)
-* Error (RequestError class)
-  * Code (The HTTP status code)
-  * Type (The HTTP status code description)
-  * Detail (The details of why the request failed)
-* Success (bool)
-
-A proper method call could look like this.
-
-```cs
-RequestResult<CharacterProfileSummary> result = await warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
-
-if (result.Success)
+namespace QuickStart
 {
-    CharacterProfileSummary character = result.Value;
-    Console.WriteLine("Character Name: " + character.Name);
-    Console.WriteLine("Character Level: " + character.Level);
-}
-else
-{
-    RequestError error = result.Error;
-    Console.WriteLine("HTTP Status Code: " + error.Code);
-    Console.WriteLine("HTTP Status Description: " + error.Type);
-    Console.WriteLine("Details: " + error.Detail);
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            // Secrets from https://develop.battle.net/documentation/guides/getting-started.
+            string clientId = "MY-CLIENT-ID-GOES-HERE";
+            string clientSecret = "MY-CLIENT-SECRET-GOES-HERE";
+            var warcraftClient = new WarcraftClient(clientId, clientSecret);
+
+            // Retrieve the character profile for Drinian of realm Norgannon.
+            RequestResult<CharacterProfileSummary> result =
+                await warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
+
+            // If we got it, display the faction.
+            if (result.Success)
+            {
+                CharacterProfileSummary profile = result.Value;
+                Console.WriteLine($"Level for {profile.Name}: {profile.Level}");
+            }
+        }
+    }
 }
 ```
 
-Take a look at the [ArgentPonyWarcraftClient.Tests](https://github.com/blizzard-net/warcraft/tree/master/tests/ArgentPonyWarcraftClient.Tests) project and the Blizzard World of Warcraft Game Data and Profile APIs documentation to learn more about what else you can do.
-
-## Using with Dependency Injection
-
-The Argent Pony Warcraft Client includes tools to make registering the various interfaces with the `IServiceCollection` in .NET Core applications a snap!
-
-### Installing dependency injection via NuGet
-
-You can install the ArgentPonyWarcraftClient.Extensions.DependencyInjection package from the NuGet Package Manager in Visual Studio or by running the following command from the Package Manager Console:
+Build and run the console application.
 
 ```shell
-Install-Package ArgentPonyWarcraftClient.Extensions.DependencyInjection
+cd QuickStart
+dotnet run
 ```
 
-### Register services
+The console output displays the profile data that was retrieved from the Blizzard Character Profile API.
+The library supports many other APIS, too.
 
-To start off, add the appropriate `using` statement to the file.
-
-```cs
-using ArgentPoneyWarcraftClient.Extensions.DependencyInjection;
-```
-
-Then use the `AddWarcraftClients()` method on the `IServiceCollection` instance. For example, in ASP.NET Core applications this would be in the `ConfigureServices()` method like so.
-
-```cs
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        string clientId = "MY-CLIENT-ID-GOES-HERE";
-        string clientSecret = "MY-CLIENT-SECRET-GOES-HERE";
-
-        services.AddWarcraftClients(clientId, clientSecret);
-    }
-}
-```
-
-Similar to directly instantiating the `WarcraftClient`, you also have the option to specify the locale and region you want to use.
-
-```cs
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
-    {
-        string clientId = "MY-CLIENT-ID-GOES-HERE";
-        string clientSecret = "MY-CLIENT-SECRET-GOES-HERE";
-
-        services.AddWarcraftClients(clientId, clientSecret, Region.Europe, Locale.en_GB);
-    }
-}
-```
-
-Once the services are registered with the container you can list them as dependencies for your controllers or services.
-
-```cs
-public class CharacterProfileController
-{
-    private readonly IWarcraftClient _warcraftClient;
-
-    public CharacterProfileController(IWarcraftClient warcraftClient)
-    {
-        _warcraftClient = warcraftClient;
-    }
-
-    public async Task<ActionResult> GetCharacterProfileSummary()
-    {
-        RequestResult<CharacterProfileSummary> result = await _warcraftClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
-
-        return Ok(result);
-    }
-}
-```
-
-In addition to registering the `IWarcraftClient`, it registers all of the discrete interfaces as well, such as the `IProfileApi` or `IAchievementApi`. This allows your component to depend only on the specific APIs you need.
-
-```cs
-public class CharacterProfileController
-{
-    private readonly ICharacterProfileApi _characterProfileClient;
-
-    public CharacterProfileController(ICharacterProfileApi characterProfileClient)
-    {
-        _characterProfileClient = characterProfileClient;
-    }
-
-    public async Task<ActionResult> GetCharacterProfileSummary()
-    {
-        RequestResult<CharacterProfileSummary> result = await _characterProfileClient.GetCharacterProfileSummaryAsync("norgannon", "drinian", "profile-us");
-
-        return Ok(result);
-    }
-}
+```shell
+Level for Drinian: 60
 ```
