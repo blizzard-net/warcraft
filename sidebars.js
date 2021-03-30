@@ -7,7 +7,8 @@ module.exports = {
         'introduction',
         'getting-started',
         'usage',
-        'dependency-injection'
+        'dependency-injection',
+        'resources'
       ],
     },
   ],
