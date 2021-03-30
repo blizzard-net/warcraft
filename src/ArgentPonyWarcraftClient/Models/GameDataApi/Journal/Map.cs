@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A map.
     /// </summary>
-    public class Map
+    public record Map
     {
         /// <summary>
         /// Gets the name of the map.
         /// </summary>
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string Name { get; init; }
 
         /// <summary>
         /// Gets the ID of the map.
         /// </summary>
         [JsonPropertyName("id")]
-        public int Id { get; set; }
+        public int Id { get; init; }
     }
 }

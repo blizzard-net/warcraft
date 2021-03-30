@@ -5,24 +5,24 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A specialization for a character.
     /// </summary>
-    public class CharacterSpecialization
+    public record CharacterSpecialization
     {
         /// <summary>
         /// Gets a reference to the playable specialization.
         /// </summary>
         [JsonPropertyName("specialization")]
-        public PlayableSpecializationReference Specialization { get; set; }
+        public PlayableSpecializationReference Specialization { get; init; }
 
         /// <summary>
         /// Gets the character's selected talents.
         /// </summary>
         [JsonPropertyName("talents")]
-        public TalentSelection[] Talents { get; set; }
+        public TalentSelection[] Talents { get; init; }
 
         /// <summary>
         /// Gets the PvP talent slots for the specialization.
         /// </summary>
         [JsonPropertyName("pvp_talent_slots")]
-        public PvpTalentSlot[] PvpTalentSlots { get; set; }
+        public PvpTalentSlot[] PvpTalentSlots { get; init; }
     }
 }

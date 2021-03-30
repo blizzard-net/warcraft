@@ -6,7 +6,7 @@ namespace ArgentPonyWarcraftClient
     ///     Represents a request made to the Blizzard API.
     /// </summary>
     /// <typeparam name="TValue"></typeparam>
-    public class RequestResult<TValue>
+    public record RequestResult<TValue>
     {
         /// <summary>
         ///    The requested object value from the Blizzard API.

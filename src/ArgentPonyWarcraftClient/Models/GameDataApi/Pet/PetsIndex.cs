@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// An index of pets.
     /// </summary>
-    public class PetsIndex
+    public record PetsIndex
     {
         /// <summary>
         /// Gets links for the index of pets.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; set; }
+        public Links Links { get; init; }
 
         /// <summary>
         /// Gets references to pets.
         /// </summary>
         [JsonPropertyName("pets")]
-        public PetReference[] Pets { get; set; }
+        public PetReference[] Pets { get; init; }
     }
 }

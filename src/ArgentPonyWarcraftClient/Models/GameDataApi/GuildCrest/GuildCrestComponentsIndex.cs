@@ -5,24 +5,24 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// An index of guild crest media.
     /// </summary>
-    public class GuildCrestComponentsIndex
+    public record GuildCrestComponentsIndex
     {
         /// <summary>
         /// Gets links for the index of guild crest media.
         /// </summary>
         [JsonPropertyName("_links")]
-        public Links Links { get; set; }
+        public Links Links { get; init; }
 
         /// <summary>
         /// Gets the guild crest emblems.
         /// </summary>
         [JsonPropertyName("emblems")]
-        public GuildCrestEmblem[] Emblems { get; set; }
+        public GuildCrestEmblem[] Emblems { get; init; }
 
         /// <summary>
         /// Gets the guild crest borders.
         /// </summary>
         [JsonPropertyName("borders")]
-        public GuildCrestBorder[] Borders { get; set; }
+        public GuildCrestBorder[] Borders { get; init; }
     }
 }

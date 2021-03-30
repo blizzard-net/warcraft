@@ -5,12 +5,12 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// A collection of links.
     /// </summary>
-    public class Links
+    public record Links
     {
         /// <summary>
         /// Gets a self-reference.
         /// </summary>
         [JsonPropertyName("self")]
-        public Self Self { get; set; }
+        public Self Self { get; init; }
     }
 }

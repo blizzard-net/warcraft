@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// An OAuth access token for the Blizzard API.
     /// </summary>
-    internal class OAuthAccessToken
+    internal record OAuthAccessToken
     {
         [JsonPropertyName("access_token")]
-        public string AccessToken { get; set; }
+        public string AccessToken { get; init; }
 
         [JsonPropertyName("token_type")]
-        public string TokenType { get; set; }
+        public string TokenType { get; init; }
 
         [JsonPropertyName("expires_in")]
-        public long ExpiresIn { get; set; }
+        public long ExpiresIn { get; init; }
 
         [JsonPropertyName("scope")]
-        public string Scope { get; set; }
+        public string Scope { get; init; }
     }
 }

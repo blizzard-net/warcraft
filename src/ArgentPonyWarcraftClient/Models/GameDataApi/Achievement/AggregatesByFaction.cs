@@ -5,18 +5,18 @@ namespace ArgentPonyWarcraftClient
     /// <summary>
     /// Achievement aggregates by faction.
     /// </summary>
-    public class AggregatesByFaction
+    public record AggregatesByFaction
     {
         /// <summary>
         /// Gets the aggregates for the Alliance.
         /// </summary>
         [JsonPropertyName("alliance")]
-        public FactionAchievementAggregates Alliance { get; set; }
+        public FactionAchievementAggregates Alliance { get; init; }
 
         /// <summary>
         /// Gets the aggregates for the Horde.
         /// </summary>
         [JsonPropertyName("horde")]
-        public FactionAchievementAggregates Horde { get; set; }
+        public FactionAchievementAggregates Horde { get; init; }
     }
 }
