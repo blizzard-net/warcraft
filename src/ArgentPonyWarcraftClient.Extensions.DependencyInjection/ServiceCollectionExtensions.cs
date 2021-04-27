@@ -57,7 +57,7 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection
                 "ArgentPonyWarcraftClient.WarcraftClient.HttpClient",
                 client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"))
             ).AddTypedClient(httpClient =>
-                new WarcraftClient(clientId, clientSecret, region, locale, httpClient)
+                new WarcraftClient(clientId, clientSecret, region, locale, httpClient, QueueManagerFactory.Instance)
             );
 
             services.AddTransientUsingServiceProvider<IWarcraftClient, WarcraftClient>()

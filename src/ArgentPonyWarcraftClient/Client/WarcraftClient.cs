@@ -14,6 +14,7 @@ namespace ArgentPonyWarcraftClient
         private static readonly JsonSerializerOptions s_jsonSerializerOptions;
 
         private readonly HttpClient _client;
+        private readonly IQueueManager _queueManager;
         private readonly string _clientId;
         private readonly string _clientSecret;
         private readonly Region _region;
@@ -54,7 +55,7 @@ namespace ArgentPonyWarcraftClient
         ///     Specifies the language that the result will be in. Visit
         ///     https://develop.battle.net/documentation/world-of-warcraft/guides/localization to see a list of available locales.
         /// </param>
-        public WarcraftClient(string clientId, string clientSecret, Region region, Locale locale) : this(clientId, clientSecret, region, locale, InternalHttpClient.Instance)
+        public WarcraftClient(string clientId, string clientSecret, Region region, Locale locale) : this(clientId, clientSecret, region, locale, InternalHttpClient.Instance, QueueManagerFactory.Instance)
         {
         }
 
@@ -69,9 +70,11 @@ namespace ArgentPonyWarcraftClient
         ///     https://develop.battle.net/documentation/world-of-warcraft/guides/localization to see a list of available locales.
         /// </param>
         /// <param name="client">The <see cref="HttpClient"/> that communicates with Blizzard.</param>
-        public WarcraftClient(string clientId, string clientSecret, Region region, Locale locale, HttpClient client)
+        /// <param name="queueManager">The <see cref="IQueueManager"/> that manage request sending.</param>
+        public WarcraftClient(string clientId, string clientSecret, Region region, Locale locale, HttpClient client, IQueueManager queueManager)
         {
             _client = client ?? throw new ArgumentNullException(nameof(client));
+            _queueManager = queueManager ?? throw new ArgumentNullException(nameof(queueManager));
             _clientId = clientId ?? throw new ArgumentNullException(nameof(clientId));
             _clientSecret = clientSecret ?? throw new ArgumentNullException(nameof(clientSecret));
 
@@ -153,6 +156,9 @@ namespace ArgentPonyWarcraftClient
         {
             // Add an authentication header with the token.
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+            //Wait for access to send
+            _queueManager.WaitForAccessToSend();
 
             // Retrieve the response.
             HttpResponseMessage response = await _client.GetAsync(requestUri).ConfigureAwait(false);
