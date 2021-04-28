@@ -199,5 +199,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("professions")]
         public Self Professions { get; init; }
+
+        /// <summary>
+        /// Gets the covenant progress for the character.
+        /// </summary>
+        [JsonPropertyName("covenant_progress")]
+        public CovenantProgress CovenantProgress { get; init; }
     }
 }
