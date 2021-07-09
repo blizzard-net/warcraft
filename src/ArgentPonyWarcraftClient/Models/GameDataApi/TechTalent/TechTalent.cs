@@ -59,7 +59,7 @@ namespace ArgentPonyWarcraftClient
         /// Gets the prerequisite talent for the tech talent.
         /// </summary>
         [JsonPropertyName("prerequisite_talent")]
-        public TalentReferenceWithoutName PrerequisiteTalent { get; init; }
+        public TalentReference PrerequisiteTalent { get; init; }
 
         /// <summary>
         /// Gets the media for the tech talent.

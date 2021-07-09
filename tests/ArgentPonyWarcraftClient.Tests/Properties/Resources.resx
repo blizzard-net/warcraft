@@ -77401,32 +77401,151 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us"
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-9.1.0_39069-us"
     }
   },
-  "id": 307,
-  "max_tiers": 3,
+  "id": 275,
+  "max_tiers": 12,
   "talents": [
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1053?namespace=static-9.0.2_36532-us"
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/837?namespace=static-9.1.0_39069-us"
       },
-      "name": "Nurtured Roots",
-      "id": 1053
+      "name": "Podtender",
+      "id": 837
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1054?namespace=static-9.0.2_36532-us"
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/870?namespace=static-9.1.0_39069-us"
       },
-      "name": "Fun with Fungi",
-      "id": 1054
+      "name": "Endurance Conduit",
+      "id": 870
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1055?namespace=static-9.0.2_36532-us"
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/835?namespace=static-9.1.0_39069-us"
       },
-      "name": "Blossoming Network",
-      "id": 1055
+      "name": "Finesse Conduit",
+      "id": 835
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/836?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Potency Conduit",
+      "id": 836
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/827?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Soothing Voice",
+      "id": 827
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/826?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Social Butterfly",
+      "id": 826
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/828?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Empowered Chrysalis",
+      "id": 828
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/830?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Potency Conduit",
+      "id": 830
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/829?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 829
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/831?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 831
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/832?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 832
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/833?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Faerie Dust",
+      "id": 833
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/834?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Somnambulist",
+      "id": 834
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/824?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Field of Blossoms",
+      "id": 824
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1843?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Potency Conduit",
+      "id": 1843
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1844?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Cunning Dreams",
+      "id": 1844
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1845?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Waking Dreams",
+      "id": 1845
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1846?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Endurance Conduit",
+      "id": 1846
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1847?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Finesse Conduit",
+      "id": 1847
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/tech-talent/1848?namespace=static-9.1.0_39069-us"
+      },
+      "name": "Dream Delver",
+      "id": 1848
     }
   ]
 }</value>
@@ -79742,13 +79861,13 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.0.5_37760-us"
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.1.0_39069-us"
     }
   },
   "id": 863,
   "talent_tree": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.0.5_37760-us"
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.1.0_39069-us"
     },
     "name": "Niya",
     "id": 276
@@ -79758,7 +79877,7 @@
   "spell_tooltip": {
     "spell": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/spell/342270?namespace=static-9.0.5_37760-us"
+        "href": "https://us.api.blizzard.com/data/wow/spell/342270?namespace=static-9.1.0_39069-us"
       },
       "name": "Run Without Tiring",
       "id": 342270
@@ -79770,13 +79889,14 @@
   "display_order": 0,
   "prerequisite_talent": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/tech-talent/850?namespace=static-9.0.5_37760-us"
+      "href": "https://us.api.blizzard.com/data/wow/tech-talent/850?namespace=static-9.1.0_39069-us"
     },
+    "name": "Potency Conduit",
     "id": 850
   },
   "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/863?namespace=static-9.0.5_37760-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/tech-talent/863?namespace=static-9.1.0_39069-us"
     },
     "id": 863
   }

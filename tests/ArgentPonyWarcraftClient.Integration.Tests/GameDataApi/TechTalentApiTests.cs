@@ -22,10 +22,10 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         {
             ITechTalentApi client = ClientFactory.BuildClient();
 
-            RequestResult<TechTalentTree> result = await client.GetTechTalentTreeAsync(317, "static-us");
+            RequestResult<TechTalentTree> result = await client.GetTechTalentTreeAsync(275, "static-us");
 
             await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent-tree/317?namespace=static-us&locale=en_US");
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-us&locale=en_US");
         }
 
         [ResilientFact]

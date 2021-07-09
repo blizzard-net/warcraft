@@ -3994,13 +3994,13 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.0.5_37760-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-9.1.0_39069-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 863,
         ///  &quot;talent_tree&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.0.5_37760-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/276?namespace=static-9.1.0_39069-us&quot;
         ///    },
         ///    &quot;name&quot;: &quot;Niya&quot;,
         ///    &quot;id&quot;: 276
@@ -4073,22 +4073,22 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/307?namespace=static-9.0.2_36532-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-9.1.0_39069-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 307,
-        ///  &quot;max_tiers&quot;: 3,
+        ///  &quot;id&quot;: 275,
+        ///  &quot;max_tiers&quot;: 12,
         ///  &quot;talents&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/1053?namespace=static-9.0.2_36532-us&quot;
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/837?namespace=static-9.1.0_39069-us&quot;
         ///      },
-        ///      &quot;name&quot;: &quot;Nurtured Roots&quot;,
-        ///      &quot;id&quot;: 1053
+        ///      &quot;name&quot;: &quot;Podtender&quot;,
+        ///      &quot;id&quot;: 837
         ///    },
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/1054?namespace=static-9. [rest of string was truncated]&quot;;.
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/tech-talent/870?namespace=static-9.1.0_390 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TechTalentTreeResponse {
             get {
