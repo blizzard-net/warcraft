@@ -3,13 +3,13 @@
   "isRoot": true,
   "tools": {
     "dotnet-format": {
-      "version": "5.0.211103",
+      "version": "5.1.225507",
       "commands": [
         "dotnet-format"
       ]
     },
     "nbgv": {
-      "version": "3.3.37",
+      "version": "3.4.220",
       "commands": [
         "nbgv"
       ]
