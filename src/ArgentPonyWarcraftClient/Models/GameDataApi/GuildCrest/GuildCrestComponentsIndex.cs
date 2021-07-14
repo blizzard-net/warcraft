@@ -24,5 +24,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("borders")]
         public GuildCrestBorder[] Borders { get; init; }
+
+        /// <summary>
+        /// Gets the guild crest colors.
+        /// </summary>
+        [JsonPropertyName("colors")]
+        public GuildCrestColors Colors { get; init; }
     }
 }
