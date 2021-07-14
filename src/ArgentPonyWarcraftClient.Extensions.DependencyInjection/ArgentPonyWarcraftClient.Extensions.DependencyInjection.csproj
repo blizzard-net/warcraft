@@ -5,6 +5,7 @@
     <Description>Extensions of Microsoft.Extensions.DependencyInjection for the Argent Pony .NET client.</Description>
     <Title>Argent Pony Warcraft Client Dependency Injection</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard;Dependency-Injection;DI</PackageTags>
+    <PackageIcon>ArgentPony.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(CI)' == 'true'">
@@ -18,6 +19,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ArgentPonyWarcraftClient\ArgentPonyWarcraftClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="docs/ArgentPony.png" Pack="true" PackagePath="\" />
+    <None Include="docs/README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
