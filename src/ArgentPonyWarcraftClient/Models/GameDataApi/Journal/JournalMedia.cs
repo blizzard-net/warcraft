@@ -17,6 +17,6 @@ namespace ArgentPonyWarcraftClient
         /// Gets a collection of media assets.
         /// </summary>
         [JsonPropertyName("assets")]
-        public Asset[] Assets { get; init; }
+        public AssetWithoutFileDataId[] Assets { get; init; }
     }
 }
