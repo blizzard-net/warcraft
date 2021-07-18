@@ -48,5 +48,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("faction")]
         public EnumType Faction { get; init; }
+
+        /// <summary>
+        /// Gets the requiements for using the mount.
+        /// </summary>
+        [JsonPropertyName("requirements")]
+        public MountRequirements Requirements { get; init; }
     }
 }
