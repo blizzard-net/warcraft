@@ -9,7 +9,6 @@
     <RepositoryUrl>https://github.com/blizzard-net/warcraft</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>ArgentPony.png</PackageIcon>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -20,7 +19,4 @@
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="$([MSBuild]::GetPathOfFileAbove('ArgentPony.png', '$(MSBuildThisFileDirectory)..\'))" Pack="true" PackagePath="\" />
-  </ItemGroup>
 </Project>
