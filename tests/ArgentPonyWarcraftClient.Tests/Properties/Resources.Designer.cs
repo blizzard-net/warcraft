@@ -2506,12 +2506,6 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///  },
         ///  &quot;slug&quot;: &quot;uldir-alliance&quot;,
         ///  &quot;criteria_type&quot;: &quot;hall-of-fame&quot;,
-        ///  &quot;zone&quot;: {
-        ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/zone/9389?namespace=static-us&quot;
-        ///    },
-        ///    &quot;name&quot;: &quot;Uldir&quot;
-        ///  },
         ///  &quot;entries&quot;: [
         ///    {
         ///      &quot;guild&quot;: {
@@ -2519,7 +2513,14 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///        &quot;id&quot;: 31307591,
         ///        &quot;realm&quot;: {
         ///          &quot;name&quot;: &quot;Rhonin&quot;,
-        ///  [rest of string was truncated]&quot;;.
+        ///          &quot;id&quot;: 729,
+        ///          &quot;slug&quot;: &quot;rhonin&quot;
+        ///        }
+        ///      },
+        ///      &quot;faction&quot;: {
+        ///        &quot;type&quot;: &quot;ALLIANCE&quot;
+        ///      },
+        ///      &quot;timestamp&quot;: [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MythicRaidLeaderboardResponse {
             get {

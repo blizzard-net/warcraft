@@ -60811,12 +60811,6 @@
   },
   "slug": "uldir-alliance",
   "criteria_type": "hall-of-fame",
-  "zone": {
-    "key": {
-      "href": "https://us.api.blizzard.com/data/wow/zone/9389?namespace=static-us"
-    },
-    "name": "Uldir"
-  },
   "entries": [
     {
       "guild": {
@@ -60837,40 +60831,6 @@
     },
     {
       "guild": {
-        "name": "Honestly",
-        "id": 41321785,
-        "realm": {
-          "name": "Frostmourne",
-          "id": 3725,
-          "slug": "frostmourne"
-        }
-      },
-      "faction": {
-        "type": "ALLIANCE"
-      },
-      "timestamp": 1538129132000,
-      "region": "us",
-      "rank": 2
-    },
-    {
-      "guild": {
-        "name": "P G",
-        "id": 49912595,
-        "realm": {
-          "name": "Ravencrest",
-          "id": 554,
-          "slug": "ravencrest"
-        }
-      },
-      "faction": {
-        "type": "ALLIANCE"
-      },
-      "timestamp": 1538159395000,
-      "region": "eu",
-      "rank": 3
-    },
-    {
-      "guild": {
         "name": "Phoenix",
         "id": 40075794,
         "realm": {
@@ -60886,7 +60846,14 @@
       "region": "eu",
       "rank": 100
     }
-  ]
+  ],
+  "journal_instance": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/1031?namespace=static-us"
+    },
+    "name": "Uldir",
+    "id": 1031
+  }
 }</value>
   </data>
   <data name="MythicKeystoneAffixesIndexResponse" xml:space="preserve">
