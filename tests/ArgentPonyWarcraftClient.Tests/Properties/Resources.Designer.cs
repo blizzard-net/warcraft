@@ -3435,14 +3435,14 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/2?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/2?namespace=static-9.1.0_39069-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 2,
         ///  &quot;title&quot;: &quot;Sharptalon&apos;s Claw&quot;,
         ///  &quot;area&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/331?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/quest/area/331?namespace=static-9.1.0_39069-us&quot;
         ///    },
         ///    &quot;name&quot;: &quot;Ashenvale&quot;,
         ///    &quot;id&quot;: 331

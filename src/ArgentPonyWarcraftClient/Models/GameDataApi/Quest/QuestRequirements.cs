@@ -14,6 +14,12 @@ namespace ArgentPonyWarcraftClient
         public int MinCharacterLevel { get; init; }
 
         /// <summary>
+        /// Gets the maximum character level for the quest.
+        /// </summary>
+        [JsonPropertyName("max_character_level")]
+        public int MaxCharacterLevel { get; init; }
+
+        /// <summary>
         /// Gets the faction for the question (Alliance or Horde).
         /// </summary>
         [JsonPropertyName("faction")]
