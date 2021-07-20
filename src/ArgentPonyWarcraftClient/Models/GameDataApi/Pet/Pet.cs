@@ -97,5 +97,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("is_random_creature_display")]
         public bool IsRandomCreatureDisplay { get; init; }
+
+        /// <summary>
+        /// Gets a reference to the pet media.
+        /// </summary>
+        [JsonPropertyName("media")]
+        public PetMediaReference Media { get; init; }
     }
 }

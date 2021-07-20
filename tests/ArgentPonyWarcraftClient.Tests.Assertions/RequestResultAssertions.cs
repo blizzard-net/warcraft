@@ -9,6 +9,18 @@ namespace ArgentPonyWarcraftClient.Tests.Assertions
 {
     public class RequestResultAssertions<T> : ReferenceTypeAssertions<RequestResult<T>, RequestResultAssertions<T>>
     {
+        private static readonly JsonSerializerOptions s_jsonSerializerOptions;
+
+        /// <summary>
+        /// A static constructor for the <see cref="WarcraftClient"/> class.
+        /// </summary>
+        static RequestResultAssertions()
+        {
+            s_jsonSerializerOptions = new JsonSerializerOptions();
+            s_jsonSerializerOptions.Converters.Add(new EpochConverter());
+            s_jsonSerializerOptions.Converters.Add(new MillisecondTimeSpanConverter());
+        }
+
         public RequestResultAssertions(RequestResult<T> instance)
         {
             Subject = instance;
@@ -67,8 +79,9 @@ namespace ArgentPonyWarcraftClient.Tests.Assertions
             // exclude a property, e.g. { "cast_time": "Passive" } vs. { "cast_time": "Instant", "power_cost": null }
             NotBeNull();
 
-            var actualJsonValue = RemoveNullProperties(JObject.Parse(JsonSerializer.Serialize<T>(Subject.Value)));
-            var expectedJsonValue = RemoveNullProperties(JObject.Parse(expectedJson));
+            string actualJson = JsonSerializer.Serialize<T>(Subject.Value, s_jsonSerializerOptions);
+            JObject actualJsonValue = RemoveNullProperties(JObject.Parse(actualJson));
+            JObject expectedJsonValue = RemoveNullProperties(JObject.Parse(expectedJson));
 
             actualJsonValue.Should().BeEquivalentTo(expectedJsonValue);
         }

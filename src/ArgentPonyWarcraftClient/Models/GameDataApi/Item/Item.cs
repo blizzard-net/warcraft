@@ -102,5 +102,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("preview_item")]
         public PreviewItem PreviewItem { get; init; }
+
+        /// <summary>
+        /// Gets the purchase quantity for the item.
+        /// </summary>
+        [JsonPropertyName("purchase_quantity")]
+        public int PurchaseQuantity { get; init; }
     }
 }

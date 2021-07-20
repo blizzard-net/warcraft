@@ -60811,12 +60811,6 @@
   },
   "slug": "uldir-alliance",
   "criteria_type": "hall-of-fame",
-  "zone": {
-    "key": {
-      "href": "https://us.api.blizzard.com/data/wow/zone/9389?namespace=static-us"
-    },
-    "name": "Uldir"
-  },
   "entries": [
     {
       "guild": {
@@ -60837,40 +60831,6 @@
     },
     {
       "guild": {
-        "name": "Honestly",
-        "id": 41321785,
-        "realm": {
-          "name": "Frostmourne",
-          "id": 3725,
-          "slug": "frostmourne"
-        }
-      },
-      "faction": {
-        "type": "ALLIANCE"
-      },
-      "timestamp": 1538129132000,
-      "region": "us",
-      "rank": 2
-    },
-    {
-      "guild": {
-        "name": "P G",
-        "id": 49912595,
-        "realm": {
-          "name": "Ravencrest",
-          "id": 554,
-          "slug": "ravencrest"
-        }
-      },
-      "faction": {
-        "type": "ALLIANCE"
-      },
-      "timestamp": 1538159395000,
-      "region": "eu",
-      "rank": 3
-    },
-    {
-      "guild": {
         "name": "Phoenix",
         "id": 40075794,
         "realm": {
@@ -60886,7 +60846,14 @@
       "region": "eu",
       "rank": 100
     }
-  ]
+  ],
+  "journal_instance": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/1031?namespace=static-us"
+    },
+    "name": "Uldir",
+    "id": 1031
+  }
 }</value>
   </data>
   <data name="MythicKeystoneAffixesIndexResponse" xml:space="preserve">
@@ -62052,35 +62019,34 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/quest/2?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/quest/2?namespace=static-9.1.0_39069-us"
     }
   },
   "id": 2,
   "title": "Sharptalon's Claw",
   "area": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/quest/area/331?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/quest/area/331?namespace=static-9.1.0_39069-us"
     },
     "name": "Ashenvale",
     "id": 331
   },
   "description": "The mighty hippogryph Sharptalon has been slain, with the claw of the felled beast serving as a testament to your victory.\n\nSenani Thunderheart at the Silverwind Refuge will no doubt be interested in seeing this trophy as proof of your deeds.",
-  "recommended_minimum_level": 15,
-  "recommended_maximum_level": 60,
   "requirements": {
-    "min_character_level": 15,
+    "min_character_level": 7,
+    "max_character_level": 30,
     "faction": {
       "type": "HORDE",
       "name": "Horde"
     }
   },
   "rewards": {
-    "experience": 6300,
+    "experience": 4100,
     "reputations": [
       {
         "reward": {
           "key": {
-            "href": "https://us.api.blizzard.com/data/wow/reputation-faction/76?namespace=static-8.3.0_32861-us"
+            "href": "https://us.api.blizzard.com/data/wow/reputation-faction/76?namespace=static-9.1.0_39069-us"
           },
           "name": "Orgrimmar",
           "id": 76
@@ -62089,10 +62055,10 @@
       }
     ],
     "money": {
-      "value": 9000,
+      "value": 105000,
       "units": {
-        "gold": 0,
-        "silver": 90,
+        "gold": 10,
+        "silver": 50,
         "copper": 0
       }
     }

@@ -26,15 +26,15 @@ namespace ArgentPonyWarcraftClient
         public string CriteriaType { get; init; }
 
         /// <summary>
-        /// Gets a reference to the zone for the raid.
-        /// </summary>
-        [JsonPropertyName("zone")]
-        public ZoneReference Zone { get; init; }
-
-        /// <summary>
         /// Gets the entries for the Mythic Raid leaderboard.
         /// </summary>
         [JsonPropertyName("entries")]
         public MythicRaidLeaderboardEntry[] Entries { get; init; }
+
+        /// <summary>
+        /// Gets a reference to journal instance for the raid.
+        /// </summary>
+        [JsonPropertyName("journal_instance")]
+        public InstanceReference JournalInstance { get; init; }
     }
 }

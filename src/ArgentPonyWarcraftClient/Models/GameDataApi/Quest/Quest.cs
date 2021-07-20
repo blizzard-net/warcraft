@@ -38,18 +38,6 @@ namespace ArgentPonyWarcraftClient
         public string Description { get; init; }
 
         /// <summary>
-        /// Gets the recommended minimum level for the quest.
-        /// </summary>
-        [JsonPropertyName("recommended_minimum_level")]
-        public int RecommendedMinimumLevel { get; init; }
-
-        /// <summary>
-        /// Gets the recommended maximum level for the quest.
-        /// </summary>
-        [JsonPropertyName("recommended_maximum_level")]
-        public int RecommendedMaximumLevel { get; init; }
-
-        /// <summary>
         /// Gets the requirements for the quest.
         /// </summary>
         [JsonPropertyName("requirements")]
