@@ -4,9 +4,16 @@
         <title>Argent Pony Warcraft Client Blog</title>
         <link>https://blizzard-net.github.io/blog</link>
         <description>Argent Pony Warcraft Client Blog</description>
-        <lastBuildDate>Sat, 27 Mar 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 20 Jul 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[7.0.38 Release - Model type fixes]]></title>
+            <link>https://blizzard-net.github.io/warcraft/blog/7-0-release</link>
+            <guid>7-0-release</guid>
+            <pubDate>Tue, 20 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Today we published release 7.0.38 of ArgentPonyWarcraftClient and ArgentPonyWarcraftClient.Extensions.DependencyInjection.]]></description>
+        </item>
         <item>
             <title><![CDATA[New Docs]]></title>
             <link>https://blizzard-net.github.io/warcraft/blog/new-docs</link>
