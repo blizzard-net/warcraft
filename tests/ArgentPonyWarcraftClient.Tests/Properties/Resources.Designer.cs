@@ -3646,6 +3646,32 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-9.1.0_39069-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 38729,
+        ///  &quot;name&quot;: &quot;Monel-Hardened Boots&quot;,
+        ///  &quot;description&quot;: &quot;Create Monel-Hardened Boots.&quot;,
+        ///  &quot;media&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/recipe/38729?namespace=static-9.1.0_39069-us&quot;
+        ///    },
+        ///    &quot;id&quot;: 38729
+        ///  },
+        ///  &quot;alliance_crafted_item&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/1 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string RecipeWithFactionSpecificItemsResponse {
+            get {
+                return ResourceManager.GetString("RecipeWithFactionSpecificItemsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/region/1?namespace=dynamic-us&quot;
         ///    }
         ///  },

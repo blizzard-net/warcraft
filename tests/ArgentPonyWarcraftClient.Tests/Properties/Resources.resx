@@ -79884,4 +79884,72 @@
   ]
 }</value>
   </data>
+  <data name="RecipeWithFactionSpecificItemsResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-9.1.0_39069-us"
+    }
+  },
+  "id": 38729,
+  "name": "Monel-Hardened Boots",
+  "description": "Create Monel-Hardened Boots.",
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/recipe/38729?namespace=static-9.1.0_39069-us"
+    },
+    "id": 38729
+  },
+  "alliance_crafted_item": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item/161881?namespace=static-9.1.0_39069-us"
+    },
+    "name": "Monel-Hardened Boots",
+    "id": 161881
+  },
+  "horde_crafted_item": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/item/152803?namespace=static-9.1.0_39069-us"
+    },
+    "name": "Monel-Hardened Boots",
+    "id": 152803
+  },
+  "reagents": [
+    {
+      "reagent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/152512?namespace=static-9.1.0_39069-us"
+        },
+        "name": "Monelite Ore",
+        "id": 152512
+      },
+      "quantity": 14
+    },
+    {
+      "reagent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/item/160298?namespace=static-9.1.0_39069-us"
+        },
+        "name": "Durable Flux",
+        "id": 160298
+      },
+      "quantity": 2
+    }
+  ],
+  "crafted_quantity": {
+    "value": 1
+  },
+  "modified_crafting_slots": [
+    {
+      "slot_type": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/47?namespace=static-9.1.0_39069-us"
+        },
+        "id": 47
+      },
+      "display_order": 0
+    }
+  ]
+}</value>
+  </data>
 </root>
