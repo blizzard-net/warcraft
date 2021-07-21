@@ -44,6 +44,18 @@ namespace ArgentPonyWarcraftClient
         public ItemReference CraftedItem { get; init; }
 
         /// <summary>
+        /// Gets a reference to the Alliance version of the item crafted by this recipe.
+        /// </summary>
+        [JsonPropertyName("alliance_crafted_item")]
+        public ItemReference AllianceCraftedItem { get; init; }
+
+        /// <summary>
+        /// Gets a reference to the Horde version of the item crafted by this recipe.
+        /// </summary>
+        [JsonPropertyName("horde_crafted_item")]
+        public ItemReference HordeCraftedItem { get; init; }
+
+        /// <summary>
         /// Gets the reagents required for the recipe.
         /// </summary>
         [JsonPropertyName("reagents")]
@@ -54,5 +66,11 @@ namespace ArgentPonyWarcraftClient
         /// </summary>
         [JsonPropertyName("crafted_quantity")]
         public CraftedQuantity CraftedQuantity { get; init; }
+
+        /// <summary>
+        /// Gets the modified crafting slots for this recipe.
+        /// </summary>
+        [JsonPropertyName("modified_crafting_slots")]
+        public ModifiedCraftingSlot[] ModifiedCraftingSlots { get; init; }
     }
 }

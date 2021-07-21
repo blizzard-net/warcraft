@@ -62,6 +62,17 @@ namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
         }
 
         [ResilientFact]
+        public async Task GetRecipeAsync_Gets_Recipe_WithFactionSpecificItems()
+        {
+            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+
+            RequestResult<Recipe> result = await warcraftClient.GetRecipeAsync(38729, "static-us");
+
+            await result.Should().BeSuccessfulRequest()
+                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-us&locale=en_US");
+        }
+
+        [ResilientFact]
         public async Task GetRecipeMediaAsync_Gets_RecipeMedia()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildClient();

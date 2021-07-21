@@ -62,6 +62,17 @@ namespace ArgentPonyWarcraftClient.Tests.GameDataApi
         }
 
         [Fact]
+        public async Task GetRecipeAsync_Gets_Recipe_WithFactionSpecificItems()
+        {
+            IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
+                requestUri: "https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-us&locale=en_US",
+                responseContent: Resources.RecipeWithFactionSpecificItemsResponse);
+
+            RequestResult<Recipe> result = await warcraftClient.GetRecipeAsync(38729, "static-us");
+            Assert.NotNull(result.Value);
+        }
+
+        [Fact]
         public async Task GetRecipeMediaAsync_Gets_RecipeMedia()
         {
             IProfessionApi warcraftClient = ClientFactory.BuildMockClient(
