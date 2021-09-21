@@ -68,6 +68,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Argent Pony Warcraft Client contributors`,
     },
+    prism: {
+      additionalLanguages: ['csharp'],
+      theme: require('prism-react-renderer/themes/vsDark'),
+    },
   },
   presets: [
     [
