@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{85:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"7.0.38 Release - Model type fixes","permalink":"/warcraft/blog/7-0-release"},{"title":"New Docs","permalink":"/warcraft/blog/new-docs"}]}')}}]);

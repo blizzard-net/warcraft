@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{70:function(a){a.exports=JSON.parse('{"releases":{"allTagsPath":"/warcraft/blog/tags","slug":"releases","name":"releases","count":1,"permalink":"/warcraft/blog/tags/releases"},"docs":{"allTagsPath":"/warcraft/blog/tags","slug":"docs","name":"docs","count":1,"permalink":"/warcraft/blog/tags/docs"}}')}}]);
