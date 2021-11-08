@@ -21,9 +21,9 @@ namespace ArgentPonyWarcraftClient.Tests.Assertions
             s_jsonSerializerOptions.Converters.Add(new MillisecondTimeSpanConverter());
         }
 
-        public RequestResultAssertions(RequestResult<T> instance)
+        public RequestResultAssertions(RequestResult<T> subject)
+            : base(subject)
         {
-            Subject = instance;
         }
 
         /// <inheritdoc />
