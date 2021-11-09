@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableClassesIndex>> GetPlayableClassesIndexAsync(string @namespace)
     {
-        return await GetPlayableClassesIndexAsync(@namespace, _region, _locale);
+        return await GetPlayableClassesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableClass>> GetPlayableClassAsync(int classId, string @namespace)
     {
-        return await GetPlayableClassAsync(classId, @namespace, _region, _locale);
+        return await GetPlayableClassAsync(classId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableClassMedia>> GetPlayableClassMediaAsync(int classId, string @namespace)
     {
-        return await GetPlayableClassMediaAsync(classId, @namespace, _region, _locale);
+        return await GetPlayableClassMediaAsync(classId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpTalentSlots>> GetPvpTalentSlotsAsync(int classId, string @namespace)
     {
-        return await GetPvpTalentSlotsAsync(classId, @namespace, _region, _locale);
+        return await GetPvpTalentSlotsAsync(classId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

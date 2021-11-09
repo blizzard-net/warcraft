@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterEncountersSummary>> GetCharacterEncountersSummaryAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterEncountersSummaryAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterEncountersSummaryAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterDungeons>> GetCharacterDungeonsAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterDungeonsAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterDungeonsAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterRaids>> GetCharacterRaidsAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterRaidsAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterRaidsAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

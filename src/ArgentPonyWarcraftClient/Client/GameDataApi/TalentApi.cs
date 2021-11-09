@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<TalentsIndex>> GetTalentsIndexAsync(string @namespace)
     {
-        return await GetTalentsIndexAsync(@namespace, _region, _locale);
+        return await GetTalentsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Talent>> GetTalentAsync(int talentId, string @namespace)
     {
-        return await GetTalentAsync(talentId, @namespace, _region, _locale);
+        return await GetTalentAsync(talentId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpTalentsIndex>> GetPvpTalentsIndexAsync(string @namespace)
     {
-        return await GetPvpTalentsIndexAsync(@namespace, _region, _locale);
+        return await GetPvpTalentsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpTalent>> GetPvpTalentAsync(int pvpTalentId, string @namespace)
     {
-        return await GetPvpTalentAsync(pvpTalentId, @namespace, _region, _locale);
+        return await GetPvpTalentAsync(pvpTalentId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PowerTypesIndex>> GetPowerTypesIndexAsync(string @namespace)
     {
-        return await GetPowerTypesIndexAsync(@namespace, _region, _locale);
+        return await GetPowerTypesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PowerType>> GetPowerTypeAsync(int powerTypeId, string @namespace)
     {
-        return await GetPowerTypeAsync(powerTypeId, @namespace, _region, _locale);
+        return await GetPowerTypeAsync(powerTypeId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

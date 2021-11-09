@@ -4,7 +4,7 @@ public partial class WarcraftClient
 {
     /// <inheritdoc />
     public Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace) =>
-        GetCovenantsIndexAsync(@namespace, _region, _locale);
+        GetCovenantsIndexAsync(@namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<CovenantsIndex>> GetCovenantsIndexAsync(string @namespace, Region region, Locale locale)
@@ -15,7 +15,7 @@ public partial class WarcraftClient
 
     /// <inheritdoc />
     public Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace) =>
-        GetCovenantAsync(covenantId, @namespace, _region, _locale);
+        GetCovenantAsync(covenantId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<Covenant>> GetCovenantAsync(int covenantId, string @namespace, Region region, Locale locale)
@@ -26,7 +26,7 @@ public partial class WarcraftClient
 
     /// <inheritdoc />
     public Task<RequestResult<CovenantMedia>> GetCovenantMediaAsync(int covenantId, string @namespace) =>
-        GetCovenantMediaAsync(covenantId, @namespace, _region, _locale);
+        GetCovenantMediaAsync(covenantId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<CovenantMedia>> GetCovenantMediaAsync(int covenantId, string @namespace, Region region, Locale locale)
@@ -36,7 +36,7 @@ public partial class WarcraftClient
     }
 
     /// <inheritdoc />
-    public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace) => GetSoulbindsIndexAsync(@namespace, _region, _locale);
+    public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace) => GetSoulbindsIndexAsync(@namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<SoulbindsIndex>> GetSoulbindsIndexAsync(string @namespace, Region region, Locale locale)
@@ -46,7 +46,7 @@ public partial class WarcraftClient
     }
 
     /// <inheritdoc />
-    public Task<RequestResult<Soulbind>> GetSoulbindAsync(int soulbindId, string @namespace) => GetSoulbindAsync(soulbindId, @namespace, _region, _locale);
+    public Task<RequestResult<Soulbind>> GetSoulbindAsync(int soulbindId, string @namespace) => GetSoulbindAsync(soulbindId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<Soulbind>> GetSoulbindAsync(int soulbindId, string @namespace, Region region, Locale locale)
@@ -57,7 +57,7 @@ public partial class WarcraftClient
 
     /// <inheritdoc />
     public Task<RequestResult<ConduitsIndex>> GetConduitsIndexAsync(string @namespace) =>
-        GetConduitsIndexAsync(@namespace, _region, _locale);
+        GetConduitsIndexAsync(@namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<ConduitsIndex>> GetConduitsIndexAsync(string @namespace, Region region, Locale locale)
@@ -67,7 +67,7 @@ public partial class WarcraftClient
     }
 
     /// <inheritdoc />
-    public Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace) => GetConduitAsync(conduitId, @namespace, _region, _locale);
+    public Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace) => GetConduitAsync(conduitId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<Conduit>> GetConduitAsync(int conduitId, string @namespace, Region region, Locale locale)

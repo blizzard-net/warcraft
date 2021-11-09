@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpSeasonsIndex>> GetPvpSeasonsIndexAsync(string @namespace)
     {
-        return await GetPvpSeasonsIndexAsync(@namespace, _region, _locale);
+        return await GetPvpSeasonsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpSeason>> GetPvpSeasonAsync(int pvpSeasonId, string @namespace)
     {
-        return await GetPvpSeasonAsync(pvpSeasonId, @namespace, _region, _locale);
+        return await GetPvpSeasonAsync(pvpSeasonId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpLeaderboardsIndex>> GetPvpLeaderboardsIndexAsync(int pvpSeasonId, string @namespace)
     {
-        return await GetPvpLeaderboardsIndexAsync(pvpSeasonId, @namespace, _region, _locale);
+        return await GetPvpLeaderboardsIndexAsync(pvpSeasonId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpLeaderboard>> GetPvpLeaderboardAsync(int pvpSeasonId, string pvpBracket, string @namespace)
     {
-        return await GetPvpLeaderboardAsync(pvpSeasonId, pvpBracket, @namespace, _region, _locale);
+        return await GetPvpLeaderboardAsync(pvpSeasonId, pvpBracket, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpRewardsIndex>> GetPvpRewardsIndexAsync(int pvpSeasonId, string @namespace)
     {
-        return await GetPvpRewardsIndexAsync(pvpSeasonId, @namespace, _region, _locale);
+        return await GetPvpRewardsIndexAsync(pvpSeasonId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MountsIndex>> GetMountsIndexAsync(string @namespace)
     {
-        return await GetMountsIndexAsync(@namespace, _region, _locale);
+        return await GetMountsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Mount>> GetMountAsync(int mountId, string @namespace)
     {
-        return await GetMountAsync(mountId, @namespace, _region, _locale);
+        return await GetMountAsync(mountId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

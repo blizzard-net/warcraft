@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<GuildCrestComponentsIndex>> GetGuildCrestComponentsIndexAsync(string @namespace)
     {
-        return await GetGuildCrestComponentsIndexAsync(@namespace, _region, _locale);
+        return await GetGuildCrestComponentsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<GuildCrestBorderMedia>> GetGuildCrestBorderMediaAsync(int borderId, string @namespace)
     {
-        return await GetGuildCrestBorderMediaAsync(borderId, @namespace, _region, _locale);
+        return await GetGuildCrestBorderMediaAsync(borderId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<GuildCrestEmblemMedia>> GetGuildCrestEmblemMediaAsync(int emblemId, string @namespace)
     {
-        return await GetGuildCrestEmblemMediaAsync(emblemId, @namespace, _region, _locale);
+        return await GetGuildCrestEmblemMediaAsync(emblemId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

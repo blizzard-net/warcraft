@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Spell>> GetSpellAsync(int spellId, string @namespace)
     {
-        return await GetSpellAsync(spellId, @namespace, _region, _locale);
+        return await GetSpellAsync(spellId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<SpellMedia>> GetSpellMediaAsync(int spellId, string @namespace)
     {
-        return await GetSpellMediaAsync(spellId, @namespace, _region, _locale);
+        return await GetSpellMediaAsync(spellId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

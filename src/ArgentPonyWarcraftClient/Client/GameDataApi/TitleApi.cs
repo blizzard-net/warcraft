@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<TitlesIndex>> GetTitlesIndexAsync(string @namespace)
     {
-        return await GetTitlesIndexAsync(@namespace, _region, _locale);
+        return await GetTitlesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Title>> GetTitleAsync(int titleId, string @namespace)
     {
-        return await GetTitleAsync(titleId, @namespace, _region, _locale);
+        return await GetTitleAsync(titleId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

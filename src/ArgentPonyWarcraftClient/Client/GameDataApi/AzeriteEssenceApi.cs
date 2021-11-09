@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AzeriteEssencesIndex>> GetAzeriteEssencesIndexAsync(string @namespace)
     {
-        return await GetAzeriteEssencesIndexAsync(@namespace, _region, _locale);
+        return await GetAzeriteEssencesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AzeriteEssence>> GetAzeriteEssenceAsync(int azeriteEssenceId, string @namespace)
     {
-        return await GetAzeriteEssenceAsync(azeriteEssenceId, @namespace, _region, _locale);
+        return await GetAzeriteEssenceAsync(azeriteEssenceId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AzeriteEssenceMedia>> GetAzeriteEssenceMediaAsync(int azeriteEssenceId, string @namespace)
     {
-        return await GetAzeriteEssenceMediaAsync(azeriteEssenceId, @namespace, _region, _locale);
+        return await GetAzeriteEssenceMediaAsync(azeriteEssenceId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

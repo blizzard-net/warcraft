@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<JournalExpansionsIndex>> GetJournalExpansionsIndexAsync(string @namespace)
     {
-        return await GetJournalExpansionsIndexAsync(@namespace, _region, _locale);
+        return await GetJournalExpansionsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<JournalExpansion>> GetJournalExpansionAsync(int journalExpansionId, string @namespace)
     {
-        return await GetJournalExpansionAsync(journalExpansionId, @namespace, _region, _locale);
+        return await GetJournalExpansionAsync(journalExpansionId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<JournalEncountersIndex>> GetJournalEncountersIndexAsync(string @namespace)
     {
-        return await GetJournalEncountersIndexAsync(@namespace, _region, _locale);
+        return await GetJournalEncountersIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Encounter>> GetJournalEncounterAsync(int journalEncounterId, string @namespace)
     {
-        return await GetJournalEncounterAsync(journalEncounterId, @namespace, _region, _locale);
+        return await GetJournalEncounterAsync(journalEncounterId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<JournalInstancesIndex>> GetJournalInstancesIndexAsync(string @namespace)
     {
-        return await GetJournalInstancesIndexAsync(@namespace, _region, _locale);
+        return await GetJournalInstancesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -70,7 +70,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Instance>> GetJournalInstanceAsync(int journalInstanceId, string @namespace)
     {
-        return await GetJournalInstanceAsync(journalInstanceId, @namespace, _region, _locale);
+        return await GetJournalInstanceAsync(journalInstanceId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -83,7 +83,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<JournalInstanceMedia>> GetJournalInstanceMediaAsync(int journalInstanceId, string @namespace)
     {
-        return await GetJournalInstanceMediaAsync(journalInstanceId, @namespace, _region, _locale);
+        return await GetJournalInstanceMediaAsync(journalInstanceId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpTiersIndex>> GetPvpTiersIndexAsync(string @namespace)
     {
-        return await GetPvpTiersIndexAsync(@namespace, _region, _locale);
+        return await GetPvpTiersIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpTier>> GetPvpTierAsync(int pvpTierId, string @namespace)
     {
-        return await GetPvpTierAsync(pvpTierId, @namespace, _region, _locale);
+        return await GetPvpTierAsync(pvpTierId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PvpTierMedia>> GetPvpTierMediaAsync(int pvpTierId, string @namespace)
     {
-        return await GetPvpTierMediaAsync(pvpTierId, @namespace, _region, _locale);
+        return await GetPvpTierMediaAsync(pvpTierId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

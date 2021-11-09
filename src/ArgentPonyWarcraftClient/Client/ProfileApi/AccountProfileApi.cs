@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AccountProfileSummary>> GetAccountProfileSummaryAsync(string accessToken, string @namespace)
     {
-        return await GetAccountProfileSummaryAsync(accessToken, @namespace, _region, _locale);
+        return await GetAccountProfileSummaryAsync(accessToken, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ProtectedCharacterProfileSummary>> GetProtectedCharacterProfileSummaryAsync(int realmId, int characterId, string accessToken, string @namespace)
     {
-        return await GetProtectedCharacterProfileSummaryAsync(realmId, characterId, accessToken, @namespace, _region, _locale);
+        return await GetProtectedCharacterProfileSummaryAsync(realmId, characterId, accessToken, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AccountCollectionsIndex>> GetAccountCollectionsIndexAsync(string accessToken, string @namespace)
     {
-        return await GetAccountCollectionsIndexAsync(accessToken, @namespace, _region, _locale);
+        return await GetAccountCollectionsIndexAsync(accessToken, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AccountMountsCollectionSummary>> GetAccountMountsCollectionSummaryAsync(string accessToken, string @namespace)
     {
-        return await GetAccountMountsCollectionSummaryAsync(accessToken, @namespace, _region, _locale);
+        return await GetAccountMountsCollectionSummaryAsync(accessToken, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AccountPetsCollectionSummary>> GetAccountPetsCollectionSummaryAsync(string accessToken, string @namespace)
     {
-        return await GetAccountPetsCollectionSummaryAsync(accessToken, @namespace, _region, _locale);
+        return await GetAccountPetsCollectionSummaryAsync(accessToken, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

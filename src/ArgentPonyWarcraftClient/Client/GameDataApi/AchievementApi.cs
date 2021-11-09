@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AchievementCategoriesIndex>> GetAchievementCategoriesIndexAsync(string @namespace)
     {
-        return await GetAchievementCategoriesIndexAsync(@namespace, _region, _locale);
+        return await GetAchievementCategoriesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AchievementCategory>> GetAchievementCategoryAsync(int achievementCategoryId, string @namespace)
     {
-        return await GetAchievementCategoryAsync(achievementCategoryId, @namespace, _region, _locale);
+        return await GetAchievementCategoryAsync(achievementCategoryId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AchievementsIndex>> GetAchievementsIndexAsync(string @namespace)
     {
-        return await GetAchievementsIndexAsync(@namespace, _region, _locale);
+        return await GetAchievementsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Achievement>> GetAchievementAsync(int achievementId, string @namespace)
     {
-        return await GetAchievementAsync(achievementId, @namespace, _region, _locale);
+        return await GetAchievementAsync(achievementId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AchievementMedia>> GetAchievementMediaAsync(int achievementId, string @namespace)
     {
-        return await GetAchievementMediaAsync(achievementId, @namespace, _region, _locale);
+        return await GetAchievementMediaAsync(achievementId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

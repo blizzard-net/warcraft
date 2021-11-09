@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterSpecializationsSummary>> GetCharacterSpecializationsSummaryAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterSpecializationsSummaryAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterSpecializationsSummaryAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

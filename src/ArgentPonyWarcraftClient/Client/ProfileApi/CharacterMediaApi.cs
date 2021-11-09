@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterMediaSummary>> GetCharacterMediaSummaryAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterMediaSummaryAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterMediaSummaryAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

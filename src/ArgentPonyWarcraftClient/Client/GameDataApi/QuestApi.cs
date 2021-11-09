@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestsIndex>> GetQuestsIndexAsync(string @namespace)
     {
-        return await GetQuestsIndexAsync(@namespace, _region, _locale);
+        return await GetQuestsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Quest>> GetQuestAsync(int questId, string @namespace)
     {
-        return await GetQuestAsync(questId, @namespace, _region, _locale);
+        return await GetQuestAsync(questId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestCategoriesIndex>> GetQuestCategoriesIndexAsync(string @namespace)
     {
-        return await GetQuestCategoriesIndexAsync(@namespace, _region, _locale);
+        return await GetQuestCategoriesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestCategory>> GetQuestCategoryAsync(int questCategoryId, string @namespace)
     {
-        return await GetQuestCategoryAsync(questCategoryId, @namespace, _region, _locale);
+        return await GetQuestCategoryAsync(questCategoryId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestAreasIndex>> GetQuestAreasIndexAsync(string @namespace)
     {
-        return await GetQuestAreasIndexAsync(@namespace, _region, _locale);
+        return await GetQuestAreasIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -70,7 +70,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestArea>> GetQuestAreaAsync(int questAreaId, string @namespace)
     {
-        return await GetQuestAreaAsync(questAreaId, @namespace, _region, _locale);
+        return await GetQuestAreaAsync(questAreaId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -83,7 +83,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestTypesIndex>> GetQuestTypesIndexAsync(string @namespace)
     {
-        return await GetQuestTypesIndexAsync(@namespace, _region, _locale);
+        return await GetQuestTypesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -96,7 +96,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<QuestType>> GetQuestTypeAsync(int questTypeId, string @namespace)
     {
-        return await GetQuestTypeAsync(questTypeId, @namespace, _region, _locale);
+        return await GetQuestTypeAsync(questTypeId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

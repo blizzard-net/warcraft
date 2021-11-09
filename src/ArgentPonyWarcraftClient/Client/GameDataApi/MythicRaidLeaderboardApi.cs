@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicRaidLeaderboard>> GetMythicRaidLeaderboardAsync(string raid, string faction, string @namespace)
     {
-        return await GetMythicRaidLeaderboardAsync(raid, faction, @namespace, _region, _locale);
+        return await GetMythicRaidLeaderboardAsync(raid, faction, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

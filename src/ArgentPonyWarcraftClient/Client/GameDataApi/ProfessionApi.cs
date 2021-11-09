@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ProfessionsIndex>> GetProfessionsIndexAsync(string @namespace)
     {
-        return await GetProfessionsIndexAsync(@namespace, _region, _locale);
+        return await GetProfessionsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Profession>> GetProfessionAsync(int professionId, string @namespace)
     {
-        return await GetProfessionAsync(professionId, @namespace, _region, _locale);
+        return await GetProfessionAsync(professionId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ProfessionMedia>> GetProfessionMediaAsync(int professionId, string @namespace)
     {
-        return await GetProfessionMediaAsync(professionId, @namespace, _region, _locale);
+        return await GetProfessionMediaAsync(professionId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<SkillTier>> GetSkillTierAsync(int professionId, int skillTierId, string @namespace)
     {
-        return await GetSkillTierAsync(professionId, skillTierId, @namespace, _region, _locale);
+        return await GetSkillTierAsync(professionId, skillTierId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Recipe>> GetRecipeAsync(int recipeId, string @namespace)
     {
-        return await GetRecipeAsync(recipeId, @namespace, _region, _locale);
+        return await GetRecipeAsync(recipeId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -70,7 +70,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<RecipeMedia>> GetRecipeMediaAsync(int recipeId, string @namespace)
     {
-        return await GetRecipeMediaAsync(recipeId, @namespace, _region, _locale);
+        return await GetRecipeMediaAsync(recipeId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

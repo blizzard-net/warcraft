@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterCollectionsIndex>> GetCharacterCollectionsIndexAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterCollectionsIndexAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterCollectionsIndexAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterPetsCollectionSummary>> GetCharacterPetsCollectionSummaryAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterPetsCollectionSummaryAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterPetsCollectionSummaryAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterMountsCollectionSummary>> GetCharacterMountsCollectionSummaryAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterMountsCollectionSummaryAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterMountsCollectionSummaryAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableSpecializationsIndex>> GetPlayableSpecializationsIndexAsync(string @namespace)
     {
-        return await GetPlayableSpecializationsIndexAsync(@namespace, _region, _locale);
+        return await GetPlayableSpecializationsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableSpecialization>> GetPlayableSpecializationAsync(int specId, string @namespace)
     {
-        return await GetPlayableSpecializationAsync(specId, @namespace, _region, _locale);
+        return await GetPlayableSpecializationAsync(specId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableSpecializationMedia>> GetPlayableSpecializationMediaAsync(int specId, string @namespace)
     {
-        return await GetPlayableSpecializationMediaAsync(specId, @namespace, _region, _locale);
+        return await GetPlayableSpecializationMediaAsync(specId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

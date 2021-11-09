@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ModifiedCraftingIndex>> GetModifiedCraftingIndexAsync(string @namespace)
     {
-        return await GetModifiedCraftingIndexAsync(@namespace, _region, _locale);
+        return await GetModifiedCraftingIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ModifiedCraftingCategoryIndex>> GetModifiedCraftingCategoryIndexAsync(string @namespace)
     {
-        return await GetModifiedCraftingCategoryIndexAsync(@namespace, _region, _locale);
+        return await GetModifiedCraftingCategoryIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ModifiedCraftingCategory>> GetModifiedCraftingCategoryAsync(int categoryId, string @namespace)
     {
-        return await GetModifiedCraftingCategoryAsync(categoryId, @namespace, _region, _locale);
+        return await GetModifiedCraftingCategoryAsync(categoryId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ModifiedCraftingReagentSlotTypeIndex>> GetModifiedCraftingReagentSlotTypeIndexAsync(string @namespace)
     {
-        return await GetModifiedCraftingReagentSlotTypeIndexAsync(@namespace, _region, _locale);
+        return await GetModifiedCraftingReagentSlotTypeIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ModifiedCraftingReagentSlotType>> GetModifiedCraftingReagentSlotTypeAsync(int slotTypeId, string @namespace)
     {
-        return await GetModifiedCraftingReagentSlotTypeAsync(slotTypeId, @namespace, _region, _locale);
+        return await GetModifiedCraftingReagentSlotTypeAsync(slotTypeId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneAffixesIndex>> GetMythicKeystoneAffixesIndexAsync(string @namespace)
     {
-        return await GetMythicKeystoneAffixesIndexAsync(@namespace, _region, _locale);
+        return await GetMythicKeystoneAffixesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneAffix>> GetMythicKeystoneAffixAsync(int keystoneAffixId, string @namespace)
     {
-        return await GetMythicKeystoneAffixAsync(keystoneAffixId, @namespace, _region, _locale);
+        return await GetMythicKeystoneAffixAsync(keystoneAffixId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneAffixMedia>> GetMythicKeystoneAffixMediaAsync(int keystoneAffixId, string @namespace)
     {
-        return await GetMythicKeystoneAffixMediaAsync(keystoneAffixId, @namespace, _region, _locale);
+        return await GetMythicKeystoneAffixMediaAsync(keystoneAffixId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

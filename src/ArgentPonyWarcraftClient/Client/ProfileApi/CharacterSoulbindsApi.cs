@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CharacterSoulbinds>> GetCharacterSoulbindsAsync(string realmSlug, string characterName, string @namespace)
     {
-        return await GetCharacterSoulbindsAsync(realmSlug, characterName, @namespace, _region, _locale);
+        return await GetCharacterSoulbindsAsync(realmSlug, characterName, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<RealmsIndex>> GetRealmsIndexAsync(string @namespace)
     {
-        return await GetRealmsIndexAsync(@namespace, _region, _locale);
+        return await GetRealmsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Realm>> GetRealmAsync(string realmSlug, string @namespace)
     {
-        return await GetRealmAsync(realmSlug, @namespace, _region, _locale);
+        return await GetRealmAsync(realmSlug, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

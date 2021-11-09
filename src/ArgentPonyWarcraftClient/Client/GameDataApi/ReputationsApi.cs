@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ReputationFactionsIndex>> GetReputationFactionsIndexAsync(string @namespace)
     {
-        return await GetReputationFactionsIndexAsync(@namespace, _region, _locale);
+        return await GetReputationFactionsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ReputationFaction>> GetReputationFactionAsync(int reputationFactionId, string @namespace)
     {
-        return await GetReputationFactionAsync(reputationFactionId, @namespace, _region, _locale);
+        return await GetReputationFactionAsync(reputationFactionId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ReputationTiersIndex>> GetReputationTiersIndexAsync(string @namespace)
     {
-        return await GetReputationTiersIndexAsync(@namespace, _region, _locale);
+        return await GetReputationTiersIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<ReputationTiers>> GetReputationTiersAsync(int reputationTiersId, string @namespace)
     {
-        return await GetReputationTiersAsync(reputationTiersId, @namespace, _region, _locale);
+        return await GetReputationTiersAsync(reputationTiersId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

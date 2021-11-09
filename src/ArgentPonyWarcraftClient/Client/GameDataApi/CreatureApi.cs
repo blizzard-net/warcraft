@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CreatureFamiliesIndex>> GetCreatureFamiliesIndexAsync(string @namespace)
     {
-        return await GetCreatureFamiliesIndexAsync(@namespace, _region, _locale);
+        return await GetCreatureFamiliesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CreatureFamily>> GetCreatureFamilyAsync(int creatureFamilyId, string @namespace)
     {
-        return await GetCreatureFamilyAsync(creatureFamilyId, @namespace, _region, _locale);
+        return await GetCreatureFamilyAsync(creatureFamilyId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CreatureTypesIndex>> GetCreatureTypesIndexAsync(string @namespace)
     {
-        return await GetCreatureTypesIndexAsync(@namespace, _region, _locale);
+        return await GetCreatureTypesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CreatureType>> GetCreatureTypeAsync(int creatureTypeId, string @namespace)
     {
-        return await GetCreatureTypeAsync(creatureTypeId, @namespace, _region, _locale);
+        return await GetCreatureTypeAsync(creatureTypeId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Creature>> GetCreatureAsync(int creatureId, string @namespace)
     {
-        return await GetCreatureAsync(creatureId, @namespace, _region, _locale);
+        return await GetCreatureAsync(creatureId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -70,7 +70,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CreatureDisplayMedia>> GetCreatureDisplayMediaAsync(int creatureDisplayId, string @namespace)
     {
-        return await GetCreatureDisplayMediaAsync(creatureDisplayId, @namespace, _region, _locale);
+        return await GetCreatureDisplayMediaAsync(creatureDisplayId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -83,7 +83,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<CreatureFamilyMedia>> GetCreatureFamilyMediaAsync(int creatureFamilyId, string @namespace)
     {
-        return await GetCreatureFamilyMediaAsync(creatureFamilyId, @namespace, _region, _locale);
+        return await GetCreatureFamilyMediaAsync(creatureFamilyId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

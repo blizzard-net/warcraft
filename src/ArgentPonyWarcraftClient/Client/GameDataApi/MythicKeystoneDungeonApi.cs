@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneDungeonsIndex>> GetMythicKeystoneDungeonsIndexAsync(string @namespace)
     {
-        return await GetMythicKeystoneDungeonsIndexAsync(@namespace, _region, _locale);
+        return await GetMythicKeystoneDungeonsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneDungeon>> GetMythicKeystoneDungeonAsync(int dungeonId, string @namespace)
     {
-        return await GetMythicKeystoneDungeonAsync(dungeonId, @namespace, _region, _locale);
+        return await GetMythicKeystoneDungeonAsync(dungeonId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneIndex>> GetMythicKeystoneIndexAsync(string @namespace)
     {
-        return await GetMythicKeystoneIndexAsync(@namespace, _region, _locale);
+        return await GetMythicKeystoneIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystonePeriodsIndex>> GetMythicKeystonePeriodsIndexAsync(string @namespace)
     {
-        return await GetMythicKeystonePeriodsIndexAsync(@namespace, _region, _locale);
+        return await GetMythicKeystonePeriodsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -57,7 +57,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystonePeriod>> GetMythicKeystonePeriodAsync(int periodId, string @namespace)
     {
-        return await GetMythicKeystonePeriodAsync(periodId, @namespace, _region, _locale);
+        return await GetMythicKeystonePeriodAsync(periodId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -70,7 +70,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneSeasonsIndex>> GetMythicKeystoneSeasonsIndexAsync(string @namespace)
     {
-        return await GetMythicKeystoneSeasonsIndexAsync(@namespace, _region, _locale);
+        return await GetMythicKeystoneSeasonsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -83,7 +83,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneSeason>> GetMythicKeystoneSeasonAsync(int seasonId, string @namespace)
     {
-        return await GetMythicKeystoneSeasonAsync(seasonId, @namespace, _region, _locale);
+        return await GetMythicKeystoneSeasonAsync(seasonId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

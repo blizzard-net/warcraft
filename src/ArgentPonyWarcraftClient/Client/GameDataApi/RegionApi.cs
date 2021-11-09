@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<RegionsIndex>> GetRegionsIndexAsync(string @namespace)
     {
-        return await GetRegionsIndexAsync(@namespace, _region, _locale);
+        return await GetRegionsIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<RegionData>> GetRegionAsync(int regionId, string @namespace)
     {
-        return await GetRegionAsync(regionId, @namespace, _region, _locale);
+        return await GetRegionAsync(regionId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

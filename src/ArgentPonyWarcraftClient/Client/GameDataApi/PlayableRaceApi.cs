@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableRacesIndex>> GetPlayableRacesIndexAsync(string @namespace)
     {
-        return await GetPlayableRacesIndexAsync(@namespace, _region, _locale);
+        return await GetPlayableRacesIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<PlayableRace>> GetPlayableRaceAsync(int playableRaceId, string @namespace)
     {
-        return await GetPlayableRaceAsync(playableRaceId, @namespace, _region, _locale);
+        return await GetPlayableRaceAsync(playableRaceId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

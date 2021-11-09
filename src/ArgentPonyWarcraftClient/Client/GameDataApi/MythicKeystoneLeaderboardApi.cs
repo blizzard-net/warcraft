@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneLeaderboardsIndex>> GetMythicKeystoneLeaderboardsIndexAsync(int connectedRealmId, string @namespace)
     {
-        return await GetMythicKeystoneLeaderboardsIndexAsync(connectedRealmId, @namespace, _region, _locale);
+        return await GetMythicKeystoneLeaderboardsIndexAsync(connectedRealmId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<MythicKeystoneLeaderboard>> GetMythicKeystoneLeaderboard(int connectedRealmId, int dungeonId, int period, string @namespace)
     {
-        return await GetMythicKeystoneLeaderboard(connectedRealmId, dungeonId, period, @namespace, _region, _locale);
+        return await GetMythicKeystoneLeaderboard(connectedRealmId, dungeonId, period, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

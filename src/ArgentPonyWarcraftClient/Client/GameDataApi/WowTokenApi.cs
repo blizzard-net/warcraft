@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<WowTokenIndex>> GetWowTokenIndexAsync(string @namespace)
     {
-        return await GetWowTokenIndexAsync(@namespace, _region, _locale);
+        return await GetWowTokenIndexAsync(@namespace, Region, Locale);
     }
 
     /// <inheritdoc />

@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<Guild>> GetGuildAsync(string realmSlug, string nameSlug, string @namespace)
     {
-        return await GetGuildAsync(realmSlug, nameSlug, @namespace, _region, _locale);
+        return await GetGuildAsync(realmSlug, nameSlug, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -18,7 +18,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<GuildActivity>> GetGuildActivityAsync(string realmSlug, string nameSlug, string @namespace)
     {
-        return await GetGuildActivityAsync(realmSlug, nameSlug, @namespace, _region, _locale);
+        return await GetGuildActivityAsync(realmSlug, nameSlug, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -31,7 +31,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<GuildAchievements>> GetGuildAchievementsAsync(string realmSlug, string nameSlug, string @namespace)
     {
-        return await GetGuildAchievementsAsync(realmSlug, nameSlug, @namespace, _region, _locale);
+        return await GetGuildAchievementsAsync(realmSlug, nameSlug, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
@@ -44,7 +44,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<GuildRoster>> GetGuildRosterAsync(string realmSlug, string nameSlug, string @namespace)
     {
-        return await GetGuildRosterAsync(realmSlug, nameSlug, @namespace, _region, _locale);
+        return await GetGuildRosterAsync(realmSlug, nameSlug, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />

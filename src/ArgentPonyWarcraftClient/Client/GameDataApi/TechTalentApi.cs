@@ -4,7 +4,7 @@ public partial class WarcraftClient
 {
     /// <inheritdoc />
     public Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace) =>
-        GetTechTalentTreesIndexAsync(@namespace, _region, _locale);
+        GetTechTalentTreesIndexAsync(@namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalentTreesIndex>> GetTechTalentTreesIndexAsync(string @namespace, Region region, Locale locale)
@@ -14,7 +14,7 @@ public partial class WarcraftClient
     }
 
     /// <inheritdoc />
-    public Task<RequestResult<TechTalentTree>> GetTechTalentTreeAsync(int techTalentTreeId, string @namespace) => GetTechTalentTreeAsync(techTalentTreeId, @namespace, _region, _locale);
+    public Task<RequestResult<TechTalentTree>> GetTechTalentTreeAsync(int techTalentTreeId, string @namespace) => GetTechTalentTreeAsync(techTalentTreeId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalentTree>> GetTechTalentTreeAsync(int techTalentTreeId, string @namespace, Region region, Locale locale)
@@ -25,7 +25,7 @@ public partial class WarcraftClient
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalentsIndex>> GetTechTalentsIndexAsync(string @namespace) =>
-        GetTechTalentsIndexAsync(@namespace, _region, _locale);
+        GetTechTalentsIndexAsync(@namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalentsIndex>> GetTechTalentsIndexAsync(string @namespace, Region region, Locale locale)
@@ -36,7 +36,7 @@ public partial class WarcraftClient
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace) =>
-        GetTechTalentAsync(techTalentId, @namespace, _region, _locale);
+        GetTechTalentAsync(techTalentId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalent>> GetTechTalentAsync(int techTalentId, string @namespace, Region region, Locale locale)
@@ -47,7 +47,7 @@ public partial class WarcraftClient
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalentMedia>> GetTechTalentMediaAsync(int techTalentId, string @namespace) =>
-        GetTechTalentMediaAsync(techTalentId, @namespace, _region, _locale);
+        GetTechTalentMediaAsync(techTalentId, @namespace, Region, Locale);
 
     /// <inheritdoc />
     public Task<RequestResult<TechTalentMedia>> GetTechTalentMediaAsync(int techTalentId, string @namespace, Region region, Locale locale)

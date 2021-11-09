@@ -5,7 +5,7 @@ public partial class WarcraftClient
     /// <inheritdoc />
     public async Task<RequestResult<AuctionsIndex>> GetAuctionsAsync(int connectedRealmId, string @namespace)
     {
-        return await GetAuctionsAsync(connectedRealmId, @namespace, _region, _locale);
+        return await GetAuctionsAsync(connectedRealmId, @namespace, Region, Locale);
     }
 
     /// <inheritdoc />
