@@ -233,20 +233,14 @@ public partial class WarcraftClient : IWarcraftClient
     /// </returns>
     private static string GetHost(Region region)
     {
-        switch (region)
+        return region switch
         {
-            case Region.China:
-                return "https://gateway.battlenet.com.cn";
-            case Region.Europe:
-                return "https://eu.api.blizzard.com";
-            case Region.Korea:
-                return "https://kr.api.blizzard.com";
-            case Region.Taiwan:
-                return "https://tw.api.blizzard.com";
-            case Region.US:
-            default:
-                return "https://us.api.blizzard.com";
-        }
+            Region.China => "https://gateway.battlenet.com.cn",
+            Region.Europe => "https://eu.api.blizzard.com",
+            Region.Korea => "https://kr.api.blizzard.com",
+            Region.Taiwan => "https://tw.api.blizzard.com",
+            _ => "https://us.api.blizzard.com",
+        };
     }
 
     /// <summary>
@@ -262,21 +256,15 @@ public partial class WarcraftClient : IWarcraftClient
     {
         Uri uri = new Uri(requestUri);
 
-        switch (uri.Host)
+        return uri.Host switch
         {
-            case "gateway.battlenet.com.cn":
-                return Region.China;
-            case "eu.api.blizzard.com":
-                return Region.Europe;
-            case "kr.api.blizzard.com":
-                return Region.Korea;
-            case "tw.api.blizzard.com":
-                return Region.Taiwan;
-            case "us.api.blizzard.com":
-                return Region.US;
-            default:
-                throw new ArgumentException($"The requestUri '{requestUri}' contains host '{uri.Host}', which is not recognized.", nameof(requestUri));
-        }
+            "gateway.battlenet.com.cn" => Region.China,
+            "eu.api.blizzard.com" => Region.Europe,
+            "kr.api.blizzard.com" => Region.Korea,
+            "tw.api.blizzard.com" => Region.Taiwan,
+            "us.api.blizzard.com" => Region.US,
+            _ => throw new ArgumentException($"The requestUri '{requestUri}' contains host '{uri.Host}', which is not recognized.", nameof(requestUri)),
+        };
     }
 
     /// <summary>
@@ -288,19 +276,13 @@ public partial class WarcraftClient : IWarcraftClient
     /// </returns>
     private static string GetOAuthHost(Region region)
     {
-        switch (region)
+        return region switch
         {
-            case Region.China:
-                return "https://www.battlenet.com.cn";
-            case Region.Europe:
-                return "https://eu.battle.net";
-            case Region.Korea:
-                return "https://kr.battle.net";
-            case Region.Taiwan:
-                return "https://tw.battle.net";
-            case Region.US:
-            default:
-                return "https://us.battle.net";
-        }
+            Region.China => "https://www.battlenet.com.cn",
+            Region.Europe => "https://eu.battle.net",
+            Region.Korea => "https://kr.battle.net",
+            Region.Taiwan => "https://tw.battle.net",
+            _ => "https://us.battle.net",
+        };
     }
 }
