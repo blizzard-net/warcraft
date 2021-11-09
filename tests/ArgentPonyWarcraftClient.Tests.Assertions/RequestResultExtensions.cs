@@ -14,5 +14,5 @@ public static class RequestResultExtensions
     /// A <see cref="RequestResultAssertions{T}"/> object..
     /// </returns>
     public static RequestResultAssertions<T> Should<T>(this RequestResult<T> subject) =>
-        new RequestResultAssertions<T>(subject);
+        new(subject);
 }
