@@ -17,7 +17,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
     {
         get
         {
-            var locales = Enum.GetValues(typeof(Locale))
+            IEnumerable<Locale> locales = Enum.GetValues(typeof(Locale))
                 .Cast<Locale>();
 
             return locales.Select(locale => new object[]
@@ -34,9 +34,9 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
             var allLocales = Enum.GetValues(typeof(Locale)).Cast<Locale>().ToList();
             var allRegions = Enum.GetValues(typeof(Region)).Cast<Region>().ToList();
 
-            foreach (var locale in allLocales)
+            foreach (Locale locale in allLocales)
             {
-                foreach (var region in allRegions)
+                foreach (Region region in allRegions)
                 {
                     var validLocaleAndRegion = new ValidLocaleAndRegionPair(locale);
 
@@ -55,9 +55,9 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
     {
         get
         {
-            foreach (var clientInterfaceTestData in new WarcraftClientInterfaceData())
+            foreach (object[] clientInterfaceTestData in new WarcraftClientInterfaceData())
             {
-                foreach (var localeAndRegionPair in LocaleAndRegionPairs)
+                foreach (object[] localeAndRegionPair in LocaleAndRegionPairs)
                 {
                     yield return clientInterfaceTestData.Concat(localeAndRegionPair).ToArray();
                 }
@@ -69,7 +69,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
     [MemberData(nameof(LocaleAndRegionPairs))]
     public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown(ValidLocaleAndRegionPair localeAndRegion)
     {
-        var exception = Assert.Throws<ArgumentNullException>(() =>
+        ArgumentNullException exception = Assert.Throws<ArgumentNullException>(() =>
             _services.AddWarcraftClients(null, "fake-client-secret", localeAndRegion.Region, localeAndRegion.Locale)
         );
 
@@ -80,7 +80,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
     [MemberData(nameof(LocaleAndRegionPairs))]
     public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown(ValidLocaleAndRegionPair localeAndRegion)
     {
-        var exception = Assert.Throws<ArgumentNullException>(() =>
+        ArgumentNullException exception = Assert.Throws<ArgumentNullException>(() =>
             _services.AddWarcraftClients("fake-client-id", null, localeAndRegion.Region, localeAndRegion.Locale)
         );
 
@@ -93,7 +93,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
         If_Locale_And_Region_Are_Not_Compatible_Then_ArgumentException_Is_Thrown_Stating_The_Locale_And_Region_Are_Not_Compatible(
             Locale locale, Region region)
     {
-        var exception = Assert.Throws<ArgumentException>(() =>
+        ArgumentException exception = Assert.Throws<ArgumentException>(() =>
             _services.AddWarcraftClients("fake-client-id", "fake-client-secret", region, locale)
         );
 
@@ -110,7 +110,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var client = serviceProvider.GetRequiredService(clientInterfaceToResolve);
+        object client = serviceProvider.GetRequiredService(clientInterfaceToResolve);
 
         Assert.IsType<WarcraftClient>(client);
     }
@@ -128,7 +128,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
 
         Assert.Equal(expectedClientId, warcraftClient.ClientId);
         Assert.Equal(expectedClientSecret, warcraftClient.ClientSecret);
@@ -145,7 +145,7 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
 
         Assert.NotSame(InternalHttpClient.Instance, warcraftClient.Client);
     }
@@ -159,8 +159,8 @@ public class When_Adding_Warcraft_Clients_With_Region_And_Locale
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
-        var acceptsJsonContent =
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        bool acceptsJsonContent =
             warcraftClient.Client.DefaultRequestHeaders.Accept.Contains(
                 new MediaTypeWithQualityHeaderValue("application/json"));
 

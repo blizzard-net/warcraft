@@ -4,7 +4,7 @@ internal static class ClientFactory
 {
     public static IWarcraftClient BuildClient()
     {
-        var credentials = ClientCredentialsSource.GetCredentials();
+        ClientCredentials credentials = ClientCredentialsSource.GetCredentials();
 
         return new WarcraftClient(
             clientId: credentials.ClientId,
@@ -15,7 +15,7 @@ internal static class ClientFactory
 
     public static RawBlizzardClient BuildRawBlizzardClient()
     {
-        var credentials = ClientCredentialsSource.GetCredentials();
+        ClientCredentials credentials = ClientCredentialsSource.GetCredentials();
 
         return new RawBlizzardClient(credentials);
     }

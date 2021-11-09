@@ -23,14 +23,14 @@ internal class ResilientTestCase : XunitTestCase
         CancellationTokenSource cancellationTokenSource)
     {
         const int maxRetries = 3;
-        var runCount = 0;
+        int runCount = 0;
 
         while (true)
         {
             // Capture and delay messages until we've decided to accept the final result.
             var resilientMessageBus = new ResilientMessageBus(messageBus);
 
-            var summary = await base.RunAsync(diagnosticMessageSink, resilientMessageBus, constructorArguments, aggregator, cancellationTokenSource);
+            RunSummary summary = await base.RunAsync(diagnosticMessageSink, resilientMessageBus, constructorArguments, aggregator, cancellationTokenSource);
             if (aggregator.HasExceptions || summary.Failed == 0 || ++runCount >= maxRetries || !resilientMessageBus.CanRetry)
             {
                 resilientMessageBus.Dispose(); // Sends all the delayed messages.

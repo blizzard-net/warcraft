@@ -36,7 +36,7 @@ internal class ResilientMessageBus : IMessageBus
 
     public void Dispose()
     {
-        foreach (var message in _messages)
+        foreach (IMessageSinkMessage message in _messages)
         {
             _innerBus.QueueMessage(message);
         }

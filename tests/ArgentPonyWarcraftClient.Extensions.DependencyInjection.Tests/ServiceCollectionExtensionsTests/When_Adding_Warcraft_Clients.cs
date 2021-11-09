@@ -17,7 +17,7 @@ public class When_Adding_Warcraft_Clients
     [Fact]
     public void If_Client_Id_Is_Null_Then_ArgumentNullException_Is_Thrown()
     {
-        var exception = Assert.Throws<ArgumentNullException>(() =>
+        ArgumentNullException exception = Assert.Throws<ArgumentNullException>(() =>
             _services.AddWarcraftClients(null, "fake-client-secret")
         );
 
@@ -27,7 +27,7 @@ public class When_Adding_Warcraft_Clients
     [Fact]
     public void If_Client_Secret_Is_Null_Then_ArgumentNullException_Is_Thrown()
     {
-        var exception = Assert.Throws<ArgumentNullException>(() =>
+        ArgumentNullException exception = Assert.Throws<ArgumentNullException>(() =>
             _services.AddWarcraftClients("fake-client-id", null)
         );
 
@@ -42,7 +42,7 @@ public class When_Adding_Warcraft_Clients
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var client = serviceProvider.GetRequiredService(clientInterfaceToResolve);
+        object client = serviceProvider.GetRequiredService(clientInterfaceToResolve);
 
         Assert.IsType<WarcraftClient>(client);
     }
@@ -57,7 +57,7 @@ public class When_Adding_Warcraft_Clients
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
 
         Assert.Equal(expectedClientId, warcraftClient.ClientId);
         Assert.Equal(expectedClientSecret, warcraftClient.ClientSecret);
@@ -70,7 +70,7 @@ public class When_Adding_Warcraft_Clients
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
 
         Assert.Equal(Locale.en_US, warcraftClient.Locale);
         Assert.Equal(Region.US, warcraftClient.Region);
@@ -83,7 +83,7 @@ public class When_Adding_Warcraft_Clients
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
 
         Assert.NotSame(InternalHttpClient.Instance, warcraftClient.Client);
     }
@@ -95,8 +95,8 @@ public class When_Adding_Warcraft_Clients
 
         IServiceProvider serviceProvider = _services.BuildServiceProvider();
 
-        var warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
-        var acceptsJsonContent =
+        WarcraftClient warcraftClient = serviceProvider.GetRequiredService<WarcraftClient>();
+        bool acceptsJsonContent =
             warcraftClient.Client.DefaultRequestHeaders.Accept.Contains(
                 new MediaTypeWithQualityHeaderValue("application/json"));
 

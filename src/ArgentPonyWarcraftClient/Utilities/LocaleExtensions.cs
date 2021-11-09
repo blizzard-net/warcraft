@@ -16,8 +16,8 @@ public static class LocaleExtensions
     /// <returns>The <see cref="Region"/> value for the specified <see cref="Locale"/>.</returns>
     public static Region GetRegionForLocale(this Locale locale)
     {
-        var fieldInfo = locale.GetType().GetRuntimeField(locale.ToString());
-        var localeRegionAttribute = fieldInfo.GetCustomAttribute<LocaleRegion>();
+        FieldInfo fieldInfo = locale.GetType().GetRuntimeField(locale.ToString());
+        LocaleRegion localeRegionAttribute = fieldInfo.GetCustomAttribute<LocaleRegion>();
 
         return localeRegionAttribute.Region;
     }
