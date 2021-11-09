@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 /// PvP match statistic for a character in a specific world map.

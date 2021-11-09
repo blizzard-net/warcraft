@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 /// Mythic Keystone season details for a character.

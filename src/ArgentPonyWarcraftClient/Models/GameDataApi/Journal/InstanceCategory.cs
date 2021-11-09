@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 /// The category of the instance (i.e., "DUNGEON" or "RAID").

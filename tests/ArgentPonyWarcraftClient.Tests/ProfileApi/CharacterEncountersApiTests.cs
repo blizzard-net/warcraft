@@ -1,8 +1,4 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
-
-namespace ArgentPonyWarcraftClient.Tests.ProfileApi;
+﻿namespace ArgentPonyWarcraftClient.Tests.ProfileApi;
 
 public class CharacterEncountersApiTests
 {

@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 /// A set of quest requirements.

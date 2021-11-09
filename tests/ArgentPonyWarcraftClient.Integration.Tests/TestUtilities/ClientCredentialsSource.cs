@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 
 /// <summary>
 /// A service that retrieves the cliend ID and secret from environment variables or a file.

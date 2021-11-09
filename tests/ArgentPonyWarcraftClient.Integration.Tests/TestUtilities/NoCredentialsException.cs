@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 
 /// <summary>
 /// An exception that indicates no Blizzard credentials were configured.

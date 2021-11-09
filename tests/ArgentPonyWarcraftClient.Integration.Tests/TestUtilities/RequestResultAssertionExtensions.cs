@@ -1,7 +1,4 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Assertions;
-
-namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 
 internal static class RequestResultAssertionExtensions
 {

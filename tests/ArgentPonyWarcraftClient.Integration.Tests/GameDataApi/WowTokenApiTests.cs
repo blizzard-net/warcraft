@@ -1,8 +1,4 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
-using ArgentPonyWarcraftClient.Tests.Assertions;
-
-namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi;
 
 public class WowTokenApiTests
 {

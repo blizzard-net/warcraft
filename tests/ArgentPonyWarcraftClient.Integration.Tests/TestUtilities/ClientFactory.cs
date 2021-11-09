@@ -1,6 +1,4 @@
-﻿using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
-
-namespace ArgentPonyWarcraftClient.Integration.Tests;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests;
 
 internal static class ClientFactory
 {

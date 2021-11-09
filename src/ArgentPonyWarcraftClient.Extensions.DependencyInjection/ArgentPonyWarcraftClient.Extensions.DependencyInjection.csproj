@@ -6,6 +6,8 @@
     <Title>Argent Pony Warcraft Client Dependency Injection</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard;Dependency-Injection;DI</PackageTags>
     <PackageIcon>ArgentPony.png</PackageIcon>
+    <LangVersion>10</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(CI)' == 'true'">

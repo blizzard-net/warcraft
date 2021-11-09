@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 ///     Used to set a valid region for a locale.

@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 /// A client for retrieving covenant data from the World of Warcraft Game Data APIs.

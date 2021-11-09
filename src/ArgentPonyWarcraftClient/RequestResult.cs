@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 ///     Represents a request made to the Blizzard API.

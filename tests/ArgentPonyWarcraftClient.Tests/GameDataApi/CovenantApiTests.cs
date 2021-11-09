@@ -1,8 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Assertions;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
+﻿using ArgentPonyWarcraftClient.Tests.Assertions;
 
 namespace ArgentPonyWarcraftClient.Tests.GameDataApi;
 

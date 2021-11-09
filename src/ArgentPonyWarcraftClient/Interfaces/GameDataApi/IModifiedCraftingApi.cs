@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 /// <summary>
 ///     A client for the World of Warcraft Modified Crafting API.

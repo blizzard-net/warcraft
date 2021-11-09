@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace ArgentPonyWarcraftClient;
+﻿namespace ArgentPonyWarcraftClient;
 
 public partial class WarcraftClient
 {

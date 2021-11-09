@@ -1,8 +1,4 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
-
-namespace ArgentPonyWarcraftClient.Tests.GameDataApi;
+﻿namespace ArgentPonyWarcraftClient.Tests.GameDataApi;
 
 public class ItemApiTests
 {
