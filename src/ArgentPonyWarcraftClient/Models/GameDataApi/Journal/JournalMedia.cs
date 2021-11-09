@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// Journal instance media.
+/// </summary>
+public record JournalInstanceMedia
 {
     /// <summary>
-    /// Journal instance media.
+    /// Gets links for the journal instance media.
     /// </summary>
-    public record JournalInstanceMedia
-    {
-        /// <summary>
-        /// Gets links for the journal instance media.
-        /// </summary>
-        [JsonPropertyName("_links")]
-        public Links Links { get; init; }
+    [JsonPropertyName("_links")]
+    public Links Links { get; init; }
 
-        /// <summary>
-        /// Gets a collection of media assets.
-        /// </summary>
-        [JsonPropertyName("assets")]
-        public AssetWithoutFileDataId[] Assets { get; init; }
-    }
+    /// <summary>
+    /// Gets a collection of media assets.
+    /// </summary>
+    [JsonPropertyName("assets")]
+    public AssetWithoutFileDataId[] Assets { get; init; }
 }

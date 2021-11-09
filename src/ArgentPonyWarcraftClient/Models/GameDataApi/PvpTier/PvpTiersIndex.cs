@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// An index of PvP tiers.
+/// </summary>
+public record PvpTiersIndex
 {
     /// <summary>
-    /// An index of PvP tiers.
+    /// Gets links for the index of PvP tiers.
     /// </summary>
-    public record PvpTiersIndex
-    {
-        /// <summary>
-        /// Gets links for the index of PvP tiers.
-        /// </summary>
-        [JsonPropertyName("_links")]
-        public Links Links { get; init; }
+    [JsonPropertyName("_links")]
+    public Links Links { get; init; }
 
-        /// <summary>
-        /// Gets references to the PvP tiers.
-        /// </summary>
-        [JsonPropertyName("tiers")]
-        public PvpTierReference[] Tiers { get; init; }
-    }
+    /// <summary>
+    /// Gets references to the PvP tiers.
+    /// </summary>
+    [JsonPropertyName("tiers")]
+    public PvpTierReference[] Tiers { get; init; }
 }

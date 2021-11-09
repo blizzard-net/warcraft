@@ -1,16 +1,15 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// A background.
+/// </summary>
+public record Background
 {
     /// <summary>
-    /// A background.
+    /// Gets the background color.
     /// </summary>
-    public record Background
-    {
-        /// <summary>
-        /// Gets the background color.
-        /// </summary>
-        [JsonPropertyName("color")]
-        public Color Color { get; init; }
-    }
+    [JsonPropertyName("color")]
+    public Color Color { get; init; }
 }

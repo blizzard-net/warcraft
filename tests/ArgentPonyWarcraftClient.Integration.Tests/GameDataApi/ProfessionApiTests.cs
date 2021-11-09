@@ -2,85 +2,84 @@
 using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 using ArgentPonyWarcraftClient.Tests.Assertions;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
+namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi;
+
+public class ProfessionApiTests
 {
-    public class ProfessionApiTests
+    [ResilientFact]
+    public async Task GetProfessionsIndexAsync_Gets_ProfessionsIndex()
     {
-        [ResilientFact]
-        public async Task GetProfessionsIndexAsync_Gets_ProfessionsIndex()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<ProfessionsIndex> result = await warcraftClient.GetProfessionsIndexAsync("static-us");
+        RequestResult<ProfessionsIndex> result = await warcraftClient.GetProfessionsIndexAsync("static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/profession/index?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/profession/index?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetProfessionAsync_Gets_Profession()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetProfessionAsync_Gets_Profession()
+    {
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<Profession> result = await warcraftClient.GetProfessionAsync(164, "static-us");
+        RequestResult<Profession> result = await warcraftClient.GetProfessionAsync(164, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/profession/164?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/profession/164?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetProfessionMediaAsync_Gets_ProfessionMedia()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetProfessionMediaAsync_Gets_ProfessionMedia()
+    {
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<ProfessionMedia> result = await warcraftClient.GetProfessionMediaAsync(164, "static-us");
+        RequestResult<ProfessionMedia> result = await warcraftClient.GetProfessionMediaAsync(164, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/profession/164?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetSkillTierAsync_Gets_SkillTier()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetSkillTierAsync_Gets_SkillTier()
+    {
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<SkillTier> result = await warcraftClient.GetSkillTierAsync(164, 2477, "static-us");
+        RequestResult<SkillTier> result = await warcraftClient.GetSkillTierAsync(164, 2477, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/profession/164/skill-tier/2477?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetRecipeAsync_Gets_Recipe()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetRecipeAsync_Gets_Recipe()
+    {
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<Recipe> result = await warcraftClient.GetRecipeAsync(1631, "static-us");
+        RequestResult<Recipe> result = await warcraftClient.GetRecipeAsync(1631, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/recipe/1631?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetRecipeAsync_Gets_Recipe_WithFactionSpecificItems()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetRecipeAsync_Gets_Recipe_WithFactionSpecificItems()
+    {
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<Recipe> result = await warcraftClient.GetRecipeAsync(38729, "static-us");
+        RequestResult<Recipe> result = await warcraftClient.GetRecipeAsync(38729, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/recipe/38729?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetRecipeMediaAsync_Gets_RecipeMedia()
-        {
-            IProfessionApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetRecipeMediaAsync_Gets_RecipeMedia()
+    {
+        IProfessionApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<RecipeMedia> result = await warcraftClient.GetRecipeMediaAsync(1631, "static-us");
+        RequestResult<RecipeMedia> result = await warcraftClient.GetRecipeMediaAsync(1631, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/media/recipe/1631?namespace=static-us&locale=en_US");
     }
 }

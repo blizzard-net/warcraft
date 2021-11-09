@@ -2,30 +2,29 @@
 using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 using ArgentPonyWarcraftClient.Tests.Assertions;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
+namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi;
+
+public class PlayableRaceApiTests
 {
-    public class PlayableRaceApiTests
+    [ResilientFact]
+    public async Task GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
     {
-        [ResilientFact]
-        public async Task GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
-        {
-            IPlayableRaceApi warcraftClient = ClientFactory.BuildClient();
+        IPlayableRaceApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<PlayableRacesIndex> result = await warcraftClient.GetPlayableRacesIndexAsync("static-us");
+        RequestResult<PlayableRacesIndex> result = await warcraftClient.GetPlayableRacesIndexAsync("static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/playable-race/index?namespace=static-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetPlayableRaceAsync_Gets_PlayableRace()
-        {
-            IPlayableRaceApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetPlayableRaceAsync_Gets_PlayableRace()
+    {
+        IPlayableRaceApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<PlayableRace> result = await warcraftClient.GetPlayableRaceAsync(2, "static-us");
+        RequestResult<PlayableRace> result = await warcraftClient.GetPlayableRaceAsync(2, "static-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-us&locale=en_US");
     }
 }

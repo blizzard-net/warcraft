@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// A PvP bracket.
+/// </summary>
+public record Bracket
 {
     /// <summary>
-    /// A PvP bracket.
+    /// Gets the ID of the PvP bracket.
     /// </summary>
-    public record Bracket
-    {
-        /// <summary>
-        /// Gets the ID of the PvP bracket.
-        /// </summary>
-        [JsonPropertyName("id")]
-        public int Id { get; init; }
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
 
-        /// <summary>
-        /// Gets the type of the PvP bracket.
-        /// </summary>
-        [JsonPropertyName("type")]
-        public string Type { get; init; }
-    }
+    /// <summary>
+    /// Gets the type of the PvP bracket.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string Type { get; init; }
 }

@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// An index of tech talents.
+/// </summary>
+public record TechTalentsIndex
 {
     /// <summary>
-    /// An index of tech talents.
+    /// Gets links for the index of tech talents.
     /// </summary>
-    public record TechTalentsIndex
-    {
-        /// <summary>
-        /// Gets links for the index of tech talents.
-        /// </summary>
-        [JsonPropertyName("_links")]
-        public Links Links { get; init; }
+    [JsonPropertyName("_links")]
+    public Links Links { get; init; }
 
-        /// <summary>
-        /// Gets the references to the tech talents.
-        /// </summary>
-        [JsonPropertyName("talents")]
-        public TechTalentReference[] Talents { get; init; }
-    }
+    /// <summary>
+    /// Gets the references to the tech talents.
+    /// </summary>
+    [JsonPropertyName("talents")]
+    public TechTalentReference[] Talents { get; init; }
 }

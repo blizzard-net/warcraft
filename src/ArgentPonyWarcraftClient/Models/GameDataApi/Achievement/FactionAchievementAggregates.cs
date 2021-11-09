@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// Achievement aggregates for a faction.
+/// </summary>
+public record FactionAchievementAggregates
 {
     /// <summary>
-    /// Achievement aggregates for a faction.
+    /// Gets the quantity.
     /// </summary>
-    public record FactionAchievementAggregates
-    {
-        /// <summary>
-        /// Gets the quantity.
-        /// </summary>
-        [JsonPropertyName("quantity")]
-        public int Quantity { get; init; }
+    [JsonPropertyName("quantity")]
+    public int Quantity { get; init; }
 
-        /// <summary>
-        /// Gets the number of points.
-        /// </summary>
-        [JsonPropertyName("points")]
-        public int Points { get; init; }
-    }
+    /// <summary>
+    /// Gets the number of points.
+    /// </summary>
+    [JsonPropertyName("points")]
+    public int Points { get; init; }
 }

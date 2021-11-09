@@ -1,8 +1,7 @@
-﻿namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
+
+internal class ClientCredentials
 {
-    internal class ClientCredentials
-    {
-        public string ClientId { get; set; }
-        public string ClientSecret { get; set; }
-    }
+    public string ClientId { get; set; }
+    public string ClientSecret { get; set; }
 }

@@ -1,20 +1,19 @@
 ﻿using System.Threading.Tasks;
 
-namespace ArgentPonyWarcraftClient
-{
-    public partial class WarcraftClient
-    {
-        /// <inheritdoc />
-        public async Task<RequestResult<WowTokenIndex>> GetWowTokenIndexAsync(string @namespace)
-        {
-            return await GetWowTokenIndexAsync(@namespace, _region, _locale);
-        }
+namespace ArgentPonyWarcraftClient;
 
-        /// <inheritdoc />
-        public async Task<RequestResult<WowTokenIndex>> GetWowTokenIndexAsync(string @namespace, Region region, Locale locale)
-        {
-            string host = GetHost(region);
-            return await GetAsync<WowTokenIndex>($"{host}/data/wow/token/index?namespace={@namespace}&locale={locale}");
-        }
+public partial class WarcraftClient
+{
+    /// <inheritdoc />
+    public async Task<RequestResult<WowTokenIndex>> GetWowTokenIndexAsync(string @namespace)
+    {
+        return await GetWowTokenIndexAsync(@namespace, _region, _locale);
+    }
+
+    /// <inheritdoc />
+    public async Task<RequestResult<WowTokenIndex>> GetWowTokenIndexAsync(string @namespace, Region region, Locale locale)
+    {
+        string host = GetHost(region);
+        return await GetAsync<WowTokenIndex>($"{host}/data/wow/token/index?namespace={@namespace}&locale={locale}");
     }
 }

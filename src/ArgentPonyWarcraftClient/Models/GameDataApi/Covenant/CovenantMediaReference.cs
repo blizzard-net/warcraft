@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// A reference to media for a particular covenant.
+/// </summary>
+public record CovenantMediaReference
 {
     /// <summary>
-    /// A reference to media for a particular covenant.
+    /// Gets the key for the covenant media reference.
     /// </summary>
-    public record CovenantMediaReference
-    {
-        /// <summary>
-        /// Gets the key for the covenant media reference.
-        /// </summary>
-        [JsonPropertyName("key")]
-        public Self Key { get; init; }
+    [JsonPropertyName("key")]
+    public Self Key { get; init; }
 
-        /// <summary>
-        /// Gets the Id for the covenant media reference.
-        /// </summary>
-        [JsonPropertyName("id")]
-        public int Id { get; init; }
-    }
+    /// <summary>
+    /// Gets the Id for the covenant media reference.
+    /// </summary>
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
 }

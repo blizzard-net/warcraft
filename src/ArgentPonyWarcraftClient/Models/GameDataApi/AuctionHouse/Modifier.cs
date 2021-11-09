@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// An item modifier.
+/// </summary>
+public record Modifier
 {
     /// <summary>
-    /// An item modifier.
+    /// Gets the type of modifier.
     /// </summary>
-    public record Modifier
-    {
-        /// <summary>
-        /// Gets the type of modifier.
-        /// </summary>
-        [JsonPropertyName("type")]
-        public int Type { get; init; }
+    [JsonPropertyName("type")]
+    public int Type { get; init; }
 
-        /// <summary>
-        /// Gets the value of the modifier.
-        /// </summary>
-        [JsonPropertyName("value")]
-        public int Value { get; init; }
-    }
+    /// <summary>
+    /// Gets the value of the modifier.
+    /// </summary>
+    [JsonPropertyName("value")]
+    public int Value { get; init; }
 }

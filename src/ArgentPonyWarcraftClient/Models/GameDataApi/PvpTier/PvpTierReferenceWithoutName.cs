@@ -1,22 +1,21 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// A reference to a PvP tier.
+/// </summary>
+public record PvpTierReferenceWithoutName
 {
     /// <summary>
-    /// A reference to a PvP tier.
+    /// Gets the key for the PvP tier.
     /// </summary>
-    public record PvpTierReferenceWithoutName
-    {
-        /// <summary>
-        /// Gets the key for the PvP tier.
-        /// </summary>
-        [JsonPropertyName("key")]
-        public Self Key { get; init; }
+    [JsonPropertyName("key")]
+    public Self Key { get; init; }
 
-        /// <summary>
-        /// Gets the ID of the PvP tier.
-        /// </summary>
-        [JsonPropertyName("id")]
-        public int Id { get; init; }
-    }
+    /// <summary>
+    /// Gets the ID of the PvP tier.
+    /// </summary>
+    [JsonPropertyName("id")]
+    public int Id { get; init; }
 }

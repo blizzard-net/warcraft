@@ -1,16 +1,15 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ArgentPonyWarcraftClient
+namespace ArgentPonyWarcraftClient;
+
+/// <summary>
+/// A collection of links.
+/// </summary>
+public record Links
 {
     /// <summary>
-    /// A collection of links.
+    /// Gets a self-reference.
     /// </summary>
-    public record Links
-    {
-        /// <summary>
-        /// Gets a self-reference.
-        /// </summary>
-        [JsonPropertyName("self")]
-        public Self Self { get; init; }
-    }
+    [JsonPropertyName("self")]
+    public Self Self { get; init; }
 }
