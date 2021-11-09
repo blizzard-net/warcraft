@@ -13,12 +13,12 @@ namespace ArgentPonyWarcraftClient.Extensions.DependencyInjection.Tests.ServiceC
 /// </summary>
 public class WarcraftClientInterfaceData : IEnumerable<object[]>
 {
-    private static readonly IReadOnlyCollection<Type> ClientInterfaces = GetWarcraftClientInterfaces()
+    private static readonly IReadOnlyCollection<Type> s_clientInterfaces = GetWarcraftClientInterfaces()
         .ToImmutableArray();
 
     public IEnumerator<object[]> GetEnumerator()
     {
-        return ClientInterfaces.Select(type => new object[] { type }).GetEnumerator();
+        return s_clientInterfaces.Select(type => new object[] { type }).GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

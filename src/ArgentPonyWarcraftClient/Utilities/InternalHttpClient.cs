@@ -8,7 +8,7 @@ namespace ArgentPonyWarcraftClient;
 /// </summary>
 internal static class InternalHttpClient
 {
-    private static HttpClient _instance;
+    private static HttpClient s_instance;
 
     /// <summary>
     ///     Gets the current HttpClient instance.
@@ -17,16 +17,16 @@ internal static class InternalHttpClient
     {
         get
         {
-            if (_instance != null)
+            if (s_instance != null)
             {
-                return _instance;
+                return s_instance;
             }
             else
             {
-                _instance = new HttpClient();
-                _instance.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                s_instance = new HttpClient();
+                s_instance.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                return _instance;
+                return s_instance;
             }
         }
     }
