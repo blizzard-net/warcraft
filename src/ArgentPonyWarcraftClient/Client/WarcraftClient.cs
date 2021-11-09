@@ -254,7 +254,7 @@ public partial class WarcraftClient : IWarcraftClient
     /// </returns>
     private static Region GetRegionFromUri(string requestUri)
     {
-        Uri uri = new Uri(requestUri);
+        Uri uri = new(requestUri);
 
         return uri.Host switch
         {

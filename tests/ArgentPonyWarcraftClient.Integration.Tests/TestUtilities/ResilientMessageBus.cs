@@ -9,7 +9,7 @@ namespace ArgentPonyWarcraftClient.Integration.Tests;
 internal class ResilientMessageBus : IMessageBus
 {
     private readonly IMessageBus _innerBus;
-    private readonly List<IMessageSinkMessage> _messages = new List<IMessageSinkMessage>();
+    private readonly List<IMessageSinkMessage> _messages = new();
 
     public ResilientMessageBus(IMessageBus innerBus)
     {

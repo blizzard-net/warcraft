@@ -77,7 +77,7 @@ internal class RawBlizzardClient
 
     private static Region GetRegionFromUri(string requestUri)
     {
-        Uri uri = new Uri(requestUri);
+        Uri uri = new(requestUri);
 
         return uri.Host switch
         {
