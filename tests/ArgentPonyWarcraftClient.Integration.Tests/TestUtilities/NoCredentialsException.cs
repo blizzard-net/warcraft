@@ -1,15 +1,12 @@
-﻿using System;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests.TestUtilities
+/// <summary>
+/// An exception that indicates no Blizzard credentials were configured.
+/// </summary>
+internal class NoCredentialsException : Exception
 {
-    /// <summary>
-    /// An exception that indicates no Blizzard credentials were configured.
-    /// </summary>
-    internal class NoCredentialsException : Exception
+    public NoCredentialsException(string message)
+        : base(message)
     {
-        public NoCredentialsException(string message)
-            : base(message)
-        {
-        }
     }
 }

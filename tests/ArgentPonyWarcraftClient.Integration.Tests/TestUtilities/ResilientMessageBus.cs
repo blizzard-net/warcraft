@@ -1,48 +1,44 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using Xunit.Abstractions;
+﻿using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests
+namespace ArgentPonyWarcraftClient.Integration.Tests;
+
+internal class ResilientMessageBus : IMessageBus
 {
-    internal class ResilientMessageBus : IMessageBus
+    private readonly IMessageBus _innerBus;
+    private readonly List<IMessageSinkMessage> _messages = new();
+
+    public ResilientMessageBus(IMessageBus innerBus)
     {
-        private readonly IMessageBus _innerBus;
-        private readonly List<IMessageSinkMessage> _messages = new List<IMessageSinkMessage>();
+        _innerBus = innerBus;
+    }
 
-        public ResilientMessageBus(IMessageBus innerBus)
+    /// <summary>
+    /// A value indicating whether the test encountered an exception that might be transient.
+    /// </summary>
+    public bool CanRetry { get; private set; } = false;
+
+    public bool QueueMessage(IMessageSinkMessage message)
+    {
+        if (message is ITestFailed testFailed)
         {
-            _innerBus = innerBus;
+            string exceptionType = testFailed.ExceptionTypes.FirstOrDefault();
+            CanRetry = exceptionType == typeof(HttpRequestException).FullName;
         }
 
-        /// <summary>
-        /// A value indicating whether the test encountered an exception that might be transient.
-        /// </summary>
-        public bool CanRetry { get; private set; } = false;
-
-        public bool QueueMessage(IMessageSinkMessage message)
+        lock (_messages)
         {
-            if (message is ITestFailed testFailed)
-            {
-                string exceptionType = testFailed.ExceptionTypes.FirstOrDefault();
-                CanRetry = exceptionType == typeof(HttpRequestException).FullName;
-            }
-
-            lock (_messages)
-            {
-                _messages.Add(message);
-            }
-
-            return true;
+            _messages.Add(message);
         }
 
-        public void Dispose()
+        return true;
+    }
+
+    public void Dispose()
+    {
+        foreach (IMessageSinkMessage message in _messages)
         {
-            foreach (var message in _messages)
-            {
-                _innerBus.QueueMessage(message);
-            }
+            _innerBus.QueueMessage(message);
         }
     }
 }

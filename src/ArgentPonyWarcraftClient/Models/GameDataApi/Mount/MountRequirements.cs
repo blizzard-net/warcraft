@@ -1,16 +1,13 @@
-﻿using System.Text.Json.Serialization;
+﻿namespace ArgentPonyWarcraftClient;
 
-namespace ArgentPonyWarcraftClient
+/// <summary>
+/// Requirements for using a mount.
+/// </summary>
+public record MountRequirements
 {
     /// <summary>
-    /// Requirements for using a mount.
+    /// Gets the required faction for the mount.
     /// </summary>
-    public record MountRequirements
-    {
-        /// <summary>
-        /// Gets the required faction for the mount.
-        /// </summary>
-        [JsonPropertyName("faction")]
-        public EnumType Faction { get; init; }
-    }
+    [JsonPropertyName("faction")]
+    public EnumType Faction { get; init; }
 }

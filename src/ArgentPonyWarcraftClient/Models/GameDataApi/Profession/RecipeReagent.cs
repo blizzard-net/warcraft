@@ -1,22 +1,19 @@
-﻿using System.Text.Json.Serialization;
+﻿namespace ArgentPonyWarcraftClient;
 
-namespace ArgentPonyWarcraftClient
+/// <summary>
+/// A reagent for a recipe.
+/// </summary>
+public record RecipeReagent
 {
     /// <summary>
-    /// A reagent for a recipe.
+    /// Gets a reference to the reagent item.
     /// </summary>
-    public record RecipeReagent
-    {
-        /// <summary>
-        /// Gets a reference to the reagent item.
-        /// </summary>
-        [JsonPropertyName("reagent")]
-        public ItemReference Reagent { get; init; }
+    [JsonPropertyName("reagent")]
+    public ItemReference Reagent { get; init; }
 
-        /// <summary>
-        /// Gets the quantity of the reagent required.
-        /// </summary>
-        [JsonPropertyName("quantity")]
-        public int Quantity { get; init; }
-    }
+    /// <summary>
+    /// Gets the quantity of the reagent required.
+    /// </summary>
+    [JsonPropertyName("quantity")]
+    public int Quantity { get; init; }
 }

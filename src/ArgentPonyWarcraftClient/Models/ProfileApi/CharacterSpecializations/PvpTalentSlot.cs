@@ -1,22 +1,19 @@
-﻿using System.Text.Json.Serialization;
+﻿namespace ArgentPonyWarcraftClient;
 
-namespace ArgentPonyWarcraftClient
+/// <summary>
+/// A PvP talent slot.
+/// </summary>
+public record PvpTalentSlot
 {
     /// <summary>
-    /// A PvP talent slot.
+    /// Gets the selected PvP talent.
     /// </summary>
-    public record PvpTalentSlot
-    {
-        /// <summary>
-        /// Gets the selected PvP talent.
-        /// </summary>
-        [JsonPropertyName("selected")]
-        public PvpTalentElementForAbility Selected { get; init; }
+    [JsonPropertyName("selected")]
+    public PvpTalentElementForAbility Selected { get; init; }
 
-        /// <summary>
-        /// Gets the PvP talent slot number.
-        /// </summary>
-        [JsonPropertyName("slot_number")]
-        public int SlotNumber { get; init; }
-    }
+    /// <summary>
+    /// Gets the PvP talent slot number.
+    /// </summary>
+    [JsonPropertyName("slot_number")]
+    public int SlotNumber { get; init; }
 }

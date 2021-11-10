@@ -1,20 +1,15 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
+﻿namespace ArgentPonyWarcraftClient.Tests.ProfileApi;
 
-namespace ArgentPonyWarcraftClient.Tests.ProfileApi
+public class CharacterHunterPetsApiTests
 {
-    public class CharacterHunterPetsApiTests
+    [Fact]
+    public async Task GetCharacterHunterPetsSummaryAsync_Gets_CharacterHunterPetsSummary()
     {
-        [Fact]
-        public async Task GetCharacterHunterPetsSummaryAsync_Gets_CharacterHunterPetsSummary()
-        {
-            ICharacterHunterPetsApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/anradin/hunter-pets?namespace=profile-us&locale=en_US",
-                responseContent: Resources.CharacterHunterPetsSummaryResponse);
+        ICharacterHunterPetsApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/profile/wow/character/norgannon/anradin/hunter-pets?namespace=profile-us&locale=en_US",
+            responseContent: Resources.CharacterHunterPetsSummaryResponse);
 
-            RequestResult<CharacterHunterPetsSummary> result = await warcraftClient.GetCharacterHunterPetsSummaryAsync("norgannon", "anradin", "profile-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<CharacterHunterPetsSummary> result = await warcraftClient.GetCharacterHunterPetsSummaryAsync("norgannon", "anradin", "profile-us");
+        Assert.NotNull(result.Value);
     }
 }

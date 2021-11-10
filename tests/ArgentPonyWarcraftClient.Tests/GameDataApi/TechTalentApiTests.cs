@@ -1,79 +1,75 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Assertions;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
+﻿using ArgentPonyWarcraftClient.Tests.Assertions;
 
-namespace ArgentPonyWarcraftClient.Tests.GameDataApi
+namespace ArgentPonyWarcraftClient.Tests.GameDataApi;
+
+public class TechTalentApiTests
 {
-    public class TechTalentApiTests
+    [Fact]
+    public async Task When_Getting_The_Tech_Talent_Tree_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
     {
-        [Fact]
-        public async Task When_Getting_The_Tech_Talent_Tree_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
-        {
-            ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/tech-talent-tree/index?namespace=static-us&locale=en_US",
-                Resources.TechTalentTreeIndexResponse
-            );
+        ITechTalentApi client = ClientFactory.BuildMockClient(
+            "https://us.api.blizzard.com/data/wow/tech-talent-tree/index?namespace=static-us&locale=en_US",
+            Resources.TechTalentTreeIndexResponse
+        );
 
-            RequestResult<TechTalentTreesIndex> result = await client.GetTechTalentTreesIndexAsync("static-us");
+        RequestResult<TechTalentTreesIndex> result = await client.GetTechTalentTreesIndexAsync("static-us");
 
-            result.Should().BeSuccessfulRequest()
-                .BeEquivalentToJson(Resources.TechTalentTreeIndexResponse);
-        }
+        result.Should().BeSuccessfulRequest()
+            .BeEquivalentToJson(Resources.TechTalentTreeIndexResponse);
+    }
 
-        [Fact]
-        public async Task When_Getting_A_Tech_Talent_Tree_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
-        {
-            ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-us&locale=en_US",
-                Resources.TechTalentTreeResponse
-            );
+    [Fact]
+    public async Task When_Getting_A_Tech_Talent_Tree_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+    {
+        ITechTalentApi client = ClientFactory.BuildMockClient(
+            "https://us.api.blizzard.com/data/wow/tech-talent-tree/275?namespace=static-us&locale=en_US",
+            Resources.TechTalentTreeResponse
+        );
 
-            RequestResult<TechTalentTree> result = await client.GetTechTalentTreeAsync(275, "static-us");
+        RequestResult<TechTalentTree> result = await client.GetTechTalentTreeAsync(275, "static-us");
 
-            result.Should().BeSuccessfulRequest()
-                .BeEquivalentToJson(Resources.TechTalentTreeResponse);
-        }
+        result.Should().BeSuccessfulRequest()
+            .BeEquivalentToJson(Resources.TechTalentTreeResponse);
+    }
 
-        [Fact]
-        public async Task When_Getting_The_Tech_Talent_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
-        {
-            ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/tech-talent/index?namespace=static-us&locale=en_US",
-                Resources.TechTalentsIndexResponse
-            );
+    [Fact]
+    public async Task When_Getting_The_Tech_Talent_Index_Then_Successful_Result_With_Expected_Content_Is_Returned()
+    {
+        ITechTalentApi client = ClientFactory.BuildMockClient(
+            "https://us.api.blizzard.com/data/wow/tech-talent/index?namespace=static-us&locale=en_US",
+            Resources.TechTalentsIndexResponse
+        );
 
-            RequestResult<TechTalentsIndex> result = await client.GetTechTalentsIndexAsync("static-us");
+        RequestResult<TechTalentsIndex> result = await client.GetTechTalentsIndexAsync("static-us");
 
-            result.Should().BeSuccessfulRequest()
-                .BeEquivalentToJson(Resources.TechTalentsIndexResponse);
-        }
+        result.Should().BeSuccessfulRequest()
+            .BeEquivalentToJson(Resources.TechTalentsIndexResponse);
+    }
 
-        [Fact]
-        public async Task When_Getting_A_Tech_Talent_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
-        {
-            ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-us&locale=en_US",
-                Resources.TechTalentResponse);
+    [Fact]
+    public async Task When_Getting_A_Tech_Talent_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+    {
+        ITechTalentApi client = ClientFactory.BuildMockClient(
+            "https://us.api.blizzard.com/data/wow/tech-talent/863?namespace=static-us&locale=en_US",
+            Resources.TechTalentResponse);
 
-            RequestResult<TechTalent> result = await client.GetTechTalentAsync(863, "static-us");
+        RequestResult<TechTalent> result = await client.GetTechTalentAsync(863, "static-us");
 
-            result.Should().BeSuccessfulRequest()
-                .BeEquivalentToJson(Resources.TechTalentResponse);
-        }
+        result.Should().BeSuccessfulRequest()
+            .BeEquivalentToJson(Resources.TechTalentResponse);
+    }
 
-        [Fact]
-        public async Task When_Getting_Tech_Talent_Media_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
-        {
-            ITechTalentApi client = ClientFactory.BuildMockClient(
-                "https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-us&locale=en_US",
-                Resources.TechTalentMediaResponse
-            );
+    [Fact]
+    public async Task When_Getting_Tech_Talent_Media_By_Id_Then_Successful_Result_With_Expected_Content_Is_Returned()
+    {
+        ITechTalentApi client = ClientFactory.BuildMockClient(
+            "https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-us&locale=en_US",
+            Resources.TechTalentMediaResponse
+        );
 
-            RequestResult<TechTalentMedia> result = await client.GetTechTalentMediaAsync(1612, "static-us");
+        RequestResult<TechTalentMedia> result = await client.GetTechTalentMediaAsync(1612, "static-us");
 
-            result.Should().BeSuccessfulRequest()
-                .BeEquivalentToJson(Resources.TechTalentMediaResponse);
-        }
+        result.Should().BeSuccessfulRequest()
+            .BeEquivalentToJson(Resources.TechTalentMediaResponse);
     }
 }

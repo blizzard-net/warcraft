@@ -1,16 +1,14 @@
-﻿using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi
+namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi;
+
+public class CharacterReputationsApiTests
 {
-    public class CharacterReputationsApiTests
+    [ResilientFact]
+    public async Task GetCharacterReputationsSummaryAsync_Gets_CharacterReputationsSummary()
     {
-        [ResilientFact]
-        public async Task GetCharacterReputationsSummaryAsync_Gets_CharacterReputationsSummary()
-        {
-            ICharacterReputationsApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<CharacterReputationsSummary> result = await warcraftClient.GetCharacterReputationsSummaryAsync("norgannon", "drinian", "profile-us");
-            Assert.NotNull(result.Value);
-        }
+        ICharacterReputationsApi warcraftClient = ClientFactory.BuildClient();
+        RequestResult<CharacterReputationsSummary> result = await warcraftClient.GetCharacterReputationsSummaryAsync("norgannon", "drinian", "profile-us");
+        Assert.NotNull(result.Value);
     }
 }

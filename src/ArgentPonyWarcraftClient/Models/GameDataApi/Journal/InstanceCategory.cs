@@ -1,16 +1,13 @@
-﻿using System.Text.Json.Serialization;
+﻿namespace ArgentPonyWarcraftClient;
 
-namespace ArgentPonyWarcraftClient
+/// <summary>
+/// The category of the instance (i.e., "DUNGEON" or "RAID").
+/// </summary>
+public record InstanceCategory
 {
     /// <summary>
-    /// The category of the instance (i.e., "DUNGEON" or "RAID").
+    /// Gets the type of the instance category.
     /// </summary>
-    public record InstanceCategory
-    {
-        /// <summary>
-        /// Gets the type of the instance category.
-        /// </summary>
-        [JsonPropertyName("type")]
-        public string Type { get; init; }
-    }
+    [JsonPropertyName("type")]
+    public string Type { get; init; }
 }

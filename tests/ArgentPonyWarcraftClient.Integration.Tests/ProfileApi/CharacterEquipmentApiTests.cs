@@ -1,16 +1,14 @@
-﻿using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi
+namespace ArgentPonyWarcraftClient.Integration.Tests.ProfileApi;
+
+public class CharacterEquipmentApiTests
 {
-    public class CharacterEquipmentApiTests
+    [ResilientFact]
+    public async Task GetCharacterEquipmentSummaryAsync_Gets_CharacterEquipmentSummary()
     {
-        [ResilientFact]
-        public async Task GetCharacterEquipmentSummaryAsync_Gets_CharacterEquipmentSummary()
-        {
-            ICharacterEquipmentApi warcraftClient = ClientFactory.BuildClient();
-            RequestResult<CharacterEquipmentSummary> result = await warcraftClient.GetCharacterEquipmentSummaryAsync("norgannon", "drinian", "profile-us");
-            Assert.NotNull(result.Value);
-        }
+        ICharacterEquipmentApi warcraftClient = ClientFactory.BuildClient();
+        RequestResult<CharacterEquipmentSummary> result = await warcraftClient.GetCharacterEquipmentSummaryAsync("norgannon", "drinian", "profile-us");
+        Assert.NotNull(result.Value);
     }
 }

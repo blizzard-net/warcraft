@@ -1,31 +1,26 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Integration.Tests.TestUtilities;
-using ArgentPonyWarcraftClient.Tests.Assertions;
+﻿namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi;
 
-namespace ArgentPonyWarcraftClient.Integration.Tests.GameDataApi
+public class RealmApiTests
 {
-    public class RealmApiTests
+    [ResilientFact]
+    public async Task GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
     {
-        [ResilientFact]
-        public async Task GetPlayableRacesIndexAsync_Gets_PlayableRacesIndex()
-        {
-            IRealmApi warcraftClient = ClientFactory.BuildClient();
+        IRealmApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<RealmsIndex> result = await warcraftClient.GetRealmsIndexAsync("dynamic-us");
+        RequestResult<RealmsIndex> result = await warcraftClient.GetRealmsIndexAsync("dynamic-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/realm/index?namespace=dynamic-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/realm/index?namespace=dynamic-us&locale=en_US");
+    }
 
-        [ResilientFact]
-        public async Task GetRealmAsync_Gets_Realm()
-        {
-            IRealmApi warcraftClient = ClientFactory.BuildClient();
+    [ResilientFact]
+    public async Task GetRealmAsync_Gets_Realm()
+    {
+        IRealmApi warcraftClient = ClientFactory.BuildClient();
 
-            RequestResult<Realm> result = await warcraftClient.GetRealmAsync("tichondrius", "dynamic-us");
+        RequestResult<Realm> result = await warcraftClient.GetRealmAsync("tichondrius", "dynamic-us");
 
-            await result.Should().BeSuccessfulRequest()
-                .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/realm/tichondrius?namespace=dynamic-us&locale=en_US");
-        }
+        await result.Should().BeSuccessfulRequest()
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/realm/tichondrius?namespace=dynamic-us&locale=en_US");
     }
 }

@@ -1,20 +1,15 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
+﻿namespace ArgentPonyWarcraftClient.Tests.GameDataApi;
 
-namespace ArgentPonyWarcraftClient.Tests.GameDataApi
+public class WowTokenApiTests
 {
-    public class WowTokenApiTests
+    [Fact]
+    public async Task GetWowTokenIndexAsync_Gets_WowTokenIndex()
     {
-        [Fact]
-        public async Task GetWowTokenIndexAsync_Gets_WowTokenIndex()
-        {
-            IWowTokenApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/token/index?namespace=dynamic-us&locale=en_US",
-                responseContent: Resources.WowTokenIndexResponse);
+        IWowTokenApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/token/index?namespace=dynamic-us&locale=en_US",
+            responseContent: Resources.WowTokenIndexResponse);
 
-            RequestResult<WowTokenIndex> result = await warcraftClient.GetWowTokenIndexAsync("dynamic-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<WowTokenIndex> result = await warcraftClient.GetWowTokenIndexAsync("dynamic-us");
+        Assert.NotNull(result.Value);
     }
 }

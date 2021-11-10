@@ -1,28 +1,25 @@
-﻿using System.Text.Json.Serialization;
+﻿namespace ArgentPonyWarcraftClient;
 
-namespace ArgentPonyWarcraftClient
+/// <summary>
+/// A guild crest.
+/// </summary>
+public record GuildCrest
 {
     /// <summary>
-    /// A guild crest.
+    /// Gets the guild crest emblem and color.
     /// </summary>
-    public record GuildCrest
-    {
-        /// <summary>
-        /// Gets the guild crest emblem and color.
-        /// </summary>
-        [JsonPropertyName("emblem")]
-        public GuildCrestEmblemWithColor Emblem { get; init; }
+    [JsonPropertyName("emblem")]
+    public GuildCrestEmblemWithColor Emblem { get; init; }
 
-        /// <summary>
-        /// Gets the guild crest border and color.
-        /// </summary>
-        [JsonPropertyName("border")]
-        public GuildCrestBorderWithColor Border { get; init; }
+    /// <summary>
+    /// Gets the guild crest border and color.
+    /// </summary>
+    [JsonPropertyName("border")]
+    public GuildCrestBorderWithColor Border { get; init; }
 
-        /// <summary>
-        /// Gets the guild crest background.
-        /// </summary>
-        [JsonPropertyName("background")]
-        public Background Background { get; init; }
-    }
+    /// <summary>
+    /// Gets the guild crest background.
+    /// </summary>
+    [JsonPropertyName("background")]
+    public Background Background { get; init; }
 }

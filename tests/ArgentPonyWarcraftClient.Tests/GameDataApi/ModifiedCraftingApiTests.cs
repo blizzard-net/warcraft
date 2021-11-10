@@ -1,64 +1,59 @@
-﻿using System.Threading.Tasks;
-using ArgentPonyWarcraftClient.Tests.Properties;
-using Xunit;
+﻿namespace ArgentPonyWarcraftClient.Tests.GameDataApi;
 
-namespace ArgentPonyWarcraftClient.Tests.GameDataApi
+public class ModifiedCraftingApiTests
 {
-    public class ModifiedCraftingApiTests
+    [Fact]
+    public async Task GetModifiedCraftingIndexAsync_Gets_ModifiedCraftingIndex()
     {
-        [Fact]
-        public async Task GetModifiedCraftingIndexAsync_Gets_ModifiedCraftingIndex()
-        {
-            IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/index?namespace=static-us&locale=en_US",
-                responseContent: Resources.ModifiedCraftingIndexResponse);
+        IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/index?namespace=static-us&locale=en_US",
+            responseContent: Resources.ModifiedCraftingIndexResponse);
 
-            RequestResult<ModifiedCraftingIndex> result = await warcraftClient.GetModifiedCraftingIndexAsync("static-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<ModifiedCraftingIndex> result = await warcraftClient.GetModifiedCraftingIndexAsync("static-us");
+        Assert.NotNull(result.Value);
+    }
 
-        [Fact]
-        public async Task GetModifiedCraftingCategoryIndexAsync_Gets_ModifiedCraftingCategoryIndex()
-        {
-            IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/category/index?namespace=static-us&locale=en_US",
-                responseContent: Resources.ModifiedCraftingCategoryIndexResponse);
+    [Fact]
+    public async Task GetModifiedCraftingCategoryIndexAsync_Gets_ModifiedCraftingCategoryIndex()
+    {
+        IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/category/index?namespace=static-us&locale=en_US",
+            responseContent: Resources.ModifiedCraftingCategoryIndexResponse);
 
-            RequestResult<ModifiedCraftingCategoryIndex> result = await warcraftClient.GetModifiedCraftingCategoryIndexAsync("static-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<ModifiedCraftingCategoryIndex> result = await warcraftClient.GetModifiedCraftingCategoryIndexAsync("static-us");
+        Assert.NotNull(result.Value);
+    }
 
-        [Fact]
-        public async Task GetModifiedCraftingCategoryAsync_Gets_ModifiedCraftingCategory()
-        {
-            IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-us&locale=en_US",
-                responseContent: Resources.ModifiedCraftingCategoryResponse);
+    [Fact]
+    public async Task GetModifiedCraftingCategoryAsync_Gets_ModifiedCraftingCategory()
+    {
+        IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/category/1?namespace=static-us&locale=en_US",
+            responseContent: Resources.ModifiedCraftingCategoryResponse);
 
-            RequestResult<ModifiedCraftingCategory> result = await warcraftClient.GetModifiedCraftingCategoryAsync(1, "static-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<ModifiedCraftingCategory> result = await warcraftClient.GetModifiedCraftingCategoryAsync(1, "static-us");
+        Assert.NotNull(result.Value);
+    }
 
-        [Fact]
-        public async Task GetModifiedCraftingReagentSlotTypeIndexAsync_Gets_ModifiedCraftingReagentSlotTypeIndex()
-        {
-            IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/index?namespace=static-us&locale=en_US",
-                responseContent: Resources.ModifiedCraftingReagentSlotTypeIndexResponse);
+    [Fact]
+    public async Task GetModifiedCraftingReagentSlotTypeIndexAsync_Gets_ModifiedCraftingReagentSlotTypeIndex()
+    {
+        IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/index?namespace=static-us&locale=en_US",
+            responseContent: Resources.ModifiedCraftingReagentSlotTypeIndexResponse);
 
-            RequestResult<ModifiedCraftingReagentSlotTypeIndex> result = await warcraftClient.GetModifiedCraftingReagentSlotTypeIndexAsync("static-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<ModifiedCraftingReagentSlotTypeIndex> result = await warcraftClient.GetModifiedCraftingReagentSlotTypeIndexAsync("static-us");
+        Assert.NotNull(result.Value);
+    }
 
-        [Fact]
-        public async Task GetModifiedCraftingReagentSlotTypeAsync_Gets_ModifiedCraftingReagentSlotType()
-        {
-            IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
-                requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-us&locale=en_US",
-                responseContent: Resources.ModifiedCraftingReagentSlotTypeResponse);
+    [Fact]
+    public async Task GetModifiedCraftingReagentSlotTypeAsync_Gets_ModifiedCraftingReagentSlotType()
+    {
+        IModifiedCraftingApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/modified-crafting/reagent-slot-type/16?namespace=static-us&locale=en_US",
+            responseContent: Resources.ModifiedCraftingReagentSlotTypeResponse);
 
-            RequestResult<ModifiedCraftingReagentSlotType> result = await warcraftClient.GetModifiedCraftingReagentSlotTypeAsync(16, "static-us");
-            Assert.NotNull(result.Value);
-        }
+        RequestResult<ModifiedCraftingReagentSlotType> result = await warcraftClient.GetModifiedCraftingReagentSlotTypeAsync(16, "static-us");
+        Assert.NotNull(result.Value);
     }
 }
