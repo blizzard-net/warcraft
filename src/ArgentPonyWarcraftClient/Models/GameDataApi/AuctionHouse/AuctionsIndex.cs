@@ -22,4 +22,10 @@ public record AuctionsIndex
     /// </summary>
     [JsonPropertyName("auctions")]
     public Auction[] Auctions { get; init; }
+
+    /// <summary>
+    /// Gets commodities associated with the auctions.
+    /// </summary>
+    [JsonPropertyName("commodities")]
+    public Self Commodities { get; init; }
 }

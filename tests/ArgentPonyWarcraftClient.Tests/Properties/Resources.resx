@@ -54220,7 +54220,10 @@
       "quantity": 1,
       "time_left": "VERY_LONG"
     }
-  ]
+  ],
+  "commodities": {
+    "href": "https://us.api.blizzard.com/data/wow/auctions/commodities?namespace=dynamic-us"
+  }
 }</value>
   </data>
   <data name="ItemResponse" xml:space="preserve">
