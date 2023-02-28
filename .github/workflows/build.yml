@@ -15,10 +15,10 @@ jobs:
       with:
         fetch-depth: 0 # avoid shallow clone so nbgv can do its work.
 
-    - name: Install .NET 5 SDK
+    - name: Install .NET 7 SDK
       uses: actions/setup-dotnet@5a3fa01c67e60dba8f95e2878436c7151c4b5f01 # v1.8.2
       with:
-        dotnet-version: 6.0.100
+        dotnet-version: 7.0.103
 
     - name: Build
       run: dotnet build --configuration Release --verbosity minimal
