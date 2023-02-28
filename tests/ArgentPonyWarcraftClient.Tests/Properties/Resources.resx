@@ -61505,27 +61505,36 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us"
     }
   },
-  "id": 23106,
-  "tier_index": 0,
-  "column_index": 0,
-  "level": 15,
-  "description": "Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.",
+  "id": 117163,
+  "rank_descriptions": [
+    {
+      "rank": 1,
+      "description": "Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage."
+    }
+  ],
   "spell": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us"
     },
-    "name": "Eye of the Tiger",
-    "id": 196607
+    "name": "Best Served Cold",
+    "id": 202560
   },
   "playable_class": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-10.0.5_47621-us"
     },
-    "name": "Monk",
-    "id": 10
+    "name": "Warrior",
+    "id": 1
+  },
+  "playable_specialization": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-10.0.5_47621-us"
+    },
+    "name": "Protection",
+    "id": 73
   }
 }</value>
   </data>

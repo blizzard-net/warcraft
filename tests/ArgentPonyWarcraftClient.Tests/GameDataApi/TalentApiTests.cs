@@ -17,10 +17,10 @@ public class TalentApiTests
     public async Task GetTalentAsync_Gets_Talent()
     {
         ITalentApi warcraftClient = ClientFactory.BuildMockClient(
-            requestUri: "https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-us&locale=en_US",
+            requestUri: "https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-us&locale=en_US",
             responseContent: Resources.TalentResponse);
 
-        RequestResult<Talent> result = await warcraftClient.GetTalentAsync(23106, "static-us");
+        RequestResult<Talent> result = await warcraftClient.GetTalentAsync(117163, "static-us");
         Assert.NotNull(result.Value);
     }
 

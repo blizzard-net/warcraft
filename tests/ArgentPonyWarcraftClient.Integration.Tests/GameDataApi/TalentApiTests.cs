@@ -18,10 +18,10 @@ public class TalentApiTests
     {
         ITalentApi warcraftClient = ClientFactory.BuildClient();
 
-        RequestResult<Talent> result = await warcraftClient.GetTalentAsync(23106, "static-us");
+        RequestResult<Talent> result = await warcraftClient.GetTalentAsync(117163, "static-us");
 
         await result.Should().BeSuccessfulRequest()
-            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-us&locale=en_US");
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-us&locale=en_US");
     }
 
     [ResilientFact]
