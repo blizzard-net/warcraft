@@ -54227,7 +54227,7 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-10.0.5_47621-us"
     }
   },
   "id": 19019,
@@ -54236,24 +54236,24 @@
     "type": "LEGENDARY",
     "name": "Legendary"
   },
-  "level": 58,
-  "required_level": 60,
+  "level": 29,
+  "required_level": 25,
   "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-10.0.5_47621-us"
     },
     "id": 19019
   },
   "item_class": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-10.0.5_47621-us"
     },
     "name": "Weapon",
     "id": 2
   },
   "item_subclass": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-10.0.5_47621-us"
     },
     "name": "Sword",
     "id": 7
@@ -54262,18 +54262,22 @@
     "type": "WEAPON",
     "name": "One-Hand"
   },
-  "purchase_price": 575526,
-  "sell_price": 115105,
+  "purchase_price": 162276,
+  "sell_price": 32455,
   "max_count": 1,
   "is_equippable": true,
   "is_stackable": false,
   "preview_item": {
     "item": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-10.0.5_47621-us"
       },
       "id": 19019
     },
+    "context": 0,
+    "bonus_list": [
+      9264
+    ],
     "quality": {
       "type": "LEGENDARY",
       "name": "Legendary"
@@ -54281,20 +54285,20 @@
     "name": "Thunderfury, Blessed Blade of the Windseeker",
     "media": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-10.0.5_47621-us"
       },
       "id": 19019
     },
     "item_class": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-10.0.5_47621-us"
       },
       "name": "Weapon",
       "id": 2
     },
     "item_subclass": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-10.0.5_47621-us"
       },
       "name": "Sword",
       "id": 7
@@ -54310,9 +54314,9 @@
     "unique_equipped": "Unique",
     "weapon": {
       "damage": {
-        "min_value": 16,
-        "max_value": 28,
-        "display_string": "16 - 28 Damage",
+        "min_value": 17,
+        "max_value": 30,
+        "display_string": "17 - 30 Damage",
         "damage_class": {
           "type": "PHYSICAL",
           "name": "Physical"
@@ -54323,8 +54327,8 @@
         "display_string": "Speed 2.60"
       },
       "dps": {
-        "value": 8.461538,
-        "display_string": "(8.5 damage per second)"
+        "value": 9.038461,
+        "display_string": "(9.0 damage per second)"
       }
     },
     "stats": [
@@ -54382,9 +54386,9 @@
           "type": "NATURE_RESISTANCE",
           "name": "Nature Resistance"
         },
-        "value": 5,
+        "value": 6,
         "display": {
-          "display_string": "+5 Nature Resistance",
+          "display_string": "+6 Nature Resistance",
           "color": {
             "r": 0,
             "g": 255,
@@ -54398,38 +54402,30 @@
       {
         "spell": {
           "key": {
-            "href": "https://us.api.blizzard.com/data/wow/spell/21992?namespace=static-8.3.0_32861-us"
+            "href": "https://us.api.blizzard.com/data/wow/spell/21992?namespace=static-10.0.5_47621-us"
           },
           "name": "Thunderfury",
           "id": 21992
         },
-        "description": "Chance on hit: Blasts your enemy with lightning, dealing 1,114 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 88. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
+        "description": "Chance on hit: Blasts your enemy with lightning, dealing 53 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 4. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
       }
     ],
-    "sell_price": {
-      "value": 115105,
-      "display_strings": {
-        "header": "Sell Price:",
-        "gold": "11",
-        "silver": "51",
-        "copper": "5"
-      }
-    },
     "requirements": {
       "level": {
-        "value": 60,
-        "display_string": "Requires Level 60"
+        "value": 30,
+        "display_string": "Requires Level 30"
       }
     },
     "level": {
-      "value": 58,
-      "display_string": "Item Level 58"
+      "value": 101,
+      "display_string": "Item Level 101"
     },
     "durability": {
       "value": 130,
       "display_string": "Durability 130 / 130"
     }
-  }
+  },
+  "purchase_quantity": 1
 }</value>
   </data>
   <data name="ItemMediaResponse" xml:space="preserve">

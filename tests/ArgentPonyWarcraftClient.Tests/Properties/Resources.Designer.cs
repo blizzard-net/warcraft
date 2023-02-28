@@ -1728,7 +1728,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-10.0.5_47621-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 19019,
@@ -1737,15 +1737,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///    &quot;type&quot;: &quot;LEGENDARY&quot;,
         ///    &quot;name&quot;: &quot;Legendary&quot;
         ///  },
-        ///  &quot;level&quot;: 58,
-        ///  &quot;required_level&quot;: 60,
+        ///  &quot;level&quot;: 29,
+        ///  &quot;required_level&quot;: 25,
         ///  &quot;media&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-10.0.5_47621-us&quot;
         ///    },
         ///    &quot;id&quot;: 19019
         ///  },
-        ///  &quot;item_class&quot;: {        /// [rest of string was truncated]&quot;;.
+        ///  &quot;item_class&quot;:  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ItemResponse {
             get {

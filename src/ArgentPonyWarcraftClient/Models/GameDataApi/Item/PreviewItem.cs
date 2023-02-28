@@ -12,6 +12,18 @@ public record PreviewItem
     public Media Item { get; init; }
 
     /// <summary>
+    /// Gets the context for the item.
+    /// </summary>
+    [JsonPropertyName("context")]
+    public int Context { get; init; }
+
+    /// <summary>
+    /// Gets the bonus list for the item.
+    /// </summary>
+    [JsonPropertyName("bonus_list")]
+    public int[] BonusList { get; init; }
+
+    /// <summary>
     /// Gets the quality of the item.
     /// </summary>
     [JsonPropertyName("quality")]
