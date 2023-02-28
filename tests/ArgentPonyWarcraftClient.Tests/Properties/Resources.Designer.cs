@@ -2266,25 +2266,26 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/197?namespace=dynamic-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 353,
-        ///  &quot;name&quot;: &quot;Siege of Boralus&quot;,
+        ///  &quot;id&quot;: 197,
+        ///  &quot;name&quot;: &quot;Eye of Azshara&quot;,
         ///  &quot;map&quot;: {
-        ///    &quot;name&quot;: &quot;Siege of Boralus&quot;,
-        ///    &quot;id&quot;: 1822
+        ///    &quot;name&quot;: &quot;Eye of Azshara&quot;,
+        ///    &quot;id&quot;: 1456
         ///  },
         ///  &quot;zone&quot;: {
-        ///    &quot;slug&quot;: &quot;siege-of-boralus&quot;
+        ///    &quot;slug&quot;: &quot;eye-of-azshara&quot;
         ///  },
         ///  &quot;dungeon&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/1023?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/716?namespace=static-10.0.5_47621-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Siege of Boralus&quot;,
-        ///    &quot;id&quot;: 1023
-        ///  },        /// [rest of string was truncated]&quot;;.
+        ///    &quot;name&quot;: &quot;Eye of Azshara&quot;,
+        ///    &quot;id&quot;: 716
+        ///  },
+        ///  &quot;keyst [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MythicKeystoneDungeonResponse {
             get {

@@ -17,10 +17,10 @@ public class MythicKeystoneDungeonApiTests
     public async Task GetMythicKeystoneDungeonAsync_Gets_MythicKeystoneDungeon()
     {
         IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildMockClient(
-            requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us&locale=en_US",
+            requestUri: "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/197?namespace=dynamic-us&locale=en_US",
             responseContent: Resources.MythicKeystoneDungeonResponse);
 
-        RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(353, "dynamic-us");
+        RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(197, "dynamic-us");
         Assert.NotNull(result.Value);
     }
 

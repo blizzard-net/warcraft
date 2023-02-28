@@ -61133,39 +61133,40 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us"
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/197?namespace=dynamic-us"
     }
   },
-  "id": 353,
-  "name": "Siege of Boralus",
+  "id": 197,
+  "name": "Eye of Azshara",
   "map": {
-    "name": "Siege of Boralus",
-    "id": 1822
+    "name": "Eye of Azshara",
+    "id": 1456
   },
   "zone": {
-    "slug": "siege-of-boralus"
+    "slug": "eye-of-azshara"
   },
   "dungeon": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/journal-instance/1023?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/716?namespace=static-10.0.5_47621-us"
     },
-    "name": "Siege of Boralus",
-    "id": 1023
+    "name": "Eye of Azshara",
+    "id": 716
   },
   "keystone_upgrades": [
     {
       "upgrade_level": 1,
-      "qualifying_duration": 2160000
+      "qualifying_duration": 2100000
     },
     {
       "upgrade_level": 2,
-      "qualifying_duration": 1728000
+      "qualifying_duration": 1680000
     },
     {
       "upgrade_level": 3,
-      "qualifying_duration": 1296000
+      "qualifying_duration": 1260000
     }
-  ]
+  ],
+  "is_tracked": false
 }</value>
   </data>
   <data name="MythicKeystoneIndexResponse" xml:space="preserve">
