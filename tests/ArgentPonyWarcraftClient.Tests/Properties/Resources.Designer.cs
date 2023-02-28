@@ -2822,20 +2822,21 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 262,
-        ///  &quot;playable_class&quot;: {
+        ///  &quot;id&quot;: 117163,
+        ///  &quot;rank_descriptions&quot;: [
+        ///    {
+        ///      &quot;rank&quot;: 1,
+        ///      &quot;description&quot;: &quot;Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage.&quot;
+        ///    }
+        ///  ],
+        ///  &quot;spell&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Shaman&quot;,
-        ///    &quot;id&quot;: 7
-        ///  },
-        ///  &quot;name&quot;: &quot;Elemental&quot;,
-        ///  &quot;gender_description&quot;: {
-        ///    &quot;male&quot;: &quot;A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r [rest of string was truncated]&quot;;.
+        ///    &quot;nam [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlayableSpecializationResponse {
             get {
