@@ -18,22 +18,10 @@ public record Talent
     public int Id { get; init; }
 
     /// <summary>
-    /// Gets the tier index for the talent.
+    /// Gets the rank description associated with this talent.
     /// </summary>
-    [JsonPropertyName("tier_index")]
-    public int TierIndex { get; init; }
-
-    /// <summary>
-    /// Gets the column index of the talent.
-    /// </summary>
-    [JsonPropertyName("column_index")]
-    public int ColumnIndex { get; init; }
-
-    /// <summary>
-    /// Gets the level of the talent.
-    /// </summary>
-    [JsonPropertyName("level")]
-    public int Level { get; init; }
+    [JsonPropertyName("rank_descriptions")]
+    public RankDescription[] RankDescription { get; init; }
 
     /// <summary>
     /// Gets the description of the talent.
@@ -52,4 +40,10 @@ public record Talent
     /// </summary>
     [JsonPropertyName("playable_class")]
     public PlayableClassReference PlayableClass { get; init; }
+
+    /// <summary>
+    /// Gets a reference to the playable specialization associated with this talent.
+    /// </summary>
+    [JsonPropertyName("playable_specialization")]
+    public PlayableSpecializationReference PlayableSpecialization { get; init; }
 }

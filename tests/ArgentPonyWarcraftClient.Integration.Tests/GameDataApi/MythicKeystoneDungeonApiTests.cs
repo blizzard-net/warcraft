@@ -18,10 +18,10 @@ public class MythicKeystoneDungeonApiTests
     {
         IMythicKeystoneDungeonApi warcraftClient = ClientFactory.BuildClient();
 
-        RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(375, "dynamic-us");
+        RequestResult<MythicKeystoneDungeon> result = await warcraftClient.GetMythicKeystoneDungeonAsync(197, "dynamic-us");
 
         await result.Should().BeSuccessfulRequest()
-            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/375?namespace=dynamic-us&locale=en_US");
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/197?namespace=dynamic-us&locale=en_US");
     }
 
     [ResilientFact]

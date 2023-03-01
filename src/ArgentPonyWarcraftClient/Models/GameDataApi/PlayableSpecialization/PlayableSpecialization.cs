@@ -58,4 +58,10 @@ public record PlayableSpecialization
     /// </summary>
     [JsonPropertyName("pvp_talents")]
     public PvpTalentElement[] PvpTalents { get; init; }
+
+    /// <summary>
+    /// Gets a reference to the talent tree associated with this specialization.
+    /// </summary>
+    [JsonPropertyName("spec_talent_tree")]
+    public TalentTreeReference SpecTalentTree { get; init; }
 }

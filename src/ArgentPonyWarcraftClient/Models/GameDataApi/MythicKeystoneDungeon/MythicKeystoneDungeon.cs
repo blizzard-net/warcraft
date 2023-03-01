@@ -46,4 +46,10 @@ public record MythicKeystoneDungeon
     /// </summary>
     [JsonPropertyName("keystone_upgrades")]
     public MythicKeystoneUpgrade[] KeystoneUpgrades { get; init; }
+
+    /// <summary>
+    /// Gets a value indicating whether the mythic keystone dungeon is tracked.
+    /// </summary>
+    [JsonPropertyName("is_tracked")]
+    public bool IsTracked { get; init; }
 }

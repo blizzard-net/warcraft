@@ -19,7 +19,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -1728,7 +1728,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/item/19019?namespace=static-10.0.5_47621-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 19019,
@@ -1737,15 +1737,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///    &quot;type&quot;: &quot;LEGENDARY&quot;,
         ///    &quot;name&quot;: &quot;Legendary&quot;
         ///  },
-        ///  &quot;level&quot;: 58,
-        ///  &quot;required_level&quot;: 60,
+        ///  &quot;level&quot;: 29,
+        ///  &quot;required_level&quot;: 25,
         ///  &quot;media&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-10.0.5_47621-us&quot;
         ///    },
         ///    &quot;id&quot;: 19019
         ///  },
-        ///  &quot;item_class&quot;: {        /// [rest of string was truncated]&quot;;.
+        ///  &quot;item_class&quot;:  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ItemResponse {
             get {
@@ -2266,25 +2266,26 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/197?namespace=dynamic-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 353,
-        ///  &quot;name&quot;: &quot;Siege of Boralus&quot;,
+        ///  &quot;id&quot;: 197,
+        ///  &quot;name&quot;: &quot;Eye of Azshara&quot;,
         ///  &quot;map&quot;: {
-        ///    &quot;name&quot;: &quot;Siege of Boralus&quot;,
-        ///    &quot;id&quot;: 1822
+        ///    &quot;name&quot;: &quot;Eye of Azshara&quot;,
+        ///    &quot;id&quot;: 1456
         ///  },
         ///  &quot;zone&quot;: {
-        ///    &quot;slug&quot;: &quot;siege-of-boralus&quot;
+        ///    &quot;slug&quot;: &quot;eye-of-azshara&quot;
         ///  },
         ///  &quot;dungeon&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/1023?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/716?namespace=static-10.0.5_47621-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Siege of Boralus&quot;,
-        ///    &quot;id&quot;: 1023
-        ///  },        /// [rest of string was truncated]&quot;;.
+        ///    &quot;name&quot;: &quot;Eye of Azshara&quot;,
+        ///    &quot;id&quot;: 716
+        ///  },
+        ///  &quot;keyst [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MythicKeystoneDungeonResponse {
             get {
@@ -2822,20 +2823,21 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 262,
-        ///  &quot;playable_class&quot;: {
+        ///  &quot;id&quot;: 117163,
+        ///  &quot;rank_descriptions&quot;: [
+        ///    {
+        ///      &quot;rank&quot;: 1,
+        ///      &quot;description&quot;: &quot;Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage.&quot;
+        ///    }
+        ///  ],
+        ///  &quot;spell&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Shaman&quot;,
-        ///    &quot;id&quot;: 7
-        ///  },
-        ///  &quot;name&quot;: &quot;Elemental&quot;,
-        ///  &quot;gender_description&quot;: {
-        ///    &quot;male&quot;: &quot;A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r [rest of string was truncated]&quot;;.
+        ///    &quot;nam [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlayableSpecializationResponse {
             get {
@@ -3948,19 +3950,21 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 23106,
-        ///  &quot;tier_index&quot;: 0,
-        ///  &quot;column_index&quot;: 0,
-        ///  &quot;level&quot;: 15,
-        ///  &quot;description&quot;: &quot;Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.&quot;,
+        ///  &quot;id&quot;: 117163,
+        ///  &quot;rank_descriptions&quot;: [
+        ///    {
+        ///      &quot;rank&quot;: 1,
+        ///      &quot;description&quot;: &quot;Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage.&quot;
+        ///    }
+        ///  ],
         ///  &quot;spell&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us&quot;
         ///    },
-        ///    &quot;name&quot;: &quot;Eye [rest of string was truncated]&quot;;.
+        ///    &quot;nam [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TalentResponse {
             get {

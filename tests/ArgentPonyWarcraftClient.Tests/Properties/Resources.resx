@@ -54220,14 +54220,17 @@
       "quantity": 1,
       "time_left": "VERY_LONG"
     }
-  ]
+  ],
+  "commodities": {
+    "href": "https://us.api.blizzard.com/data/wow/auctions/commodities?namespace=dynamic-us"
+  }
 }</value>
   </data>
   <data name="ItemResponse" xml:space="preserve">
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-10.0.5_47621-us"
     }
   },
   "id": 19019,
@@ -54236,24 +54239,24 @@
     "type": "LEGENDARY",
     "name": "Legendary"
   },
-  "level": 58,
-  "required_level": 60,
+  "level": 29,
+  "required_level": 25,
   "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-10.0.5_47621-us"
     },
     "id": 19019
   },
   "item_class": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-10.0.5_47621-us"
     },
     "name": "Weapon",
     "id": 2
   },
   "item_subclass": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-10.0.5_47621-us"
     },
     "name": "Sword",
     "id": 7
@@ -54262,18 +54265,22 @@
     "type": "WEAPON",
     "name": "One-Hand"
   },
-  "purchase_price": 575526,
-  "sell_price": 115105,
+  "purchase_price": 162276,
+  "sell_price": 32455,
   "max_count": 1,
   "is_equippable": true,
   "is_stackable": false,
   "preview_item": {
     "item": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/item/19019?namespace=static-10.0.5_47621-us"
       },
       "id": 19019
     },
+    "context": 0,
+    "bonus_list": [
+      9264
+    ],
     "quality": {
       "type": "LEGENDARY",
       "name": "Legendary"
@@ -54281,20 +54288,20 @@
     "name": "Thunderfury, Blessed Blade of the Windseeker",
     "media": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/media/item/19019?namespace=static-10.0.5_47621-us"
       },
       "id": 19019
     },
     "item_class": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2?namespace=static-10.0.5_47621-us"
       },
       "name": "Weapon",
       "id": 2
     },
     "item_subclass": {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/item-class/2/item-subclass/7?namespace=static-10.0.5_47621-us"
       },
       "name": "Sword",
       "id": 7
@@ -54310,9 +54317,9 @@
     "unique_equipped": "Unique",
     "weapon": {
       "damage": {
-        "min_value": 16,
-        "max_value": 28,
-        "display_string": "16 - 28 Damage",
+        "min_value": 17,
+        "max_value": 30,
+        "display_string": "17 - 30 Damage",
         "damage_class": {
           "type": "PHYSICAL",
           "name": "Physical"
@@ -54323,8 +54330,8 @@
         "display_string": "Speed 2.60"
       },
       "dps": {
-        "value": 8.461538,
-        "display_string": "(8.5 damage per second)"
+        "value": 9.038461,
+        "display_string": "(9.0 damage per second)"
       }
     },
     "stats": [
@@ -54382,9 +54389,9 @@
           "type": "NATURE_RESISTANCE",
           "name": "Nature Resistance"
         },
-        "value": 5,
+        "value": 6,
         "display": {
-          "display_string": "+5 Nature Resistance",
+          "display_string": "+6 Nature Resistance",
           "color": {
             "r": 0,
             "g": 255,
@@ -54398,38 +54405,30 @@
       {
         "spell": {
           "key": {
-            "href": "https://us.api.blizzard.com/data/wow/spell/21992?namespace=static-8.3.0_32861-us"
+            "href": "https://us.api.blizzard.com/data/wow/spell/21992?namespace=static-10.0.5_47621-us"
           },
           "name": "Thunderfury",
           "id": 21992
         },
-        "description": "Chance on hit: Blasts your enemy with lightning, dealing 1,114 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 88. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
+        "description": "Chance on hit: Blasts your enemy with lightning, dealing 53 Nature damage and then jumping to additional nearby enemies.  Each jump reduces that victim's Nature resistance by 4. Affects 5 targets. Your primary target is also consumed by a cyclone, slowing its attack speed by 20% for 12 sec."
       }
     ],
-    "sell_price": {
-      "value": 115105,
-      "display_strings": {
-        "header": "Sell Price:",
-        "gold": "11",
-        "silver": "51",
-        "copper": "5"
-      }
-    },
     "requirements": {
       "level": {
-        "value": 60,
-        "display_string": "Requires Level 60"
+        "value": 30,
+        "display_string": "Requires Level 30"
       }
     },
     "level": {
-      "value": 58,
-      "display_string": "Item Level 58"
+      "value": 101,
+      "display_string": "Item Level 101"
     },
     "durability": {
       "value": 130,
       "display_string": "Durability 130 / 130"
     }
-  }
+  },
+  "purchase_quantity": 1
 }</value>
   </data>
   <data name="ItemMediaResponse" xml:space="preserve">
@@ -61133,39 +61132,40 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/353?namespace=dynamic-us"
+      "href": "https://us.api.blizzard.com/data/wow/mythic-keystone/dungeon/197?namespace=dynamic-us"
     }
   },
-  "id": 353,
-  "name": "Siege of Boralus",
+  "id": 197,
+  "name": "Eye of Azshara",
   "map": {
-    "name": "Siege of Boralus",
-    "id": 1822
+    "name": "Eye of Azshara",
+    "id": 1456
   },
   "zone": {
-    "slug": "siege-of-boralus"
+    "slug": "eye-of-azshara"
   },
   "dungeon": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/journal-instance/1023?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/716?namespace=static-10.0.5_47621-us"
     },
-    "name": "Siege of Boralus",
-    "id": 1023
+    "name": "Eye of Azshara",
+    "id": 716
   },
   "keystone_upgrades": [
     {
       "upgrade_level": 1,
-      "qualifying_duration": 2160000
+      "qualifying_duration": 2100000
     },
     {
       "upgrade_level": 2,
-      "qualifying_duration": 1728000
+      "qualifying_duration": 1680000
     },
     {
       "upgrade_level": 3,
-      "qualifying_duration": 1296000
+      "qualifying_duration": 1260000
     }
-  ]
+  ],
+  "is_tracked": false
 }</value>
   </data>
   <data name="MythicKeystoneIndexResponse" xml:space="preserve">
@@ -61505,27 +61505,36 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/talent/23106?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us"
     }
   },
-  "id": 23106,
-  "tier_index": 0,
-  "column_index": 0,
-  "level": 15,
-  "description": "Tiger Palm also applies Eye of the Tiger, dealing 168 Nature damage to the enemy and 168 healing to the Monk over 8 sec.",
+  "id": 117163,
+  "rank_descriptions": [
+    {
+      "rank": 1,
+      "description": "Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage."
+    }
+  ],
   "spell": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/spell/196607?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us"
     },
-    "name": "Eye of the Tiger",
-    "id": 196607
+    "name": "Best Served Cold",
+    "id": 202560
   },
   "playable_class": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-class/10?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-10.0.5_47621-us"
     },
-    "name": "Monk",
-    "id": 10
+    "name": "Warrior",
+    "id": 1
+  },
+  "playable_specialization": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-10.0.5_47621-us"
+    },
+    "name": "Protection",
+    "id": 73
   }
 }</value>
   </data>
@@ -65384,193 +65393,37 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us"
     }
   },
-  "id": 262,
-  "playable_class": {
-    "key": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us"
-    },
-    "name": "Shaman",
-    "id": 7
-  },
-  "name": "Elemental",
-  "gender_description": {
-    "male": "A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r\nPreferred Weapon: Mace, Dagger, and Shield",
-    "female": "A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r\nPreferred Weapon: Mace, Dagger, and Shield"
-  },
-  "media": {
-    "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/playable-specialization/262?namespace=static-8.3.0_32861-us"
-    },
-    "id": 262
-  },
-  "role": {
-    "type": "DAMAGE",
-    "name": "Damage"
-  },
-  "talent_tiers": [
+  "id": 117163,
+  "rank_descriptions": [
     {
-      "level": 15,
-      "talents": [
-        {
-          "talent": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/talent/22356?namespace=static-8.3.0_32861-us"
-            },
-            "name": "Earthen Rage",
-            "id": 22356
-          },
-          "spell_tooltip": {
-            "description": "Your damaging spells incite the earth around you to come to your aid for 6 sec, repeatedly dealing 833 Nature damage to your most recently attacked target.",
-            "cast_time": "Passive"
-          },
-          "column_index": 0
-        },
-        {
-          "talent": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/talent/22357?namespace=static-8.3.0_32861-us"
-            },
-            "name": "Echo of the Elements",
-            "id": 22357
-          },
-          "spell_tooltip": {
-            "description": "Lava Burst now has 2 charges. Effects that reset its remaining cooldown will instead grant 1 charge.",
-            "cast_time": "Passive"
-          },
-          "column_index": 1
-        },
-        {
-          "talent": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/talent/22358?namespace=static-8.3.0_32861-us"
-            },
-            "name": "Elemental Blast",
-            "id": 22358
-          },
-          "spell_tooltip": {
-            "description": "Harnesses the raw power of the elements, dealing 3,818 Elemental damage and increasing your Critical Strike, Haste, or Mastery by 366 for 10 sec.\r\n\r\nCan cause an Elemental Overload.",
-            "cast_time": "2 sec cast",
-            "range": "40 yd range",
-            "cooldown": "12 sec cooldown"
-          },
-          "column_index": 2
-        }
-      ],
-      "tier_index": 0
-    },
-    {
-      "level": 100,
-      "talents": [
-        {
-          "talent": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/talent/21198?namespace=static-8.3.0_32861-us"
-            },
-            "name": "Unlimited Power",
-            "id": 21198
-          },
-          "spell_tooltip": {
-            "description": "When your spells cause an elemental overload, you gain 2% Haste for 10 sec. Gaining a stack does not refresh the duration.",
-            "cast_time": "Passive"
-          },
-          "column_index": 0
-        },
-        {
-          "talent": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/talent/22153?namespace=static-8.3.0_32861-us"
-            },
-            "name": "Stormkeeper",
-            "id": 22153
-          },
-          "spell_tooltip": {
-            "description": "Charge yourself with lightning, causing your next 2 Lightning Bolts to deal 150% more damage, and also causes your next 2 Lightning Bolts or Chain Lightnings to be instant cast and trigger an Elemental Overload on every target.",
-            "cast_time": "1.5 sec cast",
-            "cooldown": "1 min cooldown"
-          },
-          "column_index": 1
-        },
-        {
-          "talent": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/talent/21675?namespace=static-8.3.0_32861-us"
-            },
-            "name": "Ascendance",
-            "id": 21675
-          },
-          "spell_tooltip": {
-            "description": "Transform into a Flame Ascendant for 15 sec, replacing Chain Lightning with Lava Beam, removing the cooldown on Lava Burst, and increasing the damage of Lava Burst by an amount equal to your critical strike chance.",
-            "cast_time": "Instant",
-            "cooldown": "3 min cooldown"
-          },
-          "column_index": 2
-        }
-      ],
-      "tier_index": 6
+      "rank": 1,
+      "description": "Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage."
     }
   ],
-  "pvp_talents": [
-    {
-      "talent": {
-        "key": {
-          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/727?namespace=static-8.3.0_32861-us"
-        },
-        "name": "Elemental Attunement",
-        "id": 727
-      },
-      "spell_tooltip": {
-        "description": "Increases your maximum Maelstrom by 50.",
-        "cast_time": "Passive"
-      }
+  "spell": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us"
     },
-    {
-      "talent": {
-        "key": {
-          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3490?namespace=static-8.3.0_32861-us"
-        },
-        "name": "Counterstrike Totem",
-        "id": 3490
-      },
-      "spell_tooltip": {
-        "description": "Summons an Air Totem with 5 health at the feet of the caster for 15 sec. \r\n\r\nWhenever enemies within 20 yards of the totem deal direct damage, the totem will deal 100% of the damage dealt back to attacker. ",
-        "cast_time": "Instant",
-        "power_cost": "600 Mana",
-        "range": "40 yd range",
-        "cooldown": "45 sec cooldown"
-      }
+    "name": "Best Served Cold",
+    "id": 202560
+  },
+  "playable_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-10.0.5_47621-us"
     },
-    {
-      "talent": {
-        "key": {
-          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3620?namespace=static-8.3.0_32861-us"
-        },
-        "name": "Grounding Totem",
-        "id": 3620
-      },
-      "spell_tooltip": {
-        "description": "Summons an Air Totem with 5 health at the feet of the caster that will redirect all harmful spells cast on a nearby party or raid member to itself. Will not redirect area of effect spells. Lasts 3 sec.",
-        "cast_time": "Instant",
-        "power_cost": "1,180 Mana",
-        "cooldown": "30 sec cooldown"
-      }
+    "name": "Warrior",
+    "id": 1
+  },
+  "playable_specialization": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-10.0.5_47621-us"
     },
-    {
-      "talent": {
-        "key": {
-          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3621?namespace=static-8.3.0_32861-us"
-        },
-        "name": "Swelling Waves",
-        "id": 3621
-      },
-      "spell_tooltip": {
-        "description": "When you cast Healing Surge on yourself, you are healed for 50% of the amount 3 sec later.",
-        "cast_time": "Passive"
-      }
-    }
-  ]
+    "name": "Protection",
+    "id": 73
+  }
 }</value>
   </data>
   <data name="PlayableSpecializationsIndexResponse" xml:space="preserve">
