@@ -1067,6 +1067,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;https://us.api.blizzard.com/data/wow/auctions/commodities?namespace=dynamic-us&quot;}},&quot;auctions&quot;:[{&quot;id&quot;:814959956,&quot;item&quot;:{&quot;id&quot;:193255},&quot;quantity&quot;:45,&quot;unit_price&quot;:900000,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814959983,&quot;item&quot;:{&quot;id&quot;:117442},&quot;quantity&quot;:7,&quot;unit_price&quot;:8900,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814960046,&quot;item&quot;:{&quot;id&quot;:40072},&quot;quantity&quot;:2,&quot;unit_price&quot;:108500,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814960100,&quot;item&quot;:{&quot;id&quot;:117453},&quot;quantity&quot;:7,&quot;unit_price&quot;:8700,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814960107,&quot;item&quot;:{&quot;id&quot;:19 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CommoditiesResponse {
+            get {
+                return ResourceManager.GetString("CommoditiesResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {

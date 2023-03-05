@@ -79805,4 +79805,7 @@
   ]
 }</value>
   </data>
+  <data name="CommoditiesResponse" xml:space="preserve">
+    <value>{"_links":{"self":{"href":"https://us.api.blizzard.com/data/wow/auctions/commodities?namespace=dynamic-us"}},"auctions":[{"id":814959956,"item":{"id":193255},"quantity":45,"unit_price":900000,"time_left":"SHORT"},{"id":814959983,"item":{"id":117442},"quantity":7,"unit_price":8900,"time_left":"SHORT"},{"id":814960046,"item":{"id":40072},"quantity":2,"unit_price":108500,"time_left":"SHORT"},{"id":814960100,"item":{"id":117453},"quantity":7,"unit_price":8700,"time_left":"SHORT"},{"id":814960107,"item":{"id":197741},"quantity":13,"unit_price":1100,"time_left":"SHORT"},{"id":814960136,"item":{"id":45196},"quantity":2,"unit_price":9900,"time_left":"VERY_LONG"},{"id":823329585,"item":{"id":194802},"quantity":1,"unit_price":1480000,"time_left":"VERY_LONG"},{"id":823329594,"item":{"id":769},"quantity":1,"unit_price":3400,"time_left":"VERY_LONG"},{"id":823329592,"item":{"id":193050},"quantity":9,"unit_price":500,"time_left":"LONG"}]}</value>
+  </data>
 </root>
