@@ -28,4 +28,10 @@ public record CharacterMythicKeystoneSeasonDetails
     /// </summary>
     [JsonPropertyName("character")]
     public CharacterReference Character { get; init; }
+
+    /// <summary>
+    /// Gets the Mythic Rating value for the character for the season.
+    /// </summary>
+    [JsonPropertyName("mythic_rating")]
+    public MythicRating MythicRating { get; init; }
 }

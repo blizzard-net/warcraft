@@ -46,4 +46,16 @@ public record MythicKeystoneRun
     /// </summary>
     [JsonPropertyName("is_completed_within_time")]
     public bool IsCompletedWithinTime { get; init; }
+
+    /// <summary>
+    /// Gets the mythic rating value.
+    /// </summary>
+    [JsonPropertyName("mythic_rating")]
+    public MythicRating MythicRating { get; init; }
+
+    /// <summary>
+    /// Gets the mythic rating value for a map.
+    /// </summary>
+    [JsonPropertyName("map_rating")]
+    public MythicRating MapRating { get; init; }
 }
