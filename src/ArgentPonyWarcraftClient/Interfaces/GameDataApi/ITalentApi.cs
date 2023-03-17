@@ -32,7 +32,7 @@ public interface ITalentApi
     /// <param name="specId">The id of the playable-specialization.</param>
     /// <param name="namespace">The namespace to use to locate this document.</param>
     /// <returns>
-    ///     The specified talent.
+    ///     The specified talent tree by specialization Id.
     /// </returns>
     Task<RequestResult<TalentTree>> GetTalentTreeAsync(int talentTreeId, int specId, string @namespace);
 
@@ -45,7 +45,7 @@ public interface ITalentApi
     /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
     /// <param name="locale">Specifies the language that the result will be in.</param>
     /// <returns>
-    ///     The specified talent.
+    ///     The specified talent tree by specialization Id.
     /// </returns>
 
     Task<RequestResult<TalentTree>> GetTalentTreeAsync(int talentTreeId, int specId, string @namespace, Region region, Locale locale);
@@ -57,7 +57,7 @@ public interface ITalentApi
     /// <param name="talentTreeId">The id of the talent-tree.</param>
     /// <param name="namespace">The namespace to use to locate this document.</param>
     /// <returns>
-    ///     The specified talent.
+    ///      All talent tree nodes as well as links to associated playable specializations given a talent tree id.
     /// </returns>
     Task<RequestResult<TalentTreeNodes>> GetTalentTreeNodesAsync(int talentTreeId, string @namespace);
 
@@ -70,7 +70,7 @@ public interface ITalentApi
     /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
     /// <param name="locale">Specifies the language that the result will be in.</param>
     /// <returns>
-    ///     The specified talent.
+    ///     All talent tree nodes as well as links to associated playable specializations given a talent tree id.
     /// </returns>
     Task<RequestResult<TalentTreeNodes>> GetTalentTreeNodesAsync(int talentTreeId, string @namespace, Region region, Locale locale);
 
