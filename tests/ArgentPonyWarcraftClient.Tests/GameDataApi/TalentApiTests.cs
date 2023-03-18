@@ -3,6 +3,39 @@
 public class TalentApiTests
 {
     [Fact]
+    public async Task GetTalentTreeIndexAsync_Gets_TalentTreeIndex()
+    {
+        ITalentApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/talent-tree/index?namespace=static-us&locale=en_US",
+            responseContent: Resources.TalentTreeIndexResponse);
+
+        RequestResult<TalentTreeIndex> result = await warcraftClient.GetTalentTreeIndexAsync("static-us");
+        Assert.NotNull(result.Value);
+    }
+
+    [Fact]
+    public async Task GetTalentTreeAsync_Gets_TalentTree()
+    {
+        ITalentApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-us&locale=en_US",
+            responseContent: Resources.TalentTreeResponse);
+
+        RequestResult<TalentTree> result = await warcraftClient.GetTalentTreeAsync(786, 262, "static-us");
+        Assert.NotNull(result.Value);
+    }
+
+    [Fact]
+    public async Task GetTalentTreeNodesAsync_Gets_TalentTreeNodes()
+    {
+        ITalentApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/talent-tree/786?namespace=static-us&locale=en_US",
+            responseContent: Resources.TalentTreeNodesResponse);
+
+        RequestResult<TalentTreeNodes> result = await warcraftClient.GetTalentTreeNodesAsync(786, "static-us");
+        Assert.NotNull(result.Value);
+    }
+
+    [Fact]
     public async Task GetTalentsIndexAsync_Gets_TalentsIndex()
     {
         ITalentApi warcraftClient = ClientFactory.BuildMockClient(

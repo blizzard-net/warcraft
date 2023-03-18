@@ -4035,6 +4035,80 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;spec_talent_trees&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/254?namespace=static-10.0.5_47621-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Marksmanship&quot;
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/255?namespace=stati [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentTreeIndexResponse {
+            get {
+                return ResourceManager.GetString("TalentTreeIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 786,
+        ///  &quot;spec_talent_trees&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Elemental&quot;
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/264?n [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentTreeNodesResponse {
+            get {
+                return ResourceManager.GetString("TalentTreeNodesResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 786,
+        ///  &quot;playable_class&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.0.5_47621-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Shaman&quot;,
+        ///    &quot;id&quot;: 7
+        ///  },
+        ///  &quot;playable_specialization&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/262?name [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentTreeResponse {
+            get {
+                return ResourceManager.GetString("TalentTreeResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/tech-talent/1612?namespace=static-9.0.5_37760-us&quot;
         ///    }
         ///  },
