@@ -29,6 +29,19 @@ public partial class WarcraftClient
     }
 
     /// <inheritdoc />
+    public async Task<RequestResult<PetMedia>> GetPetMediaAsync(int petId, string @namespace)
+    {
+        return await GetPetMediaAsync(petId, @namespace, Region, Locale);
+    }
+
+    /// <inheritdoc />
+    public async Task<RequestResult<PetMedia>> GetPetMediaAsync(int petId, string @namespace, Region region, Locale locale)
+    {
+        string host = GetHost(region);
+        return await GetAsync<PetMedia>($"{host}/data/wow/media/pet/{petId}?namespace={@namespace}&locale={locale}");
+    }
+
+    /// <inheritdoc />
     public async Task<RequestResult<PetAbilitiesIndex>> GetPetAbilitiesIndexAsync(string @namespace)
     {
         return await GetPetAbilitiesIndexAsync(@namespace, Region, Locale);

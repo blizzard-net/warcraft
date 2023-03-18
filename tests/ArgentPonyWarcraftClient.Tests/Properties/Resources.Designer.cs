@@ -2621,6 +2621,29 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pet/39?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/us/icons/56/inv_pet_mechanicalsquirrel.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 656559
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 39
+        ///}.
+        /// </summary>
+        internal static string PetMediaResponse {
+            get {
+                return ResourceManager.GetString("PetMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },

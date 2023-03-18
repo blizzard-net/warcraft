@@ -25,6 +25,17 @@ public class PetApiTests
     }
 
     [Fact]
+    public async Task GetPetMediaAsync_Gets_PetMedia()
+    {
+        IPetApi warcraftClient = ClientFactory.BuildMockClient(
+            requestUri: "https://us.api.blizzard.com/data/wow/media/pet/39?namespace=static-us&locale=en_US",
+            responseContent: Resources.PetMediaResponse);
+
+        RequestResult<PetMedia> result = await warcraftClient.GetPetMediaAsync(39, "static-us");
+        Assert.NotNull(result.Value);
+    }
+
+    [Fact]
     public async Task GetPetAbilitiesIndexAsync_Gets_PetAbilitiesIndex()
     {
         IPetApi warcraftClient = ClientFactory.BuildMockClient(

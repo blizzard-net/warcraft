@@ -48,6 +48,28 @@ public interface IPetApi
     Task<RequestResult<Pet>> GetPetAsync(int petId, string @namespace, Region region, Locale locale);
 
     /// <summary>
+    ///     Get media for a pet by ID.
+    /// </summary>
+    /// <param name="petId">The pet ID.</param>
+    /// <param name="namespace">The namespace to use to locate this document.</param>
+    /// <returns>
+    ///     Media for a pet by ID.
+    /// </returns>
+    Task<RequestResult<PetMedia>> GetPetMediaAsync(int petId, string @namespace);
+
+    /// <summary>
+    ///     Get media for a pet by ID.
+    /// </summary>
+    /// <param name="petId">The pet ID.</param>
+    /// <param name="namespace">The namespace to use to locate this document.</param>
+    /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
+    /// <param name="locale">Specifies the language that the result will be in.</param>
+    /// <returns>
+    ///     Media for a pet by ID.
+    /// </returns>
+    Task<RequestResult<PetMedia>> GetPetMediaAsync(int petId, string @namespace, Region region, Locale locale);
+
+    /// <summary>
     ///     Gets an index of pet abilities.
     /// </summary>
     /// <param name="namespace">The namespace to use to locate this document.</param>
