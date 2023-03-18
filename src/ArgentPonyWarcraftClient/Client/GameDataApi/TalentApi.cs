@@ -3,6 +3,45 @@
 public partial class WarcraftClient
 {
     /// <inheritdoc />
+    public async Task<RequestResult<TalentTreeIndex>> GetTalentTreeIndexAsync(string @namespace)
+    {
+        return await GetTalentTreeIndexAsync(@namespace, Region, Locale);
+    }
+
+    /// <inheritdoc />>
+    public async Task<RequestResult<TalentTreeIndex>> GetTalentTreeIndexAsync(string @namespace, Region region, Locale locale)
+    {
+        string host = GetHost(region);
+        return await GetAsync<TalentTreeIndex>($"{host}/data/wow/talent-tree/index?namespace={@namespace}&locale={locale}");
+    }
+
+    /// <inheritdoc />
+    public async Task<RequestResult<TalentTree>> GetTalentTreeAsync(int talentTreeId, int specId, string @namespace)
+    {
+        return await GetTalentTreeAsync(talentTreeId, specId, @namespace, Region, Locale);
+    }
+
+    /// <inheritdoc />
+    public async Task<RequestResult<TalentTree>> GetTalentTreeAsync(int talentTreeId, int specId, string @namespace, Region region, Locale locale)
+    {
+        string host = GetHost(region);
+        return await GetAsync<TalentTree>($"{host}/data/wow/talent-tree/{talentTreeId}/playable-specialization/{specId}?namespace={@namespace}&locale={locale}");
+    }
+
+    /// <inheritdoc />
+    public async Task<RequestResult<TalentTreeNodes>> GetTalentTreeNodesAsync(int talentTreeId, string @namespace)
+    {
+        return await GetTalentTreeNodesAsync(talentTreeId, @namespace, Region, Locale);
+    }
+
+    /// <inheritdoc />
+    public async Task<RequestResult<TalentTreeNodes>> GetTalentTreeNodesAsync(int talentTreeId, string @namespace, Region region, Locale locale)
+    {
+        string host = GetHost(region);
+        return await GetAsync<TalentTreeNodes>($"{host}/data/wow/talent-tree/{talentTreeId}?namespace={@namespace}&locale={locale}");
+    }
+
+    /// <inheritdoc />
     public async Task<RequestResult<TalentsIndex>> GetTalentsIndexAsync(string @namespace)
     {
         return await GetTalentsIndexAsync(@namespace, Region, Locale);

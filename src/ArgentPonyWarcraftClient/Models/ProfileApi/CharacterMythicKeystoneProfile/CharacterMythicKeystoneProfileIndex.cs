@@ -28,4 +28,10 @@ public record CharacterMythicKeystoneProfileIndex
     /// </summary>
     [JsonPropertyName("character")]
     public CharacterReference Character { get; init; }
+
+    /// <summary>
+    /// Gets the current Mythic Rating value for the character.
+    /// </summary>
+    [JsonPropertyName("current_mythic_rating")]
+    public MythicRating CurrentMythicRating { get; init; }
 }
