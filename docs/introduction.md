@@ -3,7 +3,7 @@ title: Introduction
 slug: /
 ---
 
-The Argent Pony Warcraft Client is a .NET client for the [Blizzard World of Warcraft APIs](https://develop.battle.net/documentation/world-of-warcraft).  It lets .NET applications easily access information about World of Warcraft characters, guilds, items, spells, and more.  It is a [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) 2.0 library, which means it supports a broad range of platforms, including .NET Core 2.0+ and .NET Framework 4.6.1+.
+The Argent Pony Warcraft Client is a .NET client for the [Blizzard World of Warcraft APIs](https://develop.battle.net/documentation/world-of-warcraft).  It lets .NET applications easily access information about World of Warcraft characters, guilds, items, spells, and more.  It is a [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) 2.0 library, which means it supports a broad range of platforms, including .NET 6 and 7 and .NET Framework 4.6.1+.
 
 ## Prerequisites
 

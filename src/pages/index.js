@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/microsoft-dotnet.svg',
     description: (
       <>
-        Works with .NET Core 2.0+ and .NET 5.  Still on .NET Framework? Works with .NET Framework 4.6.1+.
+        Works with .NET 6 and 7.  Still on .NET Framework? Works with .NET Framework 4.6.1+.
       </>
     ),
   },
@@ -31,6 +31,7 @@ const features = [
     description: (
       <>
         Covers the vast majority of the available Game Data and Profile APIs for World of Warcraft.
+        Updated for the Dragonflight expansion.
       </>
     ),
   },
