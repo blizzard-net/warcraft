@@ -1067,6 +1067,15 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;https://us.api.blizzard.com/data/wow/auctions/commodities?namespace=dynamic-us&quot;}},&quot;auctions&quot;:[{&quot;id&quot;:814959956,&quot;item&quot;:{&quot;id&quot;:193255},&quot;quantity&quot;:45,&quot;unit_price&quot;:900000,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814959983,&quot;item&quot;:{&quot;id&quot;:117442},&quot;quantity&quot;:7,&quot;unit_price&quot;:8900,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814960046,&quot;item&quot;:{&quot;id&quot;:40072},&quot;quantity&quot;:2,&quot;unit_price&quot;:108500,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814960100,&quot;item&quot;:{&quot;id&quot;:117453},&quot;quantity&quot;:7,&quot;unit_price&quot;:8700,&quot;time_left&quot;:&quot;SHORT&quot;},{&quot;id&quot;:814960107,&quot;item&quot;:{&quot;id&quot;:19 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CommoditiesResponse {
+            get {
+                return ResourceManager.GetString("CommoditiesResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
@@ -2612,6 +2621,29 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/media/pet/39?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;assets&quot;: [
+        ///    {
+        ///      &quot;key&quot;: &quot;icon&quot;,
+        ///      &quot;value&quot;: &quot;https://render.worldofwarcraft.com/us/icons/56/inv_pet_mechanicalsquirrel.jpg&quot;,
+        ///      &quot;file_data_id&quot;: 656559
+        ///    }
+        ///  ],
+        ///  &quot;id&quot;: 39
+        ///}.
+        /// </summary>
+        internal static string PetMediaResponse {
+            get {
+                return ResourceManager.GetString("PetMediaResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
         ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/pet/39?namespace=static-8.3.0_32861-us&quot;
         ///    }
         ///  },
@@ -3996,6 +4028,80 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         internal static string TalentsIndexResponse {
             get {
                 return ResourceManager.GetString("TalentsIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;spec_talent_trees&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/254?namespace=static-10.0.5_47621-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Marksmanship&quot;
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/255?namespace=stati [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentTreeIndexResponse {
+            get {
+                return ResourceManager.GetString("TalentTreeIndexResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 786,
+        ///  &quot;spec_talent_trees&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us&quot;
+        ///      },
+        ///      &quot;name&quot;: &quot;Elemental&quot;
+        ///    },
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/264?n [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentTreeNodesResponse {
+            get {
+                return ResourceManager.GetString("TalentTreeNodesResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;_links&quot;: {
+        ///    &quot;self&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us&quot;
+        ///    }
+        ///  },
+        ///  &quot;id&quot;: 786,
+        ///  &quot;playable_class&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.0.5_47621-us&quot;
+        ///    },
+        ///    &quot;name&quot;: &quot;Shaman&quot;,
+        ///    &quot;id&quot;: 7
+        ///  },
+        ///  &quot;playable_specialization&quot;: {
+        ///    &quot;key&quot;: {
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/262?name [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TalentTreeResponse {
+            get {
+                return ResourceManager.GetString("TalentTreeResponse", resourceCulture);
             }
         }
         

@@ -20,6 +20,7 @@ internal class RawBlizzardClient
     static RawBlizzardClient()
     {
         _client = new HttpClient();
+        _client.Timeout = TimeSpan.FromMinutes(5);
     }
 
     public RawBlizzardClient(ClientCredentials credentials)

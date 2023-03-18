@@ -79805,4 +79805,937 @@
   ]
 }</value>
   </data>
+  <data name="CommoditiesResponse" xml:space="preserve">
+    <value>{"_links":{"self":{"href":"https://us.api.blizzard.com/data/wow/auctions/commodities?namespace=dynamic-us"}},"auctions":[{"id":814959956,"item":{"id":193255},"quantity":45,"unit_price":900000,"time_left":"SHORT"},{"id":814959983,"item":{"id":117442},"quantity":7,"unit_price":8900,"time_left":"SHORT"},{"id":814960046,"item":{"id":40072},"quantity":2,"unit_price":108500,"time_left":"SHORT"},{"id":814960100,"item":{"id":117453},"quantity":7,"unit_price":8700,"time_left":"SHORT"},{"id":814960107,"item":{"id":197741},"quantity":13,"unit_price":1100,"time_left":"SHORT"},{"id":814960136,"item":{"id":45196},"quantity":2,"unit_price":9900,"time_left":"VERY_LONG"},{"id":823329585,"item":{"id":194802},"quantity":1,"unit_price":1480000,"time_left":"VERY_LONG"},{"id":823329594,"item":{"id":769},"quantity":1,"unit_price":3400,"time_left":"VERY_LONG"},{"id":823329592,"item":{"id":193050},"quantity":9,"unit_price":500,"time_left":"LONG"}]}</value>
+  </data>
+  <data name="PetMediaResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/media/pet/39?namespace=static-10.0.5_47621-us"
+    }
+  },
+  "assets": [
+    {
+      "key": "icon",
+      "value": "https://render.worldofwarcraft.com/us/icons/56/inv_pet_mechanicalsquirrel.jpg",
+      "file_data_id": 656559
+    }
+  ],
+  "id": 39
+}</value>
+  </data>
+  <data name="TalentTreeIndexResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/talent-tree/?namespace=static-10.0.5_47621-us"
+    }
+  },
+  "spec_talent_trees": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/254?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Marksmanship"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/255?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Survival"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/774/playable-specialization/253?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Beast Mastery"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Elemental"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/264?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Restoration"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/263?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Enhancement"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/793/playable-specialization/102?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Balance"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/793/playable-specialization/103?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Feral"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/850/playable-specialization/72?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Fury"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/781/playable-specialization/269?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Windwalker"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/781/playable-specialization/268?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Brewmaster"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/781/playable-specialization/270?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Mistweaver"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/701/playable-specialization/1468?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Preservation"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/701/playable-specialization/1467?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Devastation"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/750/playable-specialization/250?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Blood"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/750/playable-specialization/252?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Unholy"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/750/playable-specialization/251?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Frost"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/790/playable-specialization/66?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Protection"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/790/playable-specialization/65?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Holy"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/790/playable-specialization/70?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Retribution"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/790/playable-specialization/70?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Retribution"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/795/playable-specialization/257?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Holy"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/795/playable-specialization/256?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Discipline"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/795/playable-specialization/258?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Shadow"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/658/playable-specialization/64?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Frost"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/658/playable-specialization/63?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Fire"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/658/playable-specialization/62?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Arcane"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/852/playable-specialization/260?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Outlaw"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/852/playable-specialization/259?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Assassination"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/852/playable-specialization/261?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Subtlety"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/854/playable-specialization/581?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Vengeance"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/854/playable-specialization/577?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Havoc"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/720/playable-specialization/265?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Affliction"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/720/playable-specialization/266?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Demonology"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/720/playable-specialization/267?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Destruction"
+    }
+  ],
+  "class_talent_trees": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/774?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Hunter"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Shaman"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/793?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Druid"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/850?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Warrior"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/781?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Monk"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/701?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Evoker"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/750?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Death Knight"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/790?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Paladin"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/795?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Priest"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/658?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Mage"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/852?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Rogue"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/854?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Demon Hunter"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/720?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Warlock"
+    }
+  ]
+}</value>
+  </data>
+  <data name="TalentTreeNodesResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/talent-tree/786?namespace=static-10.0.5_47621-us"
+    }
+  },
+  "id": 786,
+  "spec_talent_trees": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Elemental"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/264?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Restoration"
+    },
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/263?namespace=static-10.0.5_47621-us"
+      },
+      "name": "Enhancement"
+    }
+  ],
+  "talent_nodes": [
+    {
+      "id": 80937,
+      "node_type": {
+        "id": 2,
+        "type": "CHOICE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "choice_of_tooltips": [
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106873?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Refreshing Waters",
+                "id": 106873
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/393905?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Refreshing Waters",
+                  "id": 393905
+                },
+                "description": "Your Healing Surge is 25% more effective on yourself.\r\n",
+                "cast_time": "Passive"
+              }
+            },
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106872?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Ancestral Wolf Affinity",
+                "id": 106872
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/382197?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Ancestral Wolf Affinity",
+                  "id": 382197
+                },
+                "description": "Cleanse Spirit, Wind Shear, Purge, and totem casts no longer cancel Ghost Wolf.",
+                "cast_time": "Passive"
+              }
+            }
+          ]
+        }
+      ],
+      "display_row": 6,
+      "display_col": 17,
+      "raw_position_x": 11400,
+      "raw_position_y": 4200
+    },
+    {
+      "id": 80938,
+      "node_type": {
+        "id": 1,
+        "type": "PASSIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106880?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Overflowing Maelstrom",
+              "id": 106880
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/384149?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Overflowing Maelstrom",
+                "id": 384149
+              },
+              "description": "Your damage or healing spells will now consume up to 10 Maelstrom Weapon stacks. ",
+              "cast_time": "Passive"
+            }
+          }
+        }
+      ],
+      "display_row": 5,
+      "display_col": 18,
+      "raw_position_x": 12000,
+      "raw_position_y": 3600
+    },
+    {
+      "id": 80939,
+      "node_type": {
+        "id": 1,
+        "type": "PASSIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106871?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Raging Maelstrom",
+              "id": 106871
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/384143?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Raging Maelstrom",
+                "id": 384143
+              },
+              "description": "Maelstrom Weapon can now stack 5 additional times, and Maelstrom Weapon now increases the damage or healing of spells it affects by an additional 5% per stack.",
+              "cast_time": "Passive"
+            }
+          }
+        }
+      ],
+      "display_row": 4,
+      "display_col": 18,
+      "raw_position_x": 12000,
+      "raw_position_y": 3000
+    },
+    {
+      "id": 92219,
+      "node_type": {
+        "id": 2,
+        "type": "CHOICE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "choice_of_tooltips": [
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106894?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Deeply Rooted Elements",
+                "id": 106894
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/378270?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Deeply Rooted Elements",
+                  "id": 378270
+                },
+                "description": "Casting Stormstrike has a 7% chance to activate Ascendance for 6.0 sec.\r\n\r\n Ascendance\r\n\r\nTransform into an Air Ascendant for 15 sec, immediately dealing 979 Nature damage to any enemy within 8 yds, reducing the cooldown and cost of Stormstrike by 60%, and transforming your auto attack and Stormstrike into Wind attacks which bypass armor and have a 30 yd range.",
+                "cast_time": "Passive"
+              }
+            },
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/119296?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Ascendance",
+                "id": 119296
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/114051?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Ascendance",
+                  "id": 114051
+                },
+                "description": "Transform into an Air Ascendant for 15 sec, immediately dealing 990 Nature damage to any enemy within 8 yds, reducing the cooldown and cost of Stormstrike by 60%, and transforming your auto attack and Stormstrike into Wind attacks which bypass armor and have a 30 yd range.",
+                "cast_time": "Instant",
+                "cooldown": "3 min cooldown"
+              }
+            }
+          ]
+        }
+      ],
+      "display_row": 8,
+      "display_col": 20,
+      "raw_position_x": 13200,
+      "raw_position_y": 5400
+    }
+  ]
+}</value>
+  </data>
+  <data name="TalentTreeResponse" xml:space="preserve">
+    <value>{
+  "_links": {
+    "self": {
+      "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us"
+    }
+  },
+  "id": 786,
+  "playable_class": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.0.5_47621-us"
+    },
+    "name": "Shaman",
+    "id": 7
+  },
+  "playable_specialization": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-10.0.5_47621-us"
+    },
+    "name": "Elemental",
+    "id": 262
+  },
+  "name": "Elemental",
+  "media": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/media/talent-tree/786/playable-specialization/262?namespace=static-10.0.5_47621-us"
+    }
+  },
+  "restriction_lines": [
+    {
+      "required_points": 20,
+      "restricted_row": 7.5,
+      "is_for_class": true
+    },
+    {
+      "required_points": 8,
+      "restricted_row": 4.5,
+      "is_for_class": true
+    },
+    {
+      "required_points": 8,
+      "restricted_row": 4.5,
+      "is_for_class": false
+    },
+    {
+      "required_points": 20,
+      "restricted_row": 7.5,
+      "is_for_class": false
+    }
+  ],
+  "class_talent_nodes": [
+    {
+      "id": 81063,
+      "unlocks": [
+        81106,
+        81064
+      ],
+      "node_type": {
+        "id": 0,
+        "type": "ACTIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106951?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Chain Heal",
+              "id": 106951
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/1064?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Chain Heal",
+                "id": 1064
+              },
+              "description": "Heals the friendly target for 13,022, then jumps to heal the 3 most injured nearby allies. Healing is reduced by 30% with each jump.",
+              "cast_time": "2.5 sec cast",
+              "power_cost": "75,000 Mana",
+              "range": "40 yd range"
+            }
+          }
+        }
+      ],
+      "display_row": 1,
+      "display_col": 1,
+      "raw_position_x": 1800,
+      "raw_position_y": 1200
+    },
+    {
+      "id": 81062,
+      "unlocks": [
+        81064,
+        81068,
+        81067
+      ],
+      "node_type": {
+        "id": 0,
+        "type": "ACTIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106952?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Lava Burst",
+              "id": 106952
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/51505?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Lava Burst",
+                "id": 51505
+              },
+              "description": "Hurls molten lava at the target, dealing 5,354 Fire damage. Lava Burst will always critically strike if the target is affected by Flame Shock.",
+              "cast_time": "2 sec cast",
+              "power_cost": "6,250 Mana",
+              "range": "40 yd range"
+            }
+          },
+          "default_points": 1
+        }
+      ],
+      "display_row": 1,
+      "display_col": 3,
+      "raw_position_x": 3000,
+      "raw_position_y": 1200
+    },
+    {
+      "id": 81090,
+      "locked_by": [
+        81091
+      ],
+      "node_type": {
+        "id": 2,
+        "type": "CHOICE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "choice_of_tooltips": [
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106999?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Call of the Elements",
+                "id": 106999
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/383011?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Call of the Elements",
+                  "id": 383011
+                },
+                "description": "Reduces the cooldown of Totemic Recall by 60 sec.",
+                "cast_time": "Passive"
+              }
+            },
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106998?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Creation Core",
+                "id": 106998
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/383012?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Creation Core",
+                  "id": 383012
+                },
+                "description": "Totemic Recall affects an additional totem.",
+                "cast_time": "Passive"
+              }
+            }
+          ]
+        }
+      ],
+      "display_row": 10,
+      "display_col": 8,
+      "raw_position_x": 6000,
+      "raw_position_y": 6600
+    }
+  ],
+  "spec_talent_nodes": [
+    {
+      "id": 80984,
+      "unlocks": [
+        80981,
+        80983,
+        80985
+      ],
+      "node_type": {
+        "id": 0,
+        "type": "ACTIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106811?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Earth Shock",
+              "id": 106811
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/8042?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Earth Shock",
+                "id": 8042
+              },
+              "description": "Instantly shocks the target with concussive force, causing 14,751 Nature damage.",
+              "cast_time": "Instant",
+              "power_cost": "60 Maelstrom",
+              "range": "40 yd range"
+            }
+          }
+        }
+      ],
+      "display_row": 1,
+      "display_col": 18,
+      "raw_position_x": 12000,
+      "raw_position_y": 1200
+    },
+    {
+      "id": 80985,
+      "locked_by": [
+        80984
+      ],
+      "unlocks": [
+        80986
+      ],
+      "node_type": {
+        "id": 0,
+        "type": "ACTIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106814?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Earthquake",
+              "id": 106814
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/61882?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Earthquake",
+                "id": 61882
+              },
+              "description": "Causes the earth within 8 yards of the target location to tremble and break, dealing 7,395 Physical damage over 6 sec and has a 5% chance to knock the enemy down.",
+              "cast_time": "Instant",
+              "power_cost": "60 Maelstrom",
+              "range": "40 yd range"
+            }
+          }
+        }
+      ],
+      "display_row": 2,
+      "display_col": 17,
+      "raw_position_x": 11400,
+      "raw_position_y": 1800
+    },
+    {
+      "id": 81001,
+      "locked_by": [
+        81002
+      ],
+      "node_type": {
+        "id": 1,
+        "type": "PASSIVE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "tooltip": {
+            "talent": {
+              "key": {
+                "href": "https://us.api.blizzard.com/data/wow/talent/106825?namespace=static-10.0.5_47621-us"
+              },
+              "name": "Further Beyond",
+              "id": 106825
+            },
+            "spell_tooltip": {
+              "spell": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/spell/381787?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Further Beyond",
+                "id": 381787
+              },
+              "description": "Casting Earth Shock or Earthquake while Ascendance is active extends the duration of Ascendance by 2.5 sec.\r\n\r\nCasting Elemental Blast while Ascendance is active extends the duration of Ascendance by 3.5 sec.",
+              "cast_time": "Passive"
+            }
+          }
+        }
+      ],
+      "display_row": 10,
+      "display_col": 19,
+      "raw_position_x": 12600,
+      "raw_position_y": 6600
+    },
+    {
+      "id": 81006,
+      "locked_by": [
+        81007,
+        81005
+      ],
+      "node_type": {
+        "id": 2,
+        "type": "CHOICE"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "choice_of_tooltips": [
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106849?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Windspeaker's Lava Resurgence",
+                "id": 106849
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/378268?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Windspeaker's Lava Resurgence",
+                  "id": 378268
+                },
+                "description": "When you cast Earth Shock, Elemental Blast, or Earthquake, gain Lava Surge and increase the damage of your next Lava Burst by 10%.",
+                "cast_time": "Passive"
+              }
+            },
+            {
+              "talent": {
+                "key": {
+                  "href": "https://us.api.blizzard.com/data/wow/talent/106848?namespace=static-10.0.5_47621-us"
+                },
+                "name": "Skybreaker's Fiery Demise",
+                "id": 106848
+              },
+              "spell_tooltip": {
+                "spell": {
+                  "key": {
+                    "href": "https://us.api.blizzard.com/data/wow/spell/378310?namespace=static-10.0.5_47621-us"
+                  },
+                  "name": "Skybreaker's Fiery Demise",
+                  "id": 378310
+                },
+                "description": "Flame Shock damage over time critical strikes reduce the cooldown of your Fire and Storm Elemental by 1.0 sec, and Flame Shock has a 50% increased critical strike chance.",
+                "cast_time": "Passive"
+              }
+            }
+          ]
+        }
+      ],
+      "display_row": 10,
+      "display_col": 21,
+      "raw_position_x": 13800,
+      "raw_position_y": 6600
+    }
+  ]
+}</value>
+  </data>
 </root>
