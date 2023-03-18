@@ -26,52 +26,55 @@ public interface ITalentApi
     Task<RequestResult<TalentTreeIndex>> GetTalentTreeIndexAsync(string @namespace, Region region, Locale locale);
 
     /// <summary>
-    ///     Get the specified talent tree by specialization Id.
+    ///     Get the specified talent tree by specialization ID.
     /// </summary>
-    /// <param name="talentTreeId">The id of the talent-tree.</param>
-    /// <param name="specId">The id of the playable-specialization.</param>
+    /// <param name="talentTreeId">The ID of the talent tree.</param>
+    /// <param name="specId">The ID of the playable specialization.</param>
     /// <param name="namespace">The namespace to use to locate this document.</param>
     /// <returns>
-    ///     The specified talent tree by specialization Id.
+    ///     The specified talent tree by specialization ID.
     /// </returns>
     Task<RequestResult<TalentTree>> GetTalentTreeAsync(int talentTreeId, int specId, string @namespace);
 
     /// <summary>
-    ///     Get the specified talent tree by specialization Id.
+    ///     Get the specified talent tree by specialization ID.
     /// </summary>
-    /// <param name="talentTreeId">The id of the talent-tree.</param>
-    /// <param name="specId">The id of the playable-specialization.</param>
+    /// <param name="talentTreeId">The ID of the talent tree.</param>
+    /// <param name="specId">The ID of the playable specialization.</param>
     /// <param name="namespace">The namespace to use to locate this document.</param>
     /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
     /// <param name="locale">Specifies the language that the result will be in.</param>
     /// <returns>
-    ///     The specified talent tree by specialization Id.
+    ///     The specified talent tree by specialization ID.
     /// </returns>
-
     Task<RequestResult<TalentTree>> GetTalentTreeAsync(int talentTreeId, int specId, string @namespace, Region region, Locale locale);
 
     /// <summary>
-    ///     Get all talent tree nodes as well as links to associated playable specializations given a talent tree id.
-    ///     This is useful to generate loadout export codes.
+    ///     Get all talent tree nodes as well as links to associated playable specializations given a talent tree ID.
     /// </summary>
-    /// <param name="talentTreeId">The id of the talent-tree.</param>
+    /// <param name="talentTreeId">The ID of the talent tree.</param>
     /// <param name="namespace">The namespace to use to locate this document.</param>
     /// <returns>
-    ///      All talent tree nodes as well as links to associated playable specializations given a talent tree id.
+    ///     All talent tree nodes as well as links to associated playable specializations given a talent tree ID.
     /// </returns>
+    /// <remarks>
+    ///     This is useful to generate loadout export codes.
+    /// </remarks>
     Task<RequestResult<TalentTreeNodes>> GetTalentTreeNodesAsync(int talentTreeId, string @namespace);
 
     /// <summary>
-    ///     Get all talent tree nodes as well as links to associated playable specializations given a talent tree id.
-    ///     This is useful to generate loadout export codes.
+    ///     Get all talent tree nodes as well as links to associated playable specializations given a talent tree ID.
     /// </summary>
-    /// <param name="talentTreeId">The id of the talent-tree.</param>
+    /// <param name="talentTreeId">The ID of the talent tree.</param>
     /// <param name="namespace">The namespace to use to locate this document.</param>
     /// <param name="region">Specifies the region that the API will retrieve its data from.</param>
     /// <param name="locale">Specifies the language that the result will be in.</param>
     /// <returns>
-    ///     All talent tree nodes as well as links to associated playable specializations given a talent tree id.
+    ///     All talent tree nodes as well as links to associated playable specializations given a talent tree ID.
     /// </returns>
+    /// <remarks>
+    ///     This is useful to generate loadout export codes.
+    /// </remarks>
     Task<RequestResult<TalentTreeNodes>> GetTalentTreeNodesAsync(int talentTreeId, string @namespace, Region region, Locale locale);
 
     /// <summary>

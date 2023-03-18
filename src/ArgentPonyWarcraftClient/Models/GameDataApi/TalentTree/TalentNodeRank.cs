@@ -13,15 +13,19 @@ public record TalentNodeRank
 
     /// <summary>
     /// Gets the tooltip for the talent node rank.
-    /// This property filled when talent node type is ACTIVE or PASSIVE
     /// </summary>
+    /// <remarks>
+    /// This property filled when talent node type is ACTIVE or PASSIVE.
+    /// </remarks>
     [JsonPropertyName("tooltip")]
     public TalentNodeTooltip Tooltip { get; init; }
 
     /// <summary>
     /// Gets the possible tooltips for the talent node rank.
-    /// This property filled when talent node type is CHOICE
     /// </summary>
+    /// <remarks>
+    /// This property filled when talent node type is CHOICE.
+    /// </remarks>
     [JsonPropertyName("choice_of_tooltips")]
     public TalentNodeTooltip[] ChoiceOfTooltips { get; init; }
 
