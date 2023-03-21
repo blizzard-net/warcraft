@@ -269,7 +269,7 @@ public partial class WarcraftClient : IWarcraftClient
             Region.China => "https://www.battlenet.com.cn",
             Region.Europe => "https://eu.battle.net",
             Region.Korea => "https://kr.battle.net",
-            Region.Taiwan => "https://tw.battle.net",
+            Region.Taiwan => "https://apac.battle.net",
             _ => "https://us.battle.net",
         };
     }
