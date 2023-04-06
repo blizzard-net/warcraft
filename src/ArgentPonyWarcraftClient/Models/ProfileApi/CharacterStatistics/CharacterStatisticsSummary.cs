@@ -93,7 +93,7 @@ public record CharacterStatisticsSummary
     /// Gets the character's versatility.
     /// </summary>
     [JsonPropertyName("versatility")]
-    public float Versatility { get; init; }
+    public int Versatility { get; init; }
 
     /// <summary>
     /// Gets the character's versatility damage done bonus.
