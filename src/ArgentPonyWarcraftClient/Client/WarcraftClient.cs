@@ -266,11 +266,8 @@ public partial class WarcraftClient : IWarcraftClient
     {
         return region switch
         {
-            Region.China => "https://www.battlenet.com.cn",
-            Region.Europe => "https://eu.battle.net",
-            Region.Korea => "https://kr.battle.net",
-            Region.Taiwan => "https://apac.battle.net",
-            _ => "https://us.battle.net",
+            Region.China => "https://oauth.battlenet.com.cn",
+            _ => "https://oauth.battle.net"
         };
     }
 }
