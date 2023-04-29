@@ -22,4 +22,10 @@ public record CharacterSpecialization
     /// </summary>
     [JsonPropertyName("pvp_talent_slots")]
     public PvpTalentSlot[] PvpTalentSlots { get; init; }
+
+    /// <summary>
+    /// Get the loadouts for the specialization.
+    /// </summary>
+    [JsonPropertyName("loadouts")]
+    public SpecializationLoadout[] Loadouts { get; init; }
 }
