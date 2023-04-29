@@ -46,4 +46,10 @@ public record PlayableRace
     /// </summary>
     [JsonPropertyName("is_allied_race")]
     public bool IsAlliedRace { get; init; }
+
+    /// <summary>
+    /// Gets references to the playable classes that are compatible with this playable race.
+    /// </summary>
+    [JsonPropertyName("playable_classes")]
+    public PlayableClassReference[] PlayableClasses { get; init; }
 }
