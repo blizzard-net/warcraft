@@ -2747,7 +2747,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.0.7_48520-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 7,
@@ -2758,7 +2758,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///  },
         ///  &quot;power_type&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-10.0.7_48520-us&quot;
         ///    },
         ///    &quot;name&quot;: &quot;Mana&quot;,
         ///    &quot;id&quot;: 0
@@ -2766,7 +2766,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///  &quot;specializations&quot;: [
         ///    {
         ///      &quot;key&quot;: {
-        ///        &quot;href&quot;: &quot;https://us.ap [rest of string was truncated]&quot;;.
+        ///        &quot;href&quot;: &quot;https://us. [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlayableClassResponse {
             get {
@@ -2778,7 +2778,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-10.0.7_48520-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 2,
@@ -2792,8 +2792,11 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///    &quot;name&quot;: &quot;Horde&quot;
         ///  },
         ///  &quot;is_selectable&quot;: true,
-        ///  &quot;is_allied_race&quot;: false
-        ///}.
+        ///  &quot;is_allied_race&quot;: false,
+        ///  &quot;playable_classes&quot;: [
+        ///    {
+        ///      &quot;key&quot;: {
+        ///        &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/6?namespace=static-10.0.7_4852 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlayableRaceResponse {
             get {
