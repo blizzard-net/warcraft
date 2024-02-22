@@ -73,9 +73,9 @@ public class TalentApiTests
     {
         ITalentApi warcraftClient = ClientFactory.BuildClient();
 
-        RequestResult<PvpTalent> result = await warcraftClient.GetPvpTalentAsync(11, "static-us");
+        RequestResult<PvpTalent> result = await warcraftClient.GetPvpTalentAsync(40, "static-us");
 
         await result.Should().BeSuccessfulRequest()
-            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/pvp-talent/11?namespace=static-us&locale=en_US");
+            .BeEquivalentToBlizzardResponseAsync("https://us.api.blizzard.com/data/wow/pvp-talent/40?namespace=static-us&locale=en_US");
     }
 }

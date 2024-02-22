@@ -44893,7 +44893,7 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-10.2.5_52554-us"
     }
   },
   "id": 63,
@@ -44910,42 +44910,42 @@
   "encounters": [
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/89?namespace=static-10.2.5_52554-us"
       },
       "name": "Glubtok",
       "id": 89
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/90?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/90?namespace=static-10.2.5_52554-us"
       },
       "name": "Helix Gearbreaker",
       "id": 90
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/91?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/91?namespace=static-10.2.5_52554-us"
       },
       "name": "Foe Reaper 5000",
       "id": 91
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/92?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/92?namespace=static-10.2.5_52554-us"
       },
       "name": "Admiral Ripsnarl",
       "id": 92
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/93?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/93?namespace=static-10.2.5_52554-us"
       },
       "name": "\"Captain\" Cookie",
       "id": 93
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/95?namespace=static-8.3.0_32861-us"
+        "href": "https://us.api.blizzard.com/data/wow/journal-encounter/95?namespace=static-10.2.5_52554-us"
       },
       "name": "Vanessa VanCleef",
       "id": 95
@@ -44953,7 +44953,7 @@
   ],
   "expansion": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/journal-expansion/68?namespace=static-10.2.5_52554-us"
     },
     "name": "Classic",
     "id": 68
@@ -44982,14 +44982,15 @@
   ],
   "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-8.3.0_32861-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/journal-instance/63?namespace=static-10.2.5_52554-us"
     },
     "id": 63
   },
-  "minimum_level": 85,
+  "minimum_level": 35,
   "category": {
     "type": "DUNGEON"
-  }
+  },
+  "order_index": 0
 }</value>
   </data>
   <data name="JournalInstanceMediaResponse" xml:space="preserve">
@@ -55403,7 +55404,7 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.0.7_48520-us"
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.2.5_52554-us"
     }
   },
   "id": 7,
@@ -55414,7 +55415,7 @@
   },
   "power_type": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-10.0.7_48520-us"
+      "href": "https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-10.2.5_52554-us"
     },
     "name": "Mana",
     "id": 0
@@ -55422,21 +55423,21 @@
   "specializations": [
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-10.2.5_52554-us"
       },
       "name": "Elemental",
       "id": 262
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/263?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/263?namespace=static-10.2.5_52554-us"
       },
       "name": "Enhancement",
       "id": 263
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/264?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-specialization/264?namespace=static-10.2.5_52554-us"
       },
       "name": "Restoration",
       "id": 264
@@ -55444,118 +55445,127 @@
   ],
   "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-10.0.7_48520-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/playable-class/7?namespace=static-10.2.5_52554-us"
     },
     "id": 7
   },
   "pvp_talent_slots": {
-    "href": "https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-10.0.7_48520-us"
+    "href": "https://us.api.blizzard.com/data/wow/playable-class/7/pvp-talent-slots?namespace=static-10.2.5_52554-us"
   },
   "playable_races": [
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/28?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/28?namespace=static-10.2.5_52554-us"
       },
       "name": "Highmountain Tauren",
       "id": 28
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/6?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/6?namespace=static-10.2.5_52554-us"
       },
       "name": "Tauren",
       "id": 6
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/11?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/11?namespace=static-10.2.5_52554-us"
       },
       "name": "Draenei",
       "id": 11
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/9?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/9?namespace=static-10.2.5_52554-us"
       },
       "name": "Goblin",
       "id": 9
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/24?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/24?namespace=static-10.2.5_52554-us"
       },
       "name": "Pandaren",
       "id": 24
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/8?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/8?namespace=static-10.2.5_52554-us"
       },
       "name": "Troll",
       "id": 8
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/2?namespace=static-10.2.5_52554-us"
       },
       "name": "Orc",
       "id": 2
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/31?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/31?namespace=static-10.2.5_52554-us"
       },
       "name": "Zandalari Troll",
       "id": 31
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/35?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/35?namespace=static-10.2.5_52554-us"
       },
       "name": "Vulpera",
       "id": 35
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/34?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/34?namespace=static-10.2.5_52554-us"
       },
       "name": "Dark Iron Dwarf",
       "id": 34
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/36?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/36?namespace=static-10.2.5_52554-us"
       },
       "name": "Mag'har Orc",
       "id": 36
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/25?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/25?namespace=static-10.2.5_52554-us"
       },
       "name": "Pandaren",
       "id": 25
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/32?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/32?namespace=static-10.2.5_52554-us"
       },
       "name": "Kul Tiran",
       "id": 32
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/3?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/3?namespace=static-10.2.5_52554-us"
       },
       "name": "Dwarf",
       "id": 3
     },
     {
       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/playable-race/26?namespace=static-10.0.7_48520-us"
+        "href": "https://us.api.blizzard.com/data/wow/playable-race/26?namespace=static-10.2.5_52554-us"
       },
       "name": "Pandaren",
       "id": 26
+    }
+  ],
+  "additional_power_types": [
+    {
+      "key": {
+        "href": "https://us.api.blizzard.com/data/wow/power-type/11?namespace=static-10.2.5_52554-us"
+      },
+      "name": "Maelstrom",
+      "id": 11
     }
   ]
 }</value>
@@ -58441,35 +58451,311 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us"
+      "href": "https://eu.api.blizzard.com/data/wow/connected-realm/1305/mythic-leaderboard/199/period/946?namespace=dynamic-eu"
     }
   },
   "map": {
-    "name": "Eye of Azshara",
-    "id": 1456
+    "name": "Black Rook Hold",
+    "id": 1501
   },
-  "period": 641,
-  "period_start_timestamp": 1523372400000,
-  "period_end_timestamp": 1523977199000,
+  "period": 946,
+  "period_start_timestamp": 1707883200000,
+  "period_end_timestamp": 1708487999000,
   "connected_realm": {
-    "href": "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us"
+    "href": "https://eu.api.blizzard.com/data/wow/connected-realm/1305?namespace=dynamic-eu"
   },
   "leading_groups": [
     {
       "ranking": 1,
-      "duration": 4701656,
-      "completed_timestamp": 1523646535000,
-      "keystone_level": 25,
+      "duration": 3657840,
+      "completed_timestamp": 1707921171000,
+      "keystone_level": 32,
       "members": [
         {
           "profile": {
-            "name": "Volladin",
-            "id": 186986280,
+            "name": "Kiradh",
+            "id": 259113944,
             "realm": {
               "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/61?namespace=dynamic-us"
+                "href": "https://eu.api.blizzard.com/data/wow/realm/628?namespace=dynamic-eu"
               },
-              "id": 61,
+              "id": 628,
+              "slug": "sylvanas"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 581
+          }
+        },
+        {
+          "profile": {
+            "name": "Arxesz",
+            "id": 213903353,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1305?namespace=dynamic-eu"
+              },
+              "id": 1305,
+              "slug": "kazzak"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 63
+          }
+        },
+        {
+          "profile": {
+            "name": "Yarrgidudu",
+            "id": 211136707,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1305?namespace=dynamic-eu"
+              },
+              "id": 1305,
+              "slug": "kazzak"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/102?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 102
+          }
+        },
+        {
+          "profile": {
+            "name": "Ayije",
+            "id": 187770771,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/625?namespace=dynamic-eu"
+              },
+              "id": 625,
+              "slug": "twisting-nether"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/256?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 256
+          }
+        },
+        {
+          "profile": {
+            "name": "Griwyvoker",
+            "id": 178389280,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/559?namespace=dynamic-eu"
+              },
+              "id": 559,
+              "slug": "stormreaver"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/1473?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 1473
+          }
+        }
+      ],
+      "mythic_rating": {
+        "color": {
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "a": 0
+        },
+        "rating": 0
+      }
+    },
+    {
+      "ranking": 2,
+      "duration": 2134258,
+      "completed_timestamp": 1707927530000,
+      "keystone_level": 31,
+      "members": [
+        {
+          "profile": {
+            "name": "Zmøk",
+            "id": 204852806,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1305?namespace=dynamic-eu"
+              },
+              "id": 1305,
+              "slug": "kazzak"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/70?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 70
+          }
+        },
+        {
+          "profile": {
+            "name": "Feldexter",
+            "id": 170249055,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/554?namespace=dynamic-eu"
+              },
+              "id": 554,
+              "slug": "ravencrest"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 581
+          }
+        },
+        {
+          "profile": {
+            "name": "Табаз",
+            "id": 186208348,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1615?namespace=dynamic-eu"
+              },
+              "id": 1615,
+              "slug": "howling-fjord"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/264?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 264
+          }
+        },
+        {
+          "profile": {
+            "name": "Madspatula",
+            "id": 202256503,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/549?namespace=dynamic-eu"
+              },
+              "id": 549,
+              "slug": "silvermoon"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 72
+          }
+        },
+        {
+          "profile": {
+            "name": "Boreasxo",
+            "id": 213602420,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1305?namespace=dynamic-eu"
+              },
+              "id": 1305,
+              "slug": "kazzak"
+            }
+          },
+          "faction": {
+            "type": "ALLIANCE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/258?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 258
+          }
+        }
+      ],
+      "mythic_rating": {
+        "color": {
+          "r": 255,
+          "g": 128,
+          "b": 0,
+          "a": 1
+        },
+        "rating": 247.14897
+      }
+    },
+    {
+      "ranking": 500,
+      "duration": 2060669,
+      "completed_timestamp": 1708100461000,
+      "keystone_level": 26,
+      "members": [
+        {
+          "profile": {
+            "name": "Wneo",
+            "id": 135607455,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/524?namespace=dynamic-eu"
+              },
+              "id": 524,
+              "slug": "burning-legion"
+            }
+          },
+          "faction": {
+            "type": "HORDE"
+          },
+          "specialization": {
+            "key": {
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/102?namespace=static-10.2.5_52554-eu"
+            },
+            "id": 102
+          }
+        },
+        {
+          "profile": {
+            "name": "Ajamu",
+            "id": 180196013,
+            "realm": {
+              "key": {
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1379?namespace=dynamic-eu"
+              },
+              "id": 1379,
               "slug": "zuljin"
             }
           },
@@ -58478,21 +58764,21 @@
           },
           "specialization": {
             "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/65?namespace=static-7.3.5_25875-us"
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/264?namespace=static-10.2.5_52554-eu"
             },
-            "id": 65
+            "id": 264
           }
         },
         {
           "profile": {
-            "name": "Elishaa",
-            "id": 187880653,
+            "name": "Ринзайх",
+            "id": 180694090,
             "realm": {
               "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/73?namespace=dynamic-us"
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1602?namespace=dynamic-eu"
               },
-              "id": 73,
-              "slug": "bleeding-hollow"
+              "id": 1602,
+              "slug": "gordunni"
             }
           },
           "faction": {
@@ -58500,279 +58786,21 @@
           },
           "specialization": {
             "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/581?namespace=static-7.3.5_25875-us"
-            },
-            "id": 581
-          }
-        },
-        {
-          "profile": {
-            "name": "Jackson",
-            "id": 142410055,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/73?namespace=dynamic-us"
-              },
-              "id": 73,
-              "slug": "bleeding-hollow"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/259?namespace=static-7.3.5_25875-us"
-            },
-            "id": 259
-          }
-        },
-        {
-          "profile": {
-            "name": "Pearcake",
-            "id": 179791270,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
-              },
-              "id": 11,
-              "slug": "tichondrius"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-7.3.5_25875-us"
-            },
-            "id": 265
-          }
-        },
-        {
-          "profile": {
-            "name": "Snöwy",
-            "id": 132319941,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/57?namespace=dynamic-us"
-              },
-              "id": 57,
-              "slug": "illidan"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-7.3.5_25875-us"
-            },
-            "id": 63
-          }
-        }
-      ]
-    },
-    {
-      "ranking": 2,
-      "duration": 2810578,
-      "completed_timestamp": 1523583162000,
-      "keystone_level": 23,
-      "members": [
-        {
-          "profile": {
-            "name": "Noru",
-            "id": 180317150,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/10?namespace=dynamic-us"
-              },
-              "id": 10,
-              "slug": "blackrock"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/103?namespace=static-7.3.5_25875-us"
-            },
-            "id": 103
-          }
-        },
-        {
-          "profile": {
-            "name": "Spicyramyun",
-            "id": 179491557,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
-              },
-              "id": 11,
-              "slug": "tichondrius"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/72?namespace=static-7.3.5_25875-us"
-            },
-            "id": 72
-          }
-        },
-        {
-          "profile": {
-            "name": "Viirx",
-            "id": 166923740,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/1263?namespace=dynamic-us"
-              },
-              "id": 1263,
-              "slug": "thrall"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-7.3.5_25875-us"
-            },
-            "id": 250
-          }
-        },
-        {
-          "profile": {
-            "name": "Tr",
-            "id": 125313974,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/10?namespace=dynamic-us"
-              },
-              "id": 10,
-              "slug": "blackrock"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/105?namespace=static-7.3.5_25875-us"
-            },
-            "id": 105
-          }
-        },
-        {
-          "profile": {
-            "name": "Clofnihbr",
-            "id": 175694437,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/1263?namespace=dynamic-us"
-              },
-              "id": 1263,
-              "slug": "thrall"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-7.3.5_25875-us"
-            },
-            "id": 265
-          }
-        }
-      ]
-    },
-    {
-      "ranking": 500,
-      "duration": 1816054,
-      "completed_timestamp": 1523759505000,
-      "keystone_level": 15,
-      "members": [
-        {
-          "profile": {
-            "name": "Balanceteam",
-            "id": 179161603,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/57?namespace=dynamic-us"
-              },
-              "id": 57,
-              "slug": "illidan"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/269?namespace=static-7.3.5_25875-us"
-            },
-            "id": 269
-          }
-        },
-        {
-          "profile": {
-            "name": "Bapcha",
-            "id": 133107582,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/11?namespace=dynamic-us"
-              },
-              "id": 11,
-              "slug": "tichondrius"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/65?namespace=static-7.3.5_25875-us"
-            },
-            "id": 65
-          }
-        },
-        {
-          "profile": {
-            "name": "Coolshiine",
-            "id": 177333613,
-            "realm": {
-              "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/3723?namespace=dynamic-us"
-              },
-              "id": 3723,
-              "slug": "barthilas"
-            }
-          },
-          "faction": {
-            "type": "HORDE"
-          },
-          "specialization": {
-            "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-7.3.5_25875-us"
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/63?namespace=static-10.2.5_52554-eu"
             },
             "id": 63
           }
         },
         {
           "profile": {
-            "name": "Wowprogress",
-            "id": 58815968,
+            "name": "Flucher",
+            "id": 212262331,
             "realm": {
               "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/3726?namespace=dynamic-us"
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1305?namespace=dynamic-eu"
               },
-              "id": 3726,
-              "slug": "khazgoroth"
+              "id": 1305,
+              "slug": "kazzak"
             }
           },
           "faction": {
@@ -58780,21 +58808,21 @@
           },
           "specialization": {
             "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-7.3.5_25875-us"
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/250?namespace=static-10.2.5_52554-eu"
             },
             "id": 250
           }
         },
         {
           "profile": {
-            "name": "Agonized",
-            "id": 173711224,
+            "name": "Литценрайх",
+            "id": 253370335,
             "realm": {
               "key": {
-                "href": "https://us.api.blizzard.com/data/wow/realm/3723?namespace=dynamic-us"
+                "href": "https://eu.api.blizzard.com/data/wow/realm/1604?namespace=dynamic-eu"
               },
-              "id": 3723,
-              "slug": "barthilas"
+              "id": 1604,
+              "slug": "soulflayer"
             }
           },
           "faction": {
@@ -58802,48 +58830,57 @@
           },
           "specialization": {
             "key": {
-              "href": "https://us.api.blizzard.com/data/wow/playable-specialization/265?namespace=static-7.3.5_25875-us"
+              "href": "https://eu.api.blizzard.com/data/wow/playable-specialization/266?namespace=static-10.2.5_52554-eu"
             },
-            "id": 265
+            "id": 266
           }
         }
-      ]
+      ],
+      "mythic_rating": {
+        "color": {
+          "r": 255,
+          "g": 128,
+          "b": 0,
+          "a": 1
+        },
+        "rating": 212.57483
+      }
     }
   ],
   "keystone_affixes": [
     {
       "keystone_affix": {
         "key": {
-          "href": "https://us.api.blizzard.com/data/wow/keystone-affix/6?namespace=static-7.3.5_25875-us"
+          "href": "https://eu.api.blizzard.com/data/wow/keystone-affix/9?namespace=static-10.2.5_52554-eu"
         },
-        "name": "Raging",
-        "id": 6
+        "name": "Tyrannical",
+        "id": 9
       },
-      "starting_level": 4
+      "starting_level": 2
     },
     {
       "keystone_affix": {
         "key": {
-          "href": "https://us.api.blizzard.com/data/wow/keystone-affix/4?namespace=static-7.3.5_25875-us"
+          "href": "https://eu.api.blizzard.com/data/wow/keystone-affix/124?namespace=static-10.2.5_52554-eu"
         },
-        "name": "Necrotic",
-        "id": 4
+        "name": "Storming",
+        "id": 124
       },
       "starting_level": 7
     },
     {
       "keystone_affix": {
         "key": {
-          "href": "https://us.api.blizzard.com/data/wow/keystone-affix/9?namespace=static-7.3.5_25875-us"
+          "href": "https://eu.api.blizzard.com/data/wow/keystone-affix/6?namespace=static-10.2.5_52554-eu"
         },
-        "name": "Tyrannical",
-        "id": 9
+        "name": "Raging",
+        "id": 6
       },
-      "starting_level": 10
+      "starting_level": 14
     }
   ],
-  "map_challenge_mode_id": 197,
-  "name": "Eye of Azshara"
+  "map_challenge_mode_id": 199,
+  "name": "Black Rook Hold"
 }</value>
   </data>
   <data name="CharacterMythicKeystoneProfileIndexResponse" xml:space="preserve">
@@ -65565,36 +65602,179 @@
     <value>{
   "_links": {
     "self": {
-      "href": "https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us"
+      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-10.2.5_52554-us"
     }
   },
-  "id": 117163,
-  "rank_descriptions": [
-    {
-      "rank": 1,
-      "description": "Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage."
-    }
-  ],
-  "spell": {
-    "key": {
-      "href": "https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us"
-    },
-    "name": "Best Served Cold",
-    "id": 202560
-  },
+  "id": 262,
   "playable_class": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-class/1?namespace=static-10.0.5_47621-us"
+      "href": "https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.2.5_52554-us"
     },
-    "name": "Warrior",
-    "id": 1
+    "name": "Shaman",
+    "id": 7
   },
-  "playable_specialization": {
+  "name": "Elemental",
+  "gender_description": {
+    "male": "A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r\nPreferred Weapon: Mace, Dagger, and Shield",
+    "female": "A spellcaster who harnesses the destructive forces of nature and the elements.\r\n\r\nPreferred Weapon: Mace, Dagger, and Shield"
+  },
+  "media": {
     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/playable-specialization/73?namespace=static-10.0.5_47621-us"
+      "href": "https://us.api.blizzard.com/data/wow/media/playable-specialization/262?namespace=static-10.2.5_52554-us"
     },
-    "name": "Protection",
-    "id": 73
+    "id": 262
+  },
+  "role": {
+    "type": "DAMAGE",
+    "name": "Damage"
+  },
+  "pvp_talents": [
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/727?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Static Field Totem",
+        "id": 727
+      },
+      "spell_tooltip": {
+        "description": "Summons a totem with 4% of your health at the target location for 6 sec that forms a circuit of electricity that enemies cannot pass through.",
+        "cast_time": "Instant",
+        "range": "30 yd range",
+        "cooldown": "1 min cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/730?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Traveling Storms",
+        "id": 730
+      },
+      "spell_tooltip": {
+        "description": "Thunderstorm now can be cast on allies within 40 yards, reduces enemies movement speed by 60% and knocks enemies 25% further.\r\n\r\nThundershock knocks enemies 100% higher.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3488?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Skyfury Totem",
+        "id": 3488
+      },
+      "spell_tooltip": {
+        "description": "Summons a totem at your feet for 15 sec that increases the critical effect of damage and healing spells of all nearby allies within 40 yards by 20% for 15 sec.",
+        "cast_time": "Instant",
+        "power_cost": "1,500 Mana",
+        "cooldown": "40 sec cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3490?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Counterstrike Totem",
+        "id": 3490
+      },
+      "spell_tooltip": {
+        "description": "Summons a totem at your feet for 15 sec.\r\n\r\nWhenever enemies within 20 yards of the totem deal direct damage, the totem will deal 100% of the damage dealt back to attacker. ",
+        "cast_time": "Instant",
+        "power_cost": "1,500 Mana",
+        "range": "40 yd range",
+        "cooldown": "45 sec cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3491?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Unleash Shield",
+        "id": 3491
+      },
+      "spell_tooltip": {
+        "description": "Unleash your Elemental Shield's energy on an enemy target:\r\n\r\nightning Shield: Knocks them away.\r\n\r\narth Shield: Roots them in place for 2 sec.\r\n\r\nater Shield: Summons a whirlpool for 6 sec, reducing damage and healing by 50% while they stand within it.",
+        "cast_time": "Instant",
+        "range": "20 yd range",
+        "cooldown": "30 sec cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/3620?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Grounding Totem",
+        "id": 3620
+      },
+      "spell_tooltip": {
+        "description": "Summons a totem at your feet that will redirect all harmful spells cast within 30 yards on a nearby party or raid member to itself. Will not redirect area of effect spells. Lasts 3 sec.",
+        "cast_time": "Instant",
+        "power_cost": "2,950 Mana",
+        "cooldown": "30 sec cooldown"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/5415?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Seasoned Winds",
+        "id": 5415
+      },
+      "spell_tooltip": {
+        "description": "Interrupting a spell with Wind Shear decreases your damage taken from that spell school by 15% for 18 sec. Stacks up to 3 times.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/5571?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Volcanic Surge",
+        "id": 5571
+      },
+      "spell_tooltip": {
+        "description": "Increases the damage of Lightning Bolt and Chain Lightning by 30% and the damage of Lava Burst by 45%.\r\n\r\nLava Surge has an additional 100% chance to trigger and instead reduces the cast time of your next Lightning Bolt or Chain Lightning by 25%, stacking up to 2 times.",
+        "cast_time": "Passive"
+      }
+    },
+    {
+      "talent": {
+        "key": {
+          "href": "https://us.api.blizzard.com/data/wow/pvp-talent/5574?namespace=static-10.2.5_52554-us"
+        },
+        "name": "Burrow",
+        "id": 5574
+      },
+      "spell_tooltip": {
+        "description": "Burrow beneath the ground, becoming unattackable, removing movement impairing effects, and increasing your movement speed by 50% for 5 sec.\r\n\r\nWhen the effect ends, enemies within 6 yards are knocked in the air and take 36,346 Physical damage.",
+        "cast_time": "Instant",
+        "cooldown": "2 min cooldown"
+      }
+    }
+  ],
+  "spec_talent_tree": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/talent-tree/786/playable-specialization/262?namespace=static-10.2.5_52554-us"
+    },
+    "name": "Elemental"
+  },
+  "power_type": {
+    "key": {
+      "href": "https://us.api.blizzard.com/data/wow/power-type/11?namespace=static-10.2.5_52554-us"
+    },
+    "name": "Maelstrom",
+    "id": 11
+  },
+  "primary_stat_type": {
+    "type": "INTELLECT",
+    "name": "Intellect"
   }
 }</value>
   </data>
@@ -65993,7 +66173,8 @@
   },
   "id": 1,
   "name": "North America",
-  "tag": "US"
+  "tag": "US",
+  "patch_string": "10.2.5"
 }</value>
   </data>
   <data name="RegionsIndexResponse" xml:space="preserve">

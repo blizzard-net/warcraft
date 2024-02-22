@@ -64,4 +64,16 @@ public record PlayableSpecialization
     /// </summary>
     [JsonPropertyName("spec_talent_tree")]
     public TalentTreeReference SpecTalentTree { get; init; }
+
+    /// <summary>
+    /// Gets the <see cref="PowerType"/> for the playable specialization.
+    /// </summary>
+    [JsonPropertyName("power_type")]
+    public PowerTypeReference PowerType { get; init; }
+
+    /// <summary>
+    /// Gets the primary stat type (intellect, agility, etc) for a playable specialization.
+    /// </summary>
+    [JsonPropertyName("primary_stat_type")]
+    public EnumType PrimaryStatType { get; init; }
 }

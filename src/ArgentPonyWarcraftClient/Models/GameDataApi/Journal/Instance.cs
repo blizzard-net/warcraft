@@ -82,4 +82,10 @@ public record Instance
     /// </summary>
     [JsonPropertyName("category")]
     public InstanceCategory Category { get; init; }
+
+    /// <summary>
+    /// Gets the order index of the instance.
+    /// </summary>
+    [JsonPropertyName("order_index")]
+    public int OrderIndex { get; init; }
 }
