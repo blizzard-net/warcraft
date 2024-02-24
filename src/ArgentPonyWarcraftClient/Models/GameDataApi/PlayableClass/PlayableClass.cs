@@ -58,4 +58,10 @@ public record PlayableClass
     /// </summary>
     [JsonPropertyName("playable_races")]
     public PlayableRaceReference[] PlayableRaces { get; init; }
+
+    /// <summary>
+    /// Gets references to the additional power types that are used by this playable class.
+    /// </summary>
+    [JsonPropertyName("additional_power_types")]
+    public PowerTypeReference[] AdditionalPowerTypes { get; init; }
 }

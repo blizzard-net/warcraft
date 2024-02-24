@@ -28,4 +28,10 @@ public record RegionData
     /// </summary>
     [JsonPropertyName("tag")]
     public string Tag { get; init; }
+
+    /// <summary>
+    /// Gets the patch live for the region.
+    /// </summary>
+    [JsonPropertyName("patch_string")]
+    public string PatchString { get; init; }
 }

@@ -1979,7 +1979,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-8.3.0_32861-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/journal-instance/63?namespace=static-10.2.5_52554-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 63,
@@ -1992,7 +1992,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///    &quot;name&quot;: &quot;The Deadmines&quot;,
         ///    &quot;id&quot;: 1581
         ///  },
-        ///  &quot;description&quot;: &quot;It is said the Deadmines&apos; gold deposits once accounted for a third of Stormwind&apos;s treasure reserves. Amid the chaos of the First War, the mines were abandoned and later thought to be [rest of string was truncated]&quot;;.
+        ///  &quot;description&quot;: &quot;It is said the Deadmines&apos; gold deposits once accounted for a third of Stormwind&apos;s treasure reserves. Amid the chaos of the First War, the mines were abandoned and later thought to b [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string JournalInstanceResponse {
             get {
@@ -2354,22 +2354,22 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11/mythic-leaderboard/197/period/641?namespace=dynamic-us&quot;
+        ///      &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/1305/mythic-leaderboard/199/period/946?namespace=dynamic-eu&quot;
         ///    }
         ///  },
         ///  &quot;map&quot;: {
-        ///    &quot;name&quot;: &quot;Eye of Azshara&quot;,
-        ///    &quot;id&quot;: 1456
+        ///    &quot;name&quot;: &quot;Black Rook Hold&quot;,
+        ///    &quot;id&quot;: 1501
         ///  },
-        ///  &quot;period&quot;: 641,
-        ///  &quot;period_start_timestamp&quot;: 1523372400000,
-        ///  &quot;period_end_timestamp&quot;: 1523977199000,
+        ///  &quot;period&quot;: 946,
+        ///  &quot;period_start_timestamp&quot;: 1707883200000,
+        ///  &quot;period_end_timestamp&quot;: 1708487999000,
         ///  &quot;connected_realm&quot;: {
-        ///    &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&quot;
+        ///    &quot;href&quot;: &quot;https://eu.api.blizzard.com/data/wow/connected-realm/1305?namespace=dynamic-eu&quot;
         ///  },
         ///  &quot;leading_groups&quot;: [
         ///    {
-        ///      &quot;ranking&quot;:  [rest of string was truncated]&quot;;.
+        ///      &quot;ranki [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MythicKeystoneLeaderboardResponse {
             get {
@@ -2747,7 +2747,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.0.7_48520-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.2.5_52554-us&quot;
         ///    }
         ///  },
         ///  &quot;id&quot;: 7,
@@ -2758,7 +2758,7 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///  },
         ///  &quot;power_type&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-10.0.7_48520-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/power-type/0?namespace=static-10.2.5_52554-us&quot;
         ///    },
         ///    &quot;name&quot;: &quot;Mana&quot;,
         ///    &quot;id&quot;: 0
@@ -2858,21 +2858,20 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///   Looks up a localized string similar to {
         ///  &quot;_links&quot;: {
         ///    &quot;self&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/talent/117163?namespace=static-10.0.5_47621-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-specialization/262?namespace=static-10.2.5_52554-us&quot;
         ///    }
         ///  },
-        ///  &quot;id&quot;: 117163,
-        ///  &quot;rank_descriptions&quot;: [
-        ///    {
-        ///      &quot;rank&quot;: 1,
-        ///      &quot;description&quot;: &quot;Revenge deals 10% more damage, or 20% more damage when your successful dodges or parries have made it cost no Rage.&quot;
-        ///    }
-        ///  ],
-        ///  &quot;spell&quot;: {
+        ///  &quot;id&quot;: 262,
+        ///  &quot;playable_class&quot;: {
         ///    &quot;key&quot;: {
-        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/spell/202560?namespace=static-10.0.5_47621-us&quot;
+        ///      &quot;href&quot;: &quot;https://us.api.blizzard.com/data/wow/playable-class/7?namespace=static-10.2.5_52554-us&quot;
         ///    },
-        ///    &quot;nam [rest of string was truncated]&quot;;.
+        ///    &quot;name&quot;: &quot;Shaman&quot;,
+        ///    &quot;id&quot;: 7
+        ///  },
+        ///  &quot;name&quot;: &quot;Elemental&quot;,
+        ///  &quot;gender_description&quot;: {
+        ///    &quot;male&quot;: &quot;A spellcaster who harnesses the destructive forces of nature and the elements.\r\n [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PlayableSpecializationResponse {
             get {
@@ -3714,7 +3713,8 @@ namespace ArgentPonyWarcraftClient.Tests.Properties {
         ///  },
         ///  &quot;id&quot;: 1,
         ///  &quot;name&quot;: &quot;North America&quot;,
-        ///  &quot;tag&quot;: &quot;US&quot;
+        ///  &quot;tag&quot;: &quot;US&quot;,
+        ///  &quot;patch_string&quot;: &quot;10.2.5&quot;
         ///}.
         /// </summary>
         internal static string RegionResponse {
