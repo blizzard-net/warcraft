@@ -207,8 +207,9 @@ public partial class WarcraftClient : IWarcraftClient
                 new KeyValuePair<string, string>("grant_type", "client_credentials")
             });
 
-        HttpResponseMessage request = await Client.PostAsync($"{host}/oauth/token", requestBody);
-        string response = await request.Content.ReadAsStringAsync();
+        HttpResponseMessage responseMessage = await Client.PostAsync($"{host}/oauth/token", requestBody);
+        responseMessage.EnsureSuccessStatusCode();
+        string response = await responseMessage.Content.ReadAsStringAsync();
         return JsonSerializer.Deserialize<OAuthAccessToken>(response);
     }
 

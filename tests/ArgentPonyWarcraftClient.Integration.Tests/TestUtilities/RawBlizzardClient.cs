@@ -66,8 +66,9 @@ internal class RawBlizzardClient
                 new KeyValuePair<string, string>("grant_type", "client_credentials")
             });
 
-        HttpResponseMessage request = await _client.PostAsync($"{host}/oauth/token", requestBody);
-        string response = await request.Content.ReadAsStringAsync();
+        HttpResponseMessage responseMessage = await _client.PostAsync($"{host}/oauth/token", requestBody);
+        responseMessage.EnsureSuccessStatusCode();
+        string response = await responseMessage.Content.ReadAsStringAsync();
         return JsonSerializer.Deserialize<OAuthAccessToken>(response);
     }
 
