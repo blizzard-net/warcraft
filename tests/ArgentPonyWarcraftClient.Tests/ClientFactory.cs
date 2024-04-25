@@ -10,7 +10,7 @@ internal static class ClientFactory
         var mockHttp = new MockHttpMessageHandler();
 
         mockHttp
-            .When("https://oauth.battle.net/oauth/token")
+            .When("https://us.battle.net/oauth/token")
             .Respond(
                 mediaType: "application/json",
                 content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
@@ -32,7 +32,7 @@ internal static class ClientFactory
         var mockHttp = new MockHttpMessageHandler();
 
         mockHttp
-            .When("https://oauth.battle.net/oauth/token")
+            .When("https://us.battle.net/oauth/token")
             .Respond(
                 mediaType: "application/json",
                 content: @"{""access_token"": ""ACCESS-TOKEN"", ""token_type"": ""bearer"", ""expires_in"": 86399, ""scope"": ""example.scope""}");
