@@ -5,6 +5,7 @@
     <Description>Extensions of Microsoft.Extensions.DependencyInjection for the Argent Pony .NET client.</Description>
     <Title>Argent Pony Warcraft Client Dependency Injection</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard;Dependency-Injection;DI</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>ArgentPony.png</PackageIcon>
     <LangVersion>10</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>

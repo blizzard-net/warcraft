@@ -4,7 +4,8 @@
     <Authors>Dan Jagnow, William Wolfram, and Travis Boatman</Authors>
     <Copyright>Copyright © 2017-2024 The ArgentPonyWarcraftClient Contributors</Copyright>
     <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
-    <DefaultArtifactsFileMatch>*.nupkg *.snupkg</DefaultArtifactsFileMatch>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 </Project>

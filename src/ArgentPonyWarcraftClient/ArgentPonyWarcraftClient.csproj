@@ -6,6 +6,7 @@
     <Description>The Argent Pony .NET client for the Blizzard World of Warcraft Game Data and Profile APIs</Description>
     <Title>Argent Pony Warcraft Client</Title>
     <PackageTags>Warcraft;World-of-Warcraft;WoW;Blizzard</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>ArgentPony.png</PackageIcon>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
